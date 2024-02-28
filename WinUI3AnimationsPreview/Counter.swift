@@ -66,6 +66,9 @@ final class CounterView: WinUI.StackPanel {
       let token = observe { [weak self] in
         guard let self else { return }
         countTextBlock.text = "\(store.count)"
+        let scaleValue = 1 + (min(max(Float(store.count) / 10.0, -1.0), 1.0) / 2.0)
+        springAnimation.finalValue = Vector3(x: scaleValue, y: scaleValue, z: scaleValue)
+        try? countTextBlock.startAnimation(springAnimation)
       }
       observables.append(token)
     }
@@ -81,15 +84,7 @@ final class CounterView: WinUI.StackPanel {
       let animation: WinAppSDK.SpringVector3NaturalMotionAnimation = try! compositor.createSpringVector3Animation()
       animation.target = "Scale"
       animation.dampingRatio = 0.6
-      animation.period = TimeSpan(duration: 500000)
+      animation.period = TimeSpan(duration: 100000)
       return animation
   }()
-
-  private func elementPointerEntered(sender: Any!, args: PointerRoutedEventArgs!) {
-      // Scale up to 1.5
-      springAnimation.finalValue = Vector3(x: 1.5, y: 1.5, z: 1.5)
-      // swiftlint:disable:next force_cast
-      let senderAsUElement = sender as! UIElement
-      try? senderAsUElement.startAnimation(springAnimation)
-  }
 }
