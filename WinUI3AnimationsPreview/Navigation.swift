@@ -47,27 +47,29 @@ final class NavigationView: WinUI.StackPanel {
     self.horizontalAlignment = .center
     self.verticalAlignment = .center
 
-    let toggleButton = Button()
-    toggleButton.content = "Toggle"
-    toggleButton.click.addHandler { [store] _, _ in
-      store.send(.toggleButtonTapped)
-    }
-
-    self.children.append(toggleButton)
-    let token = observe { [weak self] in
+    self.loaded.addHandler { [weak self] sender, args in
       guard let self else { return }
-
-      if let counter = store.scope(state: \.destination, action: \.destination.presented),
-          counterView == nil {
-        self.counterView = CounterView(store: counter)
-        self.children.append(self.counterView!)
-      } else if store.destination == nil, let counterView = self.counterView {
-        if let index = self.children.index(of: counterView) {
-          _ = self.children.remove(at: index)
-        }
-        self.counterView = nil
+      let toggleButton = Button()
+      toggleButton.content = "Toggle"
+      toggleButton.click.addHandler { [store] _, _ in
+        store.send(.toggleButtonTapped)
       }
+      self.children.append(toggleButton)
+      let token = observe { [weak self] in
+        guard let self else { return }
+
+        if let counter = store.scope(state: \.destination, action: \.destination.presented),
+            counterView == nil {
+          self.counterView = CounterView(store: counter)
+          self.children.append(self.counterView!)
+        } else if store.destination == nil, let counterView = self.counterView {
+          if let index = self.children.index(of: counterView) {
+            _ = self.children.remove(at: index)
+          }
+          self.counterView = nil
+        }
+      }
+      observables.append(token)
     }
-    observables.append(token)
   }
 }
