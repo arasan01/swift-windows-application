@@ -27,17 +27,18 @@ public class PreviewApp: SwiftApplication {
         window.title = "WinUI3AnimationsPreview"
 
         try! window.activate()
-        let counterStore = Store(
-            initialState: Counter.State(),
-            reducer: { Counter() }
+        let navigationView = NavigationView(
+            store: Store(
+                initialState: Navigation.State(),
+                reducer: { Navigation() }
+            )
         )
-        let counterView = CounterView(store: counterStore)
         let panel = StackPanel()
         panel.orientation = .vertical
         panel.spacing = 10
         panel.horizontalAlignment = .center
         panel.verticalAlignment = .center
-        panel.children.append(counterView)
+        panel.children.append(navigationView)
         window.content = panel
     }
 }
