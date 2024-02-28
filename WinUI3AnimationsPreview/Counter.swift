@@ -42,29 +42,33 @@ final class CounterView: WinUI.StackPanel {
     self.horizontalAlignment = .center
     self.verticalAlignment = .center
 
-    let decrementButton = Button()
-    decrementButton.content = "-1"
-    decrementButton.click.addHandler { [store] _, _ in
-      store.send(.decrementButtonTapped)
-    }
-    let incrementButton = Button()
-    incrementButton.content = "+1"
-    incrementButton.click.addHandler { [store] _, _ in
-      store.send(.incrementButtonTapped)
-    }
+    self.loaded.addHandler { [weak self] sender, args in
+      guard let self = self else { return }
+      let decrementButton = Button()
+      decrementButton.content = "-1"
+      decrementButton.click.addHandler { [store] _, _ in
+        store.send(.decrementButtonTapped)
+      }
+      let incrementButton = Button()
+      incrementButton.content = "+1"
+      incrementButton.click.addHandler { [store] _, _ in
+        store.send(.incrementButtonTapped)
+      }
 
-    let countTextBlock = TextBlock()
-    countTextBlock.text = "0"
-    countTextBlock.fontSize = 24
+      let countTextBlock = TextBlock()
+      countTextBlock.text = "0"
+      countTextBlock.fontSize = 24
 
-    self.children.append(decrementButton)
-    self.children.append(countTextBlock)
-    self.children.append(incrementButton)
+      self.children.append(decrementButton)
+      self.children.append(countTextBlock)
+      self.children.append(incrementButton)
 
-    let token = observe {
-      countTextBlock.text = "\(store.count)"
+      let token = observe { [weak self] in
+        guard let self else { return }
+        countTextBlock.text = "\(store.count)"
+      }
+      observables.append(token)
     }
-    observables.append(token)
   }
 
   deinit {
