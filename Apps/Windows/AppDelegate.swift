@@ -2,7 +2,7 @@ import Foundation
 import WinAppSDK
 import WindowsFoundation
 import WinUI
-import ComposableArchitecture
+import Born
 
 @main
 public class PreviewApp: SwiftApplication {
