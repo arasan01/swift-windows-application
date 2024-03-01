@@ -18,8 +18,8 @@ let package = Package(
         .package(url: "https://github.com/thebrowsercompany/swift-windowsappsdk", branch: "main"),
         .package(url: "https://github.com/thebrowsercompany/swift-windowsfoundation", branch: "main"),
         .package(url: "https://github.com/thebrowsercompany/swift-winui", branch: "main"),
-        .package(url: "https://github.com/arasan01/swift-composable-architecture", branch: "windows/1.8.2")
-        // .package(url: "https://github.com/arasan01/GRDB.swift", branch: "master")
+        .package(url: "https://github.com/arasan01/swift-composable-architecture", revision: "2483c0eef69da9375d562b96b8ae2058038679b1"),
+        .package(url: "https://github.com/arasan01/GRDB.swift", revision: "584d867eb22d35d0746302be5d43d34fed3a895b")
     ],
     targets: [
         .executableTarget(
@@ -28,8 +28,8 @@ let package = Package(
                 .product(name: "WinUI", package: "swift-winui"),
                 .product(name: "WinAppSDK", package: "swift-windowsappsdk"),
                 .product(name: "WindowsFoundation", package: "swift-windowsfoundation"),
-                .product(name: "ComposableArchitecture", package: "swift-composable-architecture")
-                // .product(name: "GRDB", package: "GRDB.swift")
+                .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
+                .product(name: "GRDB", package: "GRDB.swift")
             ],
             path:"WinUI3AnimationsPreview",
             linkerSettings: GUILinkerSettings
