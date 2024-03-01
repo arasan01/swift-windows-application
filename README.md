@@ -21,15 +21,15 @@ Change to the Nightly tool chain. Install latest Swift SDK from [thebrowsercompa
 
 Make sure to have the appropriate version of the Windows App Runtime installed as mentioned [here](https://github.com/thebrowsercompany/swift-windowsappsdk?tab=readme-ov-file#using-windows-app-sdk)
 
-Let's set up a SQLite3 environment to use GRDB.swift. Get SQLite3 from [vcpkg](https://github.com/arasan01/vcpkg?tab=readme-ov-file#quick-start-windows).
+Let's set up a SQLite3 environment to use GRDB.swift. Get SQLite3 from [arasan01/vcpkg](https://github.com/arasan01/vcpkg?tab=readme-ov-file#quick-start-windows). Some build flags are missing in the official version, so they are Forked and added
 
 ```
 $ vcpkg integrate install
-$ vcpkg install sqlite3
+$ vcpkg install sqlite3[fts5,snapshot]
 $ winget install -e --id bloodrock.pkg-config-lite
 ```
 
-Let's go through PATH.
+Let's set the PATH
 
 ```
 PKG_CONFIG_PATH=C:\vcpkg\installed\x64-windows\lib\pkgconfig
