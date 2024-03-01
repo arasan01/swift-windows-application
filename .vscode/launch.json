@@ -8,8 +8,9 @@
       ],
       "args": [],
       "cwd": "${workspaceFolder:windows-samples}",
-      "name": "Debug WinUI3AnimationsPreview",
-      "program": "${workspaceFolder:windows-samples}\\.build\\debug\\WinUI3AnimationsPreview.exe"
+      "name": "Debug WindowsApp",
+      "program": "${workspaceFolder:windows-samples}\\.build\\debug\\WindowsApp.exe",
+      "preLaunchTask": "swift: Build Debug WindowsApp"
     },
     {
       "type": "lldb",
@@ -19,8 +20,9 @@
       ],
       "args": [],
       "cwd": "${workspaceFolder:windows-samples}",
-      "name": "Release WinUI3AnimationsPreview",
-      "program": "${workspaceFolder:windows-samples}\\.build\\release\\WinUI3AnimationsPreview.exe"
+      "name": "Release WindowsApp",
+      "program": "${workspaceFolder:windows-samples}\\.build\\release\\WindowsApp.exe",
+      "preLaunchTask": "swift: Build Release WindowsApp"
     }
   ]
 }

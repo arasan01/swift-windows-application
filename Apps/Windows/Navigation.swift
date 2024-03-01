@@ -2,37 +2,7 @@ import Foundation
 import WindowsFoundation
 import WinAppSDK
 import WinUI
-import ComposableArchitecture
-
-@Reducer
-struct Navigation: Reducer {
-  @ObservableState
-  struct State: Equatable {
-    @Presents var destination: Counter.State?
-  }
-
-  enum Action {
-    case destination(PresentationAction<Counter.Action>)
-    case toggleButtonTapped
-  }
-
-  var body: some ReducerOf<Self> {
-    Reduce<State, Action> { state, action in
-      switch action {
-      case .toggleButtonTapped:
-        state.destination = state.destination == nil ? Counter.State() : nil
-        return .none
-
-      case .destination(let presentedAction):
-        print(presentedAction)
-        return .none
-      }
-    }
-    .ifLet(\.$destination, action: \.destination) {
-      Counter()
-    }
-  }
-}
+import Born
 
 final class NavigationView: WinUI.StackPanel {
   let store: StoreOf<Navigation>
