@@ -1,4 +1,4 @@
-// swift-tools-version: 5.10
+// swift-tools-version: 5.9
 
 import PackageDescription
 
@@ -8,7 +8,7 @@ let package = Package(
         .library(name: "Born", targets: ["Born"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/arasan01/swift-composable-architecture", revision: "3a7b1cdfb1c4d8d8ca6fb5d58dc907a6fcd42420"),
+        .package(url: "https://github.com/arasan01/swift-composable-architecture", revision: "adfa61b02b833c1ab2dccbc6badef909639cedc3"),
         .package(url: "https://github.com/arasan01/GRDB.swift", revision: "584d867eb22d35d0746302be5d43d34fed3a895b")
     ],
     targets: [
