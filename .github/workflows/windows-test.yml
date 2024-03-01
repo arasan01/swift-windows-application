@@ -1,0 +1,19 @@
+name: Windows Test
+
+on: [pull_request]
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: compnerd/gha-setup-swift@main
+        with:
+          release-tag-name: "20240301.2"
+          github-repo: thebrowsercompany/swift-build
+          release-asset-name: installer-amd64.exe
+
+      - uses: actions/checkout@v4
+      - name: Build
+        run: swift build
+      - name: Run tests
+        run: swift test

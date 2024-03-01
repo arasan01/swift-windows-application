@@ -1,0 +1,16 @@
+name: macOS Test
+
+on: [pull_request]
+
+jobs:
+  windows:
+    runs-on: macos-latest
+    steps:
+      - uses: swift-actions/setup-swift@65540b95f51493d65f5e59e97dcef9629ddf11bf
+        with:
+          swift-version: "5.10"
+      - uses: actions/checkout@v4
+      - name: Build
+        run: swift build
+      - name: Run tests
+        run: swift test
