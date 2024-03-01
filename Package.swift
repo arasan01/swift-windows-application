@@ -90,7 +90,7 @@ let targets: [Target] = [
         dependencies: [
             "Born"
         ],
-        path: "Apps/Apple"
+        path: "Apps/Apple/Lib"
     )
 ]
 
