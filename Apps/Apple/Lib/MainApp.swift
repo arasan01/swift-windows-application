@@ -1,19 +1,13 @@
 import SwiftUI
 import Born
 
-public struct MainApp: App {
-    public var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
-}
+public struct ContentView: View {
+    @State var store = Store(initialState: Counter.State(), reducer: { Counter() })
+    
+    public init() {}
 
-struct ContentView: View {
-    let store = Store(initialState: Counter(), reducer: { Counter() })
-
-    var body: some View {
-        VStack {
+    public var body: some View {
+        HStack {
             Button(action: {
                 store.send(.decrementButtonTapped)
             }) {
