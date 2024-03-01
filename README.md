@@ -1,6 +1,8 @@
-# Swift on Windows Samples Apps
+# Swift on Windows Samples Apps by arasan01
 
 Sample apps for Swift on Windows, showcasing how to build Windows Apps using the [Windows App SDK](https://github.com/microsoft/windowsappsdk) through the [Swift/WinRT](https://github.com/thebrowsercompany/swift-winrt) language projection.
+
+It discloses how to standardize code on iOS, macOS, and Windows, and how to use TCA and GRDB.swift in a multi-platform environment.
 
 ## Setup
 
@@ -8,7 +10,7 @@ Sample apps for Swift on Windows, showcasing how to build Windows Apps using the
 1. Install latest Swift SDK from [thebrowsercompany/swift-build](https://github.com/thebrowsercompany/swift-build/releases)
 2. Visual Studio Community with C++ build tools
 3. Make sure to have the appropriate version of the Windows App Runtime installed as mentioned [here](https://github.com/thebrowsercompany/swift-windowsappsdk?tab=readme-ov-file#using-windows-app-sdk)
- 
+
 ### VSCode
 
 VSCode is the editor of choice for developing Windows apps on Swift. You can install it from https://code.visualstudio.com/download.
