@@ -8,7 +8,7 @@ let package = Package(
         .library(name: "Born", targets: ["Born"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/arasan01/swift-composable-architecture", revision: "2483c0eef69da9375d562b96b8ae2058038679b1"),
+        .package(url: "https://github.com/arasan01/swift-composable-architecture", revision: "3a7b1cdfb1c4d8d8ca6fb5d58dc907a6fcd42420"),
         .package(url: "https://github.com/arasan01/GRDB.swift", revision: "584d867eb22d35d0746302be5d43d34fed3a895b")
     ],
     targets: [
