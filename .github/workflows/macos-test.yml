@@ -1,0 +1,14 @@
+name: macOS Test
+
+on: [pull_request]
+
+jobs:
+  macOS:
+    runs-on: macos-latest
+    steps:
+      - uses: swift-actions/setup-swift@v1
+      - uses: actions/checkout@v4
+      - name: Build
+        run: swift build
+      - name: Run tests
+        run: swift test
