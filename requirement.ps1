@@ -1,7 +1,5 @@
 cd C:\
 
-# check if winget is installed
-
 if (-not (Get-Command winget -ErrorAction SilentlyContinue)) {
   $progressPreference = 'silentlyContinue'
   Write-Information "Downloading WinGet and its dependencies..."
@@ -21,11 +19,13 @@ winget install --id Kitware.CMake -e
 winget install --id Ninja-build.Ninja -e
 winget install --id bloodrock.pkg-config-lite -e
 
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine")
+
 git clone https://github.com/arasan01/vcpkg.git
 .\vcpkg\bootstrap-vcpkg.bat
-.\vcpkg\vcpkg install sqlite3[fts5,snapshot]
+.\vcpkg\vcpkg install sqlite3[dbstat,fts3,fts4,fts5,geopoly,json1,limit,math,memsys3,memsys5,omit-load-extension,rtree,session,snapshot,soundex,tool,zlib]
+.\vcpkg\vcpkg install sqlcipher[fts5,geopoly,json1,tool]
 .\vcpkg\vcpkg integrate install
 
-[System.Environment]::SetEnvironmentVariable('PKG_CONFIG_PATH', 'C:\vcpkg\installed\x64-windows\lib\pkgconfig', [System.EnvironmentVariableTarget]::User)
-[System.Environment]::SetEnvironmentVariable('PATH', "$env:PATH;C:\vcpkg\installed\x64-windows\bin", [System.EnvironmentVariableTarget]::User)
-
+[System.Environment]::SetEnvironmentVariable('PKG_CONFIG_PATH', 'C:\vcpkg\installed\x64-windows\lib\pkgconfig\', [System.EnvironmentVariableTarget]::Machine)
+[System.Environment]::SetEnvironmentVariable('PATH', "$env:PATH;C:\vcpkg\installed\x64-windows\bin\;$env:USERPROFILE\AppData\Local\Programs\Python\Python39\ ", [System.EnvironmentVariableTarget]::Machine)

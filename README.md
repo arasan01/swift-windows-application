@@ -8,7 +8,7 @@ It discloses how to standardize code on iOS, macOS, and Windows, and how to use 
 
 ### Requirements
 
-Run requirement.ps1.
+Run requirement.ps1. Set powershell policy `Set-ExecutionPolicy Bypass` if can not run script.
 
 **Note that this adds a development environment to the overall system, so be careful if you have already created a development environment. It is not a powerful script.**
 
