@@ -8,33 +8,14 @@ It discloses how to standardize code on iOS, macOS, and Windows, and how to use 
 
 ### Requirements
 
-Let's set up the surrounding environment first.
+Run requirement.ps1.
 
-```
-$ winget install --id Microsoft.VisualStudio.2022.Community --exact --force --custom "--add Microsoft.VisualStudio.Component.Windows11SDK.22621 --add Microsoft.VisualStudio.Component.VC.Tools.x86.x64"
-$ winget install --id Swift.Toolchain -e
-$ winget install --id Kitware.CMake -e
-$ winget install --id Ninja-build.Ninja -e
-```
+**Note that this adds a development environment to the overall system, so be careful if you have already created a development environment. It is not a powerful script.**
 
-Change to the Nightly tool chain. Install latest Swift SDK from [thebrowsercompany/swift-build](https://github.com/thebrowsercompany/swift-build/releases)
+Install latest Swift SDK from [thebrowsercompany/swift-build](https://github.com/thebrowsercompany/swift-build/releases)
 
 Make sure to have the appropriate version of the Windows App Runtime installed as mentioned [here](https://github.com/thebrowsercompany/swift-windowsappsdk?tab=readme-ov-file#using-windows-app-sdk)
 
-Let's set up a SQLite3 environment to use GRDB.swift. Get SQLite3 from [arasan01/vcpkg](https://github.com/arasan01/vcpkg?tab=readme-ov-file#quick-start-windows). Some build flags are missing in the official version, so they are Forked and added
-
-```
-$ vcpkg integrate install
-$ vcpkg install sqlite3[fts5,snapshot]
-$ winget install -e --id bloodrock.pkg-config-lite
-```
-
-Let's set the PATH
-
-```
-PKG_CONFIG_PATH=C:\vcpkg\installed\x64-windows\lib\pkgconfig
-PATH=%PATH%;C:\vcpkg\installed\x64-windows\bin
-```
 
 ### VSCode
 
