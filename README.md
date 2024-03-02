@@ -4,6 +4,16 @@ Sample apps for Swift on Windows, showcasing how to build Windows Apps using the
 
 It discloses how to standardize code on iOS, macOS, and Windows, and how to use TCA and GRDB.swift in a multi-platform environment.
 
+# Technologies included
+
+- [x] How to standardize code on Windows, iOS, and macOS
+- [x] How to set up Swift on Windows easily
+- [x] VSCode settings
+- [x] How to build Windows applications using The Composable Architecture (TCA)
+- [ ] How to use SQLite with GRDB.swift
+- [ ] How to create a Windows application using the demo app included in GRDB.swift
+- [ ] How to build practical image processing apps in collaboration with more external libraries
+
 ## Setup
 
 ### Requirements
