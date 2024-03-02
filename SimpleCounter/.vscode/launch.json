@@ -7,9 +7,9 @@
         "swift"
       ],
       "args": [],
-      "cwd": "${workspaceFolder:windows-samples}",
+      "cwd": "${workspaceFolder:SimpleCounter}",
       "name": "Debug WindowsApp",
-      "program": "${workspaceFolder:windows-samples}\\.build\\debug\\WindowsApp.exe",
+      "program": "${workspaceFolder:SimpleCounter}\\.build\\debug\\WindowsApp.exe",
       "preLaunchTask": "swift: Build Debug WindowsApp"
     },
     {
@@ -19,9 +19,9 @@
         "swift"
       ],
       "args": [],
-      "cwd": "${workspaceFolder:windows-samples}",
+      "cwd": "${workspaceFolder:SimpleCounter}",
       "name": "Release WindowsApp",
-      "program": "${workspaceFolder:windows-samples}\\.build\\release\\WindowsApp.exe",
+      "program": "${workspaceFolder:SimpleCounter}\\.build\\release\\WindowsApp.exe",
       "preLaunchTask": "swift: Build Release WindowsApp"
     }
   ]

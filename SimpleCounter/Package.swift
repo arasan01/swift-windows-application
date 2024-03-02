@@ -44,6 +44,7 @@ let dependencies: [Package.Dependency] = [
     .package(url: "https://github.com/thebrowsercompany/swift-windowsappsdk", branch: "main"),
     .package(url: "https://github.com/thebrowsercompany/swift-windowsfoundation", branch: "main"),
     .package(url: "https://github.com/thebrowsercompany/swift-winui", branch: "main"),
+    .package(url: "https://github.com/thebrowsercompany/swift-webdriver", branch: "main")
 ]
 
 let targets: [Target] = [
@@ -58,6 +59,13 @@ let targets: [Target] = [
         path: "Apps/Windows",
         linkerSettings: GUILinkerSettings
     ),
+    .testTarget(
+        name: "WinUITests",
+        dependencies: [
+            .product(name: "WinAppDriver", package: "swift-webdriver"),
+        ],
+        path: "Apps/WinUITests"
+    )
 ]
 
 package.products.append(contentsOf: products)

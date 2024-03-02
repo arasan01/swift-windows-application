@@ -24,7 +24,7 @@ public class PreviewApp: SwiftApplication {
     /// application and when you can create a window and display UI.s
     override public func onLaunched(_ args: WinUI.LaunchActivatedEventArgs) {
         let window = Window()
-        window.title = "WinUI3AnimationsPreview"
+        window.title = "SimpleCounter"
 
         try! window.activate()
         let navigationView = NavigationView(
