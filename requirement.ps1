@@ -18,6 +18,7 @@ winget install --id Python.Python.3.9 -e
 winget install --id Kitware.CMake -e
 winget install --id Ninja-build.Ninja -e
 winget install --id bloodrock.pkg-config-lite -e
+winget install --id Microsoft.WindowsApplicationDriver -e
 
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine")
 
