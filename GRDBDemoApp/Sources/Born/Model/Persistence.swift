@@ -39,7 +39,7 @@ extension AppDatabase {
             let databaseURL = directoryURL.appendingPathComponent("db.sqlite")
             print("Database stored at \(databaseURL.path)")
             let dbPool = try DatabasePool(
-                path: ".\\db.sqlite",
+                path: "\(databaseURL.path)",
                 // Use default AppDatabase configuration
                 configuration: AppDatabase.makeConfiguration())
 
