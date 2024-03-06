@@ -108,8 +108,8 @@ public struct ListFeature: Reducer {
         case let .destination(.presented(.new(.delegate(.createdPlayer(player))))),
              let .destination(.presented(.edit(.delegate(.updatedPlayer(player))))):
           state.destination = nil
-          var player = player
-          return .run { [appDatabase] send in
+          return .run { [appDatabase, player] send in
+            var player = player
             try await appDatabase.savePlayer(&player)
           }
 

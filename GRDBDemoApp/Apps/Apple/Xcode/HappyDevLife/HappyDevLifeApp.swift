@@ -7,12 +7,18 @@
 
 import SwiftUI
 import AppleApp
+import Born
 
 @main
 struct HappyDevLifeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          ContentView(
+            store: Store(
+              initialState: ListFeature.State(),
+              reducer: { ListFeature()._printChanges() }
+            )
+          )
         }
     }
 }
