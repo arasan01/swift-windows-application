@@ -1,6 +1,11 @@
 // swift-tools-version: 5.9
 
+import Foundation
 import PackageDescription
+
+var swiftSettings: [SwiftSetting] = [
+    .define("SQL_TRACE", .when(configuration: .debug))
+]
 
 let package = Package(
     name: "multiplatform-app",
@@ -8,16 +13,20 @@ let package = Package(
         .library(name: "Born", targets: ["Born"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/arasan01/swift-composable-architecture", revision: "adfa61b02b833c1ab2dccbc6badef909639cedc3"),
-        .package(url: "https://github.com/arasan01/GRDB.swift", revision: "584d867eb22d35d0746302be5d43d34fed3a895b")
+        .package(url: "https://github.com/arasan01/swift-composable-architecture", branch: "windows/1.8.2"),
+        .package(url: "https://github.com/arasan01/GRDB.swift", branch: "master"),
+        .package(url: "https://github.com/apple/swift-log.git", from: "1.0.0")
     ],
     targets: [
         .target(
             name: "Born",
             dependencies: [
                 .product(name: "ComposableArchitecture", package: "swift-composable-architecture"),
-                .product(name: "GRDB", package: "GRDB.swift")
-        ]),
+                .product(name: "GRDB", package: "GRDB.swift"),
+                .product(name: "Logging", package: "swift-log")
+            ],
+            swiftSettings: swiftSettings
+        ),
         .testTarget(
             name: "BornTests",
             dependencies: ["Born"]

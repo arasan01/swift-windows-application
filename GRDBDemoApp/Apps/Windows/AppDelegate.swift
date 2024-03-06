@@ -24,21 +24,18 @@ public class PreviewApp: SwiftApplication {
     /// application and when you can create a window and display UI.s
     override public func onLaunched(_ args: WinUI.LaunchActivatedEventArgs) {
         let window = Window()
-        window.title = "WinUI3AnimationsPreview"
+        window.title = "GRDBDemoApp"
 
         try! window.activate()
-        let navigationView = NavigationView(
+        let listView = ListView(
             store: Store(
-                initialState: Navigation.State(),
-                reducer: { Navigation() }
+                initialState: ListFeature.State(),
+                reducer: { ListFeature()._printChanges() }
             )
         )
-        let panel = StackPanel()
-        panel.orientation = .vertical
-        panel.spacing = 10
-        panel.horizontalAlignment = .center
-        panel.verticalAlignment = .center
-        panel.children.append(navigationView)
+        let panel = ScrollView()
+        panel.content = listView
+        panel.contentOrientation = .vertical
         window.content = panel
     }
 }
