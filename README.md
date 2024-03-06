@@ -10,8 +10,9 @@ It discloses how to standardize code on iOS, macOS, and Windows, and how to use 
 - [x] How to set up Swift on Windows easily
 - [x] VSCode settings
 - [x] How to build Windows applications using The Composable Architecture (TCA)
-- [ ] How to use SQLite with GRDB.swift
-- [ ] How to create a Windows application using the demo app included in GRDB.swift
+- [x] How to use SQLite with GRDB.swift
+- [x] How to create a Windows application using the demo app included in GRDB.swift
+- [ ] How to app that [microsoft's official tutorial](https://blogs.windows.com/windowsdeveloper/2022/01/28/build-your-first-winui-3-app-part-1/)
 - [ ] How to build practical image processing apps in collaboration with more external libraries
 
 ## Setup
