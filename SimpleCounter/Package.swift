@@ -1,6 +1,7 @@
-// swift-tools-version: 5.9
+// swift-tools-version: 6.0
 
 import PackageDescription
+import Foundation
 
 let package = Package(
     name: "multiplatform-app",
@@ -41,10 +42,9 @@ let products: [Product] = [
 ]
 
 let dependencies: [Package.Dependency] = [
-    .package(url: "https://github.com/thebrowsercompany/swift-windowsappsdk", branch: "main"),
-    .package(url: "https://github.com/thebrowsercompany/swift-windowsfoundation", branch: "main"),
-    .package(url: "https://github.com/thebrowsercompany/swift-winui", branch: "main"),
-    .package(url: "https://github.com/thebrowsercompany/swift-webdriver", branch: "main")
+    .package(url: "https://github.com/arasan01/winsrton", branch: "main"),
+    .package(url: "https://github.com/thebrowsercompany/swift-webdriver", branch: "main"),
+    .package(path: "WinRTProjections")
 ]
 
 let targets: [Target] = [
@@ -52,9 +52,9 @@ let targets: [Target] = [
         name: "WindowsApp",
         dependencies: [
             "Born",
-            .product(name: "WinUI", package: "swift-winui"),
-            .product(name: "WinAppSDK", package: "swift-windowsappsdk"),
-            .product(name: "WindowsFoundation", package: "swift-windowsfoundation"),
+            .product(name: "WinUI", package: "WinRTProjections"),
+            .product(name: "WinAppSDK", package: "WinRTProjections"),
+            .product(name: "WindowsFoundation", package: "WinRTProjections"),
         ],
         path: "Apps/Windows",
         linkerSettings: GUILinkerSettings

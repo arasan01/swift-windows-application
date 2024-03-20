@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": [
+        "swift"
+      ],
+      "args": [],
+      "cwd": "${workspaceFolder:swift-windows-application}\\GRDBDemoApp",
+      "name": "Debug WindowsApp (GRDBDemoApp)",
+      "program": "${workspaceFolder:swift-windows-application}\\GRDBDemoApp\\.build\\debug\\WindowsApp.exe",
+      "preLaunchTask": "swift: Build Debug WindowsApp (GRDBDemoApp)"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "sourceLanguages": [
+        "swift"
+      ],
+      "args": [],
+      "cwd": "${workspaceFolder:swift-windows-application}\\GRDBDemoApp",
+      "name": "Release WindowsApp (GRDBDemoApp)",
+      "program": "${workspaceFolder:swift-windows-application}\\GRDBDemoApp\\.build\\release\\WindowsApp.exe",
+      "preLaunchTask": "swift: Build Release WindowsApp (GRDBDemoApp)"
+    }
+  ]
+}

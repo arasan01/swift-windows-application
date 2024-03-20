@@ -1,0 +1,18 @@
+<file name="Microsoft.Graphics.Canvas.dll">
+  <activatableClass
+      name="Microsoft.Graphics.Canvas.CanvasBitmap"
+      threadingModel="both"
+      xmlns="urn:schemas-microsoft-com:winrt.v1" />
+  <activatableClass
+      name="Microsoft.Graphics.Canvas.CanvasDevice"
+      threadingModel="both"
+      xmlns="urn:schemas-microsoft-com:winrt.v1" />
+  <activatableClass
+      name="Microsoft.Graphics.Canvas.CanvasRenderTarget"
+      threadingModel="both"
+      xmlns="urn:schemas-microsoft-com:winrt.v1" />
+  <activatableClass
+      name="Microsoft.Graphics.Canvas.Geometry.CanvasGeometry"
+      threadingModel="both"
+      xmlns="urn:schemas-microsoft-com:winrt.v1" />
+</file>

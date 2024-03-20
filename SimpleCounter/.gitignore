@@ -11,3 +11,7 @@ build
 *.build
 *.nupkg
 Package.resolved
+.build/
+.generated/
+.packages/
+swift-winrt.rsp
