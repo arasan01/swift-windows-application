@@ -14,12 +14,12 @@ let linkerSettings: [LinkerSetting] = [
 let package = Package(
   name: "WinRTProjections",
   products: [
-    .library(name: "WinUI", targets: ["WinUI"]),
-    .library(name: "WindowsFoundation", targets: ["WindowsFoundation"]),
-    .library(name: "WinAppSDK", targets: ["WinAppSDK"]),
-    .library(name: "Win2D", targets: ["Win2D"]),
-    .library(name: "UWP", targets: ["UWP"]),
-    .library(name: "CWinRT", targets: ["CWinRT"]),
+    .library(name: "WinUI", type: .dynamic, targets: ["WinUI"]),
+    .library(name: "WindowsFoundation", type: .dynamic, targets: ["WindowsFoundation"]),
+    .library(name: "WinAppSDK", type: .dynamic, targets: ["WinAppSDK"]),
+    .library(name: "Win2D", type: .dynamic, targets: ["Win2D"]),
+    .library(name: "UWP", type: .dynamic, targets: ["UWP"]),
+    .library(name: "CWinRT", type: .dynamic, targets: ["CWinRT"]),
     .library(name: "CWinAppSDK", targets: ["CWinAppSDK"])
   ],
   targets: [
