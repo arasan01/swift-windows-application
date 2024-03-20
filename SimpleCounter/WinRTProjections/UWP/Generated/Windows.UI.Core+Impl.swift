@@ -43,6 +43,345 @@ public enum __IMPL_Windows_UI_Core {
 
     }
 
+    public enum ICoreInputSourceBaseBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CUI_CCore_CICoreInputSourceBase
+        public typealias SwiftABI = __ABI_Windows_UI_Core.ICoreInputSourceBase
+        public typealias SwiftProjection = AnyICoreInputSourceBase
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return ICoreInputSourceBaseImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_UI_Core.ICoreInputSourceBaseVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class ICoreInputSourceBaseImpl: ICoreInputSourceBase, WinRTAbiImpl {
+        fileprivate typealias Bridge = ICoreInputSourceBaseBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.icoreinputsourcebase.dispatcher)
+        fileprivate var dispatcher : CoreDispatcher! {
+            get { try! _default.get_DispatcherImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.icoreinputsourcebase.isinputenabled)
+        fileprivate var isInputEnabled : Bool {
+            get { try! _default.get_IsInputEnabledImpl() }
+            set { try! _default.put_IsInputEnabledImpl(newValue) }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.icoreinputsourcebase.inputenabled)
+        fileprivate lazy var inputEnabled : Event<TypedEventHandler<Any?, InputEnabledEventArgs?>> = {
+          .init(
+            add: { [weak self] in
+              guard let this = self?._default else { return .init() }
+              return try! this.add_InputEnabledImpl($0)
+            },
+            remove: { [weak self] in
+             try? self?._default.remove_InputEnabledImpl($0)
+           }
+          )
+        }()
+
+    }
+
+    public enum ICorePointerInputSourceBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CUI_CCore_CICorePointerInputSource
+        public typealias SwiftABI = __ABI_Windows_UI_Core.ICorePointerInputSource
+        public typealias SwiftProjection = AnyICorePointerInputSource
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return ICorePointerInputSourceImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_UI_Core.ICorePointerInputSourceVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class ICorePointerInputSourceImpl: ICorePointerInputSource, WinRTAbiImpl {
+        fileprivate typealias Bridge = ICorePointerInputSourceBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.icorepointerinputsource.releasepointercapture)
+        fileprivate func releasePointerCapture() throws {
+            try _default.ReleasePointerCaptureImpl()
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.icorepointerinputsource.setpointercapture)
+        fileprivate func setPointerCapture() throws {
+            try _default.SetPointerCaptureImpl()
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.icorepointerinputsource.hascapture)
+        fileprivate var hasCapture : Bool {
+            get { try! _default.get_HasCaptureImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.icorepointerinputsource.pointercursor)
+        fileprivate var pointerCursor : CoreCursor! {
+            get { try! _default.get_PointerCursorImpl() }
+            set { try! _default.put_PointerCursorImpl(newValue) }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.icorepointerinputsource.pointerposition)
+        fileprivate var pointerPosition : WindowsFoundation.Point {
+            get { try! _default.get_PointerPositionImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.icorepointerinputsource.pointercapturelost)
+        fileprivate lazy var pointerCaptureLost : Event<TypedEventHandler<Any?, PointerEventArgs?>> = {
+          .init(
+            add: { [weak self] in
+              guard let this = self?._default else { return .init() }
+              return try! this.add_PointerCaptureLostImpl($0)
+            },
+            remove: { [weak self] in
+             try? self?._default.remove_PointerCaptureLostImpl($0)
+           }
+          )
+        }()
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.icorepointerinputsource.pointerentered)
+        fileprivate lazy var pointerEntered : Event<TypedEventHandler<Any?, PointerEventArgs?>> = {
+          .init(
+            add: { [weak self] in
+              guard let this = self?._default else { return .init() }
+              return try! this.add_PointerEnteredImpl($0)
+            },
+            remove: { [weak self] in
+             try? self?._default.remove_PointerEnteredImpl($0)
+           }
+          )
+        }()
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.icorepointerinputsource.pointerexited)
+        fileprivate lazy var pointerExited : Event<TypedEventHandler<Any?, PointerEventArgs?>> = {
+          .init(
+            add: { [weak self] in
+              guard let this = self?._default else { return .init() }
+              return try! this.add_PointerExitedImpl($0)
+            },
+            remove: { [weak self] in
+             try? self?._default.remove_PointerExitedImpl($0)
+           }
+          )
+        }()
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.icorepointerinputsource.pointermoved)
+        fileprivate lazy var pointerMoved : Event<TypedEventHandler<Any?, PointerEventArgs?>> = {
+          .init(
+            add: { [weak self] in
+              guard let this = self?._default else { return .init() }
+              return try! this.add_PointerMovedImpl($0)
+            },
+            remove: { [weak self] in
+             try? self?._default.remove_PointerMovedImpl($0)
+           }
+          )
+        }()
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.icorepointerinputsource.pointerpressed)
+        fileprivate lazy var pointerPressed : Event<TypedEventHandler<Any?, PointerEventArgs?>> = {
+          .init(
+            add: { [weak self] in
+              guard let this = self?._default else { return .init() }
+              return try! this.add_PointerPressedImpl($0)
+            },
+            remove: { [weak self] in
+             try? self?._default.remove_PointerPressedImpl($0)
+           }
+          )
+        }()
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.icorepointerinputsource.pointerreleased)
+        fileprivate lazy var pointerReleased : Event<TypedEventHandler<Any?, PointerEventArgs?>> = {
+          .init(
+            add: { [weak self] in
+              guard let this = self?._default else { return .init() }
+              return try! this.add_PointerReleasedImpl($0)
+            },
+            remove: { [weak self] in
+             try? self?._default.remove_PointerReleasedImpl($0)
+           }
+          )
+        }()
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.icorepointerinputsource.pointerwheelchanged)
+        fileprivate lazy var pointerWheelChanged : Event<TypedEventHandler<Any?, PointerEventArgs?>> = {
+          .init(
+            add: { [weak self] in
+              guard let this = self?._default else { return .init() }
+              return try! this.add_PointerWheelChangedImpl($0)
+            },
+            remove: { [weak self] in
+             try? self?._default.remove_PointerWheelChangedImpl($0)
+           }
+          )
+        }()
+
+    }
+
+    public enum ICorePointerInputSource2Bridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CUI_CCore_CICorePointerInputSource2
+        public typealias SwiftABI = __ABI_Windows_UI_Core.ICorePointerInputSource2
+        public typealias SwiftProjection = AnyICorePointerInputSource2
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return ICorePointerInputSource2Impl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_UI_Core.ICorePointerInputSource2VTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class ICorePointerInputSource2Impl: ICorePointerInputSource2, WinRTAbiImpl {
+        fileprivate typealias Bridge = ICorePointerInputSource2Bridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.icorepointerinputsource2.dispatcherqueue)
+        fileprivate var dispatcherQueue : UWP.DispatcherQueue! {
+            get { try! _default.get_DispatcherQueueImpl() }
+        }
+
+        private lazy var _ICorePointerInputSource: __ABI_Windows_UI_Core.ICorePointerInputSource! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.icorepointerinputsource2.releasepointercapture)
+        fileprivate func releasePointerCapture() throws {
+            try _ICorePointerInputSource.ReleasePointerCaptureImpl()
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.icorepointerinputsource2.setpointercapture)
+        fileprivate func setPointerCapture() throws {
+            try _ICorePointerInputSource.SetPointerCaptureImpl()
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.icorepointerinputsource2.hascapture)
+        fileprivate var hasCapture : Bool {
+            get { try! _ICorePointerInputSource.get_HasCaptureImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.icorepointerinputsource2.pointercursor)
+        fileprivate var pointerCursor : CoreCursor! {
+            get { try! _ICorePointerInputSource.get_PointerCursorImpl() }
+            set { try! _ICorePointerInputSource.put_PointerCursorImpl(newValue) }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.icorepointerinputsource2.pointerposition)
+        fileprivate var pointerPosition : WindowsFoundation.Point {
+            get { try! _ICorePointerInputSource.get_PointerPositionImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.icorepointerinputsource2.pointercapturelost)
+        fileprivate lazy var pointerCaptureLost : Event<TypedEventHandler<Any?, PointerEventArgs?>> = {
+          .init(
+            add: { [weak self] in
+              guard let this = self?._ICorePointerInputSource else { return .init() }
+              return try! this.add_PointerCaptureLostImpl($0)
+            },
+            remove: { [weak self] in
+             try? self?._ICorePointerInputSource.remove_PointerCaptureLostImpl($0)
+           }
+          )
+        }()
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.icorepointerinputsource2.pointerentered)
+        fileprivate lazy var pointerEntered : Event<TypedEventHandler<Any?, PointerEventArgs?>> = {
+          .init(
+            add: { [weak self] in
+              guard let this = self?._ICorePointerInputSource else { return .init() }
+              return try! this.add_PointerEnteredImpl($0)
+            },
+            remove: { [weak self] in
+             try? self?._ICorePointerInputSource.remove_PointerEnteredImpl($0)
+           }
+          )
+        }()
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.icorepointerinputsource2.pointerexited)
+        fileprivate lazy var pointerExited : Event<TypedEventHandler<Any?, PointerEventArgs?>> = {
+          .init(
+            add: { [weak self] in
+              guard let this = self?._ICorePointerInputSource else { return .init() }
+              return try! this.add_PointerExitedImpl($0)
+            },
+            remove: { [weak self] in
+             try? self?._ICorePointerInputSource.remove_PointerExitedImpl($0)
+           }
+          )
+        }()
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.icorepointerinputsource2.pointermoved)
+        fileprivate lazy var pointerMoved : Event<TypedEventHandler<Any?, PointerEventArgs?>> = {
+          .init(
+            add: { [weak self] in
+              guard let this = self?._ICorePointerInputSource else { return .init() }
+              return try! this.add_PointerMovedImpl($0)
+            },
+            remove: { [weak self] in
+             try? self?._ICorePointerInputSource.remove_PointerMovedImpl($0)
+           }
+          )
+        }()
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.icorepointerinputsource2.pointerpressed)
+        fileprivate lazy var pointerPressed : Event<TypedEventHandler<Any?, PointerEventArgs?>> = {
+          .init(
+            add: { [weak self] in
+              guard let this = self?._ICorePointerInputSource else { return .init() }
+              return try! this.add_PointerPressedImpl($0)
+            },
+            remove: { [weak self] in
+             try? self?._ICorePointerInputSource.remove_PointerPressedImpl($0)
+           }
+          )
+        }()
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.icorepointerinputsource2.pointerreleased)
+        fileprivate lazy var pointerReleased : Event<TypedEventHandler<Any?, PointerEventArgs?>> = {
+          .init(
+            add: { [weak self] in
+              guard let this = self?._ICorePointerInputSource else { return .init() }
+              return try! this.add_PointerReleasedImpl($0)
+            },
+            remove: { [weak self] in
+             try? self?._ICorePointerInputSource.remove_PointerReleasedImpl($0)
+           }
+          )
+        }()
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.icorepointerinputsource2.pointerwheelchanged)
+        fileprivate lazy var pointerWheelChanged : Event<TypedEventHandler<Any?, PointerEventArgs?>> = {
+          .init(
+            add: { [weak self] in
+              guard let this = self?._ICorePointerInputSource else { return .init() }
+              return try! this.add_PointerWheelChangedImpl($0)
+            },
+            remove: { [weak self] in
+             try? self?._ICorePointerInputSource.remove_PointerWheelChangedImpl($0)
+           }
+          )
+        }()
+
+    }
+
     public enum ICorePointerRedirectorBridge : AbiInterfaceBridge {
         public typealias CABI = __x_ABI_CWindows_CUI_CCore_CICorePointerRedirector
         public typealias SwiftABI = __ABI_Windows_UI_Core.ICorePointerRedirector
@@ -458,6 +797,36 @@ public enum __IMPL_Windows_UI_Core {
         fileprivate var handled : Bool {
             get { try! _default.get_HandledImpl() }
             set { try! _default.put_HandledImpl(newValue) }
+        }
+
+    }
+
+    public enum IInitializeWithCoreWindowBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CUI_CCore_CIInitializeWithCoreWindow
+        public typealias SwiftABI = __ABI_Windows_UI_Core.IInitializeWithCoreWindow
+        public typealias SwiftProjection = AnyIInitializeWithCoreWindow
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IInitializeWithCoreWindowImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_UI_Core.IInitializeWithCoreWindowVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IInitializeWithCoreWindowImpl: IInitializeWithCoreWindow, WinRTAbiImpl {
+        fileprivate typealias Bridge = IInitializeWithCoreWindowBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.core.iinitializewithcorewindow.initialize)
+        fileprivate func initialize(_ window: CoreWindow!) throws {
+            try _default.InitializeImpl(window)
         }
 
     }

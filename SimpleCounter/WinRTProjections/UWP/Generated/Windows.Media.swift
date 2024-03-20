@@ -1077,6 +1077,24 @@ public struct MediaTimeRange: Hashable, Codable {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.imediaextension)
+public protocol IMediaExtension : WinRTInterface {
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.imediaextension.setproperties)
+    func setProperties(_ configuration: WindowsFoundation.AnyIPropertySet!) throws
+}
+
+extension IMediaExtension {
+    public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        switch iid {
+            case __ABI_Windows_Media.IMediaExtensionWrapper.IID:
+                let wrapper = __ABI_Windows_Media.IMediaExtensionWrapper(self)
+                return wrapper!.queryInterface(iid)
+            default: return nil
+        }
+    }
+}
+public typealias AnyIMediaExtension = any IMediaExtension
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.imediaframe)
 public protocol IMediaFrame : WindowsFoundation.IClosable {
     /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.imediaframe.duration)

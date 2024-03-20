@@ -40,4 +40,39 @@ public enum __IMPL_Windows_Media_Effects {
 
     }
 
+    public enum IVideoEffectDefinitionBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CMedia_CEffects_CIVideoEffectDefinition
+        public typealias SwiftABI = __ABI_Windows_Media_Effects.IVideoEffectDefinition
+        public typealias SwiftProjection = AnyIVideoEffectDefinition
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IVideoEffectDefinitionImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_Media_Effects.IVideoEffectDefinitionVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IVideoEffectDefinitionImpl: IVideoEffectDefinition, WinRTAbiImpl {
+        fileprivate typealias Bridge = IVideoEffectDefinitionBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.effects.ivideoeffectdefinition.activatableclassid)
+        fileprivate var activatableClassId : String {
+            get { try! _default.get_ActivatableClassIdImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.effects.ivideoeffectdefinition.properties)
+        fileprivate var properties : WindowsFoundation.AnyIPropertySet! {
+            get { try! _default.get_PropertiesImpl() }
+        }
+
+    }
+
 }

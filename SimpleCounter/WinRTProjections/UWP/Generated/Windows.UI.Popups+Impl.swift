@@ -5,4 +5,61 @@ import Foundation
 import CWinRT
 
 public enum __IMPL_Windows_UI_Popups {
+    public enum IUICommandBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CUI_CPopups_CIUICommand
+        public typealias SwiftABI = __ABI_Windows_UI_Popups.IUICommand
+        public typealias SwiftProjection = AnyIUICommand
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IUICommandImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_UI_Popups.IUICommandVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IUICommandImpl: IUICommand, WinRTAbiImpl {
+        fileprivate typealias Bridge = IUICommandBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.popups.iuicommand.id)
+        fileprivate var id : Any! {
+            get { try! _default.get_IdImpl() }
+            set { try! _default.put_IdImpl(newValue) }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.popups.iuicommand.invoked)
+        fileprivate var invoked : UICommandInvokedHandler! {
+            get { try! _default.get_InvokedImpl() }
+            set { try! _default.put_InvokedImpl(newValue) }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.popups.iuicommand.label)
+        fileprivate var label : String {
+            get { try! _default.get_LabelImpl() }
+            set { try! _default.put_LabelImpl(newValue) }
+        }
+
+    }
+
+    public class UICommandInvokedHandlerBridge : WinRTDelegateBridge {
+        public typealias Handler = UICommandInvokedHandler
+        public typealias CABI = __x_ABI_CWindows_CUI_CPopups_CIUICommandInvokedHandler
+        public typealias SwiftABI = __ABI_Windows_UI_Popups.UICommandInvokedHandler
+
+        public static func from(abi: ComPtr<CABI>?) -> Handler? {
+            guard let abi = abi else { return nil }
+            let _default = SwiftABI(abi)
+            let handler: Handler = { (command) in
+                try! _default.InvokeImpl(command)
+            }
+            return handler
+        }
+    }
 }

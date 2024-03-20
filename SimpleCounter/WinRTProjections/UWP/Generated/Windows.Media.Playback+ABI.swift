@@ -4,6 +4,10 @@ import Foundation
 @_spi(WinRTInternal) @_spi(WinRTImplements) import WindowsFoundation
 import CWinRT
 
+private var IID___x_ABI_CWindows_CMedia_CPlayback_CIBackgroundMediaPlayerStatics: WindowsFoundation.IID {
+    .init(Data1: 0x856DDBC1, Data2: 0x55F7, Data3: 0x471F, Data4: ( 0xA0,0xF2,0x68,0xAC,0x4C,0x90,0x45,0x92 ))// 856DDBC1-55F7-471F-A0F2-68AC4C904592
+}
+
 private var IID___x_ABI_CWindows_CMedia_CPlayback_CICurrentMediaPlaybackItemChangedEventArgs: WindowsFoundation.IID {
     .init(Data1: 0x1743A892, Data2: 0x5C43, Data3: 0x4A15, Data4: ( 0x96,0x7A,0x57,0x2D,0x2D,0x0F,0x26,0xC6 ))// 1743A892-5C43-4A15-967A-572D2D0F26C6
 }
@@ -42,6 +46,10 @@ private var IID___x_ABI_CWindows_CMedia_CPlayback_CIMediaBreakSkippedEventArgs: 
 
 private var IID___x_ABI_CWindows_CMedia_CPlayback_CIMediaBreakStartedEventArgs: WindowsFoundation.IID {
     .init(Data1: 0xA87EFE71, Data2: 0xDFD4, Data3: 0x454A, Data4: ( 0x95,0x6E,0x0A,0x4A,0x64,0x83,0x95,0xF8 ))// A87EFE71-DFD4-454A-956E-0A4A648395F8
+}
+
+private var IID___x_ABI_CWindows_CMedia_CPlayback_CIMediaEnginePlaybackSource: WindowsFoundation.IID {
+    .init(Data1: 0x5C1D0BA7, Data2: 0x3856, Data3: 0x48B9, Data4: ( 0x8D,0xC6,0x24,0x4B,0xF1,0x07,0xBF,0x8C ))// 5C1D0BA7-3856-48B9-8DC6-244BF107BF8C
 }
 
 private var IID___x_ABI_CWindows_CMedia_CPlayback_CIMediaItemDisplayProperties: WindowsFoundation.IID {
@@ -156,6 +164,10 @@ private var IID___x_ABI_CWindows_CMedia_CPlayback_CIMediaPlaybackSession3: Windo
     .init(Data1: 0x7BA2B41A, Data2: 0xA3E2, Data3: 0x405F, Data4: ( 0xB7,0x7B,0xA4,0x81,0x2C,0x23,0x8B,0x66 ))// 7BA2B41A-A3E2-405F-B77B-A4812C238B66
 }
 
+private var IID___x_ABI_CWindows_CMedia_CPlayback_CIMediaPlaybackSessionBufferingStartedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0xCD6AAFED, Data2: 0x74E2, Data3: 0x43B5, Data4: ( 0xB1,0x15,0x76,0x23,0x6C,0x33,0x79,0x1A ))// CD6AAFED-74E2-43B5-B115-76236C33791A
+}
+
 private var IID___x_ABI_CWindows_CMedia_CPlayback_CIMediaPlaybackSessionOutputDegradationPolicyState: WindowsFoundation.IID {
     .init(Data1: 0x558E727D, Data2: 0xF633, Data3: 0x49F9, Data4: ( 0x96,0x5A,0xAB,0xAA,0x1D,0xB7,0x09,0xBE ))// 558E727D-F633-49F9-965A-ABAA1DB709BE
 }
@@ -198,6 +210,10 @@ private var IID___x_ABI_CWindows_CMedia_CPlayback_CIMediaPlayer6: WindowsFoundat
 
 private var IID___x_ABI_CWindows_CMedia_CPlayback_CIMediaPlayer7: WindowsFoundation.IID {
     .init(Data1: 0x5D1DC478, Data2: 0x4500, Data3: 0x4531, Data4: ( 0xB3,0xF4,0x77,0x7A,0x71,0x49,0x1F,0x7F ))// 5D1DC478-4500-4531-B3F4-777A71491F7F
+}
+
+private var IID___x_ABI_CWindows_CMedia_CPlayback_CIMediaPlayerDataReceivedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0xC75A9405, Data2: 0xC801, Data3: 0x412A, Data4: ( 0x83,0x5B,0x83,0xFC,0x0E,0x62,0x2A,0x8E ))// C75A9405-C801-412A-835B-83FC0E622A8E
 }
 
 private var IID___x_ABI_CWindows_CMedia_CPlayback_CIMediaPlayerEffects: WindowsFoundation.IID {
@@ -249,6 +265,78 @@ private var IID___x_ABI_CWindows_CMedia_CPlayback_CITimedMetadataPresentationMod
 }
 
 public enum __ABI_Windows_Media_Playback {
+    public class IBackgroundMediaPlayerStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CPlayback_CIBackgroundMediaPlayerStatics }
+
+        internal func get_CurrentImpl() throws -> UWP.MediaPlayer? {
+            let (player) = try ComPtrs.initialize { playerAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CPlayback_CIBackgroundMediaPlayerStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Current(pThis, &playerAbi))
+                }
+            }
+            return .from(abi: player)
+        }
+
+        internal func add_MessageReceivedFromBackgroundImpl(_ value: EventHandler<UWP.MediaPlayerDataReceivedEventArgs?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let valueWrapper = UWP.__x_ABI_C__FIEventHandler_1___x_ABI_CWindows__CMedia__CPlayback__CMediaPlayerDataReceivedEventArgsWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CPlayback_CIBackgroundMediaPlayerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_MessageReceivedFromBackground(pThis, _value, &token))
+            }
+            return token
+        }
+
+        internal func remove_MessageReceivedFromBackgroundImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CPlayback_CIBackgroundMediaPlayerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_MessageReceivedFromBackground(pThis, token))
+            }
+        }
+
+        internal func add_MessageReceivedFromForegroundImpl(_ value: EventHandler<UWP.MediaPlayerDataReceivedEventArgs?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let valueWrapper = UWP.__x_ABI_C__FIEventHandler_1___x_ABI_CWindows__CMedia__CPlayback__CMediaPlayerDataReceivedEventArgsWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CPlayback_CIBackgroundMediaPlayerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_MessageReceivedFromForeground(pThis, _value, &token))
+            }
+            return token
+        }
+
+        internal func remove_MessageReceivedFromForegroundImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CPlayback_CIBackgroundMediaPlayerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_MessageReceivedFromForeground(pThis, token))
+            }
+        }
+
+        internal func SendMessageToBackgroundImpl(_ value: WindowsFoundation.ValueSet?) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CPlayback_CIBackgroundMediaPlayerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.SendMessageToBackground(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func SendMessageToForegroundImpl(_ value: WindowsFoundation.ValueSet?) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CPlayback_CIBackgroundMediaPlayerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.SendMessageToForeground(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func IsMediaPlayingImpl() throws -> Bool {
+            var isMediaPlaying: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CPlayback_CIBackgroundMediaPlayerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.IsMediaPlaying(pThis, &isMediaPlaying))
+            }
+            return .init(from: isMediaPlaying)
+        }
+
+        internal func ShutdownImpl() throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CPlayback_CIBackgroundMediaPlayerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Shutdown(pThis))
+            }
+        }
+
+    }
+
     public class ICurrentMediaPlaybackItemChangedEventArgs: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CPlayback_CICurrentMediaPlaybackItemChangedEventArgs }
 
@@ -614,6 +702,74 @@ public enum __ABI_Windows_Media_Playback {
 
     }
 
+    public class IMediaEnginePlaybackSource: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CPlayback_CIMediaEnginePlaybackSource }
+
+        open func get_CurrentItemImpl() throws -> UWP.MediaPlaybackItem? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CPlayback_CIMediaEnginePlaybackSource.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CurrentItem(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        open func SetPlaybackSourceImpl(_ source: UWP.AnyIMediaPlaybackSource?) throws {
+            let sourceWrapper = __ABI_Windows_Media_Playback.IMediaPlaybackSourceWrapper(source)
+            let _source = try! sourceWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CPlayback_CIMediaEnginePlaybackSource.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.SetPlaybackSource(pThis, _source))
+            }
+        }
+
+    }
+
+    internal static var IMediaEnginePlaybackSourceVTable: __x_ABI_CWindows_CMedia_CPlayback_CIMediaEnginePlaybackSourceVtbl = .init(
+        QueryInterface: { IMediaEnginePlaybackSourceWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IMediaEnginePlaybackSourceWrapper.addRef($0) },
+        Release: { IMediaEnginePlaybackSourceWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 3).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_Media_Playback.IMediaEnginePlaybackSourceWrapper.IID
+            $1!.pointee = 3
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.Media.Playback.IMediaEnginePlaybackSource").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_CurrentItem: {
+            guard let __unwrapped__instance = IMediaEnginePlaybackSourceWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.currentItem
+            value?.copyTo($1)
+            return S_OK
+        },
+
+        SetPlaybackSource: {
+            do {
+                guard let __unwrapped__instance = IMediaEnginePlaybackSourceWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let source: UWP.AnyIMediaPlaybackSource? = __ABI_Windows_Media_Playback.IMediaPlaybackSourceWrapper.unwrapFrom(abi: ComPtr($1))
+                try __unwrapped__instance.setPlaybackSource(source)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        }
+    )
+
+    public typealias IMediaEnginePlaybackSourceWrapper = InterfaceWrapperBase<__IMPL_Windows_Media_Playback.IMediaEnginePlaybackSourceBridge>
     public class IMediaItemDisplayProperties: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CPlayback_CIMediaItemDisplayProperties }
 
@@ -2280,6 +2436,19 @@ public enum __ABI_Windows_Media_Playback {
 
     }
 
+    public class IMediaPlaybackSessionBufferingStartedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CPlayback_CIMediaPlaybackSessionBufferingStartedEventArgs }
+
+        internal func get_IsPlaybackInterruptionImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CPlayback_CIMediaPlaybackSessionBufferingStartedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsPlaybackInterruption(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
     public class IMediaPlaybackSessionOutputDegradationPolicyState: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CPlayback_CIMediaPlaybackSessionOutputDegradationPolicyState }
 
@@ -3104,6 +3273,20 @@ public enum __ABI_Windows_Media_Playback {
             let (value) = try ComPtrs.initialize { valueAbi in
                 _ = try perform(as: __x_ABI_CWindows_CMedia_CPlayback_CIMediaPlayer7.self) { pThis in
                     try CHECKED(pThis.pointee.lpVtbl.pointee.get_AudioStateMonitor(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IMediaPlayerDataReceivedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CPlayback_CIMediaPlayerDataReceivedEventArgs }
+
+        internal func get_DataImpl() throws -> WindowsFoundation.ValueSet? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CPlayback_CIMediaPlayerDataReceivedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Data(pThis, &valueAbi))
                 }
             }
             return .from(abi: value)

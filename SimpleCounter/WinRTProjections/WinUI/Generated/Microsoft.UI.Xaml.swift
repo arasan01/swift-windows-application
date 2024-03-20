@@ -8,16 +8,26 @@ import CWinRT
 
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.applicationhighcontrastadjustment)
 public typealias ApplicationHighContrastAdjustment = __x_ABI_CMicrosoft_CUI_CXaml_CApplicationHighContrastAdjustment
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.applicationrequirespointermode)
+public typealias ApplicationRequiresPointerMode = __x_ABI_CMicrosoft_CUI_CXaml_CApplicationRequiresPointerMode
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.applicationtheme)
 public typealias ApplicationTheme = __x_ABI_CMicrosoft_CUI_CXaml_CApplicationTheme
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automationtextattributesenum)
+public typealias AutomationTextAttributesEnum = __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.dispatchershutdownmode)
 public typealias DispatcherShutdownMode = __x_ABI_CMicrosoft_CUI_CXaml_CDispatcherShutdownMode
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.durationtype)
 public typealias DurationType = __x_ABI_CMicrosoft_CUI_CXaml_CDurationType
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.elementhighcontrastadjustment)
 public typealias ElementHighContrastAdjustment = __x_ABI_CMicrosoft_CUI_CXaml_CElementHighContrastAdjustment
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.elementsoundkind)
+public typealias ElementSoundKind = __x_ABI_CMicrosoft_CUI_CXaml_CElementSoundKind
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.elementsoundmode)
 public typealias ElementSoundMode = __x_ABI_CMicrosoft_CUI_CXaml_CElementSoundMode
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.elementsoundplayerstate)
+public typealias ElementSoundPlayerState = __x_ABI_CMicrosoft_CUI_CXaml_CElementSoundPlayerState
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.elementspatialaudiomode)
+public typealias ElementSpatialAudioMode = __x_ABI_CMicrosoft_CUI_CXaml_CElementSpatialAudioMode
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.elementtheme)
 public typealias ElementTheme = __x_ABI_CMicrosoft_CUI_CXaml_CElementTheme
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.flowdirection)
@@ -26,6 +36,20 @@ public typealias FlowDirection = __x_ABI_CMicrosoft_CUI_CXaml_CFlowDirection
 public typealias FocusState = __x_ABI_CMicrosoft_CUI_CXaml_CFocusState
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.focusvisualkind)
 public typealias FocusVisualKind = __x_ABI_CMicrosoft_CUI_CXaml_CFocusVisualKind
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.fontcapitals)
+public typealias FontCapitals = __x_ABI_CMicrosoft_CUI_CXaml_CFontCapitals
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.fonteastasianlanguage)
+public typealias FontEastAsianLanguage = __x_ABI_CMicrosoft_CUI_CXaml_CFontEastAsianLanguage
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.fonteastasianwidths)
+public typealias FontEastAsianWidths = __x_ABI_CMicrosoft_CUI_CXaml_CFontEastAsianWidths
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.fontfraction)
+public typealias FontFraction = __x_ABI_CMicrosoft_CUI_CXaml_CFontFraction
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.fontnumeralalignment)
+public typealias FontNumeralAlignment = __x_ABI_CMicrosoft_CUI_CXaml_CFontNumeralAlignment
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.fontnumeralstyle)
+public typealias FontNumeralStyle = __x_ABI_CMicrosoft_CUI_CXaml_CFontNumeralStyle
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.fontvariants)
+public typealias FontVariants = __x_ABI_CMicrosoft_CUI_CXaml_CFontVariants
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.gridunittype)
 public typealias GridUnitType = __x_ABI_CMicrosoft_CUI_CXaml_CGridUnitType
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.horizontalalignment)
@@ -56,6 +80,87 @@ public typealias VerticalAlignment = __x_ABI_CMicrosoft_CUI_CXaml_CVerticalAlign
 public typealias Visibility = __x_ABI_CMicrosoft_CUI_CXaml_CVisibility
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.windowactivationstate)
 public typealias WindowActivationState = __x_ABI_CMicrosoft_CUI_CXaml_CWindowActivationState
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.adaptivetrigger)
+open class AdaptiveTrigger : WinUI.StateTriggerBase {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IAdaptiveTrigger
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIAdaptiveTrigger
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override open func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CIAdaptiveTrigger>?) -> AdaptiveTrigger? {
+        guard let abi = abi else { return nil }
+        return UnsealedWinRTClassWrapper<Composable>.unwrapFrom(base: abi)
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    @_spi(WinRTInternal)
+    override public init<Composable: ComposableImpl>(
+        composing: Composable.Type,
+        _ createCallback: (UnsealedWinRTClassWrapper<Composable>?, inout WindowsFoundation.IInspectable?) -> Composable.Default.SwiftABI)
+    {
+        super.init(composing: composing, createCallback)
+    }
+    override open func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    private static var _IAdaptiveTriggerFactory : __ABI_Microsoft_UI_Xaml.IAdaptiveTriggerFactory =  try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.AdaptiveTrigger"))
+
+    override public init() {
+        super.init(composing: Self.Composable.self) { baseInterface, innerInterface in 
+            try! Self._IAdaptiveTriggerFactory.CreateInstanceImpl(baseInterface, &innerInterface)
+        }
+    }
+
+    private static let _IAdaptiveTriggerStatics: __ABI_Microsoft_UI_Xaml.IAdaptiveTriggerStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.AdaptiveTrigger"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.adaptivetrigger.minwindowheightproperty)
+    public class var minWindowHeightProperty : DependencyProperty! {
+        get { try! _IAdaptiveTriggerStatics.get_MinWindowHeightPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.adaptivetrigger.minwindowwidthproperty)
+    public class var minWindowWidthProperty : DependencyProperty! {
+        get { try! _IAdaptiveTriggerStatics.get_MinWindowWidthPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.adaptivetrigger.minwindowheight)
+    public var minWindowHeight : Double {
+        get { try! _default.get_MinWindowHeightImpl() }
+        set { try! _default.put_MinWindowHeightImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.adaptivetrigger.minwindowwidth)
+    public var minWindowWidth : Double {
+        get { try! _default.get_MinWindowWidthImpl() }
+        set { try! _default.put_MinWindowWidthImpl(newValue) }
+    }
+
+    internal enum IAdaptiveTrigger : ComposableImpl {
+        internal typealias CABI = C_IInspectable
+        internal typealias SwiftABI = WindowsFoundation.IInspectable
+        internal typealias Class = AdaptiveTrigger
+        internal typealias SwiftProjection = WinRTClassWeakReference<Class>
+        internal enum Default : AbiInterface {
+            internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIAdaptiveTrigger
+            internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IAdaptiveTrigger
+        }
+    }
+    internal typealias Composable = IAdaptiveTrigger
+    deinit {
+        _default = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.application)
 open class Application : WinRTClass {
     private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IApplication
@@ -492,6 +597,269 @@ open class BrushTransition : WinRTClass {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.colorpaletteresources)
+open class ColorPaletteResources : WinUI.ResourceDictionary {
+    public typealias K = Any?
+    public typealias V = Any?
+    public typealias T = WindowsFoundation.AnyIKeyValuePair<Any?, Any?>?
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IColorPaletteResources
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override open func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources>?) -> ColorPaletteResources? {
+        guard let abi = abi else { return nil }
+        return UnsealedWinRTClassWrapper<Composable>.unwrapFrom(base: abi)
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    @_spi(WinRTInternal)
+    override public init<Composable: ComposableImpl>(
+        composing: Composable.Type,
+        _ createCallback: (UnsealedWinRTClassWrapper<Composable>?, inout WindowsFoundation.IInspectable?) -> Composable.Default.SwiftABI)
+    {
+        super.init(composing: composing, createCallback)
+    }
+    override open func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    private static var _IColorPaletteResourcesFactory : __ABI_Microsoft_UI_Xaml.IColorPaletteResourcesFactory =  try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.ColorPaletteResources"))
+
+    override public init() {
+        super.init(composing: Self.Composable.self) { baseInterface, innerInterface in 
+            try! Self._IColorPaletteResourcesFactory.CreateInstanceImpl(baseInterface, &innerInterface)
+        }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.colorpaletteresources.accent)
+    public var accent : UWP.Color? {
+        get { try! _default.get_AccentImpl() }
+        set { try! _default.put_AccentImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.colorpaletteresources.althigh)
+    public var altHigh : UWP.Color? {
+        get { try! _default.get_AltHighImpl() }
+        set { try! _default.put_AltHighImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.colorpaletteresources.altlow)
+    public var altLow : UWP.Color? {
+        get { try! _default.get_AltLowImpl() }
+        set { try! _default.put_AltLowImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.colorpaletteresources.altmedium)
+    public var altMedium : UWP.Color? {
+        get { try! _default.get_AltMediumImpl() }
+        set { try! _default.put_AltMediumImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.colorpaletteresources.altmediumhigh)
+    public var altMediumHigh : UWP.Color? {
+        get { try! _default.get_AltMediumHighImpl() }
+        set { try! _default.put_AltMediumHighImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.colorpaletteresources.altmediumlow)
+    public var altMediumLow : UWP.Color? {
+        get { try! _default.get_AltMediumLowImpl() }
+        set { try! _default.put_AltMediumLowImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.colorpaletteresources.basehigh)
+    public var baseHigh : UWP.Color? {
+        get { try! _default.get_BaseHighImpl() }
+        set { try! _default.put_BaseHighImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.colorpaletteresources.baselow)
+    public var baseLow : UWP.Color? {
+        get { try! _default.get_BaseLowImpl() }
+        set { try! _default.put_BaseLowImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.colorpaletteresources.basemedium)
+    public var baseMedium : UWP.Color? {
+        get { try! _default.get_BaseMediumImpl() }
+        set { try! _default.put_BaseMediumImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.colorpaletteresources.basemediumhigh)
+    public var baseMediumHigh : UWP.Color? {
+        get { try! _default.get_BaseMediumHighImpl() }
+        set { try! _default.put_BaseMediumHighImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.colorpaletteresources.basemediumlow)
+    public var baseMediumLow : UWP.Color? {
+        get { try! _default.get_BaseMediumLowImpl() }
+        set { try! _default.put_BaseMediumLowImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.colorpaletteresources.chromealtlow)
+    public var chromeAltLow : UWP.Color? {
+        get { try! _default.get_ChromeAltLowImpl() }
+        set { try! _default.put_ChromeAltLowImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.colorpaletteresources.chromeblackhigh)
+    public var chromeBlackHigh : UWP.Color? {
+        get { try! _default.get_ChromeBlackHighImpl() }
+        set { try! _default.put_ChromeBlackHighImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.colorpaletteresources.chromeblacklow)
+    public var chromeBlackLow : UWP.Color? {
+        get { try! _default.get_ChromeBlackLowImpl() }
+        set { try! _default.put_ChromeBlackLowImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.colorpaletteresources.chromeblackmedium)
+    public var chromeBlackMedium : UWP.Color? {
+        get { try! _default.get_ChromeBlackMediumImpl() }
+        set { try! _default.put_ChromeBlackMediumImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.colorpaletteresources.chromeblackmediumlow)
+    public var chromeBlackMediumLow : UWP.Color? {
+        get { try! _default.get_ChromeBlackMediumLowImpl() }
+        set { try! _default.put_ChromeBlackMediumLowImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.colorpaletteresources.chromedisabledhigh)
+    public var chromeDisabledHigh : UWP.Color? {
+        get { try! _default.get_ChromeDisabledHighImpl() }
+        set { try! _default.put_ChromeDisabledHighImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.colorpaletteresources.chromedisabledlow)
+    public var chromeDisabledLow : UWP.Color? {
+        get { try! _default.get_ChromeDisabledLowImpl() }
+        set { try! _default.put_ChromeDisabledLowImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.colorpaletteresources.chromegray)
+    public var chromeGray : UWP.Color? {
+        get { try! _default.get_ChromeGrayImpl() }
+        set { try! _default.put_ChromeGrayImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.colorpaletteresources.chromehigh)
+    public var chromeHigh : UWP.Color? {
+        get { try! _default.get_ChromeHighImpl() }
+        set { try! _default.put_ChromeHighImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.colorpaletteresources.chromelow)
+    public var chromeLow : UWP.Color? {
+        get { try! _default.get_ChromeLowImpl() }
+        set { try! _default.put_ChromeLowImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.colorpaletteresources.chromemedium)
+    public var chromeMedium : UWP.Color? {
+        get { try! _default.get_ChromeMediumImpl() }
+        set { try! _default.put_ChromeMediumImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.colorpaletteresources.chromemediumlow)
+    public var chromeMediumLow : UWP.Color? {
+        get { try! _default.get_ChromeMediumLowImpl() }
+        set { try! _default.put_ChromeMediumLowImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.colorpaletteresources.chromewhite)
+    public var chromeWhite : UWP.Color? {
+        get { try! _default.get_ChromeWhiteImpl() }
+        set { try! _default.put_ChromeWhiteImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.colorpaletteresources.errortext)
+    public var errorText : UWP.Color? {
+        get { try! _default.get_ErrorTextImpl() }
+        set { try! _default.put_ErrorTextImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.colorpaletteresources.listlow)
+    public var listLow : UWP.Color? {
+        get { try! _default.get_ListLowImpl() }
+        set { try! _default.put_ListLowImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.colorpaletteresources.listmedium)
+    public var listMedium : UWP.Color? {
+        get { try! _default.get_ListMediumImpl() }
+        set { try! _default.put_ListMediumImpl(newValue) }
+    }
+
+    internal enum IColorPaletteResources : ComposableImpl {
+        internal typealias CABI = C_IInspectable
+        internal typealias SwiftABI = WindowsFoundation.IInspectable
+        internal typealias Class = ColorPaletteResources
+        internal typealias SwiftProjection = WinRTClassWeakReference<Class>
+        internal enum Default : AbiInterface {
+            internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources
+            internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IColorPaletteResources
+        }
+    }
+    internal typealias Composable = IColorPaletteResources
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.cornerradiushelper)
+public final class CornerRadiusHelper : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.ICornerRadiusHelper
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CICornerRadiusHelper
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CICornerRadiusHelper>?) -> CornerRadiusHelper? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _ICornerRadiusHelperStatics: __ABI_Microsoft_UI_Xaml.ICornerRadiusHelperStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.CornerRadiusHelper"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.cornerradiushelper.fromradii)
+    public static func fromRadii(_ topLeft: Double, _ topRight: Double, _ bottomRight: Double, _ bottomLeft: Double) -> CornerRadius {
+        return try! _ICornerRadiusHelperStatics.FromRadiiImpl(topLeft, topRight, bottomRight, bottomLeft)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.cornerradiushelper.fromuniformradius)
+    public static func fromUniformRadius(_ uniformRadius: Double) -> CornerRadius {
+        return try! _ICornerRadiusHelperStatics.FromUniformRadiusImpl(uniformRadius)
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.datacontextchangedeventargs)
 public final class DataContextChangedEventArgs : WinRTClass {
     private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IDataContextChangedEventArgs
@@ -620,6 +988,79 @@ open class DataTemplate : WinUI.FrameworkTemplate, IElementFactory {
     deinit {
         _default = nil
         _IElementFactory = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.datatemplatekey)
+open class DataTemplateKey : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IDataTemplateKey
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIDataTemplateKey
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override open func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CIDataTemplateKey>?) -> DataTemplateKey? {
+        guard let abi = abi else { return nil }
+        return UnsealedWinRTClassWrapper<Composable>.unwrapFrom(base: abi)
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    @_spi(WinRTInternal)
+    public init<Composable: ComposableImpl>(
+        composing: Composable.Type,
+        _ createCallback: (UnsealedWinRTClassWrapper<Composable>?, inout WindowsFoundation.IInspectable?) -> Composable.Default.SwiftABI)
+    {
+        super.init()
+        MakeComposed(composing: composing, (self as! Composable.Class), createCallback)
+    }
+    override open func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    private static var _IDataTemplateKeyFactory : __ABI_Microsoft_UI_Xaml.IDataTemplateKeyFactory =  try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.DataTemplateKey"))
+
+    override public init() {
+        super.init()
+        MakeComposed(composing: Self.Composable.self, self) { baseInterface, innerInterface in 
+            try! Self._IDataTemplateKeyFactory.CreateInstanceImpl(baseInterface, &innerInterface)
+        }
+    }
+
+    public init(_ dataType: Any!) {
+        super.init()
+        MakeComposed(composing: Self.Composable.self, self) { baseInterface, innerInterface in 
+            try! Self._IDataTemplateKeyFactory.CreateInstanceWithTypeImpl(dataType, baseInterface, &innerInterface)
+        }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.datatemplatekey.datatype)
+    public var dataType : Any! {
+        get { try! _default.get_DataTypeImpl() }
+        set { try! _default.put_DataTypeImpl(newValue) }
+    }
+
+    internal enum IDataTemplateKey : ComposableImpl {
+        internal typealias CABI = C_IInspectable
+        internal typealias SwiftABI = WindowsFoundation.IInspectable
+        internal typealias Class = DataTemplateKey
+        internal typealias SwiftProjection = WinRTClassWeakReference<Class>
+        internal enum Default : AbiInterface {
+            internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIDataTemplateKey
+            internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IDataTemplateKey
+        }
+    }
+    internal typealias Composable = IDataTemplateKey
+    deinit {
+        _default = nil
     }
 }
 
@@ -829,6 +1270,168 @@ open class DependencyObject : WinRTClass {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.dependencyobjectcollection)
+open class DependencyObjectCollection : WinUI.DependencyObject, IObservableVector, IVector, IIterable {
+    public typealias T = DependencyObject?
+    private typealias SwiftABI = WinUI.IObservableVectorDependencyObject
+    private typealias CABI = __x_ABI_C__FIObservableVector_1___x_ABI_CMicrosoft__CUI__CXaml__CDependencyObject
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override open func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_C__FIObservableVector_1___x_ABI_CMicrosoft__CUI__CXaml__CDependencyObject>?) -> DependencyObjectCollection? {
+        guard let abi = abi else { return nil }
+        return UnsealedWinRTClassWrapper<Composable>.unwrapFrom(base: abi)
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    @_spi(WinRTInternal)
+    override public init<Composable: ComposableImpl>(
+        composing: Composable.Type,
+        _ createCallback: (UnsealedWinRTClassWrapper<Composable>?, inout WindowsFoundation.IInspectable?) -> Composable.Default.SwiftABI)
+    {
+        super.init(composing: composing, createCallback)
+    }
+    override open func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    private static var _IDependencyObjectCollectionFactory : __ABI_Microsoft_UI_Xaml.IDependencyObjectCollectionFactory =  try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.DependencyObjectCollection"))
+
+    override public init() {
+        super.init(composing: Self.Composable.self) { baseInterface, innerInterface in 
+            try! Self._IDependencyObjectCollectionFactory.CreateInstanceImpl(baseInterface, &innerInterface)
+        }
+    }
+
+    // MARK: Collection
+    public typealias Element = T
+    public var startIndex: Int { 0 }
+    public var endIndex: Int { Int(size) }
+    public func index(after i: Int) -> Int {
+        i+1
+    }
+
+    public func index(of: Element) -> Int? {
+        var index: UInt32 = 0
+        let result = indexOf(of, &index)
+        guard result else { return nil }
+        return Int(index)
+    }
+    public var count: Int { Int(size) }
+
+
+    public subscript(position: Int) -> Element {
+        get {
+            getAt(UInt32(position))
+        }
+        set(newValue) {
+            setAt(UInt32(position), newValue)
+        }
+    }
+
+    public func removeLast() {
+        removeAtEnd()
+    }
+
+    // MARK: WinRT
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.dependencyobjectcollection.vectorchanged)
+    public lazy var vectorChanged : Event<VectorChangedEventHandler<DependencyObject?>> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._default else { return .init() }
+          return try! this.add_VectorChangedImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._default.remove_VectorChangedImpl($0)
+       }
+      )
+    }()
+
+    private lazy var _IVector: IVectorDependencyObject! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.dependencyobjectcollection.getat)
+    public func getAt(_ index: UInt32) -> DependencyObject? {
+        try! _IVector.GetAtImpl(index)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.dependencyobjectcollection.getview)
+    public func getView() -> WindowsFoundation.AnyIVectorView<DependencyObject?>? {
+        try! _IVector.GetViewImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.dependencyobjectcollection.indexof)
+    public func indexOf(_ value: DependencyObject?, _ index: inout UInt32) -> Bool {
+        try! _IVector.IndexOfImpl(value, &index)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.dependencyobjectcollection.setat)
+    public func setAt(_ index: UInt32, _ value: DependencyObject?) {
+        try! _IVector.SetAtImpl(index, value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.dependencyobjectcollection.insertat)
+    public func insertAt(_ index: UInt32, _ value: DependencyObject?) {
+        try! _IVector.InsertAtImpl(index, value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.dependencyobjectcollection.removeat)
+    public func removeAt(_ index: UInt32) {
+        try! _IVector.RemoveAtImpl(index)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.dependencyobjectcollection.append)
+    public func append(_ value: DependencyObject?) {
+        try! _IVector.AppendImpl(value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.dependencyobjectcollection.removeatend)
+    public func removeAtEnd() {
+        try! _IVector.RemoveAtEndImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.dependencyobjectcollection.clear)
+    public func clear() {
+        try! _IVector.ClearImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.dependencyobjectcollection.size)
+    public var size : UInt32 {
+        get { try! _IVector.get_SizeImpl() }
+    }
+
+    private lazy var _IIterable: IIterableDependencyObject! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.dependencyobjectcollection.first)
+    public func first() -> WindowsFoundation.AnyIIterator<DependencyObject?>? {
+        try! _IIterable.FirstImpl()
+    }
+
+    internal enum IObservableVectorDependencyObject : ComposableImpl {
+        internal typealias CABI = C_IInspectable
+        internal typealias SwiftABI = WindowsFoundation.IInspectable
+        internal typealias Class = DependencyObjectCollection
+        internal typealias SwiftProjection = WinRTClassWeakReference<Class>
+        internal enum Default : AbiInterface {
+            internal typealias CABI = __x_ABI_C__FIObservableVector_1___x_ABI_CMicrosoft__CUI__CXaml__CDependencyObject
+            internal typealias SwiftABI = WinUI.IObservableVectorDependencyObject
+        }
+    }
+    internal typealias Composable = IObservableVectorDependencyObject
+    deinit {
+        _default = nil
+        _IVector = nil
+        _IIterable = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.dependencyproperty)
 public final class DependencyProperty : WinRTClass {
     private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IDependencyProperty
@@ -918,6 +1521,100 @@ public final class DependencyPropertyChangedEventArgs : WinRTClass {
         get { try! _default.get_PropertyImpl() }
     }
 
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.dispatchertimer)
+open class DispatcherTimer : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IDispatcherTimer
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIDispatcherTimer
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override open func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CIDispatcherTimer>?) -> DispatcherTimer? {
+        guard let abi = abi else { return nil }
+        return UnsealedWinRTClassWrapper<Composable>.unwrapFrom(base: abi)
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    @_spi(WinRTInternal)
+    public init<Composable: ComposableImpl>(
+        composing: Composable.Type,
+        _ createCallback: (UnsealedWinRTClassWrapper<Composable>?, inout WindowsFoundation.IInspectable?) -> Composable.Default.SwiftABI)
+    {
+        super.init()
+        MakeComposed(composing: composing, (self as! Composable.Class), createCallback)
+    }
+    override open func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    private static var _IDispatcherTimerFactory : __ABI_Microsoft_UI_Xaml.IDispatcherTimerFactory =  try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.DispatcherTimer"))
+
+    override public init() {
+        super.init()
+        MakeComposed(composing: Self.Composable.self, self) { baseInterface, innerInterface in 
+            try! Self._IDispatcherTimerFactory.CreateInstanceImpl(baseInterface, &innerInterface)
+        }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.dispatchertimer.start)
+    public func start() throws {
+        try _default.StartImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.dispatchertimer.stop)
+    public func stop() throws {
+        try _default.StopImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.dispatchertimer.interval)
+    public var interval : WindowsFoundation.TimeSpan {
+        get { try! _default.get_IntervalImpl() }
+        set { try! _default.put_IntervalImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.dispatchertimer.isenabled)
+    public var isEnabled : Bool {
+        get { try! _default.get_IsEnabledImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.dispatchertimer.tick)
+    public lazy var tick : Event<EventHandler<Any?>> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._default else { return .init() }
+          return try! this.add_TickImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._default.remove_TickImpl($0)
+       }
+      )
+    }()
+
+    internal enum IDispatcherTimer : ComposableImpl {
+        internal typealias CABI = C_IInspectable
+        internal typealias SwiftABI = WindowsFoundation.IInspectable
+        internal typealias Class = DispatcherTimer
+        internal typealias SwiftProjection = WinRTClassWeakReference<Class>
+        internal enum Default : AbiInterface {
+            internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIDispatcherTimer
+            internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IDispatcherTimer
+        }
+    }
+    internal typealias Composable = IDispatcherTimer
     deinit {
         _default = nil
     }
@@ -1261,6 +1958,76 @@ public final class DropCompletedEventArgs : WinUI.RoutedEventArgs {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.durationhelper)
+public final class DurationHelper : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IDurationHelper
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIDurationHelper
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CIDurationHelper>?) -> DurationHelper? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IDurationHelperStatics: __ABI_Microsoft_UI_Xaml.IDurationHelperStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.DurationHelper"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.durationhelper.compare)
+    public static func compare(_ duration1: Duration, _ duration2: Duration) -> Int32 {
+        return try! _IDurationHelperStatics.CompareImpl(duration1, duration2)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.durationhelper.fromtimespan)
+    public static func fromTimeSpan(_ timeSpan: WindowsFoundation.TimeSpan) -> Duration {
+        return try! _IDurationHelperStatics.FromTimeSpanImpl(timeSpan)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.durationhelper.gethastimespan)
+    public static func getHasTimeSpan(_ target: Duration) -> Bool {
+        return try! _IDurationHelperStatics.GetHasTimeSpanImpl(target)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.durationhelper.add)
+    public static func add(_ target: Duration, _ duration: Duration) -> Duration {
+        return try! _IDurationHelperStatics.AddImpl(target, duration)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.durationhelper.equals)
+    public static func equals(_ target: Duration, _ value: Duration) -> Bool {
+        return try! _IDurationHelperStatics.EqualsImpl(target, value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.durationhelper.subtract)
+    public static func subtract(_ target: Duration, _ duration: Duration) -> Duration {
+        return try! _IDurationHelperStatics.SubtractImpl(target, duration)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.durationhelper.automatic)
+    public static var automatic : Duration {
+        get { try! _IDurationHelperStatics.get_AutomaticImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.durationhelper.forever)
+    public static var forever : Duration {
+        get { try! _IDurationHelperStatics.get_ForeverImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.effectiveviewportchangedeventargs)
 public final class EffectiveViewportChangedEventArgs : WinRTClass {
     private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IEffectiveViewportChangedEventArgs
@@ -1449,6 +2216,103 @@ open class ElementFactoryRecycleArgs : WinRTClass {
         }
     }
     internal typealias Composable = IElementFactoryRecycleArgs
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.elementsoundplayer)
+public final class ElementSoundPlayer : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IElementSoundPlayer
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayer
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayer>?) -> ElementSoundPlayer? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IElementSoundPlayerStatics: __ABI_Microsoft_UI_Xaml.IElementSoundPlayerStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.ElementSoundPlayer"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.elementsoundplayer.play)
+    public static func play(_ sound: ElementSoundKind) {
+        try! _IElementSoundPlayerStatics.PlayImpl(sound)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.elementsoundplayer.spatialaudiomode)
+    public static var spatialAudioMode : ElementSpatialAudioMode {
+        get { try! _IElementSoundPlayerStatics.get_SpatialAudioModeImpl() }
+        set { try! _IElementSoundPlayerStatics.put_SpatialAudioModeImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.elementsoundplayer.state)
+    public static var state : ElementSoundPlayerState {
+        get { try! _IElementSoundPlayerStatics.get_StateImpl() }
+        set { try! _IElementSoundPlayerStatics.put_StateImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.elementsoundplayer.volume)
+    public static var volume : Double {
+        get { try! _IElementSoundPlayerStatics.get_VolumeImpl() }
+        set { try! _IElementSoundPlayerStatics.put_VolumeImpl(newValue) }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.eventtrigger)
+public final class EventTrigger : WinUI.TriggerBase {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IEventTrigger
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIEventTrigger
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CIEventTrigger>?) -> EventTrigger? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    public init() {
+        super.init(fromAbi: try! RoActivateInstance(HString("Microsoft.UI.Xaml.EventTrigger")))
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.eventtrigger.actions)
+    public var actions : TriggerActionCollection! {
+        get { try! _default.get_ActionsImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.eventtrigger.routedevent)
+    public var routedEvent : RoutedEvent! {
+        get { try! _default.get_RoutedEventImpl() }
+        set { try! _default.put_RoutedEventImpl(newValue) }
+    }
+
     deinit {
         _default = nil
     }
@@ -2095,6 +2959,177 @@ open class FrameworkTemplate : WinUI.DependencyObject {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.frameworkview)
+public final class FrameworkView : WinRTClass, UWP.IFrameworkView {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IFrameworkView
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkView
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkView>?) -> FrameworkView? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    override public init() {
+        super.init(try! RoActivateInstance(HString("Microsoft.UI.Xaml.FrameworkView")))
+    }
+
+    private lazy var _IFrameworkView: __ABI_Windows_ApplicationModel_Core.IFrameworkView! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.frameworkview.initialize)
+    public func initialize(_ applicationView: UWP.CoreApplicationView!) throws {
+        try _IFrameworkView.InitializeImpl(applicationView)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.frameworkview.setwindow)
+    public func setWindow(_ window: UWP.CoreWindow!) throws {
+        try _IFrameworkView.SetWindowImpl(window)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.frameworkview.load)
+    public func load(_ entryPoint: String) throws {
+        try _IFrameworkView.LoadImpl(entryPoint)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.frameworkview.run)
+    public func run() throws {
+        try _IFrameworkView.RunImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.frameworkview.uninitialize)
+    public func uninitialize() throws {
+        try _IFrameworkView.UninitializeImpl()
+    }
+
+    deinit {
+        _default = nil
+        _IFrameworkView = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.frameworkviewsource)
+public final class FrameworkViewSource : WinRTClass, UWP.IFrameworkViewSource {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IFrameworkViewSource
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkViewSource
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkViewSource>?) -> FrameworkViewSource? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    override public init() {
+        super.init(try! RoActivateInstance(HString("Microsoft.UI.Xaml.FrameworkViewSource")))
+    }
+
+    private lazy var _IFrameworkViewSource: __ABI_Windows_ApplicationModel_Core.IFrameworkViewSource! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.frameworkviewsource.createview)
+    public func createView() throws -> UWP.AnyIFrameworkView! {
+        try _IFrameworkViewSource.CreateViewImpl()
+    }
+
+    deinit {
+        _default = nil
+        _IFrameworkViewSource = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.gridlengthhelper)
+public final class GridLengthHelper : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IGridLengthHelper
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIGridLengthHelper
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CIGridLengthHelper>?) -> GridLengthHelper? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IGridLengthHelperStatics: __ABI_Microsoft_UI_Xaml.IGridLengthHelperStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.GridLengthHelper"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.gridlengthhelper.frompixels)
+    public static func fromPixels(_ pixels: Double) -> GridLength {
+        return try! _IGridLengthHelperStatics.FromPixelsImpl(pixels)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.gridlengthhelper.fromvalueandtype)
+    public static func fromValueAndType(_ value: Double, _ type: GridUnitType) -> GridLength {
+        return try! _IGridLengthHelperStatics.FromValueAndTypeImpl(value, type)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.gridlengthhelper.getisabsolute)
+    public static func getIsAbsolute(_ target: GridLength) -> Bool {
+        return try! _IGridLengthHelperStatics.GetIsAbsoluteImpl(target)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.gridlengthhelper.getisauto)
+    public static func getIsAuto(_ target: GridLength) -> Bool {
+        return try! _IGridLengthHelperStatics.GetIsAutoImpl(target)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.gridlengthhelper.getisstar)
+    public static func getIsStar(_ target: GridLength) -> Bool {
+        return try! _IGridLengthHelperStatics.GetIsStarImpl(target)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.gridlengthhelper.equals)
+    public static func equals(_ target: GridLength, _ value: GridLength) -> Bool {
+        return try! _IGridLengthHelperStatics.EqualsImpl(target, value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.gridlengthhelper.auto)
+    public static var auto : GridLength {
+        get { try! _IGridLengthHelperStatics.get_AutoImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.launchactivatedeventargs)
 public final class LaunchActivatedEventArgs : WinRTClass {
     private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.ILaunchActivatedEventArgs
@@ -2127,6 +3162,75 @@ public final class LaunchActivatedEventArgs : WinRTClass {
     /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.launchactivatedeventargs.uwplaunchactivatedeventargs)
     public var uwpLaunchActivatedEventArgs : UWP.LaunchActivatedEventArgs! {
         get { try! _default.get_UWPLaunchActivatedEventArgsImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.mediafailedroutedeventargs)
+public final class MediaFailedRoutedEventArgs : WinUI.ExceptionRoutedEventArgs {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IMediaFailedRoutedEventArgs
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIMediaFailedRoutedEventArgs
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CIMediaFailedRoutedEventArgs>?) -> MediaFailedRoutedEventArgs? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.mediafailedroutedeventargs.errortrace)
+    public var errorTrace : String {
+        get { try! _default.get_ErrorTraceImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.pointhelper)
+public final class PointHelper : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IPointHelper
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIPointHelper
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CIPointHelper>?) -> PointHelper? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IPointHelperStatics: __ABI_Microsoft_UI_Xaml.IPointHelperStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.PointHelper"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.pointhelper.fromcoordinates)
+    public static func fromCoordinates(_ x: Float, _ y: Float) -> WindowsFoundation.Point {
+        return try! _IPointHelperStatics.FromCoordinatesImpl(x, y)
     }
 
     deinit {
@@ -2264,6 +3368,106 @@ public final class PropertyPath : WinUI.DependencyObject {
     /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.propertypath.path)
     public var path : String {
         get { try! _default.get_PathImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.recthelper)
+public final class RectHelper : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IRectHelper
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelper
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CIRectHelper>?) -> RectHelper? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IRectHelperStatics: __ABI_Microsoft_UI_Xaml.IRectHelperStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.RectHelper"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.recthelper.fromcoordinatesanddimensions)
+    public static func fromCoordinatesAndDimensions(_ x: Float, _ y: Float, _ width: Float, _ height: Float) -> WindowsFoundation.Rect {
+        return try! _IRectHelperStatics.FromCoordinatesAndDimensionsImpl(x, y, width, height)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.recthelper.frompoints)
+    public static func fromPoints(_ point1: WindowsFoundation.Point, _ point2: WindowsFoundation.Point) -> WindowsFoundation.Rect {
+        return try! _IRectHelperStatics.FromPointsImpl(point1, point2)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.recthelper.fromlocationandsize)
+    public static func fromLocationAndSize(_ location: WindowsFoundation.Point, _ size: WindowsFoundation.Size) -> WindowsFoundation.Rect {
+        return try! _IRectHelperStatics.FromLocationAndSizeImpl(location, size)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.recthelper.getisempty)
+    public static func getIsEmpty(_ target: WindowsFoundation.Rect) -> Bool {
+        return try! _IRectHelperStatics.GetIsEmptyImpl(target)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.recthelper.getbottom)
+    public static func getBottom(_ target: WindowsFoundation.Rect) -> Float {
+        return try! _IRectHelperStatics.GetBottomImpl(target)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.recthelper.getleft)
+    public static func getLeft(_ target: WindowsFoundation.Rect) -> Float {
+        return try! _IRectHelperStatics.GetLeftImpl(target)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.recthelper.getright)
+    public static func getRight(_ target: WindowsFoundation.Rect) -> Float {
+        return try! _IRectHelperStatics.GetRightImpl(target)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.recthelper.gettop)
+    public static func getTop(_ target: WindowsFoundation.Rect) -> Float {
+        return try! _IRectHelperStatics.GetTopImpl(target)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.recthelper.contains)
+    public static func contains(_ target: WindowsFoundation.Rect, _ point: WindowsFoundation.Point) -> Bool {
+        return try! _IRectHelperStatics.ContainsImpl(target, point)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.recthelper.equals)
+    public static func equals(_ target: WindowsFoundation.Rect, _ value: WindowsFoundation.Rect) -> Bool {
+        return try! _IRectHelperStatics.EqualsImpl(target, value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.recthelper.intersect)
+    public static func intersect(_ target: WindowsFoundation.Rect, _ rect: WindowsFoundation.Rect) -> WindowsFoundation.Rect {
+        return try! _IRectHelperStatics.IntersectImpl(target, rect)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.recthelper.union)
+    public static func union(_ target: WindowsFoundation.Rect, _ point: WindowsFoundation.Point) -> WindowsFoundation.Rect {
+        return try! _IRectHelperStatics.UnionWithPointImpl(target, point)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.recthelper.union)
+    public static func union(_ target: WindowsFoundation.Rect, _ rect: WindowsFoundation.Rect) -> WindowsFoundation.Rect {
+        return try! _IRectHelperStatics.UnionWithRectImpl(target, rect)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.recthelper.empty)
+    public static var empty : WindowsFoundation.Rect {
+        get { try! _IRectHelperStatics.get_EmptyImpl() }
     }
 
     deinit {
@@ -2871,6 +4075,166 @@ public final class SizeChangedEventArgs : WinUI.RoutedEventArgs {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.sizehelper)
+public final class SizeHelper : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.ISizeHelper
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CISizeHelper
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CISizeHelper>?) -> SizeHelper? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _ISizeHelperStatics: __ABI_Microsoft_UI_Xaml.ISizeHelperStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.SizeHelper"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.sizehelper.fromdimensions)
+    public static func fromDimensions(_ width: Float, _ height: Float) -> WindowsFoundation.Size {
+        return try! _ISizeHelperStatics.FromDimensionsImpl(width, height)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.sizehelper.getisempty)
+    public static func getIsEmpty(_ target: WindowsFoundation.Size) -> Bool {
+        return try! _ISizeHelperStatics.GetIsEmptyImpl(target)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.sizehelper.equals)
+    public static func equals(_ target: WindowsFoundation.Size, _ value: WindowsFoundation.Size) -> Bool {
+        return try! _ISizeHelperStatics.EqualsImpl(target, value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.sizehelper.empty)
+    public static var empty : WindowsFoundation.Size {
+        get { try! _ISizeHelperStatics.get_EmptyImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.statetrigger)
+public final class StateTrigger : WinUI.StateTriggerBase {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IStateTrigger
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIStateTrigger
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CIStateTrigger>?) -> StateTrigger? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    override public init() {
+        super.init(fromAbi: try! RoActivateInstance(HString("Microsoft.UI.Xaml.StateTrigger")))
+    }
+
+    private static let _IStateTriggerStatics: __ABI_Microsoft_UI_Xaml.IStateTriggerStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.StateTrigger"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.statetrigger.isactiveproperty)
+    public static var isActiveProperty : DependencyProperty! {
+        get { try! _IStateTriggerStatics.get_IsActivePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.statetrigger.isactive)
+    public var isActive : Bool {
+        get { try! _default.get_IsActiveImpl() }
+        set { try! _default.put_IsActiveImpl(newValue) }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.statetriggerbase)
+open class StateTriggerBase : WinUI.DependencyObject {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IStateTriggerBase
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIStateTriggerBase
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override open func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CIStateTriggerBase>?) -> StateTriggerBase? {
+        guard let abi = abi else { return nil }
+        return UnsealedWinRTClassWrapper<Composable>.unwrapFrom(base: abi)
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    @_spi(WinRTInternal)
+    override public init<Composable: ComposableImpl>(
+        composing: Composable.Type,
+        _ createCallback: (UnsealedWinRTClassWrapper<Composable>?, inout WindowsFoundation.IInspectable?) -> Composable.Default.SwiftABI)
+    {
+        super.init(composing: composing, createCallback)
+    }
+    override open func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    private static var _IStateTriggerBaseFactory : __ABI_Microsoft_UI_Xaml.IStateTriggerBaseFactory =  try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.StateTriggerBase"))
+
+    override public init() {
+        super.init(composing: Self.Composable.self) { baseInterface, innerInterface in 
+            try! Self._IStateTriggerBaseFactory.CreateInstanceImpl(baseInterface, &innerInterface)
+        }
+    }
+
+    private lazy var _IStateTriggerBaseProtected: __ABI_Microsoft_UI_Xaml.IStateTriggerBaseProtected! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.statetriggerbase.setactive)
+    public func setActive(_ IsActive: Bool) throws {
+        try _IStateTriggerBaseProtected.SetActiveImpl(IsActive)
+    }
+
+    internal enum IStateTriggerBase : ComposableImpl {
+        internal typealias CABI = C_IInspectable
+        internal typealias SwiftABI = WindowsFoundation.IInspectable
+        internal typealias Class = StateTriggerBase
+        internal typealias SwiftProjection = WinRTClassWeakReference<Class>
+        internal enum Default : AbiInterface {
+            internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIStateTriggerBase
+            internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IStateTriggerBase
+        }
+    }
+    internal typealias Composable = IStateTriggerBase
+    deinit {
+        _default = nil
+        _IStateTriggerBaseProtected = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.style)
 public final class Style : WinUI.DependencyObject {
     private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IStyle
@@ -2986,6 +4350,46 @@ public final class TargetPropertyPath : WinRTClass {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.thicknesshelper)
+public final class ThicknessHelper : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IThicknessHelper
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIThicknessHelper
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CIThicknessHelper>?) -> ThicknessHelper? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IThicknessHelperStatics: __ABI_Microsoft_UI_Xaml.IThicknessHelperStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.ThicknessHelper"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.thicknesshelper.fromlengths)
+    public static func fromLengths(_ left: Double, _ top: Double, _ right: Double, _ bottom: Double) -> Thickness {
+        return try! _IThicknessHelperStatics.FromLengthsImpl(left, top, right, bottom)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.thicknesshelper.fromuniformlength)
+    public static func fromUniformLength(_ uniformLength: Double) -> Thickness {
+        return try! _IThicknessHelperStatics.FromUniformLengthImpl(uniformLength)
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.triggeraction)
 open class TriggerAction : WinUI.DependencyObject {
     private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.ITriggerAction
@@ -3035,6 +4439,131 @@ open class TriggerAction : WinUI.DependencyObject {
     internal typealias Composable = ITriggerAction
     deinit {
         _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.triggeractioncollection)
+public final class TriggerActionCollection : WinRTClass, IVector, IIterable {
+    public typealias T = TriggerAction?
+    private typealias SwiftABI = WinUI.IVectorTriggerAction
+    private typealias CABI = __x_ABI_C__FIVector_1___x_ABI_CMicrosoft__CUI__CXaml__CTriggerAction
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_C__FIVector_1___x_ABI_CMicrosoft__CUI__CXaml__CTriggerAction>?) -> TriggerActionCollection? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    override public init() {
+        super.init(try! RoActivateInstance(HString("Microsoft.UI.Xaml.TriggerActionCollection")))
+    }
+
+    // MARK: Collection
+    public typealias Element = T
+    public var startIndex: Int { 0 }
+    public var endIndex: Int { Int(size) }
+    public func index(after i: Int) -> Int {
+        i+1
+    }
+
+    public func index(of: Element) -> Int? {
+        var index: UInt32 = 0
+        let result = indexOf(of, &index)
+        guard result else { return nil }
+        return Int(index)
+    }
+    public var count: Int { Int(size) }
+
+
+    public subscript(position: Int) -> Element {
+        get {
+            getAt(UInt32(position))
+        }
+        set(newValue) {
+            setAt(UInt32(position), newValue)
+        }
+    }
+
+    public func removeLast() {
+        removeAtEnd()
+    }
+
+    // MARK: WinRT
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.triggeractioncollection.getat)
+    public func getAt(_ index: UInt32) -> TriggerAction? {
+        try! _default.GetAtImpl(index)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.triggeractioncollection.getview)
+    public func getView() -> WindowsFoundation.AnyIVectorView<TriggerAction?>? {
+        try! _default.GetViewImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.triggeractioncollection.indexof)
+    public func indexOf(_ value: TriggerAction?, _ index: inout UInt32) -> Bool {
+        try! _default.IndexOfImpl(value, &index)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.triggeractioncollection.setat)
+    public func setAt(_ index: UInt32, _ value: TriggerAction?) {
+        try! _default.SetAtImpl(index, value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.triggeractioncollection.insertat)
+    public func insertAt(_ index: UInt32, _ value: TriggerAction?) {
+        try! _default.InsertAtImpl(index, value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.triggeractioncollection.removeat)
+    public func removeAt(_ index: UInt32) {
+        try! _default.RemoveAtImpl(index)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.triggeractioncollection.append)
+    public func append(_ value: TriggerAction?) {
+        try! _default.AppendImpl(value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.triggeractioncollection.removeatend)
+    public func removeAtEnd() {
+        try! _default.RemoveAtEndImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.triggeractioncollection.clear)
+    public func clear() {
+        try! _default.ClearImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.triggeractioncollection.size)
+    public var size : UInt32 {
+        get { try! _default.get_SizeImpl() }
+    }
+
+    private lazy var _IIterable: IIterableTriggerAction! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.triggeractioncollection.first)
+    public func first() -> WindowsFoundation.AnyIIterator<TriggerAction?>? {
+        try! _IIterable.FirstImpl()
+    }
+
+    deinit {
+        _default = nil
+        _IIterable = nil
     }
 }
 
@@ -5014,6 +6543,386 @@ open class Vector3Transition : WinRTClass {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualstate)
+public final class VisualState : WinUI.DependencyObject {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IVisualState
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIVisualState
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CIVisualState>?) -> VisualState? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    override public init() {
+        super.init(fromAbi: try! RoActivateInstance(HString("Microsoft.UI.Xaml.VisualState")))
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualstate.name)
+    public var name : String {
+        get { try! _default.get_NameImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualstate.setters)
+    public var setters : SetterBaseCollection! {
+        get { try! _default.get_SettersImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualstate.statetriggers)
+    public var stateTriggers : WindowsFoundation.AnyIVector<StateTriggerBase?>! {
+        get { try! _default.get_StateTriggersImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualstate.storyboard)
+    public var storyboard : WinUI.Storyboard! {
+        get { try! _default.get_StoryboardImpl() }
+        set { try! _default.put_StoryboardImpl(newValue) }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualstatechangedeventargs)
+public final class VisualStateChangedEventArgs : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IVisualStateChangedEventArgs
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateChangedEventArgs
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateChangedEventArgs>?) -> VisualStateChangedEventArgs? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public init() {
+        super.init(try! RoActivateInstance(HString("Microsoft.UI.Xaml.VisualStateChangedEventArgs")))
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualstatechangedeventargs.control)
+    public var control : WinUI.Control! {
+        get { try! _default.get_ControlImpl() }
+        set { try! _default.put_ControlImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualstatechangedeventargs.newstate)
+    public var newState : VisualState! {
+        get { try! _default.get_NewStateImpl() }
+        set { try! _default.put_NewStateImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualstatechangedeventargs.oldstate)
+    public var oldState : VisualState! {
+        get { try! _default.get_OldStateImpl() }
+        set { try! _default.put_OldStateImpl(newValue) }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualstategroup)
+public final class VisualStateGroup : WinUI.DependencyObject {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IVisualStateGroup
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateGroup
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateGroup>?) -> VisualStateGroup? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    override public init() {
+        super.init(fromAbi: try! RoActivateInstance(HString("Microsoft.UI.Xaml.VisualStateGroup")))
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualstategroup.currentstate)
+    public var currentState : VisualState! {
+        get { try! _default.get_CurrentStateImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualstategroup.name)
+    public var name : String {
+        get { try! _default.get_NameImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualstategroup.states)
+    public var states : WindowsFoundation.AnyIVector<VisualState?>! {
+        get { try! _default.get_StatesImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualstategroup.transitions)
+    public var transitions : WindowsFoundation.AnyIVector<VisualTransition?>! {
+        get { try! _default.get_TransitionsImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualstategroup.currentstatechanged)
+    public lazy var currentStateChanged : Event<VisualStateChangedEventHandler> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._default else { return .init() }
+          return try! this.add_CurrentStateChangedImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._default.remove_CurrentStateChangedImpl($0)
+       }
+      )
+    }()
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualstategroup.currentstatechanging)
+    public lazy var currentStateChanging : Event<VisualStateChangedEventHandler> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._default else { return .init() }
+          return try! this.add_CurrentStateChangingImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._default.remove_CurrentStateChangingImpl($0)
+       }
+      )
+    }()
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualstatemanager)
+open class VisualStateManager : WinUI.DependencyObject {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IVisualStateManager
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateManager
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override open func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateManager>?) -> VisualStateManager? {
+        guard let abi = abi else { return nil }
+        return UnsealedWinRTClassWrapper<Composable>.unwrapFrom(base: abi)
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    @_spi(WinRTInternal)
+    override public init<Composable: ComposableImpl>(
+        composing: Composable.Type,
+        _ createCallback: (UnsealedWinRTClassWrapper<Composable>?, inout WindowsFoundation.IInspectable?) -> Composable.Default.SwiftABI)
+    {
+        super.init(composing: composing, createCallback)
+    }
+    override open func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        switch iid {
+            case __ABI_Microsoft_UI_Xaml.IVisualStateManagerOverridesWrapper.IID:
+                let wrapper = __ABI_Microsoft_UI_Xaml.IVisualStateManagerOverridesWrapper(self)
+                return wrapper!.queryInterface(iid)
+            default: return super.queryInterface(iid)
+        }
+    }
+    private static var _IVisualStateManagerFactory : __ABI_Microsoft_UI_Xaml.IVisualStateManagerFactory =  try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.VisualStateManager"))
+
+    override public init() {
+        super.init(composing: Self.Composable.self) { baseInterface, innerInterface in 
+            try! Self._IVisualStateManagerFactory.CreateInstanceImpl(baseInterface, &innerInterface)
+        }
+    }
+
+    private static let _IVisualStateManagerStatics: __ABI_Microsoft_UI_Xaml.IVisualStateManagerStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.VisualStateManager"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualstatemanager.getvisualstategroups)
+    public class func getVisualStateGroups(_ obj: FrameworkElement!) -> WindowsFoundation.AnyIVector<VisualStateGroup?>! {
+        return try! _IVisualStateManagerStatics.GetVisualStateGroupsImpl(obj)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualstatemanager.getcustomvisualstatemanager)
+    public class func getCustomVisualStateManager(_ obj: FrameworkElement!) -> VisualStateManager! {
+        return try! _IVisualStateManagerStatics.GetCustomVisualStateManagerImpl(obj)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualstatemanager.setcustomvisualstatemanager)
+    public class func setCustomVisualStateManager(_ obj: FrameworkElement!, _ value: VisualStateManager!) {
+        try! _IVisualStateManagerStatics.SetCustomVisualStateManagerImpl(obj, value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualstatemanager.gotostate)
+    public class func goToState(_ control: WinUI.Control!, _ stateName: String, _ useTransitions: Bool) -> Bool {
+        return try! _IVisualStateManagerStatics.GoToStateImpl(control, stateName, useTransitions)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualstatemanager.customvisualstatemanagerproperty)
+    public class var customVisualStateManagerProperty : DependencyProperty! {
+        get { try! _IVisualStateManagerStatics.get_CustomVisualStateManagerPropertyImpl() }
+    }
+
+    private lazy var _IVisualStateManagerProtected: __ABI_Microsoft_UI_Xaml.IVisualStateManagerProtected! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualstatemanager.raisecurrentstatechanging)
+    public func raiseCurrentStateChanging(_ stateGroup: VisualStateGroup!, _ oldState: VisualState!, _ newState: VisualState!, _ control: WinUI.Control!) throws {
+        try _IVisualStateManagerProtected.RaiseCurrentStateChangingImpl(stateGroup, oldState, newState, control)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualstatemanager.raisecurrentstatechanged)
+    public func raiseCurrentStateChanged(_ stateGroup: VisualStateGroup!, _ oldState: VisualState!, _ newState: VisualState!, _ control: WinUI.Control!) throws {
+        try _IVisualStateManagerProtected.RaiseCurrentStateChangedImpl(stateGroup, oldState, newState, control)
+    }
+
+    private lazy var _IVisualStateManagerOverrides: __ABI_Microsoft_UI_Xaml.IVisualStateManagerOverrides! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualstatemanager.gotostatecore)
+    open func goToStateCore(_ control: WinUI.Control!, _ templateRoot: FrameworkElement!, _ stateName: String, _ group: VisualStateGroup!, _ state: VisualState!, _ useTransitions: Bool) throws -> Bool {
+        try _IVisualStateManagerOverrides.GoToStateCoreImpl(control, templateRoot, stateName, group, state, useTransitions)
+    }
+
+    internal enum IVisualStateManagerOverrides : ComposableImpl {
+        internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateManagerOverrides
+        internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IVisualStateManagerOverrides
+        internal typealias Class = VisualStateManager
+        internal typealias SwiftProjection = WinRTClassWeakReference<Class>
+        internal enum Default : AbiInterface {
+            internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateManager
+            internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IVisualStateManager
+        }
+    }
+    internal typealias Composable = IVisualStateManagerOverrides
+    deinit {
+        _default = nil
+        _IVisualStateManagerProtected = nil
+        _IVisualStateManagerOverrides = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualtransition)
+open class VisualTransition : WinUI.DependencyObject {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IVisualTransition
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIVisualTransition
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override open func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CIVisualTransition>?) -> VisualTransition? {
+        guard let abi = abi else { return nil }
+        return UnsealedWinRTClassWrapper<Composable>.unwrapFrom(base: abi)
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    @_spi(WinRTInternal)
+    override public init<Composable: ComposableImpl>(
+        composing: Composable.Type,
+        _ createCallback: (UnsealedWinRTClassWrapper<Composable>?, inout WindowsFoundation.IInspectable?) -> Composable.Default.SwiftABI)
+    {
+        super.init(composing: composing, createCallback)
+    }
+    override open func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    private static var _IVisualTransitionFactory : __ABI_Microsoft_UI_Xaml.IVisualTransitionFactory =  try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.VisualTransition"))
+
+    override public init() {
+        super.init(composing: Self.Composable.self) { baseInterface, innerInterface in 
+            try! Self._IVisualTransitionFactory.CreateInstanceImpl(baseInterface, &innerInterface)
+        }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualtransition.from)
+    public var from : String {
+        get { try! _default.get_FromImpl() }
+        set { try! _default.put_FromImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualtransition.generatedduration)
+    public var generatedDuration : Duration {
+        get { try! _default.get_GeneratedDurationImpl() }
+        set { try! _default.put_GeneratedDurationImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualtransition.generatedeasingfunction)
+    public var generatedEasingFunction : WinUI.EasingFunctionBase! {
+        get { try! _default.get_GeneratedEasingFunctionImpl() }
+        set { try! _default.put_GeneratedEasingFunctionImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualtransition.storyboard)
+    public var storyboard : WinUI.Storyboard! {
+        get { try! _default.get_StoryboardImpl() }
+        set { try! _default.put_StoryboardImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.visualtransition.to)
+    public var to : String {
+        get { try! _default.get_ToImpl() }
+        set { try! _default.put_ToImpl(newValue) }
+    }
+
+    internal enum IVisualTransition : ComposableImpl {
+        internal typealias CABI = C_IInspectable
+        internal typealias SwiftABI = WindowsFoundation.IInspectable
+        internal typealias Class = VisualTransition
+        internal typealias SwiftProjection = WinRTClassWeakReference<Class>
+        internal enum Default : AbiInterface {
+            internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIVisualTransition
+            internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IVisualTransition
+        }
+    }
+    internal typealias Composable = IVisualTransition
+    deinit {
+        _default = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.window)
 open class Window : WinRTClass {
     private typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IWindow
@@ -5501,11 +7410,15 @@ public typealias CreateDefaultValueCallback = () -> Any?
 public typealias DependencyPropertyChangedCallback = (DependencyObject?, DependencyProperty?) -> ()
 public typealias DependencyPropertyChangedEventHandler = (Any?, DependencyPropertyChangedEventArgs?) -> ()
 public typealias DragEventHandler = (Any?, DragEventArgs?) -> ()
+public typealias EnteredBackgroundEventHandler = (Any?, UWP.EnteredBackgroundEventArgs?) -> ()
 public typealias ExceptionRoutedEventHandler = (Any?, ExceptionRoutedEventArgs?) -> ()
+public typealias LeavingBackgroundEventHandler = (Any?, UWP.LeavingBackgroundEventArgs?) -> ()
 public typealias PropertyChangedCallback = (DependencyObject?, DependencyPropertyChangedEventArgs?) -> ()
 public typealias RoutedEventHandler = (Any?, RoutedEventArgs?) -> ()
 public typealias SizeChangedEventHandler = (Any?, SizeChangedEventArgs?) -> ()
+public typealias SuspendingEventHandler = (Any?, UWP.SuspendingEventArgs?) -> ()
 public typealias UnhandledExceptionEventHandler = (Any?, UnhandledExceptionEventArgs?) -> ()
+public typealias VisualStateChangedEventHandler = (Any?, VisualStateChangedEventArgs?) -> ()
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.cornerradius)
 public struct CornerRadius: Hashable, Codable {
     /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.cornerradius.topleft)
@@ -5624,6 +7537,24 @@ extension IElementFactory {
 }
 public typealias AnyIElementFactory = any IElementFactory
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.ixamlserviceprovider)
+public protocol IXamlServiceProvider : WinRTInterface {
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.ixamlserviceprovider.getservice)
+    func getService(_ type: WinUI.TypeName) throws -> Any!
+}
+
+extension IXamlServiceProvider {
+    public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        switch iid {
+            case __ABI_Microsoft_UI_Xaml.IXamlServiceProviderWrapper.IID:
+                let wrapper = __ABI_Microsoft_UI_Xaml.IXamlServiceProviderWrapper(self)
+                return wrapper!.queryInterface(iid)
+            default: return nil
+        }
+    }
+}
+public typealias AnyIXamlServiceProvider = any IXamlServiceProvider
+
 extension WinUI.ApplicationHighContrastAdjustment {
     public static var none : WinUI.ApplicationHighContrastAdjustment {
         __x_ABI_CMicrosoft_CUI_CXaml_CApplicationHighContrastAdjustment_None
@@ -5634,6 +7565,16 @@ extension WinUI.ApplicationHighContrastAdjustment {
 }
 extension WinUI.ApplicationHighContrastAdjustment: @retroactive Hashable, @retroactive Codable {}
 
+extension WinUI.ApplicationRequiresPointerMode {
+    public static var auto : WinUI.ApplicationRequiresPointerMode {
+        __x_ABI_CMicrosoft_CUI_CXaml_CApplicationRequiresPointerMode_Auto
+    }
+    public static var whenRequested : WinUI.ApplicationRequiresPointerMode {
+        __x_ABI_CMicrosoft_CUI_CXaml_CApplicationRequiresPointerMode_WhenRequested
+    }
+}
+extension WinUI.ApplicationRequiresPointerMode: @retroactive Hashable, @retroactive Codable {}
+
 extension WinUI.ApplicationTheme {
     public static var light : WinUI.ApplicationTheme {
         __x_ABI_CMicrosoft_CUI_CXaml_CApplicationTheme_Light
@@ -5643,6 +7584,130 @@ extension WinUI.ApplicationTheme {
     }
 }
 extension WinUI.ApplicationTheme: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.AutomationTextAttributesEnum {
+    public static var animationStyleAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_AnimationStyleAttribute
+    }
+    public static var backgroundColorAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_BackgroundColorAttribute
+    }
+    public static var bulletStyleAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_BulletStyleAttribute
+    }
+    public static var capStyleAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_CapStyleAttribute
+    }
+    public static var cultureAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_CultureAttribute
+    }
+    public static var fontNameAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_FontNameAttribute
+    }
+    public static var fontSizeAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_FontSizeAttribute
+    }
+    public static var fontWeightAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_FontWeightAttribute
+    }
+    public static var foregroundColorAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_ForegroundColorAttribute
+    }
+    public static var horizontalTextAlignmentAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_HorizontalTextAlignmentAttribute
+    }
+    public static var indentationFirstLineAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_IndentationFirstLineAttribute
+    }
+    public static var indentationLeadingAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_IndentationLeadingAttribute
+    }
+    public static var indentationTrailingAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_IndentationTrailingAttribute
+    }
+    public static var isHiddenAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_IsHiddenAttribute
+    }
+    public static var isItalicAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_IsItalicAttribute
+    }
+    public static var isReadOnlyAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_IsReadOnlyAttribute
+    }
+    public static var isSubscriptAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_IsSubscriptAttribute
+    }
+    public static var isSuperscriptAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_IsSuperscriptAttribute
+    }
+    public static var marginBottomAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_MarginBottomAttribute
+    }
+    public static var marginLeadingAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_MarginLeadingAttribute
+    }
+    public static var marginTopAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_MarginTopAttribute
+    }
+    public static var marginTrailingAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_MarginTrailingAttribute
+    }
+    public static var outlineStylesAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_OutlineStylesAttribute
+    }
+    public static var overlineColorAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_OverlineColorAttribute
+    }
+    public static var overlineStyleAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_OverlineStyleAttribute
+    }
+    public static var strikethroughColorAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_StrikethroughColorAttribute
+    }
+    public static var strikethroughStyleAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_StrikethroughStyleAttribute
+    }
+    public static var tabsAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_TabsAttribute
+    }
+    public static var textFlowDirectionsAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_TextFlowDirectionsAttribute
+    }
+    public static var underlineColorAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_UnderlineColorAttribute
+    }
+    public static var underlineStyleAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_UnderlineStyleAttribute
+    }
+    public static var annotationTypesAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_AnnotationTypesAttribute
+    }
+    public static var annotationObjectsAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_AnnotationObjectsAttribute
+    }
+    public static var styleNameAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_StyleNameAttribute
+    }
+    public static var styleIdAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_StyleIdAttribute
+    }
+    public static var linkAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_LinkAttribute
+    }
+    public static var isActiveAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_IsActiveAttribute
+    }
+    public static var selectionActiveEndAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_SelectionActiveEndAttribute
+    }
+    public static var caretPositionAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_CaretPositionAttribute
+    }
+    public static var caretBidiModeAttribute : WinUI.AutomationTextAttributesEnum {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomationTextAttributesEnum_CaretBidiModeAttribute
+    }
+}
+extension WinUI.AutomationTextAttributesEnum: @retroactive Hashable, @retroactive Codable {}
 
 extension WinUI.DispatcherShutdownMode {
     public static var onLastWindowClose : WinUI.DispatcherShutdownMode {
@@ -5680,6 +7745,31 @@ extension WinUI.ElementHighContrastAdjustment {
 }
 extension WinUI.ElementHighContrastAdjustment: @retroactive Hashable, @retroactive Codable {}
 
+extension WinUI.ElementSoundKind {
+    public static var focus : WinUI.ElementSoundKind {
+        __x_ABI_CMicrosoft_CUI_CXaml_CElementSoundKind_Focus
+    }
+    public static var invoke : WinUI.ElementSoundKind {
+        __x_ABI_CMicrosoft_CUI_CXaml_CElementSoundKind_Invoke
+    }
+    public static var show : WinUI.ElementSoundKind {
+        __x_ABI_CMicrosoft_CUI_CXaml_CElementSoundKind_Show
+    }
+    public static var hide : WinUI.ElementSoundKind {
+        __x_ABI_CMicrosoft_CUI_CXaml_CElementSoundKind_Hide
+    }
+    public static var movePrevious : WinUI.ElementSoundKind {
+        __x_ABI_CMicrosoft_CUI_CXaml_CElementSoundKind_MovePrevious
+    }
+    public static var moveNext : WinUI.ElementSoundKind {
+        __x_ABI_CMicrosoft_CUI_CXaml_CElementSoundKind_MoveNext
+    }
+    public static var goBack : WinUI.ElementSoundKind {
+        __x_ABI_CMicrosoft_CUI_CXaml_CElementSoundKind_GoBack
+    }
+}
+extension WinUI.ElementSoundKind: @retroactive Hashable, @retroactive Codable {}
+
 extension WinUI.ElementSoundMode {
     public static var `default` : WinUI.ElementSoundMode {
         __x_ABI_CMicrosoft_CUI_CXaml_CElementSoundMode_Default
@@ -5692,6 +7782,32 @@ extension WinUI.ElementSoundMode {
     }
 }
 extension WinUI.ElementSoundMode: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.ElementSoundPlayerState {
+    public static var auto : WinUI.ElementSoundPlayerState {
+        __x_ABI_CMicrosoft_CUI_CXaml_CElementSoundPlayerState_Auto
+    }
+    public static var off : WinUI.ElementSoundPlayerState {
+        __x_ABI_CMicrosoft_CUI_CXaml_CElementSoundPlayerState_Off
+    }
+    public static var on : WinUI.ElementSoundPlayerState {
+        __x_ABI_CMicrosoft_CUI_CXaml_CElementSoundPlayerState_On
+    }
+}
+extension WinUI.ElementSoundPlayerState: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.ElementSpatialAudioMode {
+    public static var auto : WinUI.ElementSpatialAudioMode {
+        __x_ABI_CMicrosoft_CUI_CXaml_CElementSpatialAudioMode_Auto
+    }
+    public static var off : WinUI.ElementSpatialAudioMode {
+        __x_ABI_CMicrosoft_CUI_CXaml_CElementSpatialAudioMode_Off
+    }
+    public static var on : WinUI.ElementSpatialAudioMode {
+        __x_ABI_CMicrosoft_CUI_CXaml_CElementSpatialAudioMode_On
+    }
+}
+extension WinUI.ElementSpatialAudioMode: @retroactive Hashable, @retroactive Codable {}
 
 extension WinUI.ElementTheme {
     public static var `default` : WinUI.ElementTheme {
@@ -5744,6 +7860,148 @@ extension WinUI.FocusVisualKind {
     }
 }
 extension WinUI.FocusVisualKind: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.FontCapitals {
+    public static var normal : WinUI.FontCapitals {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontCapitals_Normal
+    }
+    public static var allSmallCaps : WinUI.FontCapitals {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontCapitals_AllSmallCaps
+    }
+    public static var smallCaps : WinUI.FontCapitals {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontCapitals_SmallCaps
+    }
+    public static var allPetiteCaps : WinUI.FontCapitals {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontCapitals_AllPetiteCaps
+    }
+    public static var petiteCaps : WinUI.FontCapitals {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontCapitals_PetiteCaps
+    }
+    public static var unicase : WinUI.FontCapitals {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontCapitals_Unicase
+    }
+    public static var titling : WinUI.FontCapitals {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontCapitals_Titling
+    }
+}
+extension WinUI.FontCapitals: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.FontEastAsianLanguage {
+    public static var normal : WinUI.FontEastAsianLanguage {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontEastAsianLanguage_Normal
+    }
+    public static var hojoKanji : WinUI.FontEastAsianLanguage {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontEastAsianLanguage_HojoKanji
+    }
+    public static var jis04 : WinUI.FontEastAsianLanguage {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontEastAsianLanguage_Jis04
+    }
+    public static var jis78 : WinUI.FontEastAsianLanguage {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontEastAsianLanguage_Jis78
+    }
+    public static var jis83 : WinUI.FontEastAsianLanguage {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontEastAsianLanguage_Jis83
+    }
+    public static var jis90 : WinUI.FontEastAsianLanguage {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontEastAsianLanguage_Jis90
+    }
+    public static var nlcKanji : WinUI.FontEastAsianLanguage {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontEastAsianLanguage_NlcKanji
+    }
+    public static var simplified : WinUI.FontEastAsianLanguage {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontEastAsianLanguage_Simplified
+    }
+    public static var traditional : WinUI.FontEastAsianLanguage {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontEastAsianLanguage_Traditional
+    }
+    public static var traditionalNames : WinUI.FontEastAsianLanguage {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontEastAsianLanguage_TraditionalNames
+    }
+}
+extension WinUI.FontEastAsianLanguage: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.FontEastAsianWidths {
+    public static var normal : WinUI.FontEastAsianWidths {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontEastAsianWidths_Normal
+    }
+    public static var full : WinUI.FontEastAsianWidths {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontEastAsianWidths_Full
+    }
+    public static var half : WinUI.FontEastAsianWidths {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontEastAsianWidths_Half
+    }
+    public static var proportional : WinUI.FontEastAsianWidths {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontEastAsianWidths_Proportional
+    }
+    public static var quarter : WinUI.FontEastAsianWidths {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontEastAsianWidths_Quarter
+    }
+    public static var third : WinUI.FontEastAsianWidths {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontEastAsianWidths_Third
+    }
+}
+extension WinUI.FontEastAsianWidths: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.FontFraction {
+    public static var normal : WinUI.FontFraction {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontFraction_Normal
+    }
+    public static var stacked : WinUI.FontFraction {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontFraction_Stacked
+    }
+    public static var slashed : WinUI.FontFraction {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontFraction_Slashed
+    }
+}
+extension WinUI.FontFraction: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.FontNumeralAlignment {
+    public static var normal : WinUI.FontNumeralAlignment {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontNumeralAlignment_Normal
+    }
+    public static var proportional : WinUI.FontNumeralAlignment {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontNumeralAlignment_Proportional
+    }
+    public static var tabular : WinUI.FontNumeralAlignment {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontNumeralAlignment_Tabular
+    }
+}
+extension WinUI.FontNumeralAlignment: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.FontNumeralStyle {
+    public static var normal : WinUI.FontNumeralStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontNumeralStyle_Normal
+    }
+    public static var lining : WinUI.FontNumeralStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontNumeralStyle_Lining
+    }
+    public static var oldStyle : WinUI.FontNumeralStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontNumeralStyle_OldStyle
+    }
+}
+extension WinUI.FontNumeralStyle: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.FontVariants {
+    public static var normal : WinUI.FontVariants {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontVariants_Normal
+    }
+    public static var superscript : WinUI.FontVariants {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontVariants_Superscript
+    }
+    public static var `subscript` : WinUI.FontVariants {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontVariants_Subscript
+    }
+    public static var ordinal : WinUI.FontVariants {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontVariants_Ordinal
+    }
+    public static var inferior : WinUI.FontVariants {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontVariants_Inferior
+    }
+    public static var ruby : WinUI.FontVariants {
+        __x_ABI_CMicrosoft_CUI_CXaml_CFontVariants_Ruby
+    }
+}
+extension WinUI.FontVariants: @retroactive Hashable, @retroactive Codable {}
 
 extension WinUI.GridUnitType {
     public static var auto : WinUI.GridUnitType {

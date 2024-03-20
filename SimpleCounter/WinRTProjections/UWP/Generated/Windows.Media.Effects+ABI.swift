@@ -8,6 +8,10 @@ private var IID___x_ABI_CWindows_CMedia_CEffects_CIAudioEffectDefinition: Window
     .init(Data1: 0xE4D7F974, Data2: 0x7D80, Data3: 0x4F73, Data4: ( 0x90,0x89,0xE3,0x1C,0x9D,0xB9,0xC2,0x94 ))// E4D7F974-7D80-4F73-9089-E31C9DB9C294
 }
 
+private var IID___x_ABI_CWindows_CMedia_CEffects_CIVideoEffectDefinition: WindowsFoundation.IID {
+    .init(Data1: 0x39F38CF0, Data2: 0x8D0F, Data3: 0x4F3E, Data4: ( 0x84,0xFC,0x2D,0x46,0xA5,0x29,0x79,0x43 ))// 39F38CF0-8D0F-4F3E-84FC-2D46A5297943
+}
+
 public enum __ABI_Windows_Media_Effects {
     public class IAudioEffectDefinition: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CEffects_CIAudioEffectDefinition }
@@ -76,4 +80,71 @@ public enum __ABI_Windows_Media_Effects {
     )
 
     public typealias IAudioEffectDefinitionWrapper = InterfaceWrapperBase<__IMPL_Windows_Media_Effects.IAudioEffectDefinitionBridge>
+    public class IVideoEffectDefinition: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CEffects_CIVideoEffectDefinition }
+
+        open func get_ActivatableClassIdImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CEffects_CIVideoEffectDefinition.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ActivatableClassId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        open func get_PropertiesImpl() throws -> WindowsFoundation.AnyIPropertySet? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CEffects_CIVideoEffectDefinition.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Properties(pThis, &valueAbi))
+                }
+            }
+            return __ABI_Windows_Foundation_Collections.IPropertySetWrapper.unwrapFrom(abi: value)
+        }
+
+    }
+
+    internal static var IVideoEffectDefinitionVTable: __x_ABI_CWindows_CMedia_CEffects_CIVideoEffectDefinitionVtbl = .init(
+        QueryInterface: { IVideoEffectDefinitionWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IVideoEffectDefinitionWrapper.addRef($0) },
+        Release: { IVideoEffectDefinitionWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 3).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_Media_Effects.IVideoEffectDefinitionWrapper.IID
+            $1!.pointee = 3
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.Media.Effects.IVideoEffectDefinition").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_ActivatableClassId: {
+            guard let __unwrapped__instance = IVideoEffectDefinitionWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.activatableClassId
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        },
+
+        get_Properties: {
+            guard let __unwrapped__instance = IVideoEffectDefinitionWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.properties
+            let valueWrapper = __ABI_Windows_Foundation_Collections.IPropertySetWrapper(value)
+            valueWrapper?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IVideoEffectDefinitionWrapper = InterfaceWrapperBase<__IMPL_Windows_Media_Effects.IVideoEffectDefinitionBridge>
 }

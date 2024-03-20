@@ -4,12 +4,124 @@ import Foundation
 @_spi(WinRTInternal) @_spi(WinRTImplements) import WindowsFoundation
 import CWinRT
 
+private var IID___x_ABI_CWindows_CSystem_CIAppActivationResult: WindowsFoundation.IID {
+    .init(Data1: 0x6B528900, Data2: 0xF46E, Data3: 0x4EB0, Data4: ( 0xAA,0x6C,0x38,0xAF,0x55,0x7C,0xF9,0xED ))// 6B528900-F46E-4EB0-AA6C-38AF557CF9ED
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIAppDiagnosticInfo: WindowsFoundation.IID {
+    .init(Data1: 0xE348A69A, Data2: 0x8889, Data3: 0x4CA3, Data4: ( 0xBE,0x07,0xD5,0xFF,0xFF,0x5F,0x08,0x04 ))// E348A69A-8889-4CA3-BE07-D5FFFF5F0804
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIAppDiagnosticInfo2: WindowsFoundation.IID {
+    .init(Data1: 0xDF46FBD7, Data2: 0x191A, Data3: 0x446C, Data4: ( 0x94,0x73,0x8F,0xBC,0x23,0x74,0xA3,0x54 ))// DF46FBD7-191A-446C-9473-8FBC2374A354
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIAppDiagnosticInfo3: WindowsFoundation.IID {
+    .init(Data1: 0xC895C63D, Data2: 0xDD61, Data3: 0x4C65, Data4: ( 0xBA,0xBD,0x81,0xA1,0x0B,0x4F,0x98,0x15 ))// C895C63D-DD61-4C65-BABD-81A10B4F9815
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIAppDiagnosticInfoStatics: WindowsFoundation.IID {
+    .init(Data1: 0xCE6925BF, Data2: 0x10CA, Data3: 0x40C8, Data4: ( 0xA9,0xCA,0xC5,0xC9,0x65,0x01,0x86,0x6E ))// CE6925BF-10CA-40C8-A9CA-C5C96501866E
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIAppDiagnosticInfoStatics2: WindowsFoundation.IID {
+    .init(Data1: 0x05B24B86, Data2: 0x1000, Data3: 0x4C90, Data4: ( 0xBB,0x9F,0x72,0x35,0x07,0x1C,0x50,0xFE ))// 05B24B86-1000-4C90-BB9F-7235071C50FE
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIAppDiagnosticInfoWatcher: WindowsFoundation.IID {
+    .init(Data1: 0x75575070, Data2: 0x01D3, Data3: 0x489A, Data4: ( 0x93,0x25,0x52,0xF9,0xCC,0x6E,0xDE,0x0A ))// 75575070-01D3-489A-9325-52F9CC6EDE0A
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIAppDiagnosticInfoWatcherEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x7017C716, Data2: 0xE1DA, Data3: 0x4C65, Data4: ( 0x99,0xDF,0x04,0x6D,0xFF,0x5B,0xE7,0x1A ))// 7017C716-E1DA-4C65-99DF-046DFF5BE71A
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIAppExecutionStateChangeResult: WindowsFoundation.IID {
+    .init(Data1: 0x6F039BF0, Data2: 0xF91B, Data3: 0x4DF8, Data4: ( 0xAE,0x77,0x30,0x33,0xCC,0xB6,0x91,0x14 ))// 6F039BF0-F91B-4DF8-AE77-3033CCB69114
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIAppMemoryReport: WindowsFoundation.IID {
+    .init(Data1: 0x6D65339B, Data2: 0x4D6F, Data3: 0x45BC, Data4: ( 0x9C,0x5E,0xE4,0x9B,0x3F,0xF2,0x75,0x8D ))// 6D65339B-4D6F-45BC-9C5E-E49B3FF2758D
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIAppMemoryReport2: WindowsFoundation.IID {
+    .init(Data1: 0x5F7F3738, Data2: 0x51B7, Data3: 0x42DC, Data4: ( 0xB7,0xED,0x79,0xBA,0x46,0xD2,0x88,0x57 ))// 5F7F3738-51B7-42DC-B7ED-79BA46D28857
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIAppMemoryUsageLimitChangingEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x79F86664, Data2: 0xFECA, Data3: 0x4DA5, Data4: ( 0x9E,0x40,0x2B,0xC6,0x3E,0xFD,0xC9,0x79 ))// 79F86664-FECA-4DA5-9E40-2BC63EFDC979
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIAppResourceGroupBackgroundTaskReport: WindowsFoundation.IID {
+    .init(Data1: 0x2566E74E, Data2: 0xB05D, Data3: 0x40C2, Data4: ( 0x9D,0xC1,0x1A,0x4F,0x03,0x9E,0xA1,0x20 ))// 2566E74E-B05D-40C2-9DC1-1A4F039EA120
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIAppResourceGroupInfo: WindowsFoundation.IID {
+    .init(Data1: 0xB913F77A, Data2: 0xE807, Data3: 0x49F4, Data4: ( 0x84,0x5E,0x7B,0x8B,0xDC,0xFE,0x8E,0xE7 ))// B913F77A-E807-49F4-845E-7B8BDCFE8EE7
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIAppResourceGroupInfo2: WindowsFoundation.IID {
+    .init(Data1: 0xEE9B236D, Data2: 0xD305, Data3: 0x4D6B, Data4: ( 0x92,0xF7,0x6A,0xFD,0xAD,0x72,0xDE,0xDC ))// EE9B236D-D305-4D6B-92F7-6AFDAD72DEDC
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcher: WindowsFoundation.IID {
+    .init(Data1: 0xD9B0A0FD, Data2: 0x6E5A, Data3: 0x4C72, Data4: ( 0x8B,0x17,0x09,0xFE,0xC4,0xA2,0x12,0xBD ))// D9B0A0FD-6E5A-4C72-8B17-09FEC4A212BD
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcherEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x7A787637, Data2: 0x6302, Data3: 0x4D2F, Data4: ( 0xBF,0x89,0x1C,0x12,0xD0,0xB2,0xA6,0xB9 ))// 7A787637-6302-4D2F-BF89-1C12D0B2A6B9
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcherExecutionStateChangedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x1BDBEDD7, Data2: 0xFEE6, Data3: 0x4FD4, Data4: ( 0x98,0xDD,0xE9,0x2A,0x2C,0xC2,0x99,0xF3 ))// 1BDBEDD7-FEE6-4FD4-98DD-E92A2CC299F3
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIAppResourceGroupMemoryReport: WindowsFoundation.IID {
+    .init(Data1: 0x2C8C06B1, Data2: 0x7DB1, Data3: 0x4C51, Data4: ( 0xA2,0x25,0x7F,0xAE,0x2D,0x49,0xE4,0x31 ))// 2C8C06B1-7DB1-4C51-A225-7FAE2D49E431
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIAppResourceGroupStateReport: WindowsFoundation.IID {
+    .init(Data1: 0x52849F18, Data2: 0x2F70, Data3: 0x4236, Data4: ( 0xAB,0x40,0xD0,0x4D,0xB0,0xC7,0xB9,0x31 ))// 52849F18-2F70-4236-AB40-D04DB0C7B931
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIAppUriHandlerHost: WindowsFoundation.IID {
+    .init(Data1: 0x5D50CAC5, Data2: 0x92D2, Data3: 0x5409, Data4: ( 0xB5,0x6F,0x7F,0x73,0xE1,0x0E,0xA4,0xC3 ))// 5D50CAC5-92D2-5409-B56F-7F73E10EA4C3
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIAppUriHandlerHostFactory: WindowsFoundation.IID {
+    .init(Data1: 0x257C3C96, Data2: 0xCE04, Data3: 0x5F98, Data4: ( 0x96,0xBB,0x3E,0xBD,0x3E,0x92,0x75,0xBB ))// 257C3C96-CE04-5F98-96BB-3EBD3E9275BB
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIAppUriHandlerRegistration: WindowsFoundation.IID {
+    .init(Data1: 0x6F73AEB1, Data2: 0x4569, Data3: 0x5C3F, Data4: ( 0x9B,0xA0,0x99,0x12,0x3E,0xEA,0x32,0xC3 ))// 6F73AEB1-4569-5C3F-9BA0-99123EEA32C3
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIAppUriHandlerRegistrationManager: WindowsFoundation.IID {
+    .init(Data1: 0xE62C9A52, Data2: 0xAC94, Data3: 0x5750, Data4: ( 0xAC,0x1B,0x6C,0xFB,0x6F,0x25,0x02,0x63 ))// E62C9A52-AC94-5750-AC1B-6CFB6F250263
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIAppUriHandlerRegistrationManagerStatics: WindowsFoundation.IID {
+    .init(Data1: 0xD5CEDD9F, Data2: 0x5729, Data3: 0x5B76, Data4: ( 0xA1,0xD4,0x02,0x85,0xF2,0x95,0xC1,0x24 ))// D5CEDD9F-5729-5B76-A1D4-0285F295C124
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIDateTimeSettingsStatics: WindowsFoundation.IID {
+    .init(Data1: 0x5D2150D1, Data2: 0x47EE, Data3: 0x48AB, Data4: ( 0xA5,0x2B,0x9F,0x19,0x54,0x27,0x8D,0x82 ))// 5D2150D1-47EE-48AB-A52B-9F1954278D82
+}
+
 private var IID___x_ABI_CWindows_CSystem_CIDispatcherQueue: WindowsFoundation.IID {
     .init(Data1: 0x603E88E4, Data2: 0xA338, Data3: 0x4FFE, Data4: ( 0xA4,0x57,0xA5,0xCF,0xB9,0xCE,0xB8,0x99 ))// 603E88E4-A338-4FFE-A457-A5CFB9CEB899
 }
 
 private var IID___x_ABI_CWindows_CSystem_CIDispatcherQueue2: WindowsFoundation.IID {
     .init(Data1: 0xC822C647, Data2: 0x30EF, Data3: 0x506E, Data4: ( 0xBD,0x1E,0xA6,0x47,0xAE,0x66,0x75,0xFF ))// C822C647-30EF-506E-BD1E-A647AE6675FF
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIDispatcherQueueController: WindowsFoundation.IID {
+    .init(Data1: 0x22F34E66, Data2: 0x50DB, Data3: 0x4E36, Data4: ( 0xA9,0x8D,0x61,0xC0,0x1B,0x38,0x4D,0x20 ))// 22F34E66-50DB-4E36-A98D-61C01B384D20
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIDispatcherQueueControllerStatics: WindowsFoundation.IID {
+    .init(Data1: 0x0A6C98E0, Data2: 0x5198, Data3: 0x49A2, Data4: ( 0xA3,0x13,0x3F,0x70,0xD1,0xF1,0x3C,0x27 ))// 0A6C98E0-5198-49A2-A313-3F70D1F13C27
 }
 
 private var IID___x_ABI_CWindows_CSystem_CIDispatcherQueueShutdownStartingEventArgs: WindowsFoundation.IID {
@@ -26,6 +138,10 @@ private var IID___x_ABI_CWindows_CSystem_CIDispatcherQueueTimer: WindowsFoundati
 
 private var IID___x_ABI_CWindows_CSystem_CIFolderLauncherOptions: WindowsFoundation.IID {
     .init(Data1: 0xBB91C27D, Data2: 0x6B87, Data3: 0x432A, Data4: ( 0xBD,0x04,0x77,0x6C,0x6F,0x5F,0xB2,0xAB ))// BB91C27D-6B87-432A-BD04-776C6F5FB2AB
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIKnownUserPropertiesStatics: WindowsFoundation.IID {
+    .init(Data1: 0x7755911A, Data2: 0x70C5, Data3: 0x48E5, Data4: ( 0xB6,0x37,0x5B,0xA3,0x44,0x1E,0x4E,0xE4 ))// 7755911A-70C5-48E5-B637-5BA3441E4EE4
 }
 
 private var IID___x_ABI_CWindows_CSystem_CILaunchUriResult: WindowsFoundation.IID {
@@ -76,6 +192,66 @@ private var IID___x_ABI_CWindows_CSystem_CILauncherViewOptions: WindowsFoundatio
     .init(Data1: 0x8A9B29F1, Data2: 0x7CA7, Data3: 0x49DE, Data4: ( 0x9B,0xD3,0x3C,0x5B,0x71,0x84,0xF6,0x16 ))// 8A9B29F1-7CA7-49DE-9BD3-3C5B7184F616
 }
 
+private var IID___x_ABI_CWindows_CSystem_CIMemoryManagerStatics: WindowsFoundation.IID {
+    .init(Data1: 0x5C6C279C, Data2: 0xD7CA, Data3: 0x4779, Data4: ( 0x91,0x88,0x40,0x57,0x21,0x9C,0xE6,0x4C ))// 5C6C279C-D7CA-4779-9188-4057219CE64C
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIMemoryManagerStatics2: WindowsFoundation.IID {
+    .init(Data1: 0x6EEE351F, Data2: 0x6D62, Data3: 0x423F, Data4: ( 0x94,0x79,0xB0,0x1F,0x9C,0x9F,0x76,0x69 ))// 6EEE351F-6D62-423F-9479-B01F9C9F7669
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIMemoryManagerStatics3: WindowsFoundation.IID {
+    .init(Data1: 0x149B59CE, Data2: 0x92AD, Data3: 0x4E35, Data4: ( 0x89,0xEB,0x50,0xDF,0xB4,0xC0,0xD9,0x1C ))// 149B59CE-92AD-4E35-89EB-50DFB4C0D91C
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIMemoryManagerStatics4: WindowsFoundation.IID {
+    .init(Data1: 0xC5A94828, Data2: 0xE84E, Data3: 0x4886, Data4: ( 0x8A,0x0D,0x44,0xB3,0x19,0x0E,0x3B,0x72 ))// C5A94828-E84E-4886-8A0D-44B3190E3B72
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIProcessLauncherOptions: WindowsFoundation.IID {
+    .init(Data1: 0x3080B9CF, Data2: 0xF444, Data3: 0x4A83, Data4: ( 0xBE,0xAF,0xA5,0x49,0xA0,0xF3,0x22,0x9C ))// 3080B9CF-F444-4A83-BEAF-A549A0F3229C
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIProcessLauncherResult: WindowsFoundation.IID {
+    .init(Data1: 0x544C8934, Data2: 0x86D8, Data3: 0x4991, Data4: ( 0x8E,0x75,0xEC,0xE8,0xA4,0x3B,0x6B,0x6D ))// 544C8934-86D8-4991-8E75-ECE8A43B6B6D
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIProcessLauncherStatics: WindowsFoundation.IID {
+    .init(Data1: 0x33AB66E7, Data2: 0x2D0E, Data3: 0x448B, Data4: ( 0xA6,0xA0,0xC1,0x3C,0x38,0x36,0xD0,0x9C ))// 33AB66E7-2D0E-448B-A6A0-C13C3836D09C
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIProcessMemoryReport: WindowsFoundation.IID {
+    .init(Data1: 0x087305A8, Data2: 0x9B70, Data3: 0x4782, Data4: ( 0x87,0x41,0x3A,0x98,0x2B,0x6C,0xE5,0xE4 ))// 087305A8-9B70-4782-8741-3A982B6CE5E4
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIProtocolForResultsOperation: WindowsFoundation.IID {
+    .init(Data1: 0xD581293A, Data2: 0x6DE9, Data3: 0x4D28, Data4: ( 0x93,0x78,0xF8,0x67,0x82,0xE1,0x82,0xBB ))// D581293A-6DE9-4D28-9378-F86782E182BB
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIRemoteLauncherOptions: WindowsFoundation.IID {
+    .init(Data1: 0x9E3A2788, Data2: 0x2891, Data3: 0x4CDF, Data4: ( 0xA2,0xD6,0x9D,0xFF,0x7D,0x02,0xE6,0x93 ))// 9E3A2788-2891-4CDF-A2D6-9DFF7D02E693
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIRemoteLauncherStatics: WindowsFoundation.IID {
+    .init(Data1: 0xD7DB7A93, Data2: 0xA30C, Data3: 0x48B7, Data4: ( 0x9F,0x21,0x05,0x10,0x26,0xA4,0xE5,0x17 ))// D7DB7A93-A30C-48B7-9F21-051026A4E517
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIShutdownManagerStatics: WindowsFoundation.IID {
+    .init(Data1: 0x72E247ED, Data2: 0xDD5B, Data3: 0x4D6C, Data4: ( 0xB1,0xD0,0xC5,0x7A,0x7B,0xBB,0x5F,0x94 ))// 72E247ED-DD5B-4D6C-B1D0-C57A7BBB5F94
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIShutdownManagerStatics2: WindowsFoundation.IID {
+    .init(Data1: 0x0F69A02F, Data2: 0x9C34, Data3: 0x43C7, Data4: ( 0xA8,0xC3,0x70,0xB3,0x0A,0x7F,0x75,0x04 ))// 0F69A02F-9C34-43C7-A8C3-70B30A7F7504
+}
+
+private var IID___x_ABI_CWindows_CSystem_CITimeZoneSettingsStatics: WindowsFoundation.IID {
+    .init(Data1: 0x9B3B2BEA, Data2: 0xA101, Data3: 0x41AE, Data4: ( 0x9F,0xBD,0x02,0x87,0x28,0xBA,0xB7,0x3D ))// 9B3B2BEA-A101-41AE-9FBD-028728BAB73D
+}
+
+private var IID___x_ABI_CWindows_CSystem_CITimeZoneSettingsStatics2: WindowsFoundation.IID {
+    .init(Data1: 0x555C0DB8, Data2: 0x39A8, Data3: 0x49FA, Data4: ( 0xB4,0xF6,0xA2,0xC7,0xFC,0x28,0x42,0xEC ))// 555C0DB8-39A8-49FA-B4F6-A2C7FC2842EC
+}
+
 private var IID___x_ABI_CWindows_CSystem_CIUser: WindowsFoundation.IID {
     .init(Data1: 0xDF9A26C6, Data2: 0xE746, Data3: 0x4BCD, Data4: ( 0xB5,0xD4,0x12,0x01,0x03,0xC4,0x20,0x9B ))// DF9A26C6-E746-4BCD-B5D4-120103C4209B
 }
@@ -92,6 +268,22 @@ private var IID___x_ABI_CWindows_CSystem_CIUserChangedEventArgs: WindowsFoundati
     .init(Data1: 0x086459DC, Data2: 0x18C6, Data3: 0x48DB, Data4: ( 0xBC,0x99,0x72,0x4F,0xB9,0x20,0x3C,0xCC ))// 086459DC-18C6-48DB-BC99-724FB9203CCC
 }
 
+private var IID___x_ABI_CWindows_CSystem_CIUserDeviceAssociationChangedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0xBD1F6F6C, Data2: 0xBB5D, Data3: 0x4D7B, Data4: ( 0xA5,0xF0,0xC8,0xCD,0x11,0xA3,0x8D,0x42 ))// BD1F6F6C-BB5D-4D7B-A5F0-C8CD11A38D42
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIUserDeviceAssociationStatics: WindowsFoundation.IID {
+    .init(Data1: 0x7E491E14, Data2: 0xF85A, Data3: 0x4C07, Data4: ( 0x8D,0xA9,0x7F,0xE3,0xD0,0x54,0x23,0x43 ))// 7E491E14-F85A-4C07-8DA9-7FE3D0542343
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIUserPicker: WindowsFoundation.IID {
+    .init(Data1: 0x7D548008, Data2: 0xF1E3, Data3: 0x4A6C, Data4: ( 0x8D,0xDC,0xA9,0xBB,0x0F,0x48,0x8A,0xED ))// 7D548008-F1E3-4A6C-8DDC-A9BB0F488AED
+}
+
+private var IID___x_ABI_CWindows_CSystem_CIUserPickerStatics: WindowsFoundation.IID {
+    .init(Data1: 0xDE3290DC, Data2: 0x7E73, Data3: 0x4DF6, Data4: ( 0xA1,0xAE,0x4D,0x7E,0xCA,0x82,0xB4,0x0D ))// DE3290DC-7E73-4DF6-A1AE-4D7ECA82B40D
+}
+
 private var IID___x_ABI_CWindows_CSystem_CIUserStatics: WindowsFoundation.IID {
     .init(Data1: 0x155EB23B, Data2: 0x242A, Data3: 0x45E0, Data4: ( 0xA2,0xE9,0x31,0x71,0xFC,0x6A,0x7F,0xDD ))// 155EB23B-242A-45E0-A2E9-3171FC6A7FDD
 }
@@ -105,6 +297,802 @@ private var IID___x_ABI_CWindows_CSystem_CIDispatcherQueueHandler: WindowsFounda
 }
 
 public enum __ABI_Windows_System {
+    public class IAppActivationResult: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIAppActivationResult }
+
+        internal func get_ExtendedErrorImpl() throws -> HRESULT {
+            var value: HRESULT = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppActivationResult.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ExtendedError(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_AppResourceGroupInfoImpl() throws -> UWP.AppResourceGroupInfo? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppActivationResult.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_AppResourceGroupInfo(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IAppDiagnosticInfo: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIAppDiagnosticInfo }
+
+        internal func get_AppInfoImpl() throws -> UWP.AppInfo? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppDiagnosticInfo.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_AppInfo(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IAppDiagnosticInfo2: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIAppDiagnosticInfo2 }
+
+        internal func GetResourceGroupsImpl() throws -> WindowsFoundation.AnyIVector<UWP.AppResourceGroupInfo?>? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppDiagnosticInfo2.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetResourceGroups(pThis, &resultAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIVector_1___x_ABI_CWindows__CSystem__CAppResourceGroupInfoWrapper.unwrapFrom(abi: result)
+        }
+
+        internal func CreateResourceGroupWatcherImpl() throws -> UWP.AppResourceGroupInfoWatcher? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppDiagnosticInfo2.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.CreateResourceGroupWatcher(pThis, &resultAbi))
+                }
+            }
+            return .from(abi: result)
+        }
+
+    }
+
+    public class IAppDiagnosticInfo3: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIAppDiagnosticInfo3 }
+
+        internal func LaunchAsyncImpl() throws -> WindowsFoundation.AnyIAsyncOperation<UWP.AppActivationResult?>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppDiagnosticInfo3.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.LaunchAsync(pThis, &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CSystem__CAppActivationResultWrapper.unwrapFrom(abi: operation)
+        }
+
+    }
+
+    public class IAppDiagnosticInfoStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIAppDiagnosticInfoStatics }
+
+        internal func RequestInfoAsyncImpl() throws -> WindowsFoundation.AnyIAsyncOperation<WindowsFoundation.AnyIVector<UWP.AppDiagnosticInfo?>?>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppDiagnosticInfoStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.RequestInfoAsync(pThis, &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVector_1___x_ABI_CWindows__CSystem__CAppDiagnosticInfoWrapper.unwrapFrom(abi: operation)
+        }
+
+    }
+
+    public class IAppDiagnosticInfoStatics2: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIAppDiagnosticInfoStatics2 }
+
+        internal func CreateWatcherImpl() throws -> UWP.AppDiagnosticInfoWatcher? {
+            let (watcher) = try ComPtrs.initialize { watcherAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppDiagnosticInfoStatics2.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.CreateWatcher(pThis, &watcherAbi))
+                }
+            }
+            return .from(abi: watcher)
+        }
+
+        internal func RequestAccessAsyncImpl() throws -> WindowsFoundation.AnyIAsyncOperation<UWP.DiagnosticAccessStatus>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppDiagnosticInfoStatics2.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.RequestAccessAsync(pThis, &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CSystem__CDiagnosticAccessStatusWrapper.unwrapFrom(abi: operation)
+        }
+
+        internal func RequestInfoForPackageAsyncImpl(_ packageFamilyName: String) throws -> WindowsFoundation.AnyIAsyncOperation<WindowsFoundation.AnyIVector<UWP.AppDiagnosticInfo?>?>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                let _packageFamilyName = try! HString(packageFamilyName)
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppDiagnosticInfoStatics2.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.RequestInfoForPackageAsync(pThis, _packageFamilyName.get(), &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVector_1___x_ABI_CWindows__CSystem__CAppDiagnosticInfoWrapper.unwrapFrom(abi: operation)
+        }
+
+        internal func RequestInfoForAppAsyncImpl() throws -> WindowsFoundation.AnyIAsyncOperation<WindowsFoundation.AnyIVector<UWP.AppDiagnosticInfo?>?>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppDiagnosticInfoStatics2.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.RequestInfoForAppAsync(pThis, &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVector_1___x_ABI_CWindows__CSystem__CAppDiagnosticInfoWrapper.unwrapFrom(abi: operation)
+        }
+
+        internal func RequestInfoForAppUserModelIdImpl(_ appUserModelId: String) throws -> WindowsFoundation.AnyIAsyncOperation<WindowsFoundation.AnyIVector<UWP.AppDiagnosticInfo?>?>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                let _appUserModelId = try! HString(appUserModelId)
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppDiagnosticInfoStatics2.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.RequestInfoForAppUserModelId(pThis, _appUserModelId.get(), &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVector_1___x_ABI_CWindows__CSystem__CAppDiagnosticInfoWrapper.unwrapFrom(abi: operation)
+        }
+
+    }
+
+    public class IAppDiagnosticInfoWatcher: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIAppDiagnosticInfoWatcher }
+
+        internal func add_AddedImpl(_ handler: TypedEventHandler<UWP.AppDiagnosticInfoWatcher?, UWP.AppDiagnosticInfoWatcherEventArgs?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CAppDiagnosticInfoWatcher___x_ABI_CWindows__CSystem__CAppDiagnosticInfoWatcherEventArgsWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppDiagnosticInfoWatcher.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_Added(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_AddedImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppDiagnosticInfoWatcher.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_Added(pThis, token))
+            }
+        }
+
+        internal func add_RemovedImpl(_ handler: TypedEventHandler<UWP.AppDiagnosticInfoWatcher?, UWP.AppDiagnosticInfoWatcherEventArgs?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CAppDiagnosticInfoWatcher___x_ABI_CWindows__CSystem__CAppDiagnosticInfoWatcherEventArgsWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppDiagnosticInfoWatcher.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_Removed(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_RemovedImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppDiagnosticInfoWatcher.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_Removed(pThis, token))
+            }
+        }
+
+        internal func add_EnumerationCompletedImpl(_ handler: TypedEventHandler<UWP.AppDiagnosticInfoWatcher?, Any?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CAppDiagnosticInfoWatcher_IInspectableWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppDiagnosticInfoWatcher.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_EnumerationCompleted(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_EnumerationCompletedImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppDiagnosticInfoWatcher.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_EnumerationCompleted(pThis, token))
+            }
+        }
+
+        internal func add_StoppedImpl(_ handler: TypedEventHandler<UWP.AppDiagnosticInfoWatcher?, Any?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CAppDiagnosticInfoWatcher_IInspectableWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppDiagnosticInfoWatcher.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_Stopped(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_StoppedImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppDiagnosticInfoWatcher.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_Stopped(pThis, token))
+            }
+        }
+
+        internal func get_StatusImpl() throws -> UWP.AppDiagnosticInfoWatcherStatus {
+            var value: __x_ABI_CWindows_CSystem_CAppDiagnosticInfoWatcherStatus = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppDiagnosticInfoWatcher.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Status(pThis, &value))
+            }
+            return value
+        }
+
+        internal func StartImpl() throws {
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppDiagnosticInfoWatcher.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Start(pThis))
+            }
+        }
+
+        internal func StopImpl() throws {
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppDiagnosticInfoWatcher.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Stop(pThis))
+            }
+        }
+
+    }
+
+    public class IAppDiagnosticInfoWatcherEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIAppDiagnosticInfoWatcherEventArgs }
+
+        internal func get_AppDiagnosticInfoImpl() throws -> UWP.AppDiagnosticInfo? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppDiagnosticInfoWatcherEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_AppDiagnosticInfo(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IAppExecutionStateChangeResult: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIAppExecutionStateChangeResult }
+
+        internal func get_ExtendedErrorImpl() throws -> HRESULT {
+            var value: HRESULT = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppExecutionStateChangeResult.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ExtendedError(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
+    public class IAppMemoryReport: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIAppMemoryReport }
+
+        internal func get_PrivateCommitUsageImpl() throws -> UInt64 {
+            var value: UINT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppMemoryReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_PrivateCommitUsage(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_PeakPrivateCommitUsageImpl() throws -> UInt64 {
+            var value: UINT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppMemoryReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_PeakPrivateCommitUsage(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_TotalCommitUsageImpl() throws -> UInt64 {
+            var value: UINT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppMemoryReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_TotalCommitUsage(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_TotalCommitLimitImpl() throws -> UInt64 {
+            var value: UINT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppMemoryReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_TotalCommitLimit(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
+    public class IAppMemoryReport2: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIAppMemoryReport2 }
+
+        internal func get_ExpectedTotalCommitLimitImpl() throws -> UInt64 {
+            var value: UINT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppMemoryReport2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ExpectedTotalCommitLimit(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
+    public class IAppMemoryUsageLimitChangingEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIAppMemoryUsageLimitChangingEventArgs }
+
+        internal func get_OldLimitImpl() throws -> UInt64 {
+            var value: UINT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppMemoryUsageLimitChangingEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_OldLimit(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_NewLimitImpl() throws -> UInt64 {
+            var value: UINT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppMemoryUsageLimitChangingEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_NewLimit(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
+    public class IAppResourceGroupBackgroundTaskReport: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIAppResourceGroupBackgroundTaskReport }
+
+        internal func get_TaskIdImpl() throws -> Foundation.UUID {
+            var value: WindowsFoundation.GUID = .init()
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupBackgroundTaskReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_TaskId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_NameImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupBackgroundTaskReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Name(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_TriggerImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupBackgroundTaskReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Trigger(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_EntryPointImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupBackgroundTaskReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_EntryPoint(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    public class IAppResourceGroupInfo: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIAppResourceGroupInfo }
+
+        internal func get_InstanceIdImpl() throws -> Foundation.UUID {
+            var value: WindowsFoundation.GUID = .init()
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupInfo.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_InstanceId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_IsSharedImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupInfo.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsShared(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func GetBackgroundTaskReportsImpl() throws -> WindowsFoundation.AnyIVector<UWP.AppResourceGroupBackgroundTaskReport?>? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupInfo.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetBackgroundTaskReports(pThis, &resultAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIVector_1___x_ABI_CWindows__CSystem__CAppResourceGroupBackgroundTaskReportWrapper.unwrapFrom(abi: result)
+        }
+
+        internal func GetMemoryReportImpl() throws -> UWP.AppResourceGroupMemoryReport? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupInfo.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetMemoryReport(pThis, &resultAbi))
+                }
+            }
+            return .from(abi: result)
+        }
+
+        internal func GetProcessDiagnosticInfosImpl() throws -> WindowsFoundation.AnyIVector<UWP.ProcessDiagnosticInfo?>? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupInfo.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetProcessDiagnosticInfos(pThis, &resultAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIVector_1___x_ABI_CWindows__CSystem__CDiagnostics__CProcessDiagnosticInfoWrapper.unwrapFrom(abi: result)
+        }
+
+        internal func GetStateReportImpl() throws -> UWP.AppResourceGroupStateReport? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupInfo.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetStateReport(pThis, &resultAbi))
+                }
+            }
+            return .from(abi: result)
+        }
+
+    }
+
+    public class IAppResourceGroupInfo2: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIAppResourceGroupInfo2 }
+
+        internal func StartSuspendAsyncImpl() throws -> WindowsFoundation.AnyIAsyncOperation<UWP.AppExecutionStateChangeResult?>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupInfo2.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.StartSuspendAsync(pThis, &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CSystem__CAppExecutionStateChangeResultWrapper.unwrapFrom(abi: operation)
+        }
+
+        internal func StartResumeAsyncImpl() throws -> WindowsFoundation.AnyIAsyncOperation<UWP.AppExecutionStateChangeResult?>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupInfo2.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.StartResumeAsync(pThis, &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CSystem__CAppExecutionStateChangeResultWrapper.unwrapFrom(abi: operation)
+        }
+
+        internal func StartTerminateAsyncImpl() throws -> WindowsFoundation.AnyIAsyncOperation<UWP.AppExecutionStateChangeResult?>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupInfo2.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.StartTerminateAsync(pThis, &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CSystem__CAppExecutionStateChangeResultWrapper.unwrapFrom(abi: operation)
+        }
+
+    }
+
+    public class IAppResourceGroupInfoWatcher: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcher }
+
+        internal func add_AddedImpl(_ handler: TypedEventHandler<UWP.AppResourceGroupInfoWatcher?, UWP.AppResourceGroupInfoWatcherEventArgs?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CAppResourceGroupInfoWatcher___x_ABI_CWindows__CSystem__CAppResourceGroupInfoWatcherEventArgsWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcher.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_Added(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_AddedImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcher.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_Added(pThis, token))
+            }
+        }
+
+        internal func add_RemovedImpl(_ handler: TypedEventHandler<UWP.AppResourceGroupInfoWatcher?, UWP.AppResourceGroupInfoWatcherEventArgs?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CAppResourceGroupInfoWatcher___x_ABI_CWindows__CSystem__CAppResourceGroupInfoWatcherEventArgsWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcher.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_Removed(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_RemovedImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcher.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_Removed(pThis, token))
+            }
+        }
+
+        internal func add_EnumerationCompletedImpl(_ handler: TypedEventHandler<UWP.AppResourceGroupInfoWatcher?, Any?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CAppResourceGroupInfoWatcher_IInspectableWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcher.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_EnumerationCompleted(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_EnumerationCompletedImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcher.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_EnumerationCompleted(pThis, token))
+            }
+        }
+
+        internal func add_StoppedImpl(_ handler: TypedEventHandler<UWP.AppResourceGroupInfoWatcher?, Any?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CAppResourceGroupInfoWatcher_IInspectableWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcher.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_Stopped(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_StoppedImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcher.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_Stopped(pThis, token))
+            }
+        }
+
+        internal func add_ExecutionStateChangedImpl(_ handler: TypedEventHandler<UWP.AppResourceGroupInfoWatcher?, UWP.AppResourceGroupInfoWatcherExecutionStateChangedEventArgs?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CSystem__CAppResourceGroupInfoWatcher___x_ABI_CWindows__CSystem__CAppResourceGroupInfoWatcherExecutionStateChangedEventArgsWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcher.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_ExecutionStateChanged(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_ExecutionStateChangedImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcher.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_ExecutionStateChanged(pThis, token))
+            }
+        }
+
+        internal func get_StatusImpl() throws -> UWP.AppResourceGroupInfoWatcherStatus {
+            var status: __x_ABI_CWindows_CSystem_CAppResourceGroupInfoWatcherStatus = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcher.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Status(pThis, &status))
+            }
+            return status
+        }
+
+        internal func StartImpl() throws {
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcher.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Start(pThis))
+            }
+        }
+
+        internal func StopImpl() throws {
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcher.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Stop(pThis))
+            }
+        }
+
+    }
+
+    public class IAppResourceGroupInfoWatcherEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcherEventArgs }
+
+        internal func get_AppDiagnosticInfosImpl() throws -> WindowsFoundation.AnyIVectorView<UWP.AppDiagnosticInfo?>? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcherEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_AppDiagnosticInfos(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CAppDiagnosticInfoWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func get_AppResourceGroupInfoImpl() throws -> UWP.AppResourceGroupInfo? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcherEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_AppResourceGroupInfo(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IAppResourceGroupInfoWatcherExecutionStateChangedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcherExecutionStateChangedEventArgs }
+
+        internal func get_AppDiagnosticInfosImpl() throws -> WindowsFoundation.AnyIVectorView<UWP.AppDiagnosticInfo?>? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcherExecutionStateChangedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_AppDiagnosticInfos(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CAppDiagnosticInfoWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func get_AppResourceGroupInfoImpl() throws -> UWP.AppResourceGroupInfo? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcherExecutionStateChangedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_AppResourceGroupInfo(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IAppResourceGroupMemoryReport: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIAppResourceGroupMemoryReport }
+
+        internal func get_CommitUsageLimitImpl() throws -> UInt64 {
+            var value: UINT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupMemoryReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_CommitUsageLimit(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_CommitUsageLevelImpl() throws -> UWP.AppMemoryUsageLevel {
+            var value: __x_ABI_CWindows_CSystem_CAppMemoryUsageLevel = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupMemoryReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_CommitUsageLevel(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_PrivateCommitUsageImpl() throws -> UInt64 {
+            var value: UINT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupMemoryReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_PrivateCommitUsage(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_TotalCommitUsageImpl() throws -> UInt64 {
+            var value: UINT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupMemoryReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_TotalCommitUsage(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
+    public class IAppResourceGroupStateReport: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIAppResourceGroupStateReport }
+
+        internal func get_ExecutionStateImpl() throws -> UWP.AppResourceGroupExecutionState {
+            var value: __x_ABI_CWindows_CSystem_CAppResourceGroupExecutionState = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupStateReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ExecutionState(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_EnergyQuotaStateImpl() throws -> UWP.AppResourceGroupEnergyQuotaState {
+            var value: __x_ABI_CWindows_CSystem_CAppResourceGroupEnergyQuotaState = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppResourceGroupStateReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_EnergyQuotaState(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
+    public class IAppUriHandlerHost: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIAppUriHandlerHost }
+
+        internal func get_NameImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppUriHandlerHost.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Name(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_NameImpl(_ value: String) throws {
+            let _value = try! HString(value)
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppUriHandlerHost.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Name(pThis, _value.get()))
+            }
+        }
+
+    }
+
+    public class IAppUriHandlerHostFactory: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIAppUriHandlerHostFactory }
+
+        internal func CreateInstanceImpl(_ name: String) throws -> IAppUriHandlerHost {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                let _name = try! HString(name)
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppUriHandlerHostFactory.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.CreateInstance(pThis, _name.get(), &valueAbi))
+                }
+            }
+            return IAppUriHandlerHost(value!)
+        }
+
+    }
+
+    public class IAppUriHandlerRegistration: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIAppUriHandlerRegistration }
+
+        internal func get_NameImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppUriHandlerRegistration.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Name(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_UserImpl() throws -> UWP.User? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppUriHandlerRegistration.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_User(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func GetAppAddedHostsAsyncImpl() throws -> WindowsFoundation.AnyIAsyncOperation<WindowsFoundation.AnyIVector<UWP.AppUriHandlerHost?>?>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppUriHandlerRegistration.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetAppAddedHostsAsync(pThis, &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVector_1___x_ABI_CWindows__CSystem__CAppUriHandlerHostWrapper.unwrapFrom(abi: operation)
+        }
+
+        internal func SetAppAddedHostsAsyncImpl(_ hosts: WindowsFoundation.AnyIIterable<UWP.AppUriHandlerHost?>?) throws -> WindowsFoundation.AnyIAsyncAction? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                let hostsWrapper = UWP.__x_ABI_C__FIIterable_1___x_ABI_CWindows__CSystem__CAppUriHandlerHostWrapper(hosts)
+                let _hosts = try! hostsWrapper?.toABI { $0 }
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppUriHandlerRegistration.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.SetAppAddedHostsAsync(pThis, _hosts, &operationAbi))
+                }
+            }
+            return __ABI_Windows_Foundation.IAsyncActionWrapper.unwrapFrom(abi: operation)
+        }
+
+    }
+
+    public class IAppUriHandlerRegistrationManager: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIAppUriHandlerRegistrationManager }
+
+        internal func get_UserImpl() throws -> UWP.User? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppUriHandlerRegistrationManager.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_User(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func TryGetRegistrationImpl(_ name: String) throws -> UWP.AppUriHandlerRegistration? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                let _name = try! HString(name)
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppUriHandlerRegistrationManager.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.TryGetRegistration(pThis, _name.get(), &resultAbi))
+                }
+            }
+            return .from(abi: result)
+        }
+
+    }
+
+    public class IAppUriHandlerRegistrationManagerStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIAppUriHandlerRegistrationManagerStatics }
+
+        internal func GetDefaultImpl() throws -> UWP.AppUriHandlerRegistrationManager? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppUriHandlerRegistrationManagerStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetDefault(pThis, &resultAbi))
+                }
+            }
+            return .from(abi: result)
+        }
+
+        internal func GetForUserImpl(_ user: UWP.User?) throws -> UWP.AppUriHandlerRegistrationManager? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIAppUriHandlerRegistrationManagerStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetForUser(pThis, RawPointer(user), &resultAbi))
+                }
+            }
+            return .from(abi: result)
+        }
+
+    }
+
+    public class IDateTimeSettingsStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIDateTimeSettingsStatics }
+
+        internal func SetSystemDateTimeImpl(_ utcDateTime: WindowsFoundation.DateTime) throws {
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIDateTimeSettingsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.SetSystemDateTime(pThis, .from(swift: utcDateTime)))
+            }
+        }
+
+    }
+
     public class IDispatcherQueue: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIDispatcherQueue }
 
@@ -180,6 +1168,43 @@ public enum __ABI_Windows_System {
                 try CHECKED(pThis.pointee.lpVtbl.pointee.get_HasThreadAccess(pThis, &value))
             }
             return .init(from: value)
+        }
+
+    }
+
+    public class IDispatcherQueueController: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIDispatcherQueueController }
+
+        internal func get_DispatcherQueueImpl() throws -> UWP.DispatcherQueue? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIDispatcherQueueController.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_DispatcherQueue(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func ShutdownQueueAsyncImpl() throws -> WindowsFoundation.AnyIAsyncAction? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIDispatcherQueueController.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.ShutdownQueueAsync(pThis, &operationAbi))
+                }
+            }
+            return __ABI_Windows_Foundation.IAsyncActionWrapper.unwrapFrom(abi: operation)
+        }
+
+    }
+
+    public class IDispatcherQueueControllerStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIDispatcherQueueControllerStatics }
+
+        internal func CreateOnDedicatedThreadImpl() throws -> UWP.DispatcherQueueController? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIDispatcherQueueControllerStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.CreateOnDedicatedThread(pThis, &resultAbi))
+                }
+            }
+            return .from(abi: result)
         }
 
     }
@@ -291,6 +1316,83 @@ public enum __ABI_Windows_System {
                 }
             }
             return UWP.__x_ABI_C__FIVector_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper.unwrapFrom(abi: value)
+        }
+
+    }
+
+    public class IKnownUserPropertiesStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIKnownUserPropertiesStatics }
+
+        internal func get_DisplayNameImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIKnownUserPropertiesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DisplayName(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_FirstNameImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIKnownUserPropertiesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_FirstName(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_LastNameImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIKnownUserPropertiesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LastName(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_ProviderNameImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIKnownUserPropertiesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ProviderName(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_AccountNameImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIKnownUserPropertiesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AccountName(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_GuestHostImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIKnownUserPropertiesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_GuestHost(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_PrincipalNameImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIKnownUserPropertiesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_PrincipalName(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_DomainNameImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIKnownUserPropertiesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DomainName(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_SessionInitiationProtocolUriImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIKnownUserPropertiesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_SessionInitiationProtocolUri(pThis, &value))
+            }
+            return .init(from: value)
         }
 
     }
@@ -903,6 +2005,429 @@ public enum __ABI_Windows_System {
     )
 
     public typealias ILauncherViewOptionsWrapper = InterfaceWrapperBase<__IMPL_Windows_System.ILauncherViewOptionsBridge>
+    public class IMemoryManagerStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIMemoryManagerStatics }
+
+        internal func get_AppMemoryUsageImpl() throws -> UInt64 {
+            var value: UINT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIMemoryManagerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AppMemoryUsage(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_AppMemoryUsageLimitImpl() throws -> UInt64 {
+            var value: UINT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIMemoryManagerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AppMemoryUsageLimit(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_AppMemoryUsageLevelImpl() throws -> UWP.AppMemoryUsageLevel {
+            var value: __x_ABI_CWindows_CSystem_CAppMemoryUsageLevel = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIMemoryManagerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AppMemoryUsageLevel(pThis, &value))
+            }
+            return value
+        }
+
+        internal func add_AppMemoryUsageIncreasedImpl(_ handler: EventHandler<Any?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FIEventHandler_1_IInspectableWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIMemoryManagerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_AppMemoryUsageIncreased(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_AppMemoryUsageIncreasedImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIMemoryManagerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_AppMemoryUsageIncreased(pThis, token))
+            }
+        }
+
+        internal func add_AppMemoryUsageDecreasedImpl(_ handler: EventHandler<Any?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FIEventHandler_1_IInspectableWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIMemoryManagerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_AppMemoryUsageDecreased(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_AppMemoryUsageDecreasedImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIMemoryManagerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_AppMemoryUsageDecreased(pThis, token))
+            }
+        }
+
+        internal func add_AppMemoryUsageLimitChangingImpl(_ handler: EventHandler<UWP.AppMemoryUsageLimitChangingEventArgs?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FIEventHandler_1___x_ABI_CWindows__CSystem__CAppMemoryUsageLimitChangingEventArgsWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIMemoryManagerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_AppMemoryUsageLimitChanging(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_AppMemoryUsageLimitChangingImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIMemoryManagerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_AppMemoryUsageLimitChanging(pThis, token))
+            }
+        }
+
+    }
+
+    public class IMemoryManagerStatics2: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIMemoryManagerStatics2 }
+
+        internal func GetAppMemoryReportImpl() throws -> UWP.AppMemoryReport? {
+            let (memoryReport) = try ComPtrs.initialize { memoryReportAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIMemoryManagerStatics2.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetAppMemoryReport(pThis, &memoryReportAbi))
+                }
+            }
+            return .from(abi: memoryReport)
+        }
+
+        internal func GetProcessMemoryReportImpl() throws -> UWP.ProcessMemoryReport? {
+            let (memoryReport) = try ComPtrs.initialize { memoryReportAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIMemoryManagerStatics2.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetProcessMemoryReport(pThis, &memoryReportAbi))
+                }
+            }
+            return .from(abi: memoryReport)
+        }
+
+    }
+
+    public class IMemoryManagerStatics3: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIMemoryManagerStatics3 }
+
+        internal func TrySetAppMemoryUsageLimitImpl(_ value: UInt64) throws -> Bool {
+            var result: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIMemoryManagerStatics3.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.TrySetAppMemoryUsageLimit(pThis, value, &result))
+            }
+            return .init(from: result)
+        }
+
+    }
+
+    public class IMemoryManagerStatics4: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIMemoryManagerStatics4 }
+
+        internal func get_ExpectedAppMemoryUsageLimitImpl() throws -> UInt64 {
+            var value: UINT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIMemoryManagerStatics4.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ExpectedAppMemoryUsageLimit(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
+    public class IProcessLauncherOptions: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIProcessLauncherOptions }
+
+        internal func get_StandardInputImpl() throws -> UWP.AnyIInputStream? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIProcessLauncherOptions.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_StandardInput(pThis, &valueAbi))
+                }
+            }
+            return __ABI_Windows_Storage_Streams.IInputStreamWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_StandardInputImpl(_ value: UWP.AnyIInputStream?) throws {
+            let valueWrapper = __ABI_Windows_Storage_Streams.IInputStreamWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIProcessLauncherOptions.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_StandardInput(pThis, _value))
+            }
+        }
+
+        internal func get_StandardOutputImpl() throws -> UWP.AnyIOutputStream? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIProcessLauncherOptions.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_StandardOutput(pThis, &valueAbi))
+                }
+            }
+            return __ABI_Windows_Storage_Streams.IOutputStreamWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_StandardOutputImpl(_ value: UWP.AnyIOutputStream?) throws {
+            let valueWrapper = __ABI_Windows_Storage_Streams.IOutputStreamWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIProcessLauncherOptions.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_StandardOutput(pThis, _value))
+            }
+        }
+
+        internal func get_StandardErrorImpl() throws -> UWP.AnyIOutputStream? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIProcessLauncherOptions.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_StandardError(pThis, &valueAbi))
+                }
+            }
+            return __ABI_Windows_Storage_Streams.IOutputStreamWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_StandardErrorImpl(_ value: UWP.AnyIOutputStream?) throws {
+            let valueWrapper = __ABI_Windows_Storage_Streams.IOutputStreamWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIProcessLauncherOptions.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_StandardError(pThis, _value))
+            }
+        }
+
+        internal func get_WorkingDirectoryImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIProcessLauncherOptions.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_WorkingDirectory(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_WorkingDirectoryImpl(_ value: String) throws {
+            let _value = try! HString(value)
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIProcessLauncherOptions.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_WorkingDirectory(pThis, _value.get()))
+            }
+        }
+
+    }
+
+    public class IProcessLauncherResult: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIProcessLauncherResult }
+
+        internal func get_ExitCodeImpl() throws -> UInt32 {
+            var value: UINT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIProcessLauncherResult.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ExitCode(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
+    public class IProcessLauncherStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIProcessLauncherStatics }
+
+        internal func RunToCompletionAsyncImpl(_ fileName: String, _ args: String) throws -> WindowsFoundation.AnyIAsyncOperation<UWP.ProcessLauncherResult?>? {
+            let (asyncOperationResult) = try ComPtrs.initialize { asyncOperationResultAbi in
+                let _fileName = try! HString(fileName)
+                let _args = try! HString(args)
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIProcessLauncherStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.RunToCompletionAsync(pThis, _fileName.get(), _args.get(), &asyncOperationResultAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CSystem__CProcessLauncherResultWrapper.unwrapFrom(abi: asyncOperationResult)
+        }
+
+        internal func RunToCompletionAsyncWithOptionsImpl(_ fileName: String, _ args: String, _ options: UWP.ProcessLauncherOptions?) throws -> WindowsFoundation.AnyIAsyncOperation<UWP.ProcessLauncherResult?>? {
+            let (asyncOperationResult) = try ComPtrs.initialize { asyncOperationResultAbi in
+                let _fileName = try! HString(fileName)
+                let _args = try! HString(args)
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIProcessLauncherStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.RunToCompletionAsyncWithOptions(pThis, _fileName.get(), _args.get(), RawPointer(options), &asyncOperationResultAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CSystem__CProcessLauncherResultWrapper.unwrapFrom(abi: asyncOperationResult)
+        }
+
+    }
+
+    public class IProcessMemoryReport: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIProcessMemoryReport }
+
+        internal func get_PrivateWorkingSetUsageImpl() throws -> UInt64 {
+            var value: UINT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIProcessMemoryReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_PrivateWorkingSetUsage(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_TotalWorkingSetUsageImpl() throws -> UInt64 {
+            var value: UINT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIProcessMemoryReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_TotalWorkingSetUsage(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
+    public class IProtocolForResultsOperation: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIProtocolForResultsOperation }
+
+        internal func ReportCompletedImpl(_ data: WindowsFoundation.ValueSet?) throws {
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIProtocolForResultsOperation.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.ReportCompleted(pThis, RawPointer(data)))
+            }
+        }
+
+    }
+
+    public class IRemoteLauncherOptions: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIRemoteLauncherOptions }
+
+        internal func get_FallbackUriImpl() throws -> WindowsFoundation.Uri? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIRemoteLauncherOptions.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_FallbackUri(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_FallbackUriImpl(_ value: WindowsFoundation.Uri?) throws {
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIRemoteLauncherOptions.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_FallbackUri(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_PreferredAppIdsImpl() throws -> WindowsFoundation.AnyIVector<String>? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIRemoteLauncherOptions.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_PreferredAppIds(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIVector_1_HSTRINGWrapper.unwrapFrom(abi: value)
+        }
+
+    }
+
+    public class IRemoteLauncherStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIRemoteLauncherStatics }
+
+        internal func LaunchUriAsyncImpl(_ remoteSystemConnectionRequest: UWP.RemoteSystemConnectionRequest?, _ uri: WindowsFoundation.Uri?) throws -> WindowsFoundation.AnyIAsyncOperation<UWP.RemoteLaunchUriStatus>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIRemoteLauncherStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.LaunchUriAsync(pThis, RawPointer(remoteSystemConnectionRequest), RawPointer(uri), &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CSystem__CRemoteLaunchUriStatusWrapper.unwrapFrom(abi: operation)
+        }
+
+        internal func LaunchUriWithOptionsAsyncImpl(_ remoteSystemConnectionRequest: UWP.RemoteSystemConnectionRequest?, _ uri: WindowsFoundation.Uri?, _ options: UWP.RemoteLauncherOptions?) throws -> WindowsFoundation.AnyIAsyncOperation<UWP.RemoteLaunchUriStatus>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIRemoteLauncherStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.LaunchUriWithOptionsAsync(pThis, RawPointer(remoteSystemConnectionRequest), RawPointer(uri), RawPointer(options), &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CSystem__CRemoteLaunchUriStatusWrapper.unwrapFrom(abi: operation)
+        }
+
+        internal func LaunchUriWithDataAsyncImpl(_ remoteSystemConnectionRequest: UWP.RemoteSystemConnectionRequest?, _ uri: WindowsFoundation.Uri?, _ options: UWP.RemoteLauncherOptions?, _ inputData: WindowsFoundation.ValueSet?) throws -> WindowsFoundation.AnyIAsyncOperation<UWP.RemoteLaunchUriStatus>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIRemoteLauncherStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.LaunchUriWithDataAsync(pThis, RawPointer(remoteSystemConnectionRequest), RawPointer(uri), RawPointer(options), RawPointer(inputData), &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CSystem__CRemoteLaunchUriStatusWrapper.unwrapFrom(abi: operation)
+        }
+
+    }
+
+    public class IShutdownManagerStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIShutdownManagerStatics }
+
+        internal func BeginShutdownImpl(_ shutdownKind: UWP.ShutdownKind, _ timeout: WindowsFoundation.TimeSpan) throws {
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIShutdownManagerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.BeginShutdown(pThis, shutdownKind, .from(swift: timeout)))
+            }
+        }
+
+        internal func CancelShutdownImpl() throws {
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIShutdownManagerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.CancelShutdown(pThis))
+            }
+        }
+
+    }
+
+    public class IShutdownManagerStatics2: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIShutdownManagerStatics2 }
+
+        internal func IsPowerStateSupportedImpl(_ powerState: UWP.PowerState) throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIShutdownManagerStatics2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.IsPowerStateSupported(pThis, powerState, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func EnterPowerStateImpl(_ powerState: UWP.PowerState) throws {
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIShutdownManagerStatics2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.EnterPowerState(pThis, powerState))
+            }
+        }
+
+        internal func EnterPowerStateWithTimeSpanImpl(_ powerState: UWP.PowerState, _ wakeUpAfter: WindowsFoundation.TimeSpan) throws {
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIShutdownManagerStatics2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.EnterPowerStateWithTimeSpan(pThis, powerState, .from(swift: wakeUpAfter)))
+            }
+        }
+
+    }
+
+    public class ITimeZoneSettingsStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CITimeZoneSettingsStatics }
+
+        internal func get_CurrentTimeZoneDisplayNameImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CITimeZoneSettingsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_CurrentTimeZoneDisplayName(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_SupportedTimeZoneDisplayNamesImpl() throws -> WindowsFoundation.AnyIVectorView<String>? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CITimeZoneSettingsStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SupportedTimeZoneDisplayNames(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIVectorView_1_HSTRINGWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func get_CanChangeTimeZoneImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CITimeZoneSettingsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_CanChangeTimeZone(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func ChangeTimeZoneByDisplayNameImpl(_ timeZoneDisplayName: String) throws {
+            let _timeZoneDisplayName = try! HString(timeZoneDisplayName)
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CITimeZoneSettingsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.ChangeTimeZoneByDisplayName(pThis, _timeZoneDisplayName.get()))
+            }
+        }
+
+    }
+
+    public class ITimeZoneSettingsStatics2: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CITimeZoneSettingsStatics2 }
+
+        internal func AutoUpdateTimeZoneAsyncImpl(_ timeout: WindowsFoundation.TimeSpan) throws -> WindowsFoundation.AnyIAsyncOperation<UWP.AutoUpdateTimeZoneStatus>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CITimeZoneSettingsStatics2.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.AutoUpdateTimeZoneAsync(pThis, .from(swift: timeout), &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CSystem__CAutoUpdateTimeZoneStatusWrapper.unwrapFrom(abi: operation)
+        }
+
+    }
+
     public class IUser: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIUser }
 
@@ -1022,6 +2547,124 @@ public enum __ABI_Windows_System {
                 }
             }
             return .from(abi: value)
+        }
+
+    }
+
+    public class IUserDeviceAssociationChangedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIUserDeviceAssociationChangedEventArgs }
+
+        internal func get_DeviceIdImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIUserDeviceAssociationChangedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DeviceId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_NewUserImpl() throws -> UWP.User? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIUserDeviceAssociationChangedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_NewUser(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_OldUserImpl() throws -> UWP.User? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIUserDeviceAssociationChangedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_OldUser(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IUserDeviceAssociationStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIUserDeviceAssociationStatics }
+
+        internal func FindUserFromDeviceIdImpl(_ deviceId: String) throws -> UWP.User? {
+            let (user) = try ComPtrs.initialize { userAbi in
+                let _deviceId = try! HString(deviceId)
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIUserDeviceAssociationStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.FindUserFromDeviceId(pThis, _deviceId.get(), &userAbi))
+                }
+            }
+            return .from(abi: user)
+        }
+
+        internal func add_UserDeviceAssociationChangedImpl(_ handler: EventHandler<UWP.UserDeviceAssociationChangedEventArgs?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FIEventHandler_1___x_ABI_CWindows__CSystem__CUserDeviceAssociationChangedEventArgsWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIUserDeviceAssociationStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_UserDeviceAssociationChanged(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_UserDeviceAssociationChangedImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIUserDeviceAssociationStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_UserDeviceAssociationChanged(pThis, token))
+            }
+        }
+
+    }
+
+    public class IUserPicker: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIUserPicker }
+
+        internal func get_AllowGuestAccountsImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIUserPicker.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AllowGuestAccounts(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_AllowGuestAccountsImpl(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIUserPicker.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_AllowGuestAccounts(pThis, .init(from: value)))
+            }
+        }
+
+        internal func get_SuggestedSelectedUserImpl() throws -> UWP.User? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIUserPicker.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SuggestedSelectedUser(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_SuggestedSelectedUserImpl(_ value: UWP.User?) throws {
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIUserPicker.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SuggestedSelectedUser(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func PickSingleUserAsyncImpl() throws -> WindowsFoundation.AnyIAsyncOperation<UWP.User?>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CIUserPicker.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.PickSingleUserAsync(pThis, &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CSystem__CUserWrapper.unwrapFrom(abi: operation)
+        }
+
+    }
+
+    public class IUserPickerStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CIUserPickerStatics }
+
+        internal func IsSupportedImpl() throws -> Bool {
+            var result: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CIUserPickerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.IsSupported(pThis, &result))
+            }
+            return .init(from: result)
         }
 
     }

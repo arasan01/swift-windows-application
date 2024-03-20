@@ -254,4 +254,34 @@ public enum __IMPL_Windows_Media_Core {
 
     }
 
+    public enum ITimedMetadataTrackProviderBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CMedia_CCore_CITimedMetadataTrackProvider
+        public typealias SwiftABI = __ABI_Windows_Media_Core.ITimedMetadataTrackProvider
+        public typealias SwiftProjection = AnyITimedMetadataTrackProvider
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return ITimedMetadataTrackProviderImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_Media_Core.ITimedMetadataTrackProviderVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class ITimedMetadataTrackProviderImpl: ITimedMetadataTrackProvider, WinRTAbiImpl {
+        fileprivate typealias Bridge = ITimedMetadataTrackProviderBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.itimedmetadatatrackprovider.timedmetadatatracks)
+        fileprivate var timedMetadataTracks : WindowsFoundation.AnyIVectorView<TimedMetadataTrack?>! {
+            get { try! _default.get_TimedMetadataTracksImpl() }
+        }
+
+    }
+
 }

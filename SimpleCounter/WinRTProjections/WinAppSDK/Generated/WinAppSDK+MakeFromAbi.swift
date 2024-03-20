@@ -74,6 +74,26 @@ fileprivate func makeIPointerPointTransformFrom(abi: WindowsFoundation.IInspecta
     return __IMPL_Microsoft_UI_Input.IPointerPointTransformBridge.from(abi: RawPointer(swiftAbi))!
 }
 
+fileprivate func makeITextCharacterFormatFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Microsoft_UI_Text.ITextCharacterFormat = try! abi.QueryInterface()
+    return __IMPL_Microsoft_UI_Text.ITextCharacterFormatBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeITextParagraphFormatFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Microsoft_UI_Text.ITextParagraphFormat = try! abi.QueryInterface()
+    return __IMPL_Microsoft_UI_Text.ITextParagraphFormatBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeITextRangeFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Microsoft_UI_Text.ITextRange = try! abi.QueryInterface()
+    return __IMPL_Microsoft_UI_Text.ITextRangeBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeITextSelectionFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Microsoft_UI_Text.ITextSelection = try! abi.QueryInterface()
+    return __IMPL_Microsoft_UI_Text.ITextSelectionBridge.from(abi: RawPointer(swiftAbi))!
+}
+
 fileprivate func makeIResourceContextFrom(abi: WindowsFoundation.IInspectable) -> Any {
     let swiftAbi: __ABI_Microsoft_Windows_ApplicationModel_Resources.IResourceContext = try! abi.QueryInterface()
     return __IMPL_Microsoft_Windows_ApplicationModel_Resources.IResourceContextBridge.from(abi: RawPointer(swiftAbi))!
@@ -612,8 +632,20 @@ fileprivate func makeContentIslandStateChangedEventArgsFrom(abi: WindowsFoundati
     return ContentIslandStateChangedEventArgs(fromAbi: abi)
 }
 
+fileprivate func makeContentSiteFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ContentSite(fromAbi: abi)
+}
+
+fileprivate func makeContentSiteEnvironmentFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ContentSiteEnvironment(fromAbi: abi)
+}
+
 fileprivate func makeContentSiteEnvironmentViewFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return ContentSiteEnvironmentView(fromAbi: abi)
+}
+
+fileprivate func makeContentSiteRequestedStateChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ContentSiteRequestedStateChangedEventArgs(fromAbi: abi)
 }
 
 fileprivate func makeContentSiteViewFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -808,6 +840,22 @@ fileprivate func makeTappedEventArgsFrom(abi: WindowsFoundation.IInspectable) ->
     return TappedEventArgs(fromAbi: abi)
 }
 
+fileprivate func makeThemeSettingsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ThemeSettings(fromAbi: abi)
+}
+
+fileprivate func makeFontWeightsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return FontWeights(fromAbi: abi)
+}
+
+fileprivate func makeRichEditTextDocumentFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RichEditTextDocument(fromAbi: abi)
+}
+
+fileprivate func makeRichEditTextRangeFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RichEditTextRange(fromAbi: abi)
+}
+
 fileprivate func makeAppWindowFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return AppWindow(fromAbi: abi)
 }
@@ -826,6 +874,10 @@ fileprivate func makeAppWindowPresenterFrom(abi: WindowsFoundation.IInspectable)
 
 fileprivate func makeAppWindowTitleBarFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return AppWindowTitleBar(fromAbi: abi)
+}
+
+fileprivate func makeCompactOverlayPresenterFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CompactOverlayPresenter(fromAbi: abi)
 }
 
 fileprivate func makeDisplayAreaFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -872,6 +924,10 @@ fileprivate func makeResourceNotFoundEventArgsFrom(abi: WindowsFoundation.IInspe
     return ResourceNotFoundEventArgs(fromAbi: abi)
 }
 
+fileprivate func makeEnvironmentManagerFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return EnvironmentManager(fromAbi: abi)
+}
+
 @_spi(__MakeFromAbi_DoNotImport)
 public class __MakeFromAbi: MakeFromAbi {
     public static func from(typeName: String, abi: WindowsFoundation.IInspectable) -> Any? {
@@ -890,6 +946,10 @@ public class __MakeFromAbi: MakeFromAbi {
             case "ISystemBackdropControllerWithTargets": return makeISystemBackdropControllerWithTargetsFrom(abi: abi)
             case "IContentSiteBridge": return makeIContentSiteBridgeFrom(abi: abi)
             case "IPointerPointTransform": return makeIPointerPointTransformFrom(abi: abi)
+            case "ITextCharacterFormat": return makeITextCharacterFormatFrom(abi: abi)
+            case "ITextParagraphFormat": return makeITextParagraphFormatFrom(abi: abi)
+            case "ITextRange": return makeITextRangeFrom(abi: abi)
+            case "ITextSelection": return makeITextSelectionFrom(abi: abi)
             case "IResourceContext": return makeIResourceContextFrom(abi: abi)
             case "IResourceManager": return makeIResourceManagerFrom(abi: abi)
             case "ColorHelper": return makeColorHelperFrom(abi: abi)
@@ -1024,7 +1084,10 @@ public class __MakeFromAbi: MakeFromAbi {
             case "ContentIslandAutomationProviderRequestedEventArgs": return makeContentIslandAutomationProviderRequestedEventArgsFrom(abi: abi)
             case "ContentIslandEnvironment": return makeContentIslandEnvironmentFrom(abi: abi)
             case "ContentIslandStateChangedEventArgs": return makeContentIslandStateChangedEventArgsFrom(abi: abi)
+            case "ContentSite": return makeContentSiteFrom(abi: abi)
+            case "ContentSiteEnvironment": return makeContentSiteEnvironmentFrom(abi: abi)
             case "ContentSiteEnvironmentView": return makeContentSiteEnvironmentViewFrom(abi: abi)
+            case "ContentSiteRequestedStateChangedEventArgs": return makeContentSiteRequestedStateChangedEventArgsFrom(abi: abi)
             case "ContentSiteView": return makeContentSiteViewFrom(abi: abi)
             case "DesktopChildSiteBridge": return makeDesktopChildSiteBridgeFrom(abi: abi)
             case "DesktopSiteBridge": return makeDesktopSiteBridgeFrom(abi: abi)
@@ -1073,11 +1136,16 @@ public class __MakeFromAbi: MakeFromAbi {
             case "PointerPredictor": return makePointerPredictorFrom(abi: abi)
             case "RightTappedEventArgs": return makeRightTappedEventArgsFrom(abi: abi)
             case "TappedEventArgs": return makeTappedEventArgsFrom(abi: abi)
+            case "ThemeSettings": return makeThemeSettingsFrom(abi: abi)
+            case "FontWeights": return makeFontWeightsFrom(abi: abi)
+            case "RichEditTextDocument": return makeRichEditTextDocumentFrom(abi: abi)
+            case "RichEditTextRange": return makeRichEditTextRangeFrom(abi: abi)
             case "AppWindow": return makeAppWindowFrom(abi: abi)
             case "AppWindowChangedEventArgs": return makeAppWindowChangedEventArgsFrom(abi: abi)
             case "AppWindowClosingEventArgs": return makeAppWindowClosingEventArgsFrom(abi: abi)
             case "AppWindowPresenter": return makeAppWindowPresenterFrom(abi: abi)
             case "AppWindowTitleBar": return makeAppWindowTitleBarFrom(abi: abi)
+            case "CompactOverlayPresenter": return makeCompactOverlayPresenterFrom(abi: abi)
             case "DisplayArea": return makeDisplayAreaFrom(abi: abi)
             case "DisplayAreaWatcher": return makeDisplayAreaWatcherFrom(abi: abi)
             case "FullScreenPresenter": return makeFullScreenPresenterFrom(abi: abi)
@@ -1089,6 +1157,7 @@ public class __MakeFromAbi: MakeFromAbi {
             case "ResourceManager": return makeResourceManagerFrom(abi: abi)
             case "ResourceMap": return makeResourceMapFrom(abi: abi)
             case "ResourceNotFoundEventArgs": return makeResourceNotFoundEventArgsFrom(abi: abi)
+            case "EnvironmentManager": return makeEnvironmentManagerFrom(abi: abi)
             default: return nil
         }
     }

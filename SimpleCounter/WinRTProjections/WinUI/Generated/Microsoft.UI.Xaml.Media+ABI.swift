@@ -26,6 +26,26 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIAcrylicBrushStatics2: Wind
     .init(Data1: 0x6E3EB0BD, Data2: 0x20A1, Data3: 0x52EA, Data4: ( 0xAE,0xDE,0x47,0x80,0x61,0x01,0x22,0x79 ))// 6E3EB0BD-20A1-52EA-AEDE-478061012279
 }
 
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIArcSegment: WindowsFoundation.IID {
+    .init(Data1: 0x6B7CE02B, Data2: 0x87BE, Data3: 0x5ACB, Data4: ( 0x9D,0x3B,0xC9,0x96,0x4C,0x69,0x62,0xD0 ))// 6B7CE02B-87BE-5ACB-9D3B-C9964C6962D0
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIArcSegmentStatics: WindowsFoundation.IID {
+    .init(Data1: 0x5BA7CCB3, Data2: 0x5BC7, Data3: 0x5038, Data4: ( 0x99,0xC5,0x93,0xDC,0x73,0x02,0x30,0xCF ))// 5BA7CCB3-5BC7-5038-99C5-93DC730230CF
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBezierSegment: WindowsFoundation.IID {
+    .init(Data1: 0x0F36BADE, Data2: 0x892E, Data3: 0x51FE, Data4: ( 0xB9,0x4A,0x38,0x75,0xE8,0x6F,0xEA,0xAE ))// 0F36BADE-892E-51FE-B94A-3875E86FEAAE
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBezierSegmentStatics: WindowsFoundation.IID {
+    .init(Data1: 0x98E74D5C, Data2: 0xC97A, Data3: 0x50B0, Data4: ( 0xAE,0x0E,0xD4,0x36,0xDC,0x9D,0xF1,0x6D ))// 98E74D5C-C97A-50B0-AE0E-D436DC9DF16D
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBitmapCache: WindowsFoundation.IID {
+    .init(Data1: 0x4B3A8983, Data2: 0x27A2, Data3: 0x592A, Data4: ( 0xBD,0xA4,0x27,0x04,0x31,0xEA,0xE0,0x38 ))// 4B3A8983-27A2-592A-BDA4-270431EAE038
+}
+
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBrush: WindowsFoundation.IID {
     .init(Data1: 0x2DE3CB83, Data2: 0x1329, Data3: 0x5679, Data4: ( 0x88,0xF8,0xC8,0x22,0xBC,0x54,0x42,0xCB ))// 2DE3CB83-1329-5679-88F8-C822BC5442CB
 }
@@ -66,6 +86,22 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CICompositionTargetStatics: 
     .init(Data1: 0x12A4BE6F, Data2: 0x6DB1, Data3: 0x5165, Data4: ( 0xB6,0x22,0xD5,0x7A,0xB7,0x82,0x74,0x5B ))// 12A4BE6F-6DB1-5165-B622-D57AB782745B
 }
 
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIDesktopAcrylicBackdrop: WindowsFoundation.IID {
+    .init(Data1: 0xBFD9915B, Data2: 0x82A6, Data3: 0x5DF6, Data4: ( 0xAF,0xF0,0xA4,0x82,0x4D,0xDC,0x11,0x43 ))// BFD9915B-82A6-5DF6-AFF0-A4824DDC1143
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIDesktopAcrylicBackdropFactory: WindowsFoundation.IID {
+    .init(Data1: 0x00922E6D, Data2: 0xAE51, Data3: 0x564A, Data4: ( 0xBC,0xE2,0x19,0x73,0xD5,0xE4,0x63,0xDD ))// 00922E6D-AE51-564A-BCE2-1973D5E463DD
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIEllipseGeometry: WindowsFoundation.IID {
+    .init(Data1: 0xABABD262, Data2: 0xD8E4, Data3: 0x5B49, Data4: ( 0xBC,0xE9,0x01,0x08,0xA5,0x20,0x9D,0x45 ))// ABABD262-D8E4-5B49-BCE9-0108A5209D45
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIEllipseGeometryStatics: WindowsFoundation.IID {
+    .init(Data1: 0xE8A33C80, Data2: 0xD72F, Data3: 0x5248, Data4: ( 0xA7,0x1F,0x4B,0x70,0xA0,0x75,0x7F,0x89 ))// E8A33C80-D72F-5248-A71F-4B70A0757F89
+}
+
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIFontFamily: WindowsFoundation.IID {
     .init(Data1: 0x18FA5BC1, Data2: 0x7294, Data3: 0x527C, Data4: ( 0xBB,0x02,0xB2,0x13,0xE0,0xB3,0xA2,0xA3 ))// 18FA5BC1-7294-527C-BB02-B213E0B3A2A3
 }
@@ -98,6 +134,14 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIGeometryFactory: WindowsFo
     .init(Data1: 0x4EDCD536, Data2: 0x7949, Data3: 0x548A, Data4: ( 0xA9,0xB1,0x6F,0xF0,0x3B,0x95,0x1C,0xF3 ))// 4EDCD536-7949-548A-A9B1-6FF03B951CF3
 }
 
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIGeometryGroup: WindowsFoundation.IID {
+    .init(Data1: 0xB4DDE569, Data2: 0xEA96, Data3: 0x5883, Data4: ( 0x91,0x4C,0xEB,0xB7,0xD8,0x18,0xDD,0x3A ))// B4DDE569-EA96-5883-914C-EBB7D818DD3A
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIGeometryGroupStatics: WindowsFoundation.IID {
+    .init(Data1: 0x56A23DA5, Data2: 0xD015, Data3: 0x568A, Data4: ( 0x9F,0x8B,0x11,0xB1,0x25,0xCF,0xD9,0xB4 ))// 56A23DA5-D015-568A-9F8B-11B125CFD9B4
+}
+
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIGeometryStatics: WindowsFoundation.IID {
     .init(Data1: 0x349F78D0, Data2: 0x4978, Data3: 0x5742, Data4: ( 0xB7,0xD2,0xB3,0x4E,0xA2,0xC9,0x56,0x00 ))// 349F78D0-4978-5742-B7D2-B34EA2C95600
 }
@@ -122,12 +166,28 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIGradientStopStatics: Windo
     .init(Data1: 0x0B566C1B, Data2: 0x37DE, Data3: 0x5BFD, Data4: ( 0xB4,0x19,0x0F,0x7C,0x4C,0x0A,0x05,0x23 ))// 0B566C1B-37DE-5BFD-B419-0F7C4C0A0523
 }
 
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIImageBrush: WindowsFoundation.IID {
+    .init(Data1: 0xEDCD91A3, Data2: 0xA868, Data3: 0x5BA6, Data4: ( 0x94,0x89,0x5B,0x12,0xB4,0xC2,0x9D,0x85 ))// EDCD91A3-A868-5BA6-9489-5B12B4C29D85
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIImageBrushStatics: WindowsFoundation.IID {
+    .init(Data1: 0xCE8082DC, Data2: 0xA505, Data3: 0x5B4F, Data4: ( 0x88,0x61,0x79,0x63,0x0F,0x52,0xC1,0x89 ))// CE8082DC-A505-5B4F-8861-79630F52C189
+}
+
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIImageSource: WindowsFoundation.IID {
     .init(Data1: 0x6C2038F6, Data2: 0xD6D5, Data3: 0x55E9, Data4: ( 0x9B,0x9E,0x08,0x2F,0x12,0xDB,0xFF,0x60 ))// 6C2038F6-D6D5-55E9-9B9E-082F12DBFF60
 }
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIImageSourceFactory: WindowsFoundation.IID {
     .init(Data1: 0x0B1E64A3, Data2: 0xE353, Data3: 0x5901, Data4: ( 0xB8,0x4B,0xAE,0x98,0x42,0xAE,0xA5,0xCD ))// 0B1E64A3-E353-5901-B84B-AE9842AEA5CD
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILineGeometry: WindowsFoundation.IID {
+    .init(Data1: 0x467EF3C5, Data2: 0xBC43, Data3: 0x50ED, Data4: ( 0xBB,0x23,0x16,0xBE,0x2C,0x63,0x35,0x6E ))// 467EF3C5-BC43-50ED-BB23-16BE2C63356E
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILineGeometryStatics: WindowsFoundation.IID {
+    .init(Data1: 0xCE0ECBF3, Data2: 0x9389, Data3: 0x5304, Data4: ( 0xB7,0xC8,0x5E,0x61,0x09,0x02,0xF2,0x58 ))// CE0ECBF3-9389-5304-B7C8-5E610902F258
 }
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILineSegment: WindowsFoundation.IID {
@@ -148,6 +208,42 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILinearGradientBrushFactory
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILinearGradientBrushStatics: WindowsFoundation.IID {
     .init(Data1: 0xDF029E84, Data2: 0xF6BE, Data3: 0x5B7E, Data4: ( 0xBA,0x22,0x3B,0x4E,0x7A,0x6B,0xCE,0xEE ))// DF029E84-F6BE-5B7E-BA22-3B4E7A6BCEEE
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILoadedImageSourceLoadCompletedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x4121BB7C, Data2: 0x48E8, Data3: 0x542D, Data4: ( 0xB9,0x50,0x3E,0xA7,0xE7,0x09,0xC0,0xD6 ))// 4121BB7C-48E8-542D-B950-3EA7E709C0D6
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILoadedImageSurface: WindowsFoundation.IID {
+    .init(Data1: 0xB5275540, Data2: 0x1706, Data3: 0x5851, Data4: ( 0x95,0xCC,0x49,0x8E,0xE8,0x1F,0xB1,0x83 ))// B5275540-1706-5851-95CC-498EE81FB183
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILoadedImageSurfaceStatics: WindowsFoundation.IID {
+    .init(Data1: 0x25D390C4, Data2: 0x4E32, Data3: 0x52C2, Data4: ( 0x86,0x8F,0xF2,0xED,0xE7,0x4E,0xE4,0x42 ))// 25D390C4-4E32-52C2-868F-F2EDE74EE442
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrix3DProjection: WindowsFoundation.IID {
+    .init(Data1: 0xFC3338EF, Data2: 0xF390, Data3: 0x5BB1, Data4: ( 0x93,0x2E,0x3B,0x7C,0x08,0x78,0x81,0x87 ))// FC3338EF-F390-5BB1-932E-3B7C08788187
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrix3DProjectionStatics: WindowsFoundation.IID {
+    .init(Data1: 0xA5A7E267, Data2: 0x7A5D, Data3: 0x58EF, Data4: ( 0xA8,0xCD,0xB8,0x8E,0xBD,0xF8,0x22,0x07 ))// A5A7E267-7A5D-58EF-A8CD-B88EBDF82207
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrixHelper: WindowsFoundation.IID {
+    .init(Data1: 0x9571FD76, Data2: 0xCC5C, Data3: 0x534D, Data4: ( 0xAC,0x85,0xCB,0x4A,0xC8,0x70,0xC9,0x12 ))// 9571FD76-CC5C-534D-AC85-CB4AC870C912
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrixHelperStatics: WindowsFoundation.IID {
+    .init(Data1: 0x5762CF6B, Data2: 0x4FB0, Data3: 0x532F, Data4: ( 0x83,0x68,0xDE,0x96,0x00,0x42,0x70,0x1F ))// 5762CF6B-4FB0-532F-8368-DE960042701F
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrixTransform: WindowsFoundation.IID {
+    .init(Data1: 0xF03138E1, Data2: 0xADDD, Data3: 0x59FA, Data4: ( 0xB9,0x93,0x3E,0xA6,0x9B,0x88,0x8A,0xCE ))// F03138E1-ADDD-59FA-B993-3EA69B888ACE
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrixTransformStatics: WindowsFoundation.IID {
+    .init(Data1: 0xD7DB9DE3, Data2: 0x5071, Data3: 0x5115, Data4: ( 0x98,0xFB,0xCC,0xAD,0x2F,0xD4,0x6E,0x44 ))// D7DB9DE3-5071-5115-98FB-CCAD2FD46E44
 }
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMediaTransportControlsThumbnailRequestedEventArgs: WindowsFoundation.IID {
@@ -190,6 +286,14 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPathSegmentFactory: Window
     .init(Data1: 0x0559A4FF, Data2: 0xAC4B, Data3: 0x5BB7, Data4: ( 0xB5,0x41,0xD3,0x73,0x96,0x0E,0x08,0x3B ))// 0559A4FF-AC4B-5BB7-B541-D373960E083B
 }
 
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection: WindowsFoundation.IID {
+    .init(Data1: 0xD3E22836, Data2: 0x0322, Data3: 0x5D75, Data4: ( 0x94,0x1C,0xA5,0xFF,0xB0,0x51,0x92,0xB2 ))// D3E22836-0322-5D75-941C-A5FFB05192B2
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjectionStatics: WindowsFoundation.IID {
+    .init(Data1: 0x96D86C18, Data2: 0x90DD, Data3: 0x564A, Data4: ( 0x82,0x8A,0x87,0x35,0xE4,0x21,0x9B,0x1D ))// 96D86C18-90DD-564A-828A-8735E4219B1D
+}
+
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPolyBezierSegment: WindowsFoundation.IID {
     .init(Data1: 0xD7F760A0, Data2: 0xB93A, Data3: 0x562A, Data4: ( 0x81,0x18,0x63,0x30,0xED,0x22,0xC3,0x07 ))// D7F760A0-B93A-562A-8118-6330ED22C307
 }
@@ -198,12 +302,48 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPolyBezierSegmentStatics: 
     .init(Data1: 0x738EF089, Data2: 0xA80F, Data3: 0x53E0, Data4: ( 0x81,0x6F,0xF7,0x87,0xA4,0x46,0x19,0x07 ))// 738EF089-A80F-53E0-816F-F787A4461907
 }
 
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPolyLineSegment: WindowsFoundation.IID {
+    .init(Data1: 0x426EF287, Data2: 0x0287, Data3: 0x536F, Data4: ( 0xAD,0x9E,0x6A,0x05,0xEC,0xBB,0x32,0x3A ))// 426EF287-0287-536F-AD9E-6A05ECBB323A
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPolyLineSegmentStatics: WindowsFoundation.IID {
+    .init(Data1: 0xCF54E568, Data2: 0x101A, Data3: 0x5349, Data4: ( 0x91,0x89,0x6F,0x9A,0x1E,0x7F,0x52,0x80 ))// CF54E568-101A-5349-9189-6F9A1E7F5280
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPolyQuadraticBezierSegment: WindowsFoundation.IID {
+    .init(Data1: 0x56372F4C, Data2: 0xC531, Data3: 0x5C3E, Data4: ( 0xB0,0xE0,0x16,0x45,0xF5,0xA8,0xD8,0x72 ))// 56372F4C-C531-5C3E-B0E0-1645F5A8D872
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPolyQuadraticBezierSegmentStatics: WindowsFoundation.IID {
+    .init(Data1: 0x7EB6374D, Data2: 0xCD30, Data3: 0x5507, Data4: ( 0xB2,0xAB,0xC4,0xE3,0xA7,0xDC,0x60,0xBF ))// 7EB6374D-CD30-5507-B2AB-C4E3A7DC60BF
+}
+
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIProjection: WindowsFoundation.IID {
     .init(Data1: 0xC95364B3, Data2: 0x6058, Data3: 0x5EE5, Data4: ( 0x9E,0x28,0xD3,0x8B,0x76,0x79,0xFC,0xD4 ))// C95364B3-6058-5EE5-9E28-D38B7679FCD4
 }
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIProjectionFactory: WindowsFoundation.IID {
     .init(Data1: 0x870EA34F, Data2: 0xDB61, Data3: 0x5B75, Data4: ( 0x89,0xAD,0xE0,0x48,0x0C,0x80,0x29,0x37 ))// 870EA34F-DB61-5B75-89AD-E0480C802937
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIQuadraticBezierSegment: WindowsFoundation.IID {
+    .init(Data1: 0x6048ABE4, Data2: 0x7A12, Data3: 0x5195, Data4: ( 0xBD,0x61,0x71,0xDF,0xD0,0x36,0x1C,0x38 ))// 6048ABE4-7A12-5195-BD61-71DFD0361C38
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIQuadraticBezierSegmentStatics: WindowsFoundation.IID {
+    .init(Data1: 0x4D56EA65, Data2: 0x0A1A, Data3: 0x528A, Data4: ( 0xA5,0xB6,0x41,0xDA,0x03,0xAC,0x71,0xF4 ))// 4D56EA65-0A1A-528A-A5B6-41DA03AC71F4
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush: WindowsFoundation.IID {
+    .init(Data1: 0x5D493CE1, Data2: 0xB844, Data3: 0x546A, Data4: ( 0xB7,0x72,0xB3,0xBC,0xBA,0x7E,0x98,0xEE ))// 5D493CE1-B844-546A-B772-B3BCBA7E98EE
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushFactory: WindowsFoundation.IID {
+    .init(Data1: 0xD90BA26E, Data2: 0x9E67, Data3: 0x54BD, Data4: ( 0xA2,0xD9,0x61,0xC8,0xF9,0xF1,0xD4,0x33 ))// D90BA26E-9E67-54BD-A2D9-61C8F9F1D433
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics: WindowsFoundation.IID {
+    .init(Data1: 0xF275A0B8, Data2: 0x66F9, Data3: 0x5B7D, Data4: ( 0xA4,0x15,0x7E,0xDA,0x65,0xFE,0x6D,0xD3 ))// F275A0B8-66F9-5B7D-A415-7EDA65FE6DD3
 }
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRectangleGeometry: WindowsFoundation.IID {
@@ -218,12 +358,40 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRenderedEventArgs: Windows
     .init(Data1: 0xB268B885, Data2: 0x118D, Data3: 0x5B66, Data4: ( 0x80,0x99,0x3B,0x6B,0xB8,0x64,0x47,0x26 ))// B268B885-118D-5B66-8099-3B6BB8644726
 }
 
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRenderingEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0xA67C8F8D, Data2: 0x1885, Data3: 0x5FC9, Data4: ( 0x97,0x5C,0x90,0x12,0x24,0xF7,0x9B,0x1E ))// A67C8F8D-1885-5FC9-975C-901224F79B1E
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRotateTransform: WindowsFoundation.IID {
+    .init(Data1: 0xD4686E7C, Data2: 0xA374, Data3: 0x5CAC, Data4: ( 0x89,0x27,0x0E,0xF0,0x7C,0x5B,0x25,0x4D ))// D4686E7C-A374-5CAC-8927-0EF07C5B254D
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRotateTransformStatics: WindowsFoundation.IID {
+    .init(Data1: 0x8EC4C662, Data2: 0x04F8, Data3: 0x51D7, Data4: ( 0xBC,0xB2,0x17,0xF1,0x0C,0x2F,0xAA,0x38 ))// 8EC4C662-04F8-51D7-BCB2-17F10C2FAA38
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIScaleTransform: WindowsFoundation.IID {
+    .init(Data1: 0x94B064A4, Data2: 0x34F0, Data3: 0x5EF9, Data4: ( 0x8B,0x67,0x44,0x4F,0x56,0x99,0xF5,0x2A ))// 94B064A4-34F0-5EF9-8B67-444F5699F52A
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIScaleTransformStatics: WindowsFoundation.IID {
+    .init(Data1: 0x76485BD5, Data2: 0xA5BF, Data3: 0x5790, Data4: ( 0xA8,0x37,0x81,0x93,0xC8,0x4D,0xF3,0x53 ))// 76485BD5-A5BF-5790-A837-8193C84DF353
+}
+
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIShadow: WindowsFoundation.IID {
     .init(Data1: 0xCC12FD6A, Data2: 0x50AA, Data3: 0x5EB3, Data4: ( 0x9A,0x0E,0xB9,0x38,0xB4,0x54,0xC4,0x39 ))// CC12FD6A-50AA-5EB3-9A0E-B938B454C439
 }
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIShadowFactory: WindowsFoundation.IID {
     .init(Data1: 0xC9115FBB, Data2: 0xFCC3, Data3: 0x52BF, Data4: ( 0xB8,0xEE,0xC3,0x48,0x10,0x2A,0x46,0xE0 ))// C9115FBB-FCC3-52BF-B8EE-C348102A46E0
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CISkewTransform: WindowsFoundation.IID {
+    .init(Data1: 0x230ABAA6, Data2: 0xA9B6, Data3: 0x5210, Data4: ( 0x87,0x3F,0x36,0xBE,0xA2,0x9D,0x7C,0x06 ))// 230ABAA6-A9B6-5210-873F-36BEA29D7C06
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CISkewTransformStatics: WindowsFoundation.IID {
+    .init(Data1: 0x93265150, Data2: 0x53D0, Data3: 0x52E3, Data4: ( 0x88,0xA3,0x3D,0x93,0xE2,0xED,0x86,0x1A ))// 93265150-53D0-52E3-88A3-3D93E2ED861A
 }
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CISolidColorBrush: WindowsFoundation.IID {
@@ -258,12 +426,32 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIThemeShadowFactory: Window
     .init(Data1: 0x704A9C96, Data2: 0x76A0, Data3: 0x569E, Data4: ( 0x8C,0xEB,0x34,0xE9,0x2A,0x23,0xFE,0x11 ))// 704A9C96-76A0-569E-8CEB-34E92A23FE11
 }
 
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITileBrush: WindowsFoundation.IID {
+    .init(Data1: 0xEE46060D, Data2: 0xCABC, Data3: 0x505D, Data4: ( 0x88,0x3C,0x75,0xD2,0xE0,0xE4,0x58,0x75 ))// EE46060D-CABC-505D-883C-75D2E0E45875
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITileBrushFactory: WindowsFoundation.IID {
+    .init(Data1: 0x8542E5E6, Data2: 0x5177, Data3: 0x506F, Data4: ( 0x8A,0x3B,0xAA,0x7D,0xA6,0x51,0xF0,0x99 ))// 8542E5E6-5177-506F-8A3B-AA7DA651F099
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITileBrushStatics: WindowsFoundation.IID {
+    .init(Data1: 0xF402197B, Data2: 0x9047, Data3: 0x5F8A, Data4: ( 0x90,0xBC,0x6F,0x5D,0x8C,0x74,0x8A,0x5F ))// F402197B-9047-5F8A-90BC-6F5D8C748A5F
+}
+
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITransform: WindowsFoundation.IID {
     .init(Data1: 0x92A8DEE5, Data2: 0x1413, Data3: 0x56B9, Data4: ( 0x8C,0xCA,0x3C,0x46,0x91,0x8F,0xDE,0x1B ))// 92A8DEE5-1413-56B9-8CCA-3C46918FDE1B
 }
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITransformFactory: WindowsFoundation.IID {
     .init(Data1: 0x7DA293F9, Data2: 0xB82E, Data3: 0x5D15, Data4: ( 0xB6,0x23,0xC0,0x82,0x10,0xCB,0xB6,0x40 ))// 7DA293F9-B82E-5D15-B623-C08210CBB640
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITransformGroup: WindowsFoundation.IID {
+    .init(Data1: 0x17C55F3B, Data2: 0x899C, Data3: 0x588F, Data4: ( 0x8B,0xD4,0x40,0xFA,0x3A,0x5F,0xCB,0x04 ))// 17C55F3B-899C-588F-8BD4-40FA3A5FCB04
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITransformGroupStatics: WindowsFoundation.IID {
+    .init(Data1: 0x8F1508F6, Data2: 0x7DCF, Data3: 0x53D5, Data4: ( 0xBB,0xC0,0xD8,0xFC,0xD9,0x6D,0x73,0x99 ))// 8F1508F6-7DCF-53D5-BBC0-D8FCD96D7399
 }
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITranslateTransform: WindowsFoundation.IID {
@@ -476,6 +664,215 @@ public enum __ABI_Microsoft_UI_Xaml_Media {
             }
             return .from(abi: value)
         }
+
+    }
+
+    public class IArcSegment: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIArcSegment }
+
+        internal func get_PointImpl() throws -> WindowsFoundation.Point {
+            var value: __x_ABI_CWindows_CFoundation_CPoint = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIArcSegment.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Point(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_PointImpl(_ value: WindowsFoundation.Point) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIArcSegment.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Point(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_SizeImpl() throws -> WindowsFoundation.Size {
+            var value: __x_ABI_CWindows_CFoundation_CSize = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIArcSegment.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Size(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_SizeImpl(_ value: WindowsFoundation.Size) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIArcSegment.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Size(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_RotationAngleImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIArcSegment.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_RotationAngle(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_RotationAngleImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIArcSegment.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_RotationAngle(pThis, value))
+            }
+        }
+
+        internal func get_IsLargeArcImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIArcSegment.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsLargeArc(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_IsLargeArcImpl(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIArcSegment.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_IsLargeArc(pThis, .init(from: value)))
+            }
+        }
+
+        internal func get_SweepDirectionImpl() throws -> WinUI.SweepDirection {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CSweepDirection = .init(0)
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIArcSegment.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_SweepDirection(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_SweepDirectionImpl(_ value: WinUI.SweepDirection) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIArcSegment.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SweepDirection(pThis, value))
+            }
+        }
+
+    }
+
+    public class IArcSegmentStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIArcSegmentStatics }
+
+        internal func get_PointPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIArcSegmentStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_PointProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SizePropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIArcSegmentStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SizeProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_RotationAnglePropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIArcSegmentStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_RotationAngleProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_IsLargeArcPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIArcSegmentStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsLargeArcProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SweepDirectionPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIArcSegmentStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SweepDirectionProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IBezierSegment: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBezierSegment }
+
+        internal func get_Point1Impl() throws -> WindowsFoundation.Point {
+            var value: __x_ABI_CWindows_CFoundation_CPoint = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBezierSegment.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Point1(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_Point1Impl(_ value: WindowsFoundation.Point) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBezierSegment.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Point1(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_Point2Impl() throws -> WindowsFoundation.Point {
+            var value: __x_ABI_CWindows_CFoundation_CPoint = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBezierSegment.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Point2(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_Point2Impl(_ value: WindowsFoundation.Point) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBezierSegment.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Point2(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_Point3Impl() throws -> WindowsFoundation.Point {
+            var value: __x_ABI_CWindows_CFoundation_CPoint = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBezierSegment.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Point3(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_Point3Impl(_ value: WindowsFoundation.Point) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBezierSegment.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Point3(pThis, .from(swift: value)))
+            }
+        }
+
+    }
+
+    public class IBezierSegmentStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBezierSegmentStatics }
+
+        internal func get_Point1PropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBezierSegmentStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Point1Property(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_Point2PropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBezierSegmentStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Point2Property(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_Point3PropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBezierSegmentStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Point3Property(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IBitmapCache: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBitmapCache }
 
     }
 
@@ -897,6 +1294,108 @@ public enum __ABI_Microsoft_UI_Xaml_Media {
 
     }
 
+    public class IDesktopAcrylicBackdrop: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIDesktopAcrylicBackdrop }
+
+    }
+
+    public class IDesktopAcrylicBackdropFactory: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIDesktopAcrylicBackdropFactory }
+
+        internal func CreateInstanceImpl(_ baseInterface: UnsealedWinRTClassWrapper<WinUI.DesktopAcrylicBackdrop.Composable>?, _ innerInterface: inout WindowsFoundation.IInspectable?) throws -> IDesktopAcrylicBackdrop {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                let _baseInterface = baseInterface?.toIInspectableABI { $0 }
+                let (_innerInterface) = try ComPtrs.initialize { _innerInterfaceAbi in
+                    _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIDesktopAcrylicBackdropFactory.self) { pThis in
+                        try CHECKED(pThis.pointee.lpVtbl.pointee.CreateInstance(pThis, _baseInterface, &_innerInterfaceAbi, &valueAbi))
+                    }
+                }
+                innerInterface = WindowsFoundation.IInspectable(_innerInterface!)
+            }
+            return IDesktopAcrylicBackdrop(value!)
+        }
+
+    }
+
+    public class IEllipseGeometry: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIEllipseGeometry }
+
+        internal func get_CenterImpl() throws -> WindowsFoundation.Point {
+            var value: __x_ABI_CWindows_CFoundation_CPoint = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIEllipseGeometry.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Center(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_CenterImpl(_ value: WindowsFoundation.Point) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIEllipseGeometry.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Center(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_RadiusXImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIEllipseGeometry.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_RadiusX(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_RadiusXImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIEllipseGeometry.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_RadiusX(pThis, value))
+            }
+        }
+
+        internal func get_RadiusYImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIEllipseGeometry.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_RadiusY(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_RadiusYImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIEllipseGeometry.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_RadiusY(pThis, value))
+            }
+        }
+
+    }
+
+    public class IEllipseGeometryStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIEllipseGeometryStatics }
+
+        internal func get_CenterPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIEllipseGeometryStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CenterProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_RadiusXPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIEllipseGeometryStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_RadiusXProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_RadiusYPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIEllipseGeometryStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_RadiusYProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
     public class IFontFamily: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIFontFamily }
 
@@ -1063,6 +1562,63 @@ public enum __ABI_Microsoft_UI_Xaml_Media {
 
     public class IGeometryFactory: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIGeometryFactory }
+
+    }
+
+    public class IGeometryGroup: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIGeometryGroup }
+
+        internal func get_FillRuleImpl() throws -> WinUI.FillRule {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CFillRule = .init(0)
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIGeometryGroup.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_FillRule(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_FillRuleImpl(_ value: WinUI.FillRule) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIGeometryGroup.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_FillRule(pThis, value))
+            }
+        }
+
+        internal func get_ChildrenImpl() throws -> WinUI.GeometryCollection? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIGeometryGroup.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Children(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_ChildrenImpl(_ value: WinUI.GeometryCollection?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIGeometryGroup.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Children(pThis, RawPointer(value)))
+            }
+        }
+
+    }
+
+    public class IGeometryGroupStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIGeometryGroupStatics }
+
+        internal func get_FillRulePropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIGeometryGroupStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_FillRuleProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ChildrenPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIGeometryGroupStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ChildrenProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
 
     }
 
@@ -1274,6 +1830,72 @@ public enum __ABI_Microsoft_UI_Xaml_Media {
 
     }
 
+    public class IImageBrush: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIImageBrush }
+
+        internal func get_ImageSourceImpl() throws -> WinUI.ImageSource? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIImageBrush.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ImageSource(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_ImageSourceImpl(_ value: WinUI.ImageSource?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIImageBrush.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ImageSource(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func add_ImageFailedImpl(_ handler: WinUI.ExceptionRoutedEventHandler?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = __ABI_Microsoft_UI_Xaml.ExceptionRoutedEventHandlerWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIImageBrush.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_ImageFailed(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_ImageFailedImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIImageBrush.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_ImageFailed(pThis, token))
+            }
+        }
+
+        internal func add_ImageOpenedImpl(_ handler: WinUI.RoutedEventHandler?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = __ABI_Microsoft_UI_Xaml.RoutedEventHandlerWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIImageBrush.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_ImageOpened(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_ImageOpenedImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIImageBrush.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_ImageOpened(pThis, token))
+            }
+        }
+
+    }
+
+    public class IImageBrushStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIImageBrushStatics }
+
+        internal func get_ImageSourcePropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIImageBrushStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ImageSourceProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
     public class IImageSource: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIImageSource }
 
@@ -1281,6 +1903,62 @@ public enum __ABI_Microsoft_UI_Xaml_Media {
 
     public class IImageSourceFactory: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIImageSourceFactory }
+
+    }
+
+    public class ILineGeometry: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILineGeometry }
+
+        internal func get_StartPointImpl() throws -> WindowsFoundation.Point {
+            var value: __x_ABI_CWindows_CFoundation_CPoint = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILineGeometry.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_StartPoint(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_StartPointImpl(_ value: WindowsFoundation.Point) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILineGeometry.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_StartPoint(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_EndPointImpl() throws -> WindowsFoundation.Point {
+            var value: __x_ABI_CWindows_CFoundation_CPoint = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILineGeometry.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_EndPoint(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_EndPointImpl(_ value: WindowsFoundation.Point) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILineGeometry.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_EndPoint(pThis, .from(swift: value)))
+            }
+        }
+
+    }
+
+    public class ILineGeometryStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILineGeometryStatics }
+
+        internal func get_StartPointPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILineGeometryStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_StartPointProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_EndPointPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILineGeometryStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_EndPointProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
 
     }
 
@@ -1380,6 +2058,217 @@ public enum __ABI_Microsoft_UI_Xaml_Media {
             let (value) = try ComPtrs.initialize { valueAbi in
                 _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILinearGradientBrushStatics.self) { pThis in
                     try CHECKED(pThis.pointee.lpVtbl.pointee.get_EndPointProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class ILoadedImageSourceLoadCompletedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILoadedImageSourceLoadCompletedEventArgs }
+
+        internal func get_StatusImpl() throws -> WinUI.LoadedImageSourceLoadStatus {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CLoadedImageSourceLoadStatus = .init(0)
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILoadedImageSourceLoadCompletedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Status(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
+    public class ILoadedImageSurface: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILoadedImageSurface }
+
+        internal func get_DecodedPhysicalSizeImpl() throws -> WindowsFoundation.Size {
+            var value: __x_ABI_CWindows_CFoundation_CSize = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILoadedImageSurface.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DecodedPhysicalSize(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DecodedSizeImpl() throws -> WindowsFoundation.Size {
+            var value: __x_ABI_CWindows_CFoundation_CSize = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILoadedImageSurface.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DecodedSize(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_NaturalSizeImpl() throws -> WindowsFoundation.Size {
+            var value: __x_ABI_CWindows_CFoundation_CSize = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILoadedImageSurface.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_NaturalSize(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func add_LoadCompletedImpl(_ handler: TypedEventHandler<WinUI.LoadedImageSurface?, WinUI.LoadedImageSourceLoadCompletedEventArgs?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = WinUI.__x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CXaml__CMedia__CLoadedImageSurface___x_ABI_CMicrosoft__CUI__CXaml__CMedia__CLoadedImageSourceLoadCompletedEventArgsWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILoadedImageSurface.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_LoadCompleted(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_LoadCompletedImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILoadedImageSurface.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_LoadCompleted(pThis, token))
+            }
+        }
+
+    }
+
+    public class ILoadedImageSurfaceStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILoadedImageSurfaceStatics }
+
+        internal func StartLoadFromUriWithSizeImpl(_ uri: WindowsFoundation.Uri?, _ desiredMaxSize: WindowsFoundation.Size) throws -> WinUI.LoadedImageSurface? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILoadedImageSurfaceStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.StartLoadFromUriWithSize(pThis, RawPointer(uri), .from(swift: desiredMaxSize), &resultAbi))
+                }
+            }
+            return .from(abi: result)
+        }
+
+        internal func StartLoadFromUriImpl(_ uri: WindowsFoundation.Uri?) throws -> WinUI.LoadedImageSurface? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILoadedImageSurfaceStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.StartLoadFromUri(pThis, RawPointer(uri), &resultAbi))
+                }
+            }
+            return .from(abi: result)
+        }
+
+        internal func StartLoadFromStreamWithSizeImpl(_ stream: UWP.AnyIRandomAccessStream?, _ desiredMaxSize: WindowsFoundation.Size) throws -> WinUI.LoadedImageSurface? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                let streamWrapper = __ABI_Windows_Storage_Streams.IRandomAccessStreamWrapper(stream)
+                let _stream = try! streamWrapper?.toABI { $0 }
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILoadedImageSurfaceStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.StartLoadFromStreamWithSize(pThis, _stream, .from(swift: desiredMaxSize), &resultAbi))
+                }
+            }
+            return .from(abi: result)
+        }
+
+        internal func StartLoadFromStreamImpl(_ stream: UWP.AnyIRandomAccessStream?) throws -> WinUI.LoadedImageSurface? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                let streamWrapper = __ABI_Windows_Storage_Streams.IRandomAccessStreamWrapper(stream)
+                let _stream = try! streamWrapper?.toABI { $0 }
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILoadedImageSurfaceStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.StartLoadFromStream(pThis, _stream, &resultAbi))
+                }
+            }
+            return .from(abi: result)
+        }
+
+    }
+
+    public class IMatrix3DProjection: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrix3DProjection }
+
+        internal func get_ProjectionMatrixImpl() throws -> WinUI.Matrix3D {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CMedia3D_CMatrix3D = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrix3DProjection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ProjectionMatrix(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_ProjectionMatrixImpl(_ value: WinUI.Matrix3D) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrix3DProjection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ProjectionMatrix(pThis, .from(swift: value)))
+            }
+        }
+
+    }
+
+    public class IMatrix3DProjectionStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrix3DProjectionStatics }
+
+        internal func get_ProjectionMatrixPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrix3DProjectionStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ProjectionMatrixProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IMatrixHelper: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrixHelper }
+
+    }
+
+    public class IMatrixHelperStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrixHelperStatics }
+
+        internal func get_IdentityImpl() throws -> WinUI.Matrix {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CMatrix = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrixHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Identity(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func FromElementsImpl(_ m11: Double, _ m12: Double, _ m21: Double, _ m22: Double, _ offsetX: Double, _ offsetY: Double) throws -> WinUI.Matrix {
+            var result: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CMatrix = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrixHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.FromElements(pThis, m11, m12, m21, m22, offsetX, offsetY, &result))
+            }
+            return .from(abi: result)
+        }
+
+        internal func GetIsIdentityImpl(_ target: WinUI.Matrix) throws -> Bool {
+            var result: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrixHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.GetIsIdentity(pThis, .from(swift: target), &result))
+            }
+            return .init(from: result)
+        }
+
+        internal func TransformImpl(_ target: WinUI.Matrix, _ point: WindowsFoundation.Point) throws -> WindowsFoundation.Point {
+            var result: __x_ABI_CWindows_CFoundation_CPoint = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrixHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Transform(pThis, .from(swift: target), .from(swift: point), &result))
+            }
+            return .from(abi: result)
+        }
+
+    }
+
+    public class IMatrixTransform: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrixTransform }
+
+        internal func get_MatrixImpl() throws -> WinUI.Matrix {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CMatrix = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrixTransform.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Matrix(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_MatrixImpl(_ value: WinUI.Matrix) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrixTransform.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Matrix(pThis, .from(swift: value)))
+            }
+        }
+
+    }
+
+    public class IMatrixTransformStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrixTransformStatics }
+
+        internal func get_MatrixPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrixTransformStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_MatrixProperty(pThis, &valueAbi))
                 }
             }
             return .from(abi: value)
@@ -1630,6 +2519,309 @@ public enum __ABI_Microsoft_UI_Xaml_Media {
 
     }
 
+    public class IPlaneProjection: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection }
+
+        internal func get_LocalOffsetXImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LocalOffsetX(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_LocalOffsetXImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_LocalOffsetX(pThis, value))
+            }
+        }
+
+        internal func get_LocalOffsetYImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LocalOffsetY(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_LocalOffsetYImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_LocalOffsetY(pThis, value))
+            }
+        }
+
+        internal func get_LocalOffsetZImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LocalOffsetZ(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_LocalOffsetZImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_LocalOffsetZ(pThis, value))
+            }
+        }
+
+        internal func get_RotationXImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_RotationX(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_RotationXImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_RotationX(pThis, value))
+            }
+        }
+
+        internal func get_RotationYImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_RotationY(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_RotationYImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_RotationY(pThis, value))
+            }
+        }
+
+        internal func get_RotationZImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_RotationZ(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_RotationZImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_RotationZ(pThis, value))
+            }
+        }
+
+        internal func get_CenterOfRotationXImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_CenterOfRotationX(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_CenterOfRotationXImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CenterOfRotationX(pThis, value))
+            }
+        }
+
+        internal func get_CenterOfRotationYImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_CenterOfRotationY(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_CenterOfRotationYImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CenterOfRotationY(pThis, value))
+            }
+        }
+
+        internal func get_CenterOfRotationZImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_CenterOfRotationZ(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_CenterOfRotationZImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CenterOfRotationZ(pThis, value))
+            }
+        }
+
+        internal func get_GlobalOffsetXImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_GlobalOffsetX(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_GlobalOffsetXImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_GlobalOffsetX(pThis, value))
+            }
+        }
+
+        internal func get_GlobalOffsetYImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_GlobalOffsetY(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_GlobalOffsetYImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_GlobalOffsetY(pThis, value))
+            }
+        }
+
+        internal func get_GlobalOffsetZImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_GlobalOffsetZ(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_GlobalOffsetZImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_GlobalOffsetZ(pThis, value))
+            }
+        }
+
+        internal func get_ProjectionMatrixImpl() throws -> WinUI.Matrix3D {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CMedia3D_CMatrix3D = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ProjectionMatrix(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IPlaneProjectionStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjectionStatics }
+
+        internal func get_LocalOffsetXPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjectionStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_LocalOffsetXProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LocalOffsetYPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjectionStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_LocalOffsetYProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LocalOffsetZPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjectionStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_LocalOffsetZProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_RotationXPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjectionStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_RotationXProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_RotationYPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjectionStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_RotationYProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_RotationZPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjectionStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_RotationZProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CenterOfRotationXPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjectionStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CenterOfRotationXProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CenterOfRotationYPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjectionStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CenterOfRotationYProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CenterOfRotationZPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjectionStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CenterOfRotationZProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_GlobalOffsetXPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjectionStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_GlobalOffsetXProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_GlobalOffsetYPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjectionStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_GlobalOffsetYProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_GlobalOffsetZPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjectionStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_GlobalOffsetZProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ProjectionMatrixPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjectionStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ProjectionMatrixProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
     public class IPolyBezierSegment: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPolyBezierSegment }
 
@@ -1664,6 +2856,74 @@ public enum __ABI_Microsoft_UI_Xaml_Media {
 
     }
 
+    public class IPolyLineSegment: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPolyLineSegment }
+
+        internal func get_PointsImpl() throws -> WinUI.PointCollection? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPolyLineSegment.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Points(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_PointsImpl(_ value: WinUI.PointCollection?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPolyLineSegment.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Points(pThis, RawPointer(value)))
+            }
+        }
+
+    }
+
+    public class IPolyLineSegmentStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPolyLineSegmentStatics }
+
+        internal func get_PointsPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPolyLineSegmentStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_PointsProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IPolyQuadraticBezierSegment: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPolyQuadraticBezierSegment }
+
+        internal func get_PointsImpl() throws -> WinUI.PointCollection? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPolyQuadraticBezierSegment.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Points(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_PointsImpl(_ value: WinUI.PointCollection?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPolyQuadraticBezierSegment.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Points(pThis, RawPointer(value)))
+            }
+        }
+
+    }
+
+    public class IPolyQuadraticBezierSegmentStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPolyQuadraticBezierSegmentStatics }
+
+        internal func get_PointsPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPolyQuadraticBezierSegmentStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_PointsProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
     public class IProjection: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIProjection }
 
@@ -1683,6 +2943,260 @@ public enum __ABI_Microsoft_UI_Xaml_Media {
                 innerInterface = WindowsFoundation.IInspectable(_innerInterface!)
             }
             return IProjection(value!)
+        }
+
+    }
+
+    public class IQuadraticBezierSegment: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIQuadraticBezierSegment }
+
+        internal func get_Point1Impl() throws -> WindowsFoundation.Point {
+            var value: __x_ABI_CWindows_CFoundation_CPoint = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIQuadraticBezierSegment.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Point1(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_Point1Impl(_ value: WindowsFoundation.Point) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIQuadraticBezierSegment.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Point1(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_Point2Impl() throws -> WindowsFoundation.Point {
+            var value: __x_ABI_CWindows_CFoundation_CPoint = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIQuadraticBezierSegment.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Point2(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_Point2Impl(_ value: WindowsFoundation.Point) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIQuadraticBezierSegment.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Point2(pThis, .from(swift: value)))
+            }
+        }
+
+    }
+
+    public class IQuadraticBezierSegmentStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIQuadraticBezierSegmentStatics }
+
+        internal func get_Point1PropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIQuadraticBezierSegmentStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Point1Property(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_Point2PropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIQuadraticBezierSegmentStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Point2Property(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IRadialGradientBrush: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush }
+
+        internal func get_CenterImpl() throws -> WindowsFoundation.Point {
+            var value: __x_ABI_CWindows_CFoundation_CPoint = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Center(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_CenterImpl(_ value: WindowsFoundation.Point) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Center(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_RadiusXImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_RadiusX(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_RadiusXImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_RadiusX(pThis, value))
+            }
+        }
+
+        internal func get_RadiusYImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_RadiusY(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_RadiusYImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_RadiusY(pThis, value))
+            }
+        }
+
+        internal func get_GradientOriginImpl() throws -> WindowsFoundation.Point {
+            var value: __x_ABI_CWindows_CFoundation_CPoint = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_GradientOrigin(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_GradientOriginImpl(_ value: WindowsFoundation.Point) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_GradientOrigin(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_MappingModeImpl() throws -> WinUI.BrushMappingMode {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CBrushMappingMode = .init(0)
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_MappingMode(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_MappingModeImpl(_ value: WinUI.BrushMappingMode) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_MappingMode(pThis, value))
+            }
+        }
+
+        internal func get_InterpolationSpaceImpl() throws -> WinAppSDK.CompositionColorSpace {
+            var value: __x_ABI_CMicrosoft_CUI_CComposition_CCompositionColorSpace = .init(0)
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_InterpolationSpace(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_InterpolationSpaceImpl(_ value: WinAppSDK.CompositionColorSpace) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_InterpolationSpace(pThis, value))
+            }
+        }
+
+        internal func get_SpreadMethodImpl() throws -> WinUI.GradientSpreadMethod {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CGradientSpreadMethod = .init(0)
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_SpreadMethod(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_SpreadMethodImpl(_ value: WinUI.GradientSpreadMethod) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SpreadMethod(pThis, value))
+            }
+        }
+
+        internal func get_GradientStopsImpl() throws -> WindowsFoundation.AnyIObservableVector<WinUI.GradientStop?>? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_GradientStops(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIObservableVector_1___x_ABI_CMicrosoft__CUI__CXaml__CMedia__CGradientStopWrapper.unwrapFrom(abi: value)
+        }
+
+    }
+
+    public class IRadialGradientBrushFactory: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushFactory }
+
+        internal func CreateInstanceImpl(_ baseInterface: UnsealedWinRTClassWrapper<WinUI.RadialGradientBrush.Composable>?, _ innerInterface: inout WindowsFoundation.IInspectable?) throws -> IRadialGradientBrush {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                let _baseInterface = baseInterface?.toIInspectableABI { $0 }
+                let (_innerInterface) = try ComPtrs.initialize { _innerInterfaceAbi in
+                    _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushFactory.self) { pThis in
+                        try CHECKED(pThis.pointee.lpVtbl.pointee.CreateInstance(pThis, _baseInterface, &_innerInterfaceAbi, &valueAbi))
+                    }
+                }
+                innerInterface = WindowsFoundation.IInspectable(_innerInterface!)
+            }
+            return IRadialGradientBrush(value!)
+        }
+
+    }
+
+    public class IRadialGradientBrushStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics }
+
+        internal func get_CenterPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CenterProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_RadiusXPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_RadiusXProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_RadiusYPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_RadiusYProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_GradientOriginPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_GradientOriginProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_InterpolationSpacePropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_InterpolationSpaceProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_MappingModePropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_MappingModeProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SpreadMethodPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrushStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SpreadMethodProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
         }
 
     }
@@ -1733,6 +3247,200 @@ public enum __ABI_Microsoft_UI_Xaml_Media {
 
     }
 
+    public class IRenderingEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRenderingEventArgs }
+
+        internal func get_RenderingTimeImpl() throws -> WindowsFoundation.TimeSpan {
+            var value: __x_ABI_CWindows_CFoundation_CTimeSpan = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRenderingEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_RenderingTime(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IRotateTransform: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRotateTransform }
+
+        internal func get_CenterXImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRotateTransform.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_CenterX(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_CenterXImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRotateTransform.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CenterX(pThis, value))
+            }
+        }
+
+        internal func get_CenterYImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRotateTransform.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_CenterY(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_CenterYImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRotateTransform.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CenterY(pThis, value))
+            }
+        }
+
+        internal func get_AngleImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRotateTransform.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Angle(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_AngleImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRotateTransform.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Angle(pThis, value))
+            }
+        }
+
+    }
+
+    public class IRotateTransformStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRotateTransformStatics }
+
+        internal func get_CenterXPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRotateTransformStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CenterXProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CenterYPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRotateTransformStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CenterYProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_AnglePropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRotateTransformStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_AngleProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IScaleTransform: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIScaleTransform }
+
+        internal func get_CenterXImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIScaleTransform.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_CenterX(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_CenterXImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIScaleTransform.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CenterX(pThis, value))
+            }
+        }
+
+        internal func get_CenterYImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIScaleTransform.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_CenterY(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_CenterYImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIScaleTransform.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CenterY(pThis, value))
+            }
+        }
+
+        internal func get_ScaleXImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIScaleTransform.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ScaleX(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_ScaleXImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIScaleTransform.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ScaleX(pThis, value))
+            }
+        }
+
+        internal func get_ScaleYImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIScaleTransform.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ScaleY(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_ScaleYImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIScaleTransform.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ScaleY(pThis, value))
+            }
+        }
+
+    }
+
+    public class IScaleTransformStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIScaleTransformStatics }
+
+        internal func get_CenterXPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIScaleTransformStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CenterXProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CenterYPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIScaleTransformStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CenterYProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ScaleXPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIScaleTransformStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ScaleXProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ScaleYPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIScaleTransformStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ScaleYProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
     public class IShadow: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIShadow }
 
@@ -1740,6 +3448,108 @@ public enum __ABI_Microsoft_UI_Xaml_Media {
 
     public class IShadowFactory: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIShadowFactory }
+
+    }
+
+    public class ISkewTransform: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CISkewTransform }
+
+        internal func get_CenterXImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CISkewTransform.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_CenterX(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_CenterXImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CISkewTransform.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CenterX(pThis, value))
+            }
+        }
+
+        internal func get_CenterYImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CISkewTransform.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_CenterY(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_CenterYImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CISkewTransform.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CenterY(pThis, value))
+            }
+        }
+
+        internal func get_AngleXImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CISkewTransform.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AngleX(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_AngleXImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CISkewTransform.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_AngleX(pThis, value))
+            }
+        }
+
+        internal func get_AngleYImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CISkewTransform.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AngleY(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_AngleYImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CISkewTransform.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_AngleY(pThis, value))
+            }
+        }
+
+    }
+
+    public class ISkewTransformStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CISkewTransformStatics }
+
+        internal func get_CenterXPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CISkewTransformStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CenterXProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CenterYPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CISkewTransformStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CenterYProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_AngleXPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CISkewTransformStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_AngleXProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_AngleYPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CISkewTransformStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_AngleYProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
 
     }
 
@@ -1885,6 +3695,103 @@ public enum __ABI_Microsoft_UI_Xaml_Media {
 
     }
 
+    public class ITileBrush: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITileBrush }
+
+        internal func get_AlignmentXImpl() throws -> WinUI.AlignmentX {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAlignmentX = .init(0)
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITileBrush.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AlignmentX(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_AlignmentXImpl(_ value: WinUI.AlignmentX) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITileBrush.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_AlignmentX(pThis, value))
+            }
+        }
+
+        internal func get_AlignmentYImpl() throws -> WinUI.AlignmentY {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAlignmentY = .init(0)
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITileBrush.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AlignmentY(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_AlignmentYImpl(_ value: WinUI.AlignmentY) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITileBrush.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_AlignmentY(pThis, value))
+            }
+        }
+
+        internal func get_StretchImpl() throws -> WinUI.Stretch {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CStretch = .init(0)
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITileBrush.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Stretch(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_StretchImpl(_ value: WinUI.Stretch) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITileBrush.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Stretch(pThis, value))
+            }
+        }
+
+    }
+
+    public class ITileBrushFactory: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITileBrushFactory }
+
+        internal func CreateInstanceImpl(_ baseInterface: UnsealedWinRTClassWrapper<WinUI.TileBrush.Composable>?, _ innerInterface: inout WindowsFoundation.IInspectable?) throws -> ITileBrush {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                let _baseInterface = baseInterface?.toIInspectableABI { $0 }
+                let (_innerInterface) = try ComPtrs.initialize { _innerInterfaceAbi in
+                    _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITileBrushFactory.self) { pThis in
+                        try CHECKED(pThis.pointee.lpVtbl.pointee.CreateInstance(pThis, _baseInterface, &_innerInterfaceAbi, &valueAbi))
+                    }
+                }
+                innerInterface = WindowsFoundation.IInspectable(_innerInterface!)
+            }
+            return ITileBrush(value!)
+        }
+
+    }
+
+    public class ITileBrushStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITileBrushStatics }
+
+        internal func get_AlignmentXPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITileBrushStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_AlignmentXProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_AlignmentYPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITileBrushStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_AlignmentYProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_StretchPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITileBrushStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_StretchProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
     public class ITransform: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITransform }
 
@@ -1892,6 +3799,48 @@ public enum __ABI_Microsoft_UI_Xaml_Media {
 
     public class ITransformFactory: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITransformFactory }
+
+    }
+
+    public class ITransformGroup: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITransformGroup }
+
+        internal func get_ChildrenImpl() throws -> WinUI.TransformCollection? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITransformGroup.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Children(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_ChildrenImpl(_ value: WinUI.TransformCollection?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITransformGroup.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Children(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_ValueImpl() throws -> WinUI.Matrix {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CMatrix = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITransformGroup.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Value(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class ITransformGroupStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITransformGroupStatics }
+
+        internal func get_ChildrenPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITransformGroupStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ChildrenProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
 
     }
 
@@ -2494,7 +4443,12 @@ public enum __ABI_Microsoft_UI_Xaml_Media {
         }
     )
 }
-extension ComposableImpl where CABI == __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBrushOverrides {
+extension __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CMatrix {
+        public static func from(swift: WinUI.Matrix) -> __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CMatrix {
+            .init(M11: swift.m11, M12: swift.m12, M21: swift.m21, M22: swift.m22, OffsetX: swift.offsetX, OffsetY: swift.offsetY)
+        }
+    }
+    extension ComposableImpl where CABI == __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBrushOverrides {
     public static func makeAbi() -> CABI {
         let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Microsoft_UI_Xaml_Media.IBrushOverridesVTable) { $0 }
         return .init(lpVtbl: vtblPtr)

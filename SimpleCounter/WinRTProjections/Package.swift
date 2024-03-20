@@ -18,6 +18,7 @@ let package = Package(
     .library(name: "WindowsFoundation", type: .dynamic, targets: ["WindowsFoundation"]),
     .library(name: "WinAppSDK", type: .dynamic, targets: ["WinAppSDK"]),
     .library(name: "Win2D", type: .dynamic, targets: ["Win2D"]),
+    .library(name: "WebView2Core", type: .dynamic, targets: ["WebView2Core"]),
     .library(name: "UWP", type: .dynamic, targets: ["UWP"]),
     .library(name: "CWinRT", type: .dynamic, targets: ["CWinRT"]),
     .library(name: "CWinAppSDK", targets: ["CWinAppSDK"])
@@ -63,6 +64,15 @@ let package = Package(
         .copy("Resources/app.exe.manifest"),
         .copy("Resources/Microsoft.Graphics.Canvas.dll"),
       ]
+    ),
+    .target(
+      name: "WebView2Core",
+      dependencies: [
+        "CWinRT",
+        "UWP",
+        "WindowsFoundation",
+      ],
+      path: "WebView2Core"
     ),
     .target(
       name: "UWP",

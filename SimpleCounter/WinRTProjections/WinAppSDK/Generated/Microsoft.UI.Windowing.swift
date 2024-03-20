@@ -7,6 +7,8 @@ import CWinRT
 
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.windowing.appwindowpresenterkind)
 public typealias AppWindowPresenterKind = __x_ABI_CMicrosoft_CUI_CWindowing_CAppWindowPresenterKind
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.windowing.compactoverlaysize)
+public typealias CompactOverlaySize = __x_ABI_CMicrosoft_CUI_CWindowing_CCompactOverlaySize
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.windowing.displayareafallback)
 public typealias DisplayAreaFallback = __x_ABI_CMicrosoft_CUI_CWindowing_CDisplayAreaFallback
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.windowing.displayareawatcherstatus)
@@ -574,6 +576,47 @@ public final class AppWindowTitleBar : WinRTClass {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.windowing.compactoverlaypresenter)
+public final class CompactOverlayPresenter : WinAppSDK.AppWindowPresenter {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Windowing.ICompactOverlayPresenter
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CWindowing_CICompactOverlayPresenter
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CWindowing_CICompactOverlayPresenter>?) -> CompactOverlayPresenter? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    private static let _ICompactOverlayPresenterStatics: __ABI_Microsoft_UI_Windowing.ICompactOverlayPresenterStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Windowing.CompactOverlayPresenter"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.windowing.compactoverlaypresenter.create)
+    public static func create() -> CompactOverlayPresenter! {
+        return try! _ICompactOverlayPresenterStatics.CreateImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.windowing.compactoverlaypresenter.initialsize)
+    public var initialSize : CompactOverlaySize {
+        get { try! _default.get_InitialSizeImpl() }
+        set { try! _default.put_InitialSizeImpl(newValue) }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.windowing.displayarea)
 public final class DisplayArea : WinRTClass {
     private typealias SwiftABI = __ABI_Microsoft_UI_Windowing.IDisplayArea
@@ -952,6 +995,19 @@ extension WinAppSDK.AppWindowPresenterKind {
     }
 }
 extension WinAppSDK.AppWindowPresenterKind: @retroactive Hashable, @retroactive Codable {}
+
+extension WinAppSDK.CompactOverlaySize {
+    public static var small : WinAppSDK.CompactOverlaySize {
+        __x_ABI_CMicrosoft_CUI_CWindowing_CCompactOverlaySize_Small
+    }
+    public static var medium : WinAppSDK.CompactOverlaySize {
+        __x_ABI_CMicrosoft_CUI_CWindowing_CCompactOverlaySize_Medium
+    }
+    public static var large : WinAppSDK.CompactOverlaySize {
+        __x_ABI_CMicrosoft_CUI_CWindowing_CCompactOverlaySize_Large
+    }
+}
+extension WinAppSDK.CompactOverlaySize: @retroactive Hashable, @retroactive Codable {}
 
 extension WinAppSDK.DisplayAreaFallback {
     public static var none : WinAppSDK.DisplayAreaFallback {

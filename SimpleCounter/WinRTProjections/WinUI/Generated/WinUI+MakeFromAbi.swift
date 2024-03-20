@@ -14,6 +14,46 @@ fileprivate func makeIElementFactoryFrom(abi: WindowsFoundation.IInspectable) ->
     return __IMPL_Microsoft_UI_Xaml.IElementFactoryBridge.from(abi: RawPointer(swiftAbi))!
 }
 
+fileprivate func makeIXamlServiceProviderFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Microsoft_UI_Xaml.IXamlServiceProvider = try! abi.QueryInterface()
+    return __IMPL_Microsoft_UI_Xaml.IXamlServiceProviderBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIAnimatedVisualFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Microsoft_UI_Xaml_Controls.IAnimatedVisual = try! abi.QueryInterface()
+    return __IMPL_Microsoft_UI_Xaml_Controls.IAnimatedVisualBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIAnimatedVisual2From(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Microsoft_UI_Xaml_Controls.IAnimatedVisual2 = try! abi.QueryInterface()
+    return __IMPL_Microsoft_UI_Xaml_Controls.IAnimatedVisual2Bridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIAnimatedVisualSourceFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Microsoft_UI_Xaml_Controls.IAnimatedVisualSource = try! abi.QueryInterface()
+    return __IMPL_Microsoft_UI_Xaml_Controls.IAnimatedVisualSourceBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIAnimatedVisualSource2From(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Microsoft_UI_Xaml_Controls.IAnimatedVisualSource2 = try! abi.QueryInterface()
+    return __IMPL_Microsoft_UI_Xaml_Controls.IAnimatedVisualSource2Bridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIAnimatedVisualSource3From(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Microsoft_UI_Xaml_Controls.IAnimatedVisualSource3 = try! abi.QueryInterface()
+    return __IMPL_Microsoft_UI_Xaml_Controls.IAnimatedVisualSource3Bridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeICommandBarElementFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Microsoft_UI_Xaml_Controls.ICommandBarElement = try! abi.QueryInterface()
+    return __IMPL_Microsoft_UI_Xaml_Controls.ICommandBarElementBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIDynamicAnimatedVisualSourceFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Microsoft_UI_Xaml_Controls.IDynamicAnimatedVisualSource = try! abi.QueryInterface()
+    return __IMPL_Microsoft_UI_Xaml_Controls.IDynamicAnimatedVisualSourceBridge.from(abi: RawPointer(swiftAbi))!
+}
+
 fileprivate func makeIInsertionPanelFrom(abi: WindowsFoundation.IInspectable) -> Any {
     let swiftAbi: __ABI_Microsoft_UI_Xaml_Controls.IInsertionPanel = try! abi.QueryInterface()
     return __IMPL_Microsoft_UI_Xaml_Controls.IInsertionPanelBridge.from(abi: RawPointer(swiftAbi))!
@@ -59,9 +99,54 @@ fileprivate func makeIScrollSnapPointsInfoFrom(abi: WindowsFoundation.IInspectab
     return __IMPL_Microsoft_UI_Xaml_Controls_Primitives.IScrollSnapPointsInfoBridge.from(abi: RawPointer(swiftAbi))!
 }
 
+fileprivate func makeICollectionViewFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Microsoft_UI_Xaml_Data.ICollectionView = try! abi.QueryInterface()
+    return __IMPL_Microsoft_UI_Xaml_Data.ICollectionViewBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeICollectionViewFactoryFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Microsoft_UI_Xaml_Data.ICollectionViewFactory = try! abi.QueryInterface()
+    return __IMPL_Microsoft_UI_Xaml_Data.ICollectionViewFactoryBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeICollectionViewGroupFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Microsoft_UI_Xaml_Data.ICollectionViewGroup = try! abi.QueryInterface()
+    return __IMPL_Microsoft_UI_Xaml_Data.ICollectionViewGroupBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeICustomPropertyFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Microsoft_UI_Xaml_Data.ICustomProperty = try! abi.QueryInterface()
+    return __IMPL_Microsoft_UI_Xaml_Data.ICustomPropertyBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeICustomPropertyProviderFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Microsoft_UI_Xaml_Data.ICustomPropertyProvider = try! abi.QueryInterface()
+    return __IMPL_Microsoft_UI_Xaml_Data.ICustomPropertyProviderBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIItemsRangeInfoFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Microsoft_UI_Xaml_Data.IItemsRangeInfo = try! abi.QueryInterface()
+    return __IMPL_Microsoft_UI_Xaml_Data.IItemsRangeInfoBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeINotifyDataErrorInfoFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Microsoft_UI_Xaml_Data.INotifyDataErrorInfo = try! abi.QueryInterface()
+    return __IMPL_Microsoft_UI_Xaml_Data.INotifyDataErrorInfoBridge.from(abi: RawPointer(swiftAbi))!
+}
+
 fileprivate func makeINotifyPropertyChangedFrom(abi: WindowsFoundation.IInspectable) -> Any {
     let swiftAbi: __ABI_Microsoft_UI_Xaml_Data.INotifyPropertyChanged = try! abi.QueryInterface()
     return __IMPL_Microsoft_UI_Xaml_Data.INotifyPropertyChangedBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeISelectionInfoFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Microsoft_UI_Xaml_Data.ISelectionInfo = try! abi.QueryInterface()
+    return __IMPL_Microsoft_UI_Xaml_Data.ISelectionInfoBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeISupportIncrementalLoadingFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Microsoft_UI_Xaml_Data.ISupportIncrementalLoading = try! abi.QueryInterface()
+    return __IMPL_Microsoft_UI_Xaml_Data.ISupportIncrementalLoadingBridge.from(abi: RawPointer(swiftAbi))!
 }
 
 fileprivate func makeIValueConverterFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -124,6 +209,10 @@ fileprivate func makeIXamlTypeFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return __IMPL_Microsoft_UI_Xaml_Markup.IXamlTypeBridge.from(abi: RawPointer(swiftAbi))!
 }
 
+fileprivate func makeAdaptiveTriggerFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AdaptiveTrigger(fromAbi: abi)
+}
+
 fileprivate func makeApplicationFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return Application(fromAbi: abi)
 }
@@ -148,12 +237,24 @@ fileprivate func makeBrushTransitionFrom(abi: WindowsFoundation.IInspectable) ->
     return BrushTransition(fromAbi: abi)
 }
 
+fileprivate func makeColorPaletteResourcesFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ColorPaletteResources(fromAbi: abi)
+}
+
+fileprivate func makeCornerRadiusHelperFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CornerRadiusHelper(fromAbi: abi)
+}
+
 fileprivate func makeDataContextChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return DataContextChangedEventArgs(fromAbi: abi)
 }
 
 fileprivate func makeDataTemplateFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return DataTemplate(fromAbi: abi)
+}
+
+fileprivate func makeDataTemplateKeyFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return DataTemplateKey(fromAbi: abi)
 }
 
 fileprivate func makeDebugSettingsFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -164,12 +265,20 @@ fileprivate func makeDependencyObjectFrom(abi: WindowsFoundation.IInspectable) -
     return DependencyObject(fromAbi: abi)
 }
 
+fileprivate func makeDependencyObjectCollectionFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return DependencyObjectCollection(fromAbi: abi)
+}
+
 fileprivate func makeDependencyPropertyFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return DependencyProperty(fromAbi: abi)
 }
 
 fileprivate func makeDependencyPropertyChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return DependencyPropertyChangedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeDispatcherTimerFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return DispatcherTimer(fromAbi: abi)
 }
 
 fileprivate func makeDragEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -196,6 +305,10 @@ fileprivate func makeDropCompletedEventArgsFrom(abi: WindowsFoundation.IInspecta
     return DropCompletedEventArgs(fromAbi: abi)
 }
 
+fileprivate func makeDurationHelperFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return DurationHelper(fromAbi: abi)
+}
+
 fileprivate func makeEffectiveViewportChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return EffectiveViewportChangedEventArgs(fromAbi: abi)
 }
@@ -206,6 +319,14 @@ fileprivate func makeElementFactoryGetArgsFrom(abi: WindowsFoundation.IInspectab
 
 fileprivate func makeElementFactoryRecycleArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return ElementFactoryRecycleArgs(fromAbi: abi)
+}
+
+fileprivate func makeElementSoundPlayerFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ElementSoundPlayer(fromAbi: abi)
+}
+
+fileprivate func makeEventTriggerFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return EventTrigger(fromAbi: abi)
 }
 
 fileprivate func makeExceptionRoutedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -220,8 +341,28 @@ fileprivate func makeFrameworkTemplateFrom(abi: WindowsFoundation.IInspectable) 
     return FrameworkTemplate(fromAbi: abi)
 }
 
+fileprivate func makeFrameworkViewFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return FrameworkView(fromAbi: abi)
+}
+
+fileprivate func makeFrameworkViewSourceFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return FrameworkViewSource(fromAbi: abi)
+}
+
+fileprivate func makeGridLengthHelperFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return GridLengthHelper(fromAbi: abi)
+}
+
 fileprivate func makeLaunchActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return LaunchActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeMediaFailedRoutedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return MediaFailedRoutedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makePointHelperFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PointHelper(fromAbi: abi)
 }
 
 fileprivate func makePropertyMetadataFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -230,6 +371,10 @@ fileprivate func makePropertyMetadataFrom(abi: WindowsFoundation.IInspectable) -
 
 fileprivate func makePropertyPathFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return PropertyPath(fromAbi: abi)
+}
+
+fileprivate func makeRectHelperFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RectHelper(fromAbi: abi)
 }
 
 fileprivate func makeResourceDictionaryFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -268,6 +413,18 @@ fileprivate func makeSizeChangedEventArgsFrom(abi: WindowsFoundation.IInspectabl
     return SizeChangedEventArgs(fromAbi: abi)
 }
 
+fileprivate func makeSizeHelperFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return SizeHelper(fromAbi: abi)
+}
+
+fileprivate func makeStateTriggerFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return StateTrigger(fromAbi: abi)
+}
+
+fileprivate func makeStateTriggerBaseFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return StateTriggerBase(fromAbi: abi)
+}
+
 fileprivate func makeStyleFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return Style(fromAbi: abi)
 }
@@ -276,8 +433,16 @@ fileprivate func makeTargetPropertyPathFrom(abi: WindowsFoundation.IInspectable)
     return TargetPropertyPath(fromAbi: abi)
 }
 
+fileprivate func makeThicknessHelperFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ThicknessHelper(fromAbi: abi)
+}
+
 fileprivate func makeTriggerActionFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return TriggerAction(fromAbi: abi)
+}
+
+fileprivate func makeTriggerActionCollectionFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TriggerActionCollection(fromAbi: abi)
 }
 
 fileprivate func makeTriggerBaseFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -302,6 +467,26 @@ fileprivate func makeUnhandledExceptionEventArgsFrom(abi: WindowsFoundation.IIns
 
 fileprivate func makeVector3TransitionFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return Vector3Transition(fromAbi: abi)
+}
+
+fileprivate func makeVisualStateFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return VisualState(fromAbi: abi)
+}
+
+fileprivate func makeVisualStateChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return VisualStateChangedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeVisualStateGroupFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return VisualStateGroup(fromAbi: abi)
+}
+
+fileprivate func makeVisualStateManagerFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return VisualStateManager(fromAbi: abi)
+}
+
+fileprivate func makeVisualTransitionFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return VisualTransition(fromAbi: abi)
 }
 
 fileprivate func makeWindowFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -336,8 +521,16 @@ fileprivate func makeXamlRootChangedEventArgsFrom(abi: WindowsFoundation.IInspec
     return XamlRootChangedEventArgs(fromAbi: abi)
 }
 
+fileprivate func makeAnnotationPatternIdentifiersFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AnnotationPatternIdentifiers(fromAbi: abi)
+}
+
 fileprivate func makeAutomationAnnotationFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return AutomationAnnotation(fromAbi: abi)
+}
+
+fileprivate func makeAutomationElementIdentifiersFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AutomationElementIdentifiers(fromAbi: abi)
 }
 
 fileprivate func makeAutomationPropertiesFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -346,6 +539,86 @@ fileprivate func makeAutomationPropertiesFrom(abi: WindowsFoundation.IInspectabl
 
 fileprivate func makeAutomationPropertyFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return AutomationProperty(fromAbi: abi)
+}
+
+fileprivate func makeDockPatternIdentifiersFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return DockPatternIdentifiers(fromAbi: abi)
+}
+
+fileprivate func makeDragPatternIdentifiersFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return DragPatternIdentifiers(fromAbi: abi)
+}
+
+fileprivate func makeDropTargetPatternIdentifiersFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return DropTargetPatternIdentifiers(fromAbi: abi)
+}
+
+fileprivate func makeExpandCollapsePatternIdentifiersFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ExpandCollapsePatternIdentifiers(fromAbi: abi)
+}
+
+fileprivate func makeGridItemPatternIdentifiersFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return GridItemPatternIdentifiers(fromAbi: abi)
+}
+
+fileprivate func makeGridPatternIdentifiersFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return GridPatternIdentifiers(fromAbi: abi)
+}
+
+fileprivate func makeMultipleViewPatternIdentifiersFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return MultipleViewPatternIdentifiers(fromAbi: abi)
+}
+
+fileprivate func makeRangeValuePatternIdentifiersFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RangeValuePatternIdentifiers(fromAbi: abi)
+}
+
+fileprivate func makeScrollPatternIdentifiersFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ScrollPatternIdentifiers(fromAbi: abi)
+}
+
+fileprivate func makeSelectionItemPatternIdentifiersFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return SelectionItemPatternIdentifiers(fromAbi: abi)
+}
+
+fileprivate func makeSelectionPatternIdentifiersFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return SelectionPatternIdentifiers(fromAbi: abi)
+}
+
+fileprivate func makeSpreadsheetItemPatternIdentifiersFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return SpreadsheetItemPatternIdentifiers(fromAbi: abi)
+}
+
+fileprivate func makeStylesPatternIdentifiersFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return StylesPatternIdentifiers(fromAbi: abi)
+}
+
+fileprivate func makeTableItemPatternIdentifiersFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TableItemPatternIdentifiers(fromAbi: abi)
+}
+
+fileprivate func makeTablePatternIdentifiersFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TablePatternIdentifiers(fromAbi: abi)
+}
+
+fileprivate func makeTogglePatternIdentifiersFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TogglePatternIdentifiers(fromAbi: abi)
+}
+
+fileprivate func makeTransformPattern2IdentifiersFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TransformPattern2Identifiers(fromAbi: abi)
+}
+
+fileprivate func makeTransformPatternIdentifiersFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TransformPatternIdentifiers(fromAbi: abi)
+}
+
+fileprivate func makeValuePatternIdentifiersFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ValuePatternIdentifiers(fromAbi: abi)
+}
+
+fileprivate func makeWindowPatternIdentifiersFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return WindowPatternIdentifiers(fromAbi: abi)
 }
 
 fileprivate func makeAutomationPeerFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -364,20 +637,120 @@ fileprivate func makeAnchorRequestedEventArgsFrom(abi: WindowsFoundation.IInspec
     return AnchorRequestedEventArgs(fromAbi: abi)
 }
 
+fileprivate func makeAnimatedIconFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AnimatedIcon(fromAbi: abi)
+}
+
+fileprivate func makeAnimatedIconSourceFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AnimatedIconSource(fromAbi: abi)
+}
+
+fileprivate func makeAnimatedVisualPlayerFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AnimatedVisualPlayer(fromAbi: abi)
+}
+
+fileprivate func makeAnnotatedScrollBarFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AnnotatedScrollBar(fromAbi: abi)
+}
+
+fileprivate func makeAnnotatedScrollBarDetailLabelRequestedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AnnotatedScrollBarDetailLabelRequestedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeAnnotatedScrollBarLabelFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AnnotatedScrollBarLabel(fromAbi: abi)
+}
+
+fileprivate func makeAnnotatedScrollBarScrollingEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AnnotatedScrollBarScrollingEventArgs(fromAbi: abi)
+}
+
 fileprivate func makeAppBarFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return AppBar(fromAbi: abi)
+}
+
+fileprivate func makeAppBarButtonFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppBarButton(fromAbi: abi)
+}
+
+fileprivate func makeAppBarElementContainerFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppBarElementContainer(fromAbi: abi)
+}
+
+fileprivate func makeAppBarSeparatorFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppBarSeparator(fromAbi: abi)
+}
+
+fileprivate func makeAppBarToggleButtonFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppBarToggleButton(fromAbi: abi)
+}
+
+fileprivate func makeAutoSuggestBoxFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AutoSuggestBox(fromAbi: abi)
+}
+
+fileprivate func makeAutoSuggestBoxQuerySubmittedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AutoSuggestBoxQuerySubmittedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeAutoSuggestBoxSuggestionChosenEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AutoSuggestBoxSuggestionChosenEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeAutoSuggestBoxTextChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AutoSuggestBoxTextChangedEventArgs(fromAbi: abi)
 }
 
 fileprivate func makeBitmapIconFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return BitmapIcon(fromAbi: abi)
 }
 
+fileprivate func makeBitmapIconSourceFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return BitmapIconSource(fromAbi: abi)
+}
+
 fileprivate func makeBorderFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return Border(fromAbi: abi)
 }
 
+fileprivate func makeBreadcrumbBarFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return BreadcrumbBar(fromAbi: abi)
+}
+
+fileprivate func makeBreadcrumbBarItemFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return BreadcrumbBarItem(fromAbi: abi)
+}
+
+fileprivate func makeBreadcrumbBarItemClickedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return BreadcrumbBarItemClickedEventArgs(fromAbi: abi)
+}
+
 fileprivate func makeButtonFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return Button(fromAbi: abi)
+}
+
+fileprivate func makeCalendarDatePickerFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CalendarDatePicker(fromAbi: abi)
+}
+
+fileprivate func makeCalendarDatePickerDateChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CalendarDatePickerDateChangedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeCalendarViewFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CalendarView(fromAbi: abi)
+}
+
+fileprivate func makeCalendarViewDayItemFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CalendarViewDayItem(fromAbi: abi)
+}
+
+fileprivate func makeCalendarViewDayItemChangingEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CalendarViewDayItemChangingEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeCalendarViewSelectedDatesChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CalendarViewSelectedDatesChangedEventArgs(fromAbi: abi)
 }
 
 fileprivate func makeCandidateWindowBoundsChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -400,6 +773,18 @@ fileprivate func makeChoosingItemContainerEventArgsFrom(abi: WindowsFoundation.I
     return ChoosingItemContainerEventArgs(fromAbi: abi)
 }
 
+fileprivate func makeCleanUpVirtualizedItemEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CleanUpVirtualizedItemEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeColorChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ColorChangedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeColorPickerFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ColorPicker(fromAbi: abi)
+}
+
 fileprivate func makeColumnDefinitionFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return ColumnDefinition(fromAbi: abi)
 }
@@ -412,8 +797,24 @@ fileprivate func makeComboBoxFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return ComboBox(fromAbi: abi)
 }
 
+fileprivate func makeComboBoxItemFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ComboBoxItem(fromAbi: abi)
+}
+
 fileprivate func makeComboBoxTextSubmittedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return ComboBoxTextSubmittedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeCommandBarFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CommandBar(fromAbi: abi)
+}
+
+fileprivate func makeCommandBarFlyoutFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CommandBarFlyout(fromAbi: abi)
+}
+
+fileprivate func makeCommandBarOverflowPresenterFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CommandBarOverflowPresenter(fromAbi: abi)
 }
 
 fileprivate func makeContainerContentChangingEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -468,8 +869,40 @@ fileprivate func makeControlTemplateFrom(abi: WindowsFoundation.IInspectable) ->
     return ControlTemplate(fromAbi: abi)
 }
 
+fileprivate func makeCoreWebView2InitializedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CoreWebView2InitializedEventArgs(fromAbi: abi)
+}
+
 fileprivate func makeDataTemplateSelectorFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return DataTemplateSelector(fromAbi: abi)
+}
+
+fileprivate func makeDatePickedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return DatePickedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeDatePickerFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return DatePicker(fromAbi: abi)
+}
+
+fileprivate func makeDatePickerFlyoutFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return DatePickerFlyout(fromAbi: abi)
+}
+
+fileprivate func makeDatePickerFlyoutItemFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return DatePickerFlyoutItem(fromAbi: abi)
+}
+
+fileprivate func makeDatePickerFlyoutPresenterFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return DatePickerFlyoutPresenter(fromAbi: abi)
+}
+
+fileprivate func makeDatePickerSelectedValueChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return DatePickerSelectedValueChangedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeDatePickerValueChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return DatePickerValueChangedEventArgs(fromAbi: abi)
 }
 
 fileprivate func makeDragItemsCompletedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -478,6 +911,30 @@ fileprivate func makeDragItemsCompletedEventArgsFrom(abi: WindowsFoundation.IIns
 
 fileprivate func makeDragItemsStartingEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return DragItemsStartingEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeDropDownButtonFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return DropDownButton(fromAbi: abi)
+}
+
+fileprivate func makeDynamicOverflowItemsChangingEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return DynamicOverflowItemsChangingEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeExpanderFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return Expander(fromAbi: abi)
+}
+
+fileprivate func makeExpanderCollapsedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ExpanderCollapsedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeExpanderExpandingEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ExpanderExpandingEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeExpanderTemplateSettingsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ExpanderTemplateSettings(fromAbi: abi)
 }
 
 fileprivate func makeFlipViewFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -524,12 +981,44 @@ fileprivate func makeGridViewFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return GridView(fromAbi: abi)
 }
 
+fileprivate func makeGridViewHeaderItemFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return GridViewHeaderItem(fromAbi: abi)
+}
+
+fileprivate func makeGridViewItemFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return GridViewItem(fromAbi: abi)
+}
+
+fileprivate func makeGroupItemFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return GroupItem(fromAbi: abi)
+}
+
 fileprivate func makeGroupStyleFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return GroupStyle(fromAbi: abi)
 }
 
 fileprivate func makeGroupStyleSelectorFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return GroupStyleSelector(fromAbi: abi)
+}
+
+fileprivate func makeHasValidationErrorsChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return HasValidationErrorsChangedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeHubFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return Hub(fromAbi: abi)
+}
+
+fileprivate func makeHubSectionFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return HubSection(fromAbi: abi)
+}
+
+fileprivate func makeHubSectionCollectionFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return HubSectionCollection(fromAbi: abi)
+}
+
+fileprivate func makeHubSectionHeaderClickEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return HubSectionHeaderClickEventArgs(fromAbi: abi)
 }
 
 fileprivate func makeHyperlinkButtonFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -554,6 +1043,18 @@ fileprivate func makeImageFrom(abi: WindowsFoundation.IInspectable) -> Any {
 
 fileprivate func makeImageIconFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return ImageIcon(fromAbi: abi)
+}
+
+fileprivate func makeImageIconSourceFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ImageIconSource(fromAbi: abi)
+}
+
+fileprivate func makeInfoBadgeFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return InfoBadge(fromAbi: abi)
+}
+
+fileprivate func makeInfoBadgeTemplateSettingsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return InfoBadgeTemplateSettings(fromAbi: abi)
 }
 
 fileprivate func makeInfoBarFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -600,6 +1101,10 @@ fileprivate func makeItemCollectionTransitionProviderFrom(abi: WindowsFoundation
     return ItemCollectionTransitionProvider(fromAbi: abi)
 }
 
+fileprivate func makeItemContainerFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ItemContainer(fromAbi: abi)
+}
+
 fileprivate func makeItemContainerGeneratorFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return ItemContainerGenerator(fromAbi: abi)
 }
@@ -610,6 +1115,14 @@ fileprivate func makeItemsControlFrom(abi: WindowsFoundation.IInspectable) -> An
 
 fileprivate func makeItemsPanelTemplateFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return ItemsPanelTemplate(fromAbi: abi)
+}
+
+fileprivate func makeItemsPickedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ItemsPickedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeItemsPresenterFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ItemsPresenter(fromAbi: abi)
 }
 
 fileprivate func makeItemsRepeaterFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -628,8 +1141,32 @@ fileprivate func makeItemsRepeaterElementPreparedEventArgsFrom(abi: WindowsFound
     return ItemsRepeaterElementPreparedEventArgs(fromAbi: abi)
 }
 
+fileprivate func makeItemsRepeaterScrollHostFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ItemsRepeaterScrollHost(fromAbi: abi)
+}
+
 fileprivate func makeItemsSourceViewFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return ItemsSourceView(fromAbi: abi)
+}
+
+fileprivate func makeItemsStackPanelFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ItemsStackPanel(fromAbi: abi)
+}
+
+fileprivate func makeItemsViewFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ItemsView(fromAbi: abi)
+}
+
+fileprivate func makeItemsViewItemInvokedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ItemsViewItemInvokedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeItemsViewSelectionChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ItemsViewSelectionChangedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeItemsWrapGridFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ItemsWrapGrid(fromAbi: abi)
 }
 
 fileprivate func makeLayoutFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -640,12 +1177,32 @@ fileprivate func makeLayoutContextFrom(abi: WindowsFoundation.IInspectable) -> A
     return LayoutContext(fromAbi: abi)
 }
 
+fileprivate func makeLinedFlowLayoutFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return LinedFlowLayout(fromAbi: abi)
+}
+
+fileprivate func makeLinedFlowLayoutItemCollectionTransitionProviderFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return LinedFlowLayoutItemCollectionTransitionProvider(fromAbi: abi)
+}
+
+fileprivate func makeLinedFlowLayoutItemsInfoRequestedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return LinedFlowLayoutItemsInfoRequestedEventArgs(fromAbi: abi)
+}
+
 fileprivate func makeListBoxFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return ListBox(fromAbi: abi)
 }
 
 fileprivate func makeListBoxItemFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return ListBoxItem(fromAbi: abi)
+}
+
+fileprivate func makeListPickerFlyoutFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ListPickerFlyout(fromAbi: abi)
+}
+
+fileprivate func makeListPickerFlyoutPresenterFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ListPickerFlyoutPresenter(fromAbi: abi)
 }
 
 fileprivate func makeListViewFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -660,16 +1217,60 @@ fileprivate func makeListViewBaseHeaderItemFrom(abi: WindowsFoundation.IInspecta
     return ListViewBaseHeaderItem(fromAbi: abi)
 }
 
+fileprivate func makeListViewHeaderItemFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ListViewHeaderItem(fromAbi: abi)
+}
+
 fileprivate func makeListViewItemFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return ListViewItem(fromAbi: abi)
+}
+
+fileprivate func makeListViewPersistenceHelperFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ListViewPersistenceHelper(fromAbi: abi)
+}
+
+fileprivate func makeMapControlFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return MapControl(fromAbi: abi)
+}
+
+fileprivate func makeMapControlMapServiceErrorOccurredEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return MapControlMapServiceErrorOccurredEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeMapElementFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return MapElement(fromAbi: abi)
+}
+
+fileprivate func makeMapElementClickEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return MapElementClickEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeMapElementsLayerFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return MapElementsLayer(fromAbi: abi)
+}
+
+fileprivate func makeMapIconFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return MapIcon(fromAbi: abi)
+}
+
+fileprivate func makeMapLayerFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return MapLayer(fromAbi: abi)
 }
 
 fileprivate func makeMediaPlayerElementFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return MediaPlayerElement(fromAbi: abi)
 }
 
+fileprivate func makeMediaPlayerPresenterFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return MediaPlayerPresenter(fromAbi: abi)
+}
+
 fileprivate func makeMediaTransportControlsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return MediaTransportControls(fromAbi: abi)
+}
+
+fileprivate func makeMediaTransportControlsHelperFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return MediaTransportControlsHelper(fromAbi: abi)
 }
 
 fileprivate func makeMenuBarFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -678,6 +1279,10 @@ fileprivate func makeMenuBarFrom(abi: WindowsFoundation.IInspectable) -> Any {
 
 fileprivate func makeMenuBarItemFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return MenuBarItem(fromAbi: abi)
+}
+
+fileprivate func makeMenuBarItemFlyoutFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return MenuBarItemFlyout(fromAbi: abi)
 }
 
 fileprivate func makeMenuFlyoutFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -692,12 +1297,84 @@ fileprivate func makeMenuFlyoutItemBaseFrom(abi: WindowsFoundation.IInspectable)
     return MenuFlyoutItemBase(fromAbi: abi)
 }
 
+fileprivate func makeMenuFlyoutPresenterFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return MenuFlyoutPresenter(fromAbi: abi)
+}
+
 fileprivate func makeMenuFlyoutSeparatorFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return MenuFlyoutSeparator(fromAbi: abi)
 }
 
 fileprivate func makeMenuFlyoutSubItemFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return MenuFlyoutSubItem(fromAbi: abi)
+}
+
+fileprivate func makeNavigationViewFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return NavigationView(fromAbi: abi)
+}
+
+fileprivate func makeNavigationViewBackRequestedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return NavigationViewBackRequestedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeNavigationViewDisplayModeChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return NavigationViewDisplayModeChangedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeNavigationViewItemFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return NavigationViewItem(fromAbi: abi)
+}
+
+fileprivate func makeNavigationViewItemBaseFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return NavigationViewItemBase(fromAbi: abi)
+}
+
+fileprivate func makeNavigationViewItemCollapsedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return NavigationViewItemCollapsedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeNavigationViewItemExpandingEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return NavigationViewItemExpandingEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeNavigationViewItemHeaderFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return NavigationViewItemHeader(fromAbi: abi)
+}
+
+fileprivate func makeNavigationViewItemInvokedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return NavigationViewItemInvokedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeNavigationViewItemSeparatorFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return NavigationViewItemSeparator(fromAbi: abi)
+}
+
+fileprivate func makeNavigationViewPaneClosingEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return NavigationViewPaneClosingEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeNavigationViewSelectionChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return NavigationViewSelectionChangedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeNavigationViewTemplateSettingsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return NavigationViewTemplateSettings(fromAbi: abi)
+}
+
+fileprivate func makeNonVirtualizingLayoutFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return NonVirtualizingLayout(fromAbi: abi)
+}
+
+fileprivate func makeNonVirtualizingLayoutContextFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return NonVirtualizingLayoutContext(fromAbi: abi)
+}
+
+fileprivate func makeNumberBoxFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return NumberBox(fromAbi: abi)
+}
+
+fileprivate func makeNumberBoxValueChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return NumberBoxValueChangedEventArgs(fromAbi: abi)
 }
 
 fileprivate func makePageFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -708,12 +1385,44 @@ fileprivate func makePanelFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return Panel(fromAbi: abi)
 }
 
+fileprivate func makeParallaxViewFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ParallaxView(fromAbi: abi)
+}
+
 fileprivate func makePasswordBoxFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return PasswordBox(fromAbi: abi)
 }
 
 fileprivate func makePasswordBoxPasswordChangingEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return PasswordBoxPasswordChangingEventArgs(fromAbi: abi)
+}
+
+fileprivate func makePathIconFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PathIcon(fromAbi: abi)
+}
+
+fileprivate func makePathIconSourceFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PathIconSource(fromAbi: abi)
+}
+
+fileprivate func makePersonPictureFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PersonPicture(fromAbi: abi)
+}
+
+fileprivate func makePersonPictureTemplateSettingsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PersonPictureTemplateSettings(fromAbi: abi)
+}
+
+fileprivate func makePickerConfirmedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PickerConfirmedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makePickerFlyoutFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PickerFlyout(fromAbi: abi)
+}
+
+fileprivate func makePickerFlyoutPresenterFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PickerFlyoutPresenter(fromAbi: abi)
 }
 
 fileprivate func makePipsPagerFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -726,6 +1435,18 @@ fileprivate func makePipsPagerSelectedIndexChangedEventArgsFrom(abi: WindowsFoun
 
 fileprivate func makePipsPagerTemplateSettingsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return PipsPagerTemplateSettings(fromAbi: abi)
+}
+
+fileprivate func makePivotFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return Pivot(fromAbi: abi)
+}
+
+fileprivate func makePivotItemFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PivotItem(fromAbi: abi)
+}
+
+fileprivate func makePivotItemEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PivotItemEventArgs(fromAbi: abi)
 }
 
 fileprivate func makeProgressBarFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -752,8 +1473,72 @@ fileprivate func makeRadioButtonsFrom(abi: WindowsFoundation.IInspectable) -> An
     return RadioButtons(fromAbi: abi)
 }
 
+fileprivate func makeRadioMenuFlyoutItemFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RadioMenuFlyoutItem(fromAbi: abi)
+}
+
+fileprivate func makeRatingControlFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RatingControl(fromAbi: abi)
+}
+
+fileprivate func makeRatingItemFontInfoFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RatingItemFontInfo(fromAbi: abi)
+}
+
+fileprivate func makeRatingItemImageInfoFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RatingItemImageInfo(fromAbi: abi)
+}
+
+fileprivate func makeRatingItemInfoFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RatingItemInfo(fromAbi: abi)
+}
+
+fileprivate func makeRefreshContainerFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RefreshContainer(fromAbi: abi)
+}
+
+fileprivate func makeRefreshInteractionRatioChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RefreshInteractionRatioChangedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeRefreshRequestedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RefreshRequestedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeRefreshStateChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RefreshStateChangedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeRefreshVisualizerFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RefreshVisualizer(fromAbi: abi)
+}
+
 fileprivate func makeRelativePanelFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return RelativePanel(fromAbi: abi)
+}
+
+fileprivate func makeRevealListViewItemPresenterFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RevealListViewItemPresenter(fromAbi: abi)
+}
+
+fileprivate func makeRichEditBoxFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RichEditBox(fromAbi: abi)
+}
+
+fileprivate func makeRichEditBoxSelectionChangingEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RichEditBoxSelectionChangingEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeRichEditBoxTextChangingEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RichEditBoxTextChangingEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeRichTextBlockFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RichTextBlock(fromAbi: abi)
+}
+
+fileprivate func makeRichTextBlockOverflowFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RichTextBlockOverflow(fromAbi: abi)
 }
 
 fileprivate func makeRowDefinitionFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -762,6 +1547,10 @@ fileprivate func makeRowDefinitionFrom(abi: WindowsFoundation.IInspectable) -> A
 
 fileprivate func makeRowDefinitionCollectionFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return RowDefinitionCollection(fromAbi: abi)
+}
+
+fileprivate func makeScrollContentPresenterFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ScrollContentPresenter(fromAbi: abi)
 }
 
 fileprivate func makeScrollViewFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -816,8 +1605,24 @@ fileprivate func makeScrollingZoomOptionsFrom(abi: WindowsFoundation.IInspectabl
     return ScrollingZoomOptions(fromAbi: abi)
 }
 
+fileprivate func makeSectionsInViewChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return SectionsInViewChangedEventArgs(fromAbi: abi)
+}
+
 fileprivate func makeSelectionChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return SelectionChangedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeSelectorBarFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return SelectorBar(fromAbi: abi)
+}
+
+fileprivate func makeSelectorBarItemFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return SelectorBarItem(fromAbi: abi)
+}
+
+fileprivate func makeSelectorBarSelectionChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return SelectorBarSelectionChangedEventArgs(fromAbi: abi)
 }
 
 fileprivate func makeSemanticZoomFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -834,6 +1639,14 @@ fileprivate func makeSemanticZoomViewChangedEventArgsFrom(abi: WindowsFoundation
 
 fileprivate func makeSliderFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return Slider(fromAbi: abi)
+}
+
+fileprivate func makeSplitButtonFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return SplitButton(fromAbi: abi)
+}
+
+fileprivate func makeSplitButtonClickEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return SplitButtonClickEventArgs(fromAbi: abi)
 }
 
 fileprivate func makeSplitViewFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -856,8 +1669,64 @@ fileprivate func makeStyleSelectorFrom(abi: WindowsFoundation.IInspectable) -> A
     return StyleSelector(fromAbi: abi)
 }
 
+fileprivate func makeSwapChainBackgroundPanelFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return SwapChainBackgroundPanel(fromAbi: abi)
+}
+
 fileprivate func makeSwapChainPanelFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return SwapChainPanel(fromAbi: abi)
+}
+
+fileprivate func makeSwipeControlFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return SwipeControl(fromAbi: abi)
+}
+
+fileprivate func makeSwipeItemFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return SwipeItem(fromAbi: abi)
+}
+
+fileprivate func makeSwipeItemInvokedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return SwipeItemInvokedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeSwipeItemsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return SwipeItems(fromAbi: abi)
+}
+
+fileprivate func makeSymbolIconFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return SymbolIcon(fromAbi: abi)
+}
+
+fileprivate func makeSymbolIconSourceFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return SymbolIconSource(fromAbi: abi)
+}
+
+fileprivate func makeTabViewFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TabView(fromAbi: abi)
+}
+
+fileprivate func makeTabViewItemFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TabViewItem(fromAbi: abi)
+}
+
+fileprivate func makeTabViewItemTemplateSettingsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TabViewItemTemplateSettings(fromAbi: abi)
+}
+
+fileprivate func makeTabViewTabCloseRequestedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TabViewTabCloseRequestedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeTabViewTabDragCompletedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TabViewTabDragCompletedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeTabViewTabDragStartingEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TabViewTabDragStartingEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeTabViewTabDroppedOutsideEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TabViewTabDroppedOutsideEventArgs(fromAbi: abi)
 }
 
 fileprivate func makeTeachingTipFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -900,6 +1769,10 @@ fileprivate func makeTextChangedEventArgsFrom(abi: WindowsFoundation.IInspectabl
     return TextChangedEventArgs(fromAbi: abi)
 }
 
+fileprivate func makeTextCommandBarFlyoutFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TextCommandBarFlyout(fromAbi: abi)
+}
+
 fileprivate func makeTextCompositionChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return TextCompositionChangedEventArgs(fromAbi: abi)
 }
@@ -924,8 +1797,40 @@ fileprivate func makeTextControlPasteEventArgsFrom(abi: WindowsFoundation.IInspe
     return TextControlPasteEventArgs(fromAbi: abi)
 }
 
+fileprivate func makeTimePickedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TimePickedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeTimePickerFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TimePicker(fromAbi: abi)
+}
+
+fileprivate func makeTimePickerFlyoutFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TimePickerFlyout(fromAbi: abi)
+}
+
+fileprivate func makeTimePickerFlyoutPresenterFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TimePickerFlyoutPresenter(fromAbi: abi)
+}
+
+fileprivate func makeTimePickerSelectedValueChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TimePickerSelectedValueChangedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeTimePickerValueChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TimePickerValueChangedEventArgs(fromAbi: abi)
+}
+
 fileprivate func makeToggleMenuFlyoutItemFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return ToggleMenuFlyoutItem(fromAbi: abi)
+}
+
+fileprivate func makeToggleSplitButtonFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ToggleSplitButton(fromAbi: abi)
+}
+
+fileprivate func makeToggleSplitButtonIsCheckedChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ToggleSplitButtonIsCheckedChangedEventArgs(fromAbi: abi)
 }
 
 fileprivate func makeToggleSwitchFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -984,6 +1889,10 @@ fileprivate func makeTreeViewSelectionChangedEventArgsFrom(abi: WindowsFoundatio
     return TreeViewSelectionChangedEventArgs(fromAbi: abi)
 }
 
+fileprivate func makeTwoPaneViewFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TwoPaneView(fromAbi: abi)
+}
+
 fileprivate func makeUIElementCollectionFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return UIElementCollection(fromAbi: abi)
 }
@@ -996,6 +1905,14 @@ fileprivate func makeUserControlFrom(abi: WindowsFoundation.IInspectable) -> Any
     return UserControl(fromAbi: abi)
 }
 
+fileprivate func makeVariableSizedWrapGridFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return VariableSizedWrapGrid(fromAbi: abi)
+}
+
+fileprivate func makeViewboxFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return Viewbox(fromAbi: abi)
+}
+
 fileprivate func makeVirtualizingLayoutFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return VirtualizingLayout(fromAbi: abi)
 }
@@ -1004,20 +1921,52 @@ fileprivate func makeVirtualizingLayoutContextFrom(abi: WindowsFoundation.IInspe
     return VirtualizingLayoutContext(fromAbi: abi)
 }
 
+fileprivate func makeVirtualizingPanelFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return VirtualizingPanel(fromAbi: abi)
+}
+
+fileprivate func makeVirtualizingStackPanelFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return VirtualizingStackPanel(fromAbi: abi)
+}
+
+fileprivate func makeWebView2From(abi: WindowsFoundation.IInspectable) -> Any {
+    return WebView2(fromAbi: abi)
+}
+
+fileprivate func makeWrapGridFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return WrapGrid(fromAbi: abi)
+}
+
 fileprivate func makeXamlControlsResourcesFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return XamlControlsResources(fromAbi: abi)
+}
+
+fileprivate func makeAppBarButtonTemplateSettingsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppBarButtonTemplateSettings(fromAbi: abi)
 }
 
 fileprivate func makeAppBarTemplateSettingsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return AppBarTemplateSettings(fromAbi: abi)
 }
 
+fileprivate func makeAppBarToggleButtonTemplateSettingsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppBarToggleButtonTemplateSettings(fromAbi: abi)
+}
+
 fileprivate func makeButtonBaseFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return ButtonBase(fromAbi: abi)
 }
 
+fileprivate func makeCalendarViewTemplateSettingsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CalendarViewTemplateSettings(fromAbi: abi)
+}
+
 fileprivate func makeComboBoxTemplateSettingsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return ComboBoxTemplateSettings(fromAbi: abi)
+}
+
+fileprivate func makeCommandBarTemplateSettingsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CommandBarTemplateSettings(fromAbi: abi)
 }
 
 fileprivate func makeFlyoutBaseFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -1032,8 +1981,16 @@ fileprivate func makeFlyoutShowOptionsFrom(abi: WindowsFoundation.IInspectable) 
     return FlyoutShowOptions(fromAbi: abi)
 }
 
+fileprivate func makeGridViewItemTemplateSettingsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return GridViewItemTemplateSettings(fromAbi: abi)
+}
+
 fileprivate func makeItemsChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return ItemsChangedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeListViewItemPresenterFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ListViewItemPresenter(fromAbi: abi)
 }
 
 fileprivate func makeListViewItemTemplateSettingsFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -1042,6 +1999,18 @@ fileprivate func makeListViewItemTemplateSettingsFrom(abi: WindowsFoundation.IIn
 
 fileprivate func makeMenuFlyoutItemTemplateSettingsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return MenuFlyoutItemTemplateSettings(fromAbi: abi)
+}
+
+fileprivate func makeMenuFlyoutPresenterTemplateSettingsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return MenuFlyoutPresenterTemplateSettings(fromAbi: abi)
+}
+
+fileprivate func makeOrientedVirtualizingPanelFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return OrientedVirtualizingPanel(fromAbi: abi)
+}
+
+fileprivate func makePickerFlyoutBaseFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PickerFlyoutBase(fromAbi: abi)
 }
 
 fileprivate func makePopupFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -1128,6 +2097,22 @@ fileprivate func makeBindingExpressionBaseFrom(abi: WindowsFoundation.IInspectab
     return BindingExpressionBase(fromAbi: abi)
 }
 
+fileprivate func makeBindingOperationsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return BindingOperations(fromAbi: abi)
+}
+
+fileprivate func makeCollectionViewSourceFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CollectionViewSource(fromAbi: abi)
+}
+
+fileprivate func makeCurrentChangingEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CurrentChangingEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeDataErrorsChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return DataErrorsChangedEventArgs(fromAbi: abi)
+}
+
 fileprivate func makeItemIndexRangeFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return ItemIndexRange(fromAbi: abi)
 }
@@ -1138,6 +2123,14 @@ fileprivate func makePropertyChangedEventArgsFrom(abi: WindowsFoundation.IInspec
 
 fileprivate func makeRelativeSourceFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return RelativeSource(fromAbi: abi)
+}
+
+fileprivate func makeBlockFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return Block(fromAbi: abi)
+}
+
+fileprivate func makeBlockCollectionFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return BlockCollection(fromAbi: abi)
 }
 
 fileprivate func makeHyperlinkFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -1360,8 +2353,24 @@ fileprivate func makeAcrylicBrushFrom(abi: WindowsFoundation.IInspectable) -> An
     return AcrylicBrush(fromAbi: abi)
 }
 
+fileprivate func makeArcSegmentFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ArcSegment(fromAbi: abi)
+}
+
+fileprivate func makeBezierSegmentFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return BezierSegment(fromAbi: abi)
+}
+
+fileprivate func makeBitmapCacheFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return BitmapCache(fromAbi: abi)
+}
+
 fileprivate func makeBrushFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return Brush(fromAbi: abi)
+}
+
+fileprivate func makeBrushCollectionFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return BrushCollection(fromAbi: abi)
 }
 
 fileprivate func makeCacheModeFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -1376,8 +2385,16 @@ fileprivate func makeCompositionTargetFrom(abi: WindowsFoundation.IInspectable) 
     return CompositionTarget(fromAbi: abi)
 }
 
+fileprivate func makeDesktopAcrylicBackdropFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return DesktopAcrylicBackdrop(fromAbi: abi)
+}
+
 fileprivate func makeDoubleCollectionFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return DoubleCollection(fromAbi: abi)
+}
+
+fileprivate func makeEllipseGeometryFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return EllipseGeometry(fromAbi: abi)
 }
 
 fileprivate func makeFontFamilyFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -1392,6 +2409,14 @@ fileprivate func makeGeometryFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return Geometry(fromAbi: abi)
 }
 
+fileprivate func makeGeometryCollectionFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return GeometryCollection(fromAbi: abi)
+}
+
+fileprivate func makeGeometryGroupFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return GeometryGroup(fromAbi: abi)
+}
+
 fileprivate func makeGradientBrushFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return GradientBrush(fromAbi: abi)
 }
@@ -1404,8 +2429,16 @@ fileprivate func makeGradientStopCollectionFrom(abi: WindowsFoundation.IInspecta
     return GradientStopCollection(fromAbi: abi)
 }
 
+fileprivate func makeImageBrushFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ImageBrush(fromAbi: abi)
+}
+
 fileprivate func makeImageSourceFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return ImageSource(fromAbi: abi)
+}
+
+fileprivate func makeLineGeometryFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return LineGeometry(fromAbi: abi)
 }
 
 fileprivate func makeLineSegmentFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -1414,6 +2447,26 @@ fileprivate func makeLineSegmentFrom(abi: WindowsFoundation.IInspectable) -> Any
 
 fileprivate func makeLinearGradientBrushFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return LinearGradientBrush(fromAbi: abi)
+}
+
+fileprivate func makeLoadedImageSourceLoadCompletedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return LoadedImageSourceLoadCompletedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeLoadedImageSurfaceFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return LoadedImageSurface(fromAbi: abi)
+}
+
+fileprivate func makeMatrix3DProjectionFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return Matrix3DProjection(fromAbi: abi)
+}
+
+fileprivate func makeMatrixHelperFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return MatrixHelper(fromAbi: abi)
+}
+
+fileprivate func makeMatrixTransformFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return MatrixTransform(fromAbi: abi)
 }
 
 fileprivate func makeMediaTransportControlsThumbnailRequestedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -1444,6 +2497,10 @@ fileprivate func makePathSegmentCollectionFrom(abi: WindowsFoundation.IInspectab
     return PathSegmentCollection(fromAbi: abi)
 }
 
+fileprivate func makePlaneProjectionFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PlaneProjection(fromAbi: abi)
+}
+
 fileprivate func makePointCollectionFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return PointCollection(fromAbi: abi)
 }
@@ -1452,8 +2509,24 @@ fileprivate func makePolyBezierSegmentFrom(abi: WindowsFoundation.IInspectable) 
     return PolyBezierSegment(fromAbi: abi)
 }
 
+fileprivate func makePolyLineSegmentFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PolyLineSegment(fromAbi: abi)
+}
+
+fileprivate func makePolyQuadraticBezierSegmentFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PolyQuadraticBezierSegment(fromAbi: abi)
+}
+
 fileprivate func makeProjectionFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return Projection(fromAbi: abi)
+}
+
+fileprivate func makeQuadraticBezierSegmentFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return QuadraticBezierSegment(fromAbi: abi)
+}
+
+fileprivate func makeRadialGradientBrushFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RadialGradientBrush(fromAbi: abi)
 }
 
 fileprivate func makeRectangleGeometryFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -1464,8 +2537,24 @@ fileprivate func makeRenderedEventArgsFrom(abi: WindowsFoundation.IInspectable) 
     return RenderedEventArgs(fromAbi: abi)
 }
 
+fileprivate func makeRenderingEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RenderingEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeRotateTransformFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RotateTransform(fromAbi: abi)
+}
+
+fileprivate func makeScaleTransformFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ScaleTransform(fromAbi: abi)
+}
+
 fileprivate func makeShadowFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return Shadow(fromAbi: abi)
+}
+
+fileprivate func makeSkewTransformFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return SkewTransform(fromAbi: abi)
 }
 
 fileprivate func makeSolidColorBrushFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -1480,8 +2569,20 @@ fileprivate func makeThemeShadowFrom(abi: WindowsFoundation.IInspectable) -> Any
     return ThemeShadow(fromAbi: abi)
 }
 
+fileprivate func makeTileBrushFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TileBrush(fromAbi: abi)
+}
+
 fileprivate func makeTransformFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return Transform(fromAbi: abi)
+}
+
+fileprivate func makeTransformCollectionFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TransformCollection(fromAbi: abi)
+}
+
+fileprivate func makeTransformGroupFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TransformGroup(fromAbi: abi)
 }
 
 fileprivate func makeTranslateTransformFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -1920,12 +3021,44 @@ fileprivate func makePageStackEntryFrom(abi: WindowsFoundation.IInspectable) -> 
     return PageStackEntry(fromAbi: abi)
 }
 
+fileprivate func makeAddPagesEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AddPagesEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeGetPreviewPageEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return GetPreviewPageEventArgs(fromAbi: abi)
+}
+
+fileprivate func makePaginateEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PaginateEventArgs(fromAbi: abi)
+}
+
+fileprivate func makePrintDocumentFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PrintDocument(fromAbi: abi)
+}
+
+fileprivate func makeCustomXamlResourceLoaderFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CustomXamlResourceLoader(fromAbi: abi)
+}
+
 fileprivate func makeEllipseFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return Ellipse(fromAbi: abi)
 }
 
+fileprivate func makeLineFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return Line(fromAbi: abi)
+}
+
 fileprivate func makePathFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return Path(fromAbi: abi)
+}
+
+fileprivate func makePolygonFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return Polygon(fromAbi: abi)
+}
+
+fileprivate func makePolylineFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return Polyline(fromAbi: abi)
 }
 
 fileprivate func makeRectangleFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -1946,6 +3079,14 @@ public class __MakeFromAbi: MakeFromAbi {
         switch typeName {
             case "IDataTemplateExtension": return makeIDataTemplateExtensionFrom(abi: abi)
             case "IElementFactory": return makeIElementFactoryFrom(abi: abi)
+            case "IXamlServiceProvider": return makeIXamlServiceProviderFrom(abi: abi)
+            case "IAnimatedVisual": return makeIAnimatedVisualFrom(abi: abi)
+            case "IAnimatedVisual2": return makeIAnimatedVisual2From(abi: abi)
+            case "IAnimatedVisualSource": return makeIAnimatedVisualSourceFrom(abi: abi)
+            case "IAnimatedVisualSource2": return makeIAnimatedVisualSource2From(abi: abi)
+            case "IAnimatedVisualSource3": return makeIAnimatedVisualSource3From(abi: abi)
+            case "ICommandBarElement": return makeICommandBarElementFrom(abi: abi)
+            case "IDynamicAnimatedVisualSource": return makeIDynamicAnimatedVisualSourceFrom(abi: abi)
             case "IInsertionPanel": return makeIInsertionPanelFrom(abi: abi)
             case "IItemContainerMapping": return makeIItemContainerMappingFrom(abi: abi)
             case "IKeyIndexMapping": return makeIKeyIndexMappingFrom(abi: abi)
@@ -1955,7 +3096,16 @@ public class __MakeFromAbi: MakeFromAbi {
             case "IScrollController": return makeIScrollControllerFrom(abi: abi)
             case "IScrollControllerPanningInfo": return makeIScrollControllerPanningInfoFrom(abi: abi)
             case "IScrollSnapPointsInfo": return makeIScrollSnapPointsInfoFrom(abi: abi)
+            case "ICollectionView": return makeICollectionViewFrom(abi: abi)
+            case "ICollectionViewFactory": return makeICollectionViewFactoryFrom(abi: abi)
+            case "ICollectionViewGroup": return makeICollectionViewGroupFrom(abi: abi)
+            case "ICustomProperty": return makeICustomPropertyFrom(abi: abi)
+            case "ICustomPropertyProvider": return makeICustomPropertyProviderFrom(abi: abi)
+            case "IItemsRangeInfo": return makeIItemsRangeInfoFrom(abi: abi)
+            case "INotifyDataErrorInfo": return makeINotifyDataErrorInfoFrom(abi: abi)
             case "INotifyPropertyChanged": return makeINotifyPropertyChangedFrom(abi: abi)
+            case "ISelectionInfo": return makeISelectionInfoFrom(abi: abi)
+            case "ISupportIncrementalLoading": return makeISupportIncrementalLoadingFrom(abi: abi)
             case "IValueConverter": return makeIValueConverterFrom(abi: abi)
             case "ICommand": return makeICommandFrom(abi: abi)
             case "IBindableIterable": return makeIBindableIterableFrom(abi: abi)
@@ -1968,33 +3118,48 @@ public class __MakeFromAbi: MakeFromAbi {
             case "IXamlMember": return makeIXamlMemberFrom(abi: abi)
             case "IXamlMetadataProvider": return makeIXamlMetadataProviderFrom(abi: abi)
             case "IXamlType": return makeIXamlTypeFrom(abi: abi)
+            case "AdaptiveTrigger": return makeAdaptiveTriggerFrom(abi: abi)
             case "Application": return makeApplicationFrom(abi: abi)
             case "ApplicationInitializationCallbackParams": return makeApplicationInitializationCallbackParamsFrom(abi: abi)
             case "BindingFailedEventArgs": return makeBindingFailedEventArgsFrom(abi: abi)
             case "BringIntoViewOptions": return makeBringIntoViewOptionsFrom(abi: abi)
             case "BringIntoViewRequestedEventArgs": return makeBringIntoViewRequestedEventArgsFrom(abi: abi)
             case "BrushTransition": return makeBrushTransitionFrom(abi: abi)
+            case "ColorPaletteResources": return makeColorPaletteResourcesFrom(abi: abi)
+            case "CornerRadiusHelper": return makeCornerRadiusHelperFrom(abi: abi)
             case "DataContextChangedEventArgs": return makeDataContextChangedEventArgsFrom(abi: abi)
             case "DataTemplate": return makeDataTemplateFrom(abi: abi)
+            case "DataTemplateKey": return makeDataTemplateKeyFrom(abi: abi)
             case "DebugSettings": return makeDebugSettingsFrom(abi: abi)
             case "DependencyObject": return makeDependencyObjectFrom(abi: abi)
+            case "DependencyObjectCollection": return makeDependencyObjectCollectionFrom(abi: abi)
             case "DependencyProperty": return makeDependencyPropertyFrom(abi: abi)
             case "DependencyPropertyChangedEventArgs": return makeDependencyPropertyChangedEventArgsFrom(abi: abi)
+            case "DispatcherTimer": return makeDispatcherTimerFrom(abi: abi)
             case "DragEventArgs": return makeDragEventArgsFrom(abi: abi)
             case "DragOperationDeferral": return makeDragOperationDeferralFrom(abi: abi)
             case "DragStartingEventArgs": return makeDragStartingEventArgsFrom(abi: abi)
             case "DragUI": return makeDragUIFrom(abi: abi)
             case "DragUIOverride": return makeDragUIOverrideFrom(abi: abi)
             case "DropCompletedEventArgs": return makeDropCompletedEventArgsFrom(abi: abi)
+            case "DurationHelper": return makeDurationHelperFrom(abi: abi)
             case "EffectiveViewportChangedEventArgs": return makeEffectiveViewportChangedEventArgsFrom(abi: abi)
             case "ElementFactoryGetArgs": return makeElementFactoryGetArgsFrom(abi: abi)
             case "ElementFactoryRecycleArgs": return makeElementFactoryRecycleArgsFrom(abi: abi)
+            case "ElementSoundPlayer": return makeElementSoundPlayerFrom(abi: abi)
+            case "EventTrigger": return makeEventTriggerFrom(abi: abi)
             case "ExceptionRoutedEventArgs": return makeExceptionRoutedEventArgsFrom(abi: abi)
             case "FrameworkElement": return makeFrameworkElementFrom(abi: abi)
             case "FrameworkTemplate": return makeFrameworkTemplateFrom(abi: abi)
+            case "FrameworkView": return makeFrameworkViewFrom(abi: abi)
+            case "FrameworkViewSource": return makeFrameworkViewSourceFrom(abi: abi)
+            case "GridLengthHelper": return makeGridLengthHelperFrom(abi: abi)
             case "LaunchActivatedEventArgs": return makeLaunchActivatedEventArgsFrom(abi: abi)
+            case "MediaFailedRoutedEventArgs": return makeMediaFailedRoutedEventArgsFrom(abi: abi)
+            case "PointHelper": return makePointHelperFrom(abi: abi)
             case "PropertyMetadata": return makePropertyMetadataFrom(abi: abi)
             case "PropertyPath": return makePropertyPathFrom(abi: abi)
+            case "RectHelper": return makeRectHelperFrom(abi: abi)
             case "ResourceDictionary": return makeResourceDictionaryFrom(abi: abi)
             case "ResourceManagerRequestedEventArgs": return makeResourceManagerRequestedEventArgsFrom(abi: abi)
             case "RoutedEvent": return makeRoutedEventFrom(abi: abi)
@@ -2004,15 +3169,25 @@ public class __MakeFromAbi: MakeFromAbi {
             case "SetterBase": return makeSetterBaseFrom(abi: abi)
             case "SetterBaseCollection": return makeSetterBaseCollectionFrom(abi: abi)
             case "SizeChangedEventArgs": return makeSizeChangedEventArgsFrom(abi: abi)
+            case "SizeHelper": return makeSizeHelperFrom(abi: abi)
+            case "StateTrigger": return makeStateTriggerFrom(abi: abi)
+            case "StateTriggerBase": return makeStateTriggerBaseFrom(abi: abi)
             case "Style": return makeStyleFrom(abi: abi)
             case "TargetPropertyPath": return makeTargetPropertyPathFrom(abi: abi)
+            case "ThicknessHelper": return makeThicknessHelperFrom(abi: abi)
             case "TriggerAction": return makeTriggerActionFrom(abi: abi)
+            case "TriggerActionCollection": return makeTriggerActionCollectionFrom(abi: abi)
             case "TriggerBase": return makeTriggerBaseFrom(abi: abi)
             case "TriggerCollection": return makeTriggerCollectionFrom(abi: abi)
             case "UIElement": return makeUIElementFrom(abi: abi)
             case "UIElementWeakCollection": return makeUIElementWeakCollectionFrom(abi: abi)
             case "UnhandledExceptionEventArgs": return makeUnhandledExceptionEventArgsFrom(abi: abi)
             case "Vector3Transition": return makeVector3TransitionFrom(abi: abi)
+            case "VisualState": return makeVisualStateFrom(abi: abi)
+            case "VisualStateChangedEventArgs": return makeVisualStateChangedEventArgsFrom(abi: abi)
+            case "VisualStateGroup": return makeVisualStateGroupFrom(abi: abi)
+            case "VisualStateManager": return makeVisualStateManagerFrom(abi: abi)
+            case "VisualTransition": return makeVisualTransitionFrom(abi: abi)
             case "Window": return makeWindowFrom(abi: abi)
             case "WindowActivatedEventArgs": return makeWindowActivatedEventArgsFrom(abi: abi)
             case "WindowEventArgs": return makeWindowEventArgsFrom(abi: abi)
@@ -2021,26 +3196,80 @@ public class __MakeFromAbi: MakeFromAbi {
             case "XamlResourceReferenceFailedEventArgs": return makeXamlResourceReferenceFailedEventArgsFrom(abi: abi)
             case "XamlRoot": return makeXamlRootFrom(abi: abi)
             case "XamlRootChangedEventArgs": return makeXamlRootChangedEventArgsFrom(abi: abi)
+            case "AnnotationPatternIdentifiers": return makeAnnotationPatternIdentifiersFrom(abi: abi)
             case "AutomationAnnotation": return makeAutomationAnnotationFrom(abi: abi)
+            case "AutomationElementIdentifiers": return makeAutomationElementIdentifiersFrom(abi: abi)
             case "AutomationProperties": return makeAutomationPropertiesFrom(abi: abi)
             case "AutomationProperty": return makeAutomationPropertyFrom(abi: abi)
+            case "DockPatternIdentifiers": return makeDockPatternIdentifiersFrom(abi: abi)
+            case "DragPatternIdentifiers": return makeDragPatternIdentifiersFrom(abi: abi)
+            case "DropTargetPatternIdentifiers": return makeDropTargetPatternIdentifiersFrom(abi: abi)
+            case "ExpandCollapsePatternIdentifiers": return makeExpandCollapsePatternIdentifiersFrom(abi: abi)
+            case "GridItemPatternIdentifiers": return makeGridItemPatternIdentifiersFrom(abi: abi)
+            case "GridPatternIdentifiers": return makeGridPatternIdentifiersFrom(abi: abi)
+            case "MultipleViewPatternIdentifiers": return makeMultipleViewPatternIdentifiersFrom(abi: abi)
+            case "RangeValuePatternIdentifiers": return makeRangeValuePatternIdentifiersFrom(abi: abi)
+            case "ScrollPatternIdentifiers": return makeScrollPatternIdentifiersFrom(abi: abi)
+            case "SelectionItemPatternIdentifiers": return makeSelectionItemPatternIdentifiersFrom(abi: abi)
+            case "SelectionPatternIdentifiers": return makeSelectionPatternIdentifiersFrom(abi: abi)
+            case "SpreadsheetItemPatternIdentifiers": return makeSpreadsheetItemPatternIdentifiersFrom(abi: abi)
+            case "StylesPatternIdentifiers": return makeStylesPatternIdentifiersFrom(abi: abi)
+            case "TableItemPatternIdentifiers": return makeTableItemPatternIdentifiersFrom(abi: abi)
+            case "TablePatternIdentifiers": return makeTablePatternIdentifiersFrom(abi: abi)
+            case "TogglePatternIdentifiers": return makeTogglePatternIdentifiersFrom(abi: abi)
+            case "TransformPattern2Identifiers": return makeTransformPattern2IdentifiersFrom(abi: abi)
+            case "TransformPatternIdentifiers": return makeTransformPatternIdentifiersFrom(abi: abi)
+            case "ValuePatternIdentifiers": return makeValuePatternIdentifiersFrom(abi: abi)
+            case "WindowPatternIdentifiers": return makeWindowPatternIdentifiersFrom(abi: abi)
             case "AutomationPeer": return makeAutomationPeerFrom(abi: abi)
             case "AutomationPeerAnnotation": return makeAutomationPeerAnnotationFrom(abi: abi)
             case "IRawElementProviderSimple": return makeIRawElementProviderSimpleFrom(abi: abi)
             case "AnchorRequestedEventArgs": return makeAnchorRequestedEventArgsFrom(abi: abi)
+            case "AnimatedIcon": return makeAnimatedIconFrom(abi: abi)
+            case "AnimatedIconSource": return makeAnimatedIconSourceFrom(abi: abi)
+            case "AnimatedVisualPlayer": return makeAnimatedVisualPlayerFrom(abi: abi)
+            case "AnnotatedScrollBar": return makeAnnotatedScrollBarFrom(abi: abi)
+            case "AnnotatedScrollBarDetailLabelRequestedEventArgs": return makeAnnotatedScrollBarDetailLabelRequestedEventArgsFrom(abi: abi)
+            case "AnnotatedScrollBarLabel": return makeAnnotatedScrollBarLabelFrom(abi: abi)
+            case "AnnotatedScrollBarScrollingEventArgs": return makeAnnotatedScrollBarScrollingEventArgsFrom(abi: abi)
             case "AppBar": return makeAppBarFrom(abi: abi)
+            case "AppBarButton": return makeAppBarButtonFrom(abi: abi)
+            case "AppBarElementContainer": return makeAppBarElementContainerFrom(abi: abi)
+            case "AppBarSeparator": return makeAppBarSeparatorFrom(abi: abi)
+            case "AppBarToggleButton": return makeAppBarToggleButtonFrom(abi: abi)
+            case "AutoSuggestBox": return makeAutoSuggestBoxFrom(abi: abi)
+            case "AutoSuggestBoxQuerySubmittedEventArgs": return makeAutoSuggestBoxQuerySubmittedEventArgsFrom(abi: abi)
+            case "AutoSuggestBoxSuggestionChosenEventArgs": return makeAutoSuggestBoxSuggestionChosenEventArgsFrom(abi: abi)
+            case "AutoSuggestBoxTextChangedEventArgs": return makeAutoSuggestBoxTextChangedEventArgsFrom(abi: abi)
             case "BitmapIcon": return makeBitmapIconFrom(abi: abi)
+            case "BitmapIconSource": return makeBitmapIconSourceFrom(abi: abi)
             case "Border": return makeBorderFrom(abi: abi)
+            case "BreadcrumbBar": return makeBreadcrumbBarFrom(abi: abi)
+            case "BreadcrumbBarItem": return makeBreadcrumbBarItemFrom(abi: abi)
+            case "BreadcrumbBarItemClickedEventArgs": return makeBreadcrumbBarItemClickedEventArgsFrom(abi: abi)
             case "Button": return makeButtonFrom(abi: abi)
+            case "CalendarDatePicker": return makeCalendarDatePickerFrom(abi: abi)
+            case "CalendarDatePickerDateChangedEventArgs": return makeCalendarDatePickerDateChangedEventArgsFrom(abi: abi)
+            case "CalendarView": return makeCalendarViewFrom(abi: abi)
+            case "CalendarViewDayItem": return makeCalendarViewDayItemFrom(abi: abi)
+            case "CalendarViewDayItemChangingEventArgs": return makeCalendarViewDayItemChangingEventArgsFrom(abi: abi)
+            case "CalendarViewSelectedDatesChangedEventArgs": return makeCalendarViewSelectedDatesChangedEventArgsFrom(abi: abi)
             case "CandidateWindowBoundsChangedEventArgs": return makeCandidateWindowBoundsChangedEventArgsFrom(abi: abi)
             case "Canvas": return makeCanvasFrom(abi: abi)
             case "CheckBox": return makeCheckBoxFrom(abi: abi)
             case "ChoosingGroupHeaderContainerEventArgs": return makeChoosingGroupHeaderContainerEventArgsFrom(abi: abi)
             case "ChoosingItemContainerEventArgs": return makeChoosingItemContainerEventArgsFrom(abi: abi)
+            case "CleanUpVirtualizedItemEventArgs": return makeCleanUpVirtualizedItemEventArgsFrom(abi: abi)
+            case "ColorChangedEventArgs": return makeColorChangedEventArgsFrom(abi: abi)
+            case "ColorPicker": return makeColorPickerFrom(abi: abi)
             case "ColumnDefinition": return makeColumnDefinitionFrom(abi: abi)
             case "ColumnDefinitionCollection": return makeColumnDefinitionCollectionFrom(abi: abi)
             case "ComboBox": return makeComboBoxFrom(abi: abi)
+            case "ComboBoxItem": return makeComboBoxItemFrom(abi: abi)
             case "ComboBoxTextSubmittedEventArgs": return makeComboBoxTextSubmittedEventArgsFrom(abi: abi)
+            case "CommandBar": return makeCommandBarFrom(abi: abi)
+            case "CommandBarFlyout": return makeCommandBarFlyoutFrom(abi: abi)
+            case "CommandBarOverflowPresenter": return makeCommandBarOverflowPresenterFrom(abi: abi)
             case "ContainerContentChangingEventArgs": return makeContainerContentChangingEventArgsFrom(abi: abi)
             case "ContentControl": return makeContentControlFrom(abi: abi)
             case "ContentDialog": return makeContentDialogFrom(abi: abi)
@@ -2054,9 +3283,23 @@ public class __MakeFromAbi: MakeFromAbi {
             case "ContextMenuEventArgs": return makeContextMenuEventArgsFrom(abi: abi)
             case "Control": return makeControlFrom(abi: abi)
             case "ControlTemplate": return makeControlTemplateFrom(abi: abi)
+            case "CoreWebView2InitializedEventArgs": return makeCoreWebView2InitializedEventArgsFrom(abi: abi)
             case "DataTemplateSelector": return makeDataTemplateSelectorFrom(abi: abi)
+            case "DatePickedEventArgs": return makeDatePickedEventArgsFrom(abi: abi)
+            case "DatePicker": return makeDatePickerFrom(abi: abi)
+            case "DatePickerFlyout": return makeDatePickerFlyoutFrom(abi: abi)
+            case "DatePickerFlyoutItem": return makeDatePickerFlyoutItemFrom(abi: abi)
+            case "DatePickerFlyoutPresenter": return makeDatePickerFlyoutPresenterFrom(abi: abi)
+            case "DatePickerSelectedValueChangedEventArgs": return makeDatePickerSelectedValueChangedEventArgsFrom(abi: abi)
+            case "DatePickerValueChangedEventArgs": return makeDatePickerValueChangedEventArgsFrom(abi: abi)
             case "DragItemsCompletedEventArgs": return makeDragItemsCompletedEventArgsFrom(abi: abi)
             case "DragItemsStartingEventArgs": return makeDragItemsStartingEventArgsFrom(abi: abi)
+            case "DropDownButton": return makeDropDownButtonFrom(abi: abi)
+            case "DynamicOverflowItemsChangingEventArgs": return makeDynamicOverflowItemsChangingEventArgsFrom(abi: abi)
+            case "Expander": return makeExpanderFrom(abi: abi)
+            case "ExpanderCollapsedEventArgs": return makeExpanderCollapsedEventArgsFrom(abi: abi)
+            case "ExpanderExpandingEventArgs": return makeExpanderExpandingEventArgsFrom(abi: abi)
+            case "ExpanderTemplateSettings": return makeExpanderTemplateSettingsFrom(abi: abi)
             case "FlipView": return makeFlipViewFrom(abi: abi)
             case "FlipViewItem": return makeFlipViewItemFrom(abi: abi)
             case "Flyout": return makeFlyoutFrom(abi: abi)
@@ -2068,14 +3311,25 @@ public class __MakeFromAbi: MakeFromAbi {
             case "Frame": return makeFrameFrom(abi: abi)
             case "Grid": return makeGridFrom(abi: abi)
             case "GridView": return makeGridViewFrom(abi: abi)
+            case "GridViewHeaderItem": return makeGridViewHeaderItemFrom(abi: abi)
+            case "GridViewItem": return makeGridViewItemFrom(abi: abi)
+            case "GroupItem": return makeGroupItemFrom(abi: abi)
             case "GroupStyle": return makeGroupStyleFrom(abi: abi)
             case "GroupStyleSelector": return makeGroupStyleSelectorFrom(abi: abi)
+            case "HasValidationErrorsChangedEventArgs": return makeHasValidationErrorsChangedEventArgsFrom(abi: abi)
+            case "Hub": return makeHubFrom(abi: abi)
+            case "HubSection": return makeHubSectionFrom(abi: abi)
+            case "HubSectionCollection": return makeHubSectionCollectionFrom(abi: abi)
+            case "HubSectionHeaderClickEventArgs": return makeHubSectionHeaderClickEventArgsFrom(abi: abi)
             case "HyperlinkButton": return makeHyperlinkButtonFrom(abi: abi)
             case "IconElement": return makeIconElementFrom(abi: abi)
             case "IconSource": return makeIconSourceFrom(abi: abi)
             case "IconSourceElement": return makeIconSourceElementFrom(abi: abi)
             case "Image": return makeImageFrom(abi: abi)
             case "ImageIcon": return makeImageIconFrom(abi: abi)
+            case "ImageIconSource": return makeImageIconSourceFrom(abi: abi)
+            case "InfoBadge": return makeInfoBadgeFrom(abi: abi)
+            case "InfoBadgeTemplateSettings": return makeInfoBadgeTemplateSettingsFrom(abi: abi)
             case "InfoBar": return makeInfoBarFrom(abi: abi)
             case "InfoBarClosedEventArgs": return makeInfoBarClosedEventArgsFrom(abi: abi)
             case "InfoBarClosingEventArgs": return makeInfoBarClosingEventArgsFrom(abi: abi)
@@ -2087,47 +3341,119 @@ public class __MakeFromAbi: MakeFromAbi {
             case "ItemCollectionTransitionCompletedEventArgs": return makeItemCollectionTransitionCompletedEventArgsFrom(abi: abi)
             case "ItemCollectionTransitionProgress": return makeItemCollectionTransitionProgressFrom(abi: abi)
             case "ItemCollectionTransitionProvider": return makeItemCollectionTransitionProviderFrom(abi: abi)
+            case "ItemContainer": return makeItemContainerFrom(abi: abi)
             case "ItemContainerGenerator": return makeItemContainerGeneratorFrom(abi: abi)
             case "ItemsControl": return makeItemsControlFrom(abi: abi)
             case "ItemsPanelTemplate": return makeItemsPanelTemplateFrom(abi: abi)
+            case "ItemsPickedEventArgs": return makeItemsPickedEventArgsFrom(abi: abi)
+            case "ItemsPresenter": return makeItemsPresenterFrom(abi: abi)
             case "ItemsRepeater": return makeItemsRepeaterFrom(abi: abi)
             case "ItemsRepeaterElementClearingEventArgs": return makeItemsRepeaterElementClearingEventArgsFrom(abi: abi)
             case "ItemsRepeaterElementIndexChangedEventArgs": return makeItemsRepeaterElementIndexChangedEventArgsFrom(abi: abi)
             case "ItemsRepeaterElementPreparedEventArgs": return makeItemsRepeaterElementPreparedEventArgsFrom(abi: abi)
+            case "ItemsRepeaterScrollHost": return makeItemsRepeaterScrollHostFrom(abi: abi)
             case "ItemsSourceView": return makeItemsSourceViewFrom(abi: abi)
+            case "ItemsStackPanel": return makeItemsStackPanelFrom(abi: abi)
+            case "ItemsView": return makeItemsViewFrom(abi: abi)
+            case "ItemsViewItemInvokedEventArgs": return makeItemsViewItemInvokedEventArgsFrom(abi: abi)
+            case "ItemsViewSelectionChangedEventArgs": return makeItemsViewSelectionChangedEventArgsFrom(abi: abi)
+            case "ItemsWrapGrid": return makeItemsWrapGridFrom(abi: abi)
             case "Layout": return makeLayoutFrom(abi: abi)
             case "LayoutContext": return makeLayoutContextFrom(abi: abi)
+            case "LinedFlowLayout": return makeLinedFlowLayoutFrom(abi: abi)
+            case "LinedFlowLayoutItemCollectionTransitionProvider": return makeLinedFlowLayoutItemCollectionTransitionProviderFrom(abi: abi)
+            case "LinedFlowLayoutItemsInfoRequestedEventArgs": return makeLinedFlowLayoutItemsInfoRequestedEventArgsFrom(abi: abi)
             case "ListBox": return makeListBoxFrom(abi: abi)
             case "ListBoxItem": return makeListBoxItemFrom(abi: abi)
+            case "ListPickerFlyout": return makeListPickerFlyoutFrom(abi: abi)
+            case "ListPickerFlyoutPresenter": return makeListPickerFlyoutPresenterFrom(abi: abi)
             case "ListView": return makeListViewFrom(abi: abi)
             case "ListViewBase": return makeListViewBaseFrom(abi: abi)
             case "ListViewBaseHeaderItem": return makeListViewBaseHeaderItemFrom(abi: abi)
+            case "ListViewHeaderItem": return makeListViewHeaderItemFrom(abi: abi)
             case "ListViewItem": return makeListViewItemFrom(abi: abi)
+            case "ListViewPersistenceHelper": return makeListViewPersistenceHelperFrom(abi: abi)
+            case "MapControl": return makeMapControlFrom(abi: abi)
+            case "MapControlMapServiceErrorOccurredEventArgs": return makeMapControlMapServiceErrorOccurredEventArgsFrom(abi: abi)
+            case "MapElement": return makeMapElementFrom(abi: abi)
+            case "MapElementClickEventArgs": return makeMapElementClickEventArgsFrom(abi: abi)
+            case "MapElementsLayer": return makeMapElementsLayerFrom(abi: abi)
+            case "MapIcon": return makeMapIconFrom(abi: abi)
+            case "MapLayer": return makeMapLayerFrom(abi: abi)
             case "MediaPlayerElement": return makeMediaPlayerElementFrom(abi: abi)
+            case "MediaPlayerPresenter": return makeMediaPlayerPresenterFrom(abi: abi)
             case "MediaTransportControls": return makeMediaTransportControlsFrom(abi: abi)
+            case "MediaTransportControlsHelper": return makeMediaTransportControlsHelperFrom(abi: abi)
             case "MenuBar": return makeMenuBarFrom(abi: abi)
             case "MenuBarItem": return makeMenuBarItemFrom(abi: abi)
+            case "MenuBarItemFlyout": return makeMenuBarItemFlyoutFrom(abi: abi)
             case "MenuFlyout": return makeMenuFlyoutFrom(abi: abi)
             case "MenuFlyoutItem": return makeMenuFlyoutItemFrom(abi: abi)
             case "MenuFlyoutItemBase": return makeMenuFlyoutItemBaseFrom(abi: abi)
+            case "MenuFlyoutPresenter": return makeMenuFlyoutPresenterFrom(abi: abi)
             case "MenuFlyoutSeparator": return makeMenuFlyoutSeparatorFrom(abi: abi)
             case "MenuFlyoutSubItem": return makeMenuFlyoutSubItemFrom(abi: abi)
+            case "NavigationView": return makeNavigationViewFrom(abi: abi)
+            case "NavigationViewBackRequestedEventArgs": return makeNavigationViewBackRequestedEventArgsFrom(abi: abi)
+            case "NavigationViewDisplayModeChangedEventArgs": return makeNavigationViewDisplayModeChangedEventArgsFrom(abi: abi)
+            case "NavigationViewItem": return makeNavigationViewItemFrom(abi: abi)
+            case "NavigationViewItemBase": return makeNavigationViewItemBaseFrom(abi: abi)
+            case "NavigationViewItemCollapsedEventArgs": return makeNavigationViewItemCollapsedEventArgsFrom(abi: abi)
+            case "NavigationViewItemExpandingEventArgs": return makeNavigationViewItemExpandingEventArgsFrom(abi: abi)
+            case "NavigationViewItemHeader": return makeNavigationViewItemHeaderFrom(abi: abi)
+            case "NavigationViewItemInvokedEventArgs": return makeNavigationViewItemInvokedEventArgsFrom(abi: abi)
+            case "NavigationViewItemSeparator": return makeNavigationViewItemSeparatorFrom(abi: abi)
+            case "NavigationViewPaneClosingEventArgs": return makeNavigationViewPaneClosingEventArgsFrom(abi: abi)
+            case "NavigationViewSelectionChangedEventArgs": return makeNavigationViewSelectionChangedEventArgsFrom(abi: abi)
+            case "NavigationViewTemplateSettings": return makeNavigationViewTemplateSettingsFrom(abi: abi)
+            case "NonVirtualizingLayout": return makeNonVirtualizingLayoutFrom(abi: abi)
+            case "NonVirtualizingLayoutContext": return makeNonVirtualizingLayoutContextFrom(abi: abi)
+            case "NumberBox": return makeNumberBoxFrom(abi: abi)
+            case "NumberBoxValueChangedEventArgs": return makeNumberBoxValueChangedEventArgsFrom(abi: abi)
             case "Page": return makePageFrom(abi: abi)
             case "Panel": return makePanelFrom(abi: abi)
+            case "ParallaxView": return makeParallaxViewFrom(abi: abi)
             case "PasswordBox": return makePasswordBoxFrom(abi: abi)
             case "PasswordBoxPasswordChangingEventArgs": return makePasswordBoxPasswordChangingEventArgsFrom(abi: abi)
+            case "PathIcon": return makePathIconFrom(abi: abi)
+            case "PathIconSource": return makePathIconSourceFrom(abi: abi)
+            case "PersonPicture": return makePersonPictureFrom(abi: abi)
+            case "PersonPictureTemplateSettings": return makePersonPictureTemplateSettingsFrom(abi: abi)
+            case "PickerConfirmedEventArgs": return makePickerConfirmedEventArgsFrom(abi: abi)
+            case "PickerFlyout": return makePickerFlyoutFrom(abi: abi)
+            case "PickerFlyoutPresenter": return makePickerFlyoutPresenterFrom(abi: abi)
             case "PipsPager": return makePipsPagerFrom(abi: abi)
             case "PipsPagerSelectedIndexChangedEventArgs": return makePipsPagerSelectedIndexChangedEventArgsFrom(abi: abi)
             case "PipsPagerTemplateSettings": return makePipsPagerTemplateSettingsFrom(abi: abi)
+            case "Pivot": return makePivotFrom(abi: abi)
+            case "PivotItem": return makePivotItemFrom(abi: abi)
+            case "PivotItemEventArgs": return makePivotItemEventArgsFrom(abi: abi)
             case "ProgressBar": return makeProgressBarFrom(abi: abi)
             case "ProgressBarTemplateSettings": return makeProgressBarTemplateSettingsFrom(abi: abi)
             case "ProgressRing": return makeProgressRingFrom(abi: abi)
             case "ProgressRingTemplateSettings": return makeProgressRingTemplateSettingsFrom(abi: abi)
             case "RadioButton": return makeRadioButtonFrom(abi: abi)
             case "RadioButtons": return makeRadioButtonsFrom(abi: abi)
+            case "RadioMenuFlyoutItem": return makeRadioMenuFlyoutItemFrom(abi: abi)
+            case "RatingControl": return makeRatingControlFrom(abi: abi)
+            case "RatingItemFontInfo": return makeRatingItemFontInfoFrom(abi: abi)
+            case "RatingItemImageInfo": return makeRatingItemImageInfoFrom(abi: abi)
+            case "RatingItemInfo": return makeRatingItemInfoFrom(abi: abi)
+            case "RefreshContainer": return makeRefreshContainerFrom(abi: abi)
+            case "RefreshInteractionRatioChangedEventArgs": return makeRefreshInteractionRatioChangedEventArgsFrom(abi: abi)
+            case "RefreshRequestedEventArgs": return makeRefreshRequestedEventArgsFrom(abi: abi)
+            case "RefreshStateChangedEventArgs": return makeRefreshStateChangedEventArgsFrom(abi: abi)
+            case "RefreshVisualizer": return makeRefreshVisualizerFrom(abi: abi)
             case "RelativePanel": return makeRelativePanelFrom(abi: abi)
+            case "RevealListViewItemPresenter": return makeRevealListViewItemPresenterFrom(abi: abi)
+            case "RichEditBox": return makeRichEditBoxFrom(abi: abi)
+            case "RichEditBoxSelectionChangingEventArgs": return makeRichEditBoxSelectionChangingEventArgsFrom(abi: abi)
+            case "RichEditBoxTextChangingEventArgs": return makeRichEditBoxTextChangingEventArgsFrom(abi: abi)
+            case "RichTextBlock": return makeRichTextBlockFrom(abi: abi)
+            case "RichTextBlockOverflow": return makeRichTextBlockOverflowFrom(abi: abi)
             case "RowDefinition": return makeRowDefinitionFrom(abi: abi)
             case "RowDefinitionCollection": return makeRowDefinitionCollectionFrom(abi: abi)
+            case "ScrollContentPresenter": return makeScrollContentPresenterFrom(abi: abi)
             case "ScrollView": return makeScrollViewFrom(abi: abi)
             case "ScrollViewer": return makeScrollViewerFrom(abi: abi)
             case "ScrollViewerView": return makeScrollViewerViewFrom(abi: abi)
@@ -2141,17 +3467,37 @@ public class __MakeFromAbi: MakeFromAbi {
             case "ScrollingZoomAnimationStartingEventArgs": return makeScrollingZoomAnimationStartingEventArgsFrom(abi: abi)
             case "ScrollingZoomCompletedEventArgs": return makeScrollingZoomCompletedEventArgsFrom(abi: abi)
             case "ScrollingZoomOptions": return makeScrollingZoomOptionsFrom(abi: abi)
+            case "SectionsInViewChangedEventArgs": return makeSectionsInViewChangedEventArgsFrom(abi: abi)
             case "SelectionChangedEventArgs": return makeSelectionChangedEventArgsFrom(abi: abi)
+            case "SelectorBar": return makeSelectorBarFrom(abi: abi)
+            case "SelectorBarItem": return makeSelectorBarItemFrom(abi: abi)
+            case "SelectorBarSelectionChangedEventArgs": return makeSelectorBarSelectionChangedEventArgsFrom(abi: abi)
             case "SemanticZoom": return makeSemanticZoomFrom(abi: abi)
             case "SemanticZoomLocation": return makeSemanticZoomLocationFrom(abi: abi)
             case "SemanticZoomViewChangedEventArgs": return makeSemanticZoomViewChangedEventArgsFrom(abi: abi)
             case "Slider": return makeSliderFrom(abi: abi)
+            case "SplitButton": return makeSplitButtonFrom(abi: abi)
+            case "SplitButtonClickEventArgs": return makeSplitButtonClickEventArgsFrom(abi: abi)
             case "SplitView": return makeSplitViewFrom(abi: abi)
             case "SplitViewPaneClosingEventArgs": return makeSplitViewPaneClosingEventArgsFrom(abi: abi)
             case "StackLayout": return makeStackLayoutFrom(abi: abi)
             case "StackPanel": return makeStackPanelFrom(abi: abi)
             case "StyleSelector": return makeStyleSelectorFrom(abi: abi)
+            case "SwapChainBackgroundPanel": return makeSwapChainBackgroundPanelFrom(abi: abi)
             case "SwapChainPanel": return makeSwapChainPanelFrom(abi: abi)
+            case "SwipeControl": return makeSwipeControlFrom(abi: abi)
+            case "SwipeItem": return makeSwipeItemFrom(abi: abi)
+            case "SwipeItemInvokedEventArgs": return makeSwipeItemInvokedEventArgsFrom(abi: abi)
+            case "SwipeItems": return makeSwipeItemsFrom(abi: abi)
+            case "SymbolIcon": return makeSymbolIconFrom(abi: abi)
+            case "SymbolIconSource": return makeSymbolIconSourceFrom(abi: abi)
+            case "TabView": return makeTabViewFrom(abi: abi)
+            case "TabViewItem": return makeTabViewItemFrom(abi: abi)
+            case "TabViewItemTemplateSettings": return makeTabViewItemTemplateSettingsFrom(abi: abi)
+            case "TabViewTabCloseRequestedEventArgs": return makeTabViewTabCloseRequestedEventArgsFrom(abi: abi)
+            case "TabViewTabDragCompletedEventArgs": return makeTabViewTabDragCompletedEventArgsFrom(abi: abi)
+            case "TabViewTabDragStartingEventArgs": return makeTabViewTabDragStartingEventArgsFrom(abi: abi)
+            case "TabViewTabDroppedOutsideEventArgs": return makeTabViewTabDroppedOutsideEventArgsFrom(abi: abi)
             case "TeachingTip": return makeTeachingTipFrom(abi: abi)
             case "TeachingTipClosedEventArgs": return makeTeachingTipClosedEventArgsFrom(abi: abi)
             case "TeachingTipClosingEventArgs": return makeTeachingTipClosingEventArgsFrom(abi: abi)
@@ -2162,13 +3508,22 @@ public class __MakeFromAbi: MakeFromAbi {
             case "TextBoxSelectionChangingEventArgs": return makeTextBoxSelectionChangingEventArgsFrom(abi: abi)
             case "TextBoxTextChangingEventArgs": return makeTextBoxTextChangingEventArgsFrom(abi: abi)
             case "TextChangedEventArgs": return makeTextChangedEventArgsFrom(abi: abi)
+            case "TextCommandBarFlyout": return makeTextCommandBarFlyoutFrom(abi: abi)
             case "TextCompositionChangedEventArgs": return makeTextCompositionChangedEventArgsFrom(abi: abi)
             case "TextCompositionEndedEventArgs": return makeTextCompositionEndedEventArgsFrom(abi: abi)
             case "TextCompositionStartedEventArgs": return makeTextCompositionStartedEventArgsFrom(abi: abi)
             case "TextControlCopyingToClipboardEventArgs": return makeTextControlCopyingToClipboardEventArgsFrom(abi: abi)
             case "TextControlCuttingToClipboardEventArgs": return makeTextControlCuttingToClipboardEventArgsFrom(abi: abi)
             case "TextControlPasteEventArgs": return makeTextControlPasteEventArgsFrom(abi: abi)
+            case "TimePickedEventArgs": return makeTimePickedEventArgsFrom(abi: abi)
+            case "TimePicker": return makeTimePickerFrom(abi: abi)
+            case "TimePickerFlyout": return makeTimePickerFlyoutFrom(abi: abi)
+            case "TimePickerFlyoutPresenter": return makeTimePickerFlyoutPresenterFrom(abi: abi)
+            case "TimePickerSelectedValueChangedEventArgs": return makeTimePickerSelectedValueChangedEventArgsFrom(abi: abi)
+            case "TimePickerValueChangedEventArgs": return makeTimePickerValueChangedEventArgsFrom(abi: abi)
             case "ToggleMenuFlyoutItem": return makeToggleMenuFlyoutItemFrom(abi: abi)
+            case "ToggleSplitButton": return makeToggleSplitButtonFrom(abi: abi)
+            case "ToggleSplitButtonIsCheckedChangedEventArgs": return makeToggleSplitButtonIsCheckedChangedEventArgsFrom(abi: abi)
             case "ToggleSwitch": return makeToggleSwitchFrom(abi: abi)
             case "ToolTip": return makeToolTipFrom(abi: abi)
             case "ToolTipService": return makeToolTipServiceFrom(abi: abi)
@@ -2183,21 +3538,37 @@ public class __MakeFromAbi: MakeFromAbi {
             case "TreeViewList": return makeTreeViewListFrom(abi: abi)
             case "TreeViewNode": return makeTreeViewNodeFrom(abi: abi)
             case "TreeViewSelectionChangedEventArgs": return makeTreeViewSelectionChangedEventArgsFrom(abi: abi)
+            case "TwoPaneView": return makeTwoPaneViewFrom(abi: abi)
             case "UIElementCollection": return makeUIElementCollectionFrom(abi: abi)
             case "UniformGridLayout": return makeUniformGridLayoutFrom(abi: abi)
             case "UserControl": return makeUserControlFrom(abi: abi)
+            case "VariableSizedWrapGrid": return makeVariableSizedWrapGridFrom(abi: abi)
+            case "Viewbox": return makeViewboxFrom(abi: abi)
             case "VirtualizingLayout": return makeVirtualizingLayoutFrom(abi: abi)
             case "VirtualizingLayoutContext": return makeVirtualizingLayoutContextFrom(abi: abi)
+            case "VirtualizingPanel": return makeVirtualizingPanelFrom(abi: abi)
+            case "VirtualizingStackPanel": return makeVirtualizingStackPanelFrom(abi: abi)
+            case "WebView2": return makeWebView2From(abi: abi)
+            case "WrapGrid": return makeWrapGridFrom(abi: abi)
             case "XamlControlsResources": return makeXamlControlsResourcesFrom(abi: abi)
+            case "AppBarButtonTemplateSettings": return makeAppBarButtonTemplateSettingsFrom(abi: abi)
             case "AppBarTemplateSettings": return makeAppBarTemplateSettingsFrom(abi: abi)
+            case "AppBarToggleButtonTemplateSettings": return makeAppBarToggleButtonTemplateSettingsFrom(abi: abi)
             case "ButtonBase": return makeButtonBaseFrom(abi: abi)
+            case "CalendarViewTemplateSettings": return makeCalendarViewTemplateSettingsFrom(abi: abi)
             case "ComboBoxTemplateSettings": return makeComboBoxTemplateSettingsFrom(abi: abi)
+            case "CommandBarTemplateSettings": return makeCommandBarTemplateSettingsFrom(abi: abi)
             case "FlyoutBase": return makeFlyoutBaseFrom(abi: abi)
             case "FlyoutBaseClosingEventArgs": return makeFlyoutBaseClosingEventArgsFrom(abi: abi)
             case "FlyoutShowOptions": return makeFlyoutShowOptionsFrom(abi: abi)
+            case "GridViewItemTemplateSettings": return makeGridViewItemTemplateSettingsFrom(abi: abi)
             case "ItemsChangedEventArgs": return makeItemsChangedEventArgsFrom(abi: abi)
+            case "ListViewItemPresenter": return makeListViewItemPresenterFrom(abi: abi)
             case "ListViewItemTemplateSettings": return makeListViewItemTemplateSettingsFrom(abi: abi)
             case "MenuFlyoutItemTemplateSettings": return makeMenuFlyoutItemTemplateSettingsFrom(abi: abi)
+            case "MenuFlyoutPresenterTemplateSettings": return makeMenuFlyoutPresenterTemplateSettingsFrom(abi: abi)
+            case "OrientedVirtualizingPanel": return makeOrientedVirtualizingPanelFrom(abi: abi)
+            case "PickerFlyoutBase": return makePickerFlyoutBaseFrom(abi: abi)
             case "Popup": return makePopupFrom(abi: abi)
             case "RangeBase": return makeRangeBaseFrom(abi: abi)
             case "RangeBaseValueChangedEventArgs": return makeRangeBaseValueChangedEventArgsFrom(abi: abi)
@@ -2219,9 +3590,15 @@ public class __MakeFromAbi: MakeFromAbi {
             case "BindingBase": return makeBindingBaseFrom(abi: abi)
             case "BindingExpression": return makeBindingExpressionFrom(abi: abi)
             case "BindingExpressionBase": return makeBindingExpressionBaseFrom(abi: abi)
+            case "BindingOperations": return makeBindingOperationsFrom(abi: abi)
+            case "CollectionViewSource": return makeCollectionViewSourceFrom(abi: abi)
+            case "CurrentChangingEventArgs": return makeCurrentChangingEventArgsFrom(abi: abi)
+            case "DataErrorsChangedEventArgs": return makeDataErrorsChangedEventArgsFrom(abi: abi)
             case "ItemIndexRange": return makeItemIndexRangeFrom(abi: abi)
             case "PropertyChangedEventArgs": return makePropertyChangedEventArgsFrom(abi: abi)
             case "RelativeSource": return makeRelativeSourceFrom(abi: abi)
+            case "Block": return makeBlockFrom(abi: abi)
+            case "BlockCollection": return makeBlockCollectionFrom(abi: abi)
             case "Hyperlink": return makeHyperlinkFrom(abi: abi)
             case "HyperlinkClickEventArgs": return makeHyperlinkClickEventArgsFrom(abi: abi)
             case "Inline": return makeInlineFrom(abi: abi)
@@ -2277,20 +3654,35 @@ public class __MakeFromAbi: MakeFromAbi {
             case "XamlBindingHelper": return makeXamlBindingHelperFrom(abi: abi)
             case "XamlReader": return makeXamlReaderFrom(abi: abi)
             case "AcrylicBrush": return makeAcrylicBrushFrom(abi: abi)
+            case "ArcSegment": return makeArcSegmentFrom(abi: abi)
+            case "BezierSegment": return makeBezierSegmentFrom(abi: abi)
+            case "BitmapCache": return makeBitmapCacheFrom(abi: abi)
             case "Brush": return makeBrushFrom(abi: abi)
+            case "BrushCollection": return makeBrushCollectionFrom(abi: abi)
             case "CacheMode": return makeCacheModeFrom(abi: abi)
             case "CompositeTransform": return makeCompositeTransformFrom(abi: abi)
             case "CompositionTarget": return makeCompositionTargetFrom(abi: abi)
+            case "DesktopAcrylicBackdrop": return makeDesktopAcrylicBackdropFrom(abi: abi)
             case "DoubleCollection": return makeDoubleCollectionFrom(abi: abi)
+            case "EllipseGeometry": return makeEllipseGeometryFrom(abi: abi)
             case "FontFamily": return makeFontFamilyFrom(abi: abi)
             case "GeneralTransform": return makeGeneralTransformFrom(abi: abi)
             case "Geometry": return makeGeometryFrom(abi: abi)
+            case "GeometryCollection": return makeGeometryCollectionFrom(abi: abi)
+            case "GeometryGroup": return makeGeometryGroupFrom(abi: abi)
             case "GradientBrush": return makeGradientBrushFrom(abi: abi)
             case "GradientStop": return makeGradientStopFrom(abi: abi)
             case "GradientStopCollection": return makeGradientStopCollectionFrom(abi: abi)
+            case "ImageBrush": return makeImageBrushFrom(abi: abi)
             case "ImageSource": return makeImageSourceFrom(abi: abi)
+            case "LineGeometry": return makeLineGeometryFrom(abi: abi)
             case "LineSegment": return makeLineSegmentFrom(abi: abi)
             case "LinearGradientBrush": return makeLinearGradientBrushFrom(abi: abi)
+            case "LoadedImageSourceLoadCompletedEventArgs": return makeLoadedImageSourceLoadCompletedEventArgsFrom(abi: abi)
+            case "LoadedImageSurface": return makeLoadedImageSurfaceFrom(abi: abi)
+            case "Matrix3DProjection": return makeMatrix3DProjectionFrom(abi: abi)
+            case "MatrixHelper": return makeMatrixHelperFrom(abi: abi)
+            case "MatrixTransform": return makeMatrixTransformFrom(abi: abi)
             case "MediaTransportControlsThumbnailRequestedEventArgs": return makeMediaTransportControlsThumbnailRequestedEventArgsFrom(abi: abi)
             case "MicaBackdrop": return makeMicaBackdropFrom(abi: abi)
             case "PathFigure": return makePathFigureFrom(abi: abi)
@@ -2298,16 +3690,28 @@ public class __MakeFromAbi: MakeFromAbi {
             case "PathGeometry": return makePathGeometryFrom(abi: abi)
             case "PathSegment": return makePathSegmentFrom(abi: abi)
             case "PathSegmentCollection": return makePathSegmentCollectionFrom(abi: abi)
+            case "PlaneProjection": return makePlaneProjectionFrom(abi: abi)
             case "PointCollection": return makePointCollectionFrom(abi: abi)
             case "PolyBezierSegment": return makePolyBezierSegmentFrom(abi: abi)
+            case "PolyLineSegment": return makePolyLineSegmentFrom(abi: abi)
+            case "PolyQuadraticBezierSegment": return makePolyQuadraticBezierSegmentFrom(abi: abi)
             case "Projection": return makeProjectionFrom(abi: abi)
+            case "QuadraticBezierSegment": return makeQuadraticBezierSegmentFrom(abi: abi)
+            case "RadialGradientBrush": return makeRadialGradientBrushFrom(abi: abi)
             case "RectangleGeometry": return makeRectangleGeometryFrom(abi: abi)
             case "RenderedEventArgs": return makeRenderedEventArgsFrom(abi: abi)
+            case "RenderingEventArgs": return makeRenderingEventArgsFrom(abi: abi)
+            case "RotateTransform": return makeRotateTransformFrom(abi: abi)
+            case "ScaleTransform": return makeScaleTransformFrom(abi: abi)
             case "Shadow": return makeShadowFrom(abi: abi)
+            case "SkewTransform": return makeSkewTransformFrom(abi: abi)
             case "SolidColorBrush": return makeSolidColorBrushFrom(abi: abi)
             case "SystemBackdrop": return makeSystemBackdropFrom(abi: abi)
             case "ThemeShadow": return makeThemeShadowFrom(abi: abi)
+            case "TileBrush": return makeTileBrushFrom(abi: abi)
             case "Transform": return makeTransformFrom(abi: abi)
+            case "TransformCollection": return makeTransformCollectionFrom(abi: abi)
+            case "TransformGroup": return makeTransformGroupFrom(abi: abi)
             case "TranslateTransform": return makeTranslateTransformFrom(abi: abi)
             case "VisualTreeHelper": return makeVisualTreeHelperFrom(abi: abi)
             case "XamlCompositionBrushBase": return makeXamlCompositionBrushBaseFrom(abi: abi)
@@ -2417,8 +3821,16 @@ public class __MakeFromAbi: MakeFromAbi {
             case "NavigationEventArgs": return makeNavigationEventArgsFrom(abi: abi)
             case "NavigationFailedEventArgs": return makeNavigationFailedEventArgsFrom(abi: abi)
             case "PageStackEntry": return makePageStackEntryFrom(abi: abi)
+            case "AddPagesEventArgs": return makeAddPagesEventArgsFrom(abi: abi)
+            case "GetPreviewPageEventArgs": return makeGetPreviewPageEventArgsFrom(abi: abi)
+            case "PaginateEventArgs": return makePaginateEventArgsFrom(abi: abi)
+            case "PrintDocument": return makePrintDocumentFrom(abi: abi)
+            case "CustomXamlResourceLoader": return makeCustomXamlResourceLoaderFrom(abi: abi)
             case "Ellipse": return makeEllipseFrom(abi: abi)
+            case "Line": return makeLineFrom(abi: abi)
             case "Path": return makePathFrom(abi: abi)
+            case "Polygon": return makePolygonFrom(abi: abi)
+            case "Polyline": return makePolylineFrom(abi: abi)
             case "Rectangle": return makeRectangleFrom(abi: abi)
             case "Shape": return makeShapeFrom(abi: abi)
             case "XamlControlsXamlMetaDataProvider": return makeXamlControlsXamlMetaDataProviderFrom(abi: abi)

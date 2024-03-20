@@ -4,6 +4,8 @@ import Foundation
 @_spi(WinRTInternal) @_spi(WinRTImplements) import WindowsFoundation
 import CWinRT
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.globalization.dayofweek)
+public typealias DayOfWeek = __x_ABI_CWindows_CGlobalization_CDayOfWeek
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.globalization.languagelayoutdirection)
 public typealias LanguageLayoutDirection = __x_ABI_CWindows_CGlobalization_CLanguageLayoutDirection
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.globalization.language)
@@ -90,6 +92,31 @@ public final class Language : WinRTClass {
         _ILanguage2 = nil
     }
 }
+
+extension UWP.DayOfWeek {
+    public static var sunday : UWP.DayOfWeek {
+        __x_ABI_CWindows_CGlobalization_CDayOfWeek_Sunday
+    }
+    public static var monday : UWP.DayOfWeek {
+        __x_ABI_CWindows_CGlobalization_CDayOfWeek_Monday
+    }
+    public static var tuesday : UWP.DayOfWeek {
+        __x_ABI_CWindows_CGlobalization_CDayOfWeek_Tuesday
+    }
+    public static var wednesday : UWP.DayOfWeek {
+        __x_ABI_CWindows_CGlobalization_CDayOfWeek_Wednesday
+    }
+    public static var thursday : UWP.DayOfWeek {
+        __x_ABI_CWindows_CGlobalization_CDayOfWeek_Thursday
+    }
+    public static var friday : UWP.DayOfWeek {
+        __x_ABI_CWindows_CGlobalization_CDayOfWeek_Friday
+    }
+    public static var saturday : UWP.DayOfWeek {
+        __x_ABI_CWindows_CGlobalization_CDayOfWeek_Saturday
+    }
+}
+extension UWP.DayOfWeek: @retroactive Hashable, @retroactive Codable {}
 
 extension UWP.LanguageLayoutDirection {
     public static var ltr : UWP.LanguageLayoutDirection {

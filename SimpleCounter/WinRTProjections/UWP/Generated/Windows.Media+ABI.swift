@@ -24,6 +24,10 @@ private var IID___x_ABI_CWindows_CMedia_CIImageDisplayProperties: WindowsFoundat
     .init(Data1: 0xCD0BC7EF, Data2: 0x54E7, Data3: 0x411F, Data4: ( 0x99,0x33,0xF0,0xE9,0x8B,0x0A,0x96,0xD2 ))// CD0BC7EF-54E7-411F-9933-F0E98B0A96D2
 }
 
+private var IID___x_ABI_CWindows_CMedia_CIMediaExtension: WindowsFoundation.IID {
+    .init(Data1: 0x07915118, Data2: 0x45DF, Data3: 0x442B, Data4: ( 0x8A,0x3F,0xF7,0x82,0x6A,0x63,0x70,0xAB ))// 07915118-45DF-442B-8A3F-F7826A6370AB
+}
+
 private var IID___x_ABI_CWindows_CMedia_CIMediaFrame: WindowsFoundation.IID {
     .init(Data1: 0xBFB52F8C, Data2: 0x5943, Data3: 0x47D8, Data4: ( 0x8E,0x10,0x05,0x30,0x8A,0xA5,0xFB,0xD0 ))// BFB52F8C-5943-47D8-8E10-05308AA5FBD0
 }
@@ -204,6 +208,58 @@ public enum __ABI_Windows_Media {
 
     }
 
+    public class IMediaExtension: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CIMediaExtension }
+
+        open func SetPropertiesImpl(_ configuration: WindowsFoundation.AnyIPropertySet?) throws {
+            let configurationWrapper = __ABI_Windows_Foundation_Collections.IPropertySetWrapper(configuration)
+            let _configuration = try! configurationWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CIMediaExtension.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.SetProperties(pThis, _configuration))
+            }
+        }
+
+    }
+
+    internal static var IMediaExtensionVTable: __x_ABI_CWindows_CMedia_CIMediaExtensionVtbl = .init(
+        QueryInterface: { IMediaExtensionWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IMediaExtensionWrapper.addRef($0) },
+        Release: { IMediaExtensionWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 3).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_Media.IMediaExtensionWrapper.IID
+            $1!.pointee = 3
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.Media.IMediaExtension").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        SetProperties: {
+            do {
+                guard let __unwrapped__instance = IMediaExtensionWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let configuration: WindowsFoundation.AnyIPropertySet? = __ABI_Windows_Foundation_Collections.IPropertySetWrapper.unwrapFrom(abi: ComPtr($1))
+                try __unwrapped__instance.setProperties(configuration)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        }
+    )
+
+    public typealias IMediaExtensionWrapper = InterfaceWrapperBase<__IMPL_Windows_Media.IMediaExtensionBridge>
     public class IMediaFrame: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CIMediaFrame }
 

@@ -4,8 +4,148 @@ import Foundation
 @_spi(WinRTInternal) @_spi(WinRTImplements) import WindowsFoundation
 import CWinRT
 
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIAccessibilitySettings: WindowsFoundation.IID {
+    .init(Data1: 0xFE0E8147, Data2: 0xC4C0, Data3: 0x4562, Data4: ( 0xB9,0x62,0x13,0x27,0xB5,0x2A,0xD5,0xB9 ))// FE0E8147-C4C0-4562-B962-1327B52AD5B9
+}
+
 private var IID___x_ABI_CWindows_CUI_CViewManagement_CIActivationViewSwitcher: WindowsFoundation.IID {
     .init(Data1: 0xDCA71BB6, Data2: 0x7350, Data3: 0x492B, Data4: ( 0xAA,0xC7,0xC8,0xA1,0x3D,0x72,0x24,0xAD ))// DCA71BB6-7350-492B-AAC7-C8A13D7224AD
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationView: WindowsFoundation.IID {
+    .init(Data1: 0xD222D519, Data2: 0x4361, Data3: 0x451E, Data4: ( 0x96,0xC4,0x60,0xF4,0xF9,0x74,0x2D,0xB0 ))// D222D519-4361-451E-96C4-60F4F9742DB0
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationView2: WindowsFoundation.IID {
+    .init(Data1: 0xE876B196, Data2: 0xA545, Data3: 0x40DC, Data4: ( 0xB5,0x94,0x45,0x0C,0xBA,0x68,0xCC,0x00 ))// E876B196-A545-40DC-B594-450CBA68CC00
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationView3: WindowsFoundation.IID {
+    .init(Data1: 0x903C9CE5, Data2: 0x793A, Data3: 0x4FDF, Data4: ( 0xA2,0xB2,0xAF,0x1A,0xC2,0x1E,0x31,0x08 ))// 903C9CE5-793A-4FDF-A2B2-AF1AC21E3108
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationView4: WindowsFoundation.IID {
+    .init(Data1: 0x15E5CBEC, Data2: 0x9E0F, Data3: 0x46B5, Data4: ( 0xBC,0x3F,0x9B,0xF6,0x53,0xE7,0x4B,0x5E ))// 15E5CBEC-9E0F-46B5-BC3F-9BF653E74B5E
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationView7: WindowsFoundation.IID {
+    .init(Data1: 0xA0369647, Data2: 0x5FAF, Data3: 0x5AA6, Data4: ( 0x9C,0x38,0xBE,0xFB,0xB1,0x2A,0x07,0x1E ))// A0369647-5FAF-5AA6-9C38-BEFBB12A071E
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationView9: WindowsFoundation.IID {
+    .init(Data1: 0x9C6516F9, Data2: 0x021A, Data3: 0x5F01, Data4: ( 0x93,0xE5,0x9B,0xDA,0xD2,0x64,0x75,0x74 ))// 9C6516F9-021A-5F01-93E5-9BDAD2647574
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewConsolidatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x514449EC, Data2: 0x7EA2, Data3: 0x4DE7, Data4: ( 0xA6,0xA6,0x7D,0xFB,0xAA,0xEB,0xB6,0xFB ))// 514449EC-7EA2-4DE7-A6A6-7DFBAAEBB6FB
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewConsolidatedEventArgs2: WindowsFoundation.IID {
+    .init(Data1: 0x1C199ECC, Data2: 0x6DC1, Data3: 0x40F4, Data4: ( 0xAF,0xEE,0x07,0xD9,0xEA,0x29,0x64,0x30 ))// 1C199ECC-6DC1-40F4-AFEE-07D9EA296430
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewFullscreenStatics: WindowsFoundation.IID {
+    .init(Data1: 0xBC792EBD, Data2: 0x64FE, Data3: 0x4B65, Data4: ( 0xA0,0xC0,0x90,0x1C,0xE2,0xB6,0x86,0x36 ))// BC792EBD-64FE-4B65-A0C0-901CE2B68636
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewInteropStatics: WindowsFoundation.IID {
+    .init(Data1: 0xC446FB5D, Data2: 0x4793, Data3: 0x4896, Data4: ( 0xA8,0xE2,0xBE,0x57,0xA8,0xBB,0x0F,0x50 ))// C446FB5D-4793-4896-A8E2-BE57A8BB0F50
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewScaling: WindowsFoundation.IID {
+    .init(Data1: 0x1D0DDC23, Data2: 0x23F3, Data3: 0x4B2D, Data4: ( 0x84,0xFE,0x74,0xBF,0x37,0xB4,0x8B,0x66 ))// 1D0DDC23-23F3-4B2D-84FE-74BF37B48B66
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewScalingStatics: WindowsFoundation.IID {
+    .init(Data1: 0xB08FECF0, Data2: 0xB946, Data3: 0x45C8, Data4: ( 0xA5,0xE3,0x71,0xF5,0xAA,0x78,0xF8,0x61 ))// B08FECF0-B946-45C8-A5E3-71F5AA78F861
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewStatics: WindowsFoundation.IID {
+    .init(Data1: 0x010A6306, Data2: 0xC433, Data3: 0x44E5, Data4: ( 0xA9,0xF2,0xBD,0x84,0xD4,0x03,0x0A,0x95 ))// 010A6306-C433-44E5-A9F2-BD84D4030A95
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewStatics2: WindowsFoundation.IID {
+    .init(Data1: 0xAF338AE5, Data2: 0xCF64, Data3: 0x423C, Data4: ( 0x85,0xE5,0xF3,0xE7,0x24,0x48,0xFB,0x23 ))// AF338AE5-CF64-423C-85E5-F3E72448FB23
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewStatics3: WindowsFoundation.IID {
+    .init(Data1: 0xA28D7594, Data2: 0x8C41, Data3: 0x4E13, Data4: ( 0x97,0x19,0x51,0x64,0x79,0x6F,0xE4,0xC7 ))// A28D7594-8C41-4E13-9719-5164796FE4C7
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewStatics4: WindowsFoundation.IID {
+    .init(Data1: 0x08FD8D33, Data2: 0x2611, Data3: 0x5336, Data4: ( 0xA3,0x15,0xD9,0x8E,0x63,0x66,0xC9,0xDB ))// 08FD8D33-2611-5336-A315-D98E6366C9DB
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewSwitcherStatics: WindowsFoundation.IID {
+    .init(Data1: 0x975F2F1E, Data2: 0xE656, Data3: 0x4C5E, Data4: ( 0xA0,0xA1,0x71,0x7C,0x6F,0xFA,0x7D,0x64 ))// 975F2F1E-E656-4C5E-A0A1-717C6FFA7D64
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewSwitcherStatics2: WindowsFoundation.IID {
+    .init(Data1: 0x60E995CD, Data2: 0x4FC2, Data3: 0x48C4, Data4: ( 0xB8,0xE3,0x39,0x5F,0x2B,0x9F,0x0F,0xC1 ))// 60E995CD-4FC2-48C4-B8E3-395F2B9F0FC1
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewSwitcherStatics3: WindowsFoundation.IID {
+    .init(Data1: 0x92059420, Data2: 0x80A7, Data3: 0x486D, Data4: ( 0xB2,0x1F,0xC7,0xA4,0xA2,0x42,0xA3,0x83 ))// 92059420-80A7-486D-B21F-C7A4A242A383
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTitleBar: WindowsFoundation.IID {
+    .init(Data1: 0x00924AC0, Data2: 0x932B, Data3: 0x4A6B, Data4: ( 0x9C,0x4B,0xDC,0x38,0xC8,0x24,0x78,0xCE ))// 00924AC0-932B-4A6B-9C4B-DC38C82478CE
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTransferContext: WindowsFoundation.IID {
+    .init(Data1: 0x8574BC63, Data2: 0x3C17, Data3: 0x408E, Data4: ( 0x94,0x08,0x8A,0x1A,0x9E,0xA8,0x1B,0xFA ))// 8574BC63-3C17-408E-9408-8A1A9EA81BFA
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTransferContextStatics: WindowsFoundation.IID {
+    .init(Data1: 0x15A89D92, Data2: 0xDD79, Data3: 0x4B0B, Data4: ( 0xBC,0x47,0xD5,0xF1,0x95,0xF1,0x46,0x61 ))// 15A89D92-DD79-4B0B-BC47-D5F195F14661
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewWithContext: WindowsFoundation.IID {
+    .init(Data1: 0xBD55D512, Data2: 0x9DC1, Data3: 0x44FC, Data4: ( 0x85,0x01,0x66,0x66,0x25,0xDF,0x60,0xDC ))// BD55D512-9DC1-44FC-8501-666625DF60DC
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIInputPane: WindowsFoundation.IID {
+    .init(Data1: 0x640ADA70, Data2: 0x06F3, Data3: 0x4C87, Data4: ( 0xA6,0x78,0x98,0x29,0xC9,0x12,0x7C,0x28 ))// 640ADA70-06F3-4C87-A678-9829C9127C28
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIInputPane2: WindowsFoundation.IID {
+    .init(Data1: 0x8A6B3F26, Data2: 0x7090, Data3: 0x4793, Data4: ( 0x94,0x4C,0xC3,0xF2,0xCD,0xE2,0x62,0x76 ))// 8A6B3F26-7090-4793-944C-C3F2CDE26276
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIInputPaneControl: WindowsFoundation.IID {
+    .init(Data1: 0x088BB24F, Data2: 0x962F, Data3: 0x489D, Data4: ( 0xAA,0x6E,0xC6,0xBE,0x1A,0x0A,0x6E,0x52 ))// 088BB24F-962F-489D-AA6E-C6BE1A0A6E52
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIInputPaneStatics: WindowsFoundation.IID {
+    .init(Data1: 0x95F4AF3A, Data2: 0xEF47, Data3: 0x424A, Data4: ( 0x97,0x41,0xFD,0x28,0x15,0xEB,0xA2,0xBD ))// 95F4AF3A-EF47-424A-9741-FD2815EBA2BD
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIInputPaneStatics2: WindowsFoundation.IID {
+    .init(Data1: 0x1B63529B, Data2: 0xD9EC, Data3: 0x4531, Data4: ( 0x84,0x45,0x71,0xBA,0xB9,0xFB,0x82,0x8E ))// 1B63529B-D9EC-4531-8445-71BAB9FB828E
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIInputPaneVisibilityEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0xD243E016, Data2: 0xD907, Data3: 0x4FCC, Data4: ( 0xBB,0x8D,0xF7,0x7B,0xAA,0x50,0x28,0xF1 ))// D243E016-D907-4FCC-BB8D-F77BAA5028F1
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIProjectionManagerStatics: WindowsFoundation.IID {
+    .init(Data1: 0xB65F913D, Data2: 0xE2F0, Data3: 0x4FFD, Data4: ( 0xBA,0x95,0x34,0x24,0x16,0x47,0xE4,0x5C ))// B65F913D-E2F0-4FFD-BA95-34241647E45C
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIProjectionManagerStatics2: WindowsFoundation.IID {
+    .init(Data1: 0xF33D2F43, Data2: 0x2749, Data3: 0x4CDE, Data4: ( 0xB9,0x77,0xC0,0xC4,0x1E,0x74,0x15,0xD1 ))// F33D2F43-2749-4CDE-B977-C0C41E7415D1
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIStatusBar: WindowsFoundation.IID {
+    .init(Data1: 0x0FFCC5BF, Data2: 0x98D0, Data3: 0x4864, Data4: ( 0xB1,0xE8,0xB3,0xF4,0x02,0x0B,0xE8,0xB4 ))// 0FFCC5BF-98D0-4864-B1E8-B3F4020BE8B4
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIStatusBarProgressIndicator: WindowsFoundation.IID {
+    .init(Data1: 0x76CB2670, Data2: 0xA3D7, Data3: 0x49CF, Data4: ( 0x82,0x00,0x4F,0x3E,0xED,0xCA,0x27,0xBB ))// 76CB2670-A3D7-49CF-8200-4F3EEDCA27BB
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIStatusBarStatics: WindowsFoundation.IID {
+    .init(Data1: 0x8B463FDF, Data2: 0x422F, Data3: 0x4561, Data4: ( 0x88,0x06,0xFB,0x12,0x89,0xCA,0xDF,0xB7 ))// 8B463FDF-422F-4561-8806-FB1289CADFB7
 }
 
 private var IID___x_ABI_CWindows_CUI_CViewManagement_CIUISettings: WindowsFoundation.IID {
@@ -32,7 +172,60 @@ private var IID___x_ABI_CWindows_CUI_CViewManagement_CIUISettingsAutoHideScrollB
     .init(Data1: 0x87AFD4B2, Data2: 0x9146, Data3: 0x5F02, Data4: ( 0x8F,0x6B,0x06,0xD4,0x54,0x17,0x4C,0x0F ))// 87AFD4B2-9146-5F02-8F6B-06D454174C0F
 }
 
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIUIViewSettings: WindowsFoundation.IID {
+    .init(Data1: 0xC63657F6, Data2: 0x8850, Data3: 0x470D, Data4: ( 0x88,0xF8,0x45,0x5E,0x16,0xEA,0x2C,0x26 ))// C63657F6-8850-470D-88F8-455E16EA2C26
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIUIViewSettingsStatics: WindowsFoundation.IID {
+    .init(Data1: 0x595C97A5, Data2: 0xF8F6, Data3: 0x41CF, Data4: ( 0xB0,0xFB,0xAA,0xCD,0xB8,0x1F,0xD5,0xF6 ))// 595C97A5-F8F6-41CF-B0FB-AACDB81FD5F6
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIViewModePreferences: WindowsFoundation.IID {
+    .init(Data1: 0x878FCD3A, Data2: 0x0B99, Data3: 0x42C9, Data4: ( 0x84,0xD0,0xD3,0xF1,0xD4,0x03,0x55,0x4B ))// 878FCD3A-0B99-42C9-84D0-D3F1D403554B
+}
+
+private var IID___x_ABI_CWindows_CUI_CViewManagement_CIViewModePreferencesStatics: WindowsFoundation.IID {
+    .init(Data1: 0x69B60A65, Data2: 0x5DE5, Data3: 0x40D8, Data4: ( 0x83,0x06,0x38,0x33,0xDF,0x7A,0x22,0x74 ))// 69B60A65-5DE5-40D8-8306-3833DF7A2274
+}
+
 public enum __ABI_Windows_UI_ViewManagement {
+    public class IAccessibilitySettings: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIAccessibilitySettings }
+
+        internal func get_HighContrastImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIAccessibilitySettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_HighContrast(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_HighContrastSchemeImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIAccessibilitySettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_HighContrastScheme(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func add_HighContrastChangedImpl(_ handler: TypedEventHandler<UWP.AccessibilitySettings?, Any?>?) throws -> EventRegistrationToken {
+            var cookie: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CUI__CViewManagement__CAccessibilitySettings_IInspectableWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIAccessibilitySettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_HighContrastChanged(pThis, _handler, &cookie))
+            }
+            return cookie
+        }
+
+        internal func remove_HighContrastChangedImpl(_ cookie: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIAccessibilitySettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_HighContrastChanged(pThis, cookie))
+            }
+        }
+
+    }
+
     public class IActivationViewSwitcher: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIActivationViewSwitcher }
 
@@ -60,6 +253,1292 @@ public enum __ABI_Windows_UI_ViewManagement {
                 try CHECKED(pThis.pointee.lpVtbl.pointee.IsViewPresentedOnActivationVirtualDesktop(pThis, viewId, &value))
             }
             return .init(from: value)
+        }
+
+    }
+
+    public class IApplicationView: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationView }
+
+        internal func get_OrientationImpl() throws -> UWP.ApplicationViewOrientation {
+            var value: __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewOrientation = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Orientation(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_AdjacentToLeftDisplayEdgeImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AdjacentToLeftDisplayEdge(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_AdjacentToRightDisplayEdgeImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AdjacentToRightDisplayEdge(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_IsFullScreenImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsFullScreen(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_IsOnLockScreenImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsOnLockScreen(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_IsScreenCaptureEnabledImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsScreenCaptureEnabled(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_IsScreenCaptureEnabledImpl(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_IsScreenCaptureEnabled(pThis, .init(from: value)))
+            }
+        }
+
+        internal func put_TitleImpl(_ value: String) throws {
+            let _value = try! HString(value)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Title(pThis, _value.get()))
+            }
+        }
+
+        internal func get_TitleImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Title(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_IdImpl() throws -> Int32 {
+            var value: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Id(pThis, &value))
+            }
+            return value
+        }
+
+        internal func add_ConsolidatedImpl(_ handler: TypedEventHandler<UWP.ApplicationView?, UWP.ApplicationViewConsolidatedEventArgs?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CUI__CViewManagement__CApplicationView___x_ABI_CWindows__CUI__CViewManagement__CApplicationViewConsolidatedEventArgsWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_Consolidated(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_ConsolidatedImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_Consolidated(pThis, token))
+            }
+        }
+
+    }
+
+    public class IApplicationView2: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationView2 }
+
+        internal func get_SuppressSystemOverlaysImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_SuppressSystemOverlays(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_SuppressSystemOverlaysImpl(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SuppressSystemOverlays(pThis, .init(from: value)))
+            }
+        }
+
+        internal func get_VisibleBoundsImpl() throws -> WindowsFoundation.Rect {
+            var value: __x_ABI_CWindows_CFoundation_CRect = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VisibleBounds(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func add_VisibleBoundsChangedImpl(_ handler: TypedEventHandler<UWP.ApplicationView?, Any?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CUI__CViewManagement__CApplicationView_IInspectableWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_VisibleBoundsChanged(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_VisibleBoundsChangedImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_VisibleBoundsChanged(pThis, token))
+            }
+        }
+
+        internal func SetDesiredBoundsModeImpl(_ boundsMode: UWP.ApplicationViewBoundsMode) throws -> Bool {
+            var success: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.SetDesiredBoundsMode(pThis, boundsMode, &success))
+            }
+            return .init(from: success)
+        }
+
+        internal func get_DesiredBoundsModeImpl() throws -> UWP.ApplicationViewBoundsMode {
+            var value: __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewBoundsMode = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DesiredBoundsMode(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
+    public class IApplicationView3: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationView3 }
+
+        internal func get_TitleBarImpl() throws -> UWP.ApplicationViewTitleBar? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView3.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_TitleBar(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_FullScreenSystemOverlayModeImpl() throws -> UWP.FullScreenSystemOverlayMode {
+            var value: __x_ABI_CWindows_CUI_CViewManagement_CFullScreenSystemOverlayMode = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView3.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_FullScreenSystemOverlayMode(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_FullScreenSystemOverlayModeImpl(_ value: UWP.FullScreenSystemOverlayMode) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView3.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_FullScreenSystemOverlayMode(pThis, value))
+            }
+        }
+
+        internal func get_IsFullScreenModeImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView3.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsFullScreenMode(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func TryEnterFullScreenModeImpl() throws -> Bool {
+            var success: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView3.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.TryEnterFullScreenMode(pThis, &success))
+            }
+            return .init(from: success)
+        }
+
+        internal func ExitFullScreenModeImpl() throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView3.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.ExitFullScreenMode(pThis))
+            }
+        }
+
+        internal func ShowStandardSystemOverlaysImpl() throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView3.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.ShowStandardSystemOverlays(pThis))
+            }
+        }
+
+        internal func TryResizeViewImpl(_ value: WindowsFoundation.Size) throws -> Bool {
+            var success: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView3.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.TryResizeView(pThis, .from(swift: value), &success))
+            }
+            return .init(from: success)
+        }
+
+        internal func SetPreferredMinSizeImpl(_ minSize: WindowsFoundation.Size) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView3.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.SetPreferredMinSize(pThis, .from(swift: minSize)))
+            }
+        }
+
+    }
+
+    public class IApplicationView4: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationView4 }
+
+        internal func get_ViewModeImpl() throws -> UWP.ApplicationViewMode {
+            var value: __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewMode = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView4.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ViewMode(pThis, &value))
+            }
+            return value
+        }
+
+        internal func IsViewModeSupportedImpl(_ viewMode: UWP.ApplicationViewMode) throws -> Bool {
+            var isViewModeSupported: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView4.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.IsViewModeSupported(pThis, viewMode, &isViewModeSupported))
+            }
+            return .init(from: isViewModeSupported)
+        }
+
+        internal func TryEnterViewModeAsyncImpl(_ viewMode: UWP.ApplicationViewMode) throws -> WindowsFoundation.AnyIAsyncOperation<Bool>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView4.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.TryEnterViewModeAsync(pThis, viewMode, &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1_booleanWrapper.unwrapFrom(abi: operation)
+        }
+
+        internal func TryEnterViewModeWithPreferencesAsyncImpl(_ viewMode: UWP.ApplicationViewMode, _ viewModePreferences: UWP.ViewModePreferences?) throws -> WindowsFoundation.AnyIAsyncOperation<Bool>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView4.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.TryEnterViewModeWithPreferencesAsync(pThis, viewMode, RawPointer(viewModePreferences), &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1_booleanWrapper.unwrapFrom(abi: operation)
+        }
+
+        internal func TryConsolidateAsyncImpl() throws -> WindowsFoundation.AnyIAsyncOperation<Bool>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView4.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.TryConsolidateAsync(pThis, &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1_booleanWrapper.unwrapFrom(abi: operation)
+        }
+
+    }
+
+    public class IApplicationView7: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationView7 }
+
+        internal func get_PersistedStateIdImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView7.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_PersistedStateId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_PersistedStateIdImpl(_ value: String) throws {
+            let _value = try! HString(value)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView7.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_PersistedStateId(pThis, _value.get()))
+            }
+        }
+
+    }
+
+    public class IApplicationView9: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationView9 }
+
+        internal func get_WindowingEnvironmentImpl() throws -> UWP.WindowingEnvironment? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView9.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_WindowingEnvironment(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func GetDisplayRegionsImpl() throws -> WindowsFoundation.AnyIVectorView<UWP.DisplayRegion?>? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView9.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetDisplayRegions(pThis, &resultAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIVectorView_1___x_ABI_CWindows__CUI__CWindowManagement__CDisplayRegionWrapper.unwrapFrom(abi: result)
+        }
+
+    }
+
+    public class IApplicationViewConsolidatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewConsolidatedEventArgs }
+
+        internal func get_IsUserInitiatedImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewConsolidatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsUserInitiated(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    public class IApplicationViewConsolidatedEventArgs2: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewConsolidatedEventArgs2 }
+
+        internal func get_IsAppInitiatedImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewConsolidatedEventArgs2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsAppInitiated(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    public class IApplicationViewFullscreenStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewFullscreenStatics }
+
+        internal func TryUnsnapToFullscreenImpl() throws -> Bool {
+            var success: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewFullscreenStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.TryUnsnapToFullscreen(pThis, &success))
+            }
+            return .init(from: success)
+        }
+
+    }
+
+    public class IApplicationViewInteropStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewInteropStatics }
+
+        internal func GetApplicationViewIdForWindowImpl(_ window: UWP.AnyICoreWindow?) throws -> Int32 {
+            var id: INT32 = 0
+            let windowWrapper = __ABI_Windows_UI_Core.ICoreWindowWrapper(window)
+            let _window = try! windowWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewInteropStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.GetApplicationViewIdForWindow(pThis, _window, &id))
+            }
+            return id
+        }
+
+    }
+
+    public class IApplicationViewScaling: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewScaling }
+
+    }
+
+    public class IApplicationViewScalingStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewScalingStatics }
+
+        internal func get_DisableLayoutScalingImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewScalingStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DisableLayoutScaling(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func TrySetDisableLayoutScalingImpl(_ disableLayoutScaling: Bool) throws -> Bool {
+            var success: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewScalingStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.TrySetDisableLayoutScaling(pThis, .init(from: disableLayoutScaling), &success))
+            }
+            return .init(from: success)
+        }
+
+    }
+
+    public class IApplicationViewStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewStatics }
+
+        internal func get_ValueImpl() throws -> UWP.ApplicationViewState {
+            var value: __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewState = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Value(pThis, &value))
+            }
+            return value
+        }
+
+        internal func TryUnsnapImpl() throws -> Bool {
+            var success: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.TryUnsnap(pThis, &success))
+            }
+            return .init(from: success)
+        }
+
+    }
+
+    public class IApplicationViewStatics2: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewStatics2 }
+
+        internal func GetForCurrentViewImpl() throws -> UWP.ApplicationView? {
+            let (current) = try ComPtrs.initialize { currentAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewStatics2.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetForCurrentView(pThis, &currentAbi))
+                }
+            }
+            return .from(abi: current)
+        }
+
+        internal func get_TerminateAppOnFinalViewCloseImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewStatics2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_TerminateAppOnFinalViewClose(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_TerminateAppOnFinalViewCloseImpl(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewStatics2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_TerminateAppOnFinalViewClose(pThis, .init(from: value)))
+            }
+        }
+
+    }
+
+    public class IApplicationViewStatics3: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewStatics3 }
+
+        internal func get_PreferredLaunchWindowingModeImpl() throws -> UWP.ApplicationViewWindowingMode {
+            var value: __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewWindowingMode = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewStatics3.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_PreferredLaunchWindowingMode(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_PreferredLaunchWindowingModeImpl(_ value: UWP.ApplicationViewWindowingMode) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewStatics3.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_PreferredLaunchWindowingMode(pThis, value))
+            }
+        }
+
+        internal func get_PreferredLaunchViewSizeImpl() throws -> WindowsFoundation.Size {
+            var value: __x_ABI_CWindows_CFoundation_CSize = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewStatics3.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_PreferredLaunchViewSize(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_PreferredLaunchViewSizeImpl(_ value: WindowsFoundation.Size) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewStatics3.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_PreferredLaunchViewSize(pThis, .from(swift: value)))
+            }
+        }
+
+    }
+
+    public class IApplicationViewStatics4: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewStatics4 }
+
+        internal func ClearAllPersistedStateImpl() throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewStatics4.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.ClearAllPersistedState(pThis))
+            }
+        }
+
+        internal func ClearPersistedStateImpl(_ key: String) throws {
+            let _key = try! HString(key)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewStatics4.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.ClearPersistedState(pThis, _key.get()))
+            }
+        }
+
+    }
+
+    public class IApplicationViewSwitcherStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewSwitcherStatics }
+
+        internal func DisableShowingMainViewOnActivationImpl() throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewSwitcherStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.DisableShowingMainViewOnActivation(pThis))
+            }
+        }
+
+        internal func TryShowAsStandaloneAsyncImpl(_ viewId: Int32) throws -> WindowsFoundation.AnyIAsyncOperation<Bool>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewSwitcherStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.TryShowAsStandaloneAsync(pThis, viewId, &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1_booleanWrapper.unwrapFrom(abi: operation)
+        }
+
+        internal func TryShowAsStandaloneWithSizePreferenceAsyncImpl(_ viewId: Int32, _ sizePreference: UWP.ViewSizePreference) throws -> WindowsFoundation.AnyIAsyncOperation<Bool>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewSwitcherStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.TryShowAsStandaloneWithSizePreferenceAsync(pThis, viewId, sizePreference, &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1_booleanWrapper.unwrapFrom(abi: operation)
+        }
+
+        internal func TryShowAsStandaloneWithAnchorViewAndSizePreferenceAsyncImpl(_ viewId: Int32, _ sizePreference: UWP.ViewSizePreference, _ anchorViewId: Int32, _ anchorSizePreference: UWP.ViewSizePreference) throws -> WindowsFoundation.AnyIAsyncOperation<Bool>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewSwitcherStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.TryShowAsStandaloneWithAnchorViewAndSizePreferenceAsync(pThis, viewId, sizePreference, anchorViewId, anchorSizePreference, &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1_booleanWrapper.unwrapFrom(abi: operation)
+        }
+
+        internal func SwitchAsyncImpl(_ viewId: Int32) throws -> WindowsFoundation.AnyIAsyncAction? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewSwitcherStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.SwitchAsync(pThis, viewId, &operationAbi))
+                }
+            }
+            return __ABI_Windows_Foundation.IAsyncActionWrapper.unwrapFrom(abi: operation)
+        }
+
+        internal func SwitchFromViewAsyncImpl(_ toViewId: Int32, _ fromViewId: Int32) throws -> WindowsFoundation.AnyIAsyncAction? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewSwitcherStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.SwitchFromViewAsync(pThis, toViewId, fromViewId, &operationAbi))
+                }
+            }
+            return __ABI_Windows_Foundation.IAsyncActionWrapper.unwrapFrom(abi: operation)
+        }
+
+        internal func SwitchFromViewWithOptionsAsyncImpl(_ toViewId: Int32, _ fromViewId: Int32, _ options: UWP.ApplicationViewSwitchingOptions) throws -> WindowsFoundation.AnyIAsyncAction? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewSwitcherStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.SwitchFromViewWithOptionsAsync(pThis, toViewId, fromViewId, options, &operationAbi))
+                }
+            }
+            return __ABI_Windows_Foundation.IAsyncActionWrapper.unwrapFrom(abi: operation)
+        }
+
+        internal func PrepareForCustomAnimatedSwitchAsyncImpl(_ toViewId: Int32, _ fromViewId: Int32, _ options: UWP.ApplicationViewSwitchingOptions) throws -> WindowsFoundation.AnyIAsyncOperation<Bool>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewSwitcherStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.PrepareForCustomAnimatedSwitchAsync(pThis, toViewId, fromViewId, options, &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1_booleanWrapper.unwrapFrom(abi: operation)
+        }
+
+    }
+
+    public class IApplicationViewSwitcherStatics2: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewSwitcherStatics2 }
+
+        internal func DisableSystemViewActivationPolicyImpl() throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewSwitcherStatics2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.DisableSystemViewActivationPolicy(pThis))
+            }
+        }
+
+    }
+
+    public class IApplicationViewSwitcherStatics3: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewSwitcherStatics3 }
+
+        internal func TryShowAsViewModeAsyncImpl(_ viewId: Int32, _ viewMode: UWP.ApplicationViewMode) throws -> WindowsFoundation.AnyIAsyncOperation<Bool>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewSwitcherStatics3.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.TryShowAsViewModeAsync(pThis, viewId, viewMode, &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1_booleanWrapper.unwrapFrom(abi: operation)
+        }
+
+        internal func TryShowAsViewModeWithPreferencesAsyncImpl(_ viewId: Int32, _ viewMode: UWP.ApplicationViewMode, _ viewModePreferences: UWP.ViewModePreferences?) throws -> WindowsFoundation.AnyIAsyncOperation<Bool>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewSwitcherStatics3.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.TryShowAsViewModeWithPreferencesAsync(pThis, viewId, viewMode, RawPointer(viewModePreferences), &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1_booleanWrapper.unwrapFrom(abi: operation)
+        }
+
+    }
+
+    public class IApplicationViewTitleBar: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTitleBar }
+
+        internal func put_ForegroundColorImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTitleBar.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ForegroundColor(pThis, _value))
+            }
+        }
+
+        internal func get_ForegroundColorImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTitleBar.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ForegroundColor(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_BackgroundColorImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTitleBar.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_BackgroundColor(pThis, _value))
+            }
+        }
+
+        internal func get_BackgroundColorImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTitleBar.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_BackgroundColor(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_ButtonForegroundColorImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTitleBar.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ButtonForegroundColor(pThis, _value))
+            }
+        }
+
+        internal func get_ButtonForegroundColorImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTitleBar.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ButtonForegroundColor(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_ButtonBackgroundColorImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTitleBar.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ButtonBackgroundColor(pThis, _value))
+            }
+        }
+
+        internal func get_ButtonBackgroundColorImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTitleBar.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ButtonBackgroundColor(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_ButtonHoverForegroundColorImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTitleBar.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ButtonHoverForegroundColor(pThis, _value))
+            }
+        }
+
+        internal func get_ButtonHoverForegroundColorImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTitleBar.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ButtonHoverForegroundColor(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_ButtonHoverBackgroundColorImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTitleBar.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ButtonHoverBackgroundColor(pThis, _value))
+            }
+        }
+
+        internal func get_ButtonHoverBackgroundColorImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTitleBar.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ButtonHoverBackgroundColor(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_ButtonPressedForegroundColorImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTitleBar.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ButtonPressedForegroundColor(pThis, _value))
+            }
+        }
+
+        internal func get_ButtonPressedForegroundColorImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTitleBar.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ButtonPressedForegroundColor(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_ButtonPressedBackgroundColorImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTitleBar.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ButtonPressedBackgroundColor(pThis, _value))
+            }
+        }
+
+        internal func get_ButtonPressedBackgroundColorImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTitleBar.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ButtonPressedBackgroundColor(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_InactiveForegroundColorImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTitleBar.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_InactiveForegroundColor(pThis, _value))
+            }
+        }
+
+        internal func get_InactiveForegroundColorImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTitleBar.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_InactiveForegroundColor(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_InactiveBackgroundColorImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTitleBar.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_InactiveBackgroundColor(pThis, _value))
+            }
+        }
+
+        internal func get_InactiveBackgroundColorImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTitleBar.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_InactiveBackgroundColor(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_ButtonInactiveForegroundColorImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTitleBar.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ButtonInactiveForegroundColor(pThis, _value))
+            }
+        }
+
+        internal func get_ButtonInactiveForegroundColorImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTitleBar.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ButtonInactiveForegroundColor(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_ButtonInactiveBackgroundColorImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTitleBar.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ButtonInactiveBackgroundColor(pThis, _value))
+            }
+        }
+
+        internal func get_ButtonInactiveBackgroundColorImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTitleBar.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ButtonInactiveBackgroundColor(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+    }
+
+    public class IApplicationViewTransferContext: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTransferContext }
+
+        internal func get_ViewIdImpl() throws -> Int32 {
+            var value: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTransferContext.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ViewId(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_ViewIdImpl(_ value: Int32) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTransferContext.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ViewId(pThis, value))
+            }
+        }
+
+    }
+
+    public class IApplicationViewTransferContextStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTransferContextStatics }
+
+        internal func get_DataPackageFormatIdImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTransferContextStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DataPackageFormatId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    public class IApplicationViewWithContext: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewWithContext }
+
+        internal func get_UIContextImpl() throws -> UWP.UIContext? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewWithContext.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_UIContext(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IInputPane: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIInputPane }
+
+        internal func add_ShowingImpl(_ handler: TypedEventHandler<UWP.InputPane?, UWP.InputPaneVisibilityEventArgs?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CUI__CViewManagement__CInputPane___x_ABI_CWindows__CUI__CViewManagement__CInputPaneVisibilityEventArgsWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIInputPane.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_Showing(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_ShowingImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIInputPane.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_Showing(pThis, token))
+            }
+        }
+
+        internal func add_HidingImpl(_ handler: TypedEventHandler<UWP.InputPane?, UWP.InputPaneVisibilityEventArgs?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CUI__CViewManagement__CInputPane___x_ABI_CWindows__CUI__CViewManagement__CInputPaneVisibilityEventArgsWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIInputPane.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_Hiding(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_HidingImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIInputPane.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_Hiding(pThis, token))
+            }
+        }
+
+        internal func get_OccludedRectImpl() throws -> WindowsFoundation.Rect {
+            var value: __x_ABI_CWindows_CFoundation_CRect = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIInputPane.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_OccludedRect(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IInputPane2: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIInputPane2 }
+
+        internal func TryShowImpl() throws -> Bool {
+            var result: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIInputPane2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.TryShow(pThis, &result))
+            }
+            return .init(from: result)
+        }
+
+        internal func TryHideImpl() throws -> Bool {
+            var result: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIInputPane2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.TryHide(pThis, &result))
+            }
+            return .init(from: result)
+        }
+
+    }
+
+    public class IInputPaneControl: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIInputPaneControl }
+
+        internal func get_VisibleImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIInputPaneControl.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Visible(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_VisibleImpl(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIInputPaneControl.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Visible(pThis, .init(from: value)))
+            }
+        }
+
+    }
+
+    public class IInputPaneStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIInputPaneStatics }
+
+        internal func GetForCurrentViewImpl() throws -> UWP.InputPane? {
+            let (inputPane) = try ComPtrs.initialize { inputPaneAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIInputPaneStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetForCurrentView(pThis, &inputPaneAbi))
+                }
+            }
+            return .from(abi: inputPane)
+        }
+
+    }
+
+    public class IInputPaneStatics2: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIInputPaneStatics2 }
+
+        internal func GetForUIContextImpl(_ context: UWP.UIContext?) throws -> UWP.InputPane? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIInputPaneStatics2.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetForUIContext(pThis, RawPointer(context), &resultAbi))
+                }
+            }
+            return .from(abi: result)
+        }
+
+    }
+
+    public class IInputPaneVisibilityEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIInputPaneVisibilityEventArgs }
+
+        internal func get_OccludedRectImpl() throws -> WindowsFoundation.Rect {
+            var value: __x_ABI_CWindows_CFoundation_CRect = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIInputPaneVisibilityEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_OccludedRect(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_EnsuredFocusedElementInViewImpl(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIInputPaneVisibilityEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_EnsuredFocusedElementInView(pThis, .init(from: value)))
+            }
+        }
+
+        internal func get_EnsuredFocusedElementInViewImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIInputPaneVisibilityEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_EnsuredFocusedElementInView(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    public class IProjectionManagerStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIProjectionManagerStatics }
+
+        internal func StartProjectingAsyncImpl(_ projectionViewId: Int32, _ anchorViewId: Int32) throws -> WindowsFoundation.AnyIAsyncAction? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIProjectionManagerStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.StartProjectingAsync(pThis, projectionViewId, anchorViewId, &operationAbi))
+                }
+            }
+            return __ABI_Windows_Foundation.IAsyncActionWrapper.unwrapFrom(abi: operation)
+        }
+
+        internal func SwapDisplaysForViewsAsyncImpl(_ projectionViewId: Int32, _ anchorViewId: Int32) throws -> WindowsFoundation.AnyIAsyncAction? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIProjectionManagerStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.SwapDisplaysForViewsAsync(pThis, projectionViewId, anchorViewId, &operationAbi))
+                }
+            }
+            return __ABI_Windows_Foundation.IAsyncActionWrapper.unwrapFrom(abi: operation)
+        }
+
+        internal func StopProjectingAsyncImpl(_ projectionViewId: Int32, _ anchorViewId: Int32) throws -> WindowsFoundation.AnyIAsyncAction? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIProjectionManagerStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.StopProjectingAsync(pThis, projectionViewId, anchorViewId, &operationAbi))
+                }
+            }
+            return __ABI_Windows_Foundation.IAsyncActionWrapper.unwrapFrom(abi: operation)
+        }
+
+        internal func get_ProjectionDisplayAvailableImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIProjectionManagerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ProjectionDisplayAvailable(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func add_ProjectionDisplayAvailableChangedImpl(_ handler: EventHandler<Any?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FIEventHandler_1_IInspectableWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIProjectionManagerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_ProjectionDisplayAvailableChanged(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_ProjectionDisplayAvailableChangedImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIProjectionManagerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_ProjectionDisplayAvailableChanged(pThis, token))
+            }
+        }
+
+    }
+
+    public class IProjectionManagerStatics2: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIProjectionManagerStatics2 }
+
+        internal func StartProjectingWithDeviceInfoAsyncImpl(_ projectionViewId: Int32, _ anchorViewId: Int32, _ displayDeviceInfo: UWP.DeviceInformation?) throws -> WindowsFoundation.AnyIAsyncAction? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIProjectionManagerStatics2.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.StartProjectingWithDeviceInfoAsync(pThis, projectionViewId, anchorViewId, RawPointer(displayDeviceInfo), &operationAbi))
+                }
+            }
+            return __ABI_Windows_Foundation.IAsyncActionWrapper.unwrapFrom(abi: operation)
+        }
+
+        internal func RequestStartProjectingAsyncImpl(_ projectionViewId: Int32, _ anchorViewId: Int32, _ selection: WindowsFoundation.Rect) throws -> WindowsFoundation.AnyIAsyncOperation<Bool>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIProjectionManagerStatics2.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.RequestStartProjectingAsync(pThis, projectionViewId, anchorViewId, .from(swift: selection), &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1_booleanWrapper.unwrapFrom(abi: operation)
+        }
+
+        internal func RequestStartProjectingWithPlacementAsyncImpl(_ projectionViewId: Int32, _ anchorViewId: Int32, _ selection: WindowsFoundation.Rect, _ prefferedPlacement: UWP.Placement) throws -> WindowsFoundation.AnyIAsyncOperation<Bool>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIProjectionManagerStatics2.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.RequestStartProjectingWithPlacementAsync(pThis, projectionViewId, anchorViewId, .from(swift: selection), prefferedPlacement, &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1_booleanWrapper.unwrapFrom(abi: operation)
+        }
+
+        internal func GetDeviceSelectorImpl() throws -> String {
+            var selector: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIProjectionManagerStatics2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.GetDeviceSelector(pThis, &selector))
+            }
+            return .init(from: selector)
+        }
+
+    }
+
+    public class IStatusBar: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIStatusBar }
+
+        internal func ShowAsyncImpl() throws -> WindowsFoundation.AnyIAsyncAction? {
+            let (returnValue) = try ComPtrs.initialize { returnValueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIStatusBar.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.ShowAsync(pThis, &returnValueAbi))
+                }
+            }
+            return __ABI_Windows_Foundation.IAsyncActionWrapper.unwrapFrom(abi: returnValue)
+        }
+
+        internal func HideAsyncImpl() throws -> WindowsFoundation.AnyIAsyncAction? {
+            let (returnValue) = try ComPtrs.initialize { returnValueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIStatusBar.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.HideAsync(pThis, &returnValueAbi))
+                }
+            }
+            return __ABI_Windows_Foundation.IAsyncActionWrapper.unwrapFrom(abi: returnValue)
+        }
+
+        internal func get_BackgroundOpacityImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIStatusBar.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_BackgroundOpacity(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_BackgroundOpacityImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIStatusBar.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_BackgroundOpacity(pThis, value))
+            }
+        }
+
+        internal func get_ForegroundColorImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIStatusBar.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ForegroundColor(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_ForegroundColorImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIStatusBar.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ForegroundColor(pThis, _value))
+            }
+        }
+
+        internal func get_BackgroundColorImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIStatusBar.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_BackgroundColor(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_BackgroundColorImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIStatusBar.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_BackgroundColor(pThis, _value))
+            }
+        }
+
+        internal func get_ProgressIndicatorImpl() throws -> UWP.StatusBarProgressIndicator? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIStatusBar.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ProgressIndicator(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_OccludedRectImpl() throws -> WindowsFoundation.Rect {
+            var value: __x_ABI_CWindows_CFoundation_CRect = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIStatusBar.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_OccludedRect(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func add_ShowingImpl(_ eventHandler: TypedEventHandler<UWP.StatusBar?, Any?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let eventHandlerWrapper = UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CUI__CViewManagement__CStatusBar_IInspectableWrapper(eventHandler)
+            let _eventHandler = try! eventHandlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIStatusBar.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_Showing(pThis, _eventHandler, &token))
+            }
+            return token
+        }
+
+        internal func remove_ShowingImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIStatusBar.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_Showing(pThis, token))
+            }
+        }
+
+        internal func add_HidingImpl(_ eventHandler: TypedEventHandler<UWP.StatusBar?, Any?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let eventHandlerWrapper = UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CUI__CViewManagement__CStatusBar_IInspectableWrapper(eventHandler)
+            let _eventHandler = try! eventHandlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIStatusBar.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_Hiding(pThis, _eventHandler, &token))
+            }
+            return token
+        }
+
+        internal func remove_HidingImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIStatusBar.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_Hiding(pThis, token))
+            }
+        }
+
+    }
+
+    public class IStatusBarProgressIndicator: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIStatusBarProgressIndicator }
+
+        internal func ShowAsyncImpl() throws -> WindowsFoundation.AnyIAsyncAction? {
+            let (returnValue) = try ComPtrs.initialize { returnValueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIStatusBarProgressIndicator.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.ShowAsync(pThis, &returnValueAbi))
+                }
+            }
+            return __ABI_Windows_Foundation.IAsyncActionWrapper.unwrapFrom(abi: returnValue)
+        }
+
+        internal func HideAsyncImpl() throws -> WindowsFoundation.AnyIAsyncAction? {
+            let (returnValue) = try ComPtrs.initialize { returnValueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIStatusBarProgressIndicator.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.HideAsync(pThis, &returnValueAbi))
+                }
+            }
+            return __ABI_Windows_Foundation.IAsyncActionWrapper.unwrapFrom(abi: returnValue)
+        }
+
+        internal func get_TextImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIStatusBarProgressIndicator.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Text(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_TextImpl(_ value: String) throws {
+            let _value = try! HString(value)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIStatusBarProgressIndicator.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Text(pThis, _value.get()))
+            }
+        }
+
+        internal func get_ProgressValueImpl() throws -> Double? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIStatusBarProgressIndicator.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ProgressValue(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1_doubleWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_ProgressValueImpl(_ value: Double?) throws {
+            let valueWrapper = UWP.__x_ABI_C__FIReference_1_doubleWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIStatusBarProgressIndicator.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ProgressValue(pThis, _value))
+            }
+        }
+
+    }
+
+    public class IStatusBarStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIStatusBarStatics }
+
+        internal func GetForCurrentViewImpl() throws -> UWP.StatusBar? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIStatusBarStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetForCurrentView(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
         }
 
     }
@@ -291,6 +1770,80 @@ public enum __ABI_Windows_UI_ViewManagement {
 
     public class IUISettingsAutoHideScrollBarsChangedEventArgs: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIUISettingsAutoHideScrollBarsChangedEventArgs }
+
+    }
+
+    public class IUIViewSettings: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIUIViewSettings }
+
+        internal func get_UserInteractionModeImpl() throws -> UWP.UserInteractionMode {
+            var value: __x_ABI_CWindows_CUI_CViewManagement_CUserInteractionMode = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIUIViewSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_UserInteractionMode(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
+    public class IUIViewSettingsStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIUIViewSettingsStatics }
+
+        internal func GetForCurrentViewImpl() throws -> UWP.UIViewSettings? {
+            let (current) = try ComPtrs.initialize { currentAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIUIViewSettingsStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetForCurrentView(pThis, &currentAbi))
+                }
+            }
+            return .from(abi: current)
+        }
+
+    }
+
+    public class IViewModePreferences: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIViewModePreferences }
+
+        internal func get_ViewSizePreferenceImpl() throws -> UWP.ViewSizePreference {
+            var value: __x_ABI_CWindows_CUI_CViewManagement_CViewSizePreference = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIViewModePreferences.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ViewSizePreference(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_ViewSizePreferenceImpl(_ value: UWP.ViewSizePreference) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIViewModePreferences.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ViewSizePreference(pThis, value))
+            }
+        }
+
+        internal func get_CustomSizeImpl() throws -> WindowsFoundation.Size {
+            var value: __x_ABI_CWindows_CFoundation_CSize = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIViewModePreferences.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_CustomSize(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_CustomSizeImpl(_ value: WindowsFoundation.Size) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIViewModePreferences.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CustomSize(pThis, .from(swift: value)))
+            }
+        }
+
+    }
+
+    public class IViewModePreferencesStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CViewManagement_CIViewModePreferencesStatics }
+
+        internal func CreateDefaultImpl(_ mode: UWP.ApplicationViewMode) throws -> UWP.ViewModePreferences? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CViewManagement_CIViewModePreferencesStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.CreateDefault(pThis, mode, &resultAbi))
+                }
+            }
+            return .from(abi: result)
+        }
 
     }
 

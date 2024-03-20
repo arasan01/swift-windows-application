@@ -4,6 +4,14 @@ import Foundation
 @_spi(WinRTInternal) @_spi(WinRTImplements) import WindowsFoundation
 import CWinRT
 
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAnnotationPatternIdentifiers: WindowsFoundation.IID {
+    .init(Data1: 0x92D76915, Data2: 0x0CD3, Data3: 0x59CD, Data4: ( 0x8A,0xE0,0xC9,0x00,0x46,0x28,0xBA,0x1E ))// 92D76915-0CD3-59CD-8AE0-C9004628BA1E
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAnnotationPatternIdentifiersStatics: WindowsFoundation.IID {
+    .init(Data1: 0x20A136E2, Data2: 0x4A47, Data3: 0x5DE5, Data4: ( 0x9E,0x1E,0xEC,0xFC,0x6D,0x92,0xF5,0x2A ))// 20A136E2-4A47-5DE5-9E1E-ECFC6D92F52A
+}
+
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationAnnotation: WindowsFoundation.IID {
     .init(Data1: 0xC2CC46AD, Data2: 0x1414, Data3: 0x5F1B, Data4: ( 0x80,0x8A,0x89,0xE5,0xD5,0x3D,0x82,0xFE ))// C2CC46AD-1414-5F1B-808A-89E5D53D82FE
 }
@@ -14,6 +22,14 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationAnnotationF
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationAnnotationStatics: WindowsFoundation.IID {
     .init(Data1: 0xC5ABDC1E, Data2: 0xFC26, Data3: 0x5444, Data4: ( 0xA8,0xB3,0x59,0xB2,0xC0,0xA9,0x55,0x78 ))// C5ABDC1E-FC26-5444-A8B3-59B2C0A95578
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiers: WindowsFoundation.IID {
+    .init(Data1: 0x2FB51A33, Data2: 0xB0CF, Data3: 0x5A4C, Data4: ( 0x9E,0xD3,0x26,0x7E,0xCA,0x7A,0xEE,0xFC ))// 2FB51A33-B0CF-5A4C-9ED3-267ECA7AEEFC
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics: WindowsFoundation.IID {
+    .init(Data1: 0x72AF6B8C, Data2: 0x3E12, Data3: 0x5E7A, Data4: ( 0xA2,0xEC,0x26,0xDC,0x19,0x3F,0x9D,0xF9 ))// 72AF6B8C-3E12-5E7A-A2EC-26DC193F9DF9
 }
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationProperties: WindowsFoundation.IID {
@@ -32,7 +48,222 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationProperty: W
     .init(Data1: 0x5CA6B2C8, Data2: 0xFF86, Data3: 0x5A41, Data4: ( 0xAA,0x18,0x69,0x48,0xFA,0xE5,0x92,0xCF ))// 5CA6B2C8-FF86-5A41-AA18-6948FAE592CF
 }
 
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDockPatternIdentifiers: WindowsFoundation.IID {
+    .init(Data1: 0x75574F99, Data2: 0xD145, Data3: 0x547E, Data4: ( 0x97,0x2B,0x7D,0x87,0x9F,0x93,0xC0,0x3E ))// 75574F99-D145-547E-972B-7D879F93C03E
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDockPatternIdentifiersStatics: WindowsFoundation.IID {
+    .init(Data1: 0x02D5A72C, Data2: 0xF49D, Data3: 0x53A9, Data4: ( 0xB9,0xFB,0xAF,0x27,0x19,0xD1,0x6C,0xCF ))// 02D5A72C-F49D-53A9-B9FB-AF2719D16CCF
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDragPatternIdentifiers: WindowsFoundation.IID {
+    .init(Data1: 0xAA2FDFD5, Data2: 0xFB45, Data3: 0x5D2B, Data4: ( 0x8D,0x92,0xA8,0xE7,0xB0,0x70,0x61,0xC2 ))// AA2FDFD5-FB45-5D2B-8D92-A8E7B07061C2
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDragPatternIdentifiersStatics: WindowsFoundation.IID {
+    .init(Data1: 0x482EEE70, Data2: 0x0BFC, Data3: 0x5552, Data4: ( 0x9E,0x7D,0x8D,0xFF,0xC5,0x26,0xB2,0xF7 ))// 482EEE70-0BFC-5552-9E7D-8DFFC526B2F7
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDropTargetPatternIdentifiers: WindowsFoundation.IID {
+    .init(Data1: 0x133E8FF3, Data2: 0x1DDD, Data3: 0x5CBB, Data4: ( 0xB9,0x08,0x14,0x84,0xD7,0xC0,0x4D,0xA7 ))// 133E8FF3-1DDD-5CBB-B908-1484D7C04DA7
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDropTargetPatternIdentifiersStatics: WindowsFoundation.IID {
+    .init(Data1: 0x6DA6F0BD, Data2: 0xB942, Data3: 0x5283, Data4: ( 0xBE,0x35,0x50,0x1A,0xE8,0x7F,0x88,0xC7 ))// 6DA6F0BD-B942-5283-BE35-501AE87F88C7
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIExpandCollapsePatternIdentifiers: WindowsFoundation.IID {
+    .init(Data1: 0xCEC15D9F, Data2: 0x8630, Data3: 0x569A, Data4: ( 0x86,0xA0,0x52,0x4B,0xBE,0xA6,0x18,0xFF ))// CEC15D9F-8630-569A-86A0-524BBEA618FF
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIExpandCollapsePatternIdentifiersStatics: WindowsFoundation.IID {
+    .init(Data1: 0x283101F4, Data2: 0xC40C, Data3: 0x55BF, Data4: ( 0xA2,0x3B,0xD6,0x2B,0x73,0xB6,0xAA,0x35 ))// 283101F4-C40C-55BF-A23B-D62B73B6AA35
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIGridItemPatternIdentifiers: WindowsFoundation.IID {
+    .init(Data1: 0x93609087, Data2: 0x1114, Data3: 0x557D, Data4: ( 0xB1,0x7B,0xF8,0x01,0xE4,0x1C,0xEB,0xBB ))// 93609087-1114-557D-B17B-F801E41CEBBB
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIGridItemPatternIdentifiersStatics: WindowsFoundation.IID {
+    .init(Data1: 0x8072BC18, Data2: 0x87D0, Data3: 0x5A02, Data4: ( 0xA0,0xA1,0xF9,0xAE,0xC9,0x68,0xC0,0xE7 ))// 8072BC18-87D0-5A02-A0A1-F9AEC968C0E7
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIGridPatternIdentifiers: WindowsFoundation.IID {
+    .init(Data1: 0xE5E1E250, Data2: 0xC37C, Data3: 0x54A2, Data4: ( 0x8C,0x61,0x1D,0x9C,0xCD,0x3B,0xB3,0x9C ))// E5E1E250-C37C-54A2-8C61-1D9CCD3BB39C
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIGridPatternIdentifiersStatics: WindowsFoundation.IID {
+    .init(Data1: 0xE861604C, Data2: 0x101F, Data3: 0x5A6D, Data4: ( 0xA3,0x08,0x37,0x14,0xF5,0x10,0xF7,0x44 ))// E861604C-101F-5A6D-A308-3714F510F744
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIMultipleViewPatternIdentifiers: WindowsFoundation.IID {
+    .init(Data1: 0x70E4C847, Data2: 0x2B82, Data3: 0x5ECF, Data4: ( 0xB8,0x08,0xE9,0xD4,0x53,0xC1,0xFE,0x53 ))// 70E4C847-2B82-5ECF-B808-E9D453C1FE53
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIMultipleViewPatternIdentifiersStatics: WindowsFoundation.IID {
+    .init(Data1: 0xAC71DAEF, Data2: 0xD094, Data3: 0x5C90, Data4: ( 0x94,0xAF,0x1F,0xA4,0x74,0xAB,0x45,0xFE ))// AC71DAEF-D094-5C90-94AF-1FA474AB45FE
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIRangeValuePatternIdentifiers: WindowsFoundation.IID {
+    .init(Data1: 0xC114DB37, Data2: 0x6A75, Data3: 0x5EF1, Data4: ( 0xA5,0x42,0xD3,0xB1,0x3F,0x92,0xCB,0xFE ))// C114DB37-6A75-5EF1-A542-D3B13F92CBFE
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIRangeValuePatternIdentifiersStatics: WindowsFoundation.IID {
+    .init(Data1: 0x0AAA9AD7, Data2: 0xF9B8, Data3: 0x52A1, Data4: ( 0xBC,0x96,0x2A,0x97,0xFE,0x38,0x9E,0xD0 ))// 0AAA9AD7-F9B8-52A1-BC96-2A97FE389ED0
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIScrollPatternIdentifiers: WindowsFoundation.IID {
+    .init(Data1: 0x04F1A4B8, Data2: 0xEDC7, Data3: 0x55F2, Data4: ( 0x96,0xDF,0xA9,0xC7,0xE8,0x09,0x37,0x2E ))// 04F1A4B8-EDC7-55F2-96DF-A9C7E809372E
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIScrollPatternIdentifiersStatics: WindowsFoundation.IID {
+    .init(Data1: 0x0F94F2F0, Data2: 0xE0D2, Data3: 0x5A24, Data4: ( 0xB4,0x15,0x8D,0x15,0x06,0xCE,0x47,0xAA ))// 0F94F2F0-E0D2-5A24-B415-8D1506CE47AA
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CISelectionItemPatternIdentifiers: WindowsFoundation.IID {
+    .init(Data1: 0xCE3A549D, Data2: 0xA2CB, Data3: 0x594D, Data4: ( 0xA2,0xA4,0x44,0x77,0x8C,0x09,0xCC,0xA5 ))// CE3A549D-A2CB-594D-A2A4-44778C09CCA5
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CISelectionItemPatternIdentifiersStatics: WindowsFoundation.IID {
+    .init(Data1: 0x2B8EAD7C, Data2: 0x4E03, Data3: 0x5B84, Data4: ( 0x9E,0x34,0x8B,0x73,0x84,0xCB,0xD8,0x62 ))// 2B8EAD7C-4E03-5B84-9E34-8B7384CBD862
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CISelectionPatternIdentifiers: WindowsFoundation.IID {
+    .init(Data1: 0x401743D2, Data2: 0x1FBA, Data3: 0x5D05, Data4: ( 0xB8,0x9F,0x63,0x16,0x76,0x45,0x32,0x37 ))// 401743D2-1FBA-5D05-B89F-631676453237
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CISelectionPatternIdentifiersStatics: WindowsFoundation.IID {
+    .init(Data1: 0xF3ED111B, Data2: 0xB20A, Data3: 0x5E5E, Data4: ( 0xA2,0x32,0x07,0xF6,0x07,0xFD,0x5C,0x07 ))// F3ED111B-B20A-5E5E-A232-07F607FD5C07
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CISpreadsheetItemPatternIdentifiers: WindowsFoundation.IID {
+    .init(Data1: 0xDCA2EC46, Data2: 0x8564, Data3: 0x5C9C, Data4: ( 0xBA,0x90,0x2C,0x08,0x45,0x5F,0x69,0x7B ))// DCA2EC46-8564-5C9C-BA90-2C08455F697B
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CISpreadsheetItemPatternIdentifiersStatics: WindowsFoundation.IID {
+    .init(Data1: 0x7EB10F80, Data2: 0x8D3A, Data3: 0x59AD, Data4: ( 0xA2,0xB9,0x05,0xD8,0xCE,0xCF,0x18,0xDB ))// 7EB10F80-8D3A-59AD-A2B9-05D8CECF18DB
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIStylesPatternIdentifiers: WindowsFoundation.IID {
+    .init(Data1: 0x13AECA5E, Data2: 0xB496, Data3: 0x5DF5, Data4: ( 0xAE,0xA5,0x33,0x0E,0x1F,0x04,0x90,0xEB ))// 13AECA5E-B496-5DF5-AEA5-330E1F0490EB
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIStylesPatternIdentifiersStatics: WindowsFoundation.IID {
+    .init(Data1: 0xB232287A, Data2: 0xBC4C, Data3: 0x581E, Data4: ( 0xA3,0x3C,0x3D,0x6A,0xEE,0x10,0xD0,0x4B ))// B232287A-BC4C-581E-A33C-3D6AEE10D04B
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITableItemPatternIdentifiers: WindowsFoundation.IID {
+    .init(Data1: 0xB4DE5D03, Data2: 0xA5B4, Data3: 0x5CA1, Data4: ( 0x87,0x15,0x16,0xC8,0xC6,0xA1,0x0F,0xCC ))// B4DE5D03-A5B4-5CA1-8715-16C8C6A10FCC
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITableItemPatternIdentifiersStatics: WindowsFoundation.IID {
+    .init(Data1: 0x81D24BD7, Data2: 0x66FB, Data3: 0x53EF, Data4: ( 0x9B,0x32,0xD0,0x0F,0x9C,0x24,0x0A,0x14 ))// 81D24BD7-66FB-53EF-9B32-D00F9C240A14
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITablePatternIdentifiers: WindowsFoundation.IID {
+    .init(Data1: 0x3D7F9C0B, Data2: 0xFF8F, Data3: 0x50FA, Data4: ( 0xBC,0x01,0x2C,0xC3,0xC2,0xE0,0x6E,0x2C ))// 3D7F9C0B-FF8F-50FA-BC01-2CC3C2E06E2C
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITablePatternIdentifiersStatics: WindowsFoundation.IID {
+    .init(Data1: 0x3660935E, Data2: 0xBCBB, Data3: 0x5848, Data4: ( 0x8E,0x9A,0x26,0x48,0x54,0xF7,0xA1,0x9A ))// 3660935E-BCBB-5848-8E9A-264854F7A19A
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITogglePatternIdentifiers: WindowsFoundation.IID {
+    .init(Data1: 0xA0D2DF4C, Data2: 0xBA59, Data3: 0x51D9, Data4: ( 0x9C,0x01,0x03,0x4D,0x79,0x41,0xC2,0x80 ))// A0D2DF4C-BA59-51D9-9C01-034D7941C280
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITogglePatternIdentifiersStatics: WindowsFoundation.IID {
+    .init(Data1: 0x862920B5, Data2: 0xDCB3, Data3: 0x5691, Data4: ( 0xA4,0x56,0xC2,0xF1,0x5C,0x47,0x6D,0xFB ))// 862920B5-DCB3-5691-A456-C2F15C476DFB
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITransformPattern2Identifiers: WindowsFoundation.IID {
+    .init(Data1: 0x6EF7595C, Data2: 0xDB8C, Data3: 0x51B0, Data4: ( 0x87,0x8B,0x34,0xB7,0xEF,0x12,0xF4,0xDA ))// 6EF7595C-DB8C-51B0-878B-34B7EF12F4DA
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITransformPattern2IdentifiersStatics: WindowsFoundation.IID {
+    .init(Data1: 0xD9876FF5, Data2: 0x89ED, Data3: 0x5333, Data4: ( 0x81,0x11,0xAD,0x25,0xA2,0x8B,0xEE,0x8B ))// D9876FF5-89ED-5333-8111-AD25A28BEE8B
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITransformPatternIdentifiers: WindowsFoundation.IID {
+    .init(Data1: 0x2348187B, Data2: 0xC50F, Data3: 0x5A0E, Data4: ( 0xBC,0x05,0x30,0x5A,0xC7,0x1B,0x3B,0x6B ))// 2348187B-C50F-5A0E-BC05-305AC71B3B6B
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITransformPatternIdentifiersStatics: WindowsFoundation.IID {
+    .init(Data1: 0xCB7D84E4, Data2: 0x5429, Data3: 0x5188, Data4: ( 0x8A,0xA0,0x5F,0x96,0x55,0x8A,0x87,0x90 ))// CB7D84E4-5429-5188-8AA0-5F96558A8790
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIValuePatternIdentifiers: WindowsFoundation.IID {
+    .init(Data1: 0xFB493395, Data2: 0xFB97, Data3: 0x59D5, Data4: ( 0x93,0x23,0x46,0x51,0xCE,0x96,0x4B,0x55 ))// FB493395-FB97-59D5-9323-4651CE964B55
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIValuePatternIdentifiersStatics: WindowsFoundation.IID {
+    .init(Data1: 0x2019FAF5, Data2: 0xCE64, Data3: 0x59A7, Data4: ( 0xBC,0x13,0x06,0x77,0xC3,0x14,0x67,0x24 ))// 2019FAF5-CE64-59A7-BC13-0677C3146724
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIWindowPatternIdentifiers: WindowsFoundation.IID {
+    .init(Data1: 0xBEC579E1, Data2: 0x91BE, Data3: 0x5D8F, Data4: ( 0xAA,0xCA,0x6A,0xD8,0x83,0x98,0x72,0xD2 ))// BEC579E1-91BE-5D8F-AACA-6AD8839872D2
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIWindowPatternIdentifiersStatics: WindowsFoundation.IID {
+    .init(Data1: 0x06762744, Data2: 0xD3D7, Data3: 0x5441, Data4: ( 0xB8,0x79,0x37,0x36,0x81,0xD4,0x7F,0x64 ))// 06762744-D3D7-5441-B879-373681D47F64
+}
+
 public enum __ABI_Microsoft_UI_Xaml_Automation {
+    public class IAnnotationPatternIdentifiers: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAnnotationPatternIdentifiers }
+
+    }
+
+    public class IAnnotationPatternIdentifiersStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAnnotationPatternIdentifiersStatics }
+
+        internal func get_AnnotationTypeIdPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAnnotationPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_AnnotationTypeIdProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_AnnotationTypeNamePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAnnotationPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_AnnotationTypeNameProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_AuthorPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAnnotationPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_AuthorProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DateTimePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAnnotationPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_DateTimeProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_TargetPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAnnotationPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_TargetProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
     public class IAutomationAnnotation: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationAnnotation }
 
@@ -106,6 +337,367 @@ public enum __ABI_Microsoft_UI_Xaml_Automation {
             let (value) = try ComPtrs.initialize { valueAbi in
                 _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationAnnotationStatics.self) { pThis in
                     try CHECKED(pThis.pointee.lpVtbl.pointee.get_ElementProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IAutomationElementIdentifiers: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiers }
+
+    }
+
+    public class IAutomationElementIdentifiersStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics }
+
+        internal func get_AcceleratorKeyPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_AcceleratorKeyProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_AccessKeyPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_AccessKeyProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_AutomationIdPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_AutomationIdProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_BoundingRectanglePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_BoundingRectangleProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ClassNamePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ClassNameProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ClickablePointPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ClickablePointProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ControlTypePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ControlTypeProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_HasKeyboardFocusPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_HasKeyboardFocusProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_HelpTextPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_HelpTextProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_IsContentElementPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsContentElementProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_IsControlElementPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsControlElementProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_IsEnabledPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsEnabledProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_IsKeyboardFocusablePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsKeyboardFocusableProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_IsOffscreenPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsOffscreenProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_IsPasswordPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsPasswordProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_IsRequiredForFormPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsRequiredForFormProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ItemStatusPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ItemStatusProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ItemTypePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ItemTypeProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LabeledByPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_LabeledByProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LocalizedControlTypePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_LocalizedControlTypeProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_NamePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_NameProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_OrientationPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_OrientationProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LiveSettingPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_LiveSettingProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ControlledPeersPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ControlledPeersProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_PositionInSetPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_PositionInSetProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SizeOfSetPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SizeOfSetProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LevelPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_LevelProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_AnnotationsPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_AnnotationsProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LandmarkTypePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_LandmarkTypeProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LocalizedLandmarkTypePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_LocalizedLandmarkTypeProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_IsPeripheralPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsPeripheralProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_IsDataValidForFormPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsDataValidForFormProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_FullDescriptionPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_FullDescriptionProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DescribedByPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_DescribedByProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_FlowsToPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_FlowsToProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_FlowsFromPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_FlowsFromProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CulturePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CultureProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_HeadingLevelPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_HeadingLevelProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_IsDialogPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsDialogProperty(pThis, &valueAbi))
                 }
             }
             return .from(abi: value)
@@ -783,6 +1375,781 @@ public enum __ABI_Microsoft_UI_Xaml_Automation {
 
     public class IAutomationProperty: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationProperty }
+
+    }
+
+    public class IDockPatternIdentifiers: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDockPatternIdentifiers }
+
+    }
+
+    public class IDockPatternIdentifiersStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDockPatternIdentifiersStatics }
+
+        internal func get_DockPositionPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDockPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_DockPositionProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IDragPatternIdentifiers: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDragPatternIdentifiers }
+
+    }
+
+    public class IDragPatternIdentifiersStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDragPatternIdentifiersStatics }
+
+        internal func get_DropEffectPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDragPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_DropEffectProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DropEffectsPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDragPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_DropEffectsProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_GrabbedItemsPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDragPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_GrabbedItemsProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_IsGrabbedPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDragPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsGrabbedProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IDropTargetPatternIdentifiers: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDropTargetPatternIdentifiers }
+
+    }
+
+    public class IDropTargetPatternIdentifiersStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDropTargetPatternIdentifiersStatics }
+
+        internal func get_DropTargetEffectPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDropTargetPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_DropTargetEffectProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DropTargetEffectsPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDropTargetPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_DropTargetEffectsProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IExpandCollapsePatternIdentifiers: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIExpandCollapsePatternIdentifiers }
+
+    }
+
+    public class IExpandCollapsePatternIdentifiersStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIExpandCollapsePatternIdentifiersStatics }
+
+        internal func get_ExpandCollapseStatePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIExpandCollapsePatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ExpandCollapseStateProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IGridItemPatternIdentifiers: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIGridItemPatternIdentifiers }
+
+    }
+
+    public class IGridItemPatternIdentifiersStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIGridItemPatternIdentifiersStatics }
+
+        internal func get_ColumnPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIGridItemPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ColumnProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ColumnSpanPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIGridItemPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ColumnSpanProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ContainingGridPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIGridItemPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ContainingGridProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_RowPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIGridItemPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_RowProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_RowSpanPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIGridItemPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_RowSpanProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IGridPatternIdentifiers: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIGridPatternIdentifiers }
+
+    }
+
+    public class IGridPatternIdentifiersStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIGridPatternIdentifiersStatics }
+
+        internal func get_ColumnCountPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIGridPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ColumnCountProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_RowCountPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIGridPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_RowCountProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IMultipleViewPatternIdentifiers: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIMultipleViewPatternIdentifiers }
+
+    }
+
+    public class IMultipleViewPatternIdentifiersStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIMultipleViewPatternIdentifiersStatics }
+
+        internal func get_CurrentViewPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIMultipleViewPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CurrentViewProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SupportedViewsPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIMultipleViewPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SupportedViewsProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IRangeValuePatternIdentifiers: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIRangeValuePatternIdentifiers }
+
+    }
+
+    public class IRangeValuePatternIdentifiersStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIRangeValuePatternIdentifiersStatics }
+
+        internal func get_IsReadOnlyPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIRangeValuePatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsReadOnlyProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LargeChangePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIRangeValuePatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_LargeChangeProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_MaximumPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIRangeValuePatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_MaximumProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_MinimumPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIRangeValuePatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_MinimumProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SmallChangePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIRangeValuePatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SmallChangeProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ValuePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIRangeValuePatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ValueProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IScrollPatternIdentifiers: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIScrollPatternIdentifiers }
+
+    }
+
+    public class IScrollPatternIdentifiersStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIScrollPatternIdentifiersStatics }
+
+        internal func get_HorizontallyScrollablePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIScrollPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_HorizontallyScrollableProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_HorizontalScrollPercentPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIScrollPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_HorizontalScrollPercentProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_HorizontalViewSizePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIScrollPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_HorizontalViewSizeProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_NoScrollImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIScrollPatternIdentifiersStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_NoScroll(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_VerticallyScrollablePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIScrollPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_VerticallyScrollableProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_VerticalScrollPercentPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIScrollPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_VerticalScrollPercentProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_VerticalViewSizePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIScrollPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_VerticalViewSizeProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class ISelectionItemPatternIdentifiers: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CISelectionItemPatternIdentifiers }
+
+    }
+
+    public class ISelectionItemPatternIdentifiersStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CISelectionItemPatternIdentifiersStatics }
+
+        internal func get_IsSelectedPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CISelectionItemPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsSelectedProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SelectionContainerPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CISelectionItemPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectionContainerProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class ISelectionPatternIdentifiers: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CISelectionPatternIdentifiers }
+
+    }
+
+    public class ISelectionPatternIdentifiersStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CISelectionPatternIdentifiersStatics }
+
+        internal func get_CanSelectMultiplePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CISelectionPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CanSelectMultipleProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_IsSelectionRequiredPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CISelectionPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsSelectionRequiredProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SelectionPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CISelectionPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectionProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class ISpreadsheetItemPatternIdentifiers: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CISpreadsheetItemPatternIdentifiers }
+
+    }
+
+    public class ISpreadsheetItemPatternIdentifiersStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CISpreadsheetItemPatternIdentifiersStatics }
+
+        internal func get_FormulaPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CISpreadsheetItemPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_FormulaProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IStylesPatternIdentifiers: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIStylesPatternIdentifiers }
+
+    }
+
+    public class IStylesPatternIdentifiersStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIStylesPatternIdentifiersStatics }
+
+        internal func get_ExtendedPropertiesPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIStylesPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ExtendedPropertiesProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_FillColorPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIStylesPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_FillColorProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_FillPatternColorPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIStylesPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_FillPatternColorProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_FillPatternStylePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIStylesPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_FillPatternStyleProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ShapePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIStylesPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ShapeProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_StyleIdPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIStylesPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_StyleIdProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_StyleNamePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIStylesPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_StyleNameProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class ITableItemPatternIdentifiers: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITableItemPatternIdentifiers }
+
+    }
+
+    public class ITableItemPatternIdentifiersStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITableItemPatternIdentifiersStatics }
+
+        internal func get_ColumnHeaderItemsPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITableItemPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ColumnHeaderItemsProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_RowHeaderItemsPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITableItemPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_RowHeaderItemsProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class ITablePatternIdentifiers: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITablePatternIdentifiers }
+
+    }
+
+    public class ITablePatternIdentifiersStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITablePatternIdentifiersStatics }
+
+        internal func get_ColumnHeadersPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITablePatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ColumnHeadersProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_RowHeadersPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITablePatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_RowHeadersProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_RowOrColumnMajorPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITablePatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_RowOrColumnMajorProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class ITogglePatternIdentifiers: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITogglePatternIdentifiers }
+
+    }
+
+    public class ITogglePatternIdentifiersStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITogglePatternIdentifiersStatics }
+
+        internal func get_ToggleStatePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITogglePatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ToggleStateProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class ITransformPattern2Identifiers: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITransformPattern2Identifiers }
+
+    }
+
+    public class ITransformPattern2IdentifiersStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITransformPattern2IdentifiersStatics }
+
+        internal func get_CanZoomPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITransformPattern2IdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CanZoomProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ZoomLevelPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITransformPattern2IdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ZoomLevelProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_MaxZoomPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITransformPattern2IdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_MaxZoomProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_MinZoomPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITransformPattern2IdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_MinZoomProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class ITransformPatternIdentifiers: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITransformPatternIdentifiers }
+
+    }
+
+    public class ITransformPatternIdentifiersStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITransformPatternIdentifiersStatics }
+
+        internal func get_CanMovePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITransformPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CanMoveProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CanResizePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITransformPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CanResizeProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CanRotatePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITransformPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CanRotateProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IValuePatternIdentifiers: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIValuePatternIdentifiers }
+
+    }
+
+    public class IValuePatternIdentifiersStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIValuePatternIdentifiersStatics }
+
+        internal func get_IsReadOnlyPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIValuePatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsReadOnlyProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ValuePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIValuePatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ValueProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IWindowPatternIdentifiers: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIWindowPatternIdentifiers }
+
+    }
+
+    public class IWindowPatternIdentifiersStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIWindowPatternIdentifiersStatics }
+
+        internal func get_CanMaximizePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIWindowPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CanMaximizeProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CanMinimizePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIWindowPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CanMinimizeProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_IsModalPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIWindowPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsModalProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_IsTopmostPropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIWindowPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsTopmostProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_WindowInteractionStatePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIWindowPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_WindowInteractionStateProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_WindowVisualStatePropertyImpl() throws -> WinUI.AutomationProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIWindowPatternIdentifiersStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_WindowVisualStateProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
 
     }
 

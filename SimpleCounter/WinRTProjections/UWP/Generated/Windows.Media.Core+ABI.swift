@@ -32,6 +32,70 @@ private var IID___x_ABI_CWindows_CMedia_CCore_CIAudioTrackSupportInfo: WindowsFo
     .init(Data1: 0x178BEFF7, Data2: 0xCC39, Data3: 0x44A6, Data4: ( 0xB9,0x51,0x4A,0x56,0x53,0xF0,0x73,0xFA ))// 178BEFF7-CC39-44A6-B951-4A5653F073FA
 }
 
+private var IID___x_ABI_CWindows_CMedia_CCore_CIChapterCue: WindowsFoundation.IID {
+    .init(Data1: 0x72A98001, Data2: 0xD38A, Data3: 0x4C0A, Data4: ( 0x8F,0xA6,0x75,0xCD,0xDA,0xF4,0x66,0x4C ))// 72A98001-D38A-4C0A-8FA6-75CDDAF4664C
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CICodecInfo: WindowsFoundation.IID {
+    .init(Data1: 0x51E89F85, Data2: 0xEA97, Data3: 0x499C, Data4: ( 0x86,0xAC,0x4C,0xE5,0xE7,0x3F,0x3A,0x42 ))// 51E89F85-EA97-499C-86AC-4CE5E73F3A42
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CICodecQuery: WindowsFoundation.IID {
+    .init(Data1: 0x222A953A, Data2: 0xAF61, Data3: 0x4E04, Data4: ( 0x80,0x8A,0xA4,0x63,0x4E,0x2F,0x3A,0xC4 ))// 222A953A-AF61-4E04-808A-A4634E2F3AC4
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics: WindowsFoundation.IID {
+    .init(Data1: 0xA66AC4F2, Data2: 0x888B, Data3: 0x4224, Data4: ( 0x8C,0xF6,0x2A,0x8D,0x4E,0xB0,0x23,0x82 ))// A66AC4F2-888B-4224-8CF6-2A8D4EB02382
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CIDataCue: WindowsFoundation.IID {
+    .init(Data1: 0x7C7F676D, Data2: 0x1FBC, Data3: 0x4E2D, Data4: ( 0x9A,0x87,0xEE,0x38,0xBD,0x1D,0xC6,0x37 ))// 7C7F676D-1FBC-4E2D-9A87-EE38BD1DC637
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CIDataCue2: WindowsFoundation.IID {
+    .init(Data1: 0xBC561B15, Data2: 0x95F2, Data3: 0x49E8, Data4: ( 0x96,0xF1,0x8D,0xD5,0xDA,0xC6,0x8D,0x93 ))// BC561B15-95F2-49E8-96F1-8DD5DAC68D93
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CIFaceDetectedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x19918426, Data2: 0xC65B, Data3: 0x46BA, Data4: ( 0x85,0xF8,0x13,0x88,0x05,0x76,0xC9,0x0A ))// 19918426-C65B-46BA-85F8-13880576C90A
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CIFaceDetectionEffect: WindowsFoundation.IID {
+    .init(Data1: 0xAE15EBD2, Data2: 0x0542, Data3: 0x42A9, Data4: ( 0xBC,0x90,0xF2,0x83,0xA2,0x9F,0x46,0xC1 ))// AE15EBD2-0542-42A9-BC90-F283A29F46C1
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CIFaceDetectionEffectDefinition: WindowsFoundation.IID {
+    .init(Data1: 0x43DCA081, Data2: 0xB848, Data3: 0x4F33, Data4: ( 0xB7,0x02,0x1F,0xD2,0x62,0x4F,0xB0,0x16 ))// 43DCA081-B848-4F33-B702-1FD2624FB016
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CIFaceDetectionEffectFrame: WindowsFoundation.IID {
+    .init(Data1: 0x8AB08993, Data2: 0x5DC8, Data3: 0x447B, Data4: ( 0xA2,0x47,0x52,0x70,0xBD,0x80,0x2E,0xCE ))// 8AB08993-5DC8-447B-A247-5270BD802ECE
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CIHighDynamicRangeControl: WindowsFoundation.IID {
+    .init(Data1: 0x55F1A7AE, Data2: 0xD957, Data3: 0x4DC9, Data4: ( 0x9D,0x1C,0x85,0x53,0xA8,0x2A,0x7D,0x99 ))// 55F1A7AE-D957-4DC9-9D1C-8553A82A7D99
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CIHighDynamicRangeOutput: WindowsFoundation.IID {
+    .init(Data1: 0x0F57806B, Data2: 0x253B, Data3: 0x4119, Data4: ( 0xBB,0x40,0x3A,0x90,0xE5,0x13,0x84,0xF7 ))// 0F57806B-253B-4119-BB40-3A90E51384F7
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CIImageCue: WindowsFoundation.IID {
+    .init(Data1: 0x52828282, Data2: 0x367B, Data3: 0x440B, Data4: ( 0x91,0x16,0x3C,0x84,0x57,0x0D,0xD2,0x70 ))// 52828282-367B-440B-9116-3C84570DD270
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CIInitializeMediaStreamSourceRequestedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x25BC45E1, Data2: 0x9B08, Data3: 0x4C2E, Data4: ( 0xA8,0x55,0x45,0x42,0xF1,0xA7,0x5D,0xEB ))// 25BC45E1-9B08-4C2E-A855-4542F1A75DEB
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CILowLightFusionResult: WindowsFoundation.IID {
+    .init(Data1: 0x78EDBE35, Data2: 0x27A0, Data3: 0x42E0, Data4: ( 0x9C,0xD3,0x73,0x8D,0x20,0x89,0xDE,0x9C ))// 78EDBE35-27A0-42E0-9CD3-738D2089DE9C
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CILowLightFusionStatics: WindowsFoundation.IID {
+    .init(Data1: 0x5305016D, Data2: 0xC29E, Data3: 0x40E2, Data4: ( 0x87,0xA9,0x9E,0x1F,0xD2,0xF1,0x92,0xF5 ))// 5305016D-C29E-40E2-87A9-9E1FD2F192F5
+}
+
 private var IID___x_ABI_CWindows_CMedia_CCore_CIMediaBinder: WindowsFoundation.IID {
     .init(Data1: 0x2B7E40AA, Data2: 0xDE07, Data3: 0x424F, Data4: ( 0x83,0xF1,0xF1,0xDE,0x46,0xC4,0xFA,0x2E ))// 2B7E40AA-DE07-424F-83F1-F1DE46C4FA2E
 }
@@ -74,6 +138,14 @@ private var IID___x_ABI_CWindows_CMedia_CCore_CIMediaSource4: WindowsFoundation.
 
 private var IID___x_ABI_CWindows_CMedia_CCore_CIMediaSource5: WindowsFoundation.IID {
     .init(Data1: 0x331A22AE, Data2: 0xED2E, Data3: 0x4A22, Data4: ( 0x94,0xC8,0xB7,0x43,0xA9,0x2B,0x30,0x22 ))// 331A22AE-ED2E-4A22-94C8-B743A92B3022
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CIMediaSourceAppServiceConnection: WindowsFoundation.IID {
+    .init(Data1: 0x61E1EA97, Data2: 0x1916, Data3: 0x4810, Data4: ( 0xB7,0xF4,0xB6,0x42,0xBE,0x82,0x95,0x96 ))// 61E1EA97-1916-4810-B7F4-B642BE829596
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CIMediaSourceAppServiceConnectionFactory: WindowsFoundation.IID {
+    .init(Data1: 0x65B912EB, Data2: 0x80B9, Data3: 0x44F9, Data4: ( 0x9C,0x1E,0xE1,0x20,0xF6,0xD9,0x28,0x38 ))// 65B912EB-80B9-44F9-9C1E-E120F6D92838
 }
 
 private var IID___x_ABI_CWindows_CMedia_CCore_CIMediaSourceError: WindowsFoundation.IID {
@@ -224,8 +296,28 @@ private var IID___x_ABI_CWindows_CMedia_CCore_CIMseStreamSourceStatics: WindowsF
     .init(Data1: 0x465C679D, Data2: 0xD570, Data3: 0x43CE, Data4: ( 0xBA,0x21,0x0B,0xFF,0x5F,0x3F,0xBD,0x0A ))// 465C679D-D570-43CE-BA21-0BFF5F3FBD0A
 }
 
+private var IID___x_ABI_CWindows_CMedia_CCore_CISceneAnalysisEffect: WindowsFoundation.IID {
+    .init(Data1: 0xC04BA319, Data2: 0xCA41, Data3: 0x4813, Data4: ( 0xBF,0xFD,0x7B,0x08,0xB0,0xED,0x25,0x57 ))// C04BA319-CA41-4813-BFFD-7B08B0ED2557
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CISceneAnalysisEffectFrame: WindowsFoundation.IID {
+    .init(Data1: 0xD8B10E4C, Data2: 0x7FD9, Data3: 0x42E1, Data4: ( 0x85,0xEB,0x65,0x72,0xC2,0x97,0xC9,0x87 ))// D8B10E4C-7FD9-42E1-85EB-6572C297C987
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CISceneAnalysisEffectFrame2: WindowsFoundation.IID {
+    .init(Data1: 0x2D4E29BE, Data2: 0x061F, Data3: 0x47AE, Data4: ( 0x99,0x15,0x02,0x52,0x4B,0x5F,0x9A,0x5F ))// 2D4E29BE-061F-47AE-9915-02524B5F9A5F
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CISceneAnalyzedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x146B9588, Data2: 0x2851, Data3: 0x45E4, Data4: ( 0xAD,0x55,0x44,0xCF,0x8D,0xF8,0xDB,0x4D ))// 146B9588-2851-45E4-AD55-44CF8DF8DB4D
+}
+
 private var IID___x_ABI_CWindows_CMedia_CCore_CISingleSelectMediaTrackList: WindowsFoundation.IID {
     .init(Data1: 0x77206F1F, Data2: 0xC34F, Data3: 0x494F, Data4: ( 0x80,0x77,0x2B,0xAD,0x9F,0xF4,0xEC,0xF1 ))// 77206F1F-C34F-494F-8077-2BAD9FF4ECF1
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CISpeechCue: WindowsFoundation.IID {
+    .init(Data1: 0xAEE254DC, Data2: 0x1725, Data3: 0x4BAD, Data4: ( 0x80,0x43,0xA9,0x84,0x99,0xB0,0x17,0xA2 ))// AEE254DC-1725-4BAD-8043-A98499B017A2
 }
 
 private var IID___x_ABI_CWindows_CMedia_CCore_CITimedMetadataStreamDescriptor: WindowsFoundation.IID {
@@ -256,6 +348,22 @@ private var IID___x_ABI_CWindows_CMedia_CCore_CITimedMetadataTrackFailedEventArg
     .init(Data1: 0xA57FC9D1, Data2: 0x6789, Data3: 0x4D4D, Data4: ( 0xB0,0x7F,0x84,0xB4,0xF3,0x1A,0xCB,0x70 ))// A57FC9D1-6789-4D4D-B07F-84B4F31ACB70
 }
 
+private var IID___x_ABI_CWindows_CMedia_CCore_CITimedMetadataTrackProvider: WindowsFoundation.IID {
+    .init(Data1: 0x3B7F2024, Data2: 0xF74E, Data3: 0x4ADE, Data4: ( 0x93,0xC5,0x21,0x9D,0xA0,0x5B,0x68,0x56 ))// 3B7F2024-F74E-4ADE-93C5-219DA05B6856
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CITimedTextCue: WindowsFoundation.IID {
+    .init(Data1: 0x51C79E51, Data2: 0x3B86, Data3: 0x494D, Data4: ( 0xB3,0x59,0xBB,0x2E,0xA7,0xAC,0xA9,0xA9 ))// 51C79E51-3B86-494D-B359-BB2EA7ACA9A9
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CITimedTextLine: WindowsFoundation.IID {
+    .init(Data1: 0x978D7CE2, Data2: 0x7308, Data3: 0x4C66, Data4: ( 0xBE,0x50,0x65,0x77,0x72,0x89,0xF5,0xDF ))// 978D7CE2-7308-4C66-BE50-65777289F5DF
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CITimedTextRegion: WindowsFoundation.IID {
+    .init(Data1: 0x1ED0881F, Data2: 0x8A06, Data3: 0x4222, Data4: ( 0x9F,0x59,0xB2,0x1B,0xF4,0x01,0x24,0xB4 ))// 1ED0881F-8A06-4222-9F59-B21BF40124B4
+}
+
 private var IID___x_ABI_CWindows_CMedia_CCore_CITimedTextSource: WindowsFoundation.IID {
     .init(Data1: 0xC4ED9BA6, Data2: 0x101F, Data3: 0x404D, Data4: ( 0xA9,0x49,0x82,0xF3,0x3F,0xCD,0x93,0xB7 ))// C4ED9BA6-101F-404D-A949-82F33FCD93B7
 }
@@ -270,6 +378,26 @@ private var IID___x_ABI_CWindows_CMedia_CCore_CITimedTextSourceStatics: WindowsF
 
 private var IID___x_ABI_CWindows_CMedia_CCore_CITimedTextSourceStatics2: WindowsFoundation.IID {
     .init(Data1: 0xB66B7602, Data2: 0x923E, Data3: 0x43FA, Data4: ( 0x96,0x33,0x58,0x70,0x75,0x81,0x2D,0xB5 ))// B66B7602-923E-43FA-9633-587075812DB5
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CITimedTextStyle: WindowsFoundation.IID {
+    .init(Data1: 0x1BB2384D, Data2: 0xA825, Data3: 0x40C2, Data4: ( 0xA7,0xF5,0x28,0x1E,0xAE,0xDF,0x3B,0x55 ))// 1BB2384D-A825-40C2-A7F5-281EAEDF3B55
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CITimedTextStyle2: WindowsFoundation.IID {
+    .init(Data1: 0x655F492D, Data2: 0x6111, Data3: 0x4787, Data4: ( 0x89,0xCC,0x68,0x6F,0xEC,0xE5,0x7E,0x14 ))// 655F492D-6111-4787-89CC-686FECE57E14
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CITimedTextSubformat: WindowsFoundation.IID {
+    .init(Data1: 0xD713502F, Data2: 0x3261, Data3: 0x4722, Data4: ( 0xA0,0xC2,0xB9,0x37,0xB2,0x39,0x0F,0x14 ))// D713502F-3261-4722-A0C2-B937B2390F14
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CIVideoStabilizationEffect: WindowsFoundation.IID {
+    .init(Data1: 0x0808A650, Data2: 0x9698, Data3: 0x4E57, Data4: ( 0x87,0x7B,0xBD,0x7C,0xB2,0xEE,0x0F,0x8A ))// 0808A650-9698-4E57-877B-BD7CB2EE0F8A
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCore_CIVideoStabilizationEffectEnabledChangedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x187EFF28, Data2: 0x67BB, Data3: 0x4713, Data4: ( 0xB9,0x00,0x41,0x68,0xDA,0x16,0x45,0x29 ))// 187EFF28-67BB-4713-B900-4168DA164529
 }
 
 private var IID___x_ABI_CWindows_CMedia_CCore_CIVideoStreamDescriptor: WindowsFoundation.IID {
@@ -480,6 +608,814 @@ public enum __ABI_Windows_Media_Core {
                 try CHECKED(pThis.pointee.lpVtbl.pointee.get_MediaSourceStatus(pThis, &value))
             }
             return value
+        }
+
+    }
+
+    public class IChapterCue: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CIChapterCue }
+
+        internal func put_TitleImpl(_ value: String) throws {
+            let _value = try! HString(value)
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIChapterCue.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Title(pThis, _value.get()))
+            }
+        }
+
+        internal func get_TitleImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIChapterCue.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Title(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    public class ICodecInfo: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CICodecInfo }
+
+        internal func get_KindImpl() throws -> UWP.CodecKind {
+            var value: __x_ABI_CWindows_CMedia_CCore_CCodecKind = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecInfo.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Kind(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_CategoryImpl() throws -> UWP.CodecCategory {
+            var value: __x_ABI_CWindows_CMedia_CCore_CCodecCategory = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecInfo.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Category(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_SubtypesImpl() throws -> WindowsFoundation.AnyIVectorView<String>? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecInfo.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Subtypes(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIVectorView_1_HSTRINGWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func get_DisplayNameImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecInfo.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DisplayName(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_IsTrustedImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecInfo.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsTrusted(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    public class ICodecQuery: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CICodecQuery }
+
+        internal func FindAllAsyncImpl(_ kind: UWP.CodecKind, _ category: UWP.CodecCategory, _ subType: String) throws -> WindowsFoundation.AnyIAsyncOperation<WindowsFoundation.AnyIVectorView<UWP.CodecInfo?>?>? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                let _subType = try! HString(subType)
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecQuery.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.FindAllAsync(pThis, kind, category, _subType.get(), &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CMedia__CCore__CCodecInfoWrapper.unwrapFrom(abi: value)
+        }
+
+    }
+
+    public class ICodecSubtypesStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics }
+
+        internal func get_VideoFormatDV25Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormatDV25(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_VideoFormatDV50Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormatDV50(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_VideoFormatDvcImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormatDvc(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_VideoFormatDvh1Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormatDvh1(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_VideoFormatDvhDImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormatDvhD(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_VideoFormatDvsdImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormatDvsd(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_VideoFormatDvslImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormatDvsl(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_VideoFormatH263Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormatH263(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_VideoFormatH264Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormatH264(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_VideoFormatH265Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormatH265(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_VideoFormatH264ESImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormatH264ES(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_VideoFormatHevcImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormatHevc(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_VideoFormatHevcESImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormatHevcES(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_VideoFormatM4S2Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormatM4S2(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_VideoFormatMjpgImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormatMjpg(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_VideoFormatMP43Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormatMP43(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_VideoFormatMP4SImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormatMP4S(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_VideoFormatMP4VImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormatMP4V(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_VideoFormatMpeg2Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormatMpeg2(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_VideoFormatVP80Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormatVP80(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_VideoFormatVP90Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormatVP90(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_VideoFormatMpg1Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormatMpg1(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_VideoFormatMss1Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormatMss1(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_VideoFormatMss2Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormatMss2(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_VideoFormatWmv1Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormatWmv1(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_VideoFormatWmv2Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormatWmv2(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_VideoFormatWmv3Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormatWmv3(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_VideoFormatWvc1Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormatWvc1(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_VideoFormat420OImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoFormat420O(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_AudioFormatAacImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AudioFormatAac(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_AudioFormatAdtsImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AudioFormatAdts(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_AudioFormatAlacImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AudioFormatAlac(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_AudioFormatAmrNBImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AudioFormatAmrNB(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_AudioFormatAmrWBImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AudioFormatAmrWB(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_AudioFormatAmrWPImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AudioFormatAmrWP(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_AudioFormatDolbyAC3Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AudioFormatDolbyAC3(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_AudioFormatDolbyAC3SpdifImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AudioFormatDolbyAC3Spdif(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_AudioFormatDolbyDDPlusImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AudioFormatDolbyDDPlus(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_AudioFormatDrmImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AudioFormatDrm(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_AudioFormatDtsImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AudioFormatDts(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_AudioFormatFlacImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AudioFormatFlac(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_AudioFormatFloatImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AudioFormatFloat(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_AudioFormatMP3Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AudioFormatMP3(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_AudioFormatMPegImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AudioFormatMPeg(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_AudioFormatMsp1Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AudioFormatMsp1(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_AudioFormatOpusImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AudioFormatOpus(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_AudioFormatPcmImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AudioFormatPcm(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_AudioFormatWmaSpdifImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AudioFormatWmaSpdif(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_AudioFormatWMAudioLosslessImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AudioFormatWMAudioLossless(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_AudioFormatWMAudioV8Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AudioFormatWMAudioV8(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_AudioFormatWMAudioV9Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CICodecSubtypesStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AudioFormatWMAudioV9(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    public class IDataCue: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CIDataCue }
+
+        internal func put_DataImpl(_ value: UWP.AnyIBuffer?) throws {
+            let valueWrapper = __ABI_Windows_Storage_Streams.IBufferWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIDataCue.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Data(pThis, _value))
+            }
+        }
+
+        internal func get_DataImpl() throws -> UWP.AnyIBuffer? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIDataCue.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Data(pThis, &valueAbi))
+                }
+            }
+            return __ABI_Windows_Storage_Streams.IBufferWrapper.unwrapFrom(abi: value)
+        }
+
+    }
+
+    public class IDataCue2: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CIDataCue2 }
+
+        internal func get_PropertiesImpl() throws -> WindowsFoundation.PropertySet? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIDataCue2.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Properties(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IFaceDetectedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CIFaceDetectedEventArgs }
+
+        internal func get_ResultFrameImpl() throws -> UWP.FaceDetectionEffectFrame? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIFaceDetectedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ResultFrame(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IFaceDetectionEffect: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CIFaceDetectionEffect }
+
+        internal func put_EnabledImpl(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIFaceDetectionEffect.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Enabled(pThis, .init(from: value)))
+            }
+        }
+
+        internal func get_EnabledImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIFaceDetectionEffect.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Enabled(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_DesiredDetectionIntervalImpl(_ value: WindowsFoundation.TimeSpan) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIFaceDetectionEffect.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_DesiredDetectionInterval(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_DesiredDetectionIntervalImpl() throws -> WindowsFoundation.TimeSpan {
+            var value: __x_ABI_CWindows_CFoundation_CTimeSpan = .init()
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIFaceDetectionEffect.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DesiredDetectionInterval(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func add_FaceDetectedImpl(_ handler: TypedEventHandler<UWP.FaceDetectionEffect?, UWP.FaceDetectedEventArgs?>?) throws -> EventRegistrationToken {
+            var cookie: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CMedia__CCore__CFaceDetectionEffect___x_ABI_CWindows__CMedia__CCore__CFaceDetectedEventArgsWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIFaceDetectionEffect.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_FaceDetected(pThis, _handler, &cookie))
+            }
+            return cookie
+        }
+
+        internal func remove_FaceDetectedImpl(_ cookie: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIFaceDetectionEffect.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_FaceDetected(pThis, cookie))
+            }
+        }
+
+    }
+
+    public class IFaceDetectionEffectDefinition: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CIFaceDetectionEffectDefinition }
+
+        internal func put_DetectionModeImpl(_ value: UWP.FaceDetectionMode) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIFaceDetectionEffectDefinition.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_DetectionMode(pThis, value))
+            }
+        }
+
+        internal func get_DetectionModeImpl() throws -> UWP.FaceDetectionMode {
+            var value: __x_ABI_CWindows_CMedia_CCore_CFaceDetectionMode = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIFaceDetectionEffectDefinition.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DetectionMode(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_SynchronousDetectionEnabledImpl(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIFaceDetectionEffectDefinition.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SynchronousDetectionEnabled(pThis, .init(from: value)))
+            }
+        }
+
+        internal func get_SynchronousDetectionEnabledImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIFaceDetectionEffectDefinition.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_SynchronousDetectionEnabled(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    public class IFaceDetectionEffectFrame: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CIFaceDetectionEffectFrame }
+
+        internal func get_DetectedFacesImpl() throws -> WindowsFoundation.AnyIVectorView<UWP.DetectedFace?>? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIFaceDetectionEffectFrame.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_DetectedFaces(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIVectorView_1___x_ABI_CWindows__CMedia__CFaceAnalysis__CDetectedFaceWrapper.unwrapFrom(abi: value)
+        }
+
+    }
+
+    public class IHighDynamicRangeControl: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CIHighDynamicRangeControl }
+
+        internal func put_EnabledImpl(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIHighDynamicRangeControl.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Enabled(pThis, .init(from: value)))
+            }
+        }
+
+        internal func get_EnabledImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIHighDynamicRangeControl.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Enabled(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    public class IHighDynamicRangeOutput: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CIHighDynamicRangeOutput }
+
+        internal func get_CertaintyImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIHighDynamicRangeOutput.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Certainty(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_FrameControllersImpl() throws -> WindowsFoundation.AnyIVectorView<UWP.FrameController?>? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIHighDynamicRangeOutput.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_FrameControllers(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIVectorView_1___x_ABI_CWindows__CMedia__CDevices__CCore__CFrameControllerWrapper.unwrapFrom(abi: value)
+        }
+
+    }
+
+    public class IImageCue: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CIImageCue }
+
+        internal func get_PositionImpl() throws -> UWP.TimedTextPoint {
+            var value: __x_ABI_CWindows_CMedia_CCore_CTimedTextPoint = .init()
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIImageCue.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Position(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_PositionImpl(_ value: UWP.TimedTextPoint) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIImageCue.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Position(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_ExtentImpl() throws -> UWP.TimedTextSize {
+            var value: __x_ABI_CWindows_CMedia_CCore_CTimedTextSize = .init()
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIImageCue.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Extent(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_ExtentImpl(_ value: UWP.TimedTextSize) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIImageCue.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Extent(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func put_SoftwareBitmapImpl(_ value: UWP.SoftwareBitmap?) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIImageCue.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SoftwareBitmap(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_SoftwareBitmapImpl() throws -> UWP.SoftwareBitmap? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIImageCue.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SoftwareBitmap(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IInitializeMediaStreamSourceRequestedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CIInitializeMediaStreamSourceRequestedEventArgs }
+
+        internal func get_SourceImpl() throws -> UWP.MediaStreamSource? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIInitializeMediaStreamSourceRequestedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Source(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_RandomAccessStreamImpl() throws -> UWP.AnyIRandomAccessStream? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIInitializeMediaStreamSourceRequestedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_RandomAccessStream(pThis, &valueAbi))
+                }
+            }
+            return __ABI_Windows_Storage_Streams.IRandomAccessStreamWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func GetDeferralImpl() throws -> WindowsFoundation.Deferral? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIInitializeMediaStreamSourceRequestedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetDeferral(pThis, &resultAbi))
+                }
+            }
+            return .from(abi: result)
+        }
+
+    }
+
+    public class ILowLightFusionResult: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CILowLightFusionResult }
+
+        internal func get_FrameImpl() throws -> UWP.SoftwareBitmap? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CILowLightFusionResult.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Frame(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class ILowLightFusionStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CILowLightFusionStatics }
+
+        internal func get_SupportedBitmapPixelFormatsImpl() throws -> WindowsFoundation.AnyIVectorView<UWP.BitmapPixelFormat>? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CILowLightFusionStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SupportedBitmapPixelFormats(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIVectorView_1___x_ABI_CWindows__CGraphics__CImaging__CBitmapPixelFormatWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func get_MaxSupportedFrameCountImpl() throws -> Int32 {
+            var value: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CILowLightFusionStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_MaxSupportedFrameCount(pThis, &value))
+            }
+            return value
+        }
+
+        internal func FuseAsyncImpl(_ frameSet: WindowsFoundation.AnyIIterable<UWP.SoftwareBitmap?>?) throws -> WindowsFoundation.AnyIAsyncOperationWithProgress<UWP.LowLightFusionResult?, Double>? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                let frameSetWrapper = UWP.__x_ABI_C__FIIterable_1___x_ABI_CWindows__CGraphics__CImaging__CSoftwareBitmapWrapper(frameSet)
+                let _frameSet = try! frameSetWrapper?.toABI { $0 }
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CILowLightFusionStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.FuseAsync(pThis, _frameSet, &resultAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperationWithProgress_2___x_ABI_CWindows__CMedia__CCore__CLowLightFusionResult_doubleWrapper.unwrapFrom(abi: result)
         }
 
     }
@@ -951,6 +1887,47 @@ public enum __ABI_Windows_Media_Core {
                 }
             }
             return .from(abi: value)
+        }
+
+    }
+
+    public class IMediaSourceAppServiceConnection: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CIMediaSourceAppServiceConnection }
+
+        internal func add_InitializeMediaStreamSourceRequestedImpl(_ handler: TypedEventHandler<UWP.MediaSourceAppServiceConnection?, UWP.InitializeMediaStreamSourceRequestedEventArgs?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CMedia__CCore__CMediaSourceAppServiceConnection___x_ABI_CWindows__CMedia__CCore__CInitializeMediaStreamSourceRequestedEventArgsWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIMediaSourceAppServiceConnection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_InitializeMediaStreamSourceRequested(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_InitializeMediaStreamSourceRequestedImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIMediaSourceAppServiceConnection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_InitializeMediaStreamSourceRequested(pThis, token))
+            }
+        }
+
+        internal func StartImpl() throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIMediaSourceAppServiceConnection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Start(pThis))
+            }
+        }
+
+    }
+
+    public class IMediaSourceAppServiceConnectionFactory: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CIMediaSourceAppServiceConnectionFactory }
+
+        internal func CreateImpl(_ appServiceConnection: UWP.AppServiceConnection?) throws -> IMediaSourceAppServiceConnection {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIMediaSourceAppServiceConnectionFactory.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.Create(pThis, RawPointer(appServiceConnection), &resultAbi))
+                }
+            }
+            return IMediaSourceAppServiceConnection(result!)
         }
 
     }
@@ -2495,6 +3472,100 @@ public enum __ABI_Windows_Media_Core {
 
     }
 
+    public class ISceneAnalysisEffect: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CISceneAnalysisEffect }
+
+        internal func get_HighDynamicRangeAnalyzerImpl() throws -> UWP.HighDynamicRangeControl? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CISceneAnalysisEffect.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_HighDynamicRangeAnalyzer(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_DesiredAnalysisIntervalImpl(_ value: WindowsFoundation.TimeSpan) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CISceneAnalysisEffect.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_DesiredAnalysisInterval(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_DesiredAnalysisIntervalImpl() throws -> WindowsFoundation.TimeSpan {
+            var value: __x_ABI_CWindows_CFoundation_CTimeSpan = .init()
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CISceneAnalysisEffect.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DesiredAnalysisInterval(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func add_SceneAnalyzedImpl(_ handler: TypedEventHandler<UWP.SceneAnalysisEffect?, UWP.SceneAnalyzedEventArgs?>?) throws -> EventRegistrationToken {
+            var cookie: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CMedia__CCore__CSceneAnalysisEffect___x_ABI_CWindows__CMedia__CCore__CSceneAnalyzedEventArgsWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CISceneAnalysisEffect.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_SceneAnalyzed(pThis, _handler, &cookie))
+            }
+            return cookie
+        }
+
+        internal func remove_SceneAnalyzedImpl(_ cookie: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CISceneAnalysisEffect.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_SceneAnalyzed(pThis, cookie))
+            }
+        }
+
+    }
+
+    public class ISceneAnalysisEffectFrame: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CISceneAnalysisEffectFrame }
+
+        internal func get_FrameControlValuesImpl() throws -> UWP.CapturedFrameControlValues? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CISceneAnalysisEffectFrame.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_FrameControlValues(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_HighDynamicRangeImpl() throws -> UWP.HighDynamicRangeOutput? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CISceneAnalysisEffectFrame.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_HighDynamicRange(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class ISceneAnalysisEffectFrame2: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CISceneAnalysisEffectFrame2 }
+
+        internal func get_AnalysisRecommendationImpl() throws -> UWP.SceneAnalysisRecommendation {
+            var value: __x_ABI_CWindows_CMedia_CCore_CSceneAnalysisRecommendation = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CISceneAnalysisEffectFrame2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AnalysisRecommendation(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
+    public class ISceneAnalyzedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CISceneAnalyzedEventArgs }
+
+        internal func get_ResultFrameImpl() throws -> UWP.SceneAnalysisEffectFrame? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CISceneAnalyzedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ResultFrame(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
     public class ISingleSelectMediaTrackList: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CISingleSelectMediaTrackList }
 
@@ -2589,6 +3660,60 @@ public enum __ABI_Windows_Media_Core {
     )
 
     public typealias ISingleSelectMediaTrackListWrapper = InterfaceWrapperBase<__IMPL_Windows_Media_Core.ISingleSelectMediaTrackListBridge>
+    public class ISpeechCue: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CISpeechCue }
+
+        internal func get_TextImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CISpeechCue.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Text(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_TextImpl(_ value: String) throws {
+            let _value = try! HString(value)
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CISpeechCue.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Text(pThis, _value.get()))
+            }
+        }
+
+        internal func get_StartPositionInInputImpl() throws -> Int32? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CISpeechCue.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_StartPositionInInput(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1_intWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_StartPositionInInputImpl(_ value: Int32?) throws {
+            let valueWrapper = UWP.__x_ABI_C__FIReference_1_intWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CISpeechCue.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_StartPositionInInput(pThis, _value))
+            }
+        }
+
+        internal func get_EndPositionInInputImpl() throws -> Int32? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CISpeechCue.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_EndPositionInInput(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1_intWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_EndPositionInInputImpl(_ value: Int32?) throws {
+            let valueWrapper = UWP.__x_ABI_C__FIReference_1_intWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CISpeechCue.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_EndPositionInInput(pThis, _value))
+            }
+        }
+
+    }
+
     public class ITimedMetadataStreamDescriptor: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CITimedMetadataStreamDescriptor }
 
@@ -2802,6 +3927,305 @@ public enum __ABI_Windows_Media_Core {
 
     }
 
+    public class ITimedMetadataTrackProvider: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CITimedMetadataTrackProvider }
+
+        open func get_TimedMetadataTracksImpl() throws -> WindowsFoundation.AnyIVectorView<UWP.TimedMetadataTrack?>? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedMetadataTrackProvider.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_TimedMetadataTracks(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIVectorView_1___x_ABI_CWindows__CMedia__CCore__CTimedMetadataTrackWrapper.unwrapFrom(abi: value)
+        }
+
+    }
+
+    internal static var ITimedMetadataTrackProviderVTable: __x_ABI_CWindows_CMedia_CCore_CITimedMetadataTrackProviderVtbl = .init(
+        QueryInterface: { ITimedMetadataTrackProviderWrapper.queryInterface($0, $1, $2) },
+        AddRef: { ITimedMetadataTrackProviderWrapper.addRef($0) },
+        Release: { ITimedMetadataTrackProviderWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 3).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_Media_Core.ITimedMetadataTrackProviderWrapper.IID
+            $1!.pointee = 3
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.Media.Core.ITimedMetadataTrackProvider").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_TimedMetadataTracks: {
+            guard let __unwrapped__instance = ITimedMetadataTrackProviderWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.timedMetadataTracks
+            let valueWrapper = UWP.__x_ABI_C__FIVectorView_1___x_ABI_CWindows__CMedia__CCore__CTimedMetadataTrackWrapper(value)
+            valueWrapper?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias ITimedMetadataTrackProviderWrapper = InterfaceWrapperBase<__IMPL_Windows_Media_Core.ITimedMetadataTrackProviderBridge>
+    public class ITimedTextCue: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CITimedTextCue }
+
+        internal func get_CueRegionImpl() throws -> UWP.TimedTextRegion? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextCue.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CueRegion(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_CueRegionImpl(_ value: UWP.TimedTextRegion?) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextCue.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CueRegion(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_CueStyleImpl() throws -> UWP.TimedTextStyle? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextCue.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CueStyle(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_CueStyleImpl(_ value: UWP.TimedTextStyle?) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextCue.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CueStyle(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_LinesImpl() throws -> WindowsFoundation.AnyIVector<UWP.TimedTextLine?>? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextCue.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Lines(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIVector_1___x_ABI_CWindows__CMedia__CCore__CTimedTextLineWrapper.unwrapFrom(abi: value)
+        }
+
+    }
+
+    public class ITimedTextLine: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CITimedTextLine }
+
+        internal func get_TextImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextLine.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Text(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_TextImpl(_ value: String) throws {
+            let _value = try! HString(value)
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextLine.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Text(pThis, _value.get()))
+            }
+        }
+
+        internal func get_SubformatsImpl() throws -> WindowsFoundation.AnyIVector<UWP.TimedTextSubformat?>? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextLine.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Subformats(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIVector_1___x_ABI_CWindows__CMedia__CCore__CTimedTextSubformatWrapper.unwrapFrom(abi: value)
+        }
+
+    }
+
+    public class ITimedTextRegion: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CITimedTextRegion }
+
+        internal func get_NameImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextRegion.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Name(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_NameImpl(_ value: String) throws {
+            let _value = try! HString(value)
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextRegion.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Name(pThis, _value.get()))
+            }
+        }
+
+        internal func get_PositionImpl() throws -> UWP.TimedTextPoint {
+            var value: __x_ABI_CWindows_CMedia_CCore_CTimedTextPoint = .init()
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextRegion.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Position(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_PositionImpl(_ value: UWP.TimedTextPoint) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextRegion.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Position(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_ExtentImpl() throws -> UWP.TimedTextSize {
+            var value: __x_ABI_CWindows_CMedia_CCore_CTimedTextSize = .init()
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextRegion.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Extent(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_ExtentImpl(_ value: UWP.TimedTextSize) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextRegion.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Extent(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_BackgroundImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextRegion.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Background(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_BackgroundImpl(_ value: UWP.Color) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextRegion.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Background(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_WritingModeImpl() throws -> UWP.TimedTextWritingMode {
+            var value: __x_ABI_CWindows_CMedia_CCore_CTimedTextWritingMode = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextRegion.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_WritingMode(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_WritingModeImpl(_ value: UWP.TimedTextWritingMode) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextRegion.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_WritingMode(pThis, value))
+            }
+        }
+
+        internal func get_DisplayAlignmentImpl() throws -> UWP.TimedTextDisplayAlignment {
+            var value: __x_ABI_CWindows_CMedia_CCore_CTimedTextDisplayAlignment = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextRegion.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DisplayAlignment(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_DisplayAlignmentImpl(_ value: UWP.TimedTextDisplayAlignment) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextRegion.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_DisplayAlignment(pThis, value))
+            }
+        }
+
+        internal func get_LineHeightImpl() throws -> UWP.TimedTextDouble {
+            var value: __x_ABI_CWindows_CMedia_CCore_CTimedTextDouble = .init()
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextRegion.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LineHeight(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_LineHeightImpl(_ value: UWP.TimedTextDouble) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextRegion.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_LineHeight(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_IsOverflowClippedImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextRegion.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsOverflowClipped(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_IsOverflowClippedImpl(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextRegion.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_IsOverflowClipped(pThis, .init(from: value)))
+            }
+        }
+
+        internal func get_PaddingImpl() throws -> UWP.TimedTextPadding {
+            var value: __x_ABI_CWindows_CMedia_CCore_CTimedTextPadding = .init()
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextRegion.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Padding(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_PaddingImpl(_ value: UWP.TimedTextPadding) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextRegion.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Padding(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_TextWrappingImpl() throws -> UWP.TimedTextWrapping {
+            var value: __x_ABI_CWindows_CMedia_CCore_CTimedTextWrapping = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextRegion.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_TextWrapping(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_TextWrappingImpl(_ value: UWP.TimedTextWrapping) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextRegion.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_TextWrapping(pThis, value))
+            }
+        }
+
+        internal func get_ZIndexImpl() throws -> Int32 {
+            var value: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextRegion.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ZIndex(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_ZIndexImpl(_ value: Int32) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextRegion.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ZIndex(pThis, value))
+            }
+        }
+
+        internal func get_ScrollModeImpl() throws -> UWP.TimedTextScrollMode {
+            var value: __x_ABI_CWindows_CMedia_CCore_CTimedTextScrollMode = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextRegion.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ScrollMode(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_ScrollModeImpl(_ value: UWP.TimedTextScrollMode) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextRegion.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ScrollMode(pThis, value))
+            }
+        }
+
+    }
+
     public class ITimedTextSource: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CITimedTextSource }
 
@@ -2944,6 +4368,347 @@ public enum __ABI_Windows_Media_Core {
 
     }
 
+    public class ITimedTextStyle: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CITimedTextStyle }
+
+        internal func get_NameImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Name(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_NameImpl(_ value: String) throws {
+            let _value = try! HString(value)
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Name(pThis, _value.get()))
+            }
+        }
+
+        internal func get_FontFamilyImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_FontFamily(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_FontFamilyImpl(_ value: String) throws {
+            let _value = try! HString(value)
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_FontFamily(pThis, _value.get()))
+            }
+        }
+
+        internal func get_FontSizeImpl() throws -> UWP.TimedTextDouble {
+            var value: __x_ABI_CWindows_CMedia_CCore_CTimedTextDouble = .init()
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_FontSize(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_FontSizeImpl(_ value: UWP.TimedTextDouble) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_FontSize(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_FontWeightImpl() throws -> UWP.TimedTextWeight {
+            var value: __x_ABI_CWindows_CMedia_CCore_CTimedTextWeight = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_FontWeight(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_FontWeightImpl(_ value: UWP.TimedTextWeight) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_FontWeight(pThis, value))
+            }
+        }
+
+        internal func get_ForegroundImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Foreground(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_ForegroundImpl(_ value: UWP.Color) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Foreground(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_BackgroundImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Background(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_BackgroundImpl(_ value: UWP.Color) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Background(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_IsBackgroundAlwaysShownImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsBackgroundAlwaysShown(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_IsBackgroundAlwaysShownImpl(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_IsBackgroundAlwaysShown(pThis, .init(from: value)))
+            }
+        }
+
+        internal func get_FlowDirectionImpl() throws -> UWP.TimedTextFlowDirection {
+            var value: __x_ABI_CWindows_CMedia_CCore_CTimedTextFlowDirection = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_FlowDirection(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_FlowDirectionImpl(_ value: UWP.TimedTextFlowDirection) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_FlowDirection(pThis, value))
+            }
+        }
+
+        internal func get_LineAlignmentImpl() throws -> UWP.TimedTextLineAlignment {
+            var value: __x_ABI_CWindows_CMedia_CCore_CTimedTextLineAlignment = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LineAlignment(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_LineAlignmentImpl(_ value: UWP.TimedTextLineAlignment) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_LineAlignment(pThis, value))
+            }
+        }
+
+        internal func get_OutlineColorImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_OutlineColor(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_OutlineColorImpl(_ value: UWP.Color) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_OutlineColor(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_OutlineThicknessImpl() throws -> UWP.TimedTextDouble {
+            var value: __x_ABI_CWindows_CMedia_CCore_CTimedTextDouble = .init()
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_OutlineThickness(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_OutlineThicknessImpl(_ value: UWP.TimedTextDouble) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_OutlineThickness(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_OutlineRadiusImpl() throws -> UWP.TimedTextDouble {
+            var value: __x_ABI_CWindows_CMedia_CCore_CTimedTextDouble = .init()
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_OutlineRadius(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_OutlineRadiusImpl(_ value: UWP.TimedTextDouble) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_OutlineRadius(pThis, .from(swift: value)))
+            }
+        }
+
+    }
+
+    public class ITimedTextStyle2: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CITimedTextStyle2 }
+
+        internal func get_FontStyleImpl() throws -> UWP.TimedTextFontStyle {
+            var value: __x_ABI_CWindows_CMedia_CCore_CTimedTextFontStyle = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_FontStyle(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_FontStyleImpl(_ value: UWP.TimedTextFontStyle) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_FontStyle(pThis, value))
+            }
+        }
+
+        internal func get_IsUnderlineEnabledImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsUnderlineEnabled(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_IsUnderlineEnabledImpl(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_IsUnderlineEnabled(pThis, .init(from: value)))
+            }
+        }
+
+        internal func get_IsLineThroughEnabledImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsLineThroughEnabled(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_IsLineThroughEnabledImpl(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_IsLineThroughEnabled(pThis, .init(from: value)))
+            }
+        }
+
+        internal func get_IsOverlineEnabledImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsOverlineEnabled(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_IsOverlineEnabledImpl(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_IsOverlineEnabled(pThis, .init(from: value)))
+            }
+        }
+
+    }
+
+    public class ITimedTextSubformat: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CITimedTextSubformat }
+
+        internal func get_StartIndexImpl() throws -> Int32 {
+            var value: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextSubformat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_StartIndex(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_StartIndexImpl(_ value: Int32) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextSubformat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_StartIndex(pThis, value))
+            }
+        }
+
+        internal func get_LengthImpl() throws -> Int32 {
+            var value: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextSubformat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Length(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_LengthImpl(_ value: Int32) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextSubformat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Length(pThis, value))
+            }
+        }
+
+        internal func get_SubformatStyleImpl() throws -> UWP.TimedTextStyle? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextSubformat.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SubformatStyle(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_SubformatStyleImpl(_ value: UWP.TimedTextStyle?) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CITimedTextSubformat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SubformatStyle(pThis, RawPointer(value)))
+            }
+        }
+
+    }
+
+    public class IVideoStabilizationEffect: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CIVideoStabilizationEffect }
+
+        internal func put_EnabledImpl(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIVideoStabilizationEffect.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Enabled(pThis, .init(from: value)))
+            }
+        }
+
+        internal func get_EnabledImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIVideoStabilizationEffect.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Enabled(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func add_EnabledChangedImpl(_ handler: TypedEventHandler<UWP.VideoStabilizationEffect?, UWP.VideoStabilizationEffectEnabledChangedEventArgs?>?) throws -> EventRegistrationToken {
+            var cookie: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CMedia__CCore__CVideoStabilizationEffect___x_ABI_CWindows__CMedia__CCore__CVideoStabilizationEffectEnabledChangedEventArgsWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIVideoStabilizationEffect.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_EnabledChanged(pThis, _handler, &cookie))
+            }
+            return cookie
+        }
+
+        internal func remove_EnabledChangedImpl(_ cookie: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIVideoStabilizationEffect.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_EnabledChanged(pThis, cookie))
+            }
+        }
+
+        internal func GetRecommendedStreamConfigurationImpl(_ controller: UWP.VideoDeviceController?, _ desiredProperties: UWP.VideoEncodingProperties?) throws -> UWP.VideoStreamConfiguration? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIVideoStabilizationEffect.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetRecommendedStreamConfiguration(pThis, RawPointer(controller), RawPointer(desiredProperties), &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IVideoStabilizationEffectEnabledChangedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CIVideoStabilizationEffectEnabledChangedEventArgs }
+
+        internal func get_ReasonImpl() throws -> UWP.VideoStabilizationEffectEnabledChangedReason {
+            var value: __x_ABI_CWindows_CMedia_CCore_CVideoStabilizationEffectEnabledChangedReason = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CMedia_CCore_CIVideoStabilizationEffectEnabledChangedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Reason(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
     public class IVideoStreamDescriptor: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCore_CIVideoStreamDescriptor }
 
@@ -3080,6 +4845,26 @@ public enum __ABI_Windows_Media_Core {
 extension __x_ABI_CWindows_CMedia_CCore_CMseTimeRange {
         public static func from(swift: UWP.MseTimeRange) -> __x_ABI_CWindows_CMedia_CCore_CMseTimeRange {
             .init(Start: .from(swift: swift.start), End: .from(swift: swift.end))
+        }
+    }
+    extension __x_ABI_CWindows_CMedia_CCore_CTimedTextDouble {
+        public static func from(swift: UWP.TimedTextDouble) -> __x_ABI_CWindows_CMedia_CCore_CTimedTextDouble {
+            .init(Value: swift.value, Unit: swift.unit)
+        }
+    }
+    extension __x_ABI_CWindows_CMedia_CCore_CTimedTextPadding {
+        public static func from(swift: UWP.TimedTextPadding) -> __x_ABI_CWindows_CMedia_CCore_CTimedTextPadding {
+            .init(Before: swift.before, After: swift.after, Start: swift.start, End: swift.end, Unit: swift.unit)
+        }
+    }
+    extension __x_ABI_CWindows_CMedia_CCore_CTimedTextPoint {
+        public static func from(swift: UWP.TimedTextPoint) -> __x_ABI_CWindows_CMedia_CCore_CTimedTextPoint {
+            .init(X: swift.x, Y: swift.y, Unit: swift.unit)
+        }
+    }
+    extension __x_ABI_CWindows_CMedia_CCore_CTimedTextSize {
+        public static func from(swift: UWP.TimedTextSize) -> __x_ABI_CWindows_CMedia_CCore_CTimedTextSize {
+            .init(Height: swift.height, Width: swift.width, Unit: swift.unit)
         }
     }
     

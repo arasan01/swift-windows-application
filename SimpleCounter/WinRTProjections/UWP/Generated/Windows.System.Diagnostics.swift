@@ -4,6 +4,486 @@ import Foundation
 @_spi(WinRTInternal) @_spi(WinRTImplements) import WindowsFoundation
 import CWinRT
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.diagnosticactionstate)
+public typealias DiagnosticActionState = __x_ABI_CWindows_CSystem_CDiagnostics_CDiagnosticActionState
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.diagnosticactionresult)
+public final class DiagnosticActionResult : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System_Diagnostics.IDiagnosticActionResult
+    private typealias CABI = __x_ABI_CWindows_CSystem_CDiagnostics_CIDiagnosticActionResult
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CDiagnostics_CIDiagnosticActionResult>?) -> DiagnosticActionResult? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.diagnosticactionresult.extendederror)
+    public var extendedError : HRESULT {
+        get { try! _default.get_ExtendedErrorImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.diagnosticactionresult.results)
+    public var results : WindowsFoundation.ValueSet! {
+        get { try! _default.get_ResultsImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.diagnosticinvoker)
+public final class DiagnosticInvoker : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System_Diagnostics.IDiagnosticInvoker
+    private typealias CABI = __x_ABI_CWindows_CSystem_CDiagnostics_CIDiagnosticInvoker
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CDiagnostics_CIDiagnosticInvoker>?) -> DiagnosticInvoker? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IDiagnosticInvokerStatics: __ABI_Windows_System_Diagnostics.IDiagnosticInvokerStatics = try! RoGetActivationFactory(HString("Windows.System.Diagnostics.DiagnosticInvoker"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.diagnosticinvoker.getdefault)
+    public static func getDefault() -> DiagnosticInvoker! {
+        return try! _IDiagnosticInvokerStatics.GetDefaultImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.diagnosticinvoker.getforuser)
+    public static func getForUser(_ user: UWP.User!) -> DiagnosticInvoker! {
+        return try! _IDiagnosticInvokerStatics.GetForUserImpl(user)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.diagnosticinvoker.issupported)
+    public static var isSupported : Bool {
+        get { try! _IDiagnosticInvokerStatics.get_IsSupportedImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.diagnosticinvoker.rundiagnosticactionasync)
+    public func runDiagnosticActionAsync(_ context: UWP.JsonObject!) throws -> WindowsFoundation.AnyIAsyncOperationWithProgress<DiagnosticActionResult?, DiagnosticActionState>! {
+        try _default.RunDiagnosticActionAsyncImpl(context)
+    }
+
+    private lazy var _IDiagnosticInvoker2: __ABI_Windows_System_Diagnostics.IDiagnosticInvoker2! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.diagnosticinvoker.rundiagnosticactionfromstringasync)
+    public func runDiagnosticActionFromStringAsync(_ context: String) throws -> WindowsFoundation.AnyIAsyncOperationWithProgress<DiagnosticActionResult?, DiagnosticActionState>! {
+        try _IDiagnosticInvoker2.RunDiagnosticActionFromStringAsyncImpl(context)
+    }
+
+    deinit {
+        _default = nil
+        _IDiagnosticInvoker2 = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processcpuusage)
+public final class ProcessCpuUsage : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System_Diagnostics.IProcessCpuUsage
+    private typealias CABI = __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessCpuUsage
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CDiagnostics_CIProcessCpuUsage>?) -> ProcessCpuUsage? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processcpuusage.getreport)
+    public func getReport() throws -> ProcessCpuUsageReport! {
+        try _default.GetReportImpl()
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processcpuusagereport)
+public final class ProcessCpuUsageReport : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System_Diagnostics.IProcessCpuUsageReport
+    private typealias CABI = __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessCpuUsageReport
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CDiagnostics_CIProcessCpuUsageReport>?) -> ProcessCpuUsageReport? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processcpuusagereport.kerneltime)
+    public var kernelTime : WindowsFoundation.TimeSpan {
+        get { try! _default.get_KernelTimeImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processcpuusagereport.usertime)
+    public var userTime : WindowsFoundation.TimeSpan {
+        get { try! _default.get_UserTimeImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processdiagnosticinfo)
+public final class ProcessDiagnosticInfo : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System_Diagnostics.IProcessDiagnosticInfo
+    private typealias CABI = __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiagnosticInfo
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiagnosticInfo>?) -> ProcessDiagnosticInfo? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IProcessDiagnosticInfoStatics: __ABI_Windows_System_Diagnostics.IProcessDiagnosticInfoStatics = try! RoGetActivationFactory(HString("Windows.System.Diagnostics.ProcessDiagnosticInfo"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processdiagnosticinfo.getforprocesses)
+    public static func getForProcesses() -> WindowsFoundation.AnyIVectorView<ProcessDiagnosticInfo?>! {
+        return try! _IProcessDiagnosticInfoStatics.GetForProcessesImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processdiagnosticinfo.getforcurrentprocess)
+    public static func getForCurrentProcess() -> ProcessDiagnosticInfo! {
+        return try! _IProcessDiagnosticInfoStatics.GetForCurrentProcessImpl()
+    }
+
+    private static let _IProcessDiagnosticInfoStatics2: __ABI_Windows_System_Diagnostics.IProcessDiagnosticInfoStatics2 = try! RoGetActivationFactory(HString("Windows.System.Diagnostics.ProcessDiagnosticInfo"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processdiagnosticinfo.trygetforprocessid)
+    public static func tryGetForProcessId(_ processId: UInt32) -> ProcessDiagnosticInfo! {
+        return try! _IProcessDiagnosticInfoStatics2.TryGetForProcessIdImpl(processId)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processdiagnosticinfo.cpuusage)
+    public var cpuUsage : ProcessCpuUsage! {
+        get { try! _default.get_CpuUsageImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processdiagnosticinfo.diskusage)
+    public var diskUsage : ProcessDiskUsage! {
+        get { try! _default.get_DiskUsageImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processdiagnosticinfo.executablefilename)
+    public var executableFileName : String {
+        get { try! _default.get_ExecutableFileNameImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processdiagnosticinfo.memoryusage)
+    public var memoryUsage : ProcessMemoryUsage! {
+        get { try! _default.get_MemoryUsageImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processdiagnosticinfo.parent)
+    public var parent : ProcessDiagnosticInfo! {
+        get { try! _default.get_ParentImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processdiagnosticinfo.processid)
+    public var processId : UInt32 {
+        get { try! _default.get_ProcessIdImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processdiagnosticinfo.processstarttime)
+    public var processStartTime : WindowsFoundation.DateTime {
+        get { try! _default.get_ProcessStartTimeImpl() }
+    }
+
+    private lazy var _IProcessDiagnosticInfo2: __ABI_Windows_System_Diagnostics.IProcessDiagnosticInfo2! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processdiagnosticinfo.getappdiagnosticinfos)
+    public func getAppDiagnosticInfos() throws -> WindowsFoundation.AnyIVector<UWP.AppDiagnosticInfo?>! {
+        try _IProcessDiagnosticInfo2.GetAppDiagnosticInfosImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processdiagnosticinfo.ispackaged)
+    public var isPackaged : Bool {
+        get { try! _IProcessDiagnosticInfo2.get_IsPackagedImpl() }
+    }
+
+    deinit {
+        _default = nil
+        _IProcessDiagnosticInfo2 = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processdiskusage)
+public final class ProcessDiskUsage : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System_Diagnostics.IProcessDiskUsage
+    private typealias CABI = __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiskUsage
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiskUsage>?) -> ProcessDiskUsage? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processdiskusage.getreport)
+    public func getReport() throws -> ProcessDiskUsageReport! {
+        try _default.GetReportImpl()
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processdiskusagereport)
+public final class ProcessDiskUsageReport : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System_Diagnostics.IProcessDiskUsageReport
+    private typealias CABI = __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiskUsageReport
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiskUsageReport>?) -> ProcessDiskUsageReport? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processdiskusagereport.bytesreadcount)
+    public var bytesReadCount : Int64 {
+        get { try! _default.get_BytesReadCountImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processdiskusagereport.byteswrittencount)
+    public var bytesWrittenCount : Int64 {
+        get { try! _default.get_BytesWrittenCountImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processdiskusagereport.otherbytescount)
+    public var otherBytesCount : Int64 {
+        get { try! _default.get_OtherBytesCountImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processdiskusagereport.otheroperationcount)
+    public var otherOperationCount : Int64 {
+        get { try! _default.get_OtherOperationCountImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processdiskusagereport.readoperationcount)
+    public var readOperationCount : Int64 {
+        get { try! _default.get_ReadOperationCountImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processdiskusagereport.writeoperationcount)
+    public var writeOperationCount : Int64 {
+        get { try! _default.get_WriteOperationCountImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processmemoryusage)
+public final class ProcessMemoryUsage : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System_Diagnostics.IProcessMemoryUsage
+    private typealias CABI = __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessMemoryUsage
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CDiagnostics_CIProcessMemoryUsage>?) -> ProcessMemoryUsage? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processmemoryusage.getreport)
+    public func getReport() throws -> ProcessMemoryUsageReport! {
+        try _default.GetReportImpl()
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processmemoryusagereport)
+public final class ProcessMemoryUsageReport : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System_Diagnostics.IProcessMemoryUsageReport
+    private typealias CABI = __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessMemoryUsageReport
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CDiagnostics_CIProcessMemoryUsageReport>?) -> ProcessMemoryUsageReport? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processmemoryusagereport.nonpagedpoolsizeinbytes)
+    public var nonPagedPoolSizeInBytes : UInt64 {
+        get { try! _default.get_NonPagedPoolSizeInBytesImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processmemoryusagereport.pagefaultcount)
+    public var pageFaultCount : UInt32 {
+        get { try! _default.get_PageFaultCountImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processmemoryusagereport.pagefilesizeinbytes)
+    public var pageFileSizeInBytes : UInt64 {
+        get { try! _default.get_PageFileSizeInBytesImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processmemoryusagereport.pagedpoolsizeinbytes)
+    public var pagedPoolSizeInBytes : UInt64 {
+        get { try! _default.get_PagedPoolSizeInBytesImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processmemoryusagereport.peaknonpagedpoolsizeinbytes)
+    public var peakNonPagedPoolSizeInBytes : UInt64 {
+        get { try! _default.get_PeakNonPagedPoolSizeInBytesImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processmemoryusagereport.peakpagefilesizeinbytes)
+    public var peakPageFileSizeInBytes : UInt64 {
+        get { try! _default.get_PeakPageFileSizeInBytesImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processmemoryusagereport.peakpagedpoolsizeinbytes)
+    public var peakPagedPoolSizeInBytes : UInt64 {
+        get { try! _default.get_PeakPagedPoolSizeInBytesImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processmemoryusagereport.peakvirtualmemorysizeinbytes)
+    public var peakVirtualMemorySizeInBytes : UInt64 {
+        get { try! _default.get_PeakVirtualMemorySizeInBytesImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processmemoryusagereport.peakworkingsetsizeinbytes)
+    public var peakWorkingSetSizeInBytes : UInt64 {
+        get { try! _default.get_PeakWorkingSetSizeInBytesImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processmemoryusagereport.privatepagecount)
+    public var privatePageCount : UInt64 {
+        get { try! _default.get_PrivatePageCountImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processmemoryusagereport.virtualmemorysizeinbytes)
+    public var virtualMemorySizeInBytes : UInt64 {
+        get { try! _default.get_VirtualMemorySizeInBytesImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.processmemoryusagereport.workingsetsizeinbytes)
+    public var workingSetSizeInBytes : UInt64 {
+        get { try! _default.get_WorkingSetSizeInBytesImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnostics.systemcpuusage)
 public final class SystemCpuUsage : WinRTClass {
     private typealias SwiftABI = __ABI_Windows_System_Diagnostics.ISystemCpuUsage
@@ -204,4 +684,26 @@ public final class SystemMemoryUsageReport : WinRTClass {
         _default = nil
     }
 }
+
+extension UWP.DiagnosticActionState {
+    public static var initializing : UWP.DiagnosticActionState {
+        __x_ABI_CWindows_CSystem_CDiagnostics_CDiagnosticActionState_Initializing
+    }
+    public static var downloading : UWP.DiagnosticActionState {
+        __x_ABI_CWindows_CSystem_CDiagnostics_CDiagnosticActionState_Downloading
+    }
+    public static var verifyingTrust : UWP.DiagnosticActionState {
+        __x_ABI_CWindows_CSystem_CDiagnostics_CDiagnosticActionState_VerifyingTrust
+    }
+    public static var detecting : UWP.DiagnosticActionState {
+        __x_ABI_CWindows_CSystem_CDiagnostics_CDiagnosticActionState_Detecting
+    }
+    public static var resolving : UWP.DiagnosticActionState {
+        __x_ABI_CWindows_CSystem_CDiagnostics_CDiagnosticActionState_Resolving
+    }
+    public static var verifyingResolution : UWP.DiagnosticActionState {
+        __x_ABI_CWindows_CSystem_CDiagnostics_CDiagnosticActionState_VerifyingResolution
+    }
+}
+extension UWP.DiagnosticActionState: @retroactive Hashable, @retroactive Codable {}
 

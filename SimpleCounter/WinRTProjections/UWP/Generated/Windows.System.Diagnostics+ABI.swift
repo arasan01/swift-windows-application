@@ -4,6 +4,62 @@ import Foundation
 @_spi(WinRTInternal) @_spi(WinRTImplements) import WindowsFoundation
 import CWinRT
 
+private var IID___x_ABI_CWindows_CSystem_CDiagnostics_CIDiagnosticActionResult: WindowsFoundation.IID {
+    .init(Data1: 0xC265A296, Data2: 0xE73B, Data3: 0x4097, Data4: ( 0xB2,0x8F,0x34,0x42,0xF0,0x3D,0xD8,0x31 ))// C265A296-E73B-4097-B28F-3442F03DD831
+}
+
+private var IID___x_ABI_CWindows_CSystem_CDiagnostics_CIDiagnosticInvoker: WindowsFoundation.IID {
+    .init(Data1: 0x187B270A, Data2: 0x02E3, Data3: 0x4F86, Data4: ( 0x84,0xFC,0xFD,0xD8,0x92,0xB5,0x94,0x0F ))// 187B270A-02E3-4F86-84FC-FDD892B5940F
+}
+
+private var IID___x_ABI_CWindows_CSystem_CDiagnostics_CIDiagnosticInvoker2: WindowsFoundation.IID {
+    .init(Data1: 0xE3BF945C, Data2: 0x155A, Data3: 0x4B52, Data4: ( 0xA8,0xEC,0x07,0x0C,0x44,0xF9,0x50,0x00 ))// E3BF945C-155A-4B52-A8EC-070C44F95000
+}
+
+private var IID___x_ABI_CWindows_CSystem_CDiagnostics_CIDiagnosticInvokerStatics: WindowsFoundation.IID {
+    .init(Data1: 0x5CFAD8DE, Data2: 0xF15C, Data3: 0x4554, Data4: ( 0xA8,0x13,0xC1,0x13,0xC3,0x88,0x1B,0x09 ))// 5CFAD8DE-F15C-4554-A813-C113C3881B09
+}
+
+private var IID___x_ABI_CWindows_CSystem_CDiagnostics_CIProcessCpuUsage: WindowsFoundation.IID {
+    .init(Data1: 0x0BBB2472, Data2: 0xC8BF, Data3: 0x423A, Data4: ( 0xA8,0x10,0xB5,0x59,0xAE,0x43,0x54,0xE2 ))// 0BBB2472-C8BF-423A-A810-B559AE4354E2
+}
+
+private var IID___x_ABI_CWindows_CSystem_CDiagnostics_CIProcessCpuUsageReport: WindowsFoundation.IID {
+    .init(Data1: 0x8A6D9CAC, Data2: 0x3987, Data3: 0x4E2F, Data4: ( 0xA1,0x19,0x6B,0x5F,0xA2,0x14,0xF1,0xB4 ))// 8A6D9CAC-3987-4E2F-A119-6B5FA214F1B4
+}
+
+private var IID___x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiagnosticInfo: WindowsFoundation.IID {
+    .init(Data1: 0xE830B04B, Data2: 0x300E, Data3: 0x4EE6, Data4: ( 0xA0,0xAB,0x5B,0x5F,0x52,0x31,0xB4,0x34 ))// E830B04B-300E-4EE6-A0AB-5B5F5231B434
+}
+
+private var IID___x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiagnosticInfo2: WindowsFoundation.IID {
+    .init(Data1: 0x9558CB1A, Data2: 0x3D0B, Data3: 0x49EC, Data4: ( 0xAB,0x70,0x4F,0x7A,0x11,0x28,0x05,0xDE ))// 9558CB1A-3D0B-49EC-AB70-4F7A112805DE
+}
+
+private var IID___x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiagnosticInfoStatics: WindowsFoundation.IID {
+    .init(Data1: 0x2F41B260, Data2: 0xB49F, Data3: 0x428C, Data4: ( 0xAA,0x0E,0x84,0x74,0x4F,0x49,0xCA,0x95 ))// 2F41B260-B49F-428C-AA0E-84744F49CA95
+}
+
+private var IID___x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiagnosticInfoStatics2: WindowsFoundation.IID {
+    .init(Data1: 0x4A869897, Data2: 0x9899, Data3: 0x4A44, Data4: ( 0xA2,0x9B,0x09,0x16,0x63,0xBE,0x09,0xB6 ))// 4A869897-9899-4A44-A29B-091663BE09B6
+}
+
+private var IID___x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiskUsage: WindowsFoundation.IID {
+    .init(Data1: 0x5AD78BFD, Data2: 0x7E51, Data3: 0x4E53, Data4: ( 0xBF,0xAA,0x5A,0x6E,0xE1,0xAA,0xBB,0xF8 ))// 5AD78BFD-7E51-4E53-BFAA-5A6EE1AABBF8
+}
+
+private var IID___x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiskUsageReport: WindowsFoundation.IID {
+    .init(Data1: 0x401627FD, Data2: 0x535D, Data3: 0x4C1F, Data4: ( 0x81,0xB8,0xDA,0x54,0xE1,0xBE,0x63,0x5E ))// 401627FD-535D-4C1F-81B8-DA54E1BE635E
+}
+
+private var IID___x_ABI_CWindows_CSystem_CDiagnostics_CIProcessMemoryUsage: WindowsFoundation.IID {
+    .init(Data1: 0xF50B229B, Data2: 0x827C, Data3: 0x42B7, Data4: ( 0xB0,0x7C,0x0E,0x32,0x62,0x7E,0x6B,0x3E ))// F50B229B-827C-42B7-B07C-0E32627E6B3E
+}
+
+private var IID___x_ABI_CWindows_CSystem_CDiagnostics_CIProcessMemoryUsageReport: WindowsFoundation.IID {
+    .init(Data1: 0xC2C77CBA, Data2: 0x1951, Data3: 0x4685, Data4: ( 0x85,0x32,0x7E,0x74,0x9E,0xCF,0x8E,0xEB ))// C2C77CBA-1951-4685-8532-7E749ECF8EEB
+}
+
 private var IID___x_ABI_CWindows_CSystem_CDiagnostics_CISystemCpuUsage: WindowsFoundation.IID {
     .init(Data1: 0x6037B3AC, Data2: 0x02D6, Data3: 0x4234, Data4: ( 0x83,0x62,0x7F,0xE3,0xAD,0xC8,0x1F,0x5F ))// 6037B3AC-02D6-4234-8362-7FE3ADC81F5F
 }
@@ -29,6 +85,429 @@ private var IID___x_ABI_CWindows_CSystem_CDiagnostics_CISystemMemoryUsageReport:
 }
 
 public enum __ABI_Windows_System_Diagnostics {
+    public class IDiagnosticActionResult: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CDiagnostics_CIDiagnosticActionResult }
+
+        internal func get_ExtendedErrorImpl() throws -> HRESULT {
+            var value: HRESULT = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIDiagnosticActionResult.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ExtendedError(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_ResultsImpl() throws -> WindowsFoundation.ValueSet? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIDiagnosticActionResult.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Results(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IDiagnosticInvoker: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CDiagnostics_CIDiagnosticInvoker }
+
+        internal func RunDiagnosticActionAsyncImpl(_ context: UWP.JsonObject?) throws -> WindowsFoundation.AnyIAsyncOperationWithProgress<UWP.DiagnosticActionResult?, UWP.DiagnosticActionState>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIDiagnosticInvoker.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.RunDiagnosticActionAsync(pThis, RawPointer(context), &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperationWithProgress_2___x_ABI_CWindows__CSystem__CDiagnostics__CDiagnosticActionResult___x_ABI_CWindows__CSystem__CDiagnostics__CDiagnosticActionStateWrapper.unwrapFrom(abi: operation)
+        }
+
+    }
+
+    public class IDiagnosticInvoker2: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CDiagnostics_CIDiagnosticInvoker2 }
+
+        internal func RunDiagnosticActionFromStringAsyncImpl(_ context: String) throws -> WindowsFoundation.AnyIAsyncOperationWithProgress<UWP.DiagnosticActionResult?, UWP.DiagnosticActionState>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                let _context = try! HString(context)
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIDiagnosticInvoker2.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.RunDiagnosticActionFromStringAsync(pThis, _context.get(), &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperationWithProgress_2___x_ABI_CWindows__CSystem__CDiagnostics__CDiagnosticActionResult___x_ABI_CWindows__CSystem__CDiagnostics__CDiagnosticActionStateWrapper.unwrapFrom(abi: operation)
+        }
+
+    }
+
+    public class IDiagnosticInvokerStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CDiagnostics_CIDiagnosticInvokerStatics }
+
+        internal func GetDefaultImpl() throws -> UWP.DiagnosticInvoker? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIDiagnosticInvokerStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetDefault(pThis, &resultAbi))
+                }
+            }
+            return .from(abi: result)
+        }
+
+        internal func GetForUserImpl(_ user: UWP.User?) throws -> UWP.DiagnosticInvoker? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIDiagnosticInvokerStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetForUser(pThis, RawPointer(user), &resultAbi))
+                }
+            }
+            return .from(abi: result)
+        }
+
+        internal func get_IsSupportedImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIDiagnosticInvokerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsSupported(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    public class IProcessCpuUsage: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CDiagnostics_CIProcessCpuUsage }
+
+        internal func GetReportImpl() throws -> UWP.ProcessCpuUsageReport? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessCpuUsage.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetReport(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IProcessCpuUsageReport: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CDiagnostics_CIProcessCpuUsageReport }
+
+        internal func get_KernelTimeImpl() throws -> WindowsFoundation.TimeSpan {
+            var value: __x_ABI_CWindows_CFoundation_CTimeSpan = .init()
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessCpuUsageReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_KernelTime(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_UserTimeImpl() throws -> WindowsFoundation.TimeSpan {
+            var value: __x_ABI_CWindows_CFoundation_CTimeSpan = .init()
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessCpuUsageReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_UserTime(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IProcessDiagnosticInfo: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiagnosticInfo }
+
+        internal func get_ProcessIdImpl() throws -> UInt32 {
+            var value: UINT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiagnosticInfo.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ProcessId(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_ExecutableFileNameImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiagnosticInfo.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ExecutableFileName(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_ParentImpl() throws -> UWP.ProcessDiagnosticInfo? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiagnosticInfo.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Parent(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ProcessStartTimeImpl() throws -> WindowsFoundation.DateTime {
+            var value: __x_ABI_CWindows_CFoundation_CDateTime = .init()
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiagnosticInfo.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ProcessStartTime(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DiskUsageImpl() throws -> UWP.ProcessDiskUsage? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiagnosticInfo.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_DiskUsage(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_MemoryUsageImpl() throws -> UWP.ProcessMemoryUsage? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiagnosticInfo.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_MemoryUsage(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CpuUsageImpl() throws -> UWP.ProcessCpuUsage? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiagnosticInfo.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CpuUsage(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IProcessDiagnosticInfo2: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiagnosticInfo2 }
+
+        internal func GetAppDiagnosticInfosImpl() throws -> WindowsFoundation.AnyIVector<UWP.AppDiagnosticInfo?>? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiagnosticInfo2.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetAppDiagnosticInfos(pThis, &resultAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIVector_1___x_ABI_CWindows__CSystem__CAppDiagnosticInfoWrapper.unwrapFrom(abi: result)
+        }
+
+        internal func get_IsPackagedImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiagnosticInfo2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsPackaged(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    public class IProcessDiagnosticInfoStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiagnosticInfoStatics }
+
+        internal func GetForProcessesImpl() throws -> WindowsFoundation.AnyIVectorView<UWP.ProcessDiagnosticInfo?>? {
+            let (processes) = try ComPtrs.initialize { processesAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiagnosticInfoStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetForProcesses(pThis, &processesAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIVectorView_1___x_ABI_CWindows__CSystem__CDiagnostics__CProcessDiagnosticInfoWrapper.unwrapFrom(abi: processes)
+        }
+
+        internal func GetForCurrentProcessImpl() throws -> UWP.ProcessDiagnosticInfo? {
+            let (processes) = try ComPtrs.initialize { processesAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiagnosticInfoStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetForCurrentProcess(pThis, &processesAbi))
+                }
+            }
+            return .from(abi: processes)
+        }
+
+    }
+
+    public class IProcessDiagnosticInfoStatics2: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiagnosticInfoStatics2 }
+
+        internal func TryGetForProcessIdImpl(_ processId: UInt32) throws -> UWP.ProcessDiagnosticInfo? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiagnosticInfoStatics2.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.TryGetForProcessId(pThis, processId, &resultAbi))
+                }
+            }
+            return .from(abi: result)
+        }
+
+    }
+
+    public class IProcessDiskUsage: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiskUsage }
+
+        internal func GetReportImpl() throws -> UWP.ProcessDiskUsageReport? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiskUsage.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetReport(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IProcessDiskUsageReport: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiskUsageReport }
+
+        internal func get_ReadOperationCountImpl() throws -> Int64 {
+            var value: INT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiskUsageReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ReadOperationCount(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_WriteOperationCountImpl() throws -> Int64 {
+            var value: INT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiskUsageReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_WriteOperationCount(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_OtherOperationCountImpl() throws -> Int64 {
+            var value: INT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiskUsageReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_OtherOperationCount(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_BytesReadCountImpl() throws -> Int64 {
+            var value: INT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiskUsageReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_BytesReadCount(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_BytesWrittenCountImpl() throws -> Int64 {
+            var value: INT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiskUsageReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_BytesWrittenCount(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_OtherBytesCountImpl() throws -> Int64 {
+            var value: INT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessDiskUsageReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_OtherBytesCount(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
+    public class IProcessMemoryUsage: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CDiagnostics_CIProcessMemoryUsage }
+
+        internal func GetReportImpl() throws -> UWP.ProcessMemoryUsageReport? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessMemoryUsage.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetReport(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IProcessMemoryUsageReport: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CDiagnostics_CIProcessMemoryUsageReport }
+
+        internal func get_NonPagedPoolSizeInBytesImpl() throws -> UInt64 {
+            var value: UINT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessMemoryUsageReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_NonPagedPoolSizeInBytes(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_PageFaultCountImpl() throws -> UInt32 {
+            var value: UINT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessMemoryUsageReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_PageFaultCount(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_PageFileSizeInBytesImpl() throws -> UInt64 {
+            var value: UINT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessMemoryUsageReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_PageFileSizeInBytes(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_PagedPoolSizeInBytesImpl() throws -> UInt64 {
+            var value: UINT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessMemoryUsageReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_PagedPoolSizeInBytes(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_PeakNonPagedPoolSizeInBytesImpl() throws -> UInt64 {
+            var value: UINT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessMemoryUsageReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_PeakNonPagedPoolSizeInBytes(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_PeakPageFileSizeInBytesImpl() throws -> UInt64 {
+            var value: UINT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessMemoryUsageReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_PeakPageFileSizeInBytes(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_PeakPagedPoolSizeInBytesImpl() throws -> UInt64 {
+            var value: UINT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessMemoryUsageReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_PeakPagedPoolSizeInBytes(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_PeakVirtualMemorySizeInBytesImpl() throws -> UInt64 {
+            var value: UINT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessMemoryUsageReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_PeakVirtualMemorySizeInBytes(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_PeakWorkingSetSizeInBytesImpl() throws -> UInt64 {
+            var value: UINT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessMemoryUsageReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_PeakWorkingSetSizeInBytes(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_PrivatePageCountImpl() throws -> UInt64 {
+            var value: UINT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessMemoryUsageReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_PrivatePageCount(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_VirtualMemorySizeInBytesImpl() throws -> UInt64 {
+            var value: UINT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessMemoryUsageReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VirtualMemorySizeInBytes(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_WorkingSetSizeInBytesImpl() throws -> UInt64 {
+            var value: UINT64 = 0
+            _ = try perform(as: __x_ABI_CWindows_CSystem_CDiagnostics_CIProcessMemoryUsageReport.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_WorkingSetSizeInBytes(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
     public class ISystemCpuUsage: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CSystem_CDiagnostics_CISystemCpuUsage }
 

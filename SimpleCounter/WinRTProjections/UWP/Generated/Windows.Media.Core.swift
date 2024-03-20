@@ -9,6 +9,12 @@ import CWinRT
 public typealias AudioDecoderDegradation = __x_ABI_CWindows_CMedia_CCore_CAudioDecoderDegradation
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.audiodecoderdegradationreason)
 public typealias AudioDecoderDegradationReason = __x_ABI_CWindows_CMedia_CCore_CAudioDecoderDegradationReason
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codeccategory)
+public typealias CodecCategory = __x_ABI_CWindows_CMedia_CCore_CCodecCategory
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codeckind)
+public typealias CodecKind = __x_ABI_CWindows_CMedia_CCore_CCodecKind
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.facedetectionmode)
+public typealias FaceDetectionMode = __x_ABI_CWindows_CMedia_CCore_CFaceDetectionMode
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.mediadecoderstatus)
 public typealias MediaDecoderStatus = __x_ABI_CWindows_CMedia_CCore_CMediaDecoderStatus
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.mediasourcestate)
@@ -27,10 +33,32 @@ public typealias MseAppendMode = __x_ABI_CWindows_CMedia_CCore_CMseAppendMode
 public typealias MseEndOfStreamStatus = __x_ABI_CWindows_CMedia_CCore_CMseEndOfStreamStatus
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.msereadystate)
 public typealias MseReadyState = __x_ABI_CWindows_CMedia_CCore_CMseReadyState
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.sceneanalysisrecommendation)
+public typealias SceneAnalysisRecommendation = __x_ABI_CWindows_CMedia_CCore_CSceneAnalysisRecommendation
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedmetadatakind)
 public typealias TimedMetadataKind = __x_ABI_CWindows_CMedia_CCore_CTimedMetadataKind
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedmetadatatrackerrorcode)
 public typealias TimedMetadataTrackErrorCode = __x_ABI_CWindows_CMedia_CCore_CTimedMetadataTrackErrorCode
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextdisplayalignment)
+public typealias TimedTextDisplayAlignment = __x_ABI_CWindows_CMedia_CCore_CTimedTextDisplayAlignment
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextflowdirection)
+public typealias TimedTextFlowDirection = __x_ABI_CWindows_CMedia_CCore_CTimedTextFlowDirection
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextfontstyle)
+public typealias TimedTextFontStyle = __x_ABI_CWindows_CMedia_CCore_CTimedTextFontStyle
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextlinealignment)
+public typealias TimedTextLineAlignment = __x_ABI_CWindows_CMedia_CCore_CTimedTextLineAlignment
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextscrollmode)
+public typealias TimedTextScrollMode = __x_ABI_CWindows_CMedia_CCore_CTimedTextScrollMode
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextunit)
+public typealias TimedTextUnit = __x_ABI_CWindows_CMedia_CCore_CTimedTextUnit
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextweight)
+public typealias TimedTextWeight = __x_ABI_CWindows_CMedia_CCore_CTimedTextWeight
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextwrapping)
+public typealias TimedTextWrapping = __x_ABI_CWindows_CMedia_CCore_CTimedTextWrapping
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextwritingmode)
+public typealias TimedTextWritingMode = __x_ABI_CWindows_CMedia_CCore_CTimedTextWritingMode
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.videostabilizationeffectenabledchangedreason)
+public typealias VideoStabilizationEffectEnabledChangedReason = __x_ABI_CWindows_CMedia_CCore_CVideoStabilizationEffectEnabledChangedReason
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.audiostreamdescriptor)
 public final class AudioStreamDescriptor : WinRTClass, IMediaStreamDescriptor, IMediaStreamDescriptor2 {
     private typealias SwiftABI = __ABI_Windows_Media_Core.IAudioStreamDescriptor
@@ -289,6 +317,988 @@ public final class AudioTrackSupportInfo : WinRTClass {
 
     deinit {
         _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.chaptercue)
+public final class ChapterCue : WinRTClass, IMediaCue {
+    private typealias SwiftABI = __ABI_Windows_Media_Core.IChapterCue
+    private typealias CABI = __x_ABI_CWindows_CMedia_CCore_CIChapterCue
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CCore_CIChapterCue>?) -> ChapterCue? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    override public init() {
+        super.init(try! RoActivateInstance(HString("Windows.Media.Core.ChapterCue")))
+    }
+
+    private lazy var _IMediaCue: __ABI_Windows_Media_Core.IMediaCue! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.chaptercue.duration)
+    public var duration : WindowsFoundation.TimeSpan {
+        get { try! _IMediaCue.get_DurationImpl() }
+        set { try! _IMediaCue.put_DurationImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.chaptercue.id)
+    public var id : String {
+        get { try! _IMediaCue.get_IdImpl() }
+        set { try! _IMediaCue.put_IdImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.chaptercue.starttime)
+    public var startTime : WindowsFoundation.TimeSpan {
+        get { try! _IMediaCue.get_StartTimeImpl() }
+        set { try! _IMediaCue.put_StartTimeImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.chaptercue.title)
+    public var title : String {
+        get { try! _default.get_TitleImpl() }
+        set { try! _default.put_TitleImpl(newValue) }
+    }
+
+    deinit {
+        _IMediaCue = nil
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecinfo)
+public final class CodecInfo : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_Media_Core.ICodecInfo
+    private typealias CABI = __x_ABI_CWindows_CMedia_CCore_CICodecInfo
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CCore_CICodecInfo>?) -> CodecInfo? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecinfo.category)
+    public var category : CodecCategory {
+        get { try! _default.get_CategoryImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecinfo.displayname)
+    public var displayName : String {
+        get { try! _default.get_DisplayNameImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecinfo.istrusted)
+    public var isTrusted : Bool {
+        get { try! _default.get_IsTrustedImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecinfo.kind)
+    public var kind : CodecKind {
+        get { try! _default.get_KindImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecinfo.subtypes)
+    public var subtypes : WindowsFoundation.AnyIVectorView<String>! {
+        get { try! _default.get_SubtypesImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecquery)
+public final class CodecQuery : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_Media_Core.ICodecQuery
+    private typealias CABI = __x_ABI_CWindows_CMedia_CCore_CICodecQuery
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CCore_CICodecQuery>?) -> CodecQuery? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public init() {
+        super.init(try! RoActivateInstance(HString("Windows.Media.Core.CodecQuery")))
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecquery.findallasync)
+    public func findAllAsync(_ kind: CodecKind, _ category: CodecCategory, _ subType: String) throws -> WindowsFoundation.AnyIAsyncOperation<WindowsFoundation.AnyIVectorView<CodecInfo?>?>! {
+        try _default.FindAllAsyncImpl(kind, category, subType)
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes)
+public final class CodecSubtypes {
+    private static let _ICodecSubtypesStatics: __ABI_Windows_Media_Core.ICodecSubtypesStatics = try! RoGetActivationFactory(HString("Windows.Media.Core.CodecSubtypes"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.audioformataac)
+    public static var audioFormatAac : String {
+        get { try! _ICodecSubtypesStatics.get_AudioFormatAacImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.audioformatadts)
+    public static var audioFormatAdts : String {
+        get { try! _ICodecSubtypesStatics.get_AudioFormatAdtsImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.audioformatalac)
+    public static var audioFormatAlac : String {
+        get { try! _ICodecSubtypesStatics.get_AudioFormatAlacImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.audioformatamrnb)
+    public static var audioFormatAmrNB : String {
+        get { try! _ICodecSubtypesStatics.get_AudioFormatAmrNBImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.audioformatamrwb)
+    public static var audioFormatAmrWB : String {
+        get { try! _ICodecSubtypesStatics.get_AudioFormatAmrWBImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.audioformatamrwp)
+    public static var audioFormatAmrWP : String {
+        get { try! _ICodecSubtypesStatics.get_AudioFormatAmrWPImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.audioformatdolbyac3)
+    public static var audioFormatDolbyAC3 : String {
+        get { try! _ICodecSubtypesStatics.get_AudioFormatDolbyAC3Impl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.audioformatdolbyac3spdif)
+    public static var audioFormatDolbyAC3Spdif : String {
+        get { try! _ICodecSubtypesStatics.get_AudioFormatDolbyAC3SpdifImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.audioformatdolbyddplus)
+    public static var audioFormatDolbyDDPlus : String {
+        get { try! _ICodecSubtypesStatics.get_AudioFormatDolbyDDPlusImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.audioformatdrm)
+    public static var audioFormatDrm : String {
+        get { try! _ICodecSubtypesStatics.get_AudioFormatDrmImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.audioformatdts)
+    public static var audioFormatDts : String {
+        get { try! _ICodecSubtypesStatics.get_AudioFormatDtsImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.audioformatflac)
+    public static var audioFormatFlac : String {
+        get { try! _ICodecSubtypesStatics.get_AudioFormatFlacImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.audioformatfloat)
+    public static var audioFormatFloat : String {
+        get { try! _ICodecSubtypesStatics.get_AudioFormatFloatImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.audioformatmp3)
+    public static var audioFormatMP3 : String {
+        get { try! _ICodecSubtypesStatics.get_AudioFormatMP3Impl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.audioformatmpeg)
+    public static var audioFormatMPeg : String {
+        get { try! _ICodecSubtypesStatics.get_AudioFormatMPegImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.audioformatmsp1)
+    public static var audioFormatMsp1 : String {
+        get { try! _ICodecSubtypesStatics.get_AudioFormatMsp1Impl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.audioformatopus)
+    public static var audioFormatOpus : String {
+        get { try! _ICodecSubtypesStatics.get_AudioFormatOpusImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.audioformatpcm)
+    public static var audioFormatPcm : String {
+        get { try! _ICodecSubtypesStatics.get_AudioFormatPcmImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.audioformatwmaudiolossless)
+    public static var audioFormatWMAudioLossless : String {
+        get { try! _ICodecSubtypesStatics.get_AudioFormatWMAudioLosslessImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.audioformatwmaudiov8)
+    public static var audioFormatWMAudioV8 : String {
+        get { try! _ICodecSubtypesStatics.get_AudioFormatWMAudioV8Impl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.audioformatwmaudiov9)
+    public static var audioFormatWMAudioV9 : String {
+        get { try! _ICodecSubtypesStatics.get_AudioFormatWMAudioV9Impl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.audioformatwmaspdif)
+    public static var audioFormatWmaSpdif : String {
+        get { try! _ICodecSubtypesStatics.get_AudioFormatWmaSpdifImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformat420o)
+    public static var videoFormat420O : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormat420OImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformatdv25)
+    public static var videoFormatDV25 : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormatDV25Impl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformatdv50)
+    public static var videoFormatDV50 : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormatDV50Impl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformatdvc)
+    public static var videoFormatDvc : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormatDvcImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformatdvh1)
+    public static var videoFormatDvh1 : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormatDvh1Impl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformatdvhd)
+    public static var videoFormatDvhD : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormatDvhDImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformatdvsd)
+    public static var videoFormatDvsd : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormatDvsdImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformatdvsl)
+    public static var videoFormatDvsl : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormatDvslImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformath263)
+    public static var videoFormatH263 : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormatH263Impl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformath264)
+    public static var videoFormatH264 : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormatH264Impl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformath264es)
+    public static var videoFormatH264ES : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormatH264ESImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformath265)
+    public static var videoFormatH265 : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormatH265Impl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformathevc)
+    public static var videoFormatHevc : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormatHevcImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformathevces)
+    public static var videoFormatHevcES : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormatHevcESImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformatm4s2)
+    public static var videoFormatM4S2 : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormatM4S2Impl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformatmp43)
+    public static var videoFormatMP43 : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormatMP43Impl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformatmp4s)
+    public static var videoFormatMP4S : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormatMP4SImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformatmp4v)
+    public static var videoFormatMP4V : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormatMP4VImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformatmjpg)
+    public static var videoFormatMjpg : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormatMjpgImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformatmpeg2)
+    public static var videoFormatMpeg2 : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormatMpeg2Impl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformatmpg1)
+    public static var videoFormatMpg1 : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormatMpg1Impl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformatmss1)
+    public static var videoFormatMss1 : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormatMss1Impl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformatmss2)
+    public static var videoFormatMss2 : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormatMss2Impl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformatvp80)
+    public static var videoFormatVP80 : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormatVP80Impl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformatvp90)
+    public static var videoFormatVP90 : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormatVP90Impl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformatwmv1)
+    public static var videoFormatWmv1 : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormatWmv1Impl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformatwmv2)
+    public static var videoFormatWmv2 : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormatWmv2Impl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformatwmv3)
+    public static var videoFormatWmv3 : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormatWmv3Impl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.codecsubtypes.videoformatwvc1)
+    public static var videoFormatWvc1 : String {
+        get { try! _ICodecSubtypesStatics.get_VideoFormatWvc1Impl() }
+    }
+
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.datacue)
+public final class DataCue : WinRTClass, IMediaCue {
+    private typealias SwiftABI = __ABI_Windows_Media_Core.IDataCue
+    private typealias CABI = __x_ABI_CWindows_CMedia_CCore_CIDataCue
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CCore_CIDataCue>?) -> DataCue? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    override public init() {
+        super.init(try! RoActivateInstance(HString("Windows.Media.Core.DataCue")))
+    }
+
+    private lazy var _IMediaCue: __ABI_Windows_Media_Core.IMediaCue! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.datacue.duration)
+    public var duration : WindowsFoundation.TimeSpan {
+        get { try! _IMediaCue.get_DurationImpl() }
+        set { try! _IMediaCue.put_DurationImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.datacue.id)
+    public var id : String {
+        get { try! _IMediaCue.get_IdImpl() }
+        set { try! _IMediaCue.put_IdImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.datacue.starttime)
+    public var startTime : WindowsFoundation.TimeSpan {
+        get { try! _IMediaCue.get_StartTimeImpl() }
+        set { try! _IMediaCue.put_StartTimeImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.datacue.data)
+    public var data : UWP.AnyIBuffer! {
+        get { try! _default.get_DataImpl() }
+        set { try! _default.put_DataImpl(newValue) }
+    }
+
+    private lazy var _IDataCue2: __ABI_Windows_Media_Core.IDataCue2! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.datacue.properties)
+    public var properties : WindowsFoundation.PropertySet! {
+        get { try! _IDataCue2.get_PropertiesImpl() }
+    }
+
+    deinit {
+        _IMediaCue = nil
+        _default = nil
+        _IDataCue2 = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.facedetectedeventargs)
+public final class FaceDetectedEventArgs : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_Media_Core.IFaceDetectedEventArgs
+    private typealias CABI = __x_ABI_CWindows_CMedia_CCore_CIFaceDetectedEventArgs
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CCore_CIFaceDetectedEventArgs>?) -> FaceDetectedEventArgs? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.facedetectedeventargs.resultframe)
+    public var resultFrame : FaceDetectionEffectFrame! {
+        get { try! _default.get_ResultFrameImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.facedetectioneffect)
+public final class FaceDetectionEffect : WinRTClass, UWP.IMediaExtension {
+    private typealias SwiftABI = __ABI_Windows_Media_Core.IFaceDetectionEffect
+    private typealias CABI = __x_ABI_CWindows_CMedia_CCore_CIFaceDetectionEffect
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CCore_CIFaceDetectionEffect>?) -> FaceDetectionEffect? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    private lazy var _IMediaExtension: __ABI_Windows_Media.IMediaExtension! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.facedetectioneffect.setproperties)
+    public func setProperties(_ configuration: WindowsFoundation.AnyIPropertySet!) throws {
+        try _IMediaExtension.SetPropertiesImpl(configuration)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.facedetectioneffect.desireddetectioninterval)
+    public var desiredDetectionInterval : WindowsFoundation.TimeSpan {
+        get { try! _default.get_DesiredDetectionIntervalImpl() }
+        set { try! _default.put_DesiredDetectionIntervalImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.facedetectioneffect.enabled)
+    public var enabled : Bool {
+        get { try! _default.get_EnabledImpl() }
+        set { try! _default.put_EnabledImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.facedetectioneffect.facedetected)
+    public lazy var faceDetected : Event<TypedEventHandler<FaceDetectionEffect?, FaceDetectedEventArgs?>> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._default else { return .init() }
+          return try! this.add_FaceDetectedImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._default.remove_FaceDetectedImpl($0)
+       }
+      )
+    }()
+
+    deinit {
+        _IMediaExtension = nil
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.facedetectioneffectdefinition)
+public final class FaceDetectionEffectDefinition : WinRTClass, UWP.IVideoEffectDefinition {
+    private typealias SwiftABI = __ABI_Windows_Media_Effects.IVideoEffectDefinition
+    private typealias CABI = __x_ABI_CWindows_CMedia_CEffects_CIVideoEffectDefinition
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CEffects_CIVideoEffectDefinition>?) -> FaceDetectionEffectDefinition? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    override public init() {
+        super.init(try! RoActivateInstance(HString("Windows.Media.Core.FaceDetectionEffectDefinition")))
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.facedetectioneffectdefinition.activatableclassid)
+    public var activatableClassId : String {
+        get { try! _default.get_ActivatableClassIdImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.facedetectioneffectdefinition.properties)
+    public var properties : WindowsFoundation.AnyIPropertySet! {
+        get { try! _default.get_PropertiesImpl() }
+    }
+
+    private lazy var _IFaceDetectionEffectDefinition: __ABI_Windows_Media_Core.IFaceDetectionEffectDefinition! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.facedetectioneffectdefinition.detectionmode)
+    public var detectionMode : FaceDetectionMode {
+        get { try! _IFaceDetectionEffectDefinition.get_DetectionModeImpl() }
+        set { try! _IFaceDetectionEffectDefinition.put_DetectionModeImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.facedetectioneffectdefinition.synchronousdetectionenabled)
+    public var synchronousDetectionEnabled : Bool {
+        get { try! _IFaceDetectionEffectDefinition.get_SynchronousDetectionEnabledImpl() }
+        set { try! _IFaceDetectionEffectDefinition.put_SynchronousDetectionEnabledImpl(newValue) }
+    }
+
+    deinit {
+        _default = nil
+        _IFaceDetectionEffectDefinition = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.facedetectioneffectframe)
+public final class FaceDetectionEffectFrame : WinRTClass, WindowsFoundation.IClosable, UWP.IMediaFrame {
+    private typealias SwiftABI = __ABI_Windows_Media_Core.IFaceDetectionEffectFrame
+    private typealias CABI = __x_ABI_CWindows_CMedia_CCore_CIFaceDetectionEffectFrame
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CCore_CIFaceDetectionEffectFrame>?) -> FaceDetectionEffectFrame? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    private lazy var _IClosable: __ABI_Windows_Foundation.IClosable! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.facedetectioneffectframe.close)
+    public func close() throws {
+        try _IClosable.CloseImpl()
+    }
+
+    private lazy var _IMediaFrame: __ABI_Windows_Media.IMediaFrame! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.facedetectioneffectframe.duration)
+    public var duration : WindowsFoundation.TimeSpan? {
+        get { try! _IMediaFrame.get_DurationImpl() }
+        set { try! _IMediaFrame.put_DurationImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.facedetectioneffectframe.extendedproperties)
+    public var extendedProperties : WindowsFoundation.AnyIPropertySet! {
+        get { try! _IMediaFrame.get_ExtendedPropertiesImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.facedetectioneffectframe.isdiscontinuous)
+    public var isDiscontinuous : Bool {
+        get { try! _IMediaFrame.get_IsDiscontinuousImpl() }
+        set { try! _IMediaFrame.put_IsDiscontinuousImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.facedetectioneffectframe.isreadonly)
+    public var isReadOnly : Bool {
+        get { try! _IMediaFrame.get_IsReadOnlyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.facedetectioneffectframe.relativetime)
+    public var relativeTime : WindowsFoundation.TimeSpan? {
+        get { try! _IMediaFrame.get_RelativeTimeImpl() }
+        set { try! _IMediaFrame.put_RelativeTimeImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.facedetectioneffectframe.systemrelativetime)
+    public var systemRelativeTime : WindowsFoundation.TimeSpan? {
+        get { try! _IMediaFrame.get_SystemRelativeTimeImpl() }
+        set { try! _IMediaFrame.put_SystemRelativeTimeImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.facedetectioneffectframe.type)
+    public var type : String {
+        get { try! _IMediaFrame.get_TypeImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.facedetectioneffectframe.detectedfaces)
+    public var detectedFaces : WindowsFoundation.AnyIVectorView<UWP.DetectedFace?>! {
+        get { try! _default.get_DetectedFacesImpl() }
+    }
+
+    deinit {
+        _IClosable = nil
+        _IMediaFrame = nil
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.highdynamicrangecontrol)
+public final class HighDynamicRangeControl : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_Media_Core.IHighDynamicRangeControl
+    private typealias CABI = __x_ABI_CWindows_CMedia_CCore_CIHighDynamicRangeControl
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CCore_CIHighDynamicRangeControl>?) -> HighDynamicRangeControl? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.highdynamicrangecontrol.enabled)
+    public var enabled : Bool {
+        get { try! _default.get_EnabledImpl() }
+        set { try! _default.put_EnabledImpl(newValue) }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.highdynamicrangeoutput)
+public final class HighDynamicRangeOutput : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_Media_Core.IHighDynamicRangeOutput
+    private typealias CABI = __x_ABI_CWindows_CMedia_CCore_CIHighDynamicRangeOutput
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CCore_CIHighDynamicRangeOutput>?) -> HighDynamicRangeOutput? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.highdynamicrangeoutput.certainty)
+    public var certainty : Double {
+        get { try! _default.get_CertaintyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.highdynamicrangeoutput.framecontrollers)
+    public var frameControllers : WindowsFoundation.AnyIVectorView<UWP.FrameController?>! {
+        get { try! _default.get_FrameControllersImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.imagecue)
+public final class ImageCue : WinRTClass, IMediaCue {
+    private typealias SwiftABI = __ABI_Windows_Media_Core.IImageCue
+    private typealias CABI = __x_ABI_CWindows_CMedia_CCore_CIImageCue
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CCore_CIImageCue>?) -> ImageCue? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    override public init() {
+        super.init(try! RoActivateInstance(HString("Windows.Media.Core.ImageCue")))
+    }
+
+    private lazy var _IMediaCue: __ABI_Windows_Media_Core.IMediaCue! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.imagecue.duration)
+    public var duration : WindowsFoundation.TimeSpan {
+        get { try! _IMediaCue.get_DurationImpl() }
+        set { try! _IMediaCue.put_DurationImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.imagecue.id)
+    public var id : String {
+        get { try! _IMediaCue.get_IdImpl() }
+        set { try! _IMediaCue.put_IdImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.imagecue.starttime)
+    public var startTime : WindowsFoundation.TimeSpan {
+        get { try! _IMediaCue.get_StartTimeImpl() }
+        set { try! _IMediaCue.put_StartTimeImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.imagecue.extent)
+    public var extent : TimedTextSize {
+        get { try! _default.get_ExtentImpl() }
+        set { try! _default.put_ExtentImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.imagecue.position)
+    public var position : TimedTextPoint {
+        get { try! _default.get_PositionImpl() }
+        set { try! _default.put_PositionImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.imagecue.softwarebitmap)
+    public var softwareBitmap : UWP.SoftwareBitmap! {
+        get { try! _default.get_SoftwareBitmapImpl() }
+        set { try! _default.put_SoftwareBitmapImpl(newValue) }
+    }
+
+    deinit {
+        _IMediaCue = nil
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.initializemediastreamsourcerequestedeventargs)
+public final class InitializeMediaStreamSourceRequestedEventArgs : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_Media_Core.IInitializeMediaStreamSourceRequestedEventArgs
+    private typealias CABI = __x_ABI_CWindows_CMedia_CCore_CIInitializeMediaStreamSourceRequestedEventArgs
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CCore_CIInitializeMediaStreamSourceRequestedEventArgs>?) -> InitializeMediaStreamSourceRequestedEventArgs? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.initializemediastreamsourcerequestedeventargs.getdeferral)
+    public func getDeferral() throws -> WindowsFoundation.Deferral! {
+        try _default.GetDeferralImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.initializemediastreamsourcerequestedeventargs.randomaccessstream)
+    public var randomAccessStream : UWP.AnyIRandomAccessStream! {
+        get { try! _default.get_RandomAccessStreamImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.initializemediastreamsourcerequestedeventargs.source)
+    public var source : MediaStreamSource! {
+        get { try! _default.get_SourceImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.lowlightfusion)
+public final class LowLightFusion {
+    private static let _ILowLightFusionStatics: __ABI_Windows_Media_Core.ILowLightFusionStatics = try! RoGetActivationFactory(HString("Windows.Media.Core.LowLightFusion"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.lowlightfusion.fuseasync)
+    public static func fuseAsync(_ frameSet: WindowsFoundation.AnyIIterable<UWP.SoftwareBitmap?>!) -> WindowsFoundation.AnyIAsyncOperationWithProgress<LowLightFusionResult?, Double>! {
+        return try! _ILowLightFusionStatics.FuseAsyncImpl(frameSet)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.lowlightfusion.maxsupportedframecount)
+    public static var maxSupportedFrameCount : Int32 {
+        get { try! _ILowLightFusionStatics.get_MaxSupportedFrameCountImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.lowlightfusion.supportedbitmappixelformats)
+    public static var supportedBitmapPixelFormats : WindowsFoundation.AnyIVectorView<UWP.BitmapPixelFormat>! {
+        get { try! _ILowLightFusionStatics.get_SupportedBitmapPixelFormatsImpl() }
+    }
+
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.lowlightfusionresult)
+public final class LowLightFusionResult : WinRTClass, WindowsFoundation.IClosable {
+    private typealias SwiftABI = __ABI_Windows_Media_Core.ILowLightFusionResult
+    private typealias CABI = __x_ABI_CWindows_CMedia_CCore_CILowLightFusionResult
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CCore_CILowLightFusionResult>?) -> LowLightFusionResult? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.lowlightfusionresult.frame)
+    public var frame : UWP.SoftwareBitmap! {
+        get { try! _default.get_FrameImpl() }
+    }
+
+    private lazy var _IClosable: __ABI_Windows_Foundation.IClosable! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.lowlightfusionresult.close)
+    public func close() throws {
+        try _IClosable.CloseImpl()
+    }
+
+    deinit {
+        _default = nil
+        _IClosable = nil
     }
 }
 
@@ -663,6 +1673,58 @@ public final class MediaSource : WinRTClass, UWP.IMediaPlaybackSource, WindowsFo
         _IMediaSource3 = nil
         _IMediaSource4 = nil
         _IMediaSource5 = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.mediasourceappserviceconnection)
+public final class MediaSourceAppServiceConnection : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_Media_Core.IMediaSourceAppServiceConnection
+    private typealias CABI = __x_ABI_CWindows_CMedia_CCore_CIMediaSourceAppServiceConnection
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CCore_CIMediaSourceAppServiceConnection>?) -> MediaSourceAppServiceConnection? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IMediaSourceAppServiceConnectionFactory: __ABI_Windows_Media_Core.IMediaSourceAppServiceConnectionFactory = try! RoGetActivationFactory(HString("Windows.Media.Core.MediaSourceAppServiceConnection"))
+    public init(_ appServiceConnection: UWP.AppServiceConnection!) {
+        super.init(try! Self._IMediaSourceAppServiceConnectionFactory.CreateImpl(appServiceConnection))
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.mediasourceappserviceconnection.start)
+    public func start() throws {
+        try _default.StartImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.mediasourceappserviceconnection.initializemediastreamsourcerequested)
+    public lazy var initializeMediaStreamSourceRequested : Event<TypedEventHandler<MediaSourceAppServiceConnection?, InitializeMediaStreamSourceRequestedEventArgs?>> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._default else { return .init() }
+          return try! this.add_InitializeMediaStreamSourceRequestedImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._default.remove_InitializeMediaStreamSourceRequestedImpl($0)
+       }
+      )
+    }()
+
+    deinit {
+        _default = nil
     }
 }
 
@@ -1967,6 +3029,320 @@ public final class MseStreamSource : WinRTClass, IMediaSource {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.sceneanalysiseffect)
+public final class SceneAnalysisEffect : WinRTClass, UWP.IMediaExtension {
+    private typealias SwiftABI = __ABI_Windows_Media_Core.ISceneAnalysisEffect
+    private typealias CABI = __x_ABI_CWindows_CMedia_CCore_CISceneAnalysisEffect
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CCore_CISceneAnalysisEffect>?) -> SceneAnalysisEffect? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    private lazy var _IMediaExtension: __ABI_Windows_Media.IMediaExtension! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.sceneanalysiseffect.setproperties)
+    public func setProperties(_ configuration: WindowsFoundation.AnyIPropertySet!) throws {
+        try _IMediaExtension.SetPropertiesImpl(configuration)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.sceneanalysiseffect.desiredanalysisinterval)
+    public var desiredAnalysisInterval : WindowsFoundation.TimeSpan {
+        get { try! _default.get_DesiredAnalysisIntervalImpl() }
+        set { try! _default.put_DesiredAnalysisIntervalImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.sceneanalysiseffect.highdynamicrangeanalyzer)
+    public var highDynamicRangeAnalyzer : HighDynamicRangeControl! {
+        get { try! _default.get_HighDynamicRangeAnalyzerImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.sceneanalysiseffect.sceneanalyzed)
+    public lazy var sceneAnalyzed : Event<TypedEventHandler<SceneAnalysisEffect?, SceneAnalyzedEventArgs?>> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._default else { return .init() }
+          return try! this.add_SceneAnalyzedImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._default.remove_SceneAnalyzedImpl($0)
+       }
+      )
+    }()
+
+    deinit {
+        _IMediaExtension = nil
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.sceneanalysiseffectdefinition)
+public final class SceneAnalysisEffectDefinition : WinRTClass, UWP.IVideoEffectDefinition {
+    private typealias SwiftABI = __ABI_Windows_Media_Effects.IVideoEffectDefinition
+    private typealias CABI = __x_ABI_CWindows_CMedia_CEffects_CIVideoEffectDefinition
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CEffects_CIVideoEffectDefinition>?) -> SceneAnalysisEffectDefinition? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    override public init() {
+        super.init(try! RoActivateInstance(HString("Windows.Media.Core.SceneAnalysisEffectDefinition")))
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.sceneanalysiseffectdefinition.activatableclassid)
+    public var activatableClassId : String {
+        get { try! _default.get_ActivatableClassIdImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.sceneanalysiseffectdefinition.properties)
+    public var properties : WindowsFoundation.AnyIPropertySet! {
+        get { try! _default.get_PropertiesImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.sceneanalysiseffectframe)
+public final class SceneAnalysisEffectFrame : WinRTClass, WindowsFoundation.IClosable, UWP.IMediaFrame {
+    private typealias SwiftABI = __ABI_Windows_Media_Core.ISceneAnalysisEffectFrame
+    private typealias CABI = __x_ABI_CWindows_CMedia_CCore_CISceneAnalysisEffectFrame
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CCore_CISceneAnalysisEffectFrame>?) -> SceneAnalysisEffectFrame? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    private lazy var _IClosable: __ABI_Windows_Foundation.IClosable! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.sceneanalysiseffectframe.close)
+    public func close() throws {
+        try _IClosable.CloseImpl()
+    }
+
+    private lazy var _IMediaFrame: __ABI_Windows_Media.IMediaFrame! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.sceneanalysiseffectframe.duration)
+    public var duration : WindowsFoundation.TimeSpan? {
+        get { try! _IMediaFrame.get_DurationImpl() }
+        set { try! _IMediaFrame.put_DurationImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.sceneanalysiseffectframe.extendedproperties)
+    public var extendedProperties : WindowsFoundation.AnyIPropertySet! {
+        get { try! _IMediaFrame.get_ExtendedPropertiesImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.sceneanalysiseffectframe.isdiscontinuous)
+    public var isDiscontinuous : Bool {
+        get { try! _IMediaFrame.get_IsDiscontinuousImpl() }
+        set { try! _IMediaFrame.put_IsDiscontinuousImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.sceneanalysiseffectframe.isreadonly)
+    public var isReadOnly : Bool {
+        get { try! _IMediaFrame.get_IsReadOnlyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.sceneanalysiseffectframe.relativetime)
+    public var relativeTime : WindowsFoundation.TimeSpan? {
+        get { try! _IMediaFrame.get_RelativeTimeImpl() }
+        set { try! _IMediaFrame.put_RelativeTimeImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.sceneanalysiseffectframe.systemrelativetime)
+    public var systemRelativeTime : WindowsFoundation.TimeSpan? {
+        get { try! _IMediaFrame.get_SystemRelativeTimeImpl() }
+        set { try! _IMediaFrame.put_SystemRelativeTimeImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.sceneanalysiseffectframe.type)
+    public var type : String {
+        get { try! _IMediaFrame.get_TypeImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.sceneanalysiseffectframe.framecontrolvalues)
+    public var frameControlValues : UWP.CapturedFrameControlValues! {
+        get { try! _default.get_FrameControlValuesImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.sceneanalysiseffectframe.highdynamicrange)
+    public var highDynamicRange : HighDynamicRangeOutput! {
+        get { try! _default.get_HighDynamicRangeImpl() }
+    }
+
+    private lazy var _ISceneAnalysisEffectFrame2: __ABI_Windows_Media_Core.ISceneAnalysisEffectFrame2! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.sceneanalysiseffectframe.analysisrecommendation)
+    public var analysisRecommendation : SceneAnalysisRecommendation {
+        get { try! _ISceneAnalysisEffectFrame2.get_AnalysisRecommendationImpl() }
+    }
+
+    deinit {
+        _IClosable = nil
+        _IMediaFrame = nil
+        _default = nil
+        _ISceneAnalysisEffectFrame2 = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.sceneanalyzedeventargs)
+public final class SceneAnalyzedEventArgs : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_Media_Core.ISceneAnalyzedEventArgs
+    private typealias CABI = __x_ABI_CWindows_CMedia_CCore_CISceneAnalyzedEventArgs
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CCore_CISceneAnalyzedEventArgs>?) -> SceneAnalyzedEventArgs? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.sceneanalyzedeventargs.resultframe)
+    public var resultFrame : SceneAnalysisEffectFrame! {
+        get { try! _default.get_ResultFrameImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.speechcue)
+public final class SpeechCue : WinRTClass, IMediaCue {
+    private typealias SwiftABI = __ABI_Windows_Media_Core.ISpeechCue
+    private typealias CABI = __x_ABI_CWindows_CMedia_CCore_CISpeechCue
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CCore_CISpeechCue>?) -> SpeechCue? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    override public init() {
+        super.init(try! RoActivateInstance(HString("Windows.Media.Core.SpeechCue")))
+    }
+
+    private lazy var _IMediaCue: __ABI_Windows_Media_Core.IMediaCue! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.speechcue.duration)
+    public var duration : WindowsFoundation.TimeSpan {
+        get { try! _IMediaCue.get_DurationImpl() }
+        set { try! _IMediaCue.put_DurationImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.speechcue.id)
+    public var id : String {
+        get { try! _IMediaCue.get_IdImpl() }
+        set { try! _IMediaCue.put_IdImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.speechcue.starttime)
+    public var startTime : WindowsFoundation.TimeSpan {
+        get { try! _IMediaCue.get_StartTimeImpl() }
+        set { try! _IMediaCue.put_StartTimeImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.speechcue.endpositionininput)
+    public var endPositionInInput : Int32? {
+        get { try! _default.get_EndPositionInInputImpl() }
+        set { try! _default.put_EndPositionInInputImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.speechcue.startpositionininput)
+    public var startPositionInInput : Int32? {
+        get { try! _default.get_StartPositionInInputImpl() }
+        set { try! _default.put_StartPositionInInputImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.speechcue.text)
+    public var text : String {
+        get { try! _default.get_TextImpl() }
+        set { try! _default.put_TextImpl(newValue) }
+    }
+
+    deinit {
+        _IMediaCue = nil
+        _default = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedmetadatastreamdescriptor)
 public final class TimedMetadataStreamDescriptor : WinRTClass, IMediaStreamDescriptor, IMediaStreamDescriptor2 {
     private typealias SwiftABI = __ABI_Windows_Media_Core.IMediaStreamDescriptor
@@ -2255,6 +3631,228 @@ public final class TimedMetadataTrackFailedEventArgs : WinRTClass {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextcue)
+public final class TimedTextCue : WinRTClass, IMediaCue {
+    private typealias SwiftABI = __ABI_Windows_Media_Core.ITimedTextCue
+    private typealias CABI = __x_ABI_CWindows_CMedia_CCore_CITimedTextCue
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CCore_CITimedTextCue>?) -> TimedTextCue? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    override public init() {
+        super.init(try! RoActivateInstance(HString("Windows.Media.Core.TimedTextCue")))
+    }
+
+    private lazy var _IMediaCue: __ABI_Windows_Media_Core.IMediaCue! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextcue.duration)
+    public var duration : WindowsFoundation.TimeSpan {
+        get { try! _IMediaCue.get_DurationImpl() }
+        set { try! _IMediaCue.put_DurationImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextcue.id)
+    public var id : String {
+        get { try! _IMediaCue.get_IdImpl() }
+        set { try! _IMediaCue.put_IdImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextcue.starttime)
+    public var startTime : WindowsFoundation.TimeSpan {
+        get { try! _IMediaCue.get_StartTimeImpl() }
+        set { try! _IMediaCue.put_StartTimeImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextcue.cueregion)
+    public var cueRegion : TimedTextRegion! {
+        get { try! _default.get_CueRegionImpl() }
+        set { try! _default.put_CueRegionImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextcue.cuestyle)
+    public var cueStyle : TimedTextStyle! {
+        get { try! _default.get_CueStyleImpl() }
+        set { try! _default.put_CueStyleImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextcue.lines)
+    public var lines : WindowsFoundation.AnyIVector<TimedTextLine?>! {
+        get { try! _default.get_LinesImpl() }
+    }
+
+    deinit {
+        _IMediaCue = nil
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextline)
+public final class TimedTextLine : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_Media_Core.ITimedTextLine
+    private typealias CABI = __x_ABI_CWindows_CMedia_CCore_CITimedTextLine
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CCore_CITimedTextLine>?) -> TimedTextLine? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public init() {
+        super.init(try! RoActivateInstance(HString("Windows.Media.Core.TimedTextLine")))
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextline.subformats)
+    public var subformats : WindowsFoundation.AnyIVector<TimedTextSubformat?>! {
+        get { try! _default.get_SubformatsImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextline.text)
+    public var text : String {
+        get { try! _default.get_TextImpl() }
+        set { try! _default.put_TextImpl(newValue) }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextregion)
+public final class TimedTextRegion : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_Media_Core.ITimedTextRegion
+    private typealias CABI = __x_ABI_CWindows_CMedia_CCore_CITimedTextRegion
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CCore_CITimedTextRegion>?) -> TimedTextRegion? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public init() {
+        super.init(try! RoActivateInstance(HString("Windows.Media.Core.TimedTextRegion")))
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextregion.background)
+    public var background : UWP.Color {
+        get { try! _default.get_BackgroundImpl() }
+        set { try! _default.put_BackgroundImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextregion.displayalignment)
+    public var displayAlignment : TimedTextDisplayAlignment {
+        get { try! _default.get_DisplayAlignmentImpl() }
+        set { try! _default.put_DisplayAlignmentImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextregion.extent)
+    public var extent : TimedTextSize {
+        get { try! _default.get_ExtentImpl() }
+        set { try! _default.put_ExtentImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextregion.isoverflowclipped)
+    public var isOverflowClipped : Bool {
+        get { try! _default.get_IsOverflowClippedImpl() }
+        set { try! _default.put_IsOverflowClippedImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextregion.lineheight)
+    public var lineHeight : TimedTextDouble {
+        get { try! _default.get_LineHeightImpl() }
+        set { try! _default.put_LineHeightImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextregion.name)
+    public var name : String {
+        get { try! _default.get_NameImpl() }
+        set { try! _default.put_NameImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextregion.padding)
+    public var padding : TimedTextPadding {
+        get { try! _default.get_PaddingImpl() }
+        set { try! _default.put_PaddingImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextregion.position)
+    public var position : TimedTextPoint {
+        get { try! _default.get_PositionImpl() }
+        set { try! _default.put_PositionImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextregion.scrollmode)
+    public var scrollMode : TimedTextScrollMode {
+        get { try! _default.get_ScrollModeImpl() }
+        set { try! _default.put_ScrollModeImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextregion.textwrapping)
+    public var textWrapping : TimedTextWrapping {
+        get { try! _default.get_TextWrappingImpl() }
+        set { try! _default.put_TextWrappingImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextregion.writingmode)
+    public var writingMode : TimedTextWritingMode {
+        get { try! _default.get_WritingModeImpl() }
+        set { try! _default.put_WritingModeImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextregion.zindex)
+    public var zindex : Int32 {
+        get { try! _default.get_ZIndexImpl() }
+        set { try! _default.put_ZIndexImpl(newValue) }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextsource)
 public final class TimedTextSource : WinRTClass {
     private typealias SwiftABI = __ABI_Windows_Media_Core.ITimedTextSource
@@ -2371,6 +3969,331 @@ public final class TimedTextSourceResolveResultEventArgs : WinRTClass {
     /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextsourceresolveresulteventargs.tracks)
     public var tracks : WindowsFoundation.AnyIVectorView<TimedMetadataTrack?>! {
         get { try! _default.get_TracksImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextstyle)
+public final class TimedTextStyle : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_Media_Core.ITimedTextStyle
+    private typealias CABI = __x_ABI_CWindows_CMedia_CCore_CITimedTextStyle
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CCore_CITimedTextStyle>?) -> TimedTextStyle? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public init() {
+        super.init(try! RoActivateInstance(HString("Windows.Media.Core.TimedTextStyle")))
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextstyle.background)
+    public var background : UWP.Color {
+        get { try! _default.get_BackgroundImpl() }
+        set { try! _default.put_BackgroundImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextstyle.flowdirection)
+    public var flowDirection : TimedTextFlowDirection {
+        get { try! _default.get_FlowDirectionImpl() }
+        set { try! _default.put_FlowDirectionImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextstyle.fontfamily)
+    public var fontFamily : String {
+        get { try! _default.get_FontFamilyImpl() }
+        set { try! _default.put_FontFamilyImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextstyle.fontsize)
+    public var fontSize : TimedTextDouble {
+        get { try! _default.get_FontSizeImpl() }
+        set { try! _default.put_FontSizeImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextstyle.fontweight)
+    public var fontWeight : TimedTextWeight {
+        get { try! _default.get_FontWeightImpl() }
+        set { try! _default.put_FontWeightImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextstyle.foreground)
+    public var foreground : UWP.Color {
+        get { try! _default.get_ForegroundImpl() }
+        set { try! _default.put_ForegroundImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextstyle.isbackgroundalwaysshown)
+    public var isBackgroundAlwaysShown : Bool {
+        get { try! _default.get_IsBackgroundAlwaysShownImpl() }
+        set { try! _default.put_IsBackgroundAlwaysShownImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextstyle.linealignment)
+    public var lineAlignment : TimedTextLineAlignment {
+        get { try! _default.get_LineAlignmentImpl() }
+        set { try! _default.put_LineAlignmentImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextstyle.name)
+    public var name : String {
+        get { try! _default.get_NameImpl() }
+        set { try! _default.put_NameImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextstyle.outlinecolor)
+    public var outlineColor : UWP.Color {
+        get { try! _default.get_OutlineColorImpl() }
+        set { try! _default.put_OutlineColorImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextstyle.outlineradius)
+    public var outlineRadius : TimedTextDouble {
+        get { try! _default.get_OutlineRadiusImpl() }
+        set { try! _default.put_OutlineRadiusImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextstyle.outlinethickness)
+    public var outlineThickness : TimedTextDouble {
+        get { try! _default.get_OutlineThicknessImpl() }
+        set { try! _default.put_OutlineThicknessImpl(newValue) }
+    }
+
+    private lazy var _ITimedTextStyle2: __ABI_Windows_Media_Core.ITimedTextStyle2! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextstyle.fontstyle)
+    public var fontStyle : TimedTextFontStyle {
+        get { try! _ITimedTextStyle2.get_FontStyleImpl() }
+        set { try! _ITimedTextStyle2.put_FontStyleImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextstyle.islinethroughenabled)
+    public var isLineThroughEnabled : Bool {
+        get { try! _ITimedTextStyle2.get_IsLineThroughEnabledImpl() }
+        set { try! _ITimedTextStyle2.put_IsLineThroughEnabledImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextstyle.isoverlineenabled)
+    public var isOverlineEnabled : Bool {
+        get { try! _ITimedTextStyle2.get_IsOverlineEnabledImpl() }
+        set { try! _ITimedTextStyle2.put_IsOverlineEnabledImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextstyle.isunderlineenabled)
+    public var isUnderlineEnabled : Bool {
+        get { try! _ITimedTextStyle2.get_IsUnderlineEnabledImpl() }
+        set { try! _ITimedTextStyle2.put_IsUnderlineEnabledImpl(newValue) }
+    }
+
+    deinit {
+        _default = nil
+        _ITimedTextStyle2 = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextsubformat)
+public final class TimedTextSubformat : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_Media_Core.ITimedTextSubformat
+    private typealias CABI = __x_ABI_CWindows_CMedia_CCore_CITimedTextSubformat
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CCore_CITimedTextSubformat>?) -> TimedTextSubformat? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public init() {
+        super.init(try! RoActivateInstance(HString("Windows.Media.Core.TimedTextSubformat")))
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextsubformat.length)
+    public var length : Int32 {
+        get { try! _default.get_LengthImpl() }
+        set { try! _default.put_LengthImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextsubformat.startindex)
+    public var startIndex : Int32 {
+        get { try! _default.get_StartIndexImpl() }
+        set { try! _default.put_StartIndexImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextsubformat.subformatstyle)
+    public var subformatStyle : TimedTextStyle! {
+        get { try! _default.get_SubformatStyleImpl() }
+        set { try! _default.put_SubformatStyleImpl(newValue) }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.videostabilizationeffect)
+public final class VideoStabilizationEffect : WinRTClass, UWP.IMediaExtension {
+    private typealias SwiftABI = __ABI_Windows_Media_Core.IVideoStabilizationEffect
+    private typealias CABI = __x_ABI_CWindows_CMedia_CCore_CIVideoStabilizationEffect
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CCore_CIVideoStabilizationEffect>?) -> VideoStabilizationEffect? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    private lazy var _IMediaExtension: __ABI_Windows_Media.IMediaExtension! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.videostabilizationeffect.setproperties)
+    public func setProperties(_ configuration: WindowsFoundation.AnyIPropertySet!) throws {
+        try _IMediaExtension.SetPropertiesImpl(configuration)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.videostabilizationeffect.getrecommendedstreamconfiguration)
+    public func getRecommendedStreamConfiguration(_ controller: UWP.VideoDeviceController!, _ desiredProperties: UWP.VideoEncodingProperties!) throws -> UWP.VideoStreamConfiguration! {
+        try _default.GetRecommendedStreamConfigurationImpl(controller, desiredProperties)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.videostabilizationeffect.enabled)
+    public var enabled : Bool {
+        get { try! _default.get_EnabledImpl() }
+        set { try! _default.put_EnabledImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.videostabilizationeffect.enabledchanged)
+    public lazy var enabledChanged : Event<TypedEventHandler<VideoStabilizationEffect?, VideoStabilizationEffectEnabledChangedEventArgs?>> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._default else { return .init() }
+          return try! this.add_EnabledChangedImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._default.remove_EnabledChangedImpl($0)
+       }
+      )
+    }()
+
+    deinit {
+        _IMediaExtension = nil
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.videostabilizationeffectdefinition)
+public final class VideoStabilizationEffectDefinition : WinRTClass, UWP.IVideoEffectDefinition {
+    private typealias SwiftABI = __ABI_Windows_Media_Effects.IVideoEffectDefinition
+    private typealias CABI = __x_ABI_CWindows_CMedia_CEffects_CIVideoEffectDefinition
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CEffects_CIVideoEffectDefinition>?) -> VideoStabilizationEffectDefinition? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    override public init() {
+        super.init(try! RoActivateInstance(HString("Windows.Media.Core.VideoStabilizationEffectDefinition")))
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.videostabilizationeffectdefinition.activatableclassid)
+    public var activatableClassId : String {
+        get { try! _default.get_ActivatableClassIdImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.videostabilizationeffectdefinition.properties)
+    public var properties : WindowsFoundation.AnyIPropertySet! {
+        get { try! _default.get_PropertiesImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.videostabilizationeffectenabledchangedeventargs)
+public final class VideoStabilizationEffectEnabledChangedEventArgs : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_Media_Core.IVideoStabilizationEffectEnabledChangedEventArgs
+    private typealias CABI = __x_ABI_CWindows_CMedia_CCore_CIVideoStabilizationEffectEnabledChangedEventArgs
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CCore_CIVideoStabilizationEffectEnabledChangedEventArgs>?) -> VideoStabilizationEffectEnabledChangedEventArgs? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.videostabilizationeffectenabledchangedeventargs.reason)
+    public var reason : VideoStabilizationEffectEnabledChangedReason {
+        get { try! _default.get_ReasonImpl() }
     }
 
     deinit {
@@ -2631,6 +4554,85 @@ public struct MseTimeRange: Hashable, Codable {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextdouble)
+public struct TimedTextDouble: Hashable, Codable {
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextdouble.value)
+    public var value: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextdouble.unit)
+    public var unit: TimedTextUnit = .init(0)
+    public init() {}
+    public init(value: Double, unit: TimedTextUnit) {
+        self.value = value
+        self.unit = unit
+    }
+    public static func from(abi: __x_ABI_CWindows_CMedia_CCore_CTimedTextDouble) -> TimedTextDouble {
+        .init(value: abi.Value, unit: abi.Unit)
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextpadding)
+public struct TimedTextPadding: Hashable, Codable {
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextpadding.before)
+    public var before: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextpadding.after)
+    public var after: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextpadding.start)
+    public var start: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextpadding.end)
+    public var end: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextpadding.unit)
+    public var unit: TimedTextUnit = .init(0)
+    public init() {}
+    public init(before: Double, after: Double, start: Double, end: Double, unit: TimedTextUnit) {
+        self.before = before
+        self.after = after
+        self.start = start
+        self.end = end
+        self.unit = unit
+    }
+    public static func from(abi: __x_ABI_CWindows_CMedia_CCore_CTimedTextPadding) -> TimedTextPadding {
+        .init(before: abi.Before, after: abi.After, start: abi.Start, end: abi.End, unit: abi.Unit)
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextpoint)
+public struct TimedTextPoint: Hashable, Codable {
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextpoint.x)
+    public var x: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextpoint.y)
+    public var y: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextpoint.unit)
+    public var unit: TimedTextUnit = .init(0)
+    public init() {}
+    public init(x: Double, y: Double, unit: TimedTextUnit) {
+        self.x = x
+        self.y = y
+        self.unit = unit
+    }
+    public static func from(abi: __x_ABI_CWindows_CMedia_CCore_CTimedTextPoint) -> TimedTextPoint {
+        .init(x: abi.X, y: abi.Y, unit: abi.Unit)
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextsize)
+public struct TimedTextSize: Hashable, Codable {
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextsize.height)
+    public var height: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextsize.width)
+    public var width: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.timedtextsize.unit)
+    public var unit: TimedTextUnit = .init(0)
+    public init() {}
+    public init(height: Double, width: Double, unit: TimedTextUnit) {
+        self.height = height
+        self.width = width
+        self.unit = unit
+    }
+    public static func from(abi: __x_ABI_CWindows_CMedia_CCore_CTimedTextSize) -> TimedTextSize {
+        .init(height: abi.Height, width: abi.Width, unit: abi.Unit)
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.imediacue)
 public protocol IMediaCue : WinRTInterface {
     /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.imediacue.duration)
@@ -2756,6 +4758,24 @@ extension ISingleSelectMediaTrackList {
 }
 public typealias AnyISingleSelectMediaTrackList = any ISingleSelectMediaTrackList
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.itimedmetadatatrackprovider)
+public protocol ITimedMetadataTrackProvider : WinRTInterface {
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.core.itimedmetadatatrackprovider.timedmetadatatracks)
+    var timedMetadataTracks: WindowsFoundation.AnyIVectorView<UWP.TimedMetadataTrack?>! { get }
+}
+
+extension ITimedMetadataTrackProvider {
+    public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        switch iid {
+            case __ABI_Windows_Media_Core.ITimedMetadataTrackProviderWrapper.IID:
+                let wrapper = __ABI_Windows_Media_Core.ITimedMetadataTrackProviderWrapper(self)
+                return wrapper!.queryInterface(iid)
+            default: return nil
+        }
+    }
+}
+public typealias AnyITimedMetadataTrackProvider = any ITimedMetadataTrackProvider
+
 extension UWP.AudioDecoderDegradation {
     public static var none : UWP.AudioDecoderDegradation {
         __x_ABI_CWindows_CMedia_CCore_CAudioDecoderDegradation_None
@@ -2784,6 +4804,39 @@ extension UWP.AudioDecoderDegradationReason {
     }
 }
 extension UWP.AudioDecoderDegradationReason: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.CodecCategory {
+    public static var encoder : UWP.CodecCategory {
+        __x_ABI_CWindows_CMedia_CCore_CCodecCategory_Encoder
+    }
+    public static var decoder : UWP.CodecCategory {
+        __x_ABI_CWindows_CMedia_CCore_CCodecCategory_Decoder
+    }
+}
+extension UWP.CodecCategory: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.CodecKind {
+    public static var audio : UWP.CodecKind {
+        __x_ABI_CWindows_CMedia_CCore_CCodecKind_Audio
+    }
+    public static var video : UWP.CodecKind {
+        __x_ABI_CWindows_CMedia_CCore_CCodecKind_Video
+    }
+}
+extension UWP.CodecKind: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.FaceDetectionMode {
+    public static var highPerformance : UWP.FaceDetectionMode {
+        __x_ABI_CWindows_CMedia_CCore_CFaceDetectionMode_HighPerformance
+    }
+    public static var balanced : UWP.FaceDetectionMode {
+        __x_ABI_CWindows_CMedia_CCore_CFaceDetectionMode_Balanced
+    }
+    public static var highQuality : UWP.FaceDetectionMode {
+        __x_ABI_CWindows_CMedia_CCore_CFaceDetectionMode_HighQuality
+    }
+}
+extension UWP.FaceDetectionMode: @retroactive Hashable, @retroactive Codable {}
 
 extension UWP.MediaDecoderStatus {
     public static var fullySupported : UWP.MediaDecoderStatus {
@@ -2935,6 +4988,19 @@ extension UWP.MseReadyState {
 }
 extension UWP.MseReadyState: @retroactive Hashable, @retroactive Codable {}
 
+extension UWP.SceneAnalysisRecommendation {
+    public static var standard : UWP.SceneAnalysisRecommendation {
+        __x_ABI_CWindows_CMedia_CCore_CSceneAnalysisRecommendation_Standard
+    }
+    public static var hdr : UWP.SceneAnalysisRecommendation {
+        __x_ABI_CWindows_CMedia_CCore_CSceneAnalysisRecommendation_Hdr
+    }
+    public static var lowLight : UWP.SceneAnalysisRecommendation {
+        __x_ABI_CWindows_CMedia_CCore_CSceneAnalysisRecommendation_LowLight
+    }
+}
+extension UWP.SceneAnalysisRecommendation: @retroactive Hashable, @retroactive Codable {}
+
 extension UWP.TimedMetadataKind {
     public static var caption : UWP.TimedMetadataKind {
         __x_ABI_CWindows_CMedia_CCore_CTimedMetadataKind_Caption
@@ -2978,4 +5044,131 @@ extension UWP.TimedMetadataTrackErrorCode {
     }
 }
 extension UWP.TimedMetadataTrackErrorCode: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.TimedTextDisplayAlignment {
+    public static var before : UWP.TimedTextDisplayAlignment {
+        __x_ABI_CWindows_CMedia_CCore_CTimedTextDisplayAlignment_Before
+    }
+    public static var after : UWP.TimedTextDisplayAlignment {
+        __x_ABI_CWindows_CMedia_CCore_CTimedTextDisplayAlignment_After
+    }
+    public static var center : UWP.TimedTextDisplayAlignment {
+        __x_ABI_CWindows_CMedia_CCore_CTimedTextDisplayAlignment_Center
+    }
+}
+extension UWP.TimedTextDisplayAlignment: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.TimedTextFlowDirection {
+    public static var leftToRight : UWP.TimedTextFlowDirection {
+        __x_ABI_CWindows_CMedia_CCore_CTimedTextFlowDirection_LeftToRight
+    }
+    public static var rightToLeft : UWP.TimedTextFlowDirection {
+        __x_ABI_CWindows_CMedia_CCore_CTimedTextFlowDirection_RightToLeft
+    }
+}
+extension UWP.TimedTextFlowDirection: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.TimedTextFontStyle {
+    public static var normal : UWP.TimedTextFontStyle {
+        __x_ABI_CWindows_CMedia_CCore_CTimedTextFontStyle_Normal
+    }
+    public static var oblique : UWP.TimedTextFontStyle {
+        __x_ABI_CWindows_CMedia_CCore_CTimedTextFontStyle_Oblique
+    }
+    public static var italic : UWP.TimedTextFontStyle {
+        __x_ABI_CWindows_CMedia_CCore_CTimedTextFontStyle_Italic
+    }
+}
+extension UWP.TimedTextFontStyle: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.TimedTextLineAlignment {
+    public static var start : UWP.TimedTextLineAlignment {
+        __x_ABI_CWindows_CMedia_CCore_CTimedTextLineAlignment_Start
+    }
+    public static var end : UWP.TimedTextLineAlignment {
+        __x_ABI_CWindows_CMedia_CCore_CTimedTextLineAlignment_End
+    }
+    public static var center : UWP.TimedTextLineAlignment {
+        __x_ABI_CWindows_CMedia_CCore_CTimedTextLineAlignment_Center
+    }
+}
+extension UWP.TimedTextLineAlignment: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.TimedTextScrollMode {
+    public static var popon : UWP.TimedTextScrollMode {
+        __x_ABI_CWindows_CMedia_CCore_CTimedTextScrollMode_Popon
+    }
+    public static var rollup : UWP.TimedTextScrollMode {
+        __x_ABI_CWindows_CMedia_CCore_CTimedTextScrollMode_Rollup
+    }
+}
+extension UWP.TimedTextScrollMode: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.TimedTextUnit {
+    public static var pixels : UWP.TimedTextUnit {
+        __x_ABI_CWindows_CMedia_CCore_CTimedTextUnit_Pixels
+    }
+    public static var percentage : UWP.TimedTextUnit {
+        __x_ABI_CWindows_CMedia_CCore_CTimedTextUnit_Percentage
+    }
+}
+extension UWP.TimedTextUnit: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.TimedTextWeight {
+    public static var normal : UWP.TimedTextWeight {
+        __x_ABI_CWindows_CMedia_CCore_CTimedTextWeight_Normal
+    }
+    public static var bold : UWP.TimedTextWeight {
+        __x_ABI_CWindows_CMedia_CCore_CTimedTextWeight_Bold
+    }
+}
+extension UWP.TimedTextWeight: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.TimedTextWrapping {
+    public static var noWrap : UWP.TimedTextWrapping {
+        __x_ABI_CWindows_CMedia_CCore_CTimedTextWrapping_NoWrap
+    }
+    public static var wrap : UWP.TimedTextWrapping {
+        __x_ABI_CWindows_CMedia_CCore_CTimedTextWrapping_Wrap
+    }
+}
+extension UWP.TimedTextWrapping: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.TimedTextWritingMode {
+    public static var leftRightTopBottom : UWP.TimedTextWritingMode {
+        __x_ABI_CWindows_CMedia_CCore_CTimedTextWritingMode_LeftRightTopBottom
+    }
+    public static var rightLeftTopBottom : UWP.TimedTextWritingMode {
+        __x_ABI_CWindows_CMedia_CCore_CTimedTextWritingMode_RightLeftTopBottom
+    }
+    public static var topBottomRightLeft : UWP.TimedTextWritingMode {
+        __x_ABI_CWindows_CMedia_CCore_CTimedTextWritingMode_TopBottomRightLeft
+    }
+    public static var topBottomLeftRight : UWP.TimedTextWritingMode {
+        __x_ABI_CWindows_CMedia_CCore_CTimedTextWritingMode_TopBottomLeftRight
+    }
+    public static var leftRight : UWP.TimedTextWritingMode {
+        __x_ABI_CWindows_CMedia_CCore_CTimedTextWritingMode_LeftRight
+    }
+    public static var rightLeft : UWP.TimedTextWritingMode {
+        __x_ABI_CWindows_CMedia_CCore_CTimedTextWritingMode_RightLeft
+    }
+    public static var topBottom : UWP.TimedTextWritingMode {
+        __x_ABI_CWindows_CMedia_CCore_CTimedTextWritingMode_TopBottom
+    }
+}
+extension UWP.TimedTextWritingMode: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.VideoStabilizationEffectEnabledChangedReason {
+    public static var programmatic : UWP.VideoStabilizationEffectEnabledChangedReason {
+        __x_ABI_CWindows_CMedia_CCore_CVideoStabilizationEffectEnabledChangedReason_Programmatic
+    }
+    public static var pixelRateTooHigh : UWP.VideoStabilizationEffectEnabledChangedReason {
+        __x_ABI_CWindows_CMedia_CCore_CVideoStabilizationEffectEnabledChangedReason_PixelRateTooHigh
+    }
+    public static var runningSlowly : UWP.VideoStabilizationEffectEnabledChangedReason {
+        __x_ABI_CWindows_CMedia_CCore_CVideoStabilizationEffectEnabledChangedReason_RunningSlowly
+    }
+}
+extension UWP.VideoStabilizationEffectEnabledChangedReason: @retroactive Hashable, @retroactive Codable {}
 

@@ -6,6 +6,18 @@ import Foundation
 @_spi(WinRTInternal) @_spi(WinRTImplements) import WindowsFoundation
 import CWinRT
 
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIAdaptiveTrigger: WindowsFoundation.IID {
+    .init(Data1: 0xB2B18AE8, Data2: 0x48D9, Data3: 0x5A1D, Data4: ( 0xA5,0x55,0x66,0x85,0xDD,0xD4,0xDA,0x80 ))// B2B18AE8-48D9-5A1D-A555-6685DDD4DA80
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIAdaptiveTriggerFactory: WindowsFoundation.IID {
+    .init(Data1: 0x9C9560BB, Data2: 0x4099, Data3: 0x5175, Data4: ( 0x92,0x50,0x45,0xA1,0x5E,0x75,0x3D,0xA8 ))// 9C9560BB-4099-5175-9250-45A15E753DA8
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIAdaptiveTriggerStatics: WindowsFoundation.IID {
+    .init(Data1: 0xE7A3547F, Data2: 0xC077, Data3: 0x5F20, Data4: ( 0xAA,0xB1,0xD1,0x6C,0x30,0xD9,0xD3,0x7F ))// E7A3547F-C077-5F20-AAB1-D16C30D9D37F
+}
+
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIApplication: WindowsFoundation.IID {
     .init(Data1: 0x06A8F4E7, Data2: 0x1146, Data3: 0x55AF, Data4: ( 0x82,0x0D,0xEB,0xD5,0x56,0x43,0xB0,0x21 ))// 06A8F4E7-1146-55AF-820D-EBD55643B021
 }
@@ -54,6 +66,22 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIBrushTransitionFactory: WindowsFo
     .init(Data1: 0x13735998, Data2: 0xC3B6, Data3: 0x5C24, Data4: ( 0xB4,0x0A,0x7B,0x16,0x6A,0x6F,0xFC,0x2C ))// 13735998-C3B6-5C24-B40A-7B166A6FFC2C
 }
 
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources: WindowsFoundation.IID {
+    .init(Data1: 0x1903A03C, Data2: 0x1750, Data3: 0x54FE, Data4: ( 0xA4,0x34,0x14,0xB2,0x27,0xCB,0xE7,0x01 ))// 1903A03C-1750-54FE-A434-14B227CBE701
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResourcesFactory: WindowsFoundation.IID {
+    .init(Data1: 0x32FDE185, Data2: 0x8544, Data3: 0x59C0, Data4: ( 0x9E,0x0A,0xE6,0xE0,0xBA,0xD9,0xED,0xCF ))// 32FDE185-8544-59C0-9E0A-E6E0BAD9EDCF
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CICornerRadiusHelper: WindowsFoundation.IID {
+    .init(Data1: 0xDFCC382D, Data2: 0xCFA8, Data3: 0x5614, Data4: ( 0xA3,0x5A,0x40,0x91,0xD1,0xA8,0x1C,0x9E ))// DFCC382D-CFA8-5614-A35A-4091D1A81C9E
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CICornerRadiusHelperStatics: WindowsFoundation.IID {
+    .init(Data1: 0x77352882, Data2: 0x894B, Data3: 0x5DED, Data4: ( 0xB5,0x4C,0xA8,0x61,0x05,0xE4,0xE0,0x68 ))// 77352882-894B-5DED-B54C-A86105E4E068
+}
+
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIDataContextChangedEventArgs: WindowsFoundation.IID {
     .init(Data1: 0xA1BE80F4, Data2: 0xCF83, Data3: 0x5022, Data4: ( 0xB1,0x13,0x92,0x33,0xF1,0xD4,0xFA,0xFA ))// A1BE80F4-CF83-5022-B113-9233F1D4FAFA
 }
@@ -68,6 +96,14 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIDataTemplateExtension: WindowsFou
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIDataTemplateFactory: WindowsFoundation.IID {
     .init(Data1: 0xD8E8249D, Data2: 0x305B, Data3: 0x5CA5, Data4: ( 0xAC,0xF8,0x3E,0x1B,0xEF,0xFD,0x02,0x19 ))// D8E8249D-305B-5CA5-ACF8-3E1BEFFD0219
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIDataTemplateKey: WindowsFoundation.IID {
+    .init(Data1: 0x6E704A95, Data2: 0x4B2F, Data3: 0x5BA8, Data4: ( 0xAD,0xA5,0x12,0x61,0xC8,0x32,0xBA,0xED ))// 6E704A95-4B2F-5BA8-ADA5-1261C832BAED
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIDataTemplateKeyFactory: WindowsFoundation.IID {
+    .init(Data1: 0x13B2F604, Data2: 0xEEBC, Data3: 0x5DAA, Data4: ( 0x8A,0x5B,0x46,0x0C,0x4F,0xAB,0xDE,0xB7 ))// 13B2F604-EEBC-5DAA-8A5B-460C4FABDEB7
 }
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIDataTemplateStatics: WindowsFoundation.IID {
@@ -90,6 +126,10 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObject: WindowsFoundati
     .init(Data1: 0xE7BEAEE7, Data2: 0x160E, Data3: 0x50F7, Data4: ( 0x87,0x89,0xD6,0x34,0x63,0xF9,0x79,0xFA ))// E7BEAEE7-160E-50F7-8789-D63463F979FA
 }
 
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObjectCollectionFactory: WindowsFoundation.IID {
+    .init(Data1: 0x2A74EE43, Data2: 0x90FD, Data3: 0x5D61, Data4: ( 0x93,0x83,0x58,0x4E,0xA8,0x42,0x2B,0x39 ))// 2A74EE43-90FD-5D61-9383-584EA8422B39
+}
+
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObjectFactory: WindowsFoundation.IID {
     .init(Data1: 0x936B614C, Data2: 0x475F, Data3: 0x5D7D, Data4: ( 0xB3,0xF7,0xBF,0x1F,0xBE,0xA2,0x81,0x26 ))// 936B614C-475F-5D7D-B3F7-BF1FBEA28126
 }
@@ -104,6 +144,14 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIDependencyPropertyChangedEventArg
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIDependencyPropertyStatics: WindowsFoundation.IID {
     .init(Data1: 0x61DDC651, Data2: 0x0383, Data3: 0x5D6F, Data4: ( 0x98,0xCE,0x5C,0x04,0x6A,0xAA,0xAA,0x8F ))// 61DDC651-0383-5D6F-98CE-5C046AAAAA8F
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIDispatcherTimer: WindowsFoundation.IID {
+    .init(Data1: 0x58A4ABF1, Data2: 0xA4A3, Data3: 0x53DD, Data4: ( 0xAE,0x21,0x08,0xF4,0x32,0x31,0xE8,0x17 ))// 58A4ABF1-A4A3-53DD-AE21-08F43231E817
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIDispatcherTimerFactory: WindowsFoundation.IID {
+    .init(Data1: 0x1BCB3166, Data2: 0x22E4, Data3: 0x50BF, Data4: ( 0xA5,0xA2,0xB7,0x8C,0xA4,0x37,0x7B,0xD0 ))// 1BCB3166-22E4-50BF-A5A2-B78CA4377BD0
 }
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIDragEventArgs: WindowsFoundation.IID {
@@ -130,6 +178,14 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIDropCompletedEventArgs: WindowsFo
     .init(Data1: 0xE700082D, Data2: 0xC640, Data3: 0x5D44, Data4: ( 0xB2,0x3A,0xF2,0x13,0xDF,0xBE,0xB2,0x45 ))// E700082D-C640-5D44-B23A-F213DFBEB245
 }
 
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIDurationHelper: WindowsFoundation.IID {
+    .init(Data1: 0xCC1089AB, Data2: 0x8041, Data3: 0x5C3E, Data4: ( 0xB7,0x53,0x83,0x97,0xE7,0x35,0x8C,0xC6 ))// CC1089AB-8041-5C3E-B753-8397E7358CC6
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIDurationHelperStatics: WindowsFoundation.IID {
+    .init(Data1: 0x491FEB2C, Data2: 0x3475, Data3: 0x5F89, Data4: ( 0xB1,0x5C,0x49,0xC2,0x36,0xEB,0x51,0x4C ))// 491FEB2C-3475-5F89-B15C-49C236EB514C
+}
+
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIEffectiveViewportChangedEventArgs: WindowsFoundation.IID {
     .init(Data1: 0x636E8159, Data2: 0x2D82, Data3: 0x538A, Data4: ( 0x84,0x83,0xCD,0x57,0x6E,0x41,0xD0,0xDF ))// 636E8159-2D82-538A-8483-CD576E41D0DF
 }
@@ -152,6 +208,18 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIElementFactoryRecycleArgs: Window
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIElementFactoryRecycleArgsFactory: WindowsFoundation.IID {
     .init(Data1: 0x30EE194A, Data2: 0xFE4D, Data3: 0x53E7, Data4: ( 0xA8,0x4A,0xCD,0x34,0xFA,0xB0,0xD4,0xEF ))// 30EE194A-FE4D-53E7-A84A-CD34FAB0D4EF
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayer: WindowsFoundation.IID {
+    .init(Data1: 0x0EA67E68, Data2: 0x937C, Data3: 0x5C00, Data4: ( 0xB6,0x09,0x53,0xB6,0x3D,0x9A,0x5D,0x42 ))// 0EA67E68-937C-5C00-B609-53B63D9A5D42
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStatics: WindowsFoundation.IID {
+    .init(Data1: 0x5A5A20C3, Data2: 0x1C9B, Data3: 0x5D61, Data4: ( 0x9D,0x63,0x48,0x7C,0x8B,0xF1,0x6E,0xCB ))// 5A5A20C3-1C9B-5D61-9D63-487C8BF16ECB
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIEventTrigger: WindowsFoundation.IID {
+    .init(Data1: 0x8C6F0541, Data2: 0xC6AC, Data3: 0x5F27, Data4: ( 0x9D,0x45,0xCF,0x8B,0xDB,0xDF,0xAB,0xE6 ))// 8C6F0541-C6AC-5F27-9D45-CF8BDBDFABE6
 }
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIExceptionRoutedEventArgs: WindowsFoundation.IID {
@@ -190,8 +258,36 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkTemplateFactory: Windows
     .init(Data1: 0x616DD6DB, Data2: 0xB064, Data3: 0x561D, Data4: ( 0xB1,0x62,0x46,0xCE,0xB4,0x5D,0xC5,0x62 ))// 616DD6DB-B064-561D-B162-46CEB45DC562
 }
 
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkView: WindowsFoundation.IID {
+    .init(Data1: 0xE60094C3, Data2: 0x45AF, Data3: 0x5A8F, Data4: ( 0x95,0x11,0x17,0x81,0xD7,0xDF,0x17,0x99 ))// E60094C3-45AF-5A8F-9511-1781D7DF1799
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkViewSource: WindowsFoundation.IID {
+    .init(Data1: 0x52B5D975, Data2: 0x6FA6, Data3: 0x5B66, Data4: ( 0xA2,0x48,0xD1,0x74,0x43,0xB2,0xBC,0xA0 ))// 52B5D975-6FA6-5B66-A248-D17443B2BCA0
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIGridLengthHelper: WindowsFoundation.IID {
+    .init(Data1: 0x592B4FD5, Data2: 0x6564, Data3: 0x54E0, Data4: ( 0x87,0xD6,0x1C,0x41,0x93,0x9E,0xD4,0x99 ))// 592B4FD5-6564-54E0-87D6-1C41939ED499
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIGridLengthHelperStatics: WindowsFoundation.IID {
+    .init(Data1: 0xCEA8881B, Data2: 0x4E64, Data3: 0x535D, Data4: ( 0x9F,0xCD,0xB4,0x82,0x8D,0x39,0x79,0xB0 ))// CEA8881B-4E64-535D-9FCD-B4828D3979B0
+}
+
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CILaunchActivatedEventArgs: WindowsFoundation.IID {
     .init(Data1: 0xD505CEA9, Data2: 0x1BCB, Data3: 0x5B29, Data4: ( 0xA8,0xBE,0x94,0x4E,0x00,0xF0,0x6F,0x78 ))// D505CEA9-1BCB-5B29-A8BE-944E00F06F78
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIMediaFailedRoutedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0xA1DCE737, Data2: 0x539B, Data3: 0x5E54, Data4: ( 0x99,0xAF,0x75,0xEC,0xE4,0x28,0xBF,0x9B ))// A1DCE737-539B-5E54-99AF-75ECE428BF9B
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIPointHelper: WindowsFoundation.IID {
+    .init(Data1: 0x06FCC7A4, Data2: 0x6099, Data3: 0x5F2E, Data4: ( 0x83,0xA5,0xF3,0xBE,0x0E,0x2C,0x90,0xAA ))// 06FCC7A4-6099-5F2E-83A5-F3BE0E2C90AA
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIPointHelperStatics: WindowsFoundation.IID {
+    .init(Data1: 0xB0B2BD44, Data2: 0x600B, Data3: 0x51B3, Data4: ( 0xA4,0x2C,0x3F,0xD3,0x6C,0x1A,0xB0,0x42 ))// B0B2BD44-600B-51B3-A42C-3FD36C1AB042
 }
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIPropertyMetadata: WindowsFoundation.IID {
@@ -212,6 +308,14 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIPropertyPath: WindowsFoundation.I
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIPropertyPathFactory: WindowsFoundation.IID {
     .init(Data1: 0x08A8CCAB, Data2: 0x7FF8, Data3: 0x5CEC, Data4: ( 0xBD,0x3C,0x72,0xC9,0x88,0x04,0xD9,0x89 ))// 08A8CCAB-7FF8-5CEC-BD3C-72C98804D989
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIRectHelper: WindowsFoundation.IID {
+    .init(Data1: 0x5FECE92A, Data2: 0xA3D2, Data3: 0x5BC0, Data4: ( 0xAC,0xA1,0xE9,0xE1,0xFA,0x86,0xAE,0x9D ))// 5FECE92A-A3D2-5BC0-ACA1-E9E1FA86AE9D
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStatics: WindowsFoundation.IID {
+    .init(Data1: 0xA9CF37AD, Data2: 0x5430, Data3: 0x5086, Data4: ( 0xA3,0x9F,0x74,0xF0,0xD1,0xED,0x10,0x72 ))// A9CF37AD-5430-5086-A39F-74F0D1ED1072
 }
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIResourceDictionary: WindowsFoundation.IID {
@@ -270,6 +374,34 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CISizeChangedEventArgs: WindowsFoun
     .init(Data1: 0xFE76324E, Data2: 0x6DFB, Data3: 0x58B1, Data4: ( 0x9D,0xCD,0x88,0x6C,0xA8,0xF9,0xA2,0xEA ))// FE76324E-6DFB-58B1-9DCD-886CA8F9A2EA
 }
 
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CISizeHelper: WindowsFoundation.IID {
+    .init(Data1: 0x5DF9EEE1, Data2: 0xA2A8, Data3: 0x5E55, Data4: ( 0x86,0x68,0xAF,0xED,0xC0,0xB3,0x6D,0xEB ))// 5DF9EEE1-A2A8-5E55-8668-AFEDC0B36DEB
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CISizeHelperStatics: WindowsFoundation.IID {
+    .init(Data1: 0xCFF1B27F, Data2: 0x84F1, Data3: 0x5B14, Data4: ( 0x94,0x59,0x76,0x4A,0xF5,0x71,0x4F,0xE5 ))// CFF1B27F-84F1-5B14-9459-764AF5714FE5
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIStateTrigger: WindowsFoundation.IID {
+    .init(Data1: 0x7B098126, Data2: 0x1DAB, Data3: 0x5B58, Data4: ( 0xAC,0xA7,0xF2,0xB7,0xDE,0x2E,0x10,0x33 ))// 7B098126-1DAB-5B58-ACA7-F2B7DE2E1033
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIStateTriggerBase: WindowsFoundation.IID {
+    .init(Data1: 0xF07B0F7B, Data2: 0x5B94, Data3: 0x58AE, Data4: ( 0x87,0x17,0x22,0xAB,0x09,0x3B,0xC1,0x31 ))// F07B0F7B-5B94-58AE-8717-22AB093BC131
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIStateTriggerBaseFactory: WindowsFoundation.IID {
+    .init(Data1: 0xE7724D65, Data2: 0xFC7E, Data3: 0x5C67, Data4: ( 0xBB,0x84,0xB4,0xC7,0xB0,0x20,0xAD,0xC3 ))// E7724D65-FC7E-5C67-BB84-B4C7B020ADC3
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIStateTriggerBaseProtected: WindowsFoundation.IID {
+    .init(Data1: 0x2F695047, Data2: 0x335B, Data3: 0x5C00, Data4: ( 0xA0,0xD4,0x2A,0x8F,0xA5,0x45,0x44,0xC6 ))// 2F695047-335B-5C00-A0D4-2A8FA54544C6
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIStateTriggerStatics: WindowsFoundation.IID {
+    .init(Data1: 0xBD60C019, Data2: 0x833B, Data3: 0x5432, Data4: ( 0xA4,0x1D,0x89,0xD7,0x24,0x10,0xEB,0x47 ))// BD60C019-833B-5432-A41D-89D72410EB47
+}
+
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIStyle: WindowsFoundation.IID {
     .init(Data1: 0x65E1D164, Data2: 0x572F, Data3: 0x5B0E, Data4: ( 0xA8,0x0F,0x9C,0x02,0x44,0x1F,0xAC,0x49 ))// 65E1D164-572F-5B0E-A80F-9C02441FAC49
 }
@@ -284,6 +416,14 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CITargetPropertyPath: WindowsFounda
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CITargetPropertyPathFactory: WindowsFoundation.IID {
     .init(Data1: 0x894CB11D, Data2: 0x5C16, Data3: 0x555B, Data4: ( 0xB6,0x61,0xF4,0x1B,0x29,0xFD,0x9B,0x21 ))// 894CB11D-5C16-555B-B661-F41B29FD9B21
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIThicknessHelper: WindowsFoundation.IID {
+    .init(Data1: 0x5E496347, Data2: 0x3C49, Data3: 0x55EE, Data4: ( 0xB4,0x42,0x53,0x07,0x89,0xB4,0x2B,0x6F ))// 5E496347-3C49-55EE-B442-530789B42B6F
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIThicknessHelperStatics: WindowsFoundation.IID {
+    .init(Data1: 0x0E3B81CE, Data2: 0xD278, Data3: 0x577F, Data4: ( 0x98,0xEA,0x1B,0x60,0x10,0xF8,0x6D,0x7F ))// 0E3B81CE-D278-577F-98EA-1B6010F86D7F
 }
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CITriggerAction: WindowsFoundation.IID {
@@ -338,6 +478,46 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIVector3TransitionFactory: Windows
     .init(Data1: 0xA3A084FC, Data2: 0xB965, Data3: 0x534B, Data4: ( 0x90,0x0F,0x78,0xE2,0x88,0x12,0x92,0x32 ))// A3A084FC-B965-534B-900F-78E288129232
 }
 
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIVisualState: WindowsFoundation.IID {
+    .init(Data1: 0x4BB32AE8, Data2: 0x0E28, Data3: 0x5521, Data4: ( 0xA7,0xF5,0x66,0xB6,0x61,0x37,0x29,0x94 ))// 4BB32AE8-0E28-5521-A7F5-66B661372994
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateChangedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x11DE9510, Data2: 0xA195, Data3: 0x577B, Data4: ( 0x88,0xC8,0x06,0x39,0x16,0x18,0x86,0x8C ))// 11DE9510-A195-577B-88C8-06391618868C
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateGroup: WindowsFoundation.IID {
+    .init(Data1: 0x8DFD691B, Data2: 0x710C, Data3: 0x5D6D, Data4: ( 0xB7,0x1A,0x7A,0x7F,0x5E,0xD5,0x4A,0xC7 ))// 8DFD691B-710C-5D6D-B71A-7A7F5ED54AC7
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateManager: WindowsFoundation.IID {
+    .init(Data1: 0x342C8D32, Data2: 0xAD61, Data3: 0x5925, Data4: ( 0x93,0xD1,0x0C,0x70,0x4D,0xF2,0xA7,0xD1 ))// 342C8D32-AD61-5925-93D1-0C704DF2A7D1
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateManagerFactory: WindowsFoundation.IID {
+    .init(Data1: 0x713DAF82, Data2: 0x92B3, Data3: 0x58F2, Data4: ( 0x8F,0xC1,0xB0,0xD9,0xA2,0xCA,0xD0,0x3C ))// 713DAF82-92B3-58F2-8FC1-B0D9A2CAD03C
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateManagerOverrides: WindowsFoundation.IID {
+    .init(Data1: 0xE3F8E9C9, Data2: 0x9432, Data3: 0x514C, Data4: ( 0x92,0x3E,0x14,0x2C,0xD8,0xC8,0x27,0x30 ))// E3F8E9C9-9432-514C-923E-142CD8C82730
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateManagerProtected: WindowsFoundation.IID {
+    .init(Data1: 0x0F008013, Data2: 0x787F, Data3: 0x5599, Data4: ( 0xA5,0xAD,0x0A,0x10,0xB9,0x88,0xED,0x24 ))// 0F008013-787F-5599-A5AD-0A10B988ED24
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateManagerStatics: WindowsFoundation.IID {
+    .init(Data1: 0xA4D5147D, Data2: 0x88C3, Data3: 0x57ED, Data4: ( 0xAD,0x83,0x24,0x5D,0xF5,0xF6,0xB5,0x0D ))// A4D5147D-88C3-57ED-AD83-245DF5F6B50D
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIVisualTransition: WindowsFoundation.IID {
+    .init(Data1: 0xDD21AF54, Data2: 0x2CE1, Data3: 0x59DE, Data4: ( 0x9F,0xD1,0x2B,0x45,0xF6,0xBF,0x65,0x81 ))// DD21AF54-2CE1-59DE-9FD1-2B45F6BF6581
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIVisualTransitionFactory: WindowsFoundation.IID {
+    .init(Data1: 0xF3E74C0D, Data2: 0x0B5B, Data3: 0x5920, Data4: ( 0xA3,0x09,0x08,0xCB,0x6B,0xF2,0xA7,0x39 ))// F3E74C0D-0B5B-5920-A309-08CB6BF2A739
+}
+
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIWindow: WindowsFoundation.IID {
     .init(Data1: 0x61F0EC79, Data2: 0x5D52, Data3: 0x56B5, Data4: ( 0x86,0xFB,0x40,0xFA,0x4A,0xF2,0x88,0xB0 ))// 61F0EC79-5D52-56B5-86FB-40FA4AF288B0
 }
@@ -386,6 +566,10 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIXamlRootChangedEventArgs: Windows
     .init(Data1: 0x61D2C719, Data2: 0xF8A1, Data3: 0x515A, Data4: ( 0x90,0x2C,0xCF,0xA4,0x98,0xBA,0x7A,0x7F ))// 61D2C719-F8A1-515A-902C-CFA498BA7A7F
 }
 
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider: WindowsFoundation.IID {
+    .init(Data1: 0x68B3A2DF, Data2: 0x8173, Data3: 0x539F, Data4: ( 0xB5,0x24,0xC8,0xA2,0x34,0x8F,0x5A,0xFB ))// 68B3A2DF-8173-539F-B524-C8A2348F5AFB
+}
+
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIApplicationInitializationCallback: WindowsFoundation.IID {
     .init(Data1: 0xD8EEF1C9, Data2: 0x1234, Data3: 0x56F1, Data4: ( 0x99,0x63,0x45,0xDD,0x9C,0x80,0xA6,0x61 ))// D8EEF1C9-1234-56F1-9963-45DD9C80A661
 }
@@ -410,8 +594,16 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIDragEventHandler: WindowsFoundati
     .init(Data1: 0x277AFC83, Data2: 0xCB67, Data3: 0x56C8, Data4: ( 0xB6,0x01,0x1B,0x9C,0x0F,0x1C,0x3D,0x32 ))// 277AFC83-CB67-56C8-B601-1B9C0F1C3D32
 }
 
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIEnteredBackgroundEventHandler: WindowsFoundation.IID {
+    .init(Data1: 0xF9A5148D, Data2: 0x8F72, Data3: 0x553F, Data4: ( 0xB4,0x79,0x21,0xB6,0x86,0x10,0x89,0x9D ))// F9A5148D-8F72-553F-B479-21B68610899D
+}
+
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIExceptionRoutedEventHandler: WindowsFoundation.IID {
     .init(Data1: 0x45FBB85D, Data2: 0x54F9, Data3: 0x5A2A, Data4: ( 0x8A,0x38,0x00,0xA3,0xB7,0x76,0x1F,0x96 ))// 45FBB85D-54F9-5A2A-8A38-00A3B7761F96
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CILeavingBackgroundEventHandler: WindowsFoundation.IID {
+    .init(Data1: 0x3D723B94, Data2: 0xFBCF, Data3: 0x5C0D, Data4: ( 0xB6,0xEF,0x50,0x62,0xE6,0x8B,0xF9,0xF8 ))// 3D723B94-FBCF-5C0D-B6EF-5062E68BF9F8
 }
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIPropertyChangedCallback: WindowsFoundation.IID {
@@ -426,11 +618,93 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CISizeChangedEventHandler: WindowsF
     .init(Data1: 0x8D7B1A58, Data2: 0x14C6, Data3: 0x51C9, Data4: ( 0x89,0x2C,0x9F,0xCC,0xE3,0x68,0xE7,0x7D ))// 8D7B1A58-14C6-51C9-892C-9FCCE368E77D
 }
 
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CISuspendingEventHandler: WindowsFoundation.IID {
+    .init(Data1: 0xE4BEEC79, Data2: 0x95FD, Data3: 0x5841, Data4: ( 0xAC,0xEB,0x01,0xA8,0xA1,0xFB,0x73,0xD0 ))// E4BEEC79-95FD-5841-ACEB-01A8A1FB73D0
+}
+
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIUnhandledExceptionEventHandler: WindowsFoundation.IID {
     .init(Data1: 0x3427C1B6, Data2: 0x5ECA, Data3: 0x5631, Data4: ( 0x84,0xB8,0x5B,0xAE,0x73,0x2F,0xB6,0x7F ))// 3427C1B6-5ECA-5631-84B8-5BAE732FB67F
 }
 
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateChangedEventHandler: WindowsFoundation.IID {
+    .init(Data1: 0xCDBBD854, Data2: 0x0539, Data3: 0x5BFF, Data4: ( 0xB4,0x48,0x33,0x19,0x3D,0x2F,0x41,0xB8 ))// CDBBD854-0539-5BFF-B448-33193D2F41B8
+}
+
 public enum __ABI_Microsoft_UI_Xaml {
+    public class IAdaptiveTrigger: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIAdaptiveTrigger }
+
+        internal func get_MinWindowWidthImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIAdaptiveTrigger.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_MinWindowWidth(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_MinWindowWidthImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIAdaptiveTrigger.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_MinWindowWidth(pThis, value))
+            }
+        }
+
+        internal func get_MinWindowHeightImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIAdaptiveTrigger.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_MinWindowHeight(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_MinWindowHeightImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIAdaptiveTrigger.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_MinWindowHeight(pThis, value))
+            }
+        }
+
+    }
+
+    public class IAdaptiveTriggerFactory: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIAdaptiveTriggerFactory }
+
+        internal func CreateInstanceImpl(_ baseInterface: UnsealedWinRTClassWrapper<WinUI.AdaptiveTrigger.Composable>?, _ innerInterface: inout WindowsFoundation.IInspectable?) throws -> IAdaptiveTrigger {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                let _baseInterface = baseInterface?.toIInspectableABI { $0 }
+                let (_innerInterface) = try ComPtrs.initialize { _innerInterfaceAbi in
+                    _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIAdaptiveTriggerFactory.self) { pThis in
+                        try CHECKED(pThis.pointee.lpVtbl.pointee.CreateInstance(pThis, _baseInterface, &_innerInterfaceAbi, &valueAbi))
+                    }
+                }
+                innerInterface = WindowsFoundation.IInspectable(_innerInterface!)
+            }
+            return IAdaptiveTrigger(value!)
+        }
+
+    }
+
+    public class IAdaptiveTriggerStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIAdaptiveTriggerStatics }
+
+        internal func get_MinWindowWidthPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIAdaptiveTriggerStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_MinWindowWidthProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_MinWindowHeightPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIAdaptiveTriggerStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_MinWindowHeightProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
     public class IApplication: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIApplication }
 
@@ -884,6 +1158,514 @@ public enum __ABI_Microsoft_UI_Xaml {
 
     }
 
+    public class IColorPaletteResources: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources }
+
+        internal func get_AltHighImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_AltHigh(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_AltHighImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_AltHigh(pThis, _value))
+            }
+        }
+
+        internal func get_AltLowImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_AltLow(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_AltLowImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_AltLow(pThis, _value))
+            }
+        }
+
+        internal func get_AltMediumImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_AltMedium(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_AltMediumImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_AltMedium(pThis, _value))
+            }
+        }
+
+        internal func get_AltMediumHighImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_AltMediumHigh(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_AltMediumHighImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_AltMediumHigh(pThis, _value))
+            }
+        }
+
+        internal func get_AltMediumLowImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_AltMediumLow(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_AltMediumLowImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_AltMediumLow(pThis, _value))
+            }
+        }
+
+        internal func get_BaseHighImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_BaseHigh(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_BaseHighImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_BaseHigh(pThis, _value))
+            }
+        }
+
+        internal func get_BaseLowImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_BaseLow(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_BaseLowImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_BaseLow(pThis, _value))
+            }
+        }
+
+        internal func get_BaseMediumImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_BaseMedium(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_BaseMediumImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_BaseMedium(pThis, _value))
+            }
+        }
+
+        internal func get_BaseMediumHighImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_BaseMediumHigh(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_BaseMediumHighImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_BaseMediumHigh(pThis, _value))
+            }
+        }
+
+        internal func get_BaseMediumLowImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_BaseMediumLow(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_BaseMediumLowImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_BaseMediumLow(pThis, _value))
+            }
+        }
+
+        internal func get_ChromeAltLowImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ChromeAltLow(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_ChromeAltLowImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ChromeAltLow(pThis, _value))
+            }
+        }
+
+        internal func get_ChromeBlackHighImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ChromeBlackHigh(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_ChromeBlackHighImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ChromeBlackHigh(pThis, _value))
+            }
+        }
+
+        internal func get_ChromeBlackLowImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ChromeBlackLow(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_ChromeBlackLowImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ChromeBlackLow(pThis, _value))
+            }
+        }
+
+        internal func get_ChromeBlackMediumLowImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ChromeBlackMediumLow(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_ChromeBlackMediumLowImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ChromeBlackMediumLow(pThis, _value))
+            }
+        }
+
+        internal func get_ChromeBlackMediumImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ChromeBlackMedium(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_ChromeBlackMediumImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ChromeBlackMedium(pThis, _value))
+            }
+        }
+
+        internal func get_ChromeDisabledHighImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ChromeDisabledHigh(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_ChromeDisabledHighImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ChromeDisabledHigh(pThis, _value))
+            }
+        }
+
+        internal func get_ChromeDisabledLowImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ChromeDisabledLow(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_ChromeDisabledLowImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ChromeDisabledLow(pThis, _value))
+            }
+        }
+
+        internal func get_ChromeHighImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ChromeHigh(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_ChromeHighImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ChromeHigh(pThis, _value))
+            }
+        }
+
+        internal func get_ChromeLowImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ChromeLow(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_ChromeLowImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ChromeLow(pThis, _value))
+            }
+        }
+
+        internal func get_ChromeMediumImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ChromeMedium(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_ChromeMediumImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ChromeMedium(pThis, _value))
+            }
+        }
+
+        internal func get_ChromeMediumLowImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ChromeMediumLow(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_ChromeMediumLowImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ChromeMediumLow(pThis, _value))
+            }
+        }
+
+        internal func get_ChromeWhiteImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ChromeWhite(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_ChromeWhiteImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ChromeWhite(pThis, _value))
+            }
+        }
+
+        internal func get_ChromeGrayImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ChromeGray(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_ChromeGrayImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ChromeGray(pThis, _value))
+            }
+        }
+
+        internal func get_ListLowImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ListLow(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_ListLowImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ListLow(pThis, _value))
+            }
+        }
+
+        internal func get_ListMediumImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ListMedium(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_ListMediumImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ListMedium(pThis, _value))
+            }
+        }
+
+        internal func get_ErrorTextImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ErrorText(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_ErrorTextImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ErrorText(pThis, _value))
+            }
+        }
+
+        internal func get_AccentImpl() throws -> UWP.Color? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Accent(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_AccentImpl(_ value: UWP.Color?) throws {
+            let valueWrapper = WinUI.__x_ABI_C__FIReference_1___x_ABI_CWindows__CUI__CColorWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResources.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Accent(pThis, _value))
+            }
+        }
+
+    }
+
+    public class IColorPaletteResourcesFactory: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResourcesFactory }
+
+        internal func CreateInstanceImpl(_ baseInterface: UnsealedWinRTClassWrapper<WinUI.ColorPaletteResources.Composable>?, _ innerInterface: inout WindowsFoundation.IInspectable?) throws -> IColorPaletteResources {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                let _baseInterface = baseInterface?.toIInspectableABI { $0 }
+                let (_innerInterface) = try ComPtrs.initialize { _innerInterfaceAbi in
+                    _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIColorPaletteResourcesFactory.self) { pThis in
+                        try CHECKED(pThis.pointee.lpVtbl.pointee.CreateInstance(pThis, _baseInterface, &_innerInterfaceAbi, &valueAbi))
+                    }
+                }
+                innerInterface = WindowsFoundation.IInspectable(_innerInterface!)
+            }
+            return IColorPaletteResources(value!)
+        }
+
+    }
+
+    public class ICornerRadiusHelper: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CICornerRadiusHelper }
+
+    }
+
+    public class ICornerRadiusHelperStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CICornerRadiusHelperStatics }
+
+        internal func FromRadiiImpl(_ topLeft: Double, _ topRight: Double, _ bottomRight: Double, _ bottomLeft: Double) throws -> WinUI.CornerRadius {
+            var result: __x_ABI_CMicrosoft_CUI_CXaml_CCornerRadius = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CICornerRadiusHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.FromRadii(pThis, topLeft, topRight, bottomRight, bottomLeft, &result))
+            }
+            return .from(abi: result)
+        }
+
+        internal func FromUniformRadiusImpl(_ uniformRadius: Double) throws -> WinUI.CornerRadius {
+            var result: __x_ABI_CMicrosoft_CUI_CXaml_CCornerRadius = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CICornerRadiusHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.FromUniformRadius(pThis, uniformRadius, &result))
+            }
+            return .from(abi: result)
+        }
+
+    }
+
     public class IDataContextChangedEventArgs: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIDataContextChangedEventArgs }
 
@@ -1025,6 +1807,61 @@ public enum __ABI_Microsoft_UI_Xaml {
                 innerInterface = WindowsFoundation.IInspectable(_innerInterface!)
             }
             return IDataTemplate(value!)
+        }
+
+    }
+
+    public class IDataTemplateKey: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIDataTemplateKey }
+
+        internal func get_DataTypeImpl() throws -> Any? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIDataTemplateKey.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_DataType(pThis, &valueAbi))
+                }
+            }
+            return __ABI_.AnyWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_DataTypeImpl(_ value: Any?) throws {
+            let valueWrapper = __ABI_.AnyWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIDataTemplateKey.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_DataType(pThis, _value))
+            }
+        }
+
+    }
+
+    public class IDataTemplateKeyFactory: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIDataTemplateKeyFactory }
+
+        internal func CreateInstanceImpl(_ baseInterface: UnsealedWinRTClassWrapper<WinUI.DataTemplateKey.Composable>?, _ innerInterface: inout WindowsFoundation.IInspectable?) throws -> IDataTemplateKey {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                let _baseInterface = baseInterface?.toIInspectableABI { $0 }
+                let (_innerInterface) = try ComPtrs.initialize { _innerInterfaceAbi in
+                    _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIDataTemplateKeyFactory.self) { pThis in
+                        try CHECKED(pThis.pointee.lpVtbl.pointee.CreateInstance(pThis, _baseInterface, &_innerInterfaceAbi, &valueAbi))
+                    }
+                }
+                innerInterface = WindowsFoundation.IInspectable(_innerInterface!)
+            }
+            return IDataTemplateKey(value!)
+        }
+
+        internal func CreateInstanceWithTypeImpl(_ dataType: Any?, _ baseInterface: UnsealedWinRTClassWrapper<WinUI.DataTemplateKey.Composable>?, _ innerInterface: inout WindowsFoundation.IInspectable?) throws -> IDataTemplateKey {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                let dataTypeWrapper = __ABI_.AnyWrapper(dataType)
+                let _dataType = try! dataTypeWrapper?.toABI { $0 }
+                let _baseInterface = baseInterface?.toIInspectableABI { $0 }
+                let (_innerInterface) = try ComPtrs.initialize { _innerInterfaceAbi in
+                    _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIDataTemplateKeyFactory.self) { pThis in
+                        try CHECKED(pThis.pointee.lpVtbl.pointee.CreateInstanceWithType(pThis, _dataType, _baseInterface, &_innerInterfaceAbi, &valueAbi))
+                    }
+                }
+                innerInterface = WindowsFoundation.IInspectable(_innerInterface!)
+            }
+            return IDataTemplateKey(value!)
         }
 
     }
@@ -1285,6 +2122,24 @@ public enum __ABI_Microsoft_UI_Xaml {
 
     }
 
+    public class IDependencyObjectCollectionFactory: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObjectCollectionFactory }
+
+        internal func CreateInstanceImpl(_ baseInterface: UnsealedWinRTClassWrapper<WinUI.DependencyObjectCollection.Composable>?, _ innerInterface: inout WindowsFoundation.IInspectable?) throws -> IObservableVectorDependencyObject {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                let _baseInterface = baseInterface?.toIInspectableABI { $0 }
+                let (_innerInterface) = try ComPtrs.initialize { _innerInterfaceAbi in
+                    _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObjectCollectionFactory.self) { pThis in
+                        try CHECKED(pThis.pointee.lpVtbl.pointee.CreateInstance(pThis, _baseInterface, &_innerInterfaceAbi, &valueAbi))
+                    }
+                }
+                innerInterface = WindowsFoundation.IInspectable(_innerInterface!)
+            }
+            return IObservableVectorDependencyObject(value!)
+        }
+
+    }
+
     public class IDependencyObjectFactory: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIDependencyObjectFactory }
 
@@ -1384,6 +2239,79 @@ public enum __ABI_Microsoft_UI_Xaml {
                 }
             }
             return .from(abi: result)
+        }
+
+    }
+
+    public class IDispatcherTimer: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIDispatcherTimer }
+
+        internal func get_IntervalImpl() throws -> WindowsFoundation.TimeSpan {
+            var value: __x_ABI_CWindows_CFoundation_CTimeSpan = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIDispatcherTimer.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Interval(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_IntervalImpl(_ value: WindowsFoundation.TimeSpan) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIDispatcherTimer.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Interval(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_IsEnabledImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIDispatcherTimer.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsEnabled(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func add_TickImpl(_ handler: EventHandler<Any?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = WinUI.__x_ABI_C__FIEventHandler_1_IInspectableWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIDispatcherTimer.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_Tick(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_TickImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIDispatcherTimer.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_Tick(pThis, token))
+            }
+        }
+
+        internal func StartImpl() throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIDispatcherTimer.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Start(pThis))
+            }
+        }
+
+        internal func StopImpl() throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIDispatcherTimer.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Stop(pThis))
+            }
+        }
+
+    }
+
+    public class IDispatcherTimerFactory: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIDispatcherTimerFactory }
+
+        internal func CreateInstanceImpl(_ baseInterface: UnsealedWinRTClassWrapper<WinUI.DispatcherTimer.Composable>?, _ innerInterface: inout WindowsFoundation.IInspectable?) throws -> IDispatcherTimer {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                let _baseInterface = baseInterface?.toIInspectableABI { $0 }
+                let (_innerInterface) = try ComPtrs.initialize { _innerInterfaceAbi in
+                    _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIDispatcherTimerFactory.self) { pThis in
+                        try CHECKED(pThis.pointee.lpVtbl.pointee.CreateInstance(pThis, _baseInterface, &_innerInterfaceAbi, &valueAbi))
+                    }
+                }
+                innerInterface = WindowsFoundation.IInspectable(_innerInterface!)
+            }
+            return IDispatcherTimer(value!)
         }
 
     }
@@ -1706,6 +2634,80 @@ public enum __ABI_Microsoft_UI_Xaml {
 
     }
 
+    public class IDurationHelper: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIDurationHelper }
+
+    }
+
+    public class IDurationHelperStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIDurationHelperStatics }
+
+        internal func get_AutomaticImpl() throws -> WinUI.Duration {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CDuration = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIDurationHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Automatic(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ForeverImpl() throws -> WinUI.Duration {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CDuration = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIDurationHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Forever(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func CompareImpl(_ duration1: WinUI.Duration, _ duration2: WinUI.Duration) throws -> Int32 {
+            var result: INT32 = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIDurationHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Compare(pThis, .from(swift: duration1), .from(swift: duration2), &result))
+            }
+            return result
+        }
+
+        internal func FromTimeSpanImpl(_ timeSpan: WindowsFoundation.TimeSpan) throws -> WinUI.Duration {
+            var result: __x_ABI_CMicrosoft_CUI_CXaml_CDuration = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIDurationHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.FromTimeSpan(pThis, .from(swift: timeSpan), &result))
+            }
+            return .from(abi: result)
+        }
+
+        internal func GetHasTimeSpanImpl(_ target: WinUI.Duration) throws -> Bool {
+            var result: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIDurationHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.GetHasTimeSpan(pThis, .from(swift: target), &result))
+            }
+            return .init(from: result)
+        }
+
+        internal func AddImpl(_ target: WinUI.Duration, _ duration: WinUI.Duration) throws -> WinUI.Duration {
+            var result: __x_ABI_CMicrosoft_CUI_CXaml_CDuration = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIDurationHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Add(pThis, .from(swift: target), .from(swift: duration), &result))
+            }
+            return .from(abi: result)
+        }
+
+        internal func EqualsImpl(_ target: WinUI.Duration, _ value: WinUI.Duration) throws -> Bool {
+            var result: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIDurationHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Equals(pThis, .from(swift: target), .from(swift: value), &result))
+            }
+            return .init(from: result)
+        }
+
+        internal func SubtractImpl(_ target: WinUI.Duration, _ duration: WinUI.Duration) throws -> WinUI.Duration {
+            var result: __x_ABI_CMicrosoft_CUI_CXaml_CDuration = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIDurationHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Subtract(pThis, .from(swift: target), .from(swift: duration), &result))
+            }
+            return .from(abi: result)
+        }
+
+    }
+
     public class IEffectiveViewportChangedEventArgs: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIEffectiveViewportChangedEventArgs }
 
@@ -1916,6 +2918,93 @@ public enum __ABI_Microsoft_UI_Xaml {
                 innerInterface = WindowsFoundation.IInspectable(_innerInterface!)
             }
             return IElementFactoryRecycleArgs(value!)
+        }
+
+    }
+
+    public class IElementSoundPlayer: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayer }
+
+    }
+
+    public class IElementSoundPlayerStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStatics }
+
+        internal func get_VolumeImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Volume(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_VolumeImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Volume(pThis, value))
+            }
+        }
+
+        internal func get_StateImpl() throws -> WinUI.ElementSoundPlayerState {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CElementSoundPlayerState = .init(0)
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_State(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_StateImpl(_ value: WinUI.ElementSoundPlayerState) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_State(pThis, value))
+            }
+        }
+
+        internal func get_SpatialAudioModeImpl() throws -> WinUI.ElementSpatialAudioMode {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CElementSpatialAudioMode = .init(0)
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_SpatialAudioMode(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_SpatialAudioModeImpl(_ value: WinUI.ElementSpatialAudioMode) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SpatialAudioMode(pThis, value))
+            }
+        }
+
+        internal func PlayImpl(_ sound: WinUI.ElementSoundKind) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIElementSoundPlayerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Play(pThis, sound))
+            }
+        }
+
+    }
+
+    public class IEventTrigger: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIEventTrigger }
+
+        internal func get_RoutedEventImpl() throws -> WinUI.RoutedEvent? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIEventTrigger.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_RoutedEvent(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_RoutedEventImpl(_ value: WinUI.RoutedEvent?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIEventTrigger.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_RoutedEvent(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_ActionsImpl() throws -> WinUI.TriggerActionCollection? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIEventTrigger.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Actions(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
         }
 
     }
@@ -2836,6 +3925,82 @@ public enum __ABI_Microsoft_UI_Xaml {
 
     }
 
+    public class IFrameworkView: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkView }
+
+    }
+
+    public class IFrameworkViewSource: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkViewSource }
+
+    }
+
+    public class IGridLengthHelper: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIGridLengthHelper }
+
+    }
+
+    public class IGridLengthHelperStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIGridLengthHelperStatics }
+
+        internal func get_AutoImpl() throws -> WinUI.GridLength {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CGridLength = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIGridLengthHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Auto(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func FromPixelsImpl(_ pixels: Double) throws -> WinUI.GridLength {
+            var result: __x_ABI_CMicrosoft_CUI_CXaml_CGridLength = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIGridLengthHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.FromPixels(pThis, pixels, &result))
+            }
+            return .from(abi: result)
+        }
+
+        internal func FromValueAndTypeImpl(_ value: Double, _ type: WinUI.GridUnitType) throws -> WinUI.GridLength {
+            var result: __x_ABI_CMicrosoft_CUI_CXaml_CGridLength = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIGridLengthHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.FromValueAndType(pThis, value, type, &result))
+            }
+            return .from(abi: result)
+        }
+
+        internal func GetIsAbsoluteImpl(_ target: WinUI.GridLength) throws -> Bool {
+            var result: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIGridLengthHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.GetIsAbsolute(pThis, .from(swift: target), &result))
+            }
+            return .init(from: result)
+        }
+
+        internal func GetIsAutoImpl(_ target: WinUI.GridLength) throws -> Bool {
+            var result: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIGridLengthHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.GetIsAuto(pThis, .from(swift: target), &result))
+            }
+            return .init(from: result)
+        }
+
+        internal func GetIsStarImpl(_ target: WinUI.GridLength) throws -> Bool {
+            var result: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIGridLengthHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.GetIsStar(pThis, .from(swift: target), &result))
+            }
+            return .init(from: result)
+        }
+
+        internal func EqualsImpl(_ target: WinUI.GridLength, _ value: WinUI.GridLength) throws -> Bool {
+            var result: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIGridLengthHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Equals(pThis, .from(swift: target), .from(swift: value), &result))
+            }
+            return .init(from: result)
+        }
+
+    }
+
     public class ILaunchActivatedEventArgs: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CILaunchActivatedEventArgs }
 
@@ -2854,6 +4019,37 @@ public enum __ABI_Microsoft_UI_Xaml {
                 }
             }
             return .from(abi: value)
+        }
+
+    }
+
+    public class IMediaFailedRoutedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIMediaFailedRoutedEventArgs }
+
+        internal func get_ErrorTraceImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIMediaFailedRoutedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ErrorTrace(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    public class IPointHelper: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIPointHelper }
+
+    }
+
+    public class IPointHelperStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIPointHelperStatics }
+
+        internal func FromCoordinatesImpl(_ x: Float, _ y: Float) throws -> WindowsFoundation.Point {
+            var result: __x_ABI_CWindows_CFoundation_CPoint = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIPointHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.FromCoordinates(pThis, x, y, &result))
+            }
+            return .from(abi: result)
         }
 
     }
@@ -2995,6 +4191,128 @@ public enum __ABI_Microsoft_UI_Xaml {
                 }
             }
             return IPropertyPath(value!)
+        }
+
+    }
+
+    public class IRectHelper: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIRectHelper }
+
+    }
+
+    public class IRectHelperStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStatics }
+
+        internal func get_EmptyImpl() throws -> WindowsFoundation.Rect {
+            var value: __x_ABI_CWindows_CFoundation_CRect = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Empty(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func FromCoordinatesAndDimensionsImpl(_ x: Float, _ y: Float, _ width: Float, _ height: Float) throws -> WindowsFoundation.Rect {
+            var result: __x_ABI_CWindows_CFoundation_CRect = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.FromCoordinatesAndDimensions(pThis, x, y, width, height, &result))
+            }
+            return .from(abi: result)
+        }
+
+        internal func FromPointsImpl(_ point1: WindowsFoundation.Point, _ point2: WindowsFoundation.Point) throws -> WindowsFoundation.Rect {
+            var result: __x_ABI_CWindows_CFoundation_CRect = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.FromPoints(pThis, .from(swift: point1), .from(swift: point2), &result))
+            }
+            return .from(abi: result)
+        }
+
+        internal func FromLocationAndSizeImpl(_ location: WindowsFoundation.Point, _ size: WindowsFoundation.Size) throws -> WindowsFoundation.Rect {
+            var result: __x_ABI_CWindows_CFoundation_CRect = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.FromLocationAndSize(pThis, .from(swift: location), .from(swift: size), &result))
+            }
+            return .from(abi: result)
+        }
+
+        internal func GetIsEmptyImpl(_ target: WindowsFoundation.Rect) throws -> Bool {
+            var result: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.GetIsEmpty(pThis, .from(swift: target), &result))
+            }
+            return .init(from: result)
+        }
+
+        internal func GetBottomImpl(_ target: WindowsFoundation.Rect) throws -> Float {
+            var result: FLOAT = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.GetBottom(pThis, .from(swift: target), &result))
+            }
+            return result
+        }
+
+        internal func GetLeftImpl(_ target: WindowsFoundation.Rect) throws -> Float {
+            var result: FLOAT = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.GetLeft(pThis, .from(swift: target), &result))
+            }
+            return result
+        }
+
+        internal func GetRightImpl(_ target: WindowsFoundation.Rect) throws -> Float {
+            var result: FLOAT = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.GetRight(pThis, .from(swift: target), &result))
+            }
+            return result
+        }
+
+        internal func GetTopImpl(_ target: WindowsFoundation.Rect) throws -> Float {
+            var result: FLOAT = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.GetTop(pThis, .from(swift: target), &result))
+            }
+            return result
+        }
+
+        internal func ContainsImpl(_ target: WindowsFoundation.Rect, _ point: WindowsFoundation.Point) throws -> Bool {
+            var result: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Contains(pThis, .from(swift: target), .from(swift: point), &result))
+            }
+            return .init(from: result)
+        }
+
+        internal func EqualsImpl(_ target: WindowsFoundation.Rect, _ value: WindowsFoundation.Rect) throws -> Bool {
+            var result: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Equals(pThis, .from(swift: target), .from(swift: value), &result))
+            }
+            return .init(from: result)
+        }
+
+        internal func IntersectImpl(_ target: WindowsFoundation.Rect, _ rect: WindowsFoundation.Rect) throws -> WindowsFoundation.Rect {
+            var result: __x_ABI_CWindows_CFoundation_CRect = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Intersect(pThis, .from(swift: target), .from(swift: rect), &result))
+            }
+            return .from(abi: result)
+        }
+
+        internal func UnionWithPointImpl(_ target: WindowsFoundation.Rect, _ point: WindowsFoundation.Point) throws -> WindowsFoundation.Rect {
+            var result: __x_ABI_CWindows_CFoundation_CRect = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.UnionWithPoint(pThis, .from(swift: target), .from(swift: point), &result))
+            }
+            return .from(abi: result)
+        }
+
+        internal func UnionWithRectImpl(_ target: WindowsFoundation.Rect, _ rect: WindowsFoundation.Rect) throws -> WindowsFoundation.Rect {
+            var result: __x_ABI_CWindows_CFoundation_CRect = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIRectHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.UnionWithRect(pThis, .from(swift: target), .from(swift: rect), &result))
+            }
+            return .from(abi: result)
         }
 
     }
@@ -3271,6 +4589,115 @@ public enum __ABI_Microsoft_UI_Xaml {
 
     }
 
+    public class ISizeHelper: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CISizeHelper }
+
+    }
+
+    public class ISizeHelperStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CISizeHelperStatics }
+
+        internal func get_EmptyImpl() throws -> WindowsFoundation.Size {
+            var value: __x_ABI_CWindows_CFoundation_CSize = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CISizeHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Empty(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func FromDimensionsImpl(_ width: Float, _ height: Float) throws -> WindowsFoundation.Size {
+            var result: __x_ABI_CWindows_CFoundation_CSize = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CISizeHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.FromDimensions(pThis, width, height, &result))
+            }
+            return .from(abi: result)
+        }
+
+        internal func GetIsEmptyImpl(_ target: WindowsFoundation.Size) throws -> Bool {
+            var result: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CISizeHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.GetIsEmpty(pThis, .from(swift: target), &result))
+            }
+            return .init(from: result)
+        }
+
+        internal func EqualsImpl(_ target: WindowsFoundation.Size, _ value: WindowsFoundation.Size) throws -> Bool {
+            var result: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CISizeHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Equals(pThis, .from(swift: target), .from(swift: value), &result))
+            }
+            return .init(from: result)
+        }
+
+    }
+
+    public class IStateTrigger: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIStateTrigger }
+
+        internal func get_IsActiveImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIStateTrigger.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsActive(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_IsActiveImpl(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIStateTrigger.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_IsActive(pThis, .init(from: value)))
+            }
+        }
+
+    }
+
+    public class IStateTriggerBase: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIStateTriggerBase }
+
+    }
+
+    public class IStateTriggerBaseFactory: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIStateTriggerBaseFactory }
+
+        internal func CreateInstanceImpl(_ baseInterface: UnsealedWinRTClassWrapper<WinUI.StateTriggerBase.Composable>?, _ innerInterface: inout WindowsFoundation.IInspectable?) throws -> IStateTriggerBase {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                let _baseInterface = baseInterface?.toIInspectableABI { $0 }
+                let (_innerInterface) = try ComPtrs.initialize { _innerInterfaceAbi in
+                    _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIStateTriggerBaseFactory.self) { pThis in
+                        try CHECKED(pThis.pointee.lpVtbl.pointee.CreateInstance(pThis, _baseInterface, &_innerInterfaceAbi, &valueAbi))
+                    }
+                }
+                innerInterface = WindowsFoundation.IInspectable(_innerInterface!)
+            }
+            return IStateTriggerBase(value!)
+        }
+
+    }
+
+    public class IStateTriggerBaseProtected: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIStateTriggerBaseProtected }
+
+        internal func SetActiveImpl(_ IsActive: Bool) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIStateTriggerBaseProtected.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.SetActive(pThis, .init(from: IsActive)))
+            }
+        }
+
+    }
+
+    public class IStateTriggerStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIStateTriggerStatics }
+
+        internal func get_IsActivePropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIStateTriggerStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsActiveProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
     public class IStyle: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIStyle }
 
@@ -3391,6 +4818,32 @@ public enum __ABI_Microsoft_UI_Xaml {
                 }
             }
             return ITargetPropertyPath(value!)
+        }
+
+    }
+
+    public class IThicknessHelper: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIThicknessHelper }
+
+    }
+
+    public class IThicknessHelperStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIThicknessHelperStatics }
+
+        internal func FromLengthsImpl(_ left: Double, _ top: Double, _ right: Double, _ bottom: Double) throws -> WinUI.Thickness {
+            var result: __x_ABI_CMicrosoft_CUI_CXaml_CThickness = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIThicknessHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.FromLengths(pThis, left, top, right, bottom, &result))
+            }
+            return .from(abi: result)
+        }
+
+        internal func FromUniformLengthImpl(_ uniformLength: Double) throws -> WinUI.Thickness {
+            var result: __x_ABI_CMicrosoft_CUI_CXaml_CThickness = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIThicknessHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.FromUniformLength(pThis, uniformLength, &result))
+            }
+            return .from(abi: result)
         }
 
     }
@@ -6025,6 +7478,372 @@ public enum __ABI_Microsoft_UI_Xaml {
 
     }
 
+    public class IVisualState: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIVisualState }
+
+        internal func get_NameImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualState.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Name(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_StoryboardImpl() throws -> WinUI.Storyboard? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualState.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Storyboard(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_StoryboardImpl(_ value: WinUI.Storyboard?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualState.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Storyboard(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_SettersImpl() throws -> WinUI.SetterBaseCollection? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualState.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Setters(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_StateTriggersImpl() throws -> WindowsFoundation.AnyIVector<WinUI.StateTriggerBase?>? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualState.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_StateTriggers(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIVector_1___x_ABI_CMicrosoft__CUI__CXaml__CStateTriggerBaseWrapper.unwrapFrom(abi: value)
+        }
+
+    }
+
+    public class IVisualStateChangedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateChangedEventArgs }
+
+        internal func get_OldStateImpl() throws -> WinUI.VisualState? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateChangedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_OldState(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_OldStateImpl(_ value: WinUI.VisualState?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateChangedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_OldState(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_NewStateImpl() throws -> WinUI.VisualState? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateChangedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_NewState(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_NewStateImpl(_ value: WinUI.VisualState?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateChangedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_NewState(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_ControlImpl() throws -> WinUI.Control? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateChangedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Control(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_ControlImpl(_ value: WinUI.Control?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateChangedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Control(pThis, RawPointer(value)))
+            }
+        }
+
+    }
+
+    public class IVisualStateGroup: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateGroup }
+
+        internal func get_NameImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateGroup.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Name(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_TransitionsImpl() throws -> WindowsFoundation.AnyIVector<WinUI.VisualTransition?>? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateGroup.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Transitions(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIVector_1___x_ABI_CMicrosoft__CUI__CXaml__CVisualTransitionWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func get_StatesImpl() throws -> WindowsFoundation.AnyIVector<WinUI.VisualState?>? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateGroup.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_States(pThis, &valueAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIVector_1___x_ABI_CMicrosoft__CUI__CXaml__CVisualStateWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func get_CurrentStateImpl() throws -> WinUI.VisualState? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateGroup.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CurrentState(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func add_CurrentStateChangedImpl(_ handler: WinUI.VisualStateChangedEventHandler?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = __ABI_Microsoft_UI_Xaml.VisualStateChangedEventHandlerWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateGroup.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_CurrentStateChanged(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_CurrentStateChangedImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateGroup.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_CurrentStateChanged(pThis, token))
+            }
+        }
+
+        internal func add_CurrentStateChangingImpl(_ handler: WinUI.VisualStateChangedEventHandler?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = __ABI_Microsoft_UI_Xaml.VisualStateChangedEventHandlerWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateGroup.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_CurrentStateChanging(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_CurrentStateChangingImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateGroup.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_CurrentStateChanging(pThis, token))
+            }
+        }
+
+    }
+
+    public class IVisualStateManager: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateManager }
+
+    }
+
+    public class IVisualStateManagerFactory: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateManagerFactory }
+
+        internal func CreateInstanceImpl(_ baseInterface: UnsealedWinRTClassWrapper<WinUI.VisualStateManager.Composable>?, _ innerInterface: inout WindowsFoundation.IInspectable?) throws -> IVisualStateManager {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                let _baseInterface = baseInterface?.toIInspectableABI { $0 }
+                let (_innerInterface) = try ComPtrs.initialize { _innerInterfaceAbi in
+                    _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateManagerFactory.self) { pThis in
+                        try CHECKED(pThis.pointee.lpVtbl.pointee.CreateInstance(pThis, _baseInterface, &_innerInterfaceAbi, &valueAbi))
+                    }
+                }
+                innerInterface = WindowsFoundation.IInspectable(_innerInterface!)
+            }
+            return IVisualStateManager(value!)
+        }
+
+    }
+
+    public class IVisualStateManagerOverrides: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateManagerOverrides }
+
+        internal func GoToStateCoreImpl(_ control: WinUI.Control?, _ templateRoot: WinUI.FrameworkElement?, _ stateName: String, _ group: WinUI.VisualStateGroup?, _ state: WinUI.VisualState?, _ useTransitions: Bool) throws -> Bool {
+            var result: boolean = 0
+            let _stateName = try! HString(stateName)
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateManagerOverrides.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.GoToStateCore(pThis, RawPointer(control), RawPointer(templateRoot), _stateName.get(), RawPointer(group), RawPointer(state), .init(from: useTransitions), &result))
+            }
+            return .init(from: result)
+        }
+
+    }
+
+    public class IVisualStateManagerProtected: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateManagerProtected }
+
+        internal func RaiseCurrentStateChangingImpl(_ stateGroup: WinUI.VisualStateGroup?, _ oldState: WinUI.VisualState?, _ newState: WinUI.VisualState?, _ control: WinUI.Control?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateManagerProtected.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.RaiseCurrentStateChanging(pThis, RawPointer(stateGroup), RawPointer(oldState), RawPointer(newState), RawPointer(control)))
+            }
+        }
+
+        internal func RaiseCurrentStateChangedImpl(_ stateGroup: WinUI.VisualStateGroup?, _ oldState: WinUI.VisualState?, _ newState: WinUI.VisualState?, _ control: WinUI.Control?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateManagerProtected.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.RaiseCurrentStateChanged(pThis, RawPointer(stateGroup), RawPointer(oldState), RawPointer(newState), RawPointer(control)))
+            }
+        }
+
+    }
+
+    public class IVisualStateManagerStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateManagerStatics }
+
+        internal func GetVisualStateGroupsImpl(_ obj: WinUI.FrameworkElement?) throws -> WindowsFoundation.AnyIVector<WinUI.VisualStateGroup?>? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateManagerStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetVisualStateGroups(pThis, RawPointer(obj), &resultAbi))
+                }
+            }
+            return WinUI.__x_ABI_C__FIVector_1___x_ABI_CMicrosoft__CUI__CXaml__CVisualStateGroupWrapper.unwrapFrom(abi: result)
+        }
+
+        internal func get_CustomVisualStateManagerPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateManagerStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CustomVisualStateManagerProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func GetCustomVisualStateManagerImpl(_ obj: WinUI.FrameworkElement?) throws -> WinUI.VisualStateManager? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateManagerStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetCustomVisualStateManager(pThis, RawPointer(obj), &resultAbi))
+                }
+            }
+            return .from(abi: result)
+        }
+
+        internal func SetCustomVisualStateManagerImpl(_ obj: WinUI.FrameworkElement?, _ value: WinUI.VisualStateManager?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateManagerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.SetCustomVisualStateManager(pThis, RawPointer(obj), RawPointer(value)))
+            }
+        }
+
+        internal func GoToStateImpl(_ control: WinUI.Control?, _ stateName: String, _ useTransitions: Bool) throws -> Bool {
+            var result: boolean = 0
+            let _stateName = try! HString(stateName)
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateManagerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.GoToState(pThis, RawPointer(control), _stateName.get(), .init(from: useTransitions), &result))
+            }
+            return .init(from: result)
+        }
+
+    }
+
+    public class IVisualTransition: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIVisualTransition }
+
+        internal func get_GeneratedDurationImpl() throws -> WinUI.Duration {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CDuration = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualTransition.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_GeneratedDuration(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_GeneratedDurationImpl(_ value: WinUI.Duration) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualTransition.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_GeneratedDuration(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_GeneratedEasingFunctionImpl() throws -> WinUI.EasingFunctionBase? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualTransition.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_GeneratedEasingFunction(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_GeneratedEasingFunctionImpl(_ value: WinUI.EasingFunctionBase?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualTransition.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_GeneratedEasingFunction(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_ToImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualTransition.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_To(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_ToImpl(_ value: String) throws {
+            let _value = try! HString(value)
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualTransition.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_To(pThis, _value.get()))
+            }
+        }
+
+        internal func get_FromImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualTransition.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_From(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_FromImpl(_ value: String) throws {
+            let _value = try! HString(value)
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualTransition.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_From(pThis, _value.get()))
+            }
+        }
+
+        internal func get_StoryboardImpl() throws -> WinUI.Storyboard? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualTransition.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Storyboard(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_StoryboardImpl(_ value: WinUI.Storyboard?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualTransition.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Storyboard(pThis, RawPointer(value)))
+            }
+        }
+
+    }
+
+    public class IVisualTransitionFactory: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIVisualTransitionFactory }
+
+        internal func CreateInstanceImpl(_ baseInterface: UnsealedWinRTClassWrapper<WinUI.VisualTransition.Composable>?, _ innerInterface: inout WindowsFoundation.IInspectable?) throws -> IVisualTransition {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                let _baseInterface = baseInterface?.toIInspectableABI { $0 }
+                let (_innerInterface) = try ComPtrs.initialize { _innerInterfaceAbi in
+                    _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualTransitionFactory.self) { pThis in
+                        try CHECKED(pThis.pointee.lpVtbl.pointee.CreateInstance(pThis, _baseInterface, &_innerInterfaceAbi, &valueAbi))
+                    }
+                }
+                innerInterface = WindowsFoundation.IInspectable(_innerInterface!)
+            }
+            return IVisualTransition(value!)
+        }
+
+    }
+
     public class IWindow: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIWindow }
 
@@ -6455,6 +8274,62 @@ public enum __ABI_Microsoft_UI_Xaml {
 
     }
 
+    public class IXamlServiceProvider: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider }
+
+        open func GetServiceImpl(_ type: WinUI.TypeName) throws -> Any? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                let _type = __ABI_Windows_UI_Xaml_Interop._ABI_TypeName(from: type)
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProvider.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetService(pThis, _type.val, &resultAbi))
+                }
+            }
+            return __ABI_.AnyWrapper.unwrapFrom(abi: result)
+        }
+
+    }
+
+    internal static var IXamlServiceProviderVTable: __x_ABI_CMicrosoft_CUI_CXaml_CIXamlServiceProviderVtbl = .init(
+        QueryInterface: { IXamlServiceProviderWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IXamlServiceProviderWrapper.addRef($0) },
+        Release: { IXamlServiceProviderWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 3).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Microsoft_UI_Xaml.IXamlServiceProviderWrapper.IID
+            $1!.pointee = 3
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Microsoft.UI.Xaml.IXamlServiceProvider").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        GetService: {
+            do {
+                guard let __unwrapped__instance = IXamlServiceProviderWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let type: WinUI.TypeName = .from(abi: $1)
+                let result = try __unwrapped__instance.getService(type)
+                let resultWrapper = __ABI_.AnyWrapper(result)
+                resultWrapper?.copyTo($2)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        }
+    )
+
+    public typealias IXamlServiceProviderWrapper = InterfaceWrapperBase<__IMPL_Microsoft_UI_Xaml.IXamlServiceProviderBridge>
     internal typealias IApplicationOverridesWrapper = UnsealedWinRTClassWrapper<WinUI.Application.IApplicationOverrides>
     internal static var IApplicationOverridesVTable: __x_ABI_CMicrosoft_CUI_CXaml_CIApplicationOverridesVtbl = .init(
         QueryInterface: { IApplicationOverridesWrapper.queryInterface($0, $1, $2) },
@@ -6667,6 +8542,50 @@ public enum __ABI_Microsoft_UI_Xaml {
             } catch { return failWith(err: E_FAIL) } 
         }
     )
+    internal typealias IVisualStateManagerOverridesWrapper = UnsealedWinRTClassWrapper<WinUI.VisualStateManager.IVisualStateManagerOverrides>
+    internal static var IVisualStateManagerOverridesVTable: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateManagerOverridesVtbl = .init(
+        QueryInterface: { IVisualStateManagerOverridesWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IVisualStateManagerOverridesWrapper.addRef($0) },
+        Release: { IVisualStateManagerOverridesWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 3).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Microsoft_UI_Xaml.IVisualStateManagerOverridesWrapper.IID
+            $1!.pointee = 3
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            guard let instance = IVisualStateManagerOverridesWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let hstring = instance.GetRuntimeClassName().detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        GoToStateCore: {
+            do {
+                guard let __unwrapped__instance = IVisualStateManagerOverridesWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let control: WinUI.Control? = .from(abi: ComPtr($1))
+                let templateRoot: WinUI.FrameworkElement? = .from(abi: ComPtr($2))
+                let stateName: String = .init(from: $3)
+                let group: WinUI.VisualStateGroup? = .from(abi: ComPtr($4))
+                let state: WinUI.VisualState? = .from(abi: ComPtr($5))
+                let useTransitions: Bool = .init(from: $6)
+                let result = try __unwrapped__instance.goToStateCore(control, templateRoot, stateName, group, state, useTransitions)
+                $7?.initialize(to: .init(from: result))
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        }
+    )
 }
 extension __x_ABI_CMicrosoft_CUI_CXaml_CCornerRadius {
         public static func from(swift: WinUI.CornerRadius) -> __x_ABI_CMicrosoft_CUI_CXaml_CCornerRadius {
@@ -6703,6 +8622,12 @@ extension ComposableImpl where CABI == __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkE
 extension ComposableImpl where CABI == __x_ABI_CMicrosoft_CUI_CXaml_CIUIElementOverrides {
     public static func makeAbi() -> CABI {
         let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Microsoft_UI_Xaml.IUIElementOverridesVTable) { $0 }
+        return .init(lpVtbl: vtblPtr)
+    }
+}
+extension ComposableImpl where CABI == __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateManagerOverrides {
+    public static func makeAbi() -> CABI {
+        let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Microsoft_UI_Xaml.IVisualStateManagerOverridesVTable) { $0 }
         return .init(lpVtbl: vtblPtr)
     }
 }
@@ -6924,6 +8849,43 @@ public extension WinRTDelegateBridge where CABI == __x_ABI_CMicrosoft_CUI_CXaml_
     }
 }
 
+// MARK - EnteredBackgroundEventHandler
+extension __ABI_Microsoft_UI_Xaml {
+    public class EnteredBackgroundEventHandler: WindowsFoundation.IUnknown {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIEnteredBackgroundEventHandler }
+
+        open func InvokeImpl(_ sender: Any?, _ e: UWP.EnteredBackgroundEventArgs?) throws {
+            let senderWrapper = __ABI_.AnyWrapper(sender)
+            let _sender = try! senderWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIEnteredBackgroundEventHandler.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Invoke(pThis, _sender, RawPointer(e)))
+            }
+        }
+
+    }
+
+
+    typealias EnteredBackgroundEventHandlerWrapper = InterfaceWrapperBase<__IMPL_Microsoft_UI_Xaml.EnteredBackgroundEventHandlerBridge>
+    internal static var EnteredBackgroundEventHandlerVTable: __x_ABI_CMicrosoft_CUI_CXaml_CIEnteredBackgroundEventHandlerVtbl = .init(
+        QueryInterface: { EnteredBackgroundEventHandlerWrapper.queryInterface($0, $1, $2) },
+        AddRef: { EnteredBackgroundEventHandlerWrapper.addRef($0) },
+        Release: { EnteredBackgroundEventHandlerWrapper.release($0) },
+        Invoke: {
+            guard let __unwrapped__instance = EnteredBackgroundEventHandlerWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let sender: Any? = __ABI_.AnyWrapper.unwrapFrom(abi: ComPtr($1))
+            let e: UWP.EnteredBackgroundEventArgs? = .from(abi: ComPtr($2))
+            __unwrapped__instance(sender, e)
+            return S_OK
+        }
+    )
+}
+public extension WinRTDelegateBridge where CABI == __x_ABI_CMicrosoft_CUI_CXaml_CIEnteredBackgroundEventHandler {
+    static func makeAbi() -> CABI {
+        let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Microsoft_UI_Xaml.EnteredBackgroundEventHandlerVTable) { $0 }
+        return .init(lpVtbl:vtblPtr)
+    }
+}
+
 // MARK - ExceptionRoutedEventHandler
 extension __ABI_Microsoft_UI_Xaml {
     public class ExceptionRoutedEventHandler: WindowsFoundation.IUnknown {
@@ -6957,6 +8919,43 @@ extension __ABI_Microsoft_UI_Xaml {
 public extension WinRTDelegateBridge where CABI == __x_ABI_CMicrosoft_CUI_CXaml_CIExceptionRoutedEventHandler {
     static func makeAbi() -> CABI {
         let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Microsoft_UI_Xaml.ExceptionRoutedEventHandlerVTable) { $0 }
+        return .init(lpVtbl:vtblPtr)
+    }
+}
+
+// MARK - LeavingBackgroundEventHandler
+extension __ABI_Microsoft_UI_Xaml {
+    public class LeavingBackgroundEventHandler: WindowsFoundation.IUnknown {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CILeavingBackgroundEventHandler }
+
+        open func InvokeImpl(_ sender: Any?, _ e: UWP.LeavingBackgroundEventArgs?) throws {
+            let senderWrapper = __ABI_.AnyWrapper(sender)
+            let _sender = try! senderWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CILeavingBackgroundEventHandler.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Invoke(pThis, _sender, RawPointer(e)))
+            }
+        }
+
+    }
+
+
+    typealias LeavingBackgroundEventHandlerWrapper = InterfaceWrapperBase<__IMPL_Microsoft_UI_Xaml.LeavingBackgroundEventHandlerBridge>
+    internal static var LeavingBackgroundEventHandlerVTable: __x_ABI_CMicrosoft_CUI_CXaml_CILeavingBackgroundEventHandlerVtbl = .init(
+        QueryInterface: { LeavingBackgroundEventHandlerWrapper.queryInterface($0, $1, $2) },
+        AddRef: { LeavingBackgroundEventHandlerWrapper.addRef($0) },
+        Release: { LeavingBackgroundEventHandlerWrapper.release($0) },
+        Invoke: {
+            guard let __unwrapped__instance = LeavingBackgroundEventHandlerWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let sender: Any? = __ABI_.AnyWrapper.unwrapFrom(abi: ComPtr($1))
+            let e: UWP.LeavingBackgroundEventArgs? = .from(abi: ComPtr($2))
+            __unwrapped__instance(sender, e)
+            return S_OK
+        }
+    )
+}
+public extension WinRTDelegateBridge where CABI == __x_ABI_CMicrosoft_CUI_CXaml_CILeavingBackgroundEventHandler {
+    static func makeAbi() -> CABI {
+        let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Microsoft_UI_Xaml.LeavingBackgroundEventHandlerVTable) { $0 }
         return .init(lpVtbl:vtblPtr)
     }
 }
@@ -7070,6 +9069,43 @@ public extension WinRTDelegateBridge where CABI == __x_ABI_CMicrosoft_CUI_CXaml_
     }
 }
 
+// MARK - SuspendingEventHandler
+extension __ABI_Microsoft_UI_Xaml {
+    public class SuspendingEventHandler: WindowsFoundation.IUnknown {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CISuspendingEventHandler }
+
+        open func InvokeImpl(_ sender: Any?, _ e: UWP.SuspendingEventArgs?) throws {
+            let senderWrapper = __ABI_.AnyWrapper(sender)
+            let _sender = try! senderWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CISuspendingEventHandler.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Invoke(pThis, _sender, RawPointer(e)))
+            }
+        }
+
+    }
+
+
+    typealias SuspendingEventHandlerWrapper = InterfaceWrapperBase<__IMPL_Microsoft_UI_Xaml.SuspendingEventHandlerBridge>
+    internal static var SuspendingEventHandlerVTable: __x_ABI_CMicrosoft_CUI_CXaml_CISuspendingEventHandlerVtbl = .init(
+        QueryInterface: { SuspendingEventHandlerWrapper.queryInterface($0, $1, $2) },
+        AddRef: { SuspendingEventHandlerWrapper.addRef($0) },
+        Release: { SuspendingEventHandlerWrapper.release($0) },
+        Invoke: {
+            guard let __unwrapped__instance = SuspendingEventHandlerWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let sender: Any? = __ABI_.AnyWrapper.unwrapFrom(abi: ComPtr($1))
+            let e: UWP.SuspendingEventArgs? = .from(abi: ComPtr($2))
+            __unwrapped__instance(sender, e)
+            return S_OK
+        }
+    )
+}
+public extension WinRTDelegateBridge where CABI == __x_ABI_CMicrosoft_CUI_CXaml_CISuspendingEventHandler {
+    static func makeAbi() -> CABI {
+        let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Microsoft_UI_Xaml.SuspendingEventHandlerVTable) { $0 }
+        return .init(lpVtbl:vtblPtr)
+    }
+}
+
 // MARK - UnhandledExceptionEventHandler
 extension __ABI_Microsoft_UI_Xaml {
     public class UnhandledExceptionEventHandler: WindowsFoundation.IUnknown {
@@ -7103,6 +9139,43 @@ extension __ABI_Microsoft_UI_Xaml {
 public extension WinRTDelegateBridge where CABI == __x_ABI_CMicrosoft_CUI_CXaml_CIUnhandledExceptionEventHandler {
     static func makeAbi() -> CABI {
         let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Microsoft_UI_Xaml.UnhandledExceptionEventHandlerVTable) { $0 }
+        return .init(lpVtbl:vtblPtr)
+    }
+}
+
+// MARK - VisualStateChangedEventHandler
+extension __ABI_Microsoft_UI_Xaml {
+    public class VisualStateChangedEventHandler: WindowsFoundation.IUnknown {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateChangedEventHandler }
+
+        open func InvokeImpl(_ sender: Any?, _ e: WinUI.VisualStateChangedEventArgs?) throws {
+            let senderWrapper = __ABI_.AnyWrapper(sender)
+            let _sender = try! senderWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateChangedEventHandler.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Invoke(pThis, _sender, RawPointer(e)))
+            }
+        }
+
+    }
+
+
+    typealias VisualStateChangedEventHandlerWrapper = InterfaceWrapperBase<__IMPL_Microsoft_UI_Xaml.VisualStateChangedEventHandlerBridge>
+    internal static var VisualStateChangedEventHandlerVTable: __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateChangedEventHandlerVtbl = .init(
+        QueryInterface: { VisualStateChangedEventHandlerWrapper.queryInterface($0, $1, $2) },
+        AddRef: { VisualStateChangedEventHandlerWrapper.addRef($0) },
+        Release: { VisualStateChangedEventHandlerWrapper.release($0) },
+        Invoke: {
+            guard let __unwrapped__instance = VisualStateChangedEventHandlerWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let sender: Any? = __ABI_.AnyWrapper.unwrapFrom(abi: ComPtr($1))
+            let e: WinUI.VisualStateChangedEventArgs? = .from(abi: ComPtr($2))
+            __unwrapped__instance(sender, e)
+            return S_OK
+        }
+    )
+}
+public extension WinRTDelegateBridge where CABI == __x_ABI_CMicrosoft_CUI_CXaml_CIVisualStateChangedEventHandler {
+    static func makeAbi() -> CABI {
+        let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Microsoft_UI_Xaml.VisualStateChangedEventHandlerVTable) { $0 }
         return .init(lpVtbl:vtblPtr)
     }
 }

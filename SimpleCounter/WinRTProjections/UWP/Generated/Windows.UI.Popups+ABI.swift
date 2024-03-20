@@ -4,5 +4,177 @@ import Foundation
 @_spi(WinRTInternal) @_spi(WinRTImplements) import WindowsFoundation
 import CWinRT
 
-public enum __ABI_Windows_UI_Popups {
+private var IID___x_ABI_CWindows_CUI_CPopups_CIUICommand: WindowsFoundation.IID {
+    .init(Data1: 0x4FF93A75, Data2: 0x4145, Data3: 0x47FF, Data4: ( 0xAC,0x7F,0xDF,0xF1,0xC1,0xFA,0x5B,0x0F ))// 4FF93A75-4145-47FF-AC7F-DFF1C1FA5B0F
 }
+
+private var IID___x_ABI_CWindows_CUI_CPopups_CIUICommandInvokedHandler: WindowsFoundation.IID {
+    .init(Data1: 0xDAF77A4F, Data2: 0xC27A, Data3: 0x4298, Data4: ( 0x9A,0xC6,0x29,0x22,0xC4,0x5E,0x7D,0xA6 ))// DAF77A4F-C27A-4298-9AC6-2922C45E7DA6
+}
+
+public enum __ABI_Windows_UI_Popups {
+    public class IUICommand: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CPopups_CIUICommand }
+
+        open func get_LabelImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CUI_CPopups_CIUICommand.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Label(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        open func put_LabelImpl(_ value: String) throws {
+            let _value = try! HString(value)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CPopups_CIUICommand.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Label(pThis, _value.get()))
+            }
+        }
+
+        open func get_InvokedImpl() throws -> UWP.UICommandInvokedHandler? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CPopups_CIUICommand.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Invoked(pThis, &valueAbi))
+                }
+            }
+            return __ABI_Windows_UI_Popups.UICommandInvokedHandlerWrapper.unwrapFrom(abi: value)
+        }
+
+        open func put_InvokedImpl(_ value: UWP.UICommandInvokedHandler?) throws {
+            let valueWrapper = __ABI_Windows_UI_Popups.UICommandInvokedHandlerWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CPopups_CIUICommand.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Invoked(pThis, _value))
+            }
+        }
+
+        open func get_IdImpl() throws -> Any? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CPopups_CIUICommand.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Id(pThis, &valueAbi))
+                }
+            }
+            return __ABI_.AnyWrapper.unwrapFrom(abi: value)
+        }
+
+        open func put_IdImpl(_ value: Any?) throws {
+            let valueWrapper = __ABI_.AnyWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CPopups_CIUICommand.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Id(pThis, _value))
+            }
+        }
+
+    }
+
+    internal static var IUICommandVTable: __x_ABI_CWindows_CUI_CPopups_CIUICommandVtbl = .init(
+        QueryInterface: { IUICommandWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IUICommandWrapper.addRef($0) },
+        Release: { IUICommandWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 3).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_UI_Popups.IUICommandWrapper.IID
+            $1!.pointee = 3
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.UI.Popups.IUICommand").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_Label: {
+            guard let __unwrapped__instance = IUICommandWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.label
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        },
+
+        put_Label: {
+            guard let __unwrapped__instance = IUICommandWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: String = .init(from: $1)
+            __unwrapped__instance.label = value
+            return S_OK
+        },
+
+        get_Invoked: {
+            guard let __unwrapped__instance = IUICommandWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.invoked
+            let valueWrapper = __ABI_Windows_UI_Popups.UICommandInvokedHandlerWrapper(value)
+            valueWrapper?.copyTo($1)
+            return S_OK
+        },
+
+        put_Invoked: {
+            guard let __unwrapped__instance = IUICommandWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            guard let value = __ABI_Windows_UI_Popups.UICommandInvokedHandlerWrapper.unwrapFrom(abi: ComPtr($1)) else { return E_INVALIDARG }
+            __unwrapped__instance.invoked = value
+            return S_OK
+        },
+
+        get_Id: {
+            guard let __unwrapped__instance = IUICommandWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.id
+            let valueWrapper = __ABI_.AnyWrapper(value)
+            valueWrapper?.copyTo($1)
+            return S_OK
+        },
+
+        put_Id: {
+            guard let __unwrapped__instance = IUICommandWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: Any? = __ABI_.AnyWrapper.unwrapFrom(abi: ComPtr($1))
+            __unwrapped__instance.id = value
+            return S_OK
+        }
+    )
+
+    public typealias IUICommandWrapper = InterfaceWrapperBase<__IMPL_Windows_UI_Popups.IUICommandBridge>
+}
+// MARK - UICommandInvokedHandler
+extension __ABI_Windows_UI_Popups {
+    public class UICommandInvokedHandler: WindowsFoundation.IUnknown {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CPopups_CIUICommandInvokedHandler }
+
+        open func InvokeImpl(_ command: UWP.AnyIUICommand?) throws {
+            let commandWrapper = __ABI_Windows_UI_Popups.IUICommandWrapper(command)
+            let _command = try! commandWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CPopups_CIUICommandInvokedHandler.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Invoke(pThis, _command))
+            }
+        }
+
+    }
+
+
+    typealias UICommandInvokedHandlerWrapper = InterfaceWrapperBase<__IMPL_Windows_UI_Popups.UICommandInvokedHandlerBridge>
+    internal static var UICommandInvokedHandlerVTable: __x_ABI_CWindows_CUI_CPopups_CIUICommandInvokedHandlerVtbl = .init(
+        QueryInterface: { UICommandInvokedHandlerWrapper.queryInterface($0, $1, $2) },
+        AddRef: { UICommandInvokedHandlerWrapper.addRef($0) },
+        Release: { UICommandInvokedHandlerWrapper.release($0) },
+        Invoke: {
+            guard let __unwrapped__instance = UICommandInvokedHandlerWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let command: UWP.AnyIUICommand? = __ABI_Windows_UI_Popups.IUICommandWrapper.unwrapFrom(abi: ComPtr($1))
+            __unwrapped__instance(command)
+            return S_OK
+        }
+    )
+}
+public extension WinRTDelegateBridge where CABI == __x_ABI_CWindows_CUI_CPopups_CIUICommandInvokedHandler {
+    static func makeAbi() -> CABI {
+        let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_UI_Popups.UICommandInvokedHandlerVTable) { $0 }
+        return .init(lpVtbl:vtblPtr)
+    }
+}
+

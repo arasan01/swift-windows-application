@@ -9,6 +9,14 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIEllipse: WindowsFoundatio
     .init(Data1: 0x805C39AA, Data2: 0xFA8A, Data3: 0x5E0B, Data4: ( 0x98,0x47,0x4A,0xB8,0x1B,0x42,0xA3,0xDF ))// 805C39AA-FA8A-5E0B-9847-4AB81B42A3DF
 }
 
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CShapes_CILine: WindowsFoundation.IID {
+    .init(Data1: 0x507B3858, Data2: 0xAF7E, Data3: 0x559B, Data4: ( 0xA8,0x7E,0x4C,0xC6,0xA5,0xD8,0xBA,0x96 ))// 507B3858-AF7E-559B-A87E-4CC6A5D8BA96
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CShapes_CILineStatics: WindowsFoundation.IID {
+    .init(Data1: 0xA425BF93, Data2: 0xF1F3, Data3: 0x5DCB, Data4: ( 0x99,0x7E,0xB6,0xA2,0x6F,0x7A,0xE8,0xC0 ))// A425BF93-F1F3-5DCB-997E-B6A26F7AE8C0
+}
+
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPath: WindowsFoundation.IID {
     .init(Data1: 0x757D1CD8, Data2: 0x0EC0, Data3: 0x55C5, Data4: ( 0xB4,0x00,0x66,0x65,0x7E,0x49,0x3E,0x78 ))// 757D1CD8-0EC0-55C5-B400-66657E493E78
 }
@@ -19,6 +27,22 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPathFactory: WindowsFound
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPathStatics: WindowsFoundation.IID {
     .init(Data1: 0x2146D36F, Data2: 0x721C, Data3: 0x5B54, Data4: ( 0xAF,0x7D,0x60,0xF3,0xAD,0xC4,0xFB,0xCA ))// 2146D36F-721C-5B54-AF7D-60F3ADC4FBCA
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPolygon: WindowsFoundation.IID {
+    .init(Data1: 0xFA126347, Data2: 0xD1D4, Data3: 0x54DD, Data4: ( 0xB1,0xA4,0xC3,0x50,0x19,0x39,0x79,0x44 ))// FA126347-D1D4-54DD-B1A4-C35019397944
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPolygonStatics: WindowsFoundation.IID {
+    .init(Data1: 0x85DDBADA, Data2: 0x9E37, Data3: 0x5971, Data4: ( 0xA9,0xAA,0xDC,0xE3,0x1F,0x9C,0xF6,0x7A ))// 85DDBADA-9E37-5971-A9AA-DCE31F9CF67A
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPolyline: WindowsFoundation.IID {
+    .init(Data1: 0xC7F0BEC6, Data2: 0x184C, Data3: 0x5D96, Data4: ( 0x81,0x02,0x04,0xDD,0x21,0x1E,0x10,0x0C ))// C7F0BEC6-184C-5D96-8102-04DD211E100C
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPolylineStatics: WindowsFoundation.IID {
+    .init(Data1: 0x48840FE7, Data2: 0xD735, Data3: 0x5080, Data4: ( 0x9C,0x6D,0x28,0x62,0x66,0x5C,0xDD,0xA0 ))// 48840FE7-D735-5080-9C6D-2862665CDDA0
 }
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIRectangle: WindowsFoundation.IID {
@@ -44,6 +68,108 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIShapeStatics: WindowsFoun
 public enum __ABI_Microsoft_UI_Xaml_Shapes {
     public class IEllipse: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIEllipse }
+
+    }
+
+    public class ILine: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CShapes_CILine }
+
+        internal func get_X1Impl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CILine.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_X1(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_X1Impl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CILine.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_X1(pThis, value))
+            }
+        }
+
+        internal func get_Y1Impl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CILine.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Y1(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_Y1Impl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CILine.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Y1(pThis, value))
+            }
+        }
+
+        internal func get_X2Impl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CILine.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_X2(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_X2Impl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CILine.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_X2(pThis, value))
+            }
+        }
+
+        internal func get_Y2Impl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CILine.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Y2(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_Y2Impl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CILine.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Y2(pThis, value))
+            }
+        }
+
+    }
+
+    public class ILineStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CShapes_CILineStatics }
+
+        internal func get_X1PropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CILineStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_X1Property(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_Y1PropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CILineStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Y1Property(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_X2PropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CILineStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_X2Property(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_Y2PropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CILineStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Y2Property(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
 
     }
 
@@ -92,6 +218,120 @@ public enum __ABI_Microsoft_UI_Xaml_Shapes {
             let (value) = try ComPtrs.initialize { valueAbi in
                 _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPathStatics.self) { pThis in
                     try CHECKED(pThis.pointee.lpVtbl.pointee.get_DataProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IPolygon: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPolygon }
+
+        internal func get_FillRuleImpl() throws -> WinUI.FillRule {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CFillRule = .init(0)
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPolygon.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_FillRule(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_FillRuleImpl(_ value: WinUI.FillRule) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPolygon.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_FillRule(pThis, value))
+            }
+        }
+
+        internal func get_PointsImpl() throws -> WinUI.PointCollection? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPolygon.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Points(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_PointsImpl(_ value: WinUI.PointCollection?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPolygon.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Points(pThis, RawPointer(value)))
+            }
+        }
+
+    }
+
+    public class IPolygonStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPolygonStatics }
+
+        internal func get_FillRulePropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPolygonStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_FillRuleProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_PointsPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPolygonStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_PointsProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IPolyline: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPolyline }
+
+        internal func get_FillRuleImpl() throws -> WinUI.FillRule {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CFillRule = .init(0)
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPolyline.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_FillRule(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_FillRuleImpl(_ value: WinUI.FillRule) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPolyline.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_FillRule(pThis, value))
+            }
+        }
+
+        internal func get_PointsImpl() throws -> WinUI.PointCollection? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPolyline.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Points(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_PointsImpl(_ value: WinUI.PointCollection?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPolyline.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Points(pThis, RawPointer(value)))
+            }
+        }
+
+    }
+
+    public class IPolylineStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPolylineStatics }
+
+        internal func get_FillRulePropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPolylineStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_FillRuleProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_PointsPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPolylineStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_PointsProperty(pThis, &valueAbi))
                 }
             }
             return .from(abi: value)

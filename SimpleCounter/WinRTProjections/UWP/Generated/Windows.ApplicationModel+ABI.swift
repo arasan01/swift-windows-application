@@ -16,12 +16,44 @@ private var IID___x_ABI_CWindows_CApplicationModel_CIAppInstallerInfo: WindowsFo
     .init(Data1: 0x29AB2AC0, Data2: 0xD4F6, Data3: 0x42A3, Data4: ( 0xAD,0xCD,0xD6,0x58,0x3C,0x65,0x95,0x08 ))// 29AB2AC0-D4F6-42A3-ADCD-D6583C659508
 }
 
+private var IID___x_ABI_CWindows_CApplicationModel_CIAppInstance: WindowsFoundation.IID {
+    .init(Data1: 0x675F2B47, Data2: 0xF25F, Data3: 0x4532, Data4: ( 0x9F,0xD6,0x36,0x33,0xE0,0x63,0x4D,0x01 ))// 675F2B47-F25F-4532-9FD6-3633E0634D01
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CIAppInstanceStatics: WindowsFoundation.IID {
+    .init(Data1: 0x9D11E77F, Data2: 0x9EA6, Data3: 0x47AF, Data4: ( 0xA6,0xEC,0x46,0x78,0x4C,0x5B,0xA2,0x54 ))// 9D11E77F-9EA6-47AF-A6EC-46784C5BA254
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CICameraApplicationManagerStatics: WindowsFoundation.IID {
+    .init(Data1: 0x9599DDCE, Data2: 0x9BD3, Data3: 0x435C, Data4: ( 0x80,0x54,0xC1,0xAD,0xD5,0x00,0x28,0xFE ))// 9599DDCE-9BD3-435C-8054-C1ADD50028FE
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CIDesignModeStatics: WindowsFoundation.IID {
+    .init(Data1: 0x2C3893CC, Data2: 0xF81A, Data3: 0x4E7A, Data4: ( 0xB8,0x57,0x76,0xA8,0x08,0x87,0xE1,0x85 ))// 2C3893CC-F81A-4E7A-B857-76A80887E185
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CIDesignModeStatics2: WindowsFoundation.IID {
+    .init(Data1: 0x80CF8137, Data2: 0xB064, Data3: 0x4858, Data4: ( 0xBE,0xC8,0x3E,0xBA,0x22,0x35,0x75,0x35 ))// 80CF8137-B064-4858-BEC8-3EBA22357535
+}
+
 private var IID___x_ABI_CWindows_CApplicationModel_CIEnteredBackgroundEventArgs: WindowsFoundation.IID {
     .init(Data1: 0xF722DCC2, Data2: 0x9827, Data3: 0x403D, Data4: ( 0xAA,0xED,0xEC,0xCA,0x9A,0xC1,0x73,0x98 ))// F722DCC2-9827-403D-AAED-ECCA9AC17398
 }
 
+private var IID___x_ABI_CWindows_CApplicationModel_CIFullTrustProcessLauncherStatics: WindowsFoundation.IID {
+    .init(Data1: 0xD784837F, Data2: 0x1100, Data3: 0x3C6B, Data4: ( 0xA4,0x55,0xF6,0x26,0x2C,0xC3,0x31,0xB6 ))// D784837F-1100-3C6B-A455-F6262CC331B6
+}
+
 private var IID___x_ABI_CWindows_CApplicationModel_CILeavingBackgroundEventArgs: WindowsFoundation.IID {
     .init(Data1: 0x39C6EC9A, Data2: 0xAE6E, Data3: 0x46F9, Data4: ( 0xA0,0x7A,0xCF,0xC2,0x3F,0x88,0x73,0x3E ))// 39C6EC9A-AE6E-46F9-A07A-CFC23F88733E
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CILimitedAccessFeatureRequestResult: WindowsFoundation.IID {
+    .init(Data1: 0xD45156A6, Data2: 0x1E24, Data3: 0x5DDD, Data4: ( 0xAB,0xB4,0x61,0x88,0xAB,0xA4,0xD5,0xBF ))// D45156A6-1E24-5DDD-ABB4-6188ABA4D5BF
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CILimitedAccessFeaturesStatics: WindowsFoundation.IID {
+    .init(Data1: 0x8BE612D4, Data2: 0x302B, Data3: 0x5FBF, Data4: ( 0xA6,0x32,0x1A,0x99,0xE4,0x3E,0x89,0x25 ))// 8BE612D4-302B-5FBF-A632-1A99E43E8925
 }
 
 private var IID___x_ABI_CWindows_CApplicationModel_CIPackage: WindowsFoundation.IID {
@@ -52,8 +84,48 @@ private var IID___x_ABI_CWindows_CApplicationModel_CIPackage7: WindowsFoundation
     .init(Data1: 0x86FF8D31, Data2: 0xA2E4, Data3: 0x45E0, Data4: ( 0x97,0x32,0x28,0x3A,0x6D,0x88,0xFD,0xE1 ))// 86FF8D31-A2E4-45E0-9732-283A6D88FDE1
 }
 
+private var IID___x_ABI_CWindows_CApplicationModel_CIPackageCatalog: WindowsFoundation.IID {
+    .init(Data1: 0x230A3751, Data2: 0x9DE3, Data3: 0x4445, Data4: ( 0xBE,0x74,0x91,0xFB,0x32,0x5A,0xBE,0xFE ))// 230A3751-9DE3-4445-BE74-91FB325ABEFE
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CIPackageCatalog2: WindowsFoundation.IID {
+    .init(Data1: 0x96A60C36, Data2: 0x8FF7, Data3: 0x4344, Data4: ( 0xB6,0xBF,0xEE,0x64,0xC2,0x20,0x7E,0xD2 ))// 96A60C36-8FF7-4344-B6BF-EE64C2207ED2
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CIPackageCatalog3: WindowsFoundation.IID {
+    .init(Data1: 0x96DD5C88, Data2: 0x8837, Data3: 0x43F9, Data4: ( 0x90,0x15,0x03,0x34,0x34,0xBA,0x14,0xF3 ))// 96DD5C88-8837-43F9-9015-033434BA14F3
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CIPackageCatalog4: WindowsFoundation.IID {
+    .init(Data1: 0xC37C399B, Data2: 0x44CC, Data3: 0x4B7B, Data4: ( 0x8B,0xAF,0x79,0x6C,0x04,0xEA,0xD3,0xB9 ))// C37C399B-44CC-4B7B-8BAF-796C04EAD3B9
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CIPackageCatalogAddOptionalPackageResult: WindowsFoundation.IID {
+    .init(Data1: 0x3BF10CD4, Data2: 0xB4DF, Data3: 0x47B3, Data4: ( 0xA9,0x63,0xE2,0xFA,0x83,0x2F,0x7D,0xD3 ))// 3BF10CD4-B4DF-47B3-A963-E2FA832F7DD3
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CIPackageCatalogAddResourcePackageResult: WindowsFoundation.IID {
+    .init(Data1: 0x9636CE0D, Data2: 0x3E17, Data3: 0x493F, Data4: ( 0xAA,0x08,0xCC,0xEC,0x6F,0xDE,0xF6,0x99 ))// 9636CE0D-3E17-493F-AA08-CCEC6FDEF699
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CIPackageCatalogRemoveOptionalPackagesResult: WindowsFoundation.IID {
+    .init(Data1: 0x29D2F97B, Data2: 0xD974, Data3: 0x4E64, Data4: ( 0x93,0x59,0x22,0xCA,0xDF,0xD7,0x98,0x28 ))// 29D2F97B-D974-4E64-9359-22CADFD79828
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CIPackageCatalogRemoveResourcePackagesResult: WindowsFoundation.IID {
+    .init(Data1: 0xAE719709, Data2: 0x1A52, Data3: 0x4321, Data4: ( 0x87,0xB3,0xE5,0xA1,0xA1,0x79,0x81,0xA7 ))// AE719709-1A52-4321-87B3-E5A1A17981A7
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CIPackageCatalogStatics: WindowsFoundation.IID {
+    .init(Data1: 0xA18C9696, Data2: 0xE65B, Data3: 0x4634, Data4: ( 0xBA,0x21,0x5E,0x63,0xEB,0x72,0x44,0xA7 ))// A18C9696-E65B-4634-BA21-5E63EB7244A7
+}
+
 private var IID___x_ABI_CWindows_CApplicationModel_CIPackageContentGroup: WindowsFoundation.IID {
     .init(Data1: 0x8F62695D, Data2: 0x120A, Data3: 0x4798, Data4: ( 0xB5,0xE1,0x58,0x00,0xDD,0xA8,0xF2,0xE1 ))// 8F62695D-120A-4798-B5E1-5800DDA8F2E1
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CIPackageContentGroupStagingEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x3D7BC27E, Data2: 0x6F27, Data3: 0x446C, Data4: ( 0x98,0x6E,0xD4,0x73,0x3D,0x4D,0x91,0x13 ))// 3D7BC27E-6F27-446C-986E-D4733D4D9113
 }
 
 private var IID___x_ABI_CWindows_CApplicationModel_CIPackageContentGroupStatics: WindowsFoundation.IID {
@@ -68,6 +140,14 @@ private var IID___x_ABI_CWindows_CApplicationModel_CIPackageIdWithMetadata: Wind
     .init(Data1: 0x40577A7C, Data2: 0x0C9E, Data3: 0x443D, Data4: ( 0x90,0x74,0x85,0x5F,0x5C,0xE0,0xA0,0x8D ))// 40577A7C-0C9E-443D-9074-855F5CE0A08D
 }
 
+private var IID___x_ABI_CWindows_CApplicationModel_CIPackageInstallingEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x97741EB7, Data2: 0xAB7A, Data3: 0x401A, Data4: ( 0x8B,0x61,0xEB,0x0E,0x7F,0xAF,0xF2,0x37 ))// 97741EB7-AB7A-401A-8B61-EB0E7FAFF237
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CIPackageStagingEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x1041682D, Data2: 0x54E2, Data3: 0x4F51, Data4: ( 0xB8,0x28,0x9E,0xF7,0x04,0x6C,0x21,0x0F ))// 1041682D-54E2-4F51-B828-9EF7046C210F
+}
+
 private var IID___x_ABI_CWindows_CApplicationModel_CIPackageStatics: WindowsFoundation.IID {
     .init(Data1: 0x4E534BDF, Data2: 0x2960, Data3: 0x4878, Data4: ( 0x97,0xA4,0x96,0x24,0xDE,0xB7,0x2F,0x2D ))// 4E534BDF-2960-4878-97A4-9624DEB72F2D
 }
@@ -80,12 +160,32 @@ private var IID___x_ABI_CWindows_CApplicationModel_CIPackageStatus2: WindowsFoun
     .init(Data1: 0xF428FA93, Data2: 0x7C56, Data3: 0x4862, Data4: ( 0xAC,0xFA,0xAB,0xAE,0xDC,0xC0,0x69,0x4D ))// F428FA93-7C56-4862-ACFA-ABAEDCC0694D
 }
 
+private var IID___x_ABI_CWindows_CApplicationModel_CIPackageStatusChangedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x437D714D, Data2: 0xBD80, Data3: 0x4A70, Data4: ( 0xBC,0x50,0xF6,0xE7,0x96,0x50,0x95,0x75 ))// 437D714D-BD80-4A70-BC50-F6E796509575
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CIPackageUninstallingEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x4443AA52, Data2: 0xAB22, Data3: 0x44CD, Data4: ( 0x82,0xBB,0x4E,0xC9,0xB8,0x27,0x36,0x7A ))// 4443AA52-AB22-44CD-82BB-4EC9B827367A
+}
+
 private var IID___x_ABI_CWindows_CApplicationModel_CIPackageUpdateAvailabilityResult: WindowsFoundation.IID {
     .init(Data1: 0x114E5009, Data2: 0x199A, Data3: 0x48A1, Data4: ( 0xA0,0x79,0x31,0x3C,0x45,0x63,0x4A,0x71 ))// 114E5009-199A-48A1-A079-313C45634A71
 }
 
+private var IID___x_ABI_CWindows_CApplicationModel_CIPackageUpdatingEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0xCD7B4228, Data2: 0xFD74, Data3: 0x443E, Data4: ( 0xB1,0x14,0x23,0xE6,0x77,0xB0,0xE8,0x6F ))// CD7B4228-FD74-443E-B114-23E677B0E86F
+}
+
 private var IID___x_ABI_CWindows_CApplicationModel_CIPackageWithMetadata: WindowsFoundation.IID {
     .init(Data1: 0x95949780, Data2: 0x1DE9, Data3: 0x40F2, Data4: ( 0xB4,0x52,0x0D,0xE9,0xF1,0x91,0x00,0x12 ))// 95949780-1DE9-40F2-B452-0DE9F1910012
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CIStartupTask: WindowsFoundation.IID {
+    .init(Data1: 0xF75C23C8, Data2: 0xB5F2, Data3: 0x4F6C, Data4: ( 0x88,0xDD,0x36,0xCB,0x1D,0x59,0x9D,0x17 ))// F75C23C8-B5F2-4F6C-88DD-36CB1D599D17
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CIStartupTaskStatics: WindowsFoundation.IID {
+    .init(Data1: 0xEE5B60BD, Data2: 0xA148, Data3: 0x41A7, Data4: ( 0xB2,0x6E,0xE8,0xB8,0x8A,0x1E,0x62,0xF8 ))// EE5B60BD-A148-41A7-B26E-E8B88A1E62F8
 }
 
 private var IID___x_ABI_CWindows_CApplicationModel_CISuspendingDeferral: WindowsFoundation.IID {
@@ -183,6 +283,118 @@ public enum __ABI_Windows_ApplicationModel {
 
     }
 
+    public class IAppInstance: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CIAppInstance }
+
+        internal func get_KeyImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIAppInstance.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Key(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_IsCurrentInstanceImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIAppInstance.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsCurrentInstance(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func RedirectActivationToImpl() throws {
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIAppInstance.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.RedirectActivationTo(pThis))
+            }
+        }
+
+    }
+
+    public class IAppInstanceStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CIAppInstanceStatics }
+
+        internal func get_RecommendedInstanceImpl() throws -> UWP.AppInstance? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIAppInstanceStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_RecommendedInstance(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func GetActivatedEventArgsImpl() throws -> UWP.AnyIActivatedEventArgs? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIAppInstanceStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetActivatedEventArgs(pThis, &resultAbi))
+                }
+            }
+            return __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.unwrapFrom(abi: result)
+        }
+
+        internal func FindOrRegisterInstanceForKeyImpl(_ key: String) throws -> UWP.AppInstance? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                let _key = try! HString(key)
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIAppInstanceStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.FindOrRegisterInstanceForKey(pThis, _key.get(), &resultAbi))
+                }
+            }
+            return .from(abi: result)
+        }
+
+        internal func UnregisterImpl() throws {
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIAppInstanceStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Unregister(pThis))
+            }
+        }
+
+        internal func GetInstancesImpl() throws -> WindowsFoundation.AnyIVector<UWP.AppInstance?>? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIAppInstanceStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetInstances(pThis, &resultAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIVector_1___x_ABI_CWindows__CApplicationModel__CAppInstanceWrapper.unwrapFrom(abi: result)
+        }
+
+    }
+
+    public class ICameraApplicationManagerStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CICameraApplicationManagerStatics }
+
+        internal func ShowInstalledApplicationsUIImpl() throws {
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CICameraApplicationManagerStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.ShowInstalledApplicationsUI(pThis))
+            }
+        }
+
+    }
+
+    public class IDesignModeStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CIDesignModeStatics }
+
+        internal func get_DesignModeEnabledImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIDesignModeStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DesignModeEnabled(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    public class IDesignModeStatics2: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CIDesignModeStatics2 }
+
+        internal func get_DesignMode2EnabledImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIDesignModeStatics2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DesignMode2Enabled(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
     public class IEnteredBackgroundEventArgs: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CIEnteredBackgroundEventArgs }
 
@@ -236,6 +448,51 @@ public enum __ABI_Windows_ApplicationModel {
     )
 
     public typealias IEnteredBackgroundEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel.IEnteredBackgroundEventArgsBridge>
+    public class IFullTrustProcessLauncherStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CIFullTrustProcessLauncherStatics }
+
+        internal func LaunchFullTrustProcessForCurrentAppAsyncImpl() throws -> WindowsFoundation.AnyIAsyncAction? {
+            let (asyncAction) = try ComPtrs.initialize { asyncActionAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIFullTrustProcessLauncherStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.LaunchFullTrustProcessForCurrentAppAsync(pThis, &asyncActionAbi))
+                }
+            }
+            return __ABI_Windows_Foundation.IAsyncActionWrapper.unwrapFrom(abi: asyncAction)
+        }
+
+        internal func LaunchFullTrustProcessForCurrentAppWithParametersAsyncImpl(_ parameterGroupId: String) throws -> WindowsFoundation.AnyIAsyncAction? {
+            let (asyncAction) = try ComPtrs.initialize { asyncActionAbi in
+                let _parameterGroupId = try! HString(parameterGroupId)
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIFullTrustProcessLauncherStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.LaunchFullTrustProcessForCurrentAppWithParametersAsync(pThis, _parameterGroupId.get(), &asyncActionAbi))
+                }
+            }
+            return __ABI_Windows_Foundation.IAsyncActionWrapper.unwrapFrom(abi: asyncAction)
+        }
+
+        internal func LaunchFullTrustProcessForAppAsyncImpl(_ fullTrustPackageRelativeAppId: String) throws -> WindowsFoundation.AnyIAsyncAction? {
+            let (asyncAction) = try ComPtrs.initialize { asyncActionAbi in
+                let _fullTrustPackageRelativeAppId = try! HString(fullTrustPackageRelativeAppId)
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIFullTrustProcessLauncherStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.LaunchFullTrustProcessForAppAsync(pThis, _fullTrustPackageRelativeAppId.get(), &asyncActionAbi))
+                }
+            }
+            return __ABI_Windows_Foundation.IAsyncActionWrapper.unwrapFrom(abi: asyncAction)
+        }
+
+        internal func LaunchFullTrustProcessForAppWithParametersAsyncImpl(_ fullTrustPackageRelativeAppId: String, _ parameterGroupId: String) throws -> WindowsFoundation.AnyIAsyncAction? {
+            let (asyncAction) = try ComPtrs.initialize { asyncActionAbi in
+                let _fullTrustPackageRelativeAppId = try! HString(fullTrustPackageRelativeAppId)
+                let _parameterGroupId = try! HString(parameterGroupId)
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIFullTrustProcessLauncherStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.LaunchFullTrustProcessForAppWithParametersAsync(pThis, _fullTrustPackageRelativeAppId.get(), _parameterGroupId.get(), &asyncActionAbi))
+                }
+            }
+            return __ABI_Windows_Foundation.IAsyncActionWrapper.unwrapFrom(abi: asyncAction)
+        }
+
+    }
+
     public class ILeavingBackgroundEventArgs: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CILeavingBackgroundEventArgs }
 
@@ -289,6 +546,53 @@ public enum __ABI_Windows_ApplicationModel {
     )
 
     public typealias ILeavingBackgroundEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel.ILeavingBackgroundEventArgsBridge>
+    public class ILimitedAccessFeatureRequestResult: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CILimitedAccessFeatureRequestResult }
+
+        internal func get_FeatureIdImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CILimitedAccessFeatureRequestResult.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_FeatureId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_StatusImpl() throws -> UWP.LimitedAccessFeatureStatus {
+            var value: __x_ABI_CWindows_CApplicationModel_CLimitedAccessFeatureStatus = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CILimitedAccessFeatureRequestResult.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Status(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_EstimatedRemovalDateImpl() throws -> WindowsFoundation.DateTime? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CILimitedAccessFeatureRequestResult.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_EstimatedRemovalDate(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CFoundation__CDateTimeWrapper.unwrapFrom(abi: value)
+        }
+
+    }
+
+    public class ILimitedAccessFeaturesStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CILimitedAccessFeaturesStatics }
+
+        internal func TryUnlockFeatureImpl(_ featureId: String, _ token: String, _ attestation: String) throws -> UWP.LimitedAccessFeatureRequestResult? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                let _featureId = try! HString(featureId)
+                let _token = try! HString(token)
+                let _attestation = try! HString(attestation)
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CILimitedAccessFeaturesStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.TryUnlockFeature(pThis, _featureId.get(), _token.get(), _attestation.get(), &resultAbi))
+                }
+            }
+            return .from(abi: result)
+        }
+
+    }
+
     public class IPackage: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CIPackage }
 
@@ -553,6 +857,284 @@ public enum __ABI_Windows_ApplicationModel {
 
     }
 
+    public class IPackageCatalog: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CIPackageCatalog }
+
+        internal func add_PackageStagingImpl(_ handler: TypedEventHandler<UWP.PackageCatalog?, UWP.PackageStagingEventArgs?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CApplicationModel__CPackageCatalog___x_ABI_CWindows__CApplicationModel__CPackageStagingEventArgsWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageCatalog.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_PackageStaging(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_PackageStagingImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageCatalog.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_PackageStaging(pThis, token))
+            }
+        }
+
+        internal func add_PackageInstallingImpl(_ handler: TypedEventHandler<UWP.PackageCatalog?, UWP.PackageInstallingEventArgs?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CApplicationModel__CPackageCatalog___x_ABI_CWindows__CApplicationModel__CPackageInstallingEventArgsWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageCatalog.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_PackageInstalling(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_PackageInstallingImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageCatalog.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_PackageInstalling(pThis, token))
+            }
+        }
+
+        internal func add_PackageUpdatingImpl(_ handler: TypedEventHandler<UWP.PackageCatalog?, UWP.PackageUpdatingEventArgs?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CApplicationModel__CPackageCatalog___x_ABI_CWindows__CApplicationModel__CPackageUpdatingEventArgsWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageCatalog.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_PackageUpdating(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_PackageUpdatingImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageCatalog.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_PackageUpdating(pThis, token))
+            }
+        }
+
+        internal func add_PackageUninstallingImpl(_ handler: TypedEventHandler<UWP.PackageCatalog?, UWP.PackageUninstallingEventArgs?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CApplicationModel__CPackageCatalog___x_ABI_CWindows__CApplicationModel__CPackageUninstallingEventArgsWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageCatalog.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_PackageUninstalling(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_PackageUninstallingImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageCatalog.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_PackageUninstalling(pThis, token))
+            }
+        }
+
+        internal func add_PackageStatusChangedImpl(_ handler: TypedEventHandler<UWP.PackageCatalog?, UWP.PackageStatusChangedEventArgs?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CApplicationModel__CPackageCatalog___x_ABI_CWindows__CApplicationModel__CPackageStatusChangedEventArgsWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageCatalog.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_PackageStatusChanged(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_PackageStatusChangedImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageCatalog.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_PackageStatusChanged(pThis, token))
+            }
+        }
+
+    }
+
+    public class IPackageCatalog2: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CIPackageCatalog2 }
+
+        internal func add_PackageContentGroupStagingImpl(_ handler: TypedEventHandler<UWP.PackageCatalog?, UWP.PackageContentGroupStagingEventArgs?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = UWP.__x_ABI_C__FITypedEventHandler_2___x_ABI_CWindows__CApplicationModel__CPackageCatalog___x_ABI_CWindows__CApplicationModel__CPackageContentGroupStagingEventArgsWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageCatalog2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_PackageContentGroupStaging(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_PackageContentGroupStagingImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageCatalog2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_PackageContentGroupStaging(pThis, token))
+            }
+        }
+
+        internal func AddOptionalPackageAsyncImpl(_ optionalPackageFamilyName: String) throws -> WindowsFoundation.AnyIAsyncOperation<UWP.PackageCatalogAddOptionalPackageResult?>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                let _optionalPackageFamilyName = try! HString(optionalPackageFamilyName)
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageCatalog2.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.AddOptionalPackageAsync(pThis, _optionalPackageFamilyName.get(), &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CApplicationModel__CPackageCatalogAddOptionalPackageResultWrapper.unwrapFrom(abi: operation)
+        }
+
+    }
+
+    public class IPackageCatalog3: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CIPackageCatalog3 }
+
+        internal func RemoveOptionalPackagesAsyncImpl(_ optionalPackageFamilyNames: WindowsFoundation.AnyIIterable<String>?) throws -> WindowsFoundation.AnyIAsyncOperation<UWP.PackageCatalogRemoveOptionalPackagesResult?>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                let optionalPackageFamilyNamesWrapper = UWP.__x_ABI_C__FIIterable_1_HSTRINGWrapper(optionalPackageFamilyNames)
+                let _optionalPackageFamilyNames = try! optionalPackageFamilyNamesWrapper?.toABI { $0 }
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageCatalog3.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.RemoveOptionalPackagesAsync(pThis, _optionalPackageFamilyNames, &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CApplicationModel__CPackageCatalogRemoveOptionalPackagesResultWrapper.unwrapFrom(abi: operation)
+        }
+
+    }
+
+    public class IPackageCatalog4: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CIPackageCatalog4 }
+
+        internal func AddResourcePackageAsyncImpl(_ resourcePackageFamilyName: String, _ resourceID: String, _ options: UWP.AddResourcePackageOptions) throws -> WindowsFoundation.AnyIAsyncOperationWithProgress<UWP.PackageCatalogAddResourcePackageResult?, UWP.PackageInstallProgress>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                let _resourcePackageFamilyName = try! HString(resourcePackageFamilyName)
+                let _resourceID = try! HString(resourceID)
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageCatalog4.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.AddResourcePackageAsync(pThis, _resourcePackageFamilyName.get(), _resourceID.get(), options, &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperationWithProgress_2___x_ABI_CWindows__CApplicationModel__CPackageCatalogAddResourcePackageResult___x_ABI_CWindows__CApplicationModel__CPackageInstallProgressWrapper.unwrapFrom(abi: operation)
+        }
+
+        internal func RemoveResourcePackagesAsyncImpl(_ resourcePackages: WindowsFoundation.AnyIIterable<UWP.Package?>?) throws -> WindowsFoundation.AnyIAsyncOperation<UWP.PackageCatalogRemoveResourcePackagesResult?>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                let resourcePackagesWrapper = UWP.__x_ABI_C__FIIterable_1___x_ABI_CWindows__CApplicationModel__CPackageWrapper(resourcePackages)
+                let _resourcePackages = try! resourcePackagesWrapper?.toABI { $0 }
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageCatalog4.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.RemoveResourcePackagesAsync(pThis, _resourcePackages, &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CApplicationModel__CPackageCatalogRemoveResourcePackagesResultWrapper.unwrapFrom(abi: operation)
+        }
+
+    }
+
+    public class IPackageCatalogAddOptionalPackageResult: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CIPackageCatalogAddOptionalPackageResult }
+
+        internal func get_PackageImpl() throws -> UWP.Package? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageCatalogAddOptionalPackageResult.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Package(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ExtendedErrorImpl() throws -> HRESULT {
+            var value: HRESULT = 0
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageCatalogAddOptionalPackageResult.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ExtendedError(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
+    public class IPackageCatalogAddResourcePackageResult: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CIPackageCatalogAddResourcePackageResult }
+
+        internal func get_PackageImpl() throws -> UWP.Package? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageCatalogAddResourcePackageResult.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Package(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_IsCompleteImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageCatalogAddResourcePackageResult.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsComplete(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_ExtendedErrorImpl() throws -> HRESULT {
+            var value: HRESULT = 0
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageCatalogAddResourcePackageResult.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ExtendedError(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
+    public class IPackageCatalogRemoveOptionalPackagesResult: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CIPackageCatalogRemoveOptionalPackagesResult }
+
+        internal func get_PackagesRemovedImpl() throws -> WindowsFoundation.AnyIVectorView<UWP.Package?>? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageCatalogRemoveOptionalPackagesResult.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_PackagesRemoved(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIVectorView_1___x_ABI_CWindows__CApplicationModel__CPackageWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func get_ExtendedErrorImpl() throws -> HRESULT {
+            var value: HRESULT = 0
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageCatalogRemoveOptionalPackagesResult.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ExtendedError(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
+    public class IPackageCatalogRemoveResourcePackagesResult: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CIPackageCatalogRemoveResourcePackagesResult }
+
+        internal func get_PackagesRemovedImpl() throws -> WindowsFoundation.AnyIVectorView<UWP.Package?>? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageCatalogRemoveResourcePackagesResult.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_PackagesRemoved(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIVectorView_1___x_ABI_CWindows__CApplicationModel__CPackageWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func get_ExtendedErrorImpl() throws -> HRESULT {
+            var value: HRESULT = 0
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageCatalogRemoveResourcePackagesResult.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ExtendedError(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
+    public class IPackageCatalogStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CIPackageCatalogStatics }
+
+        internal func OpenForCurrentPackageImpl() throws -> UWP.PackageCatalog? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageCatalogStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.OpenForCurrentPackage(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func OpenForCurrentUserImpl() throws -> UWP.PackageCatalog? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageCatalogStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.OpenForCurrentUser(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
     public class IPackageContentGroup: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CIPackageContentGroup }
 
@@ -585,6 +1167,68 @@ public enum __ABI_Windows_ApplicationModel {
             var value: boolean = 0
             _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageContentGroup.self) { pThis in
                 try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsRequired(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    public class IPackageContentGroupStagingEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CIPackageContentGroupStagingEventArgs }
+
+        internal func get_ActivityIdImpl() throws -> Foundation.UUID {
+            var value: WindowsFoundation.GUID = .init()
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageContentGroupStagingEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ActivityId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_PackageImpl() throws -> UWP.Package? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageContentGroupStagingEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Package(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ProgressImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageContentGroupStagingEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Progress(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_IsCompleteImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageContentGroupStagingEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsComplete(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_ErrorCodeImpl() throws -> HRESULT {
+            var value: HRESULT = 0
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageContentGroupStagingEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ErrorCode(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_ContentGroupNameImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageContentGroupStagingEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ContentGroupName(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_IsContentGroupRequiredImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageContentGroupStagingEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsContentGroupRequired(pThis, &value))
             }
             return .init(from: value)
         }
@@ -690,6 +1334,98 @@ public enum __ABI_Windows_ApplicationModel {
                 try CHECKED(pThis.pointee.lpVtbl.pointee.get_Author(pThis, &value))
             }
             return .init(from: value)
+        }
+
+    }
+
+    public class IPackageInstallingEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CIPackageInstallingEventArgs }
+
+        internal func get_ActivityIdImpl() throws -> Foundation.UUID {
+            var value: WindowsFoundation.GUID = .init()
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageInstallingEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ActivityId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_PackageImpl() throws -> UWP.Package? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageInstallingEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Package(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ProgressImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageInstallingEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Progress(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_IsCompleteImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageInstallingEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsComplete(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_ErrorCodeImpl() throws -> HRESULT {
+            var value: HRESULT = 0
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageInstallingEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ErrorCode(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
+    public class IPackageStagingEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CIPackageStagingEventArgs }
+
+        internal func get_ActivityIdImpl() throws -> Foundation.UUID {
+            var value: WindowsFoundation.GUID = .init()
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageStagingEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ActivityId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_PackageImpl() throws -> UWP.Package? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageStagingEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Package(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ProgressImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageStagingEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Progress(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_IsCompleteImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageStagingEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsComplete(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_ErrorCodeImpl() throws -> HRESULT {
+            var value: HRESULT = 0
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageStagingEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ErrorCode(pThis, &value))
+            }
+            return value
         }
 
     }
@@ -822,6 +1558,66 @@ public enum __ABI_Windows_ApplicationModel {
 
     }
 
+    public class IPackageStatusChangedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CIPackageStatusChangedEventArgs }
+
+        internal func get_PackageImpl() throws -> UWP.Package? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageStatusChangedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Package(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IPackageUninstallingEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CIPackageUninstallingEventArgs }
+
+        internal func get_ActivityIdImpl() throws -> Foundation.UUID {
+            var value: WindowsFoundation.GUID = .init()
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageUninstallingEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ActivityId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_PackageImpl() throws -> UWP.Package? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageUninstallingEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Package(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ProgressImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageUninstallingEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Progress(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_IsCompleteImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageUninstallingEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsComplete(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_ErrorCodeImpl() throws -> HRESULT {
+            var value: HRESULT = 0
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageUninstallingEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ErrorCode(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
     public class IPackageUpdateAvailabilityResult: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CIPackageUpdateAvailabilityResult }
 
@@ -837,6 +1633,61 @@ public enum __ABI_Windows_ApplicationModel {
             var value: HRESULT = 0
             _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageUpdateAvailabilityResult.self) { pThis in
                 try CHECKED(pThis.pointee.lpVtbl.pointee.get_ExtendedError(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
+    public class IPackageUpdatingEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CIPackageUpdatingEventArgs }
+
+        internal func get_ActivityIdImpl() throws -> Foundation.UUID {
+            var value: WindowsFoundation.GUID = .init()
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageUpdatingEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ActivityId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_SourcePackageImpl() throws -> UWP.Package? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageUpdatingEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SourcePackage(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_TargetPackageImpl() throws -> UWP.Package? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageUpdatingEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_TargetPackage(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ProgressImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageUpdatingEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Progress(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_IsCompleteImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageUpdatingEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsComplete(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_ErrorCodeImpl() throws -> HRESULT {
+            var value: HRESULT = 0
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageUpdatingEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ErrorCode(pThis, &value))
             }
             return value
         }
@@ -867,6 +1718,66 @@ public enum __ABI_Windows_ApplicationModel {
             _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIPackageWithMetadata.self) { pThis in
                 try CHECKED(pThis.pointee.lpVtbl.pointee.Launch(pThis, _parameters.get()))
             }
+        }
+
+    }
+
+    public class IStartupTask: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CIStartupTask }
+
+        internal func RequestEnableAsyncImpl() throws -> WindowsFoundation.AnyIAsyncOperation<UWP.StartupTaskState>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIStartupTask.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.RequestEnableAsync(pThis, &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CApplicationModel__CStartupTaskStateWrapper.unwrapFrom(abi: operation)
+        }
+
+        internal func DisableImpl() throws {
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIStartupTask.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Disable(pThis))
+            }
+        }
+
+        internal func get_StateImpl() throws -> UWP.StartupTaskState {
+            var value: __x_ABI_CWindows_CApplicationModel_CStartupTaskState = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIStartupTask.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_State(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_TaskIdImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIStartupTask.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_TaskId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    public class IStartupTaskStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CIStartupTaskStatics }
+
+        internal func GetForCurrentPackageAsyncImpl() throws -> WindowsFoundation.AnyIAsyncOperation<WindowsFoundation.AnyIVectorView<UWP.StartupTask?>?>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIStartupTaskStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetForCurrentPackageAsync(pThis, &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_C__FIVectorView_1___x_ABI_CWindows__CApplicationModel__CStartupTaskWrapper.unwrapFrom(abi: operation)
+        }
+
+        internal func GetAsyncImpl(_ taskId: String) throws -> WindowsFoundation.AnyIAsyncOperation<UWP.StartupTask?>? {
+            let (operation) = try ComPtrs.initialize { operationAbi in
+                let _taskId = try! HString(taskId)
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CIStartupTaskStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetAsync(pThis, _taskId.get(), &operationAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIAsyncOperation_1___x_ABI_CWindows__CApplicationModel__CStartupTaskWrapper.unwrapFrom(abi: operation)
         }
 
     }
@@ -1040,7 +1951,12 @@ public enum __ABI_Windows_ApplicationModel {
 
     public typealias ISuspendingOperationWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel.ISuspendingOperationBridge>
 }
-extension __x_ABI_CWindows_CApplicationModel_CPackageVersion {
+extension __x_ABI_CWindows_CApplicationModel_CPackageInstallProgress {
+        public static func from(swift: UWP.PackageInstallProgress) -> __x_ABI_CWindows_CApplicationModel_CPackageInstallProgress {
+            .init(PercentComplete: swift.percentComplete)
+        }
+    }
+    extension __x_ABI_CWindows_CApplicationModel_CPackageVersion {
         public static func from(swift: UWP.PackageVersion) -> __x_ABI_CWindows_CApplicationModel_CPackageVersion {
             .init(Major: swift.major, Minor: swift.minor, Build: swift.build, Revision: swift.revision)
         }

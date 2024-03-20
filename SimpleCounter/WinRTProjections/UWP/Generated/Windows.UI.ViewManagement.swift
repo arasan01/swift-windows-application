@@ -4,14 +4,86 @@ import Foundation
 @_spi(WinRTInternal) @_spi(WinRTImplements) import WindowsFoundation
 import CWinRT
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewboundsmode)
+public typealias ApplicationViewBoundsMode = __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewBoundsMode
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewmode)
+public typealias ApplicationViewMode = __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewMode
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationvieworientation)
+public typealias ApplicationViewOrientation = __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewOrientation
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewstate)
+public typealias ApplicationViewState = __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewState
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewswitchingoptions)
+public typealias ApplicationViewSwitchingOptions = __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewSwitchingOptions
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewwindowingmode)
+public typealias ApplicationViewWindowingMode = __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewWindowingMode
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.fullscreensystemoverlaymode)
+public typealias FullScreenSystemOverlayMode = __x_ABI_CWindows_CUI_CViewManagement_CFullScreenSystemOverlayMode
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.handpreference)
 public typealias HandPreference = __x_ABI_CWindows_CUI_CViewManagement_CHandPreference
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.uicolortype)
 public typealias UIColorType = __x_ABI_CWindows_CUI_CViewManagement_CUIColorType
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.uielementtype)
 public typealias UIElementType = __x_ABI_CWindows_CUI_CViewManagement_CUIElementType
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.userinteractionmode)
+public typealias UserInteractionMode = __x_ABI_CWindows_CUI_CViewManagement_CUserInteractionMode
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.viewsizepreference)
 public typealias ViewSizePreference = __x_ABI_CWindows_CUI_CViewManagement_CViewSizePreference
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.accessibilitysettings)
+public final class AccessibilitySettings : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_UI_ViewManagement.IAccessibilitySettings
+    private typealias CABI = __x_ABI_CWindows_CUI_CViewManagement_CIAccessibilitySettings
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CUI_CViewManagement_CIAccessibilitySettings>?) -> AccessibilitySettings? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public init() {
+        super.init(try! RoActivateInstance(HString("Windows.UI.ViewManagement.AccessibilitySettings")))
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.accessibilitysettings.highcontrast)
+    public var highContrast : Bool {
+        get { try! _default.get_HighContrastImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.accessibilitysettings.highcontrastscheme)
+    public var highContrastScheme : String {
+        get { try! _default.get_HighContrastSchemeImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.accessibilitysettings.highcontrastchanged)
+    public lazy var highContrastChanged : Event<TypedEventHandler<AccessibilitySettings?, Any?>> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._default else { return .init() }
+          return try! this.add_HighContrastChangedImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._default.remove_HighContrastChangedImpl($0)
+       }
+      )
+    }()
+
+    deinit {
+        _default = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.activationviewswitcher)
 public final class ActivationViewSwitcher : WinRTClass {
     private typealias SwiftABI = __ABI_Windows_UI_ViewManagement.IActivationViewSwitcher
@@ -49,6 +121,907 @@ public final class ActivationViewSwitcher : WinRTClass {
     /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.activationviewswitcher.isviewpresentedonactivationvirtualdesktop)
     public func isViewPresentedOnActivationVirtualDesktop(_ viewId: Int32) throws -> Bool {
         try _default.IsViewPresentedOnActivationVirtualDesktopImpl(viewId)
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview)
+public final class ApplicationView : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_UI_ViewManagement.IApplicationView
+    private typealias CABI = __x_ABI_CWindows_CUI_CViewManagement_CIApplicationView
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CUI_CViewManagement_CIApplicationView>?) -> ApplicationView? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IApplicationViewFullscreenStatics: __ABI_Windows_UI_ViewManagement.IApplicationViewFullscreenStatics = try! RoGetActivationFactory(HString("Windows.UI.ViewManagement.ApplicationView"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.tryunsnaptofullscreen)
+    public static func tryUnsnapToFullscreen() -> Bool {
+        return try! _IApplicationViewFullscreenStatics.TryUnsnapToFullscreenImpl()
+    }
+
+    private static let _IApplicationViewInteropStatics: __ABI_Windows_UI_ViewManagement.IApplicationViewInteropStatics = try! RoGetActivationFactory(HString("Windows.UI.ViewManagement.ApplicationView"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.getapplicationviewidforwindow)
+    public static func getApplicationViewIdForWindow(_ window: UWP.AnyICoreWindow!) -> Int32 {
+        return try! _IApplicationViewInteropStatics.GetApplicationViewIdForWindowImpl(window)
+    }
+
+    private static let _IApplicationViewStatics: __ABI_Windows_UI_ViewManagement.IApplicationViewStatics = try! RoGetActivationFactory(HString("Windows.UI.ViewManagement.ApplicationView"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.tryunsnap)
+    public static func tryUnsnap() -> Bool {
+        return try! _IApplicationViewStatics.TryUnsnapImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.value)
+    public static var value : ApplicationViewState {
+        get { try! _IApplicationViewStatics.get_ValueImpl() }
+    }
+
+    private static let _IApplicationViewStatics2: __ABI_Windows_UI_ViewManagement.IApplicationViewStatics2 = try! RoGetActivationFactory(HString("Windows.UI.ViewManagement.ApplicationView"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.getforcurrentview)
+    public static func getForCurrentView() -> ApplicationView! {
+        return try! _IApplicationViewStatics2.GetForCurrentViewImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.terminateapponfinalviewclose)
+    public static var terminateAppOnFinalViewClose : Bool {
+        get { try! _IApplicationViewStatics2.get_TerminateAppOnFinalViewCloseImpl() }
+        set { try! _IApplicationViewStatics2.put_TerminateAppOnFinalViewCloseImpl(newValue) }
+    }
+
+    private static let _IApplicationViewStatics3: __ABI_Windows_UI_ViewManagement.IApplicationViewStatics3 = try! RoGetActivationFactory(HString("Windows.UI.ViewManagement.ApplicationView"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.preferredlaunchviewsize)
+    public static var preferredLaunchViewSize : WindowsFoundation.Size {
+        get { try! _IApplicationViewStatics3.get_PreferredLaunchViewSizeImpl() }
+        set { try! _IApplicationViewStatics3.put_PreferredLaunchViewSizeImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.preferredlaunchwindowingmode)
+    public static var preferredLaunchWindowingMode : ApplicationViewWindowingMode {
+        get { try! _IApplicationViewStatics3.get_PreferredLaunchWindowingModeImpl() }
+        set { try! _IApplicationViewStatics3.put_PreferredLaunchWindowingModeImpl(newValue) }
+    }
+
+    private static let _IApplicationViewStatics4: __ABI_Windows_UI_ViewManagement.IApplicationViewStatics4 = try! RoGetActivationFactory(HString("Windows.UI.ViewManagement.ApplicationView"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.clearallpersistedstate)
+    public static func clearAllPersistedState() {
+        try! _IApplicationViewStatics4.ClearAllPersistedStateImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.clearpersistedstate)
+    public static func clearPersistedState(_ key: String) {
+        try! _IApplicationViewStatics4.ClearPersistedStateImpl(key)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.adjacenttoleftdisplayedge)
+    public var adjacentToLeftDisplayEdge : Bool {
+        get { try! _default.get_AdjacentToLeftDisplayEdgeImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.adjacenttorightdisplayedge)
+    public var adjacentToRightDisplayEdge : Bool {
+        get { try! _default.get_AdjacentToRightDisplayEdgeImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.id)
+    public var id : Int32 {
+        get { try! _default.get_IdImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.isfullscreen)
+    public var isFullScreen : Bool {
+        get { try! _default.get_IsFullScreenImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.isonlockscreen)
+    public var isOnLockScreen : Bool {
+        get { try! _default.get_IsOnLockScreenImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.isscreencaptureenabled)
+    public var isScreenCaptureEnabled : Bool {
+        get { try! _default.get_IsScreenCaptureEnabledImpl() }
+        set { try! _default.put_IsScreenCaptureEnabledImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.orientation)
+    public var orientation : ApplicationViewOrientation {
+        get { try! _default.get_OrientationImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.title)
+    public var title : String {
+        get { try! _default.get_TitleImpl() }
+        set { try! _default.put_TitleImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.consolidated)
+    public lazy var consolidated : Event<TypedEventHandler<ApplicationView?, ApplicationViewConsolidatedEventArgs?>> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._default else { return .init() }
+          return try! this.add_ConsolidatedImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._default.remove_ConsolidatedImpl($0)
+       }
+      )
+    }()
+
+    private lazy var _IApplicationView2: __ABI_Windows_UI_ViewManagement.IApplicationView2! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.setdesiredboundsmode)
+    public func setDesiredBoundsMode(_ boundsMode: ApplicationViewBoundsMode) throws -> Bool {
+        try _IApplicationView2.SetDesiredBoundsModeImpl(boundsMode)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.desiredboundsmode)
+    public var desiredBoundsMode : ApplicationViewBoundsMode {
+        get { try! _IApplicationView2.get_DesiredBoundsModeImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.suppresssystemoverlays)
+    public var suppressSystemOverlays : Bool {
+        get { try! _IApplicationView2.get_SuppressSystemOverlaysImpl() }
+        set { try! _IApplicationView2.put_SuppressSystemOverlaysImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.visiblebounds)
+    public var visibleBounds : WindowsFoundation.Rect {
+        get { try! _IApplicationView2.get_VisibleBoundsImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.visibleboundschanged)
+    public lazy var visibleBoundsChanged : Event<TypedEventHandler<ApplicationView?, Any?>> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._IApplicationView2 else { return .init() }
+          return try! this.add_VisibleBoundsChangedImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._IApplicationView2.remove_VisibleBoundsChangedImpl($0)
+       }
+      )
+    }()
+
+    private lazy var _IApplicationView3: __ABI_Windows_UI_ViewManagement.IApplicationView3! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.tryenterfullscreenmode)
+    public func tryEnterFullScreenMode() throws -> Bool {
+        try _IApplicationView3.TryEnterFullScreenModeImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.exitfullscreenmode)
+    public func exitFullScreenMode() throws {
+        try _IApplicationView3.ExitFullScreenModeImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.showstandardsystemoverlays)
+    public func showStandardSystemOverlays() throws {
+        try _IApplicationView3.ShowStandardSystemOverlaysImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.tryresizeview)
+    public func tryResizeView(_ value: WindowsFoundation.Size) throws -> Bool {
+        try _IApplicationView3.TryResizeViewImpl(value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.setpreferredminsize)
+    public func setPreferredMinSize(_ minSize: WindowsFoundation.Size) throws {
+        try _IApplicationView3.SetPreferredMinSizeImpl(minSize)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.fullscreensystemoverlaymode)
+    public var fullScreenSystemOverlayMode : FullScreenSystemOverlayMode {
+        get { try! _IApplicationView3.get_FullScreenSystemOverlayModeImpl() }
+        set { try! _IApplicationView3.put_FullScreenSystemOverlayModeImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.isfullscreenmode)
+    public var isFullScreenMode : Bool {
+        get { try! _IApplicationView3.get_IsFullScreenModeImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.titlebar)
+    public var titleBar : ApplicationViewTitleBar! {
+        get { try! _IApplicationView3.get_TitleBarImpl() }
+    }
+
+    private lazy var _IApplicationView4: __ABI_Windows_UI_ViewManagement.IApplicationView4! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.isviewmodesupported)
+    public func isViewModeSupported(_ viewMode: ApplicationViewMode) throws -> Bool {
+        try _IApplicationView4.IsViewModeSupportedImpl(viewMode)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.tryenterviewmodeasync)
+    public func tryEnterViewModeAsync(_ viewMode: ApplicationViewMode) throws -> WindowsFoundation.AnyIAsyncOperation<Bool>! {
+        try _IApplicationView4.TryEnterViewModeAsyncImpl(viewMode)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.tryenterviewmodeasync)
+    public func tryEnterViewModeAsync(_ viewMode: ApplicationViewMode, _ viewModePreferences: ViewModePreferences!) throws -> WindowsFoundation.AnyIAsyncOperation<Bool>! {
+        try _IApplicationView4.TryEnterViewModeWithPreferencesAsyncImpl(viewMode, viewModePreferences)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.tryconsolidateasync)
+    public func tryConsolidateAsync() throws -> WindowsFoundation.AnyIAsyncOperation<Bool>! {
+        try _IApplicationView4.TryConsolidateAsyncImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.viewmode)
+    public var viewMode : ApplicationViewMode {
+        get { try! _IApplicationView4.get_ViewModeImpl() }
+    }
+
+    private lazy var _IApplicationView7: __ABI_Windows_UI_ViewManagement.IApplicationView7! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.persistedstateid)
+    public var persistedStateId : String {
+        get { try! _IApplicationView7.get_PersistedStateIdImpl() }
+        set { try! _IApplicationView7.put_PersistedStateIdImpl(newValue) }
+    }
+
+    private lazy var _IApplicationView9: __ABI_Windows_UI_ViewManagement.IApplicationView9! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.getdisplayregions)
+    public func getDisplayRegions() throws -> WindowsFoundation.AnyIVectorView<UWP.DisplayRegion?>! {
+        try _IApplicationView9.GetDisplayRegionsImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.windowingenvironment)
+    public var windowingEnvironment : UWP.WindowingEnvironment! {
+        get { try! _IApplicationView9.get_WindowingEnvironmentImpl() }
+    }
+
+    private lazy var _IApplicationViewWithContext: __ABI_Windows_UI_ViewManagement.IApplicationViewWithContext! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.uicontext)
+    public var uiContext : UWP.UIContext! {
+        get { try! _IApplicationViewWithContext.get_UIContextImpl() }
+    }
+
+    deinit {
+        _default = nil
+        _IApplicationView2 = nil
+        _IApplicationView3 = nil
+        _IApplicationView4 = nil
+        _IApplicationView7 = nil
+        _IApplicationView9 = nil
+        _IApplicationViewWithContext = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewconsolidatedeventargs)
+public final class ApplicationViewConsolidatedEventArgs : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_UI_ViewManagement.IApplicationViewConsolidatedEventArgs
+    private typealias CABI = __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewConsolidatedEventArgs
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewConsolidatedEventArgs>?) -> ApplicationViewConsolidatedEventArgs? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewconsolidatedeventargs.isuserinitiated)
+    public var isUserInitiated : Bool {
+        get { try! _default.get_IsUserInitiatedImpl() }
+    }
+
+    private lazy var _IApplicationViewConsolidatedEventArgs2: __ABI_Windows_UI_ViewManagement.IApplicationViewConsolidatedEventArgs2! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewconsolidatedeventargs.isappinitiated)
+    public var isAppInitiated : Bool {
+        get { try! _IApplicationViewConsolidatedEventArgs2.get_IsAppInitiatedImpl() }
+    }
+
+    deinit {
+        _default = nil
+        _IApplicationViewConsolidatedEventArgs2 = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewscaling)
+public final class ApplicationViewScaling : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_UI_ViewManagement.IApplicationViewScaling
+    private typealias CABI = __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewScaling
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewScaling>?) -> ApplicationViewScaling? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IApplicationViewScalingStatics: __ABI_Windows_UI_ViewManagement.IApplicationViewScalingStatics = try! RoGetActivationFactory(HString("Windows.UI.ViewManagement.ApplicationViewScaling"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewscaling.trysetdisablelayoutscaling)
+    public static func trySetDisableLayoutScaling(_ disableLayoutScaling: Bool) -> Bool {
+        return try! _IApplicationViewScalingStatics.TrySetDisableLayoutScalingImpl(disableLayoutScaling)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewscaling.disablelayoutscaling)
+    public static var disableLayoutScaling : Bool {
+        get { try! _IApplicationViewScalingStatics.get_DisableLayoutScalingImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewswitcher)
+public final class ApplicationViewSwitcher {
+    private static let _IApplicationViewSwitcherStatics: __ABI_Windows_UI_ViewManagement.IApplicationViewSwitcherStatics = try! RoGetActivationFactory(HString("Windows.UI.ViewManagement.ApplicationViewSwitcher"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewswitcher.disableshowingmainviewonactivation)
+    public static func disableShowingMainViewOnActivation() {
+        try! _IApplicationViewSwitcherStatics.DisableShowingMainViewOnActivationImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewswitcher.tryshowasstandaloneasync)
+    public static func tryShowAsStandaloneAsync(_ viewId: Int32) -> WindowsFoundation.AnyIAsyncOperation<Bool>! {
+        return try! _IApplicationViewSwitcherStatics.TryShowAsStandaloneAsyncImpl(viewId)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewswitcher.tryshowasstandaloneasync)
+    public static func tryShowAsStandaloneAsync(_ viewId: Int32, _ sizePreference: ViewSizePreference) -> WindowsFoundation.AnyIAsyncOperation<Bool>! {
+        return try! _IApplicationViewSwitcherStatics.TryShowAsStandaloneWithSizePreferenceAsyncImpl(viewId, sizePreference)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewswitcher.tryshowasstandaloneasync)
+    public static func tryShowAsStandaloneAsync(_ viewId: Int32, _ sizePreference: ViewSizePreference, _ anchorViewId: Int32, _ anchorSizePreference: ViewSizePreference) -> WindowsFoundation.AnyIAsyncOperation<Bool>! {
+        return try! _IApplicationViewSwitcherStatics.TryShowAsStandaloneWithAnchorViewAndSizePreferenceAsyncImpl(viewId, sizePreference, anchorViewId, anchorSizePreference)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewswitcher.switchasync)
+    public static func switchAsync(_ viewId: Int32) -> WindowsFoundation.AnyIAsyncAction! {
+        return try! _IApplicationViewSwitcherStatics.SwitchAsyncImpl(viewId)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewswitcher.switchasync)
+    public static func switchAsync(_ toViewId: Int32, _ fromViewId: Int32) -> WindowsFoundation.AnyIAsyncAction! {
+        return try! _IApplicationViewSwitcherStatics.SwitchFromViewAsyncImpl(toViewId, fromViewId)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewswitcher.switchasync)
+    public static func switchAsync(_ toViewId: Int32, _ fromViewId: Int32, _ options: ApplicationViewSwitchingOptions) -> WindowsFoundation.AnyIAsyncAction! {
+        return try! _IApplicationViewSwitcherStatics.SwitchFromViewWithOptionsAsyncImpl(toViewId, fromViewId, options)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewswitcher.prepareforcustomanimatedswitchasync)
+    public static func prepareForCustomAnimatedSwitchAsync(_ toViewId: Int32, _ fromViewId: Int32, _ options: ApplicationViewSwitchingOptions) -> WindowsFoundation.AnyIAsyncOperation<Bool>! {
+        return try! _IApplicationViewSwitcherStatics.PrepareForCustomAnimatedSwitchAsyncImpl(toViewId, fromViewId, options)
+    }
+
+    private static let _IApplicationViewSwitcherStatics2: __ABI_Windows_UI_ViewManagement.IApplicationViewSwitcherStatics2 = try! RoGetActivationFactory(HString("Windows.UI.ViewManagement.ApplicationViewSwitcher"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewswitcher.disablesystemviewactivationpolicy)
+    public static func disableSystemViewActivationPolicy() {
+        try! _IApplicationViewSwitcherStatics2.DisableSystemViewActivationPolicyImpl()
+    }
+
+    private static let _IApplicationViewSwitcherStatics3: __ABI_Windows_UI_ViewManagement.IApplicationViewSwitcherStatics3 = try! RoGetActivationFactory(HString("Windows.UI.ViewManagement.ApplicationViewSwitcher"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewswitcher.tryshowasviewmodeasync)
+    public static func tryShowAsViewModeAsync(_ viewId: Int32, _ viewMode: ApplicationViewMode) -> WindowsFoundation.AnyIAsyncOperation<Bool>! {
+        return try! _IApplicationViewSwitcherStatics3.TryShowAsViewModeAsyncImpl(viewId, viewMode)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewswitcher.tryshowasviewmodeasync)
+    public static func tryShowAsViewModeAsync(_ viewId: Int32, _ viewMode: ApplicationViewMode, _ viewModePreferences: ViewModePreferences!) -> WindowsFoundation.AnyIAsyncOperation<Bool>! {
+        return try! _IApplicationViewSwitcherStatics3.TryShowAsViewModeWithPreferencesAsyncImpl(viewId, viewMode, viewModePreferences)
+    }
+
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewtitlebar)
+public final class ApplicationViewTitleBar : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_UI_ViewManagement.IApplicationViewTitleBar
+    private typealias CABI = __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTitleBar
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTitleBar>?) -> ApplicationViewTitleBar? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewtitlebar.backgroundcolor)
+    public var backgroundColor : UWP.Color? {
+        get { try! _default.get_BackgroundColorImpl() }
+        set { try! _default.put_BackgroundColorImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewtitlebar.buttonbackgroundcolor)
+    public var buttonBackgroundColor : UWP.Color? {
+        get { try! _default.get_ButtonBackgroundColorImpl() }
+        set { try! _default.put_ButtonBackgroundColorImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewtitlebar.buttonforegroundcolor)
+    public var buttonForegroundColor : UWP.Color? {
+        get { try! _default.get_ButtonForegroundColorImpl() }
+        set { try! _default.put_ButtonForegroundColorImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewtitlebar.buttonhoverbackgroundcolor)
+    public var buttonHoverBackgroundColor : UWP.Color? {
+        get { try! _default.get_ButtonHoverBackgroundColorImpl() }
+        set { try! _default.put_ButtonHoverBackgroundColorImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewtitlebar.buttonhoverforegroundcolor)
+    public var buttonHoverForegroundColor : UWP.Color? {
+        get { try! _default.get_ButtonHoverForegroundColorImpl() }
+        set { try! _default.put_ButtonHoverForegroundColorImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewtitlebar.buttoninactivebackgroundcolor)
+    public var buttonInactiveBackgroundColor : UWP.Color? {
+        get { try! _default.get_ButtonInactiveBackgroundColorImpl() }
+        set { try! _default.put_ButtonInactiveBackgroundColorImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewtitlebar.buttoninactiveforegroundcolor)
+    public var buttonInactiveForegroundColor : UWP.Color? {
+        get { try! _default.get_ButtonInactiveForegroundColorImpl() }
+        set { try! _default.put_ButtonInactiveForegroundColorImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewtitlebar.buttonpressedbackgroundcolor)
+    public var buttonPressedBackgroundColor : UWP.Color? {
+        get { try! _default.get_ButtonPressedBackgroundColorImpl() }
+        set { try! _default.put_ButtonPressedBackgroundColorImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewtitlebar.buttonpressedforegroundcolor)
+    public var buttonPressedForegroundColor : UWP.Color? {
+        get { try! _default.get_ButtonPressedForegroundColorImpl() }
+        set { try! _default.put_ButtonPressedForegroundColorImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewtitlebar.foregroundcolor)
+    public var foregroundColor : UWP.Color? {
+        get { try! _default.get_ForegroundColorImpl() }
+        set { try! _default.put_ForegroundColorImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewtitlebar.inactivebackgroundcolor)
+    public var inactiveBackgroundColor : UWP.Color? {
+        get { try! _default.get_InactiveBackgroundColorImpl() }
+        set { try! _default.put_InactiveBackgroundColorImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewtitlebar.inactiveforegroundcolor)
+    public var inactiveForegroundColor : UWP.Color? {
+        get { try! _default.get_InactiveForegroundColorImpl() }
+        set { try! _default.put_InactiveForegroundColorImpl(newValue) }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewtransfercontext)
+public final class ApplicationViewTransferContext : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_UI_ViewManagement.IApplicationViewTransferContext
+    private typealias CABI = __x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTransferContext
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CUI_CViewManagement_CIApplicationViewTransferContext>?) -> ApplicationViewTransferContext? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public init() {
+        super.init(try! RoActivateInstance(HString("Windows.UI.ViewManagement.ApplicationViewTransferContext")))
+    }
+
+    private static let _IApplicationViewTransferContextStatics: __ABI_Windows_UI_ViewManagement.IApplicationViewTransferContextStatics = try! RoGetActivationFactory(HString("Windows.UI.ViewManagement.ApplicationViewTransferContext"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewtransfercontext.datapackageformatid)
+    public static var dataPackageFormatId : String {
+        get { try! _IApplicationViewTransferContextStatics.get_DataPackageFormatIdImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewtransfercontext.viewid)
+    public var viewId : Int32 {
+        get { try! _default.get_ViewIdImpl() }
+        set { try! _default.put_ViewIdImpl(newValue) }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.inputpane)
+public final class InputPane : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_UI_ViewManagement.IInputPane
+    private typealias CABI = __x_ABI_CWindows_CUI_CViewManagement_CIInputPane
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CUI_CViewManagement_CIInputPane>?) -> InputPane? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IInputPaneStatics: __ABI_Windows_UI_ViewManagement.IInputPaneStatics = try! RoGetActivationFactory(HString("Windows.UI.ViewManagement.InputPane"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.inputpane.getforcurrentview)
+    public static func getForCurrentView() -> InputPane! {
+        return try! _IInputPaneStatics.GetForCurrentViewImpl()
+    }
+
+    private static let _IInputPaneStatics2: __ABI_Windows_UI_ViewManagement.IInputPaneStatics2 = try! RoGetActivationFactory(HString("Windows.UI.ViewManagement.InputPane"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.inputpane.getforuicontext)
+    public static func getForUIContext(_ context: UWP.UIContext!) -> InputPane! {
+        return try! _IInputPaneStatics2.GetForUIContextImpl(context)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.inputpane.occludedrect)
+    public var occludedRect : WindowsFoundation.Rect {
+        get { try! _default.get_OccludedRectImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.inputpane.hiding)
+    public lazy var hiding : Event<TypedEventHandler<InputPane?, InputPaneVisibilityEventArgs?>> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._default else { return .init() }
+          return try! this.add_HidingImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._default.remove_HidingImpl($0)
+       }
+      )
+    }()
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.inputpane.showing)
+    public lazy var showing : Event<TypedEventHandler<InputPane?, InputPaneVisibilityEventArgs?>> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._default else { return .init() }
+          return try! this.add_ShowingImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._default.remove_ShowingImpl($0)
+       }
+      )
+    }()
+
+    private lazy var _IInputPane2: __ABI_Windows_UI_ViewManagement.IInputPane2! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.inputpane.tryshow)
+    public func tryShow() throws -> Bool {
+        try _IInputPane2.TryShowImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.inputpane.tryhide)
+    public func tryHide() throws -> Bool {
+        try _IInputPane2.TryHideImpl()
+    }
+
+    private lazy var _IInputPaneControl: __ABI_Windows_UI_ViewManagement.IInputPaneControl! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.inputpane.visible)
+    public var visible : Bool {
+        get { try! _IInputPaneControl.get_VisibleImpl() }
+        set { try! _IInputPaneControl.put_VisibleImpl(newValue) }
+    }
+
+    deinit {
+        _default = nil
+        _IInputPane2 = nil
+        _IInputPaneControl = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.inputpanevisibilityeventargs)
+public final class InputPaneVisibilityEventArgs : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_UI_ViewManagement.IInputPaneVisibilityEventArgs
+    private typealias CABI = __x_ABI_CWindows_CUI_CViewManagement_CIInputPaneVisibilityEventArgs
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CUI_CViewManagement_CIInputPaneVisibilityEventArgs>?) -> InputPaneVisibilityEventArgs? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.inputpanevisibilityeventargs.ensuredfocusedelementinview)
+    public var ensuredFocusedElementInView : Bool {
+        get { try! _default.get_EnsuredFocusedElementInViewImpl() }
+        set { try! _default.put_EnsuredFocusedElementInViewImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.inputpanevisibilityeventargs.occludedrect)
+    public var occludedRect : WindowsFoundation.Rect {
+        get { try! _default.get_OccludedRectImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.projectionmanager)
+public final class ProjectionManager {
+    private static let _IProjectionManagerStatics: __ABI_Windows_UI_ViewManagement.IProjectionManagerStatics = try! RoGetActivationFactory(HString("Windows.UI.ViewManagement.ProjectionManager"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.projectionmanager.startprojectingasync)
+    public static func startProjectingAsync(_ projectionViewId: Int32, _ anchorViewId: Int32) -> WindowsFoundation.AnyIAsyncAction! {
+        return try! _IProjectionManagerStatics.StartProjectingAsyncImpl(projectionViewId, anchorViewId)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.projectionmanager.swapdisplaysforviewsasync)
+    public static func swapDisplaysForViewsAsync(_ projectionViewId: Int32, _ anchorViewId: Int32) -> WindowsFoundation.AnyIAsyncAction! {
+        return try! _IProjectionManagerStatics.SwapDisplaysForViewsAsyncImpl(projectionViewId, anchorViewId)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.projectionmanager.stopprojectingasync)
+    public static func stopProjectingAsync(_ projectionViewId: Int32, _ anchorViewId: Int32) -> WindowsFoundation.AnyIAsyncAction! {
+        return try! _IProjectionManagerStatics.StopProjectingAsyncImpl(projectionViewId, anchorViewId)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.projectionmanager.projectiondisplayavailable)
+    public static var projectionDisplayAvailable : Bool {
+        get { try! _IProjectionManagerStatics.get_ProjectionDisplayAvailableImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.projectionmanager.projectiondisplayavailablechanged)
+    public static var projectionDisplayAvailableChanged : Event<EventHandler<Any?>> = {
+      .init(
+        add: { try! _IProjectionManagerStatics.add_ProjectionDisplayAvailableChangedImpl($0) },
+        remove: { try? _IProjectionManagerStatics.remove_ProjectionDisplayAvailableChangedImpl($0) }
+      )
+    }()
+
+    private static let _IProjectionManagerStatics2: __ABI_Windows_UI_ViewManagement.IProjectionManagerStatics2 = try! RoGetActivationFactory(HString("Windows.UI.ViewManagement.ProjectionManager"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.projectionmanager.startprojectingasync)
+    public static func startProjectingAsync(_ projectionViewId: Int32, _ anchorViewId: Int32, _ displayDeviceInfo: UWP.DeviceInformation!) -> WindowsFoundation.AnyIAsyncAction! {
+        return try! _IProjectionManagerStatics2.StartProjectingWithDeviceInfoAsyncImpl(projectionViewId, anchorViewId, displayDeviceInfo)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.projectionmanager.requeststartprojectingasync)
+    public static func requestStartProjectingAsync(_ projectionViewId: Int32, _ anchorViewId: Int32, _ selection: WindowsFoundation.Rect) -> WindowsFoundation.AnyIAsyncOperation<Bool>! {
+        return try! _IProjectionManagerStatics2.RequestStartProjectingAsyncImpl(projectionViewId, anchorViewId, selection)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.projectionmanager.requeststartprojectingasync)
+    public static func requestStartProjectingAsync(_ projectionViewId: Int32, _ anchorViewId: Int32, _ selection: WindowsFoundation.Rect, _ prefferedPlacement: UWP.Placement) -> WindowsFoundation.AnyIAsyncOperation<Bool>! {
+        return try! _IProjectionManagerStatics2.RequestStartProjectingWithPlacementAsyncImpl(projectionViewId, anchorViewId, selection, prefferedPlacement)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.projectionmanager.getdeviceselector)
+    public static func getDeviceSelector() -> String {
+        return try! _IProjectionManagerStatics2.GetDeviceSelectorImpl()
+    }
+
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.statusbar)
+public final class StatusBar : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_UI_ViewManagement.IStatusBar
+    private typealias CABI = __x_ABI_CWindows_CUI_CViewManagement_CIStatusBar
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CUI_CViewManagement_CIStatusBar>?) -> StatusBar? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IStatusBarStatics: __ABI_Windows_UI_ViewManagement.IStatusBarStatics = try! RoGetActivationFactory(HString("Windows.UI.ViewManagement.StatusBar"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.statusbar.getforcurrentview)
+    public static func getForCurrentView() -> StatusBar! {
+        return try! _IStatusBarStatics.GetForCurrentViewImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.statusbar.showasync)
+    public func showAsync() throws -> WindowsFoundation.AnyIAsyncAction! {
+        try _default.ShowAsyncImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.statusbar.hideasync)
+    public func hideAsync() throws -> WindowsFoundation.AnyIAsyncAction! {
+        try _default.HideAsyncImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.statusbar.backgroundcolor)
+    public var backgroundColor : UWP.Color? {
+        get { try! _default.get_BackgroundColorImpl() }
+        set { try! _default.put_BackgroundColorImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.statusbar.backgroundopacity)
+    public var backgroundOpacity : Double {
+        get { try! _default.get_BackgroundOpacityImpl() }
+        set { try! _default.put_BackgroundOpacityImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.statusbar.foregroundcolor)
+    public var foregroundColor : UWP.Color? {
+        get { try! _default.get_ForegroundColorImpl() }
+        set { try! _default.put_ForegroundColorImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.statusbar.occludedrect)
+    public var occludedRect : WindowsFoundation.Rect {
+        get { try! _default.get_OccludedRectImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.statusbar.progressindicator)
+    public var progressIndicator : StatusBarProgressIndicator! {
+        get { try! _default.get_ProgressIndicatorImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.statusbar.hiding)
+    public lazy var hiding : Event<TypedEventHandler<StatusBar?, Any?>> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._default else { return .init() }
+          return try! this.add_HidingImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._default.remove_HidingImpl($0)
+       }
+      )
+    }()
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.statusbar.showing)
+    public lazy var showing : Event<TypedEventHandler<StatusBar?, Any?>> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._default else { return .init() }
+          return try! this.add_ShowingImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._default.remove_ShowingImpl($0)
+       }
+      )
+    }()
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.statusbarprogressindicator)
+public final class StatusBarProgressIndicator : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_UI_ViewManagement.IStatusBarProgressIndicator
+    private typealias CABI = __x_ABI_CWindows_CUI_CViewManagement_CIStatusBarProgressIndicator
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CUI_CViewManagement_CIStatusBarProgressIndicator>?) -> StatusBarProgressIndicator? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.statusbarprogressindicator.showasync)
+    public func showAsync() throws -> WindowsFoundation.AnyIAsyncAction! {
+        try _default.ShowAsyncImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.statusbarprogressindicator.hideasync)
+    public func hideAsync() throws -> WindowsFoundation.AnyIAsyncAction! {
+        try _default.HideAsyncImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.statusbarprogressindicator.progressvalue)
+    public var progressValue : Double? {
+        get { try! _default.get_ProgressValueImpl() }
+        set { try! _default.put_ProgressValueImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.statusbarprogressindicator.text)
+    public var text : String {
+        get { try! _default.get_TextImpl() }
+        set { try! _default.put_TextImpl(newValue) }
     }
 
     deinit {
@@ -263,6 +1236,181 @@ public final class UISettingsAutoHideScrollBarsChangedEventArgs : WinRTClass {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.uiviewsettings)
+public final class UIViewSettings : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_UI_ViewManagement.IUIViewSettings
+    private typealias CABI = __x_ABI_CWindows_CUI_CViewManagement_CIUIViewSettings
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CUI_CViewManagement_CIUIViewSettings>?) -> UIViewSettings? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IUIViewSettingsStatics: __ABI_Windows_UI_ViewManagement.IUIViewSettingsStatics = try! RoGetActivationFactory(HString("Windows.UI.ViewManagement.UIViewSettings"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.uiviewsettings.getforcurrentview)
+    public static func getForCurrentView() -> UIViewSettings! {
+        return try! _IUIViewSettingsStatics.GetForCurrentViewImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.uiviewsettings.userinteractionmode)
+    public var userInteractionMode : UserInteractionMode {
+        get { try! _default.get_UserInteractionModeImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.viewmodepreferences)
+public final class ViewModePreferences : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_UI_ViewManagement.IViewModePreferences
+    private typealias CABI = __x_ABI_CWindows_CUI_CViewManagement_CIViewModePreferences
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CUI_CViewManagement_CIViewModePreferences>?) -> ViewModePreferences? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IViewModePreferencesStatics: __ABI_Windows_UI_ViewManagement.IViewModePreferencesStatics = try! RoGetActivationFactory(HString("Windows.UI.ViewManagement.ViewModePreferences"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.viewmodepreferences.createdefault)
+    public static func createDefault(_ mode: ApplicationViewMode) -> ViewModePreferences! {
+        return try! _IViewModePreferencesStatics.CreateDefaultImpl(mode)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.viewmodepreferences.customsize)
+    public var customSize : WindowsFoundation.Size {
+        get { try! _default.get_CustomSizeImpl() }
+        set { try! _default.put_CustomSizeImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.viewmanagement.viewmodepreferences.viewsizepreference)
+    public var viewSizePreference : ViewSizePreference {
+        get { try! _default.get_ViewSizePreferenceImpl() }
+        set { try! _default.put_ViewSizePreferenceImpl(newValue) }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+extension UWP.ApplicationViewBoundsMode {
+    public static var useVisible : UWP.ApplicationViewBoundsMode {
+        __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewBoundsMode_UseVisible
+    }
+    public static var useCoreWindow : UWP.ApplicationViewBoundsMode {
+        __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewBoundsMode_UseCoreWindow
+    }
+}
+extension UWP.ApplicationViewBoundsMode: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.ApplicationViewMode {
+    public static var `default` : UWP.ApplicationViewMode {
+        __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewMode_Default
+    }
+    public static var compactOverlay : UWP.ApplicationViewMode {
+        __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewMode_CompactOverlay
+    }
+}
+extension UWP.ApplicationViewMode: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.ApplicationViewOrientation {
+    public static var landscape : UWP.ApplicationViewOrientation {
+        __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewOrientation_Landscape
+    }
+    public static var portrait : UWP.ApplicationViewOrientation {
+        __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewOrientation_Portrait
+    }
+}
+extension UWP.ApplicationViewOrientation: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.ApplicationViewState {
+    public static var fullScreenLandscape : UWP.ApplicationViewState {
+        __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewState_FullScreenLandscape
+    }
+    public static var filled : UWP.ApplicationViewState {
+        __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewState_Filled
+    }
+    public static var snapped : UWP.ApplicationViewState {
+        __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewState_Snapped
+    }
+    public static var fullScreenPortrait : UWP.ApplicationViewState {
+        __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewState_FullScreenPortrait
+    }
+}
+extension UWP.ApplicationViewState: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.ApplicationViewSwitchingOptions {
+    public static var `default` : UWP.ApplicationViewSwitchingOptions {
+        __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewSwitchingOptions_Default
+    }
+    public static var skipAnimation : UWP.ApplicationViewSwitchingOptions {
+        __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewSwitchingOptions_SkipAnimation
+    }
+    public static var consolidateViews : UWP.ApplicationViewSwitchingOptions {
+        __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewSwitchingOptions_ConsolidateViews
+    }
+}
+extension UWP.ApplicationViewSwitchingOptions: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.ApplicationViewWindowingMode {
+    public static var auto : UWP.ApplicationViewWindowingMode {
+        __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewWindowingMode_Auto
+    }
+    public static var preferredLaunchViewSize : UWP.ApplicationViewWindowingMode {
+        __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewWindowingMode_PreferredLaunchViewSize
+    }
+    public static var fullScreen : UWP.ApplicationViewWindowingMode {
+        __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewWindowingMode_FullScreen
+    }
+    public static var compactOverlay : UWP.ApplicationViewWindowingMode {
+        __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewWindowingMode_CompactOverlay
+    }
+    public static var maximized : UWP.ApplicationViewWindowingMode {
+        __x_ABI_CWindows_CUI_CViewManagement_CApplicationViewWindowingMode_Maximized
+    }
+}
+extension UWP.ApplicationViewWindowingMode: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.FullScreenSystemOverlayMode {
+    public static var standard : UWP.FullScreenSystemOverlayMode {
+        __x_ABI_CWindows_CUI_CViewManagement_CFullScreenSystemOverlayMode_Standard
+    }
+    public static var minimal : UWP.FullScreenSystemOverlayMode {
+        __x_ABI_CWindows_CUI_CViewManagement_CFullScreenSystemOverlayMode_Minimal
+    }
+}
+extension UWP.FullScreenSystemOverlayMode: @retroactive Hashable, @retroactive Codable {}
+
 extension UWP.HandPreference {
     public static var leftHanded : UWP.HandPreference {
         __x_ABI_CWindows_CUI_CViewManagement_CHandPreference_LeftHanded
@@ -388,6 +1536,16 @@ extension UWP.UIElementType {
     }
 }
 extension UWP.UIElementType: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.UserInteractionMode {
+    public static var mouse : UWP.UserInteractionMode {
+        __x_ABI_CWindows_CUI_CViewManagement_CUserInteractionMode_Mouse
+    }
+    public static var touch : UWP.UserInteractionMode {
+        __x_ABI_CWindows_CUI_CViewManagement_CUserInteractionMode_Touch
+    }
+}
+extension UWP.UserInteractionMode: @retroactive Hashable, @retroactive Codable {}
 
 extension UWP.ViewSizePreference {
     public static var `default` : UWP.ViewSizePreference {

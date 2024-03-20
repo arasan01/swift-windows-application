@@ -6,8 +6,101 @@ import CWinRT
 
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.annotationtype)
 public typealias AnnotationType = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAnnotationType
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationactiveend)
+public typealias AutomationActiveEnd = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationActiveEnd
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationanimationstyle)
+public typealias AutomationAnimationStyle = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationAnimationStyle
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationbulletstyle)
+public typealias AutomationBulletStyle = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationBulletStyle
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationcaretbidimode)
+public typealias AutomationCaretBidiMode = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationCaretBidiMode
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationcaretposition)
+public typealias AutomationCaretPosition = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationCaretPosition
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationflowdirections)
+public typealias AutomationFlowDirections = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationFlowDirections
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationoutlinestyles)
+public typealias AutomationOutlineStyles = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationOutlineStyles
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationstyleid)
+public typealias AutomationStyleId = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationStyleId
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationtextdecorationlinestyle)
+public typealias AutomationTextDecorationLineStyle = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationTextDecorationLineStyle
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationtexteditchangetype)
 public typealias AutomationTextEditChangeType = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationTextEditChangeType
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.dockposition)
+public typealias DockPosition = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CDockPosition
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.expandcollapsestate)
+public typealias ExpandCollapseState = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CExpandCollapseState
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.roworcolumnmajor)
+public typealias RowOrColumnMajor = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CRowOrColumnMajor
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.scrollamount)
+public typealias ScrollAmount = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CScrollAmount
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.supportedtextselection)
+public typealias SupportedTextSelection = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CSupportedTextSelection
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.synchronizedinputtype)
+public typealias SynchronizedInputType = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CSynchronizedInputType
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.togglestate)
+public typealias ToggleState = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CToggleState
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.windowinteractionstate)
+public typealias WindowInteractionState = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CWindowInteractionState
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.windowvisualstate)
+public typealias WindowVisualState = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CWindowVisualState
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.zoomunit)
+public typealias ZoomUnit = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CZoomUnit
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.annotationpatternidentifiers)
+public final class AnnotationPatternIdentifiers : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Automation.IAnnotationPatternIdentifiers
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAnnotationPatternIdentifiers
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAnnotationPatternIdentifiers>?) -> AnnotationPatternIdentifiers? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IAnnotationPatternIdentifiersStatics: __ABI_Microsoft_UI_Xaml_Automation.IAnnotationPatternIdentifiersStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Automation.AnnotationPatternIdentifiers"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.annotationpatternidentifiers.annotationtypeidproperty)
+    public static var annotationTypeIdProperty : AutomationProperty! {
+        get { try! _IAnnotationPatternIdentifiersStatics.get_AnnotationTypeIdPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.annotationpatternidentifiers.annotationtypenameproperty)
+    public static var annotationTypeNameProperty : AutomationProperty! {
+        get { try! _IAnnotationPatternIdentifiersStatics.get_AnnotationTypeNamePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.annotationpatternidentifiers.authorproperty)
+    public static var authorProperty : AutomationProperty! {
+        get { try! _IAnnotationPatternIdentifiersStatics.get_AuthorPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.annotationpatternidentifiers.datetimeproperty)
+    public static var dateTimeProperty : AutomationProperty! {
+        get { try! _IAnnotationPatternIdentifiersStatics.get_DateTimePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.annotationpatternidentifiers.targetproperty)
+    public static var targetProperty : AutomationProperty! {
+        get { try! _IAnnotationPatternIdentifiersStatics.get_TargetPropertyImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationannotation)
 public final class AutomationAnnotation : WinUI.DependencyObject {
     private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Automation.IAutomationAnnotation
@@ -66,6 +159,231 @@ public final class AutomationAnnotation : WinUI.DependencyObject {
     public var type : AnnotationType {
         get { try! _default.get_TypeImpl() }
         set { try! _default.put_TypeImpl(newValue) }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers)
+public final class AutomationElementIdentifiers : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Automation.IAutomationElementIdentifiers
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiers
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIAutomationElementIdentifiers>?) -> AutomationElementIdentifiers? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IAutomationElementIdentifiersStatics: __ABI_Microsoft_UI_Xaml_Automation.IAutomationElementIdentifiersStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Automation.AutomationElementIdentifiers"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.acceleratorkeyproperty)
+    public static var acceleratorKeyProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_AcceleratorKeyPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.accesskeyproperty)
+    public static var accessKeyProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_AccessKeyPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.annotationsproperty)
+    public static var annotationsProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_AnnotationsPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.automationidproperty)
+    public static var automationIdProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_AutomationIdPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.boundingrectangleproperty)
+    public static var boundingRectangleProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_BoundingRectanglePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.classnameproperty)
+    public static var classNameProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_ClassNamePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.clickablepointproperty)
+    public static var clickablePointProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_ClickablePointPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.controltypeproperty)
+    public static var controlTypeProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_ControlTypePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.controlledpeersproperty)
+    public static var controlledPeersProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_ControlledPeersPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.cultureproperty)
+    public static var cultureProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_CulturePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.describedbyproperty)
+    public static var describedByProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_DescribedByPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.flowsfromproperty)
+    public static var flowsFromProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_FlowsFromPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.flowstoproperty)
+    public static var flowsToProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_FlowsToPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.fulldescriptionproperty)
+    public static var fullDescriptionProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_FullDescriptionPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.haskeyboardfocusproperty)
+    public static var hasKeyboardFocusProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_HasKeyboardFocusPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.headinglevelproperty)
+    public static var headingLevelProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_HeadingLevelPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.helptextproperty)
+    public static var helpTextProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_HelpTextPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.iscontentelementproperty)
+    public static var isContentElementProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_IsContentElementPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.iscontrolelementproperty)
+    public static var isControlElementProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_IsControlElementPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.isdatavalidforformproperty)
+    public static var isDataValidForFormProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_IsDataValidForFormPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.isdialogproperty)
+    public static var isDialogProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_IsDialogPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.isenabledproperty)
+    public static var isEnabledProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_IsEnabledPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.iskeyboardfocusableproperty)
+    public static var isKeyboardFocusableProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_IsKeyboardFocusablePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.isoffscreenproperty)
+    public static var isOffscreenProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_IsOffscreenPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.ispasswordproperty)
+    public static var isPasswordProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_IsPasswordPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.isperipheralproperty)
+    public static var isPeripheralProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_IsPeripheralPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.isrequiredforformproperty)
+    public static var isRequiredForFormProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_IsRequiredForFormPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.itemstatusproperty)
+    public static var itemStatusProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_ItemStatusPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.itemtypeproperty)
+    public static var itemTypeProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_ItemTypePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.labeledbyproperty)
+    public static var labeledByProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_LabeledByPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.landmarktypeproperty)
+    public static var landmarkTypeProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_LandmarkTypePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.levelproperty)
+    public static var levelProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_LevelPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.livesettingproperty)
+    public static var liveSettingProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_LiveSettingPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.localizedcontroltypeproperty)
+    public static var localizedControlTypeProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_LocalizedControlTypePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.localizedlandmarktypeproperty)
+    public static var localizedLandmarkTypeProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_LocalizedLandmarkTypePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.nameproperty)
+    public static var nameProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_NamePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.orientationproperty)
+    public static var orientationProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_OrientationPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.positioninsetproperty)
+    public static var positionInSetProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_PositionInSetPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.automationelementidentifiers.sizeofsetproperty)
+    public static var sizeOfSetProperty : AutomationProperty! {
+        get { try! _IAutomationElementIdentifiersStatics.get_SizeOfSetPropertyImpl() }
     }
 
     deinit {
@@ -543,6 +861,926 @@ public final class AutomationProperty : WinRTClass {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.dockpatternidentifiers)
+public final class DockPatternIdentifiers : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Automation.IDockPatternIdentifiers
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDockPatternIdentifiers
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDockPatternIdentifiers>?) -> DockPatternIdentifiers? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IDockPatternIdentifiersStatics: __ABI_Microsoft_UI_Xaml_Automation.IDockPatternIdentifiersStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Automation.DockPatternIdentifiers"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.dockpatternidentifiers.dockpositionproperty)
+    public static var dockPositionProperty : AutomationProperty! {
+        get { try! _IDockPatternIdentifiersStatics.get_DockPositionPropertyImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.dragpatternidentifiers)
+public final class DragPatternIdentifiers : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Automation.IDragPatternIdentifiers
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDragPatternIdentifiers
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDragPatternIdentifiers>?) -> DragPatternIdentifiers? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IDragPatternIdentifiersStatics: __ABI_Microsoft_UI_Xaml_Automation.IDragPatternIdentifiersStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Automation.DragPatternIdentifiers"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.dragpatternidentifiers.dropeffectproperty)
+    public static var dropEffectProperty : AutomationProperty! {
+        get { try! _IDragPatternIdentifiersStatics.get_DropEffectPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.dragpatternidentifiers.dropeffectsproperty)
+    public static var dropEffectsProperty : AutomationProperty! {
+        get { try! _IDragPatternIdentifiersStatics.get_DropEffectsPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.dragpatternidentifiers.grabbeditemsproperty)
+    public static var grabbedItemsProperty : AutomationProperty! {
+        get { try! _IDragPatternIdentifiersStatics.get_GrabbedItemsPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.dragpatternidentifiers.isgrabbedproperty)
+    public static var isGrabbedProperty : AutomationProperty! {
+        get { try! _IDragPatternIdentifiersStatics.get_IsGrabbedPropertyImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.droptargetpatternidentifiers)
+public final class DropTargetPatternIdentifiers : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Automation.IDropTargetPatternIdentifiers
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDropTargetPatternIdentifiers
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIDropTargetPatternIdentifiers>?) -> DropTargetPatternIdentifiers? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IDropTargetPatternIdentifiersStatics: __ABI_Microsoft_UI_Xaml_Automation.IDropTargetPatternIdentifiersStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Automation.DropTargetPatternIdentifiers"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.droptargetpatternidentifiers.droptargeteffectproperty)
+    public static var dropTargetEffectProperty : AutomationProperty! {
+        get { try! _IDropTargetPatternIdentifiersStatics.get_DropTargetEffectPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.droptargetpatternidentifiers.droptargeteffectsproperty)
+    public static var dropTargetEffectsProperty : AutomationProperty! {
+        get { try! _IDropTargetPatternIdentifiersStatics.get_DropTargetEffectsPropertyImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.expandcollapsepatternidentifiers)
+public final class ExpandCollapsePatternIdentifiers : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Automation.IExpandCollapsePatternIdentifiers
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIExpandCollapsePatternIdentifiers
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIExpandCollapsePatternIdentifiers>?) -> ExpandCollapsePatternIdentifiers? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IExpandCollapsePatternIdentifiersStatics: __ABI_Microsoft_UI_Xaml_Automation.IExpandCollapsePatternIdentifiersStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Automation.ExpandCollapsePatternIdentifiers"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.expandcollapsepatternidentifiers.expandcollapsestateproperty)
+    public static var expandCollapseStateProperty : AutomationProperty! {
+        get { try! _IExpandCollapsePatternIdentifiersStatics.get_ExpandCollapseStatePropertyImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.griditempatternidentifiers)
+public final class GridItemPatternIdentifiers : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Automation.IGridItemPatternIdentifiers
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIGridItemPatternIdentifiers
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIGridItemPatternIdentifiers>?) -> GridItemPatternIdentifiers? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IGridItemPatternIdentifiersStatics: __ABI_Microsoft_UI_Xaml_Automation.IGridItemPatternIdentifiersStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Automation.GridItemPatternIdentifiers"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.griditempatternidentifiers.columnproperty)
+    public static var columnProperty : AutomationProperty! {
+        get { try! _IGridItemPatternIdentifiersStatics.get_ColumnPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.griditempatternidentifiers.columnspanproperty)
+    public static var columnSpanProperty : AutomationProperty! {
+        get { try! _IGridItemPatternIdentifiersStatics.get_ColumnSpanPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.griditempatternidentifiers.containinggridproperty)
+    public static var containingGridProperty : AutomationProperty! {
+        get { try! _IGridItemPatternIdentifiersStatics.get_ContainingGridPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.griditempatternidentifiers.rowproperty)
+    public static var rowProperty : AutomationProperty! {
+        get { try! _IGridItemPatternIdentifiersStatics.get_RowPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.griditempatternidentifiers.rowspanproperty)
+    public static var rowSpanProperty : AutomationProperty! {
+        get { try! _IGridItemPatternIdentifiersStatics.get_RowSpanPropertyImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.gridpatternidentifiers)
+public final class GridPatternIdentifiers : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Automation.IGridPatternIdentifiers
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIGridPatternIdentifiers
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIGridPatternIdentifiers>?) -> GridPatternIdentifiers? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IGridPatternIdentifiersStatics: __ABI_Microsoft_UI_Xaml_Automation.IGridPatternIdentifiersStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Automation.GridPatternIdentifiers"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.gridpatternidentifiers.columncountproperty)
+    public static var columnCountProperty : AutomationProperty! {
+        get { try! _IGridPatternIdentifiersStatics.get_ColumnCountPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.gridpatternidentifiers.rowcountproperty)
+    public static var rowCountProperty : AutomationProperty! {
+        get { try! _IGridPatternIdentifiersStatics.get_RowCountPropertyImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.multipleviewpatternidentifiers)
+public final class MultipleViewPatternIdentifiers : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Automation.IMultipleViewPatternIdentifiers
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIMultipleViewPatternIdentifiers
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIMultipleViewPatternIdentifiers>?) -> MultipleViewPatternIdentifiers? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IMultipleViewPatternIdentifiersStatics: __ABI_Microsoft_UI_Xaml_Automation.IMultipleViewPatternIdentifiersStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Automation.MultipleViewPatternIdentifiers"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.multipleviewpatternidentifiers.currentviewproperty)
+    public static var currentViewProperty : AutomationProperty! {
+        get { try! _IMultipleViewPatternIdentifiersStatics.get_CurrentViewPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.multipleviewpatternidentifiers.supportedviewsproperty)
+    public static var supportedViewsProperty : AutomationProperty! {
+        get { try! _IMultipleViewPatternIdentifiersStatics.get_SupportedViewsPropertyImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.rangevaluepatternidentifiers)
+public final class RangeValuePatternIdentifiers : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Automation.IRangeValuePatternIdentifiers
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIRangeValuePatternIdentifiers
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIRangeValuePatternIdentifiers>?) -> RangeValuePatternIdentifiers? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IRangeValuePatternIdentifiersStatics: __ABI_Microsoft_UI_Xaml_Automation.IRangeValuePatternIdentifiersStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Automation.RangeValuePatternIdentifiers"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.rangevaluepatternidentifiers.isreadonlyproperty)
+    public static var isReadOnlyProperty : AutomationProperty! {
+        get { try! _IRangeValuePatternIdentifiersStatics.get_IsReadOnlyPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.rangevaluepatternidentifiers.largechangeproperty)
+    public static var largeChangeProperty : AutomationProperty! {
+        get { try! _IRangeValuePatternIdentifiersStatics.get_LargeChangePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.rangevaluepatternidentifiers.maximumproperty)
+    public static var maximumProperty : AutomationProperty! {
+        get { try! _IRangeValuePatternIdentifiersStatics.get_MaximumPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.rangevaluepatternidentifiers.minimumproperty)
+    public static var minimumProperty : AutomationProperty! {
+        get { try! _IRangeValuePatternIdentifiersStatics.get_MinimumPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.rangevaluepatternidentifiers.smallchangeproperty)
+    public static var smallChangeProperty : AutomationProperty! {
+        get { try! _IRangeValuePatternIdentifiersStatics.get_SmallChangePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.rangevaluepatternidentifiers.valueproperty)
+    public static var valueProperty : AutomationProperty! {
+        get { try! _IRangeValuePatternIdentifiersStatics.get_ValuePropertyImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.scrollpatternidentifiers)
+public final class ScrollPatternIdentifiers : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Automation.IScrollPatternIdentifiers
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIScrollPatternIdentifiers
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIScrollPatternIdentifiers>?) -> ScrollPatternIdentifiers? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IScrollPatternIdentifiersStatics: __ABI_Microsoft_UI_Xaml_Automation.IScrollPatternIdentifiersStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Automation.ScrollPatternIdentifiers"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.scrollpatternidentifiers.horizontalscrollpercentproperty)
+    public static var horizontalScrollPercentProperty : AutomationProperty! {
+        get { try! _IScrollPatternIdentifiersStatics.get_HorizontalScrollPercentPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.scrollpatternidentifiers.horizontalviewsizeproperty)
+    public static var horizontalViewSizeProperty : AutomationProperty! {
+        get { try! _IScrollPatternIdentifiersStatics.get_HorizontalViewSizePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.scrollpatternidentifiers.horizontallyscrollableproperty)
+    public static var horizontallyScrollableProperty : AutomationProperty! {
+        get { try! _IScrollPatternIdentifiersStatics.get_HorizontallyScrollablePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.scrollpatternidentifiers.noscroll)
+    public static var noScroll : Double {
+        get { try! _IScrollPatternIdentifiersStatics.get_NoScrollImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.scrollpatternidentifiers.verticalscrollpercentproperty)
+    public static var verticalScrollPercentProperty : AutomationProperty! {
+        get { try! _IScrollPatternIdentifiersStatics.get_VerticalScrollPercentPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.scrollpatternidentifiers.verticalviewsizeproperty)
+    public static var verticalViewSizeProperty : AutomationProperty! {
+        get { try! _IScrollPatternIdentifiersStatics.get_VerticalViewSizePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.scrollpatternidentifiers.verticallyscrollableproperty)
+    public static var verticallyScrollableProperty : AutomationProperty! {
+        get { try! _IScrollPatternIdentifiersStatics.get_VerticallyScrollablePropertyImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.selectionitempatternidentifiers)
+public final class SelectionItemPatternIdentifiers : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Automation.ISelectionItemPatternIdentifiers
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CISelectionItemPatternIdentifiers
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CISelectionItemPatternIdentifiers>?) -> SelectionItemPatternIdentifiers? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _ISelectionItemPatternIdentifiersStatics: __ABI_Microsoft_UI_Xaml_Automation.ISelectionItemPatternIdentifiersStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Automation.SelectionItemPatternIdentifiers"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.selectionitempatternidentifiers.isselectedproperty)
+    public static var isSelectedProperty : AutomationProperty! {
+        get { try! _ISelectionItemPatternIdentifiersStatics.get_IsSelectedPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.selectionitempatternidentifiers.selectioncontainerproperty)
+    public static var selectionContainerProperty : AutomationProperty! {
+        get { try! _ISelectionItemPatternIdentifiersStatics.get_SelectionContainerPropertyImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.selectionpatternidentifiers)
+public final class SelectionPatternIdentifiers : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Automation.ISelectionPatternIdentifiers
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CISelectionPatternIdentifiers
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CISelectionPatternIdentifiers>?) -> SelectionPatternIdentifiers? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _ISelectionPatternIdentifiersStatics: __ABI_Microsoft_UI_Xaml_Automation.ISelectionPatternIdentifiersStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Automation.SelectionPatternIdentifiers"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.selectionpatternidentifiers.canselectmultipleproperty)
+    public static var canSelectMultipleProperty : AutomationProperty! {
+        get { try! _ISelectionPatternIdentifiersStatics.get_CanSelectMultiplePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.selectionpatternidentifiers.isselectionrequiredproperty)
+    public static var isSelectionRequiredProperty : AutomationProperty! {
+        get { try! _ISelectionPatternIdentifiersStatics.get_IsSelectionRequiredPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.selectionpatternidentifiers.selectionproperty)
+    public static var selectionProperty : AutomationProperty! {
+        get { try! _ISelectionPatternIdentifiersStatics.get_SelectionPropertyImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.spreadsheetitempatternidentifiers)
+public final class SpreadsheetItemPatternIdentifiers : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Automation.ISpreadsheetItemPatternIdentifiers
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CISpreadsheetItemPatternIdentifiers
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CISpreadsheetItemPatternIdentifiers>?) -> SpreadsheetItemPatternIdentifiers? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _ISpreadsheetItemPatternIdentifiersStatics: __ABI_Microsoft_UI_Xaml_Automation.ISpreadsheetItemPatternIdentifiersStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Automation.SpreadsheetItemPatternIdentifiers"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.spreadsheetitempatternidentifiers.formulaproperty)
+    public static var formulaProperty : AutomationProperty! {
+        get { try! _ISpreadsheetItemPatternIdentifiersStatics.get_FormulaPropertyImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.stylespatternidentifiers)
+public final class StylesPatternIdentifiers : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Automation.IStylesPatternIdentifiers
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIStylesPatternIdentifiers
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIStylesPatternIdentifiers>?) -> StylesPatternIdentifiers? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IStylesPatternIdentifiersStatics: __ABI_Microsoft_UI_Xaml_Automation.IStylesPatternIdentifiersStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Automation.StylesPatternIdentifiers"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.stylespatternidentifiers.extendedpropertiesproperty)
+    public static var extendedPropertiesProperty : AutomationProperty! {
+        get { try! _IStylesPatternIdentifiersStatics.get_ExtendedPropertiesPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.stylespatternidentifiers.fillcolorproperty)
+    public static var fillColorProperty : AutomationProperty! {
+        get { try! _IStylesPatternIdentifiersStatics.get_FillColorPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.stylespatternidentifiers.fillpatterncolorproperty)
+    public static var fillPatternColorProperty : AutomationProperty! {
+        get { try! _IStylesPatternIdentifiersStatics.get_FillPatternColorPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.stylespatternidentifiers.fillpatternstyleproperty)
+    public static var fillPatternStyleProperty : AutomationProperty! {
+        get { try! _IStylesPatternIdentifiersStatics.get_FillPatternStylePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.stylespatternidentifiers.shapeproperty)
+    public static var shapeProperty : AutomationProperty! {
+        get { try! _IStylesPatternIdentifiersStatics.get_ShapePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.stylespatternidentifiers.styleidproperty)
+    public static var styleIdProperty : AutomationProperty! {
+        get { try! _IStylesPatternIdentifiersStatics.get_StyleIdPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.stylespatternidentifiers.stylenameproperty)
+    public static var styleNameProperty : AutomationProperty! {
+        get { try! _IStylesPatternIdentifiersStatics.get_StyleNamePropertyImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.tableitempatternidentifiers)
+public final class TableItemPatternIdentifiers : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Automation.ITableItemPatternIdentifiers
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITableItemPatternIdentifiers
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITableItemPatternIdentifiers>?) -> TableItemPatternIdentifiers? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _ITableItemPatternIdentifiersStatics: __ABI_Microsoft_UI_Xaml_Automation.ITableItemPatternIdentifiersStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Automation.TableItemPatternIdentifiers"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.tableitempatternidentifiers.columnheaderitemsproperty)
+    public static var columnHeaderItemsProperty : AutomationProperty! {
+        get { try! _ITableItemPatternIdentifiersStatics.get_ColumnHeaderItemsPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.tableitempatternidentifiers.rowheaderitemsproperty)
+    public static var rowHeaderItemsProperty : AutomationProperty! {
+        get { try! _ITableItemPatternIdentifiersStatics.get_RowHeaderItemsPropertyImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.tablepatternidentifiers)
+public final class TablePatternIdentifiers : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Automation.ITablePatternIdentifiers
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITablePatternIdentifiers
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITablePatternIdentifiers>?) -> TablePatternIdentifiers? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _ITablePatternIdentifiersStatics: __ABI_Microsoft_UI_Xaml_Automation.ITablePatternIdentifiersStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Automation.TablePatternIdentifiers"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.tablepatternidentifiers.columnheadersproperty)
+    public static var columnHeadersProperty : AutomationProperty! {
+        get { try! _ITablePatternIdentifiersStatics.get_ColumnHeadersPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.tablepatternidentifiers.rowheadersproperty)
+    public static var rowHeadersProperty : AutomationProperty! {
+        get { try! _ITablePatternIdentifiersStatics.get_RowHeadersPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.tablepatternidentifiers.roworcolumnmajorproperty)
+    public static var rowOrColumnMajorProperty : AutomationProperty! {
+        get { try! _ITablePatternIdentifiersStatics.get_RowOrColumnMajorPropertyImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.togglepatternidentifiers)
+public final class TogglePatternIdentifiers : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Automation.ITogglePatternIdentifiers
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITogglePatternIdentifiers
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITogglePatternIdentifiers>?) -> TogglePatternIdentifiers? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _ITogglePatternIdentifiersStatics: __ABI_Microsoft_UI_Xaml_Automation.ITogglePatternIdentifiersStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Automation.TogglePatternIdentifiers"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.togglepatternidentifiers.togglestateproperty)
+    public static var toggleStateProperty : AutomationProperty! {
+        get { try! _ITogglePatternIdentifiersStatics.get_ToggleStatePropertyImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.transformpattern2identifiers)
+public final class TransformPattern2Identifiers : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Automation.ITransformPattern2Identifiers
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITransformPattern2Identifiers
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITransformPattern2Identifiers>?) -> TransformPattern2Identifiers? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _ITransformPattern2IdentifiersStatics: __ABI_Microsoft_UI_Xaml_Automation.ITransformPattern2IdentifiersStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Automation.TransformPattern2Identifiers"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.transformpattern2identifiers.canzoomproperty)
+    public static var canZoomProperty : AutomationProperty! {
+        get { try! _ITransformPattern2IdentifiersStatics.get_CanZoomPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.transformpattern2identifiers.maxzoomproperty)
+    public static var maxZoomProperty : AutomationProperty! {
+        get { try! _ITransformPattern2IdentifiersStatics.get_MaxZoomPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.transformpattern2identifiers.minzoomproperty)
+    public static var minZoomProperty : AutomationProperty! {
+        get { try! _ITransformPattern2IdentifiersStatics.get_MinZoomPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.transformpattern2identifiers.zoomlevelproperty)
+    public static var zoomLevelProperty : AutomationProperty! {
+        get { try! _ITransformPattern2IdentifiersStatics.get_ZoomLevelPropertyImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.transformpatternidentifiers)
+public final class TransformPatternIdentifiers : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Automation.ITransformPatternIdentifiers
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITransformPatternIdentifiers
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CITransformPatternIdentifiers>?) -> TransformPatternIdentifiers? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _ITransformPatternIdentifiersStatics: __ABI_Microsoft_UI_Xaml_Automation.ITransformPatternIdentifiersStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Automation.TransformPatternIdentifiers"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.transformpatternidentifiers.canmoveproperty)
+    public static var canMoveProperty : AutomationProperty! {
+        get { try! _ITransformPatternIdentifiersStatics.get_CanMovePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.transformpatternidentifiers.canresizeproperty)
+    public static var canResizeProperty : AutomationProperty! {
+        get { try! _ITransformPatternIdentifiersStatics.get_CanResizePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.transformpatternidentifiers.canrotateproperty)
+    public static var canRotateProperty : AutomationProperty! {
+        get { try! _ITransformPatternIdentifiersStatics.get_CanRotatePropertyImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.valuepatternidentifiers)
+public final class ValuePatternIdentifiers : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Automation.IValuePatternIdentifiers
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIValuePatternIdentifiers
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIValuePatternIdentifiers>?) -> ValuePatternIdentifiers? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IValuePatternIdentifiersStatics: __ABI_Microsoft_UI_Xaml_Automation.IValuePatternIdentifiersStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Automation.ValuePatternIdentifiers"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.valuepatternidentifiers.isreadonlyproperty)
+    public static var isReadOnlyProperty : AutomationProperty! {
+        get { try! _IValuePatternIdentifiersStatics.get_IsReadOnlyPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.valuepatternidentifiers.valueproperty)
+    public static var valueProperty : AutomationProperty! {
+        get { try! _IValuePatternIdentifiersStatics.get_ValuePropertyImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.windowpatternidentifiers)
+public final class WindowPatternIdentifiers : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Automation.IWindowPatternIdentifiers
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIWindowPatternIdentifiers
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CIWindowPatternIdentifiers>?) -> WindowPatternIdentifiers? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IWindowPatternIdentifiersStatics: __ABI_Microsoft_UI_Xaml_Automation.IWindowPatternIdentifiersStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Automation.WindowPatternIdentifiers"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.windowpatternidentifiers.canmaximizeproperty)
+    public static var canMaximizeProperty : AutomationProperty! {
+        get { try! _IWindowPatternIdentifiersStatics.get_CanMaximizePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.windowpatternidentifiers.canminimizeproperty)
+    public static var canMinimizeProperty : AutomationProperty! {
+        get { try! _IWindowPatternIdentifiersStatics.get_CanMinimizePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.windowpatternidentifiers.ismodalproperty)
+    public static var isModalProperty : AutomationProperty! {
+        get { try! _IWindowPatternIdentifiersStatics.get_IsModalPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.windowpatternidentifiers.istopmostproperty)
+    public static var isTopmostProperty : AutomationProperty! {
+        get { try! _IWindowPatternIdentifiersStatics.get_IsTopmostPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.windowpatternidentifiers.windowinteractionstateproperty)
+    public static var windowInteractionStateProperty : AutomationProperty! {
+        get { try! _IWindowPatternIdentifiersStatics.get_WindowInteractionStatePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.automation.windowpatternidentifiers.windowvisualstateproperty)
+    public static var windowVisualStateProperty : AutomationProperty! {
+        get { try! _IWindowPatternIdentifiersStatics.get_WindowVisualStatePropertyImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
 extension WinUI.AnnotationType {
     public static var unknown : WinUI.AnnotationType {
         __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAnnotationType_Unknown
@@ -616,6 +1854,240 @@ extension WinUI.AnnotationType {
 }
 extension WinUI.AnnotationType: @retroactive Hashable, @retroactive Codable {}
 
+extension WinUI.AutomationActiveEnd {
+    public static var none : WinUI.AutomationActiveEnd {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationActiveEnd_None
+    }
+    public static var start : WinUI.AutomationActiveEnd {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationActiveEnd_Start
+    }
+    public static var end : WinUI.AutomationActiveEnd {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationActiveEnd_End
+    }
+}
+extension WinUI.AutomationActiveEnd: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.AutomationAnimationStyle {
+    public static var none : WinUI.AutomationAnimationStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationAnimationStyle_None
+    }
+    public static var lasVegasLights : WinUI.AutomationAnimationStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationAnimationStyle_LasVegasLights
+    }
+    public static var blinkingBackground : WinUI.AutomationAnimationStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationAnimationStyle_BlinkingBackground
+    }
+    public static var sparkleText : WinUI.AutomationAnimationStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationAnimationStyle_SparkleText
+    }
+    public static var marchingBlackAnts : WinUI.AutomationAnimationStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationAnimationStyle_MarchingBlackAnts
+    }
+    public static var marchingRedAnts : WinUI.AutomationAnimationStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationAnimationStyle_MarchingRedAnts
+    }
+    public static var shimmer : WinUI.AutomationAnimationStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationAnimationStyle_Shimmer
+    }
+    public static var other : WinUI.AutomationAnimationStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationAnimationStyle_Other
+    }
+}
+extension WinUI.AutomationAnimationStyle: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.AutomationBulletStyle {
+    public static var none : WinUI.AutomationBulletStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationBulletStyle_None
+    }
+    public static var hollowRoundBullet : WinUI.AutomationBulletStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationBulletStyle_HollowRoundBullet
+    }
+    public static var filledRoundBullet : WinUI.AutomationBulletStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationBulletStyle_FilledRoundBullet
+    }
+    public static var hollowSquareBullet : WinUI.AutomationBulletStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationBulletStyle_HollowSquareBullet
+    }
+    public static var filledSquareBullet : WinUI.AutomationBulletStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationBulletStyle_FilledSquareBullet
+    }
+    public static var dashBullet : WinUI.AutomationBulletStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationBulletStyle_DashBullet
+    }
+    public static var other : WinUI.AutomationBulletStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationBulletStyle_Other
+    }
+}
+extension WinUI.AutomationBulletStyle: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.AutomationCaretBidiMode {
+    public static var ltr : WinUI.AutomationCaretBidiMode {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationCaretBidiMode_LTR
+    }
+    public static var rtl : WinUI.AutomationCaretBidiMode {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationCaretBidiMode_RTL
+    }
+}
+extension WinUI.AutomationCaretBidiMode: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.AutomationCaretPosition {
+    public static var unknown : WinUI.AutomationCaretPosition {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationCaretPosition_Unknown
+    }
+    public static var endOfLine : WinUI.AutomationCaretPosition {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationCaretPosition_EndOfLine
+    }
+    public static var beginningOfLine : WinUI.AutomationCaretPosition {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationCaretPosition_BeginningOfLine
+    }
+}
+extension WinUI.AutomationCaretPosition: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.AutomationFlowDirections {
+    public static var `default` : WinUI.AutomationFlowDirections {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationFlowDirections_Default
+    }
+    public static var rightToLeft : WinUI.AutomationFlowDirections {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationFlowDirections_RightToLeft
+    }
+    public static var bottomToTop : WinUI.AutomationFlowDirections {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationFlowDirections_BottomToTop
+    }
+    public static var vertical : WinUI.AutomationFlowDirections {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationFlowDirections_Vertical
+    }
+}
+extension WinUI.AutomationFlowDirections: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.AutomationOutlineStyles {
+    public static var none : WinUI.AutomationOutlineStyles {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationOutlineStyles_None
+    }
+    public static var outline : WinUI.AutomationOutlineStyles {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationOutlineStyles_Outline
+    }
+    public static var shadow : WinUI.AutomationOutlineStyles {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationOutlineStyles_Shadow
+    }
+    public static var engraved : WinUI.AutomationOutlineStyles {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationOutlineStyles_Engraved
+    }
+    public static var embossed : WinUI.AutomationOutlineStyles {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationOutlineStyles_Embossed
+    }
+}
+extension WinUI.AutomationOutlineStyles: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.AutomationStyleId {
+    public static var heading1 : WinUI.AutomationStyleId {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationStyleId_Heading1
+    }
+    public static var heading2 : WinUI.AutomationStyleId {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationStyleId_Heading2
+    }
+    public static var heading3 : WinUI.AutomationStyleId {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationStyleId_Heading3
+    }
+    public static var heading4 : WinUI.AutomationStyleId {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationStyleId_Heading4
+    }
+    public static var heading5 : WinUI.AutomationStyleId {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationStyleId_Heading5
+    }
+    public static var heading6 : WinUI.AutomationStyleId {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationStyleId_Heading6
+    }
+    public static var heading7 : WinUI.AutomationStyleId {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationStyleId_Heading7
+    }
+    public static var heading8 : WinUI.AutomationStyleId {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationStyleId_Heading8
+    }
+    public static var heading9 : WinUI.AutomationStyleId {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationStyleId_Heading9
+    }
+    public static var title : WinUI.AutomationStyleId {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationStyleId_Title
+    }
+    public static var subtitle : WinUI.AutomationStyleId {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationStyleId_Subtitle
+    }
+    public static var normal : WinUI.AutomationStyleId {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationStyleId_Normal
+    }
+    public static var emphasis : WinUI.AutomationStyleId {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationStyleId_Emphasis
+    }
+    public static var quote : WinUI.AutomationStyleId {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationStyleId_Quote
+    }
+    public static var bulletedList : WinUI.AutomationStyleId {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationStyleId_BulletedList
+    }
+}
+extension WinUI.AutomationStyleId: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.AutomationTextDecorationLineStyle {
+    public static var none : WinUI.AutomationTextDecorationLineStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationTextDecorationLineStyle_None
+    }
+    public static var single : WinUI.AutomationTextDecorationLineStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationTextDecorationLineStyle_Single
+    }
+    public static var wordsOnly : WinUI.AutomationTextDecorationLineStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationTextDecorationLineStyle_WordsOnly
+    }
+    public static var double : WinUI.AutomationTextDecorationLineStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationTextDecorationLineStyle_Double
+    }
+    public static var dot : WinUI.AutomationTextDecorationLineStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationTextDecorationLineStyle_Dot
+    }
+    public static var dash : WinUI.AutomationTextDecorationLineStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationTextDecorationLineStyle_Dash
+    }
+    public static var dashDot : WinUI.AutomationTextDecorationLineStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationTextDecorationLineStyle_DashDot
+    }
+    public static var dashDotDot : WinUI.AutomationTextDecorationLineStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationTextDecorationLineStyle_DashDotDot
+    }
+    public static var wavy : WinUI.AutomationTextDecorationLineStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationTextDecorationLineStyle_Wavy
+    }
+    public static var thickSingle : WinUI.AutomationTextDecorationLineStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationTextDecorationLineStyle_ThickSingle
+    }
+    public static var doubleWavy : WinUI.AutomationTextDecorationLineStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationTextDecorationLineStyle_DoubleWavy
+    }
+    public static var thickWavy : WinUI.AutomationTextDecorationLineStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationTextDecorationLineStyle_ThickWavy
+    }
+    public static var longDash : WinUI.AutomationTextDecorationLineStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationTextDecorationLineStyle_LongDash
+    }
+    public static var thickDash : WinUI.AutomationTextDecorationLineStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationTextDecorationLineStyle_ThickDash
+    }
+    public static var thickDashDot : WinUI.AutomationTextDecorationLineStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationTextDecorationLineStyle_ThickDashDot
+    }
+    public static var thickDashDotDot : WinUI.AutomationTextDecorationLineStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationTextDecorationLineStyle_ThickDashDotDot
+    }
+    public static var thickDot : WinUI.AutomationTextDecorationLineStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationTextDecorationLineStyle_ThickDot
+    }
+    public static var thickLongDash : WinUI.AutomationTextDecorationLineStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationTextDecorationLineStyle_ThickLongDash
+    }
+    public static var other : WinUI.AutomationTextDecorationLineStyle {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationTextDecorationLineStyle_Other
+    }
+}
+extension WinUI.AutomationTextDecorationLineStyle: @retroactive Hashable, @retroactive Codable {}
+
 extension WinUI.AutomationTextEditChangeType {
     public static var none : WinUI.AutomationTextEditChangeType {
         __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CAutomationTextEditChangeType_None
@@ -631,4 +2103,173 @@ extension WinUI.AutomationTextEditChangeType {
     }
 }
 extension WinUI.AutomationTextEditChangeType: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.DockPosition {
+    public static var top : WinUI.DockPosition {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CDockPosition_Top
+    }
+    public static var left : WinUI.DockPosition {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CDockPosition_Left
+    }
+    public static var bottom : WinUI.DockPosition {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CDockPosition_Bottom
+    }
+    public static var right : WinUI.DockPosition {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CDockPosition_Right
+    }
+    public static var fill : WinUI.DockPosition {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CDockPosition_Fill
+    }
+    public static var none : WinUI.DockPosition {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CDockPosition_None
+    }
+}
+extension WinUI.DockPosition: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.ExpandCollapseState {
+    public static var collapsed : WinUI.ExpandCollapseState {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CExpandCollapseState_Collapsed
+    }
+    public static var expanded : WinUI.ExpandCollapseState {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CExpandCollapseState_Expanded
+    }
+    public static var partiallyExpanded : WinUI.ExpandCollapseState {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CExpandCollapseState_PartiallyExpanded
+    }
+    public static var leafNode : WinUI.ExpandCollapseState {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CExpandCollapseState_LeafNode
+    }
+}
+extension WinUI.ExpandCollapseState: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.RowOrColumnMajor {
+    public static var rowMajor : WinUI.RowOrColumnMajor {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CRowOrColumnMajor_RowMajor
+    }
+    public static var columnMajor : WinUI.RowOrColumnMajor {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CRowOrColumnMajor_ColumnMajor
+    }
+    public static var indeterminate : WinUI.RowOrColumnMajor {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CRowOrColumnMajor_Indeterminate
+    }
+}
+extension WinUI.RowOrColumnMajor: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.ScrollAmount {
+    public static var largeDecrement : WinUI.ScrollAmount {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CScrollAmount_LargeDecrement
+    }
+    public static var smallDecrement : WinUI.ScrollAmount {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CScrollAmount_SmallDecrement
+    }
+    public static var noAmount : WinUI.ScrollAmount {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CScrollAmount_NoAmount
+    }
+    public static var largeIncrement : WinUI.ScrollAmount {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CScrollAmount_LargeIncrement
+    }
+    public static var smallIncrement : WinUI.ScrollAmount {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CScrollAmount_SmallIncrement
+    }
+}
+extension WinUI.ScrollAmount: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.SupportedTextSelection {
+    public static var none : WinUI.SupportedTextSelection {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CSupportedTextSelection_None
+    }
+    public static var single : WinUI.SupportedTextSelection {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CSupportedTextSelection_Single
+    }
+    public static var multiple : WinUI.SupportedTextSelection {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CSupportedTextSelection_Multiple
+    }
+}
+extension WinUI.SupportedTextSelection: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.SynchronizedInputType {
+    public static var keyUp : WinUI.SynchronizedInputType {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CSynchronizedInputType_KeyUp
+    }
+    public static var keyDown : WinUI.SynchronizedInputType {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CSynchronizedInputType_KeyDown
+    }
+    public static var leftMouseUp : WinUI.SynchronizedInputType {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CSynchronizedInputType_LeftMouseUp
+    }
+    public static var leftMouseDown : WinUI.SynchronizedInputType {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CSynchronizedInputType_LeftMouseDown
+    }
+    public static var rightMouseUp : WinUI.SynchronizedInputType {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CSynchronizedInputType_RightMouseUp
+    }
+    public static var rightMouseDown : WinUI.SynchronizedInputType {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CSynchronizedInputType_RightMouseDown
+    }
+}
+extension WinUI.SynchronizedInputType: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.ToggleState {
+    public static var off : WinUI.ToggleState {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CToggleState_Off
+    }
+    public static var on : WinUI.ToggleState {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CToggleState_On
+    }
+    public static var indeterminate : WinUI.ToggleState {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CToggleState_Indeterminate
+    }
+}
+extension WinUI.ToggleState: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.WindowInteractionState {
+    public static var running : WinUI.WindowInteractionState {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CWindowInteractionState_Running
+    }
+    public static var closing : WinUI.WindowInteractionState {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CWindowInteractionState_Closing
+    }
+    public static var readyForUserInteraction : WinUI.WindowInteractionState {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CWindowInteractionState_ReadyForUserInteraction
+    }
+    public static var blockedByModalWindow : WinUI.WindowInteractionState {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CWindowInteractionState_BlockedByModalWindow
+    }
+    public static var notResponding : WinUI.WindowInteractionState {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CWindowInteractionState_NotResponding
+    }
+}
+extension WinUI.WindowInteractionState: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.WindowVisualState {
+    public static var normal : WinUI.WindowVisualState {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CWindowVisualState_Normal
+    }
+    public static var maximized : WinUI.WindowVisualState {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CWindowVisualState_Maximized
+    }
+    public static var minimized : WinUI.WindowVisualState {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CWindowVisualState_Minimized
+    }
+}
+extension WinUI.WindowVisualState: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.ZoomUnit {
+    public static var noAmount : WinUI.ZoomUnit {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CZoomUnit_NoAmount
+    }
+    public static var largeDecrement : WinUI.ZoomUnit {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CZoomUnit_LargeDecrement
+    }
+    public static var smallDecrement : WinUI.ZoomUnit {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CZoomUnit_SmallDecrement
+    }
+    public static var largeIncrement : WinUI.ZoomUnit {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CZoomUnit_LargeIncrement
+    }
+    public static var smallIncrement : WinUI.ZoomUnit {
+        __x_ABI_CMicrosoft_CUI_CXaml_CAutomation_CZoomUnit_SmallIncrement
+    }
+}
+extension WinUI.ZoomUnit: @retroactive Hashable, @retroactive Codable {}
 

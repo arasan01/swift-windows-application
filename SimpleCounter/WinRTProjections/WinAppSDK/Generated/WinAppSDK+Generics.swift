@@ -56,6 +56,57 @@ internal class __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CMicrosoft_
         return handler
     }
 }
+private var IID___x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerMode: WindowsFoundation.IID {
+    .init(Data1: 0x897713ea, Data2: 0x1f95, Data3: 0x5c1b, Data4: ( 0xa2,0x4b,0x93,0x41,0xaa,0xbc,0x74,0x3a ))// 897713ea-1f95-5c1b-a24b-9341aabc743a
+}
+
+internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerMode {
+    static func makeAbi() -> CABI {
+        let vtblPtr = withUnsafeMutablePointer(to: &WinAppSDK.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeVTable) { $0 }
+        return .init(lpVtbl:vtblPtr)
+    }
+}
+
+internal var __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeVTable: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeVtbl = .init(
+    QueryInterface: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeWrapper.queryInterface($0, $1, $2) },
+    AddRef: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeWrapper.addRef($0) },
+    Release: { __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeWrapper.release($0) },
+    Invoke: {
+        guard let __unwrapped__instance = __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+        let asyncInfo: WindowsFoundation.AnyIAsyncOperation<WinAppSDK.EffectivePowerMode>? = WinAppSDK.__x_ABI_C__FIAsyncOperation_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeWrapper.unwrapFrom(abi: ComPtr($1))
+        let asyncStatus: WindowsFoundation.AsyncStatus = $2
+        __unwrapped__instance(asyncInfo, asyncStatus)
+        return S_OK
+    }
+)
+typealias __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeWrapper = InterfaceWrapperBase<WinAppSDK.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeBridge>
+internal class AsyncOperationCompletedHandlerEffectivePowerMode: WindowsFoundation.IUnknown {
+    override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerMode }
+
+    internal func InvokeImpl(_ asyncInfo: WindowsFoundation.AnyIAsyncOperation<WinAppSDK.EffectivePowerMode>?, _ asyncStatus: WindowsFoundation.AsyncStatus) throws {
+        let asyncInfoWrapper = WinAppSDK.__x_ABI_C__FIAsyncOperation_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeWrapper(asyncInfo)
+        let _asyncInfo = try! asyncInfoWrapper?.toABI { $0 }
+        _ = try perform(as: __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerMode.self) { pThis in
+            try CHECKED(pThis.pointee.lpVtbl.pointee.Invoke(pThis, _asyncInfo, asyncStatus))
+        }
+    }
+
+}
+
+internal class __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeBridge : WinRTDelegateBridge {
+    internal typealias Handler = WindowsFoundation.AsyncOperationCompletedHandler<WinAppSDK.EffectivePowerMode>
+    internal typealias CABI = __x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerMode
+    internal typealias SwiftABI = WinAppSDK.AsyncOperationCompletedHandlerEffectivePowerMode
+
+    internal static func from(abi: ComPtr<CABI>?) -> Handler? {
+        guard let abi = abi else { return nil }
+        let _default = SwiftABI(abi)
+        let handler: Handler = { (asyncInfo, asyncStatus) in
+            try! _default.InvokeImpl(asyncInfo, asyncStatus)
+        }
+        return handler
+    }
+}
 private var IID___x_ABI_C__FIIterable_1_float: WindowsFoundation.IID {
     .init(Data1: 0xb01bee51, Data2: 0x063a, Data3: 0x5fda, Data4: ( 0xbd,0x72,0xd7,0x66,0x37,0xbb,0x8c,0xb8 ))// b01bee51-063a-5fda-bd72-d76637bb8cb8
 }
@@ -7271,6 +7322,59 @@ fileprivate class __x_ABI_C__FIVector_1___x_ABI_CMicrosoft__CWindows__CAppLifecy
     public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? { nil }
 }
 
+private var IID___x_ABI_C__FIEventHandler_1_IInspectable: WindowsFoundation.IID {
+    .init(Data1: 0xc50898f6, Data2: 0xc536, Data3: 0x5f47, Data4: ( 0x85,0x83,0x8b,0x2c,0x24,0x38,0xa1,0x3b ))// c50898f6-c536-5f47-8583-8b2c2438a13b
+}
+
+internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FIEventHandler_1_IInspectable {
+    static func makeAbi() -> CABI {
+        let vtblPtr = withUnsafeMutablePointer(to: &WinAppSDK.__x_ABI_C__FIEventHandler_1_IInspectableVTable) { $0 }
+        return .init(lpVtbl:vtblPtr)
+    }
+}
+
+internal var __x_ABI_C__FIEventHandler_1_IInspectableVTable: __x_ABI_C__FIEventHandler_1_IInspectableVtbl = .init(
+    QueryInterface: { __x_ABI_C__FIEventHandler_1_IInspectableWrapper.queryInterface($0, $1, $2) },
+    AddRef: { __x_ABI_C__FIEventHandler_1_IInspectableWrapper.addRef($0) },
+    Release: { __x_ABI_C__FIEventHandler_1_IInspectableWrapper.release($0) },
+    Invoke: {
+        guard let __unwrapped__instance = __x_ABI_C__FIEventHandler_1_IInspectableWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+        let sender: Any? = __ABI_.AnyWrapper.unwrapFrom(abi: ComPtr($1))
+        let args: Any? = __ABI_.AnyWrapper.unwrapFrom(abi: ComPtr($2))
+        __unwrapped__instance(sender, args)
+        return S_OK
+    }
+)
+typealias __x_ABI_C__FIEventHandler_1_IInspectableWrapper = InterfaceWrapperBase<WinAppSDK.__x_ABI_C__FIEventHandler_1_IInspectableBridge>
+internal class EventHandlerAny: WindowsFoundation.IUnknown {
+    override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIEventHandler_1_IInspectable }
+
+    internal func InvokeImpl(_ sender: Any?, _ args: Any?) throws {
+        let senderWrapper = __ABI_.AnyWrapper(sender)
+        let _sender = try! senderWrapper?.toABI { $0 }
+        let argsWrapper = __ABI_.AnyWrapper(args)
+        let _args = try! argsWrapper?.toABI { $0 }
+        _ = try perform(as: __x_ABI_C__FIEventHandler_1_IInspectable.self) { pThis in
+            try CHECKED(pThis.pointee.lpVtbl.pointee.Invoke(pThis, _sender, _args))
+        }
+    }
+
+}
+
+internal class __x_ABI_C__FIEventHandler_1_IInspectableBridge : WinRTDelegateBridge {
+    internal typealias Handler = WindowsFoundation.EventHandler<Any?>
+    internal typealias CABI = __x_ABI_C__FIEventHandler_1_IInspectable
+    internal typealias SwiftABI = WinAppSDK.EventHandlerAny
+
+    internal static func from(abi: ComPtr<CABI>?) -> Handler? {
+        guard let abi = abi else { return nil }
+        let _default = SwiftABI(abi)
+        let handler: Handler = { (sender, args) in
+            try! _default.InvokeImpl(sender, args)
+        }
+        return handler
+    }
+}
 private var IID___x_ABI_C__FIEventHandler_1___x_ABI_CMicrosoft__CWindows__CAppLifecycle__CAppActivationArguments: WindowsFoundation.IID {
     .init(Data1: 0x37d74b33, Data2: 0x9510, Data3: 0x5748, Data4: ( 0xb3,0x3d,0x46,0x76,0xee,0x2b,0x48,0xa7 ))// 37d74b33-9510-5748-b33d-4676ee2b48a7
 }
@@ -7443,6 +7547,158 @@ fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CMicrosoft__CUI__CCompos
 
     /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1.completed)
     fileprivate var completed : AsyncOperationCompletedHandler<WinAppSDK.AnyICompositionSurface?>? {
+        get { try! _default.get_CompletedImpl() }
+        set { try! _default.put_CompletedImpl(newValue) }
+    }
+
+    private lazy var _IAsyncInfo: __ABI_Windows_Foundation.IAsyncInfo! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1.cancel)
+    fileprivate func cancel() throws {
+        try _IAsyncInfo.CancelImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1.close)
+    fileprivate func close() throws {
+        try _IAsyncInfo.CloseImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1.errorcode)
+    fileprivate var errorCode : HRESULT {
+        get { try! _IAsyncInfo.get_ErrorCodeImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1.id)
+    fileprivate var id : UInt32 {
+        get { try! _IAsyncInfo.get_IdImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1.status)
+    fileprivate var status : WindowsFoundation.AsyncStatus {
+        get { try! _IAsyncInfo.get_StatusImpl() }
+    }
+
+    public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? { nil }
+}
+
+private var IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerMode: WindowsFoundation.IID {
+    .init(Data1: 0xc4dc524f, Data2: 0x9095, Data3: 0x56f2, Data4: ( 0x9a,0xcf,0xe1,0x0f,0xfa,0x60,0x0f,0xcb ))// c4dc524f-9095-56f2-9acf-e10ffa600fcb
+}
+
+internal var __x_ABI_C__FIAsyncOperation_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeVTable: __x_ABI_C__FIAsyncOperation_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeVtbl = .init(
+    QueryInterface: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeWrapper.queryInterface($0, $1, $2) },
+    AddRef: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeWrapper.addRef($0) },
+    Release: { __x_ABI_C__FIAsyncOperation_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeWrapper.release($0) },
+    GetIids: {
+        let size = MemoryLayout<WindowsFoundation.IID>.size
+        let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+        iids[0] = IUnknown.IID
+        iids[1] = IInspectable.IID
+        iids[2] = WinAppSDK.__x_ABI_C__FIAsyncOperation_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeWrapper.IID
+        iids[3] = __ABI_Windows_Foundation.IAsyncInfoWrapper.IID
+        $1!.pointee = 4
+        $2!.pointee = iids
+        return S_OK
+    },
+
+    GetRuntimeClassName: {
+        _ = $0
+        let hstring = try! HString("Windows.Foundation.IAsyncOperation`1<Microsoft.Windows.System.Power.EffectivePowerMode>").detach()
+        $1!.pointee = hstring
+        return S_OK
+    },
+
+    GetTrustLevel: {
+        _ = $0
+        $1!.pointee = TrustLevel(rawValue: 0)
+        return S_OK
+    },
+
+    put_Completed: {
+        guard let __unwrapped__instance = __x_ABI_C__FIAsyncOperation_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+        guard let handler = WinAppSDK.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeWrapper.unwrapFrom(abi: ComPtr($1)) else { return E_INVALIDARG }
+        __unwrapped__instance.completed = handler
+        return S_OK
+    },
+
+    get_Completed: {
+        guard let __unwrapped__instance = __x_ABI_C__FIAsyncOperation_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+        let result = __unwrapped__instance.completed
+        let resultWrapper = WinAppSDK.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeWrapper(result)
+        resultWrapper?.copyTo($1)
+        return S_OK
+    },
+
+    GetResults: {
+        do {
+            guard let __unwrapped__instance = __x_ABI_C__FIAsyncOperation_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let result = try __unwrapped__instance.getResults()
+            $1?.initialize(to: result)
+            return S_OK
+        } catch { return failWith(err: E_FAIL) } 
+    }
+)
+typealias __x_ABI_C__FIAsyncOperation_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeWrapper = InterfaceWrapperBase<WinAppSDK.__x_ABI_C__FIAsyncOperation_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeBridge>
+internal class IAsyncOperationEffectivePowerMode: WindowsFoundation.IInspectable {
+    override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FIAsyncOperation_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerMode }
+
+    internal func put_CompletedImpl(_ handler: AsyncOperationCompletedHandler<WinAppSDK.EffectivePowerMode>?) throws {
+        let handlerWrapper = WinAppSDK.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeWrapper(handler)
+        let _handler = try! handlerWrapper?.toABI { $0 }
+        _ = try perform(as: __x_ABI_C__FIAsyncOperation_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerMode.self) { pThis in
+            try CHECKED(pThis.pointee.lpVtbl.pointee.put_Completed(pThis, _handler))
+        }
+    }
+
+    internal func get_CompletedImpl() throws -> AsyncOperationCompletedHandler<WinAppSDK.EffectivePowerMode>? {
+        let (result) = try ComPtrs.initialize { resultAbi in
+            _ = try perform(as: __x_ABI_C__FIAsyncOperation_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerMode.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Completed(pThis, &resultAbi))
+            }
+        }
+        return WinAppSDK.__x_ABI_C__FIAsyncOperationCompletedHandler_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeWrapper.unwrapFrom(abi: result)
+    }
+
+    internal func GetResultsImpl() throws -> WinAppSDK.EffectivePowerMode {
+        var result: __x_ABI_CMicrosoft_CWindows_CSystem_CPower_CEffectivePowerMode = .init(0)
+        _ = try perform(as: __x_ABI_C__FIAsyncOperation_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerMode.self) { pThis in
+            try CHECKED(pThis.pointee.lpVtbl.pointee.GetResults(pThis, &result))
+        }
+        return result
+    }
+
+}
+
+internal enum __x_ABI_C__FIAsyncOperation_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeBridge : AbiInterfaceBridge {
+    internal typealias CABI = __x_ABI_C__FIAsyncOperation_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerMode
+    internal typealias SwiftABI = IAsyncOperationEffectivePowerMode
+    internal typealias SwiftProjection = WindowsFoundation.AnyIAsyncOperation<WinAppSDK.EffectivePowerMode>
+    internal static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+        guard let abi = abi else { return nil }
+        return __x_ABI_C__FIAsyncOperation_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeImpl(abi)
+    }
+
+    internal static func makeAbi() -> CABI {
+        let vtblPtr = withUnsafeMutablePointer(to: &__x_ABI_C__FIAsyncOperation_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeVTable) { $0 }
+        return .init(lpVtbl: vtblPtr)
+    }
+}
+
+fileprivate class __x_ABI_C__FIAsyncOperation_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeImpl : IAsyncOperation, AbiInterfaceImpl {
+    typealias TResult = WinAppSDK.EffectivePowerMode
+    typealias Bridge = __x_ABI_C__FIAsyncOperation_1___x_ABI_CMicrosoft__CWindows__CSystem__CPower__CEffectivePowerModeBridge
+    let _default: Bridge.SwiftABI
+    init(_ fromAbi: ComPtr<Bridge.CABI>) {
+        _default = Bridge.SwiftABI(fromAbi)
+    }
+
+    // MARK: WinRT
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1.getresults)
+    fileprivate func getResults() throws -> WinAppSDK.EffectivePowerMode {
+        try _default.GetResultsImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.foundation.iasyncoperation-1.completed)
+    fileprivate var completed : AsyncOperationCompletedHandler<WinAppSDK.EffectivePowerMode>? {
         get { try! _default.get_CompletedImpl() }
         set { try! _default.put_CompletedImpl(newValue) }
     }
@@ -8214,6 +8470,55 @@ internal class __x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CConten
     internal typealias Handler = WindowsFoundation.TypedEventHandler<WinAppSDK.ContentIslandEnvironment?, WinAppSDK.ContentEnvironmentStateChangedEventArgs?>
     internal typealias CABI = __x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CContent__CContentIslandEnvironment___x_ABI_CMicrosoft__CUI__CContent__CContentEnvironmentStateChangedEventArgs
     internal typealias SwiftABI = WinAppSDK.TypedEventHandlerContentIslandEnvironment_ContentEnvironmentStateChangedEventArgs
+
+    internal static func from(abi: ComPtr<CABI>?) -> Handler? {
+        guard let abi = abi else { return nil }
+        let _default = SwiftABI(abi)
+        let handler: Handler = { (sender, args) in
+            try! _default.InvokeImpl(sender, args)
+        }
+        return handler
+    }
+}
+private var IID___x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CContent__CContentSite___x_ABI_CMicrosoft__CUI__CContent__CContentSiteRequestedStateChangedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0xb34e5337, Data2: 0x73e6, Data3: 0x5227, Data4: ( 0x89,0x21,0x63,0x21,0xee,0xa3,0x2a,0x9b ))// b34e5337-73e6-5227-8921-6321eea32a9b
+}
+
+internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CContent__CContentSite___x_ABI_CMicrosoft__CUI__CContent__CContentSiteRequestedStateChangedEventArgs {
+    static func makeAbi() -> CABI {
+        let vtblPtr = withUnsafeMutablePointer(to: &WinAppSDK.__x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CContent__CContentSite___x_ABI_CMicrosoft__CUI__CContent__CContentSiteRequestedStateChangedEventArgsVTable) { $0 }
+        return .init(lpVtbl:vtblPtr)
+    }
+}
+
+internal var __x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CContent__CContentSite___x_ABI_CMicrosoft__CUI__CContent__CContentSiteRequestedStateChangedEventArgsVTable: __x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CContent__CContentSite___x_ABI_CMicrosoft__CUI__CContent__CContentSiteRequestedStateChangedEventArgsVtbl = .init(
+    QueryInterface: { __x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CContent__CContentSite___x_ABI_CMicrosoft__CUI__CContent__CContentSiteRequestedStateChangedEventArgsWrapper.queryInterface($0, $1, $2) },
+    AddRef: { __x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CContent__CContentSite___x_ABI_CMicrosoft__CUI__CContent__CContentSiteRequestedStateChangedEventArgsWrapper.addRef($0) },
+    Release: { __x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CContent__CContentSite___x_ABI_CMicrosoft__CUI__CContent__CContentSiteRequestedStateChangedEventArgsWrapper.release($0) },
+    Invoke: {
+        guard let __unwrapped__instance = __x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CContent__CContentSite___x_ABI_CMicrosoft__CUI__CContent__CContentSiteRequestedStateChangedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+        let sender: WinAppSDK.ContentSite? = .from(abi: ComPtr($1))
+        let args: WinAppSDK.ContentSiteRequestedStateChangedEventArgs? = .from(abi: ComPtr($2))
+        __unwrapped__instance(sender, args)
+        return S_OK
+    }
+)
+typealias __x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CContent__CContentSite___x_ABI_CMicrosoft__CUI__CContent__CContentSiteRequestedStateChangedEventArgsWrapper = InterfaceWrapperBase<WinAppSDK.__x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CContent__CContentSite___x_ABI_CMicrosoft__CUI__CContent__CContentSiteRequestedStateChangedEventArgsBridge>
+internal class TypedEventHandlerContentSite_ContentSiteRequestedStateChangedEventArgs: WindowsFoundation.IUnknown {
+    override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CContent__CContentSite___x_ABI_CMicrosoft__CUI__CContent__CContentSiteRequestedStateChangedEventArgs }
+
+    internal func InvokeImpl(_ sender: WinAppSDK.ContentSite?, _ args: WinAppSDK.ContentSiteRequestedStateChangedEventArgs?) throws {
+        _ = try perform(as: __x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CContent__CContentSite___x_ABI_CMicrosoft__CUI__CContent__CContentSiteRequestedStateChangedEventArgs.self) { pThis in
+            try CHECKED(pThis.pointee.lpVtbl.pointee.Invoke(pThis, RawPointer(sender), RawPointer(args)))
+        }
+    }
+
+}
+
+internal class __x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CContent__CContentSite___x_ABI_CMicrosoft__CUI__CContent__CContentSiteRequestedStateChangedEventArgsBridge : WinRTDelegateBridge {
+    internal typealias Handler = WindowsFoundation.TypedEventHandler<WinAppSDK.ContentSite?, WinAppSDK.ContentSiteRequestedStateChangedEventArgs?>
+    internal typealias CABI = __x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CContent__CContentSite___x_ABI_CMicrosoft__CUI__CContent__CContentSiteRequestedStateChangedEventArgs
+    internal typealias SwiftABI = WinAppSDK.TypedEventHandlerContentSite_ContentSiteRequestedStateChangedEventArgs
 
     internal static func from(abi: ComPtr<CABI>?) -> Handler? {
         guard let abi = abi else { return nil }
@@ -9394,6 +9699,57 @@ internal class __x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CInput_
     internal typealias Handler = WindowsFoundation.TypedEventHandler<WinAppSDK.InputPointerSource?, WinAppSDK.PointerEventArgs?>
     internal typealias CABI = __x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CInput__CInputPointerSource___x_ABI_CMicrosoft__CUI__CInput__CPointerEventArgs
     internal typealias SwiftABI = WinAppSDK.TypedEventHandlerInputPointerSource_PointerEventArgs
+
+    internal static func from(abi: ComPtr<CABI>?) -> Handler? {
+        guard let abi = abi else { return nil }
+        let _default = SwiftABI(abi)
+        let handler: Handler = { (sender, args) in
+            try! _default.InvokeImpl(sender, args)
+        }
+        return handler
+    }
+}
+private var IID___x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CSystem__CThemeSettings_IInspectable: WindowsFoundation.IID {
+    .init(Data1: 0xad8a8846, Data2: 0x17ae, Data3: 0x57e3, Data4: ( 0xa2,0x45,0x8f,0x5a,0x77,0xa5,0xec,0xf9 ))// ad8a8846-17ae-57e3-a245-8f5a77a5ecf9
+}
+
+internal extension WinRTDelegateBridge where CABI == __x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CSystem__CThemeSettings_IInspectable {
+    static func makeAbi() -> CABI {
+        let vtblPtr = withUnsafeMutablePointer(to: &WinAppSDK.__x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CSystem__CThemeSettings_IInspectableVTable) { $0 }
+        return .init(lpVtbl:vtblPtr)
+    }
+}
+
+internal var __x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CSystem__CThemeSettings_IInspectableVTable: __x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CSystem__CThemeSettings_IInspectableVtbl = .init(
+    QueryInterface: { __x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CSystem__CThemeSettings_IInspectableWrapper.queryInterface($0, $1, $2) },
+    AddRef: { __x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CSystem__CThemeSettings_IInspectableWrapper.addRef($0) },
+    Release: { __x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CSystem__CThemeSettings_IInspectableWrapper.release($0) },
+    Invoke: {
+        guard let __unwrapped__instance = __x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CSystem__CThemeSettings_IInspectableWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+        let sender: WinAppSDK.ThemeSettings? = .from(abi: ComPtr($1))
+        let args: Any? = __ABI_.AnyWrapper.unwrapFrom(abi: ComPtr($2))
+        __unwrapped__instance(sender, args)
+        return S_OK
+    }
+)
+typealias __x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CSystem__CThemeSettings_IInspectableWrapper = InterfaceWrapperBase<WinAppSDK.__x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CSystem__CThemeSettings_IInspectableBridge>
+internal class TypedEventHandlerThemeSettings_Any: WindowsFoundation.IUnknown {
+    override public class var IID: WindowsFoundation.IID { IID___x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CSystem__CThemeSettings_IInspectable }
+
+    internal func InvokeImpl(_ sender: WinAppSDK.ThemeSettings?, _ args: Any?) throws {
+        let argsWrapper = __ABI_.AnyWrapper(args)
+        let _args = try! argsWrapper?.toABI { $0 }
+        _ = try perform(as: __x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CSystem__CThemeSettings_IInspectable.self) { pThis in
+            try CHECKED(pThis.pointee.lpVtbl.pointee.Invoke(pThis, RawPointer(sender), _args))
+        }
+    }
+
+}
+
+internal class __x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CSystem__CThemeSettings_IInspectableBridge : WinRTDelegateBridge {
+    internal typealias Handler = WindowsFoundation.TypedEventHandler<WinAppSDK.ThemeSettings?, Any?>
+    internal typealias CABI = __x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CSystem__CThemeSettings_IInspectable
+    internal typealias SwiftABI = WinAppSDK.TypedEventHandlerThemeSettings_Any
 
     internal static func from(abi: ComPtr<CABI>?) -> Handler? {
         guard let abi = abi else { return nil }

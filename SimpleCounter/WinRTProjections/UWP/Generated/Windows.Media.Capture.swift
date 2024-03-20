@@ -10,6 +10,107 @@ public typealias MediaCategory = __x_ABI_CWindows_CMedia_CCapture_CMediaCategory
 public typealias MediaStreamType = __x_ABI_CWindows_CMedia_CCapture_CMediaStreamType
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.capture.powerlinefrequency)
 public typealias PowerlineFrequency = __x_ABI_CWindows_CMedia_CCapture_CPowerlineFrequency
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.capture.capturedframecontrolvalues)
+public final class CapturedFrameControlValues : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_Media_Capture.ICapturedFrameControlValues
+    private typealias CABI = __x_ABI_CWindows_CMedia_CCapture_CICapturedFrameControlValues
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CCapture_CICapturedFrameControlValues>?) -> CapturedFrameControlValues? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.capture.capturedframecontrolvalues.exposure)
+    public var exposure : WindowsFoundation.TimeSpan? {
+        get { try! _default.get_ExposureImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.capture.capturedframecontrolvalues.exposurecompensation)
+    public var exposureCompensation : Float? {
+        get { try! _default.get_ExposureCompensationImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.capture.capturedframecontrolvalues.flashpowerpercent)
+    public var flashPowerPercent : Float? {
+        get { try! _default.get_FlashPowerPercentImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.capture.capturedframecontrolvalues.flashed)
+    public var flashed : Bool? {
+        get { try! _default.get_FlashedImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.capture.capturedframecontrolvalues.focus)
+    public var focus : UInt32? {
+        get { try! _default.get_FocusImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.capture.capturedframecontrolvalues.isospeed)
+    public var isoSpeed : UInt32? {
+        get { try! _default.get_IsoSpeedImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.capture.capturedframecontrolvalues.scenemode)
+    public var sceneMode : UWP.CaptureSceneMode? {
+        get { try! _default.get_SceneModeImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.capture.capturedframecontrolvalues.whitebalance)
+    public var whiteBalance : UInt32? {
+        get { try! _default.get_WhiteBalanceImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.capture.capturedframecontrolvalues.zoomfactor)
+    public var zoomFactor : Float? {
+        get { try! _default.get_ZoomFactorImpl() }
+    }
+
+    private lazy var _ICapturedFrameControlValues2: __ABI_Windows_Media_Capture.ICapturedFrameControlValues2! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.capture.capturedframecontrolvalues.focusstate)
+    public var focusState : UWP.MediaCaptureFocusState? {
+        get { try! _ICapturedFrameControlValues2.get_FocusStateImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.capture.capturedframecontrolvalues.isoanaloggain)
+    public var isoAnalogGain : Double? {
+        get { try! _ICapturedFrameControlValues2.get_IsoAnalogGainImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.capture.capturedframecontrolvalues.isodigitalgain)
+    public var isoDigitalGain : Double? {
+        get { try! _ICapturedFrameControlValues2.get_IsoDigitalGainImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.capture.capturedframecontrolvalues.sensorframerate)
+    public var sensorFrameRate : UWP.MediaRatio! {
+        get { try! _ICapturedFrameControlValues2.get_SensorFrameRateImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.capture.capturedframecontrolvalues.whitebalancegain)
+    public var whiteBalanceGain : WhiteBalanceGain? {
+        get { try! _ICapturedFrameControlValues2.get_WhiteBalanceGainImpl() }
+    }
+
+    deinit {
+        _default = nil
+        _ICapturedFrameControlValues2 = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.capture.mediacapturevideoprofilemediadescription)
 public final class MediaCaptureVideoProfileMediaDescription : WinRTClass {
     private typealias SwiftABI = __ABI_Windows_Media_Capture.IMediaCaptureVideoProfileMediaDescription
@@ -73,6 +174,64 @@ public final class MediaCaptureVideoProfileMediaDescription : WinRTClass {
     deinit {
         _default = nil
         _IMediaCaptureVideoProfileMediaDescription2 = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.capture.videostreamconfiguration)
+public final class VideoStreamConfiguration : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_Media_Capture.IVideoStreamConfiguration
+    private typealias CABI = __x_ABI_CWindows_CMedia_CCapture_CIVideoStreamConfiguration
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CCapture_CIVideoStreamConfiguration>?) -> VideoStreamConfiguration? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.capture.videostreamconfiguration.inputproperties)
+    public var inputProperties : UWP.VideoEncodingProperties! {
+        get { try! _default.get_InputPropertiesImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.capture.videostreamconfiguration.outputproperties)
+    public var outputProperties : UWP.VideoEncodingProperties! {
+        get { try! _default.get_OutputPropertiesImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.capture.whitebalancegain)
+public struct WhiteBalanceGain: Hashable, Codable {
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.capture.whitebalancegain.r)
+    public var r: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.capture.whitebalancegain.g)
+    public var g: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.capture.whitebalancegain.b)
+    public var b: Double = 0.0
+    public init() {}
+    public init(r: Double, g: Double, b: Double) {
+        self.r = r
+        self.g = g
+        self.b = b
+    }
+    public static func from(abi: __x_ABI_CWindows_CMedia_CCapture_CWhiteBalanceGain) -> WhiteBalanceGain {
+        .init(r: abi.R, g: abi.G, b: abi.B)
     }
 }
 

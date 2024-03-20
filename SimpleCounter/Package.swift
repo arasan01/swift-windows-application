@@ -54,7 +54,7 @@ let targets: [Target] = [
             "Born",
             .product(name: "WinUI", package: "WinRTProjections"),
             .product(name: "WinAppSDK", package: "WinRTProjections"),
-            .product(name: "WindowsFoundation", package: "WinRTProjections"),
+            .product(name: "WindowsFoundation", package: "WinRTProjections")
         ],
         path: "Apps/Windows",
         linkerSettings: GUILinkerSettings

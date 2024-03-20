@@ -4,6 +4,14 @@ import Foundation
 @_spi(WinRTInternal) @_spi(WinRTImplements) import WindowsFoundation
 import CWinRT
 
+private var IID___x_ABI_CWindows_CMedia_CCapture_CICapturedFrameControlValues: WindowsFoundation.IID {
+    .init(Data1: 0x90C65B7F, Data2: 0x4E0D, Data3: 0x4CA4, Data4: ( 0x88,0x2D,0x7A,0x14,0x4F,0xED,0x0A,0x90 ))// 90C65B7F-4E0D-4CA4-882D-7A144FED0A90
+}
+
+private var IID___x_ABI_CWindows_CMedia_CCapture_CICapturedFrameControlValues2: WindowsFoundation.IID {
+    .init(Data1: 0x500B2B88, Data2: 0x06D2, Data3: 0x4AA7, Data4: ( 0xA7,0xDB,0xD3,0x7A,0xF7,0x33,0x21,0xD8 ))// 500B2B88-06D2-4AA7-A7DB-D37AF73321D8
+}
+
 private var IID___x_ABI_CWindows_CMedia_CCapture_CIMediaCaptureVideoProfileMediaDescription: WindowsFoundation.IID {
     .init(Data1: 0x8012AFEF, Data2: 0xB691, Data3: 0x49FF, Data4: ( 0x83,0xF2,0xC1,0xE7,0x6E,0xAA,0xEA,0x1B ))// 8012AFEF-B691-49FF-83F2-C1E76EAAEA1B
 }
@@ -12,7 +20,147 @@ private var IID___x_ABI_CWindows_CMedia_CCapture_CIMediaCaptureVideoProfileMedia
     .init(Data1: 0xC6A6EF13, Data2: 0x322D, Data3: 0x413A, Data4: ( 0xB8,0x5A,0x68,0xA8,0x8E,0x02,0xF4,0xE9 ))// C6A6EF13-322D-413A-B85A-68A88E02F4E9
 }
 
+private var IID___x_ABI_CWindows_CMedia_CCapture_CIVideoStreamConfiguration: WindowsFoundation.IID {
+    .init(Data1: 0xD8770A6F, Data2: 0x4390, Data3: 0x4B5E, Data4: ( 0xAD,0x3E,0x0F,0x8A,0xF0,0x96,0x34,0x90 ))// D8770A6F-4390-4B5E-AD3E-0F8AF0963490
+}
+
 public enum __ABI_Windows_Media_Capture {
+    public class ICapturedFrameControlValues: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCapture_CICapturedFrameControlValues }
+
+        internal func get_ExposureImpl() throws -> WindowsFoundation.TimeSpan? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCapture_CICapturedFrameControlValues.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Exposure(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CFoundation__CTimeSpanWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func get_ExposureCompensationImpl() throws -> Float? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCapture_CICapturedFrameControlValues.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ExposureCompensation(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1_floatWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func get_IsoSpeedImpl() throws -> UInt32? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCapture_CICapturedFrameControlValues.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsoSpeed(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1_UINT32Wrapper.unwrapFrom(abi: value)
+        }
+
+        internal func get_FocusImpl() throws -> UInt32? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCapture_CICapturedFrameControlValues.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Focus(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1_UINT32Wrapper.unwrapFrom(abi: value)
+        }
+
+        internal func get_SceneModeImpl() throws -> UWP.CaptureSceneMode? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCapture_CICapturedFrameControlValues.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SceneMode(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CMedia__CDevices__CCaptureSceneModeWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func get_FlashedImpl() throws -> Bool? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCapture_CICapturedFrameControlValues.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Flashed(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1_booleanWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func get_FlashPowerPercentImpl() throws -> Float? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCapture_CICapturedFrameControlValues.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_FlashPowerPercent(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1_floatWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func get_WhiteBalanceImpl() throws -> UInt32? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCapture_CICapturedFrameControlValues.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_WhiteBalance(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1_UINT32Wrapper.unwrapFrom(abi: value)
+        }
+
+        internal func get_ZoomFactorImpl() throws -> Float? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCapture_CICapturedFrameControlValues.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ZoomFactor(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1_floatWrapper.unwrapFrom(abi: value)
+        }
+
+    }
+
+    public class ICapturedFrameControlValues2: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCapture_CICapturedFrameControlValues2 }
+
+        internal func get_FocusStateImpl() throws -> UWP.MediaCaptureFocusState? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCapture_CICapturedFrameControlValues2.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_FocusState(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CMedia__CDevices__CMediaCaptureFocusStateWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func get_IsoDigitalGainImpl() throws -> Double? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCapture_CICapturedFrameControlValues2.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsoDigitalGain(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1_doubleWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func get_IsoAnalogGainImpl() throws -> Double? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCapture_CICapturedFrameControlValues2.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsoAnalogGain(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1_doubleWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func get_SensorFrameRateImpl() throws -> UWP.MediaRatio? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCapture_CICapturedFrameControlValues2.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SensorFrameRate(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_WhiteBalanceGainImpl() throws -> UWP.WhiteBalanceGain? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCapture_CICapturedFrameControlValues2.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_WhiteBalanceGain(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CMedia__CCapture__CWhiteBalanceGainWrapper.unwrapFrom(abi: value)
+        }
+
+    }
+
     public class IMediaCaptureVideoProfileMediaDescription: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCapture_CIMediaCaptureVideoProfileMediaDescription }
 
@@ -80,4 +228,33 @@ public enum __ABI_Windows_Media_Capture {
 
     }
 
+    public class IVideoStreamConfiguration: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CMedia_CCapture_CIVideoStreamConfiguration }
+
+        internal func get_InputPropertiesImpl() throws -> UWP.VideoEncodingProperties? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCapture_CIVideoStreamConfiguration.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_InputProperties(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_OutputPropertiesImpl() throws -> UWP.VideoEncodingProperties? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CMedia_CCapture_CIVideoStreamConfiguration.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_OutputProperties(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
 }
+extension __x_ABI_CWindows_CMedia_CCapture_CWhiteBalanceGain {
+        public static func from(swift: UWP.WhiteBalanceGain) -> __x_ABI_CWindows_CMedia_CCapture_CWhiteBalanceGain {
+            .init(R: swift.r, G: swift.g, B: swift.b)
+        }
+    }
+    

@@ -137,6 +137,327 @@ public enum __IMPL_Windows_ApplicationModel_Activation {
 
     }
 
+    public enum IAppointmentsProviderActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderActivatedEventArgs
+        public typealias SwiftProjection = AnyIAppointmentsProviderActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IAppointmentsProviderActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IAppointmentsProviderActivatedEventArgsImpl: IAppointmentsProviderActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IAppointmentsProviderActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsprovideractivatedeventargs.verb)
+        fileprivate var verb : String {
+            get { try! _default.get_VerbImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsprovideractivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsprovideractivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsprovideractivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
+    public enum IAppointmentsProviderAddAppointmentActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderAddAppointmentActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderAddAppointmentActivatedEventArgs
+        public typealias SwiftProjection = AnyIAppointmentsProviderAddAppointmentActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IAppointmentsProviderAddAppointmentActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderAddAppointmentActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IAppointmentsProviderAddAppointmentActivatedEventArgsImpl: IAppointmentsProviderAddAppointmentActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IAppointmentsProviderAddAppointmentActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsprovideraddappointmentactivatedeventargs.addappointmentoperation)
+        fileprivate var addAppointmentOperation : UWP.AddAppointmentOperation! {
+            get { try! _default.get_AddAppointmentOperationImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsprovideraddappointmentactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsprovideraddappointmentactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsprovideraddappointmentactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+        private lazy var _IAppointmentsProviderActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsprovideraddappointmentactivatedeventargs.verb)
+        fileprivate var verb : String {
+            get { try! _IAppointmentsProviderActivatedEventArgs.get_VerbImpl() }
+        }
+
+    }
+
+    public enum IAppointmentsProviderRemoveAppointmentActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderRemoveAppointmentActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderRemoveAppointmentActivatedEventArgs
+        public typealias SwiftProjection = AnyIAppointmentsProviderRemoveAppointmentActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IAppointmentsProviderRemoveAppointmentActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderRemoveAppointmentActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IAppointmentsProviderRemoveAppointmentActivatedEventArgsImpl: IAppointmentsProviderRemoveAppointmentActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IAppointmentsProviderRemoveAppointmentActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsproviderremoveappointmentactivatedeventargs.removeappointmentoperation)
+        fileprivate var removeAppointmentOperation : UWP.RemoveAppointmentOperation! {
+            get { try! _default.get_RemoveAppointmentOperationImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsproviderremoveappointmentactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsproviderremoveappointmentactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsproviderremoveappointmentactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+        private lazy var _IAppointmentsProviderActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsproviderremoveappointmentactivatedeventargs.verb)
+        fileprivate var verb : String {
+            get { try! _IAppointmentsProviderActivatedEventArgs.get_VerbImpl() }
+        }
+
+    }
+
+    public enum IAppointmentsProviderReplaceAppointmentActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderReplaceAppointmentActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderReplaceAppointmentActivatedEventArgs
+        public typealias SwiftProjection = AnyIAppointmentsProviderReplaceAppointmentActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IAppointmentsProviderReplaceAppointmentActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderReplaceAppointmentActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IAppointmentsProviderReplaceAppointmentActivatedEventArgsImpl: IAppointmentsProviderReplaceAppointmentActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IAppointmentsProviderReplaceAppointmentActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsproviderreplaceappointmentactivatedeventargs.replaceappointmentoperation)
+        fileprivate var replaceAppointmentOperation : UWP.ReplaceAppointmentOperation! {
+            get { try! _default.get_ReplaceAppointmentOperationImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsproviderreplaceappointmentactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsproviderreplaceappointmentactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsproviderreplaceappointmentactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+        private lazy var _IAppointmentsProviderActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsproviderreplaceappointmentactivatedeventargs.verb)
+        fileprivate var verb : String {
+            get { try! _IAppointmentsProviderActivatedEventArgs.get_VerbImpl() }
+        }
+
+    }
+
+    public enum IAppointmentsProviderShowAppointmentDetailsActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderShowAppointmentDetailsActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderShowAppointmentDetailsActivatedEventArgs
+        public typealias SwiftProjection = AnyIAppointmentsProviderShowAppointmentDetailsActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IAppointmentsProviderShowAppointmentDetailsActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderShowAppointmentDetailsActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IAppointmentsProviderShowAppointmentDetailsActivatedEventArgsImpl: IAppointmentsProviderShowAppointmentDetailsActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IAppointmentsProviderShowAppointmentDetailsActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsprovidershowappointmentdetailsactivatedeventargs.instancestartdate)
+        fileprivate var instanceStartDate : WindowsFoundation.DateTime? {
+            get { try! _default.get_InstanceStartDateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsprovidershowappointmentdetailsactivatedeventargs.localid)
+        fileprivate var localId : String {
+            get { try! _default.get_LocalIdImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsprovidershowappointmentdetailsactivatedeventargs.roamingid)
+        fileprivate var roamingId : String {
+            get { try! _default.get_RoamingIdImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsprovidershowappointmentdetailsactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsprovidershowappointmentdetailsactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsprovidershowappointmentdetailsactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+        private lazy var _IAppointmentsProviderActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsprovidershowappointmentdetailsactivatedeventargs.verb)
+        fileprivate var verb : String {
+            get { try! _IAppointmentsProviderActivatedEventArgs.get_VerbImpl() }
+        }
+
+    }
+
+    public enum IAppointmentsProviderShowTimeFrameActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderShowTimeFrameActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderShowTimeFrameActivatedEventArgs
+        public typealias SwiftProjection = AnyIAppointmentsProviderShowTimeFrameActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IAppointmentsProviderShowTimeFrameActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderShowTimeFrameActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IAppointmentsProviderShowTimeFrameActivatedEventArgsImpl: IAppointmentsProviderShowTimeFrameActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IAppointmentsProviderShowTimeFrameActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsprovidershowtimeframeactivatedeventargs.duration)
+        fileprivate var duration : WindowsFoundation.TimeSpan {
+            get { try! _default.get_DurationImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsprovidershowtimeframeactivatedeventargs.timetoshow)
+        fileprivate var timeToShow : WindowsFoundation.DateTime {
+            get { try! _default.get_TimeToShowImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsprovidershowtimeframeactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsprovidershowtimeframeactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsprovidershowtimeframeactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+        private lazy var _IAppointmentsProviderActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iappointmentsprovidershowtimeframeactivatedeventargs.verb)
+        fileprivate var verb : String {
+            get { try! _IAppointmentsProviderActivatedEventArgs.get_VerbImpl() }
+        }
+
+    }
+
     public enum IBackgroundActivatedEventArgsBridge : AbiInterfaceBridge {
         public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIBackgroundActivatedEventArgs
         public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IBackgroundActivatedEventArgs
@@ -163,6 +484,1340 @@ public enum __IMPL_Windows_ApplicationModel_Activation {
         /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ibackgroundactivatedeventargs.taskinstance)
         fileprivate var taskInstance : UWP.AnyIBackgroundTaskInstance! {
             get { try! _default.get_TaskInstanceImpl() }
+        }
+
+    }
+
+    public enum IBarcodeScannerPreviewActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIBarcodeScannerPreviewActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IBarcodeScannerPreviewActivatedEventArgs
+        public typealias SwiftProjection = AnyIBarcodeScannerPreviewActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IBarcodeScannerPreviewActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IBarcodeScannerPreviewActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IBarcodeScannerPreviewActivatedEventArgsImpl: IBarcodeScannerPreviewActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IBarcodeScannerPreviewActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ibarcodescannerpreviewactivatedeventargs.connectionid)
+        fileprivate var connectionId : String {
+            get { try! _default.get_ConnectionIdImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ibarcodescannerpreviewactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ibarcodescannerpreviewactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ibarcodescannerpreviewactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
+    public enum ICachedFileUpdaterActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CICachedFileUpdaterActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.ICachedFileUpdaterActivatedEventArgs
+        public typealias SwiftProjection = AnyICachedFileUpdaterActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return ICachedFileUpdaterActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.ICachedFileUpdaterActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class ICachedFileUpdaterActivatedEventArgsImpl: ICachedFileUpdaterActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = ICachedFileUpdaterActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icachedfileupdateractivatedeventargs.cachedfileupdaterui)
+        fileprivate var cachedFileUpdaterUI : UWP.CachedFileUpdaterUI! {
+            get { try! _default.get_CachedFileUpdaterUIImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icachedfileupdateractivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icachedfileupdateractivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icachedfileupdateractivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
+    public enum ICameraSettingsActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CICameraSettingsActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.ICameraSettingsActivatedEventArgs
+        public typealias SwiftProjection = AnyICameraSettingsActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return ICameraSettingsActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.ICameraSettingsActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class ICameraSettingsActivatedEventArgsImpl: ICameraSettingsActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = ICameraSettingsActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icamerasettingsactivatedeventargs.videodevicecontroller)
+        fileprivate var videoDeviceController : Any! {
+            get { try! _default.get_VideoDeviceControllerImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icamerasettingsactivatedeventargs.videodeviceextension)
+        fileprivate var videoDeviceExtension : Any! {
+            get { try! _default.get_VideoDeviceExtensionImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icamerasettingsactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icamerasettingsactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icamerasettingsactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
+    public enum ICommandLineActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CICommandLineActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.ICommandLineActivatedEventArgs
+        public typealias SwiftProjection = AnyICommandLineActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return ICommandLineActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.ICommandLineActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class ICommandLineActivatedEventArgsImpl: ICommandLineActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = ICommandLineActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icommandlineactivatedeventargs.operation)
+        fileprivate var operation : CommandLineActivationOperation! {
+            get { try! _default.get_OperationImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icommandlineactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icommandlineactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icommandlineactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
+    public enum IContactActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIContactActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IContactActivatedEventArgs
+        public typealias SwiftProjection = AnyIContactActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IContactActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IContactActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IContactActivatedEventArgsImpl: IContactActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IContactActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactactivatedeventargs.verb)
+        fileprivate var verb : String {
+            get { try! _default.get_VerbImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
+    public enum IContactCallActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIContactCallActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IContactCallActivatedEventArgs
+        public typealias SwiftProjection = AnyIContactCallActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IContactCallActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IContactCallActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IContactCallActivatedEventArgsImpl: IContactCallActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IContactCallActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactcallactivatedeventargs.contact)
+        fileprivate var contact : UWP.Contact! {
+            get { try! _default.get_ContactImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactcallactivatedeventargs.serviceid)
+        fileprivate var serviceId : String {
+            get { try! _default.get_ServiceIdImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactcallactivatedeventargs.serviceuserid)
+        fileprivate var serviceUserId : String {
+            get { try! _default.get_ServiceUserIdImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactcallactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactcallactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactcallactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+        private lazy var _IContactActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IContactActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactcallactivatedeventargs.verb)
+        fileprivate var verb : String {
+            get { try! _IContactActivatedEventArgs.get_VerbImpl() }
+        }
+
+    }
+
+    public enum IContactMapActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIContactMapActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IContactMapActivatedEventArgs
+        public typealias SwiftProjection = AnyIContactMapActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IContactMapActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IContactMapActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IContactMapActivatedEventArgsImpl: IContactMapActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IContactMapActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactmapactivatedeventargs.address)
+        fileprivate var address : UWP.ContactAddress! {
+            get { try! _default.get_AddressImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactmapactivatedeventargs.contact)
+        fileprivate var contact : UWP.Contact! {
+            get { try! _default.get_ContactImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactmapactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactmapactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactmapactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+        private lazy var _IContactActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IContactActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactmapactivatedeventargs.verb)
+        fileprivate var verb : String {
+            get { try! _IContactActivatedEventArgs.get_VerbImpl() }
+        }
+
+    }
+
+    public enum IContactMessageActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIContactMessageActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IContactMessageActivatedEventArgs
+        public typealias SwiftProjection = AnyIContactMessageActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IContactMessageActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IContactMessageActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IContactMessageActivatedEventArgsImpl: IContactMessageActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IContactMessageActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactmessageactivatedeventargs.contact)
+        fileprivate var contact : UWP.Contact! {
+            get { try! _default.get_ContactImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactmessageactivatedeventargs.serviceid)
+        fileprivate var serviceId : String {
+            get { try! _default.get_ServiceIdImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactmessageactivatedeventargs.serviceuserid)
+        fileprivate var serviceUserId : String {
+            get { try! _default.get_ServiceUserIdImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactmessageactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactmessageactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactmessageactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+        private lazy var _IContactActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IContactActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactmessageactivatedeventargs.verb)
+        fileprivate var verb : String {
+            get { try! _IContactActivatedEventArgs.get_VerbImpl() }
+        }
+
+    }
+
+    public enum IContactPanelActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIContactPanelActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IContactPanelActivatedEventArgs
+        public typealias SwiftProjection = AnyIContactPanelActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IContactPanelActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IContactPanelActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IContactPanelActivatedEventArgsImpl: IContactPanelActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IContactPanelActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactpanelactivatedeventargs.contact)
+        fileprivate var contact : UWP.Contact! {
+            get { try! _default.get_ContactImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactpanelactivatedeventargs.contactpanel)
+        fileprivate var contactPanel : UWP.ContactPanel! {
+            get { try! _default.get_ContactPanelImpl() }
+        }
+
+    }
+
+    public enum IContactPickerActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIContactPickerActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IContactPickerActivatedEventArgs
+        public typealias SwiftProjection = AnyIContactPickerActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IContactPickerActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IContactPickerActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IContactPickerActivatedEventArgsImpl: IContactPickerActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IContactPickerActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactpickeractivatedeventargs.contactpickerui)
+        fileprivate var contactPickerUI : UWP.ContactPickerUI! {
+            get { try! _default.get_ContactPickerUIImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactpickeractivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactpickeractivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactpickeractivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
+    public enum IContactPostActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIContactPostActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IContactPostActivatedEventArgs
+        public typealias SwiftProjection = AnyIContactPostActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IContactPostActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IContactPostActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IContactPostActivatedEventArgsImpl: IContactPostActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IContactPostActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactpostactivatedeventargs.contact)
+        fileprivate var contact : UWP.Contact! {
+            get { try! _default.get_ContactImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactpostactivatedeventargs.serviceid)
+        fileprivate var serviceId : String {
+            get { try! _default.get_ServiceIdImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactpostactivatedeventargs.serviceuserid)
+        fileprivate var serviceUserId : String {
+            get { try! _default.get_ServiceUserIdImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactpostactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactpostactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactpostactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+        private lazy var _IContactActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IContactActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactpostactivatedeventargs.verb)
+        fileprivate var verb : String {
+            get { try! _IContactActivatedEventArgs.get_VerbImpl() }
+        }
+
+    }
+
+    public enum IContactVideoCallActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIContactVideoCallActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IContactVideoCallActivatedEventArgs
+        public typealias SwiftProjection = AnyIContactVideoCallActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IContactVideoCallActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IContactVideoCallActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IContactVideoCallActivatedEventArgsImpl: IContactVideoCallActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IContactVideoCallActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactvideocallactivatedeventargs.contact)
+        fileprivate var contact : UWP.Contact! {
+            get { try! _default.get_ContactImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactvideocallactivatedeventargs.serviceid)
+        fileprivate var serviceId : String {
+            get { try! _default.get_ServiceIdImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactvideocallactivatedeventargs.serviceuserid)
+        fileprivate var serviceUserId : String {
+            get { try! _default.get_ServiceUserIdImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactvideocallactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactvideocallactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactvideocallactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+        private lazy var _IContactActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IContactActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactvideocallactivatedeventargs.verb)
+        fileprivate var verb : String {
+            get { try! _IContactActivatedEventArgs.get_VerbImpl() }
+        }
+
+    }
+
+    public enum IContactsProviderActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIContactsProviderActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IContactsProviderActivatedEventArgs
+        public typealias SwiftProjection = AnyIContactsProviderActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IContactsProviderActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IContactsProviderActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IContactsProviderActivatedEventArgsImpl: IContactsProviderActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IContactsProviderActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactsprovideractivatedeventargs.verb)
+        fileprivate var verb : String {
+            get { try! _default.get_VerbImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactsprovideractivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactsprovideractivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontactsprovideractivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
+    public enum IContinuationActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIContinuationActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IContinuationActivatedEventArgs
+        public typealias SwiftProjection = AnyIContinuationActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IContinuationActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IContinuationActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IContinuationActivatedEventArgsImpl: IContinuationActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IContinuationActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontinuationactivatedeventargs.continuationdata)
+        fileprivate var continuationData : WindowsFoundation.ValueSet! {
+            get { try! _default.get_ContinuationDataImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontinuationactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontinuationactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.icontinuationactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
+    public enum IDeviceActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIDeviceActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IDeviceActivatedEventArgs
+        public typealias SwiftProjection = AnyIDeviceActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IDeviceActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IDeviceActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IDeviceActivatedEventArgsImpl: IDeviceActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IDeviceActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ideviceactivatedeventargs.deviceinformationid)
+        fileprivate var deviceInformationId : String {
+            get { try! _default.get_DeviceInformationIdImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ideviceactivatedeventargs.verb)
+        fileprivate var verb : String {
+            get { try! _default.get_VerbImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ideviceactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ideviceactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ideviceactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
+    public enum IDevicePairingActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIDevicePairingActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IDevicePairingActivatedEventArgs
+        public typealias SwiftProjection = AnyIDevicePairingActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IDevicePairingActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IDevicePairingActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IDevicePairingActivatedEventArgsImpl: IDevicePairingActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IDevicePairingActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.idevicepairingactivatedeventargs.deviceinformation)
+        fileprivate var deviceInformation : UWP.DeviceInformation! {
+            get { try! _default.get_DeviceInformationImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.idevicepairingactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.idevicepairingactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.idevicepairingactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
+    public enum IDialReceiverActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIDialReceiverActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IDialReceiverActivatedEventArgs
+        public typealias SwiftProjection = AnyIDialReceiverActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IDialReceiverActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IDialReceiverActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IDialReceiverActivatedEventArgsImpl: IDialReceiverActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IDialReceiverActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.idialreceiveractivatedeventargs.appname)
+        fileprivate var appName : String {
+            get { try! _default.get_AppNameImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.idialreceiveractivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.idialreceiveractivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.idialreceiveractivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+        private lazy var _ILaunchActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.ILaunchActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.idialreceiveractivatedeventargs.arguments)
+        fileprivate var arguments : String {
+            get { try! _ILaunchActivatedEventArgs.get_ArgumentsImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.idialreceiveractivatedeventargs.tileid)
+        fileprivate var tileId : String {
+            get { try! _ILaunchActivatedEventArgs.get_TileIdImpl() }
+        }
+
+    }
+
+    public enum IFileActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIFileActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IFileActivatedEventArgs
+        public typealias SwiftProjection = AnyIFileActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IFileActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IFileActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IFileActivatedEventArgsImpl: IFileActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IFileActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifileactivatedeventargs.files)
+        fileprivate var files : WindowsFoundation.AnyIVectorView<UWP.AnyIStorageItem?>! {
+            get { try! _default.get_FilesImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifileactivatedeventargs.verb)
+        fileprivate var verb : String {
+            get { try! _default.get_VerbImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifileactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifileactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifileactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
+    public enum IFileActivatedEventArgsWithCallerPackageFamilyNameBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIFileActivatedEventArgsWithCallerPackageFamilyName
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IFileActivatedEventArgsWithCallerPackageFamilyName
+        public typealias SwiftProjection = AnyIFileActivatedEventArgsWithCallerPackageFamilyName
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IFileActivatedEventArgsWithCallerPackageFamilyNameImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IFileActivatedEventArgsWithCallerPackageFamilyNameVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IFileActivatedEventArgsWithCallerPackageFamilyNameImpl: IFileActivatedEventArgsWithCallerPackageFamilyName, WinRTAbiImpl {
+        fileprivate typealias Bridge = IFileActivatedEventArgsWithCallerPackageFamilyNameBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifileactivatedeventargswithcallerpackagefamilyname.callerpackagefamilyname)
+        fileprivate var callerPackageFamilyName : String {
+            get { try! _default.get_CallerPackageFamilyNameImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifileactivatedeventargswithcallerpackagefamilyname.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifileactivatedeventargswithcallerpackagefamilyname.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifileactivatedeventargswithcallerpackagefamilyname.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
+    public enum IFileActivatedEventArgsWithNeighboringFilesBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIFileActivatedEventArgsWithNeighboringFiles
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IFileActivatedEventArgsWithNeighboringFiles
+        public typealias SwiftProjection = AnyIFileActivatedEventArgsWithNeighboringFiles
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IFileActivatedEventArgsWithNeighboringFilesImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IFileActivatedEventArgsWithNeighboringFilesVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IFileActivatedEventArgsWithNeighboringFilesImpl: IFileActivatedEventArgsWithNeighboringFiles, WinRTAbiImpl {
+        fileprivate typealias Bridge = IFileActivatedEventArgsWithNeighboringFilesBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifileactivatedeventargswithneighboringfiles.neighboringfilesquery)
+        fileprivate var neighboringFilesQuery : UWP.StorageFileQueryResult! {
+            get { try! _default.get_NeighboringFilesQueryImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifileactivatedeventargswithneighboringfiles.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifileactivatedeventargswithneighboringfiles.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifileactivatedeventargswithneighboringfiles.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+        private lazy var _IFileActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IFileActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifileactivatedeventargswithneighboringfiles.files)
+        fileprivate var files : WindowsFoundation.AnyIVectorView<UWP.AnyIStorageItem?>! {
+            get { try! _IFileActivatedEventArgs.get_FilesImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifileactivatedeventargswithneighboringfiles.verb)
+        fileprivate var verb : String {
+            get { try! _IFileActivatedEventArgs.get_VerbImpl() }
+        }
+
+    }
+
+    public enum IFileOpenPickerActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIFileOpenPickerActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IFileOpenPickerActivatedEventArgs
+        public typealias SwiftProjection = AnyIFileOpenPickerActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IFileOpenPickerActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IFileOpenPickerActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IFileOpenPickerActivatedEventArgsImpl: IFileOpenPickerActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IFileOpenPickerActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifileopenpickeractivatedeventargs.fileopenpickerui)
+        fileprivate var fileOpenPickerUI : UWP.FileOpenPickerUI! {
+            get { try! _default.get_FileOpenPickerUIImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifileopenpickeractivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifileopenpickeractivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifileopenpickeractivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
+    public enum IFileOpenPickerActivatedEventArgs2Bridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIFileOpenPickerActivatedEventArgs2
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IFileOpenPickerActivatedEventArgs2
+        public typealias SwiftProjection = AnyIFileOpenPickerActivatedEventArgs2
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IFileOpenPickerActivatedEventArgs2Impl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IFileOpenPickerActivatedEventArgs2VTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IFileOpenPickerActivatedEventArgs2Impl: IFileOpenPickerActivatedEventArgs2, WinRTAbiImpl {
+        fileprivate typealias Bridge = IFileOpenPickerActivatedEventArgs2Bridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifileopenpickeractivatedeventargs2.callerpackagefamilyname)
+        fileprivate var callerPackageFamilyName : String {
+            get { try! _default.get_CallerPackageFamilyNameImpl() }
+        }
+
+    }
+
+    public enum IFileOpenPickerContinuationEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIFileOpenPickerContinuationEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IFileOpenPickerContinuationEventArgs
+        public typealias SwiftProjection = AnyIFileOpenPickerContinuationEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IFileOpenPickerContinuationEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IFileOpenPickerContinuationEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IFileOpenPickerContinuationEventArgsImpl: IFileOpenPickerContinuationEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IFileOpenPickerContinuationEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifileopenpickercontinuationeventargs.files)
+        fileprivate var files : WindowsFoundation.AnyIVectorView<UWP.StorageFile?>! {
+            get { try! _default.get_FilesImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifileopenpickercontinuationeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifileopenpickercontinuationeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifileopenpickercontinuationeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+        private lazy var _IContinuationActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IContinuationActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifileopenpickercontinuationeventargs.continuationdata)
+        fileprivate var continuationData : WindowsFoundation.ValueSet! {
+            get { try! _IContinuationActivatedEventArgs.get_ContinuationDataImpl() }
+        }
+
+    }
+
+    public enum IFileSavePickerActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIFileSavePickerActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IFileSavePickerActivatedEventArgs
+        public typealias SwiftProjection = AnyIFileSavePickerActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IFileSavePickerActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IFileSavePickerActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IFileSavePickerActivatedEventArgsImpl: IFileSavePickerActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IFileSavePickerActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifilesavepickeractivatedeventargs.filesavepickerui)
+        fileprivate var fileSavePickerUI : UWP.FileSavePickerUI! {
+            get { try! _default.get_FileSavePickerUIImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifilesavepickeractivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifilesavepickeractivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifilesavepickeractivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
+    public enum IFileSavePickerActivatedEventArgs2Bridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIFileSavePickerActivatedEventArgs2
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IFileSavePickerActivatedEventArgs2
+        public typealias SwiftProjection = AnyIFileSavePickerActivatedEventArgs2
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IFileSavePickerActivatedEventArgs2Impl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IFileSavePickerActivatedEventArgs2VTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IFileSavePickerActivatedEventArgs2Impl: IFileSavePickerActivatedEventArgs2, WinRTAbiImpl {
+        fileprivate typealias Bridge = IFileSavePickerActivatedEventArgs2Bridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifilesavepickeractivatedeventargs2.callerpackagefamilyname)
+        fileprivate var callerPackageFamilyName : String {
+            get { try! _default.get_CallerPackageFamilyNameImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifilesavepickeractivatedeventargs2.enterpriseid)
+        fileprivate var enterpriseId : String {
+            get { try! _default.get_EnterpriseIdImpl() }
+        }
+
+    }
+
+    public enum IFileSavePickerContinuationEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIFileSavePickerContinuationEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IFileSavePickerContinuationEventArgs
+        public typealias SwiftProjection = AnyIFileSavePickerContinuationEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IFileSavePickerContinuationEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IFileSavePickerContinuationEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IFileSavePickerContinuationEventArgsImpl: IFileSavePickerContinuationEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IFileSavePickerContinuationEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifilesavepickercontinuationeventargs.file)
+        fileprivate var file : UWP.StorageFile! {
+            get { try! _default.get_FileImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifilesavepickercontinuationeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifilesavepickercontinuationeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifilesavepickercontinuationeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+        private lazy var _IContinuationActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IContinuationActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifilesavepickercontinuationeventargs.continuationdata)
+        fileprivate var continuationData : WindowsFoundation.ValueSet! {
+            get { try! _IContinuationActivatedEventArgs.get_ContinuationDataImpl() }
+        }
+
+    }
+
+    public enum IFolderPickerContinuationEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIFolderPickerContinuationEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IFolderPickerContinuationEventArgs
+        public typealias SwiftProjection = AnyIFolderPickerContinuationEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IFolderPickerContinuationEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IFolderPickerContinuationEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IFolderPickerContinuationEventArgsImpl: IFolderPickerContinuationEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IFolderPickerContinuationEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifolderpickercontinuationeventargs.folder)
+        fileprivate var folder : UWP.StorageFolder! {
+            get { try! _default.get_FolderImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifolderpickercontinuationeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifolderpickercontinuationeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifolderpickercontinuationeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+        private lazy var _IContinuationActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IContinuationActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ifolderpickercontinuationeventargs.continuationdata)
+        fileprivate var continuationData : WindowsFoundation.ValueSet! {
+            get { try! _IContinuationActivatedEventArgs.get_ContinuationDataImpl() }
         }
 
     }
@@ -275,6 +1930,155 @@ public enum __IMPL_Windows_ApplicationModel_Activation {
 
     }
 
+    public enum ILockScreenActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CILockScreenActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.ILockScreenActivatedEventArgs
+        public typealias SwiftProjection = AnyILockScreenActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return ILockScreenActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.ILockScreenActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class ILockScreenActivatedEventArgsImpl: ILockScreenActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = ILockScreenActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ilockscreenactivatedeventargs.info)
+        fileprivate var info : Any! {
+            get { try! _default.get_InfoImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ilockscreenactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ilockscreenactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ilockscreenactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
+    public enum ILockScreenCallActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CILockScreenCallActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.ILockScreenCallActivatedEventArgs
+        public typealias SwiftProjection = AnyILockScreenCallActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return ILockScreenCallActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.ILockScreenCallActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class ILockScreenCallActivatedEventArgsImpl: ILockScreenCallActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = ILockScreenCallActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ilockscreencallactivatedeventargs.callui)
+        fileprivate var callUI : UWP.LockScreenCallUI! {
+            get { try! _default.get_CallUIImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ilockscreencallactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ilockscreencallactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ilockscreencallactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+        private lazy var _ILaunchActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.ILaunchActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ilockscreencallactivatedeventargs.arguments)
+        fileprivate var arguments : String {
+            get { try! _ILaunchActivatedEventArgs.get_ArgumentsImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ilockscreencallactivatedeventargs.tileid)
+        fileprivate var tileId : String {
+            get { try! _ILaunchActivatedEventArgs.get_TileIdImpl() }
+        }
+
+    }
+
+    public enum IPickerReturnedActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIPickerReturnedActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IPickerReturnedActivatedEventArgs
+        public typealias SwiftProjection = AnyIPickerReturnedActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IPickerReturnedActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IPickerReturnedActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IPickerReturnedActivatedEventArgsImpl: IPickerReturnedActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IPickerReturnedActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ipickerreturnedactivatedeventargs.pickeroperationid)
+        fileprivate var pickerOperationId : String {
+            get { try! _default.get_PickerOperationIdImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ipickerreturnedactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ipickerreturnedactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ipickerreturnedactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
     public enum IPrelaunchActivatedEventArgsBridge : AbiInterfaceBridge {
         public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIPrelaunchActivatedEventArgs
         public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IPrelaunchActivatedEventArgs
@@ -315,6 +2119,98 @@ public enum __IMPL_Windows_ApplicationModel_Activation {
         }
 
         /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iprelaunchactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
+    public enum IPrint3DWorkflowActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIPrint3DWorkflowActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IPrint3DWorkflowActivatedEventArgs
+        public typealias SwiftProjection = AnyIPrint3DWorkflowActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IPrint3DWorkflowActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IPrint3DWorkflowActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IPrint3DWorkflowActivatedEventArgsImpl: IPrint3DWorkflowActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IPrint3DWorkflowActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iprint3dworkflowactivatedeventargs.workflow)
+        fileprivate var workflow : UWP.Print3DWorkflow! {
+            get { try! _default.get_WorkflowImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iprint3dworkflowactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iprint3dworkflowactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iprint3dworkflowactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
+    public enum IPrintTaskSettingsActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIPrintTaskSettingsActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IPrintTaskSettingsActivatedEventArgs
+        public typealias SwiftProjection = AnyIPrintTaskSettingsActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IPrintTaskSettingsActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IPrintTaskSettingsActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IPrintTaskSettingsActivatedEventArgsImpl: IPrintTaskSettingsActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IPrintTaskSettingsActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iprinttasksettingsactivatedeventargs.configuration)
+        fileprivate var configuration : UWP.PrintTaskConfiguration! {
+            get { try! _default.get_ConfigurationImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iprinttasksettingsactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iprinttasksettingsactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iprinttasksettingsactivatedeventargs.splashscreen)
         fileprivate var splashScreen : SplashScreen! {
             get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
         }
@@ -418,6 +2314,368 @@ public enum __IMPL_Windows_ApplicationModel_Activation {
 
     }
 
+    public enum IProtocolForResultsActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIProtocolForResultsActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IProtocolForResultsActivatedEventArgs
+        public typealias SwiftProjection = AnyIProtocolForResultsActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IProtocolForResultsActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IProtocolForResultsActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IProtocolForResultsActivatedEventArgsImpl: IProtocolForResultsActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IProtocolForResultsActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iprotocolforresultsactivatedeventargs.protocolforresultsoperation)
+        fileprivate var protocolForResultsOperation : UWP.ProtocolForResultsOperation! {
+            get { try! _default.get_ProtocolForResultsOperationImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iprotocolforresultsactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iprotocolforresultsactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iprotocolforresultsactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
+    public enum IRestrictedLaunchActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIRestrictedLaunchActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IRestrictedLaunchActivatedEventArgs
+        public typealias SwiftProjection = AnyIRestrictedLaunchActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IRestrictedLaunchActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IRestrictedLaunchActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IRestrictedLaunchActivatedEventArgsImpl: IRestrictedLaunchActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IRestrictedLaunchActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.irestrictedlaunchactivatedeventargs.sharedcontext)
+        fileprivate var sharedContext : Any! {
+            get { try! _default.get_SharedContextImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.irestrictedlaunchactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.irestrictedlaunchactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.irestrictedlaunchactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
+    public enum ISearchActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CISearchActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.ISearchActivatedEventArgs
+        public typealias SwiftProjection = AnyISearchActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return ISearchActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.ISearchActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class ISearchActivatedEventArgsImpl: ISearchActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = ISearchActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.isearchactivatedeventargs.language)
+        fileprivate var language : String {
+            get { try! _default.get_LanguageImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.isearchactivatedeventargs.querytext)
+        fileprivate var queryText : String {
+            get { try! _default.get_QueryTextImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.isearchactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.isearchactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.isearchactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
+    public enum ISearchActivatedEventArgsWithLinguisticDetailsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CISearchActivatedEventArgsWithLinguisticDetails
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.ISearchActivatedEventArgsWithLinguisticDetails
+        public typealias SwiftProjection = AnyISearchActivatedEventArgsWithLinguisticDetails
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return ISearchActivatedEventArgsWithLinguisticDetailsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.ISearchActivatedEventArgsWithLinguisticDetailsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class ISearchActivatedEventArgsWithLinguisticDetailsImpl: ISearchActivatedEventArgsWithLinguisticDetails, WinRTAbiImpl {
+        fileprivate typealias Bridge = ISearchActivatedEventArgsWithLinguisticDetailsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.isearchactivatedeventargswithlinguisticdetails.linguisticdetails)
+        fileprivate var linguisticDetails : UWP.SearchPaneQueryLinguisticDetails! {
+            get { try! _default.get_LinguisticDetailsImpl() }
+        }
+
+    }
+
+    public enum IShareTargetActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIShareTargetActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IShareTargetActivatedEventArgs
+        public typealias SwiftProjection = AnyIShareTargetActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IShareTargetActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IShareTargetActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IShareTargetActivatedEventArgsImpl: IShareTargetActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IShareTargetActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.isharetargetactivatedeventargs.shareoperation)
+        fileprivate var shareOperation : UWP.ShareOperation! {
+            get { try! _default.get_ShareOperationImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.isharetargetactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.isharetargetactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.isharetargetactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
+    public enum IStartupTaskActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIStartupTaskActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IStartupTaskActivatedEventArgs
+        public typealias SwiftProjection = AnyIStartupTaskActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IStartupTaskActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IStartupTaskActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IStartupTaskActivatedEventArgsImpl: IStartupTaskActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IStartupTaskActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.istartuptaskactivatedeventargs.taskid)
+        fileprivate var taskId : String {
+            get { try! _default.get_TaskIdImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.istartuptaskactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.istartuptaskactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.istartuptaskactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
+    public enum IToastNotificationActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIToastNotificationActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IToastNotificationActivatedEventArgs
+        public typealias SwiftProjection = AnyIToastNotificationActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IToastNotificationActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IToastNotificationActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IToastNotificationActivatedEventArgsImpl: IToastNotificationActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IToastNotificationActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.itoastnotificationactivatedeventargs.argument)
+        fileprivate var argument : String {
+            get { try! _default.get_ArgumentImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.itoastnotificationactivatedeventargs.userinput)
+        fileprivate var userInput : WindowsFoundation.ValueSet! {
+            get { try! _default.get_UserInputImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.itoastnotificationactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.itoastnotificationactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.itoastnotificationactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
+    public enum IUserDataAccountProviderActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIUserDataAccountProviderActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IUserDataAccountProviderActivatedEventArgs
+        public typealias SwiftProjection = AnyIUserDataAccountProviderActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IUserDataAccountProviderActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IUserDataAccountProviderActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IUserDataAccountProviderActivatedEventArgsImpl: IUserDataAccountProviderActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IUserDataAccountProviderActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iuserdataaccountprovideractivatedeventargs.operation)
+        fileprivate var operation : UWP.AnyIUserDataAccountProviderOperation! {
+            get { try! _default.get_OperationImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iuserdataaccountprovideractivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iuserdataaccountprovideractivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iuserdataaccountprovideractivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
     public enum IViewSwitcherProviderBridge : AbiInterfaceBridge {
         public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIViewSwitcherProvider
         public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IViewSwitcherProvider
@@ -460,6 +2718,206 @@ public enum __IMPL_Windows_ApplicationModel_Activation {
         /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iviewswitcherprovider.splashscreen)
         fileprivate var splashScreen : SplashScreen! {
             get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
+    public enum IVoiceCommandActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIVoiceCommandActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IVoiceCommandActivatedEventArgs
+        public typealias SwiftProjection = AnyIVoiceCommandActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IVoiceCommandActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IVoiceCommandActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IVoiceCommandActivatedEventArgsImpl: IVoiceCommandActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IVoiceCommandActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ivoicecommandactivatedeventargs.result)
+        fileprivate var result : UWP.SpeechRecognitionResult! {
+            get { try! _default.get_ResultImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ivoicecommandactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ivoicecommandactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.ivoicecommandactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
+    public enum IWalletActionActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIWalletActionActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IWalletActionActivatedEventArgs
+        public typealias SwiftProjection = AnyIWalletActionActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IWalletActionActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IWalletActionActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IWalletActionActivatedEventArgsImpl: IWalletActionActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IWalletActionActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iwalletactionactivatedeventargs.actionid)
+        fileprivate var actionId : String {
+            get { try! _default.get_ActionIdImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iwalletactionactivatedeventargs.actionkind)
+        fileprivate var actionKind : UWP.WalletActionKind {
+            get { try! _default.get_ActionKindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iwalletactionactivatedeventargs.itemid)
+        fileprivate var itemId : String {
+            get { try! _default.get_ItemIdImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iwalletactionactivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iwalletactionactivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iwalletactionactivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
+    public enum IWebAccountProviderActivatedEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIWebAccountProviderActivatedEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IWebAccountProviderActivatedEventArgs
+        public typealias SwiftProjection = AnyIWebAccountProviderActivatedEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IWebAccountProviderActivatedEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IWebAccountProviderActivatedEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IWebAccountProviderActivatedEventArgsImpl: IWebAccountProviderActivatedEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IWebAccountProviderActivatedEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iwebaccountprovideractivatedeventargs.operation)
+        fileprivate var operation : UWP.AnyIWebAccountProviderOperation! {
+            get { try! _default.get_OperationImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iwebaccountprovideractivatedeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iwebaccountprovideractivatedeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iwebaccountprovideractivatedeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+    }
+
+    public enum IWebAuthenticationBrokerContinuationEventArgsBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CApplicationModel_CActivation_CIWebAuthenticationBrokerContinuationEventArgs
+        public typealias SwiftABI = __ABI_Windows_ApplicationModel_Activation.IWebAuthenticationBrokerContinuationEventArgs
+        public typealias SwiftProjection = AnyIWebAuthenticationBrokerContinuationEventArgs
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IWebAuthenticationBrokerContinuationEventArgsImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_ApplicationModel_Activation.IWebAuthenticationBrokerContinuationEventArgsVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IWebAuthenticationBrokerContinuationEventArgsImpl: IWebAuthenticationBrokerContinuationEventArgs, WinRTAbiImpl {
+        fileprivate typealias Bridge = IWebAuthenticationBrokerContinuationEventArgsBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iwebauthenticationbrokercontinuationeventargs.webauthenticationresult)
+        fileprivate var webAuthenticationResult : UWP.WebAuthenticationResult! {
+            get { try! _default.get_WebAuthenticationResultImpl() }
+        }
+
+        private lazy var _IActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iwebauthenticationbrokercontinuationeventargs.kind)
+        fileprivate var kind : ActivationKind {
+            get { try! _IActivatedEventArgs.get_KindImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iwebauthenticationbrokercontinuationeventargs.previousexecutionstate)
+        fileprivate var previousExecutionState : ApplicationExecutionState {
+            get { try! _IActivatedEventArgs.get_PreviousExecutionStateImpl() }
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iwebauthenticationbrokercontinuationeventargs.splashscreen)
+        fileprivate var splashScreen : SplashScreen! {
+            get { try! _IActivatedEventArgs.get_SplashScreenImpl() }
+        }
+
+        private lazy var _IContinuationActivatedEventArgs: __ABI_Windows_ApplicationModel_Activation.IContinuationActivatedEventArgs! = getInterfaceForCaching()
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.applicationmodel.activation.iwebauthenticationbrokercontinuationeventargs.continuationdata)
+        fileprivate var continuationData : WindowsFoundation.ValueSet! {
+            get { try! _IContinuationActivatedEventArgs.get_ContinuationDataImpl() }
         }
 
     }

@@ -16,8 +16,144 @@ private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIApplicationView
     .init(Data1: 0x930CEF4B, Data2: 0xB829, Data3: 0x40FC, Data4: ( 0x88,0xF4,0x85,0x13,0xE8,0xA6,0x47,0x38 ))// 930CEF4B-B829-40FC-88F4-8513E8A64738
 }
 
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x3364C405, Data2: 0x933C, Data3: 0x4E7D, Data4: ( 0xA0,0x34,0x50,0x0F,0xB8,0xDC,0xD9,0xF3 ))// 3364C405-933C-4E7D-A034-500FB8DCD9F3
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderAddAppointmentActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0xA2861367, Data2: 0xCEE5, Data3: 0x4E4D, Data4: ( 0x9E,0xD7,0x41,0xC3,0x4E,0xC1,0x8B,0x02 ))// A2861367-CEE5-4E4D-9ED7-41C34EC18B02
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderRemoveAppointmentActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x751F3AB8, Data2: 0x0B8E, Data3: 0x451C, Data4: ( 0x9F,0x15,0x96,0x6E,0x69,0x9B,0xAC,0x25 ))// 751F3AB8-0B8E-451C-9F15-966E699BAC25
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderReplaceAppointmentActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x1551B7D4, Data2: 0xA981, Data3: 0x4067, Data4: ( 0x8A,0x62,0x05,0x24,0xE4,0xAD,0xE1,0x21 ))// 1551B7D4-A981-4067-8A62-0524E4ADE121
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderShowAppointmentDetailsActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x3958F065, Data2: 0x9841, Data3: 0x4CA5, Data4: ( 0x99,0x9B,0x88,0x51,0x98,0xB9,0xEF,0x2A ))// 3958F065-9841-4CA5-999B-885198B9EF2A
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderShowTimeFrameActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x9BAEABA6, Data2: 0x0E0B, Data3: 0x49AA, Data4: ( 0xBA,0xBC,0x12,0xB1,0xDC,0x77,0x49,0x86 ))// 9BAEABA6-0E0B-49AA-BABC-12B1DC774986
+}
+
 private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIBackgroundActivatedEventArgs: WindowsFoundation.IID {
     .init(Data1: 0xAB14BEE0, Data2: 0xE760, Data3: 0x440E, Data4: ( 0xA9,0x1C,0x44,0x79,0x6D,0xE3,0xA9,0x2D ))// AB14BEE0-E760-440E-A91C-44796DE3A92D
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIBarcodeScannerPreviewActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x6772797C, Data2: 0x99BF, Data3: 0x4349, Data4: ( 0xAF,0x22,0xE4,0x12,0x35,0x60,0x37,0x1C ))// 6772797C-99BF-4349-AF22-E4123560371C
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CICachedFileUpdaterActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0xD06EB1C7, Data2: 0x3805, Data3: 0x4ECB, Data4: ( 0xB7,0x57,0x6C,0xF1,0x5E,0x26,0xFE,0xF3 ))// D06EB1C7-3805-4ECB-B757-6CF15E26FEF3
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CICameraSettingsActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0xFB67A508, Data2: 0x2DAD, Data3: 0x490A, Data4: ( 0x91,0x70,0xDC,0xA0,0x36,0xEB,0x11,0x4B ))// FB67A508-2DAD-490A-9170-DCA036EB114B
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CICommandLineActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x4506472C, Data2: 0x006A, Data3: 0x48EB, Data4: ( 0x8A,0xFB,0xD0,0x7A,0xB2,0x5E,0x33,0x66 ))// 4506472C-006A-48EB-8AFB-D07AB25E3366
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CICommandLineActivationOperation: WindowsFoundation.IID {
+    .init(Data1: 0x994B2841, Data2: 0xC59E, Data3: 0x4F69, Data4: ( 0xBC,0xFD,0xB6,0x1E,0xD4,0xE6,0x22,0xEB ))// 994B2841-C59E-4F69-BCFD-B61ED4E622EB
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIContactActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0xD627A1C4, Data2: 0xC025, Data3: 0x4C41, Data4: ( 0x9D,0xEF,0xF1,0xEA,0xFA,0xD0,0x75,0xE7 ))// D627A1C4-C025-4C41-9DEF-F1EAFAD075E7
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIContactCallActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0xC2DF14C7, Data2: 0x30EB, Data3: 0x41C6, Data4: ( 0xB3,0xBC,0x5B,0x16,0x94,0xF9,0xDA,0xB3 ))// C2DF14C7-30EB-41C6-B3BC-5B1694F9DAB3
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIContactMapActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0xB32BF870, Data2: 0xEEE7, Data3: 0x4AD2, Data4: ( 0xAA,0xF1,0xA8,0x7E,0xFF,0xCF,0x00,0xA4 ))// B32BF870-EEE7-4AD2-AAF1-A87EFFCF00A4
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIContactMessageActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0xDE598DB2, Data2: 0x0E03, Data3: 0x43B0, Data4: ( 0xBF,0x56,0xBC,0xC4,0x0B,0x31,0x62,0xDF ))// DE598DB2-0E03-43B0-BF56-BCC40B3162DF
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIContactPanelActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x52BB63E4, Data2: 0xD3D4, Data3: 0x4B63, Data4: ( 0x80,0x51,0x4A,0xF2,0x08,0x2C,0xAB,0x80 ))// 52BB63E4-D3D4-4B63-8051-4AF2082CAB80
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIContactPickerActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0xCE57AAE7, Data2: 0x6449, Data3: 0x45A7, Data4: ( 0x97,0x1F,0xD1,0x13,0xBE,0x7A,0x89,0x36 ))// CE57AAE7-6449-45A7-971F-D113BE7A8936
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIContactPostActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0xB35A3C67, Data2: 0xF1E7, Data3: 0x4655, Data4: ( 0xAD,0x6E,0x48,0x57,0x58,0x8F,0x55,0x2F ))// B35A3C67-F1E7-4655-AD6E-4857588F552F
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIContactVideoCallActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x61079DB8, Data2: 0xE3E7, Data3: 0x4B4F, Data4: ( 0x85,0x8D,0x5C,0x63,0xA9,0x6E,0xF6,0x84 ))// 61079DB8-E3E7-4B4F-858D-5C63A96EF684
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIContactsProviderActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x4580DCA8, Data2: 0x5750, Data3: 0x4916, Data4: ( 0xAA,0x52,0xC0,0x82,0x95,0x21,0xEB,0x94 ))// 4580DCA8-5750-4916-AA52-C0829521EB94
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIContinuationActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0xE58106B5, Data2: 0x155F, Data3: 0x4A94, Data4: ( 0xA7,0x42,0xC7,0xE0,0x8F,0x4E,0x18,0x8C ))// E58106B5-155F-4A94-A742-C7E08F4E188C
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIDeviceActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0xCD50B9A9, Data2: 0xCE10, Data3: 0x44D2, Data4: ( 0x82,0x34,0xC3,0x55,0xA0,0x73,0xEF,0x33 ))// CD50B9A9-CE10-44D2-8234-C355A073EF33
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIDevicePairingActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0xEBA0D1E4, Data2: 0xECC6, Data3: 0x4148, Data4: ( 0x94,0xED,0xF4,0xB3,0x7E,0xC0,0x5B,0x3E ))// EBA0D1E4-ECC6-4148-94ED-F4B37EC05B3E
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIDialReceiverActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0xFB777ED7, Data2: 0x85EE, Data3: 0x456E, Data4: ( 0xA4,0x4D,0x85,0xD7,0x30,0xE7,0x0A,0xED ))// FB777ED7-85EE-456E-A44D-85D730E70AED
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIFileActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0xBB2AFC33, Data2: 0x93B1, Data3: 0x42ED, Data4: ( 0x8B,0x26,0x23,0x6D,0xD9,0xC7,0x84,0x96 ))// BB2AFC33-93B1-42ED-8B26-236DD9C78496
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIFileActivatedEventArgsWithCallerPackageFamilyName: WindowsFoundation.IID {
+    .init(Data1: 0x2D60F06B, Data2: 0xD25F, Data3: 0x4D25, Data4: ( 0x86,0x53,0xE1,0xC5,0xE1,0x10,0x83,0x09 ))// 2D60F06B-D25F-4D25-8653-E1C5E1108309
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIFileActivatedEventArgsWithNeighboringFiles: WindowsFoundation.IID {
+    .init(Data1: 0x433BA1A4, Data2: 0xE1E2, Data3: 0x48FD, Data4: ( 0xB7,0xFC,0xB5,0xD6,0xEE,0xE6,0x50,0x33 ))// 433BA1A4-E1E2-48FD-B7FC-B5D6EEE65033
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIFileOpenPickerActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x72827082, Data2: 0x5525, Data3: 0x4BF2, Data4: ( 0xBC,0x09,0x1F,0x50,0x95,0xD4,0x96,0x4D ))// 72827082-5525-4BF2-BC09-1F5095D4964D
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIFileOpenPickerActivatedEventArgs2: WindowsFoundation.IID {
+    .init(Data1: 0x5E731F66, Data2: 0x8D1F, Data3: 0x45FB, Data4: ( 0xAF,0x1D,0x73,0x20,0x5C,0x8F,0xC7,0xA1 ))// 5E731F66-8D1F-45FB-AF1D-73205C8FC7A1
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIFileOpenPickerContinuationEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0xF0FA3F3A, Data2: 0xD4E8, Data3: 0x4AD3, Data4: ( 0x9C,0x34,0x23,0x08,0xF3,0x2F,0xCE,0xC9 ))// F0FA3F3A-D4E8-4AD3-9C34-2308F32FCEC9
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIFileSavePickerActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x81C19CF1, Data2: 0x74E6, Data3: 0x4387, Data4: ( 0x82,0xEB,0xBB,0x8F,0xD6,0x4B,0x43,0x46 ))// 81C19CF1-74E6-4387-82EB-BB8FD64B4346
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIFileSavePickerActivatedEventArgs2: WindowsFoundation.IID {
+    .init(Data1: 0x6B73FE13, Data2: 0x2CF2, Data3: 0x4D48, Data4: ( 0x8C,0xBC,0xAF,0x67,0xD2,0x3F,0x1C,0xE7 ))// 6B73FE13-2CF2-4D48-8CBC-AF67D23F1CE7
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIFileSavePickerContinuationEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x2C846FE1, Data2: 0x3BAD, Data3: 0x4F33, Data4: ( 0x8C,0x8B,0xE4,0x6F,0xAE,0x82,0x4B,0x4B ))// 2C846FE1-3BAD-4F33-8C8B-E46FAE824B4B
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIFolderPickerContinuationEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x51882366, Data2: 0x9F4B, Data3: 0x498F, Data4: ( 0xBE,0xB0,0x42,0x68,0x4F,0x6E,0x1C,0x29 ))// 51882366-9F4B-498F-BEB0-42684F6E1C29
 }
 
 private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CILaunchActivatedEventArgs: WindowsFoundation.IID {
@@ -28,8 +164,28 @@ private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CILaunchActivated
     .init(Data1: 0x0FD37EBC, Data2: 0x9DC9, Data3: 0x46B5, Data4: ( 0x9A,0xCE,0xBD,0x95,0xD4,0x56,0x53,0x45 ))// 0FD37EBC-9DC9-46B5-9ACE-BD95D4565345
 }
 
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CILockScreenActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x3CA77966, Data2: 0x6108, Data3: 0x4A41, Data4: ( 0x82,0x20,0xEE,0x7D,0x13,0x3C,0x85,0x32 ))// 3CA77966-6108-4A41-8220-EE7D133C8532
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CILockScreenCallActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x06F37FBE, Data2: 0xB5F2, Data3: 0x448B, Data4: ( 0xB1,0x3E,0xE3,0x28,0xAC,0x1C,0x51,0x6A ))// 06F37FBE-B5F2-448B-B13E-E328AC1C516A
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIPickerReturnedActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x360DEFB9, Data2: 0xA9D3, Data3: 0x4984, Data4: ( 0xA4,0xED,0x9E,0xC7,0x34,0x60,0x49,0x21 ))// 360DEFB9-A9D3-4984-A4ED-9EC734604921
+}
+
 private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIPrelaunchActivatedEventArgs: WindowsFoundation.IID {
     .init(Data1: 0x0C44717B, Data2: 0x19F7, Data3: 0x48D6, Data4: ( 0xB0,0x46,0xCF,0x22,0x82,0x6E,0xAA,0x74 ))// 0C44717B-19F7-48D6-B046-CF22826EAA74
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIPrint3DWorkflowActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x3F57E78B, Data2: 0xF2AC, Data3: 0x4619, Data4: ( 0x83,0x02,0xEF,0x85,0x5E,0x1C,0x9B,0x90 ))// 3F57E78B-F2AC-4619-8302-EF855E1C9B90
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIPrintTaskSettingsActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0xEE30A0C9, Data2: 0xCE56, Data3: 0x4865, Data4: ( 0xBA,0x8E,0x89,0x54,0xAC,0x27,0x11,0x07 ))// EE30A0C9-CE56-4865-BA8E-8954AC271107
 }
 
 private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIProtocolActivatedEventArgs: WindowsFoundation.IID {
@@ -40,16 +196,64 @@ private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIProtocolActivat
     .init(Data1: 0xD84A0C12, Data2: 0x5C8F, Data3: 0x438C, Data4: ( 0x83,0xCB,0xC2,0x8F,0xCC,0x0B,0x2F,0xDB ))// D84A0C12-5C8F-438C-83CB-C28FCC0B2FDB
 }
 
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIProtocolForResultsActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0xE75132C2, Data2: 0x7AE7, Data3: 0x4517, Data4: ( 0x80,0xAC,0xDB,0xE8,0xD7,0xCC,0x5B,0x9C ))// E75132C2-7AE7-4517-80AC-DBE8D7CC5B9C
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIRestrictedLaunchActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0xE0B7AC81, Data2: 0xBFC3, Data3: 0x4344, Data4: ( 0xA5,0xDA,0x19,0xFD,0x5A,0x27,0xBA,0xAE ))// E0B7AC81-BFC3-4344-A5DA-19FD5A27BAAE
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CISearchActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x8CB36951, Data2: 0x58C8, Data3: 0x43E3, Data4: ( 0x94,0xBC,0x41,0xD3,0x3F,0x8B,0x63,0x0E ))// 8CB36951-58C8-43E3-94BC-41D33F8B630E
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CISearchActivatedEventArgsWithLinguisticDetails: WindowsFoundation.IID {
+    .init(Data1: 0xC09F33DA, Data2: 0x08AB, Data3: 0x4931, Data4: ( 0x9B,0x7C,0x45,0x10,0x25,0xF2,0x1F,0x81 ))// C09F33DA-08AB-4931-9B7C-451025F21F81
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIShareTargetActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x4BDAF9C8, Data2: 0xCDB2, Data3: 0x4ACB, Data4: ( 0xBF,0xC3,0x66,0x48,0x56,0x33,0x78,0xEC ))// 4BDAF9C8-CDB2-4ACB-BFC3-6648563378EC
+}
+
 private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CISplashScreen: WindowsFoundation.IID {
     .init(Data1: 0xCA4D975C, Data2: 0xD4D6, Data3: 0x43F0, Data4: ( 0x97,0xC0,0x08,0x33,0xC6,0x39,0x1C,0x24 ))// CA4D975C-D4D6-43F0-97C0-0833C6391C24
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIStartupTaskActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x03B11A58, Data2: 0x5276, Data3: 0x4D91, Data4: ( 0x86,0x21,0x54,0x61,0x18,0x64,0xD5,0xFA ))// 03B11A58-5276-4D91-8621-54611864D5FA
 }
 
 private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CITileActivatedInfo: WindowsFoundation.IID {
     .init(Data1: 0x80E4A3B1, Data2: 0x3980, Data3: 0x4F17, Data4: ( 0xB7,0x38,0x89,0x19,0x4E,0x0B,0x8F,0x65 ))// 80E4A3B1-3980-4F17-B738-89194E0B8F65
 }
 
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIToastNotificationActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x92A86F82, Data2: 0x5290, Data3: 0x431D, Data4: ( 0xBE,0x85,0xC4,0xAA,0xEE,0xB8,0x68,0x5F ))// 92A86F82-5290-431D-BE85-C4AAEEB8685F
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIUserDataAccountProviderActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x1BC9F723, Data2: 0x8EF1, Data3: 0x4A51, Data4: ( 0xA6,0x3A,0xFE,0x71,0x1E,0xEA,0xB6,0x07 ))// 1BC9F723-8EF1-4A51-A63A-FE711EEAB607
+}
+
 private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIViewSwitcherProvider: WindowsFoundation.IID {
     .init(Data1: 0x33F288A6, Data2: 0x5C2C, Data3: 0x4D27, Data4: ( 0xBA,0xC7,0x75,0x36,0x08,0x8F,0x12,0x19 ))// 33F288A6-5C2C-4D27-BAC7-7536088F1219
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIVoiceCommandActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0xAB92DCFD, Data2: 0x8D43, Data3: 0x4DE6, Data4: ( 0x97,0x75,0x20,0x70,0x4B,0x58,0x1B,0x00 ))// AB92DCFD-8D43-4DE6-9775-20704B581B00
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIWalletActionActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0xFCFC027B, Data2: 0x1A1A, Data3: 0x4D22, Data4: ( 0x92,0x3F,0xAE,0x6F,0x45,0xFA,0x52,0xD9 ))// FCFC027B-1A1A-4D22-923F-AE6F45FA52D9
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIWebAccountProviderActivatedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x72B71774, Data2: 0x98EA, Data3: 0x4CCF, Data4: ( 0x97,0x52,0x46,0xD9,0x05,0x10,0x04,0xF1 ))// 72B71774-98EA-4CCF-9752-46D9051004F1
+}
+
+private var IID___x_ABI_CWindows_CApplicationModel_CActivation_CIWebAuthenticationBrokerContinuationEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x75DDA3D4, Data2: 0x7714, Data3: 0x453D, Data4: ( 0xB7,0xFF,0xB9,0x5E,0x3A,0x17,0x09,0xDA ))// 75DDA3D4-7714-453D-B7FF-B95E3A1709DA
 }
 
 public enum __ABI_Windows_ApplicationModel_Activation {
@@ -237,6 +441,367 @@ public enum __ABI_Windows_ApplicationModel_Activation {
     )
 
     public typealias IApplicationViewActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IApplicationViewActivatedEventArgsBridge>
+    public class IAppointmentsProviderActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderActivatedEventArgs }
+
+        open func get_VerbImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderActivatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Verb(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    internal static var IAppointmentsProviderActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderActivatedEventArgsVtbl = .init(
+        QueryInterface: { IAppointmentsProviderActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IAppointmentsProviderActivatedEventArgsWrapper.addRef($0) },
+        Release: { IAppointmentsProviderActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IAppointmentsProviderActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_Verb: {
+            guard let __unwrapped__instance = IAppointmentsProviderActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.verb
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        }
+    )
+
+    public typealias IAppointmentsProviderActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IAppointmentsProviderActivatedEventArgsBridge>
+    public class IAppointmentsProviderAddAppointmentActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderAddAppointmentActivatedEventArgs }
+
+        open func get_AddAppointmentOperationImpl() throws -> UWP.AddAppointmentOperation? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderAddAppointmentActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_AddAppointmentOperation(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    internal static var IAppointmentsProviderAddAppointmentActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderAddAppointmentActivatedEventArgsVtbl = .init(
+        QueryInterface: { IAppointmentsProviderAddAppointmentActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IAppointmentsProviderAddAppointmentActivatedEventArgsWrapper.addRef($0) },
+        Release: { IAppointmentsProviderAddAppointmentActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 5).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderAddAppointmentActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            iids[4] = __ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderActivatedEventArgsWrapper.IID
+            $1!.pointee = 5
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IAppointmentsProviderAddAppointmentActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_AddAppointmentOperation: {
+            guard let __unwrapped__instance = IAppointmentsProviderAddAppointmentActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.addAppointmentOperation
+            value?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IAppointmentsProviderAddAppointmentActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IAppointmentsProviderAddAppointmentActivatedEventArgsBridge>
+    public class IAppointmentsProviderRemoveAppointmentActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderRemoveAppointmentActivatedEventArgs }
+
+        open func get_RemoveAppointmentOperationImpl() throws -> UWP.RemoveAppointmentOperation? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderRemoveAppointmentActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_RemoveAppointmentOperation(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    internal static var IAppointmentsProviderRemoveAppointmentActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderRemoveAppointmentActivatedEventArgsVtbl = .init(
+        QueryInterface: { IAppointmentsProviderRemoveAppointmentActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IAppointmentsProviderRemoveAppointmentActivatedEventArgsWrapper.addRef($0) },
+        Release: { IAppointmentsProviderRemoveAppointmentActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 5).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderRemoveAppointmentActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            iids[4] = __ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderActivatedEventArgsWrapper.IID
+            $1!.pointee = 5
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IAppointmentsProviderRemoveAppointmentActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_RemoveAppointmentOperation: {
+            guard let __unwrapped__instance = IAppointmentsProviderRemoveAppointmentActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.removeAppointmentOperation
+            value?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IAppointmentsProviderRemoveAppointmentActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IAppointmentsProviderRemoveAppointmentActivatedEventArgsBridge>
+    public class IAppointmentsProviderReplaceAppointmentActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderReplaceAppointmentActivatedEventArgs }
+
+        open func get_ReplaceAppointmentOperationImpl() throws -> UWP.ReplaceAppointmentOperation? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderReplaceAppointmentActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ReplaceAppointmentOperation(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    internal static var IAppointmentsProviderReplaceAppointmentActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderReplaceAppointmentActivatedEventArgsVtbl = .init(
+        QueryInterface: { IAppointmentsProviderReplaceAppointmentActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IAppointmentsProviderReplaceAppointmentActivatedEventArgsWrapper.addRef($0) },
+        Release: { IAppointmentsProviderReplaceAppointmentActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 5).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderReplaceAppointmentActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            iids[4] = __ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderActivatedEventArgsWrapper.IID
+            $1!.pointee = 5
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IAppointmentsProviderReplaceAppointmentActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_ReplaceAppointmentOperation: {
+            guard let __unwrapped__instance = IAppointmentsProviderReplaceAppointmentActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.replaceAppointmentOperation
+            value?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IAppointmentsProviderReplaceAppointmentActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IAppointmentsProviderReplaceAppointmentActivatedEventArgsBridge>
+    public class IAppointmentsProviderShowAppointmentDetailsActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderShowAppointmentDetailsActivatedEventArgs }
+
+        open func get_InstanceStartDateImpl() throws -> WindowsFoundation.DateTime? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderShowAppointmentDetailsActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_InstanceStartDate(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CFoundation__CDateTimeWrapper.unwrapFrom(abi: value)
+        }
+
+        open func get_LocalIdImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderShowAppointmentDetailsActivatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LocalId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        open func get_RoamingIdImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderShowAppointmentDetailsActivatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_RoamingId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    internal static var IAppointmentsProviderShowAppointmentDetailsActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderShowAppointmentDetailsActivatedEventArgsVtbl = .init(
+        QueryInterface: { IAppointmentsProviderShowAppointmentDetailsActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IAppointmentsProviderShowAppointmentDetailsActivatedEventArgsWrapper.addRef($0) },
+        Release: { IAppointmentsProviderShowAppointmentDetailsActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 5).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderShowAppointmentDetailsActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            iids[4] = __ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderActivatedEventArgsWrapper.IID
+            $1!.pointee = 5
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IAppointmentsProviderShowAppointmentDetailsActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_InstanceStartDate: {
+            guard let __unwrapped__instance = IAppointmentsProviderShowAppointmentDetailsActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.instanceStartDate
+            let valueWrapper = UWP.__x_ABI_C__FIReference_1___x_ABI_CWindows__CFoundation__CDateTimeWrapper(value)
+            valueWrapper?.copyTo($1)
+            return S_OK
+        },
+
+        get_LocalId: {
+            guard let __unwrapped__instance = IAppointmentsProviderShowAppointmentDetailsActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.localId
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        },
+
+        get_RoamingId: {
+            guard let __unwrapped__instance = IAppointmentsProviderShowAppointmentDetailsActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.roamingId
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        }
+    )
+
+    public typealias IAppointmentsProviderShowAppointmentDetailsActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IAppointmentsProviderShowAppointmentDetailsActivatedEventArgsBridge>
+    public class IAppointmentsProviderShowTimeFrameActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderShowTimeFrameActivatedEventArgs }
+
+        open func get_TimeToShowImpl() throws -> WindowsFoundation.DateTime {
+            var value: __x_ABI_CWindows_CFoundation_CDateTime = .init()
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderShowTimeFrameActivatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_TimeToShow(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        open func get_DurationImpl() throws -> WindowsFoundation.TimeSpan {
+            var value: __x_ABI_CWindows_CFoundation_CTimeSpan = .init()
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderShowTimeFrameActivatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Duration(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    internal static var IAppointmentsProviderShowTimeFrameActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIAppointmentsProviderShowTimeFrameActivatedEventArgsVtbl = .init(
+        QueryInterface: { IAppointmentsProviderShowTimeFrameActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IAppointmentsProviderShowTimeFrameActivatedEventArgsWrapper.addRef($0) },
+        Release: { IAppointmentsProviderShowTimeFrameActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 5).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderShowTimeFrameActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            iids[4] = __ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderActivatedEventArgsWrapper.IID
+            $1!.pointee = 5
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IAppointmentsProviderShowTimeFrameActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_TimeToShow: {
+            guard let __unwrapped__instance = IAppointmentsProviderShowTimeFrameActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.timeToShow
+            $1?.initialize(to: .from(swift: value))
+            return S_OK
+        },
+
+        get_Duration: {
+            guard let __unwrapped__instance = IAppointmentsProviderShowTimeFrameActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.duration
+            $1?.initialize(to: .from(swift: value))
+            return S_OK
+        }
+    )
+
+    public typealias IAppointmentsProviderShowTimeFrameActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IAppointmentsProviderShowTimeFrameActivatedEventArgsBridge>
     public class IBackgroundActivatedEventArgs: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIBackgroundActivatedEventArgs }
 
@@ -289,6 +854,1670 @@ public enum __ABI_Windows_ApplicationModel_Activation {
     )
 
     public typealias IBackgroundActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IBackgroundActivatedEventArgsBridge>
+    public class IBarcodeScannerPreviewActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIBarcodeScannerPreviewActivatedEventArgs }
+
+        open func get_ConnectionIdImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIBarcodeScannerPreviewActivatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ConnectionId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    internal static var IBarcodeScannerPreviewActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIBarcodeScannerPreviewActivatedEventArgsVtbl = .init(
+        QueryInterface: { IBarcodeScannerPreviewActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IBarcodeScannerPreviewActivatedEventArgsWrapper.addRef($0) },
+        Release: { IBarcodeScannerPreviewActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IBarcodeScannerPreviewActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IBarcodeScannerPreviewActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_ConnectionId: {
+            guard let __unwrapped__instance = IBarcodeScannerPreviewActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.connectionId
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        }
+    )
+
+    public typealias IBarcodeScannerPreviewActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IBarcodeScannerPreviewActivatedEventArgsBridge>
+    public class ICachedFileUpdaterActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CICachedFileUpdaterActivatedEventArgs }
+
+        open func get_CachedFileUpdaterUIImpl() throws -> UWP.CachedFileUpdaterUI? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CICachedFileUpdaterActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CachedFileUpdaterUI(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    internal static var ICachedFileUpdaterActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CICachedFileUpdaterActivatedEventArgsVtbl = .init(
+        QueryInterface: { ICachedFileUpdaterActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { ICachedFileUpdaterActivatedEventArgsWrapper.addRef($0) },
+        Release: { ICachedFileUpdaterActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.ICachedFileUpdaterActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.ICachedFileUpdaterActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_CachedFileUpdaterUI: {
+            guard let __unwrapped__instance = ICachedFileUpdaterActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.cachedFileUpdaterUI
+            value?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias ICachedFileUpdaterActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.ICachedFileUpdaterActivatedEventArgsBridge>
+    public class ICameraSettingsActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CICameraSettingsActivatedEventArgs }
+
+        open func get_VideoDeviceControllerImpl() throws -> Any? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CICameraSettingsActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoDeviceController(pThis, &valueAbi))
+                }
+            }
+            return __ABI_.AnyWrapper.unwrapFrom(abi: value)
+        }
+
+        open func get_VideoDeviceExtensionImpl() throws -> Any? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CICameraSettingsActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_VideoDeviceExtension(pThis, &valueAbi))
+                }
+            }
+            return __ABI_.AnyWrapper.unwrapFrom(abi: value)
+        }
+
+    }
+
+    internal static var ICameraSettingsActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CICameraSettingsActivatedEventArgsVtbl = .init(
+        QueryInterface: { ICameraSettingsActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { ICameraSettingsActivatedEventArgsWrapper.addRef($0) },
+        Release: { ICameraSettingsActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.ICameraSettingsActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.ICameraSettingsActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_VideoDeviceController: {
+            guard let __unwrapped__instance = ICameraSettingsActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.videoDeviceController
+            let valueWrapper = __ABI_.AnyWrapper(value)
+            valueWrapper?.copyTo($1)
+            return S_OK
+        },
+
+        get_VideoDeviceExtension: {
+            guard let __unwrapped__instance = ICameraSettingsActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.videoDeviceExtension
+            let valueWrapper = __ABI_.AnyWrapper(value)
+            valueWrapper?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias ICameraSettingsActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.ICameraSettingsActivatedEventArgsBridge>
+    public class ICommandLineActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CICommandLineActivatedEventArgs }
+
+        open func get_OperationImpl() throws -> UWP.CommandLineActivationOperation? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CICommandLineActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Operation(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    internal static var ICommandLineActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CICommandLineActivatedEventArgsVtbl = .init(
+        QueryInterface: { ICommandLineActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { ICommandLineActivatedEventArgsWrapper.addRef($0) },
+        Release: { ICommandLineActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.ICommandLineActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.ICommandLineActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_Operation: {
+            guard let __unwrapped__instance = ICommandLineActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.operation
+            value?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias ICommandLineActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.ICommandLineActivatedEventArgsBridge>
+    public class ICommandLineActivationOperation: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CICommandLineActivationOperation }
+
+        internal func get_ArgumentsImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CICommandLineActivationOperation.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Arguments(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_CurrentDirectoryPathImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CICommandLineActivationOperation.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_CurrentDirectoryPath(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_ExitCodeImpl(_ value: Int32) throws {
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CICommandLineActivationOperation.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ExitCode(pThis, value))
+            }
+        }
+
+        internal func get_ExitCodeImpl() throws -> Int32 {
+            var value: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CICommandLineActivationOperation.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ExitCode(pThis, &value))
+            }
+            return value
+        }
+
+        internal func GetDeferralImpl() throws -> WindowsFoundation.Deferral? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CICommandLineActivationOperation.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetDeferral(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IContactActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIContactActivatedEventArgs }
+
+        open func get_VerbImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIContactActivatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Verb(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    internal static var IContactActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIContactActivatedEventArgsVtbl = .init(
+        QueryInterface: { IContactActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IContactActivatedEventArgsWrapper.addRef($0) },
+        Release: { IContactActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IContactActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IContactActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_Verb: {
+            guard let __unwrapped__instance = IContactActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.verb
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        }
+    )
+
+    public typealias IContactActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IContactActivatedEventArgsBridge>
+    public class IContactCallActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIContactCallActivatedEventArgs }
+
+        open func get_ServiceIdImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIContactCallActivatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ServiceId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        open func get_ServiceUserIdImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIContactCallActivatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ServiceUserId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        open func get_ContactImpl() throws -> UWP.Contact? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIContactCallActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Contact(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    internal static var IContactCallActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIContactCallActivatedEventArgsVtbl = .init(
+        QueryInterface: { IContactCallActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IContactCallActivatedEventArgsWrapper.addRef($0) },
+        Release: { IContactCallActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 5).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IContactCallActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            iids[4] = __ABI_Windows_ApplicationModel_Activation.IContactActivatedEventArgsWrapper.IID
+            $1!.pointee = 5
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IContactCallActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_ServiceId: {
+            guard let __unwrapped__instance = IContactCallActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.serviceId
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        },
+
+        get_ServiceUserId: {
+            guard let __unwrapped__instance = IContactCallActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.serviceUserId
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        },
+
+        get_Contact: {
+            guard let __unwrapped__instance = IContactCallActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.contact
+            value?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IContactCallActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IContactCallActivatedEventArgsBridge>
+    public class IContactMapActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIContactMapActivatedEventArgs }
+
+        open func get_AddressImpl() throws -> UWP.ContactAddress? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIContactMapActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Address(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        open func get_ContactImpl() throws -> UWP.Contact? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIContactMapActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Contact(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    internal static var IContactMapActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIContactMapActivatedEventArgsVtbl = .init(
+        QueryInterface: { IContactMapActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IContactMapActivatedEventArgsWrapper.addRef($0) },
+        Release: { IContactMapActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 5).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IContactMapActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            iids[4] = __ABI_Windows_ApplicationModel_Activation.IContactActivatedEventArgsWrapper.IID
+            $1!.pointee = 5
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IContactMapActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_Address: {
+            guard let __unwrapped__instance = IContactMapActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.address
+            value?.copyTo($1)
+            return S_OK
+        },
+
+        get_Contact: {
+            guard let __unwrapped__instance = IContactMapActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.contact
+            value?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IContactMapActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IContactMapActivatedEventArgsBridge>
+    public class IContactMessageActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIContactMessageActivatedEventArgs }
+
+        open func get_ServiceIdImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIContactMessageActivatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ServiceId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        open func get_ServiceUserIdImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIContactMessageActivatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ServiceUserId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        open func get_ContactImpl() throws -> UWP.Contact? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIContactMessageActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Contact(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    internal static var IContactMessageActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIContactMessageActivatedEventArgsVtbl = .init(
+        QueryInterface: { IContactMessageActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IContactMessageActivatedEventArgsWrapper.addRef($0) },
+        Release: { IContactMessageActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 5).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IContactMessageActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            iids[4] = __ABI_Windows_ApplicationModel_Activation.IContactActivatedEventArgsWrapper.IID
+            $1!.pointee = 5
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IContactMessageActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_ServiceId: {
+            guard let __unwrapped__instance = IContactMessageActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.serviceId
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        },
+
+        get_ServiceUserId: {
+            guard let __unwrapped__instance = IContactMessageActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.serviceUserId
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        },
+
+        get_Contact: {
+            guard let __unwrapped__instance = IContactMessageActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.contact
+            value?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IContactMessageActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IContactMessageActivatedEventArgsBridge>
+    public class IContactPanelActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIContactPanelActivatedEventArgs }
+
+        open func get_ContactPanelImpl() throws -> UWP.ContactPanel? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIContactPanelActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ContactPanel(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        open func get_ContactImpl() throws -> UWP.Contact? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIContactPanelActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Contact(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    internal static var IContactPanelActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIContactPanelActivatedEventArgsVtbl = .init(
+        QueryInterface: { IContactPanelActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IContactPanelActivatedEventArgsWrapper.addRef($0) },
+        Release: { IContactPanelActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 3).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IContactPanelActivatedEventArgsWrapper.IID
+            $1!.pointee = 3
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IContactPanelActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_ContactPanel: {
+            guard let __unwrapped__instance = IContactPanelActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.contactPanel
+            value?.copyTo($1)
+            return S_OK
+        },
+
+        get_Contact: {
+            guard let __unwrapped__instance = IContactPanelActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.contact
+            value?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IContactPanelActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IContactPanelActivatedEventArgsBridge>
+    public class IContactPickerActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIContactPickerActivatedEventArgs }
+
+        open func get_ContactPickerUIImpl() throws -> UWP.ContactPickerUI? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIContactPickerActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ContactPickerUI(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    internal static var IContactPickerActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIContactPickerActivatedEventArgsVtbl = .init(
+        QueryInterface: { IContactPickerActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IContactPickerActivatedEventArgsWrapper.addRef($0) },
+        Release: { IContactPickerActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IContactPickerActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IContactPickerActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_ContactPickerUI: {
+            guard let __unwrapped__instance = IContactPickerActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.contactPickerUI
+            value?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IContactPickerActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IContactPickerActivatedEventArgsBridge>
+    public class IContactPostActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIContactPostActivatedEventArgs }
+
+        open func get_ServiceIdImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIContactPostActivatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ServiceId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        open func get_ServiceUserIdImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIContactPostActivatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ServiceUserId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        open func get_ContactImpl() throws -> UWP.Contact? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIContactPostActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Contact(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    internal static var IContactPostActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIContactPostActivatedEventArgsVtbl = .init(
+        QueryInterface: { IContactPostActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IContactPostActivatedEventArgsWrapper.addRef($0) },
+        Release: { IContactPostActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 5).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IContactPostActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            iids[4] = __ABI_Windows_ApplicationModel_Activation.IContactActivatedEventArgsWrapper.IID
+            $1!.pointee = 5
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IContactPostActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_ServiceId: {
+            guard let __unwrapped__instance = IContactPostActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.serviceId
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        },
+
+        get_ServiceUserId: {
+            guard let __unwrapped__instance = IContactPostActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.serviceUserId
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        },
+
+        get_Contact: {
+            guard let __unwrapped__instance = IContactPostActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.contact
+            value?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IContactPostActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IContactPostActivatedEventArgsBridge>
+    public class IContactVideoCallActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIContactVideoCallActivatedEventArgs }
+
+        open func get_ServiceIdImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIContactVideoCallActivatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ServiceId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        open func get_ServiceUserIdImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIContactVideoCallActivatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ServiceUserId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        open func get_ContactImpl() throws -> UWP.Contact? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIContactVideoCallActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Contact(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    internal static var IContactVideoCallActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIContactVideoCallActivatedEventArgsVtbl = .init(
+        QueryInterface: { IContactVideoCallActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IContactVideoCallActivatedEventArgsWrapper.addRef($0) },
+        Release: { IContactVideoCallActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 5).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IContactVideoCallActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            iids[4] = __ABI_Windows_ApplicationModel_Activation.IContactActivatedEventArgsWrapper.IID
+            $1!.pointee = 5
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IContactVideoCallActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_ServiceId: {
+            guard let __unwrapped__instance = IContactVideoCallActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.serviceId
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        },
+
+        get_ServiceUserId: {
+            guard let __unwrapped__instance = IContactVideoCallActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.serviceUserId
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        },
+
+        get_Contact: {
+            guard let __unwrapped__instance = IContactVideoCallActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.contact
+            value?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IContactVideoCallActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IContactVideoCallActivatedEventArgsBridge>
+    public class IContactsProviderActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIContactsProviderActivatedEventArgs }
+
+        open func get_VerbImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIContactsProviderActivatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Verb(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    internal static var IContactsProviderActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIContactsProviderActivatedEventArgsVtbl = .init(
+        QueryInterface: { IContactsProviderActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IContactsProviderActivatedEventArgsWrapper.addRef($0) },
+        Release: { IContactsProviderActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IContactsProviderActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IContactsProviderActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_Verb: {
+            guard let __unwrapped__instance = IContactsProviderActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.verb
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        }
+    )
+
+    public typealias IContactsProviderActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IContactsProviderActivatedEventArgsBridge>
+    public class IContinuationActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIContinuationActivatedEventArgs }
+
+        open func get_ContinuationDataImpl() throws -> WindowsFoundation.ValueSet? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIContinuationActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ContinuationData(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    internal static var IContinuationActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIContinuationActivatedEventArgsVtbl = .init(
+        QueryInterface: { IContinuationActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IContinuationActivatedEventArgsWrapper.addRef($0) },
+        Release: { IContinuationActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IContinuationActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IContinuationActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_ContinuationData: {
+            guard let __unwrapped__instance = IContinuationActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.continuationData
+            value?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IContinuationActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IContinuationActivatedEventArgsBridge>
+    public class IDeviceActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIDeviceActivatedEventArgs }
+
+        open func get_DeviceInformationIdImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIDeviceActivatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DeviceInformationId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        open func get_VerbImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIDeviceActivatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Verb(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    internal static var IDeviceActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIDeviceActivatedEventArgsVtbl = .init(
+        QueryInterface: { IDeviceActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IDeviceActivatedEventArgsWrapper.addRef($0) },
+        Release: { IDeviceActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IDeviceActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IDeviceActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_DeviceInformationId: {
+            guard let __unwrapped__instance = IDeviceActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.deviceInformationId
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        },
+
+        get_Verb: {
+            guard let __unwrapped__instance = IDeviceActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.verb
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        }
+    )
+
+    public typealias IDeviceActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IDeviceActivatedEventArgsBridge>
+    public class IDevicePairingActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIDevicePairingActivatedEventArgs }
+
+        open func get_DeviceInformationImpl() throws -> UWP.DeviceInformation? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIDevicePairingActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_DeviceInformation(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    internal static var IDevicePairingActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIDevicePairingActivatedEventArgsVtbl = .init(
+        QueryInterface: { IDevicePairingActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IDevicePairingActivatedEventArgsWrapper.addRef($0) },
+        Release: { IDevicePairingActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IDevicePairingActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IDevicePairingActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_DeviceInformation: {
+            guard let __unwrapped__instance = IDevicePairingActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.deviceInformation
+            value?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IDevicePairingActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IDevicePairingActivatedEventArgsBridge>
+    public class IDialReceiverActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIDialReceiverActivatedEventArgs }
+
+        open func get_AppNameImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIDialReceiverActivatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AppName(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    internal static var IDialReceiverActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIDialReceiverActivatedEventArgsVtbl = .init(
+        QueryInterface: { IDialReceiverActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IDialReceiverActivatedEventArgsWrapper.addRef($0) },
+        Release: { IDialReceiverActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 5).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IDialReceiverActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            iids[4] = __ABI_Windows_ApplicationModel_Activation.ILaunchActivatedEventArgsWrapper.IID
+            $1!.pointee = 5
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IDialReceiverActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_AppName: {
+            guard let __unwrapped__instance = IDialReceiverActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.appName
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        }
+    )
+
+    public typealias IDialReceiverActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IDialReceiverActivatedEventArgsBridge>
+    public class IFileActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIFileActivatedEventArgs }
+
+        open func get_FilesImpl() throws -> WindowsFoundation.AnyIVectorView<UWP.AnyIStorageItem?>? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIFileActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Files(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper.unwrapFrom(abi: value)
+        }
+
+        open func get_VerbImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIFileActivatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Verb(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    internal static var IFileActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIFileActivatedEventArgsVtbl = .init(
+        QueryInterface: { IFileActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IFileActivatedEventArgsWrapper.addRef($0) },
+        Release: { IFileActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IFileActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IFileActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_Files: {
+            guard let __unwrapped__instance = IFileActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.files
+            let valueWrapper = UWP.__x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CIStorageItemWrapper(value)
+            valueWrapper?.copyTo($1)
+            return S_OK
+        },
+
+        get_Verb: {
+            guard let __unwrapped__instance = IFileActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.verb
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        }
+    )
+
+    public typealias IFileActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IFileActivatedEventArgsBridge>
+    public class IFileActivatedEventArgsWithCallerPackageFamilyName: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIFileActivatedEventArgsWithCallerPackageFamilyName }
+
+        open func get_CallerPackageFamilyNameImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIFileActivatedEventArgsWithCallerPackageFamilyName.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_CallerPackageFamilyName(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    internal static var IFileActivatedEventArgsWithCallerPackageFamilyNameVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIFileActivatedEventArgsWithCallerPackageFamilyNameVtbl = .init(
+        QueryInterface: { IFileActivatedEventArgsWithCallerPackageFamilyNameWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IFileActivatedEventArgsWithCallerPackageFamilyNameWrapper.addRef($0) },
+        Release: { IFileActivatedEventArgsWithCallerPackageFamilyNameWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IFileActivatedEventArgsWithCallerPackageFamilyNameWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IFileActivatedEventArgsWithCallerPackageFamilyName").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_CallerPackageFamilyName: {
+            guard let __unwrapped__instance = IFileActivatedEventArgsWithCallerPackageFamilyNameWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.callerPackageFamilyName
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        }
+    )
+
+    public typealias IFileActivatedEventArgsWithCallerPackageFamilyNameWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IFileActivatedEventArgsWithCallerPackageFamilyNameBridge>
+    public class IFileActivatedEventArgsWithNeighboringFiles: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIFileActivatedEventArgsWithNeighboringFiles }
+
+        open func get_NeighboringFilesQueryImpl() throws -> UWP.StorageFileQueryResult? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIFileActivatedEventArgsWithNeighboringFiles.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_NeighboringFilesQuery(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    internal static var IFileActivatedEventArgsWithNeighboringFilesVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIFileActivatedEventArgsWithNeighboringFilesVtbl = .init(
+        QueryInterface: { IFileActivatedEventArgsWithNeighboringFilesWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IFileActivatedEventArgsWithNeighboringFilesWrapper.addRef($0) },
+        Release: { IFileActivatedEventArgsWithNeighboringFilesWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 5).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IFileActivatedEventArgsWithNeighboringFilesWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            iids[4] = __ABI_Windows_ApplicationModel_Activation.IFileActivatedEventArgsWrapper.IID
+            $1!.pointee = 5
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IFileActivatedEventArgsWithNeighboringFiles").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_NeighboringFilesQuery: {
+            guard let __unwrapped__instance = IFileActivatedEventArgsWithNeighboringFilesWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.neighboringFilesQuery
+            value?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IFileActivatedEventArgsWithNeighboringFilesWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IFileActivatedEventArgsWithNeighboringFilesBridge>
+    public class IFileOpenPickerActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIFileOpenPickerActivatedEventArgs }
+
+        open func get_FileOpenPickerUIImpl() throws -> UWP.FileOpenPickerUI? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIFileOpenPickerActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_FileOpenPickerUI(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    internal static var IFileOpenPickerActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIFileOpenPickerActivatedEventArgsVtbl = .init(
+        QueryInterface: { IFileOpenPickerActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IFileOpenPickerActivatedEventArgsWrapper.addRef($0) },
+        Release: { IFileOpenPickerActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IFileOpenPickerActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IFileOpenPickerActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_FileOpenPickerUI: {
+            guard let __unwrapped__instance = IFileOpenPickerActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.fileOpenPickerUI
+            value?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IFileOpenPickerActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IFileOpenPickerActivatedEventArgsBridge>
+    public class IFileOpenPickerActivatedEventArgs2: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIFileOpenPickerActivatedEventArgs2 }
+
+        open func get_CallerPackageFamilyNameImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIFileOpenPickerActivatedEventArgs2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_CallerPackageFamilyName(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    internal static var IFileOpenPickerActivatedEventArgs2VTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIFileOpenPickerActivatedEventArgs2Vtbl = .init(
+        QueryInterface: { IFileOpenPickerActivatedEventArgs2Wrapper.queryInterface($0, $1, $2) },
+        AddRef: { IFileOpenPickerActivatedEventArgs2Wrapper.addRef($0) },
+        Release: { IFileOpenPickerActivatedEventArgs2Wrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 3).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IFileOpenPickerActivatedEventArgs2Wrapper.IID
+            $1!.pointee = 3
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IFileOpenPickerActivatedEventArgs2").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_CallerPackageFamilyName: {
+            guard let __unwrapped__instance = IFileOpenPickerActivatedEventArgs2Wrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.callerPackageFamilyName
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        }
+    )
+
+    public typealias IFileOpenPickerActivatedEventArgs2Wrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IFileOpenPickerActivatedEventArgs2Bridge>
+    public class IFileOpenPickerContinuationEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIFileOpenPickerContinuationEventArgs }
+
+        open func get_FilesImpl() throws -> WindowsFoundation.AnyIVectorView<UWP.StorageFile?>? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIFileOpenPickerContinuationEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Files(pThis, &valueAbi))
+                }
+            }
+            return UWP.__x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileWrapper.unwrapFrom(abi: value)
+        }
+
+    }
+
+    internal static var IFileOpenPickerContinuationEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIFileOpenPickerContinuationEventArgsVtbl = .init(
+        QueryInterface: { IFileOpenPickerContinuationEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IFileOpenPickerContinuationEventArgsWrapper.addRef($0) },
+        Release: { IFileOpenPickerContinuationEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 5).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IFileOpenPickerContinuationEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            iids[4] = __ABI_Windows_ApplicationModel_Activation.IContinuationActivatedEventArgsWrapper.IID
+            $1!.pointee = 5
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IFileOpenPickerContinuationEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_Files: {
+            guard let __unwrapped__instance = IFileOpenPickerContinuationEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.files
+            let valueWrapper = UWP.__x_ABI_C__FIVectorView_1___x_ABI_CWindows__CStorage__CStorageFileWrapper(value)
+            valueWrapper?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IFileOpenPickerContinuationEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IFileOpenPickerContinuationEventArgsBridge>
+    public class IFileSavePickerActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIFileSavePickerActivatedEventArgs }
+
+        open func get_FileSavePickerUIImpl() throws -> UWP.FileSavePickerUI? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIFileSavePickerActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_FileSavePickerUI(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    internal static var IFileSavePickerActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIFileSavePickerActivatedEventArgsVtbl = .init(
+        QueryInterface: { IFileSavePickerActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IFileSavePickerActivatedEventArgsWrapper.addRef($0) },
+        Release: { IFileSavePickerActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IFileSavePickerActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IFileSavePickerActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_FileSavePickerUI: {
+            guard let __unwrapped__instance = IFileSavePickerActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.fileSavePickerUI
+            value?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IFileSavePickerActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IFileSavePickerActivatedEventArgsBridge>
+    public class IFileSavePickerActivatedEventArgs2: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIFileSavePickerActivatedEventArgs2 }
+
+        open func get_CallerPackageFamilyNameImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIFileSavePickerActivatedEventArgs2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_CallerPackageFamilyName(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        open func get_EnterpriseIdImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIFileSavePickerActivatedEventArgs2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_EnterpriseId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    internal static var IFileSavePickerActivatedEventArgs2VTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIFileSavePickerActivatedEventArgs2Vtbl = .init(
+        QueryInterface: { IFileSavePickerActivatedEventArgs2Wrapper.queryInterface($0, $1, $2) },
+        AddRef: { IFileSavePickerActivatedEventArgs2Wrapper.addRef($0) },
+        Release: { IFileSavePickerActivatedEventArgs2Wrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 3).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IFileSavePickerActivatedEventArgs2Wrapper.IID
+            $1!.pointee = 3
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IFileSavePickerActivatedEventArgs2").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_CallerPackageFamilyName: {
+            guard let __unwrapped__instance = IFileSavePickerActivatedEventArgs2Wrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.callerPackageFamilyName
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        },
+
+        get_EnterpriseId: {
+            guard let __unwrapped__instance = IFileSavePickerActivatedEventArgs2Wrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.enterpriseId
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        }
+    )
+
+    public typealias IFileSavePickerActivatedEventArgs2Wrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IFileSavePickerActivatedEventArgs2Bridge>
+    public class IFileSavePickerContinuationEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIFileSavePickerContinuationEventArgs }
+
+        open func get_FileImpl() throws -> UWP.StorageFile? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIFileSavePickerContinuationEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_File(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    internal static var IFileSavePickerContinuationEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIFileSavePickerContinuationEventArgsVtbl = .init(
+        QueryInterface: { IFileSavePickerContinuationEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IFileSavePickerContinuationEventArgsWrapper.addRef($0) },
+        Release: { IFileSavePickerContinuationEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 5).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IFileSavePickerContinuationEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            iids[4] = __ABI_Windows_ApplicationModel_Activation.IContinuationActivatedEventArgsWrapper.IID
+            $1!.pointee = 5
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IFileSavePickerContinuationEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_File: {
+            guard let __unwrapped__instance = IFileSavePickerContinuationEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.file
+            value?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IFileSavePickerContinuationEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IFileSavePickerContinuationEventArgsBridge>
+    public class IFolderPickerContinuationEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIFolderPickerContinuationEventArgs }
+
+        open func get_FolderImpl() throws -> UWP.StorageFolder? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIFolderPickerContinuationEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Folder(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    internal static var IFolderPickerContinuationEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIFolderPickerContinuationEventArgsVtbl = .init(
+        QueryInterface: { IFolderPickerContinuationEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IFolderPickerContinuationEventArgsWrapper.addRef($0) },
+        Release: { IFolderPickerContinuationEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 5).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IFolderPickerContinuationEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            iids[4] = __ABI_Windows_ApplicationModel_Activation.IContinuationActivatedEventArgsWrapper.IID
+            $1!.pointee = 5
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IFolderPickerContinuationEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_Folder: {
+            guard let __unwrapped__instance = IFolderPickerContinuationEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.folder
+            value?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IFolderPickerContinuationEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IFolderPickerContinuationEventArgsBridge>
     public class ILaunchActivatedEventArgs: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CILaunchActivatedEventArgs }
 
@@ -408,6 +2637,163 @@ public enum __ABI_Windows_ApplicationModel_Activation {
     )
 
     public typealias ILaunchActivatedEventArgs2Wrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.ILaunchActivatedEventArgs2Bridge>
+    public class ILockScreenActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CILockScreenActivatedEventArgs }
+
+        open func get_InfoImpl() throws -> Any? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CILockScreenActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Info(pThis, &valueAbi))
+                }
+            }
+            return __ABI_.AnyWrapper.unwrapFrom(abi: value)
+        }
+
+    }
+
+    internal static var ILockScreenActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CILockScreenActivatedEventArgsVtbl = .init(
+        QueryInterface: { ILockScreenActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { ILockScreenActivatedEventArgsWrapper.addRef($0) },
+        Release: { ILockScreenActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.ILockScreenActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.ILockScreenActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_Info: {
+            guard let __unwrapped__instance = ILockScreenActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.info
+            let valueWrapper = __ABI_.AnyWrapper(value)
+            valueWrapper?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias ILockScreenActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.ILockScreenActivatedEventArgsBridge>
+    public class ILockScreenCallActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CILockScreenCallActivatedEventArgs }
+
+        open func get_CallUIImpl() throws -> UWP.LockScreenCallUI? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CILockScreenCallActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CallUI(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    internal static var ILockScreenCallActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CILockScreenCallActivatedEventArgsVtbl = .init(
+        QueryInterface: { ILockScreenCallActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { ILockScreenCallActivatedEventArgsWrapper.addRef($0) },
+        Release: { ILockScreenCallActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 5).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.ILockScreenCallActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            iids[4] = __ABI_Windows_ApplicationModel_Activation.ILaunchActivatedEventArgsWrapper.IID
+            $1!.pointee = 5
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.ILockScreenCallActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_CallUI: {
+            guard let __unwrapped__instance = ILockScreenCallActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.callUI
+            value?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias ILockScreenCallActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.ILockScreenCallActivatedEventArgsBridge>
+    public class IPickerReturnedActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIPickerReturnedActivatedEventArgs }
+
+        open func get_PickerOperationIdImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIPickerReturnedActivatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_PickerOperationId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    internal static var IPickerReturnedActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIPickerReturnedActivatedEventArgsVtbl = .init(
+        QueryInterface: { IPickerReturnedActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IPickerReturnedActivatedEventArgsWrapper.addRef($0) },
+        Release: { IPickerReturnedActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IPickerReturnedActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IPickerReturnedActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_PickerOperationId: {
+            guard let __unwrapped__instance = IPickerReturnedActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.pickerOperationId
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        }
+    )
+
+    public typealias IPickerReturnedActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IPickerReturnedActivatedEventArgsBridge>
     public class IPrelaunchActivatedEventArgs: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIPrelaunchActivatedEventArgs }
 
@@ -459,6 +2845,110 @@ public enum __ABI_Windows_ApplicationModel_Activation {
     )
 
     public typealias IPrelaunchActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IPrelaunchActivatedEventArgsBridge>
+    public class IPrint3DWorkflowActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIPrint3DWorkflowActivatedEventArgs }
+
+        open func get_WorkflowImpl() throws -> UWP.Print3DWorkflow? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIPrint3DWorkflowActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Workflow(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    internal static var IPrint3DWorkflowActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIPrint3DWorkflowActivatedEventArgsVtbl = .init(
+        QueryInterface: { IPrint3DWorkflowActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IPrint3DWorkflowActivatedEventArgsWrapper.addRef($0) },
+        Release: { IPrint3DWorkflowActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IPrint3DWorkflowActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IPrint3DWorkflowActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_Workflow: {
+            guard let __unwrapped__instance = IPrint3DWorkflowActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.workflow
+            value?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IPrint3DWorkflowActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IPrint3DWorkflowActivatedEventArgsBridge>
+    public class IPrintTaskSettingsActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIPrintTaskSettingsActivatedEventArgs }
+
+        open func get_ConfigurationImpl() throws -> UWP.PrintTaskConfiguration? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIPrintTaskSettingsActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Configuration(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    internal static var IPrintTaskSettingsActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIPrintTaskSettingsActivatedEventArgsVtbl = .init(
+        QueryInterface: { IPrintTaskSettingsActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IPrintTaskSettingsActivatedEventArgsWrapper.addRef($0) },
+        Release: { IPrintTaskSettingsActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IPrintTaskSettingsActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IPrintTaskSettingsActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_Configuration: {
+            guard let __unwrapped__instance = IPrintTaskSettingsActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.configuration
+            value?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IPrintTaskSettingsActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IPrintTaskSettingsActivatedEventArgsBridge>
     public class IProtocolActivatedEventArgs: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIProtocolActivatedEventArgs }
 
@@ -578,6 +3068,280 @@ public enum __ABI_Windows_ApplicationModel_Activation {
     )
 
     public typealias IProtocolActivatedEventArgsWithCallerPackageFamilyNameAndDataWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IProtocolActivatedEventArgsWithCallerPackageFamilyNameAndDataBridge>
+    public class IProtocolForResultsActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIProtocolForResultsActivatedEventArgs }
+
+        open func get_ProtocolForResultsOperationImpl() throws -> UWP.ProtocolForResultsOperation? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIProtocolForResultsActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ProtocolForResultsOperation(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    internal static var IProtocolForResultsActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIProtocolForResultsActivatedEventArgsVtbl = .init(
+        QueryInterface: { IProtocolForResultsActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IProtocolForResultsActivatedEventArgsWrapper.addRef($0) },
+        Release: { IProtocolForResultsActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IProtocolForResultsActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IProtocolForResultsActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_ProtocolForResultsOperation: {
+            guard let __unwrapped__instance = IProtocolForResultsActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.protocolForResultsOperation
+            value?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IProtocolForResultsActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IProtocolForResultsActivatedEventArgsBridge>
+    public class IRestrictedLaunchActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIRestrictedLaunchActivatedEventArgs }
+
+        open func get_SharedContextImpl() throws -> Any? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIRestrictedLaunchActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SharedContext(pThis, &valueAbi))
+                }
+            }
+            return __ABI_.AnyWrapper.unwrapFrom(abi: value)
+        }
+
+    }
+
+    internal static var IRestrictedLaunchActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIRestrictedLaunchActivatedEventArgsVtbl = .init(
+        QueryInterface: { IRestrictedLaunchActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IRestrictedLaunchActivatedEventArgsWrapper.addRef($0) },
+        Release: { IRestrictedLaunchActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IRestrictedLaunchActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IRestrictedLaunchActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_SharedContext: {
+            guard let __unwrapped__instance = IRestrictedLaunchActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.sharedContext
+            let valueWrapper = __ABI_.AnyWrapper(value)
+            valueWrapper?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IRestrictedLaunchActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IRestrictedLaunchActivatedEventArgsBridge>
+    public class ISearchActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CISearchActivatedEventArgs }
+
+        open func get_QueryTextImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CISearchActivatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_QueryText(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        open func get_LanguageImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CISearchActivatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Language(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    internal static var ISearchActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CISearchActivatedEventArgsVtbl = .init(
+        QueryInterface: { ISearchActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { ISearchActivatedEventArgsWrapper.addRef($0) },
+        Release: { ISearchActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.ISearchActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.ISearchActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_QueryText: {
+            guard let __unwrapped__instance = ISearchActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.queryText
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        },
+
+        get_Language: {
+            guard let __unwrapped__instance = ISearchActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.language
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        }
+    )
+
+    public typealias ISearchActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.ISearchActivatedEventArgsBridge>
+    public class ISearchActivatedEventArgsWithLinguisticDetails: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CISearchActivatedEventArgsWithLinguisticDetails }
+
+        open func get_LinguisticDetailsImpl() throws -> UWP.SearchPaneQueryLinguisticDetails? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CISearchActivatedEventArgsWithLinguisticDetails.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_LinguisticDetails(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    internal static var ISearchActivatedEventArgsWithLinguisticDetailsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CISearchActivatedEventArgsWithLinguisticDetailsVtbl = .init(
+        QueryInterface: { ISearchActivatedEventArgsWithLinguisticDetailsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { ISearchActivatedEventArgsWithLinguisticDetailsWrapper.addRef($0) },
+        Release: { ISearchActivatedEventArgsWithLinguisticDetailsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 3).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.ISearchActivatedEventArgsWithLinguisticDetailsWrapper.IID
+            $1!.pointee = 3
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.ISearchActivatedEventArgsWithLinguisticDetails").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_LinguisticDetails: {
+            guard let __unwrapped__instance = ISearchActivatedEventArgsWithLinguisticDetailsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.linguisticDetails
+            value?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias ISearchActivatedEventArgsWithLinguisticDetailsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.ISearchActivatedEventArgsWithLinguisticDetailsBridge>
+    public class IShareTargetActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIShareTargetActivatedEventArgs }
+
+        open func get_ShareOperationImpl() throws -> UWP.ShareOperation? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIShareTargetActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ShareOperation(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    internal static var IShareTargetActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIShareTargetActivatedEventArgsVtbl = .init(
+        QueryInterface: { IShareTargetActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IShareTargetActivatedEventArgsWrapper.addRef($0) },
+        Release: { IShareTargetActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IShareTargetActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IShareTargetActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_ShareOperation: {
+            guard let __unwrapped__instance = IShareTargetActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.shareOperation
+            value?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IShareTargetActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IShareTargetActivatedEventArgsBridge>
     public class ISplashScreen: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CISplashScreen }
 
@@ -607,6 +3371,57 @@ public enum __ABI_Windows_ApplicationModel_Activation {
 
     }
 
+    public class IStartupTaskActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIStartupTaskActivatedEventArgs }
+
+        open func get_TaskIdImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIStartupTaskActivatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_TaskId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    internal static var IStartupTaskActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIStartupTaskActivatedEventArgsVtbl = .init(
+        QueryInterface: { IStartupTaskActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IStartupTaskActivatedEventArgsWrapper.addRef($0) },
+        Release: { IStartupTaskActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IStartupTaskActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IStartupTaskActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_TaskId: {
+            guard let __unwrapped__instance = IStartupTaskActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.taskId
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        }
+    )
+
+    public typealias IStartupTaskActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IStartupTaskActivatedEventArgsBridge>
     public class ITileActivatedInfo: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CITileActivatedInfo }
 
@@ -621,6 +3436,126 @@ public enum __ABI_Windows_ApplicationModel_Activation {
 
     }
 
+    public class IToastNotificationActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIToastNotificationActivatedEventArgs }
+
+        open func get_ArgumentImpl() throws -> String {
+            var argument: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIToastNotificationActivatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Argument(pThis, &argument))
+            }
+            return .init(from: argument)
+        }
+
+        open func get_UserInputImpl() throws -> WindowsFoundation.ValueSet? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIToastNotificationActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_UserInput(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    internal static var IToastNotificationActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIToastNotificationActivatedEventArgsVtbl = .init(
+        QueryInterface: { IToastNotificationActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IToastNotificationActivatedEventArgsWrapper.addRef($0) },
+        Release: { IToastNotificationActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IToastNotificationActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IToastNotificationActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_Argument: {
+            guard let __unwrapped__instance = IToastNotificationActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let argument = __unwrapped__instance.argument
+            $1?.initialize(to: try! HString(argument).detach())
+            return S_OK
+        },
+
+        get_UserInput: {
+            guard let __unwrapped__instance = IToastNotificationActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.userInput
+            value?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IToastNotificationActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IToastNotificationActivatedEventArgsBridge>
+    public class IUserDataAccountProviderActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIUserDataAccountProviderActivatedEventArgs }
+
+        open func get_OperationImpl() throws -> UWP.AnyIUserDataAccountProviderOperation? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIUserDataAccountProviderActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Operation(pThis, &valueAbi))
+                }
+            }
+            return __ABI_Windows_ApplicationModel_UserDataAccounts_Provider.IUserDataAccountProviderOperationWrapper.unwrapFrom(abi: value)
+        }
+
+    }
+
+    internal static var IUserDataAccountProviderActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIUserDataAccountProviderActivatedEventArgsVtbl = .init(
+        QueryInterface: { IUserDataAccountProviderActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IUserDataAccountProviderActivatedEventArgsWrapper.addRef($0) },
+        Release: { IUserDataAccountProviderActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IUserDataAccountProviderActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IUserDataAccountProviderActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_Operation: {
+            guard let __unwrapped__instance = IUserDataAccountProviderActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.operation
+            let valueWrapper = __ABI_Windows_ApplicationModel_UserDataAccounts_Provider.IUserDataAccountProviderOperationWrapper(value)
+            valueWrapper?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IUserDataAccountProviderActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IUserDataAccountProviderActivatedEventArgsBridge>
     public class IViewSwitcherProvider: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIViewSwitcherProvider }
 
@@ -673,4 +3608,243 @@ public enum __ABI_Windows_ApplicationModel_Activation {
     )
 
     public typealias IViewSwitcherProviderWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IViewSwitcherProviderBridge>
+    public class IVoiceCommandActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIVoiceCommandActivatedEventArgs }
+
+        open func get_ResultImpl() throws -> UWP.SpeechRecognitionResult? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIVoiceCommandActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Result(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    internal static var IVoiceCommandActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIVoiceCommandActivatedEventArgsVtbl = .init(
+        QueryInterface: { IVoiceCommandActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IVoiceCommandActivatedEventArgsWrapper.addRef($0) },
+        Release: { IVoiceCommandActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IVoiceCommandActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IVoiceCommandActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_Result: {
+            guard let __unwrapped__instance = IVoiceCommandActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.result
+            value?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IVoiceCommandActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IVoiceCommandActivatedEventArgsBridge>
+    public class IWalletActionActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIWalletActionActivatedEventArgs }
+
+        open func get_ItemIdImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIWalletActionActivatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ItemId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        open func get_ActionKindImpl() throws -> UWP.WalletActionKind {
+            var value: __x_ABI_CWindows_CApplicationModel_CWallet_CWalletActionKind = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIWalletActionActivatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ActionKind(pThis, &value))
+            }
+            return value
+        }
+
+        open func get_ActionIdImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIWalletActionActivatedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ActionId(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+    }
+
+    internal static var IWalletActionActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIWalletActionActivatedEventArgsVtbl = .init(
+        QueryInterface: { IWalletActionActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IWalletActionActivatedEventArgsWrapper.addRef($0) },
+        Release: { IWalletActionActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IWalletActionActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IWalletActionActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_ItemId: {
+            guard let __unwrapped__instance = IWalletActionActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.itemId
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        },
+
+        get_ActionKind: {
+            guard let __unwrapped__instance = IWalletActionActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.actionKind
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        get_ActionId: {
+            guard let __unwrapped__instance = IWalletActionActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.actionId
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        }
+    )
+
+    public typealias IWalletActionActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IWalletActionActivatedEventArgsBridge>
+    public class IWebAccountProviderActivatedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIWebAccountProviderActivatedEventArgs }
+
+        open func get_OperationImpl() throws -> UWP.AnyIWebAccountProviderOperation? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIWebAccountProviderActivatedEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Operation(pThis, &valueAbi))
+                }
+            }
+            return __ABI_Windows_Security_Authentication_Web_Provider.IWebAccountProviderOperationWrapper.unwrapFrom(abi: value)
+        }
+
+    }
+
+    internal static var IWebAccountProviderActivatedEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIWebAccountProviderActivatedEventArgsVtbl = .init(
+        QueryInterface: { IWebAccountProviderActivatedEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IWebAccountProviderActivatedEventArgsWrapper.addRef($0) },
+        Release: { IWebAccountProviderActivatedEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IWebAccountProviderActivatedEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IWebAccountProviderActivatedEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_Operation: {
+            guard let __unwrapped__instance = IWebAccountProviderActivatedEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.operation
+            let valueWrapper = __ABI_Windows_Security_Authentication_Web_Provider.IWebAccountProviderOperationWrapper(value)
+            valueWrapper?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IWebAccountProviderActivatedEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IWebAccountProviderActivatedEventArgsBridge>
+    public class IWebAuthenticationBrokerContinuationEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CApplicationModel_CActivation_CIWebAuthenticationBrokerContinuationEventArgs }
+
+        open func get_WebAuthenticationResultImpl() throws -> UWP.WebAuthenticationResult? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CWindows_CApplicationModel_CActivation_CIWebAuthenticationBrokerContinuationEventArgs.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_WebAuthenticationResult(pThis, &resultAbi))
+                }
+            }
+            return .from(abi: result)
+        }
+
+    }
+
+    internal static var IWebAuthenticationBrokerContinuationEventArgsVTable: __x_ABI_CWindows_CApplicationModel_CActivation_CIWebAuthenticationBrokerContinuationEventArgsVtbl = .init(
+        QueryInterface: { IWebAuthenticationBrokerContinuationEventArgsWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IWebAuthenticationBrokerContinuationEventArgsWrapper.addRef($0) },
+        Release: { IWebAuthenticationBrokerContinuationEventArgsWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 5).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_ApplicationModel_Activation.IWebAuthenticationBrokerContinuationEventArgsWrapper.IID
+            iids[3] = __ABI_Windows_ApplicationModel_Activation.IActivatedEventArgsWrapper.IID
+            iids[4] = __ABI_Windows_ApplicationModel_Activation.IContinuationActivatedEventArgsWrapper.IID
+            $1!.pointee = 5
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.ApplicationModel.Activation.IWebAuthenticationBrokerContinuationEventArgs").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_WebAuthenticationResult: {
+            guard let __unwrapped__instance = IWebAuthenticationBrokerContinuationEventArgsWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let result = __unwrapped__instance.webAuthenticationResult
+            result?.copyTo($1)
+            return S_OK
+        }
+    )
+
+    public typealias IWebAuthenticationBrokerContinuationEventArgsWrapper = InterfaceWrapperBase<__IMPL_Windows_ApplicationModel_Activation.IWebAuthenticationBrokerContinuationEventArgsBridge>
 }

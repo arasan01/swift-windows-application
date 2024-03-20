@@ -5,8 +5,16 @@ import Foundation
 @_spi(WinRTInternal) @_spi(WinRTImplements) import WindowsFoundation
 import CWinRT
 
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIAppBarButtonTemplateSettings: WindowsFoundation.IID {
+    .init(Data1: 0x6FC13525, Data2: 0xBF03, Data3: 0x5190, Data4: ( 0xA1,0xD5,0xEB,0xD6,0xA1,0xBC,0xB6,0xB4 ))// 6FC13525-BF03-5190-A1D5-EBD6A1BCB6B4
+}
+
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIAppBarTemplateSettings: WindowsFoundation.IID {
     .init(Data1: 0xFE60E73F, Data2: 0x9A52, Data3: 0x5E0A, Data4: ( 0xB7,0x38,0x42,0x6F,0x97,0xD0,0x97,0x68 ))// FE60E73F-9A52-5E0A-B738-426F97D09768
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIAppBarToggleButtonTemplateSettings: WindowsFoundation.IID {
+    .init(Data1: 0x32AA9F11, Data2: 0x2F5E, Data3: 0x57AB, Data4: ( 0xA5,0x70,0xB0,0x3B,0xCE,0xEE,0x83,0x5D ))// 32AA9F11-2F5E-57AB-A570-B03BCEEE835D
 }
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIButtonBase: WindowsFoundation.IID {
@@ -21,8 +29,16 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIButtonBaseS
     .init(Data1: 0xDBE812F6, Data2: 0xADF8, Data3: 0x51D3, Data4: ( 0x81,0x37,0xA8,0xFB,0xF6,0x44,0x5B,0x3C ))// DBE812F6-ADF8-51D3-8137-A8FBF6445B3C
 }
 
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICalendarViewTemplateSettings: WindowsFoundation.IID {
+    .init(Data1: 0x23B0FACB, Data2: 0x0083, Data3: 0x5109, Data4: ( 0x87,0xD3,0xDB,0xEB,0x13,0xE3,0x31,0xA0 ))// 23B0FACB-0083-5109-87D3-DBEB13E331A0
+}
+
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIComboBoxTemplateSettings: WindowsFoundation.IID {
     .init(Data1: 0xF2DC5E7F, Data2: 0x8D3F, Data3: 0x5C20, Data4: ( 0xB3,0x56,0xAF,0x6F,0x1F,0xF8,0x24,0x2A ))// F2DC5E7F-8D3F-5C20-B356-AF6F1FF8242A
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICommandBarTemplateSettings: WindowsFoundation.IID {
+    .init(Data1: 0xAE9535F6, Data2: 0x1678, Data3: 0x5066, Data4: ( 0x90,0xBF,0x14,0x7A,0xA6,0x10,0xC5,0xDD ))// AE9535F6-1678-5066-90BF-147AA610C5DD
 }
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBase: WindowsFoundation.IID {
@@ -61,8 +77,24 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutShowO
     .init(Data1: 0x17426D30, Data2: 0x70D9, Data3: 0x54D7, Data4: ( 0xBD,0x39,0xE7,0xC4,0xC9,0x40,0xC0,0xF4 ))// 17426D30-70D9-54D7-BD39-E7C4C940C0F4
 }
 
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIGridViewItemTemplateSettings: WindowsFoundation.IID {
+    .init(Data1: 0x7033E884, Data2: 0x2117, Data3: 0x56E7, Data4: ( 0xAF,0xB8,0xB7,0xF5,0xB8,0xB6,0x4C,0x70 ))// 7033E884-2117-56E7-AFB8-B7F5B8B64C70
+}
+
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIItemsChangedEventArgs: WindowsFoundation.IID {
     .init(Data1: 0xB2BA1610, Data2: 0x0E96, Data3: 0x538A, Data4: ( 0x97,0x8F,0xEC,0x0B,0x37,0x19,0x32,0x28 ))// B2BA1610-0E96-538A-978F-EC0B37193228
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter: WindowsFoundation.IID {
+    .init(Data1: 0x81012623, Data2: 0xD987, Data3: 0x5582, Data4: ( 0xBC,0x28,0x75,0x5A,0x95,0xCA,0xAF,0x1C ))// 81012623-D987-5582-BC28-755A95CAAF1C
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterFactory: WindowsFoundation.IID {
+    .init(Data1: 0xF86AC266, Data2: 0x2740, Data3: 0x505C, Data4: ( 0x95,0xEB,0xA7,0x33,0x1B,0x53,0xB4,0xA3 ))// F86AC266-2740-505C-95EB-A7331B53B4A3
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics: WindowsFoundation.IID {
+    .init(Data1: 0xFB0810F9, Data2: 0x3475, Data3: 0x593A, Data4: ( 0x88,0xA8,0xED,0xBB,0xF7,0x6F,0xA9,0x0C ))// FB0810F9-3475-593A-88A8-EDBBF76FA90C
 }
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemTemplateSettings: WindowsFoundation.IID {
@@ -71,6 +103,34 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewIte
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIMenuFlyoutItemTemplateSettings: WindowsFoundation.IID {
     .init(Data1: 0xFA7B8B1F, Data2: 0x020D, Data3: 0x58EC, Data4: ( 0x86,0x58,0xF2,0xCE,0x97,0x31,0x00,0x51 ))// FA7B8B1F-020D-58EC-8658-F2CE97310051
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIMenuFlyoutPresenterTemplateSettings: WindowsFoundation.IID {
+    .init(Data1: 0x2BFCFA7E, Data2: 0x483C, Data3: 0x5FC9, Data4: ( 0xB0,0x70,0xFB,0xB5,0x8E,0x6E,0x97,0x4D ))// 2BFCFA7E-483C-5FC9-B070-FBB58E6E974D
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel: WindowsFoundation.IID {
+    .init(Data1: 0x450D2984, Data2: 0x1E70, Data3: 0x53D8, Data4: ( 0x82,0x69,0xA2,0x75,0x64,0xDA,0xA6,0x9F ))// 450D2984-1E70-53D8-8269-A27564DAA69F
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanelFactory: WindowsFoundation.IID {
+    .init(Data1: 0xA70C98F4, Data2: 0xD671, Data3: 0x5F46, Data4: ( 0x9B,0x01,0x28,0xB1,0xB5,0x52,0x8F,0xC0 ))// A70C98F4-D671-5F46-9B01-28B1B5528FC0
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIPickerFlyoutBase: WindowsFoundation.IID {
+    .init(Data1: 0x8C2CC030, Data2: 0x14FE, Data3: 0x5FCA, Data4: ( 0x8C,0xE3,0xE1,0x1A,0x91,0x86,0x32,0xCC ))// 8C2CC030-14FE-5FCA-8CE3-E11A918632CC
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIPickerFlyoutBaseFactory: WindowsFoundation.IID {
+    .init(Data1: 0x8231DAB5, Data2: 0x4B8B, Data3: 0x5674, Data4: ( 0xB2,0x73,0x1C,0x66,0x70,0x1C,0x14,0xE1 ))// 8231DAB5-4B8B-5674-B273-1C66701C14E1
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIPickerFlyoutBaseOverrides: WindowsFoundation.IID {
+    .init(Data1: 0x5B090FFC, Data2: 0xD423, Data3: 0x5756, Data4: ( 0xA0,0x1C,0xAA,0x73,0x45,0x79,0xD8,0x56 ))// 5B090FFC-D423-5756-A01C-AA734579D856
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIPickerFlyoutBaseStatics: WindowsFoundation.IID {
+    .init(Data1: 0x0E414DC2, Data2: 0x38E0, Data3: 0x5EFE, Data4: ( 0xBA,0xE8,0xA0,0xC6,0xA7,0x85,0x14,0xC8 ))// 0E414DC2-38E0-5EFE-BAE8-A0C6A78514C8
 }
 
 private var IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIPopup: WindowsFoundation.IID {
@@ -258,6 +318,19 @@ private var IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRangeBaseVa
 }
 
 public enum __ABI_Microsoft_UI_Xaml_Controls_Primitives {
+    public class IAppBarButtonTemplateSettings: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIAppBarButtonTemplateSettings }
+
+        internal func get_KeyboardAcceleratorTextMinWidthImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIAppBarButtonTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_KeyboardAcceleratorTextMinWidth(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
     public class IAppBarTemplateSettings: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIAppBarTemplateSettings }
 
@@ -337,6 +410,19 @@ public enum __ABI_Microsoft_UI_Xaml_Controls_Primitives {
             var value: DOUBLE = 0.0
             _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIAppBarTemplateSettings.self) { pThis in
                 try CHECKED(pThis.pointee.lpVtbl.pointee.get_NegativeHiddenVerticalDelta(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
+    public class IAppBarToggleButtonTemplateSettings: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIAppBarToggleButtonTemplateSettings }
+
+        internal func get_KeyboardAcceleratorTextMinWidthImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIAppBarToggleButtonTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_KeyboardAcceleratorTextMinWidth(pThis, &value))
             }
             return value
         }
@@ -496,6 +582,131 @@ public enum __ABI_Microsoft_UI_Xaml_Controls_Primitives {
 
     }
 
+    public class ICalendarViewTemplateSettings: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICalendarViewTemplateSettings }
+
+        internal func get_MinViewWidthImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICalendarViewTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_MinViewWidth(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_HeaderTextImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICalendarViewTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_HeaderText(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_WeekDay1Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICalendarViewTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_WeekDay1(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_WeekDay2Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICalendarViewTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_WeekDay2(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_WeekDay3Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICalendarViewTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_WeekDay3(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_WeekDay4Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICalendarViewTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_WeekDay4(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_WeekDay5Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICalendarViewTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_WeekDay5(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_WeekDay6Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICalendarViewTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_WeekDay6(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_WeekDay7Impl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICalendarViewTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_WeekDay7(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_HasMoreContentAfterImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICalendarViewTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_HasMoreContentAfter(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_HasMoreContentBeforeImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICalendarViewTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_HasMoreContentBefore(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_HasMoreViewsImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICalendarViewTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_HasMoreViews(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_ClipRectImpl() throws -> WindowsFoundation.Rect {
+            var value: __x_ABI_CWindows_CFoundation_CRect = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICalendarViewTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ClipRect(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CenterXImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICalendarViewTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_CenterX(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_CenterYImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICalendarViewTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_CenterY(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
     public class IComboBoxTemplateSettings: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIComboBoxTemplateSettings }
 
@@ -535,6 +746,107 @@ public enum __ABI_Microsoft_UI_Xaml_Controls_Primitives {
             var value: DOUBLE = 0.0
             _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIComboBoxTemplateSettings.self) { pThis in
                 try CHECKED(pThis.pointee.lpVtbl.pointee.get_DropDownContentMinWidth(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
+    public class ICommandBarTemplateSettings: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICommandBarTemplateSettings }
+
+        internal func get_ContentHeightImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICommandBarTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ContentHeight(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_OverflowContentClipRectImpl() throws -> WindowsFoundation.Rect {
+            var value: __x_ABI_CWindows_CFoundation_CRect = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICommandBarTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_OverflowContentClipRect(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_OverflowContentMinWidthImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICommandBarTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_OverflowContentMinWidth(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_OverflowContentMaxWidthImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICommandBarTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_OverflowContentMaxWidth(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_OverflowContentMaxHeightImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICommandBarTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_OverflowContentMaxHeight(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_OverflowContentHorizontalOffsetImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICommandBarTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_OverflowContentHorizontalOffset(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_OverflowContentHeightImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICommandBarTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_OverflowContentHeight(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_NegativeOverflowContentHeightImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICommandBarTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_NegativeOverflowContentHeight(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_EffectiveOverflowButtonVisibilityImpl() throws -> WinUI.Visibility {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CVisibility = .init(0)
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICommandBarTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_EffectiveOverflowButtonVisibility(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_OverflowContentCompactYTranslationImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICommandBarTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_OverflowContentCompactYTranslation(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_OverflowContentMinimalYTranslationImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICommandBarTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_OverflowContentMinimalYTranslation(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_OverflowContentHiddenYTranslationImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICommandBarTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_OverflowContentHiddenYTranslation(pThis, &value))
             }
             return value
         }
@@ -1128,6 +1440,19 @@ public enum __ABI_Microsoft_UI_Xaml_Controls_Primitives {
 
     }
 
+    public class IGridViewItemTemplateSettings: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIGridViewItemTemplateSettings }
+
+        internal func get_DragItemsCountImpl() throws -> Int32 {
+            var value: INT32 = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIGridViewItemTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DragItemsCount(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
     public class IItemsChangedEventArgs: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIItemsChangedEventArgs }
 
@@ -1173,6 +1498,1433 @@ public enum __ABI_Microsoft_UI_Xaml_Controls_Primitives {
 
     }
 
+    public class IListViewItemPresenter: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter }
+
+        internal func get_SelectionCheckMarkVisualEnabledImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectionCheckMarkVisualEnabled(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_SelectionCheckMarkVisualEnabledImpl(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SelectionCheckMarkVisualEnabled(pThis, .init(from: value)))
+            }
+        }
+
+        internal func get_CheckHintBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckHintBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_CheckHintBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CheckHintBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_CheckSelectingBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckSelectingBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_CheckSelectingBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CheckSelectingBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_CheckBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_CheckBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CheckBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_DragBackgroundImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_DragBackground(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_DragBackgroundImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_DragBackground(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_DragForegroundImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_DragForeground(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_DragForegroundImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_DragForeground(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_FocusBorderBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_FocusBorderBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_FocusBorderBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_FocusBorderBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_PlaceholderBackgroundImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_PlaceholderBackground(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_PlaceholderBackgroundImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_PlaceholderBackground(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_PointerOverBackgroundImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_PointerOverBackground(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_PointerOverBackgroundImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_PointerOverBackground(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_SelectedBackgroundImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectedBackground(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_SelectedBackgroundImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SelectedBackground(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_SelectedForegroundImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectedForeground(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_SelectedForegroundImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SelectedForeground(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_SelectedPointerOverBackgroundImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectedPointerOverBackground(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_SelectedPointerOverBackgroundImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SelectedPointerOverBackground(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_SelectedPointerOverBorderBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectedPointerOverBorderBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_SelectedPointerOverBorderBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SelectedPointerOverBorderBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_SelectedBorderThicknessImpl() throws -> WinUI.Thickness {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CThickness = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectedBorderThickness(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_SelectedBorderThicknessImpl(_ value: WinUI.Thickness) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SelectedBorderThickness(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_DisabledOpacityImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DisabledOpacity(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_DisabledOpacityImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_DisabledOpacity(pThis, value))
+            }
+        }
+
+        internal func get_DragOpacityImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DragOpacity(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_DragOpacityImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_DragOpacity(pThis, value))
+            }
+        }
+
+        internal func get_ReorderHintOffsetImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ReorderHintOffset(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_ReorderHintOffsetImpl(_ value: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ReorderHintOffset(pThis, value))
+            }
+        }
+
+        internal func get_ListViewItemPresenterHorizontalContentAlignmentImpl() throws -> WinUI.HorizontalAlignment {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CHorizontalAlignment = .init(0)
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ListViewItemPresenterHorizontalContentAlignment(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_ListViewItemPresenterHorizontalContentAlignmentImpl(_ value: WinUI.HorizontalAlignment) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ListViewItemPresenterHorizontalContentAlignment(pThis, value))
+            }
+        }
+
+        internal func get_ListViewItemPresenterVerticalContentAlignmentImpl() throws -> WinUI.VerticalAlignment {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CVerticalAlignment = .init(0)
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ListViewItemPresenterVerticalContentAlignment(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_ListViewItemPresenterVerticalContentAlignmentImpl(_ value: WinUI.VerticalAlignment) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ListViewItemPresenterVerticalContentAlignment(pThis, value))
+            }
+        }
+
+        internal func get_ListViewItemPresenterPaddingImpl() throws -> WinUI.Thickness {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CThickness = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ListViewItemPresenterPadding(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_ListViewItemPresenterPaddingImpl(_ value: WinUI.Thickness) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ListViewItemPresenterPadding(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_PointerOverBackgroundMarginImpl() throws -> WinUI.Thickness {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CThickness = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_PointerOverBackgroundMargin(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_PointerOverBackgroundMarginImpl(_ value: WinUI.Thickness) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_PointerOverBackgroundMargin(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_ContentMarginImpl() throws -> WinUI.Thickness {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CThickness = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ContentMargin(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_ContentMarginImpl(_ value: WinUI.Thickness) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ContentMargin(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_SelectedPressedBackgroundImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectedPressedBackground(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_SelectedPressedBackgroundImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SelectedPressedBackground(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_PressedBackgroundImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_PressedBackground(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_PressedBackgroundImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_PressedBackground(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_CheckBoxBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckBoxBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_CheckBoxBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CheckBoxBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_FocusSecondaryBorderBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_FocusSecondaryBorderBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_FocusSecondaryBorderBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_FocusSecondaryBorderBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_CheckModeImpl() throws -> WinUI.ListViewItemPresenterCheckMode {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CListViewItemPresenterCheckMode = .init(0)
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckMode(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_CheckModeImpl(_ value: WinUI.ListViewItemPresenterCheckMode) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CheckMode(pThis, value))
+            }
+        }
+
+        internal func get_PointerOverForegroundImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_PointerOverForeground(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_PointerOverForegroundImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_PointerOverForeground(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_RevealBackgroundImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_RevealBackground(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_RevealBackgroundImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_RevealBackground(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_RevealBorderBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_RevealBorderBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_RevealBorderBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_RevealBorderBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_RevealBorderThicknessImpl() throws -> WinUI.Thickness {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CThickness = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_RevealBorderThickness(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_RevealBorderThicknessImpl(_ value: WinUI.Thickness) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_RevealBorderThickness(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_RevealBackgroundShowsAboveContentImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_RevealBackgroundShowsAboveContent(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_RevealBackgroundShowsAboveContentImpl(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_RevealBackgroundShowsAboveContent(pThis, .init(from: value)))
+            }
+        }
+
+        internal func get_SelectedDisabledBackgroundImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectedDisabledBackground(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_SelectedDisabledBackgroundImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SelectedDisabledBackground(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_CheckPressedBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckPressedBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_CheckPressedBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CheckPressedBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_CheckDisabledBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckDisabledBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_CheckDisabledBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CheckDisabledBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_CheckBoxPointerOverBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckBoxPointerOverBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_CheckBoxPointerOverBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CheckBoxPointerOverBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_CheckBoxPressedBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckBoxPressedBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_CheckBoxPressedBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CheckBoxPressedBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_CheckBoxDisabledBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckBoxDisabledBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_CheckBoxDisabledBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CheckBoxDisabledBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_CheckBoxSelectedBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckBoxSelectedBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_CheckBoxSelectedBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CheckBoxSelectedBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_CheckBoxSelectedPointerOverBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckBoxSelectedPointerOverBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_CheckBoxSelectedPointerOverBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CheckBoxSelectedPointerOverBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_CheckBoxSelectedPressedBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckBoxSelectedPressedBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_CheckBoxSelectedPressedBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CheckBoxSelectedPressedBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_CheckBoxSelectedDisabledBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckBoxSelectedDisabledBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_CheckBoxSelectedDisabledBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CheckBoxSelectedDisabledBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_CheckBoxBorderBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckBoxBorderBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_CheckBoxBorderBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CheckBoxBorderBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_CheckBoxPointerOverBorderBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckBoxPointerOverBorderBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_CheckBoxPointerOverBorderBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CheckBoxPointerOverBorderBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_CheckBoxPressedBorderBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckBoxPressedBorderBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_CheckBoxPressedBorderBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CheckBoxPressedBorderBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_CheckBoxDisabledBorderBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckBoxDisabledBorderBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_CheckBoxDisabledBorderBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CheckBoxDisabledBorderBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_CheckBoxCornerRadiusImpl() throws -> WinUI.CornerRadius {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CCornerRadius = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckBoxCornerRadius(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_CheckBoxCornerRadiusImpl(_ value: WinUI.CornerRadius) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CheckBoxCornerRadius(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_SelectionIndicatorCornerRadiusImpl() throws -> WinUI.CornerRadius {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CCornerRadius = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectionIndicatorCornerRadius(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_SelectionIndicatorCornerRadiusImpl(_ value: WinUI.CornerRadius) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SelectionIndicatorCornerRadius(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_SelectionIndicatorVisualEnabledImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectionIndicatorVisualEnabled(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_SelectionIndicatorVisualEnabledImpl(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SelectionIndicatorVisualEnabled(pThis, .init(from: value)))
+            }
+        }
+
+        internal func get_SelectionIndicatorModeImpl() throws -> WinUI.ListViewItemPresenterSelectionIndicatorMode {
+            var value: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CListViewItemPresenterSelectionIndicatorMode = .init(0)
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectionIndicatorMode(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_SelectionIndicatorModeImpl(_ value: WinUI.ListViewItemPresenterSelectionIndicatorMode) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SelectionIndicatorMode(pThis, value))
+            }
+        }
+
+        internal func get_SelectionIndicatorBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectionIndicatorBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_SelectionIndicatorBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SelectionIndicatorBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_SelectionIndicatorPointerOverBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectionIndicatorPointerOverBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_SelectionIndicatorPointerOverBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SelectionIndicatorPointerOverBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_SelectionIndicatorPressedBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectionIndicatorPressedBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_SelectionIndicatorPressedBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SelectionIndicatorPressedBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_SelectionIndicatorDisabledBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectionIndicatorDisabledBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_SelectionIndicatorDisabledBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SelectionIndicatorDisabledBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_SelectedBorderBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectedBorderBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_SelectedBorderBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SelectedBorderBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_SelectedPressedBorderBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectedPressedBorderBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_SelectedPressedBorderBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SelectedPressedBorderBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_SelectedDisabledBorderBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectedDisabledBorderBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_SelectedDisabledBorderBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SelectedDisabledBorderBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_SelectedInnerBorderBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectedInnerBorderBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_SelectedInnerBorderBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SelectedInnerBorderBrush(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_PointerOverBorderBrushImpl() throws -> WinUI.Brush? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_PointerOverBorderBrush(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_PointerOverBorderBrushImpl(_ value: WinUI.Brush?) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_PointerOverBorderBrush(pThis, RawPointer(value)))
+            }
+        }
+
+    }
+
+    public class IListViewItemPresenterFactory: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterFactory }
+
+        internal func CreateInstanceImpl(_ baseInterface: UnsealedWinRTClassWrapper<WinUI.ListViewItemPresenter.Composable>?, _ innerInterface: inout WindowsFoundation.IInspectable?) throws -> IListViewItemPresenter {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                let _baseInterface = baseInterface?.toIInspectableABI { $0 }
+                let (_innerInterface) = try ComPtrs.initialize { _innerInterfaceAbi in
+                    _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterFactory.self) { pThis in
+                        try CHECKED(pThis.pointee.lpVtbl.pointee.CreateInstance(pThis, _baseInterface, &_innerInterfaceAbi, &valueAbi))
+                    }
+                }
+                innerInterface = WindowsFoundation.IInspectable(_innerInterface!)
+            }
+            return IListViewItemPresenter(value!)
+        }
+
+    }
+
+    public class IListViewItemPresenterStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics }
+
+        internal func get_SelectionCheckMarkVisualEnabledPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectionCheckMarkVisualEnabledProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CheckHintBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckHintBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CheckSelectingBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckSelectingBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CheckBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DragBackgroundPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_DragBackgroundProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DragForegroundPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_DragForegroundProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_FocusBorderBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_FocusBorderBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_PlaceholderBackgroundPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_PlaceholderBackgroundProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_PointerOverBackgroundPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_PointerOverBackgroundProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SelectedBackgroundPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectedBackgroundProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SelectedForegroundPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectedForegroundProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SelectedPointerOverBackgroundPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectedPointerOverBackgroundProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SelectedPointerOverBorderBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectedPointerOverBorderBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SelectedBorderThicknessPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectedBorderThicknessProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DisabledOpacityPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_DisabledOpacityProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DragOpacityPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_DragOpacityProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ReorderHintOffsetPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ReorderHintOffsetProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ListViewItemPresenterHorizontalContentAlignmentPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ListViewItemPresenterHorizontalContentAlignmentProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ListViewItemPresenterVerticalContentAlignmentPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ListViewItemPresenterVerticalContentAlignmentProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ListViewItemPresenterPaddingPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ListViewItemPresenterPaddingProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_PointerOverBackgroundMarginPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_PointerOverBackgroundMarginProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ContentMarginPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ContentMarginProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SelectedPressedBackgroundPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectedPressedBackgroundProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_PressedBackgroundPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_PressedBackgroundProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CheckBoxBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckBoxBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_FocusSecondaryBorderBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_FocusSecondaryBorderBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CheckModePropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckModeProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_PointerOverForegroundPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_PointerOverForegroundProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_RevealBackgroundPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_RevealBackgroundProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_RevealBorderBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_RevealBorderBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_RevealBorderThicknessPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_RevealBorderThicknessProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_RevealBackgroundShowsAboveContentPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_RevealBackgroundShowsAboveContentProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SelectedDisabledBackgroundPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectedDisabledBackgroundProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CheckPressedBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckPressedBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CheckDisabledBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckDisabledBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CheckBoxPointerOverBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckBoxPointerOverBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CheckBoxPressedBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckBoxPressedBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CheckBoxDisabledBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckBoxDisabledBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CheckBoxSelectedBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckBoxSelectedBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CheckBoxSelectedPointerOverBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckBoxSelectedPointerOverBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CheckBoxSelectedPressedBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckBoxSelectedPressedBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CheckBoxSelectedDisabledBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckBoxSelectedDisabledBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CheckBoxBorderBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckBoxBorderBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CheckBoxPointerOverBorderBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckBoxPointerOverBorderBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CheckBoxPressedBorderBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckBoxPressedBorderBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CheckBoxDisabledBorderBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckBoxDisabledBorderBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CheckBoxCornerRadiusPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CheckBoxCornerRadiusProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SelectionIndicatorCornerRadiusPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectionIndicatorCornerRadiusProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SelectionIndicatorVisualEnabledPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectionIndicatorVisualEnabledProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SelectionIndicatorModePropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectionIndicatorModeProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SelectionIndicatorBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectionIndicatorBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SelectionIndicatorPointerOverBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectionIndicatorPointerOverBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SelectionIndicatorPressedBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectionIndicatorPressedBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SelectionIndicatorDisabledBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectionIndicatorDisabledBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SelectedBorderBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectedBorderBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SelectedPressedBorderBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectedPressedBorderBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SelectedDisabledBorderBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectedDisabledBorderBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SelectedInnerBorderBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_SelectedInnerBorderBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_PointerOverBorderBrushPropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_PointerOverBorderBrushProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
     public class IListViewItemTemplateSettings: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemTemplateSettings }
 
@@ -1195,6 +2947,285 @@ public enum __ABI_Microsoft_UI_Xaml_Controls_Primitives {
                 try CHECKED(pThis.pointee.lpVtbl.pointee.get_KeyboardAcceleratorTextMinWidth(pThis, &value))
             }
             return value
+        }
+
+    }
+
+    public class IMenuFlyoutPresenterTemplateSettings: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIMenuFlyoutPresenterTemplateSettings }
+
+        internal func get_FlyoutContentMinWidthImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIMenuFlyoutPresenterTemplateSettings.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_FlyoutContentMinWidth(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
+    public class IOrientedVirtualizingPanel: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel }
+
+        internal func get_CanVerticallyScrollImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_CanVerticallyScroll(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_CanVerticallyScrollImpl(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CanVerticallyScroll(pThis, .init(from: value)))
+            }
+        }
+
+        internal func get_CanHorizontallyScrollImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_CanHorizontallyScroll(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_CanHorizontallyScrollImpl(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CanHorizontallyScroll(pThis, .init(from: value)))
+            }
+        }
+
+        internal func get_ExtentWidthImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ExtentWidth(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_ExtentHeightImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ExtentHeight(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_ViewportWidthImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ViewportWidth(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_ViewportHeightImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ViewportHeight(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_HorizontalOffsetImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_HorizontalOffset(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_VerticalOffsetImpl() throws -> Double {
+            var value: DOUBLE = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_VerticalOffset(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_ScrollOwnerImpl() throws -> Any? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ScrollOwner(pThis, &valueAbi))
+                }
+            }
+            return __ABI_.AnyWrapper.unwrapFrom(abi: value)
+        }
+
+        internal func put_ScrollOwnerImpl(_ value: Any?) throws {
+            let valueWrapper = __ABI_.AnyWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ScrollOwner(pThis, _value))
+            }
+        }
+
+        internal func LineUpImpl() throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.LineUp(pThis))
+            }
+        }
+
+        internal func LineDownImpl() throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.LineDown(pThis))
+            }
+        }
+
+        internal func LineLeftImpl() throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.LineLeft(pThis))
+            }
+        }
+
+        internal func LineRightImpl() throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.LineRight(pThis))
+            }
+        }
+
+        internal func PageUpImpl() throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.PageUp(pThis))
+            }
+        }
+
+        internal func PageDownImpl() throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.PageDown(pThis))
+            }
+        }
+
+        internal func PageLeftImpl() throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.PageLeft(pThis))
+            }
+        }
+
+        internal func PageRightImpl() throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.PageRight(pThis))
+            }
+        }
+
+        internal func MouseWheelUpImpl() throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.MouseWheelUp(pThis))
+            }
+        }
+
+        internal func MouseWheelDownImpl() throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.MouseWheelDown(pThis))
+            }
+        }
+
+        internal func MouseWheelLeftImpl() throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.MouseWheelLeft(pThis))
+            }
+        }
+
+        internal func MouseWheelRightImpl() throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.MouseWheelRight(pThis))
+            }
+        }
+
+        internal func SetHorizontalOffsetImpl(_ offset: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.SetHorizontalOffset(pThis, offset))
+            }
+        }
+
+        internal func SetVerticalOffsetImpl(_ offset: Double) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.SetVerticalOffset(pThis, offset))
+            }
+        }
+
+        internal func MakeVisibleImpl(_ visual: WinUI.UIElement?, _ rectangle: WindowsFoundation.Rect) throws -> WindowsFoundation.Rect {
+            var result: __x_ABI_CWindows_CFoundation_CRect = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.MakeVisible(pThis, RawPointer(visual), .from(swift: rectangle), &result))
+            }
+            return .from(abi: result)
+        }
+
+    }
+
+    public class IOrientedVirtualizingPanelFactory: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanelFactory }
+
+    }
+
+    public class IPickerFlyoutBase: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIPickerFlyoutBase }
+
+    }
+
+    public class IPickerFlyoutBaseFactory: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIPickerFlyoutBaseFactory }
+
+        internal func CreateInstanceImpl(_ baseInterface: UnsealedWinRTClassWrapper<WinUI.PickerFlyoutBase.Composable>?, _ innerInterface: inout WindowsFoundation.IInspectable?) throws -> IPickerFlyoutBase {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                let _baseInterface = baseInterface?.toIInspectableABI { $0 }
+                let (_innerInterface) = try ComPtrs.initialize { _innerInterfaceAbi in
+                    _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIPickerFlyoutBaseFactory.self) { pThis in
+                        try CHECKED(pThis.pointee.lpVtbl.pointee.CreateInstance(pThis, _baseInterface, &_innerInterfaceAbi, &valueAbi))
+                    }
+                }
+                innerInterface = WindowsFoundation.IInspectable(_innerInterface!)
+            }
+            return IPickerFlyoutBase(value!)
+        }
+
+    }
+
+    public class IPickerFlyoutBaseOverrides: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIPickerFlyoutBaseOverrides }
+
+        internal func OnConfirmedImpl() throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIPickerFlyoutBaseOverrides.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.OnConfirmed(pThis))
+            }
+        }
+
+        internal func ShouldShowConfirmationButtonsImpl() throws -> Bool {
+            var result: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIPickerFlyoutBaseOverrides.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.ShouldShowConfirmationButtons(pThis, &result))
+            }
+            return .init(from: result)
+        }
+
+    }
+
+    public class IPickerFlyoutBaseStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIPickerFlyoutBaseStatics }
+
+        internal func get_TitlePropertyImpl() throws -> WinUI.DependencyProperty? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIPickerFlyoutBaseStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_TitleProperty(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func GetTitleImpl(_ element: WinUI.DependencyObject?) throws -> String {
+            var result: HSTRING?
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIPickerFlyoutBaseStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.GetTitle(pThis, RawPointer(element), &result))
+            }
+            return .init(from: result)
+        }
+
+        internal func SetTitleImpl(_ element: WinUI.DependencyObject?, _ value: String) throws {
+            let _value = try! HString(value)
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIPickerFlyoutBaseStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.SetTitle(pThis, RawPointer(element), _value.get()))
+            }
         }
 
     }
@@ -3988,6 +6019,53 @@ public enum __ABI_Microsoft_UI_Xaml_Controls_Primitives {
             } catch { return failWith(err: E_FAIL) } 
         }
     )
+    internal typealias IPickerFlyoutBaseOverridesWrapper = UnsealedWinRTClassWrapper<WinUI.PickerFlyoutBase.IPickerFlyoutBaseOverrides>
+    internal static var IPickerFlyoutBaseOverridesVTable: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIPickerFlyoutBaseOverridesVtbl = .init(
+        QueryInterface: { IPickerFlyoutBaseOverridesWrapper.queryInterface($0, $1, $2) },
+        AddRef: { IPickerFlyoutBaseOverridesWrapper.addRef($0) },
+        Release: { IPickerFlyoutBaseOverridesWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Microsoft_UI_Xaml_Controls_Primitives.IPickerFlyoutBaseOverridesWrapper.IID
+            iids[3] = __ABI_Microsoft_UI_Xaml_Controls_Primitives.IFlyoutBaseOverridesWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            guard let instance = IPickerFlyoutBaseOverridesWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let hstring = instance.GetRuntimeClassName().detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        OnConfirmed: {
+            do {
+                guard let __unwrapped__instance = IPickerFlyoutBaseOverridesWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                try __unwrapped__instance.onConfirmed()
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        ShouldShowConfirmationButtons: {
+            do {
+                guard let __unwrapped__instance = IPickerFlyoutBaseOverridesWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let result = try __unwrapped__instance.shouldShowConfirmationButtons()
+                $1?.initialize(to: .init(from: result))
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        }
+    )
     internal typealias IRangeBaseOverridesWrapper = UnsealedWinRTClassWrapper<WinUI.RangeBase.IRangeBaseOverrides>
     internal static var IRangeBaseOverridesVTable: __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIRangeBaseOverridesVtbl = .init(
         QueryInterface: { IRangeBaseOverridesWrapper.queryInterface($0, $1, $2) },
@@ -4100,6 +6178,12 @@ extension __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CGeneratorPosition 
     extension ComposableImpl where CABI == __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIFlyoutBaseOverrides {
     public static func makeAbi() -> CABI {
         let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Microsoft_UI_Xaml_Controls_Primitives.IFlyoutBaseOverridesVTable) { $0 }
+        return .init(lpVtbl: vtblPtr)
+    }
+}
+extension ComposableImpl where CABI == __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIPickerFlyoutBaseOverrides {
+    public static func makeAbi() -> CABI {
+        let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Microsoft_UI_Xaml_Controls_Primitives.IPickerFlyoutBaseOverridesVTable) { $0 }
         return .init(lpVtbl: vtblPtr)
     }
 }

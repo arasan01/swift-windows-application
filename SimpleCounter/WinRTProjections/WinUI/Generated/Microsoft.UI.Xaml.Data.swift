@@ -312,6 +312,236 @@ open class BindingExpressionBase : WinRTClass {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.bindingoperations)
+public final class BindingOperations : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Data.IBindingOperations
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CData_CIBindingOperations
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CData_CIBindingOperations>?) -> BindingOperations? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IBindingOperationsStatics: __ABI_Microsoft_UI_Xaml_Data.IBindingOperationsStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Data.BindingOperations"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.bindingoperations.setbinding)
+    public static func setBinding(_ target: WinUI.DependencyObject!, _ dp: WinUI.DependencyProperty!, _ binding: BindingBase!) {
+        try! _IBindingOperationsStatics.SetBindingImpl(target, dp, binding)
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.collectionviewsource)
+public final class CollectionViewSource : WinUI.DependencyObject {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Data.ICollectionViewSource
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CData_CICollectionViewSource
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CData_CICollectionViewSource>?) -> CollectionViewSource? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    override public init() {
+        super.init(fromAbi: try! RoActivateInstance(HString("Microsoft.UI.Xaml.Data.CollectionViewSource")))
+    }
+
+    private static let _ICollectionViewSourceStatics: __ABI_Microsoft_UI_Xaml_Data.ICollectionViewSourceStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Data.CollectionViewSource"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.collectionviewsource.issourcegroupedproperty)
+    public static var isSourceGroupedProperty : WinUI.DependencyProperty! {
+        get { try! _ICollectionViewSourceStatics.get_IsSourceGroupedPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.collectionviewsource.itemspathproperty)
+    public static var itemsPathProperty : WinUI.DependencyProperty! {
+        get { try! _ICollectionViewSourceStatics.get_ItemsPathPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.collectionviewsource.sourceproperty)
+    public static var sourceProperty : WinUI.DependencyProperty! {
+        get { try! _ICollectionViewSourceStatics.get_SourcePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.collectionviewsource.viewproperty)
+    public static var viewProperty : WinUI.DependencyProperty! {
+        get { try! _ICollectionViewSourceStatics.get_ViewPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.collectionviewsource.issourcegrouped)
+    public var isSourceGrouped : Bool {
+        get { try! _default.get_IsSourceGroupedImpl() }
+        set { try! _default.put_IsSourceGroupedImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.collectionviewsource.itemspath)
+    public var itemsPath : WinUI.PropertyPath! {
+        get { try! _default.get_ItemsPathImpl() }
+        set { try! _default.put_ItemsPathImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.collectionviewsource.source)
+    public var source : Any! {
+        get { try! _default.get_SourceImpl() }
+        set { try! _default.put_SourceImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.collectionviewsource.view)
+    public var view : AnyICollectionView! {
+        get { try! _default.get_ViewImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.currentchangingeventargs)
+open class CurrentChangingEventArgs : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Data.ICurrentChangingEventArgs
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CData_CICurrentChangingEventArgs
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override open func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CData_CICurrentChangingEventArgs>?) -> CurrentChangingEventArgs? {
+        guard let abi = abi else { return nil }
+        return UnsealedWinRTClassWrapper<Composable>.unwrapFrom(base: abi)
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    @_spi(WinRTInternal)
+    public init<Composable: ComposableImpl>(
+        composing: Composable.Type,
+        _ createCallback: (UnsealedWinRTClassWrapper<Composable>?, inout WindowsFoundation.IInspectable?) -> Composable.Default.SwiftABI)
+    {
+        super.init()
+        MakeComposed(composing: composing, (self as! Composable.Class), createCallback)
+    }
+    override open func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    private static var _ICurrentChangingEventArgsFactory : __ABI_Microsoft_UI_Xaml_Data.ICurrentChangingEventArgsFactory =  try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Data.CurrentChangingEventArgs"))
+
+    override public init() {
+        super.init()
+        MakeComposed(composing: Self.Composable.self, self) { baseInterface, innerInterface in 
+            try! Self._ICurrentChangingEventArgsFactory.CreateInstanceImpl(baseInterface, &innerInterface)
+        }
+    }
+
+    public init(_ isCancelable: Bool) {
+        super.init()
+        MakeComposed(composing: Self.Composable.self, self) { baseInterface, innerInterface in 
+            try! Self._ICurrentChangingEventArgsFactory.CreateWithCancelableParameterImpl(isCancelable, baseInterface, &innerInterface)
+        }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.currentchangingeventargs.cancel)
+    public var cancel : Bool {
+        get { try! _default.get_CancelImpl() }
+        set { try! _default.put_CancelImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.currentchangingeventargs.iscancelable)
+    public var isCancelable : Bool {
+        get { try! _default.get_IsCancelableImpl() }
+    }
+
+    internal enum ICurrentChangingEventArgs : ComposableImpl {
+        internal typealias CABI = C_IInspectable
+        internal typealias SwiftABI = WindowsFoundation.IInspectable
+        internal typealias Class = CurrentChangingEventArgs
+        internal typealias SwiftProjection = WinRTClassWeakReference<Class>
+        internal enum Default : AbiInterface {
+            internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CData_CICurrentChangingEventArgs
+            internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Data.ICurrentChangingEventArgs
+        }
+    }
+    internal typealias Composable = ICurrentChangingEventArgs
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.dataerrorschangedeventargs)
+public final class DataErrorsChangedEventArgs : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Data.IDataErrorsChangedEventArgs
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CData_CIDataErrorsChangedEventArgs
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CData_CIDataErrorsChangedEventArgs>?) -> DataErrorsChangedEventArgs? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IDataErrorsChangedEventArgsFactory: __ABI_Microsoft_UI_Xaml_Data.IDataErrorsChangedEventArgsFactory = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Data.DataErrorsChangedEventArgs"))
+    public init(_ name: String) {
+        super.init(try! Self._IDataErrorsChangedEventArgsFactory.CreateInstanceImpl(name))
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.dataerrorschangedeventargs.propertyname)
+    public var propertyName : String {
+        get { try! _default.get_PropertyNameImpl() }
+        set { try! _default.put_PropertyNameImpl(newValue) }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.itemindexrange)
 open class ItemIndexRange : WinRTClass {
     private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Data.IItemIndexRange
@@ -516,6 +746,7 @@ open class RelativeSource : WinUI.DependencyObject {
     }
 }
 
+public typealias CurrentChangingEventHandler = (Any?, CurrentChangingEventArgs?) -> ()
 public typealias PropertyChangedEventHandler = (Any?, PropertyChangedEventArgs?) -> ()
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.loadmoreitemsresult)
 public struct LoadMoreItemsResult: Hashable, Codable {
@@ -529,6 +760,206 @@ public struct LoadMoreItemsResult: Hashable, Codable {
         .init(count: abi.Count)
     }
 }
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icollectionview)
+public protocol ICollectionView : WindowsFoundation.IObservableVector<Any?>, WindowsFoundation.IVector<Any?>, WindowsFoundation.IIterable<Any?> {
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icollectionview.movecurrentto)
+    func moveCurrentTo(_ item: Any!) throws -> Bool
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icollectionview.movecurrenttoposition)
+    func moveCurrentToPosition(_ index: Int32) throws -> Bool
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icollectionview.movecurrenttofirst)
+    func moveCurrentToFirst() throws -> Bool
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icollectionview.movecurrenttolast)
+    func moveCurrentToLast() throws -> Bool
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icollectionview.movecurrenttonext)
+    func moveCurrentToNext() throws -> Bool
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icollectionview.movecurrenttoprevious)
+    func moveCurrentToPrevious() throws -> Bool
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icollectionview.loadmoreitemsasync)
+    func loadMoreItemsAsync(_ count: UInt32) throws -> WindowsFoundation.AnyIAsyncOperation<WinUI.LoadMoreItemsResult>!
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icollectionview.collectiongroups)
+    var collectionGroups: WindowsFoundation.AnyIObservableVector<Any?>! { get }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icollectionview.currentitem)
+    var currentItem: Any! { get }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icollectionview.currentposition)
+    var currentPosition: Int32 { get }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icollectionview.hasmoreitems)
+    var hasMoreItems: Bool { get }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icollectionview.iscurrentafterlast)
+    var isCurrentAfterLast: Bool { get }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icollectionview.iscurrentbeforefirst)
+    var isCurrentBeforeFirst: Bool { get }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icollectionview.currentchanged)
+    var currentChanged: Event<EventHandler<Any?>> { get }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icollectionview.currentchanging)
+    var currentChanging: Event<CurrentChangingEventHandler> { get }
+}
+
+public extension EventSource where Handler == CurrentChangingEventHandler {
+    func invoke(_ sender: Any!, _ e: CurrentChangingEventArgs!) {
+        for handler in getInvocationList() {
+            handler(sender, e)
+        }
+    }
+}
+
+extension ICollectionView {
+    public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        switch iid {
+            case __ABI_Microsoft_UI_Xaml_Data.ICollectionViewWrapper.IID:
+                let wrapper = __ABI_Microsoft_UI_Xaml_Data.ICollectionViewWrapper(self)
+                return wrapper!.queryInterface(iid)
+            case WinUI.__x_ABI_C__FIObservableVector_1_IInspectableWrapper.IID:
+                let wrapper = WinUI.__x_ABI_C__FIObservableVector_1_IInspectableWrapper(self)
+                return wrapper!.queryInterface(iid)
+            case WinUI.__x_ABI_C__FIVector_1_IInspectableWrapper.IID:
+                let wrapper = WinUI.__x_ABI_C__FIVector_1_IInspectableWrapper(self)
+                return wrapper!.queryInterface(iid)
+            case WinUI.__x_ABI_C__FIIterable_1_IInspectableWrapper.IID:
+                let wrapper = WinUI.__x_ABI_C__FIIterable_1_IInspectableWrapper(self)
+                return wrapper!.queryInterface(iid)
+            default: return nil
+        }
+    }
+}
+public typealias AnyICollectionView = any ICollectionView
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icollectionviewfactory)
+public protocol ICollectionViewFactory : WinRTInterface {
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icollectionviewfactory.createview)
+    func createView() throws -> WinUI.AnyICollectionView!
+}
+
+extension ICollectionViewFactory {
+    public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        switch iid {
+            case __ABI_Microsoft_UI_Xaml_Data.ICollectionViewFactoryWrapper.IID:
+                let wrapper = __ABI_Microsoft_UI_Xaml_Data.ICollectionViewFactoryWrapper(self)
+                return wrapper!.queryInterface(iid)
+            default: return nil
+        }
+    }
+}
+public typealias AnyICollectionViewFactory = any ICollectionViewFactory
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icollectionviewgroup)
+public protocol ICollectionViewGroup : WinRTInterface {
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icollectionviewgroup.group)
+    var group: Any! { get }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icollectionviewgroup.groupitems)
+    var groupItems: WindowsFoundation.AnyIObservableVector<Any?>! { get }
+}
+
+extension ICollectionViewGroup {
+    public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        switch iid {
+            case __ABI_Microsoft_UI_Xaml_Data.ICollectionViewGroupWrapper.IID:
+                let wrapper = __ABI_Microsoft_UI_Xaml_Data.ICollectionViewGroupWrapper(self)
+                return wrapper!.queryInterface(iid)
+            default: return nil
+        }
+    }
+}
+public typealias AnyICollectionViewGroup = any ICollectionViewGroup
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icustomproperty)
+public protocol ICustomProperty : WinRTInterface {
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icustomproperty.getvalue)
+    func getValue(_ target: Any!) throws -> Any!
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icustomproperty.setvalue)
+    func setValue(_ target: Any!, _ value: Any!) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icustomproperty.getindexedvalue)
+    func getIndexedValue(_ target: Any!, _ index: Any!) throws -> Any!
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icustomproperty.setindexedvalue)
+    func setIndexedValue(_ target: Any!, _ value: Any!, _ index: Any!) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icustomproperty.canread)
+    var canRead: Bool { get }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icustomproperty.canwrite)
+    var canWrite: Bool { get }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icustomproperty.name)
+    var name: String { get }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icustomproperty.type)
+    var type: WinUI.TypeName { get }
+}
+
+extension ICustomProperty {
+    public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        switch iid {
+            case __ABI_Microsoft_UI_Xaml_Data.ICustomPropertyWrapper.IID:
+                let wrapper = __ABI_Microsoft_UI_Xaml_Data.ICustomPropertyWrapper(self)
+                return wrapper!.queryInterface(iid)
+            default: return nil
+        }
+    }
+}
+public typealias AnyICustomProperty = any ICustomProperty
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icustompropertyprovider)
+public protocol ICustomPropertyProvider : WinRTInterface {
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icustompropertyprovider.getcustomproperty)
+    func getCustomProperty(_ name: String) throws -> WinUI.AnyICustomProperty!
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icustompropertyprovider.getindexedproperty)
+    func getIndexedProperty(_ name: String, _ type: WinUI.TypeName) throws -> WinUI.AnyICustomProperty!
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icustompropertyprovider.getstringrepresentation)
+    func getStringRepresentation() throws -> String
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.icustompropertyprovider.type)
+    var type: WinUI.TypeName { get }
+}
+
+extension ICustomPropertyProvider {
+    public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        switch iid {
+            case __ABI_Microsoft_UI_Xaml_Data.ICustomPropertyProviderWrapper.IID:
+                let wrapper = __ABI_Microsoft_UI_Xaml_Data.ICustomPropertyProviderWrapper(self)
+                return wrapper!.queryInterface(iid)
+            default: return nil
+        }
+    }
+}
+public typealias AnyICustomPropertyProvider = any ICustomPropertyProvider
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.iitemsrangeinfo)
+public protocol IItemsRangeInfo : WindowsFoundation.IClosable {
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.iitemsrangeinfo.rangeschanged)
+    func rangesChanged(_ visibleRange: WinUI.ItemIndexRange!, _ trackedItems: WindowsFoundation.AnyIVectorView<WinUI.ItemIndexRange?>!) throws
+}
+
+extension IItemsRangeInfo {
+    public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        switch iid {
+            case __ABI_Microsoft_UI_Xaml_Data.IItemsRangeInfoWrapper.IID:
+                let wrapper = __ABI_Microsoft_UI_Xaml_Data.IItemsRangeInfoWrapper(self)
+                return wrapper!.queryInterface(iid)
+            case __ABI_Windows_Foundation.IClosableWrapper.IID:
+                let wrapper = __ABI_Windows_Foundation.IClosableWrapper(self)
+                return wrapper!.queryInterface(iid)
+            default: return nil
+        }
+    }
+}
+public typealias AnyIItemsRangeInfo = any IItemsRangeInfo
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.inotifydataerrorinfo)
+public protocol INotifyDataErrorInfo : WinRTInterface {
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.inotifydataerrorinfo.geterrors)
+    func getErrors(_ propertyName: String) throws -> WindowsFoundation.AnyIIterable<Any?>!
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.inotifydataerrorinfo.haserrors)
+    var hasErrors: Bool { get }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.inotifydataerrorinfo.errorschanged)
+    var errorsChanged: Event<EventHandler<DataErrorsChangedEventArgs?>> { get }
+}
+
+extension INotifyDataErrorInfo {
+    public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        switch iid {
+            case __ABI_Microsoft_UI_Xaml_Data.INotifyDataErrorInfoWrapper.IID:
+                let wrapper = __ABI_Microsoft_UI_Xaml_Data.INotifyDataErrorInfoWrapper(self)
+                return wrapper!.queryInterface(iid)
+            default: return nil
+        }
+    }
+}
+public typealias AnyINotifyDataErrorInfo = any INotifyDataErrorInfo
 
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.inotifypropertychanged)
 public protocol INotifyPropertyChanged : WinRTInterface {
@@ -555,6 +986,50 @@ extension INotifyPropertyChanged {
     }
 }
 public typealias AnyINotifyPropertyChanged = any INotifyPropertyChanged
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.iselectioninfo)
+public protocol ISelectionInfo : WinRTInterface {
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.iselectioninfo.selectrange)
+    func selectRange(_ itemIndexRange: WinUI.ItemIndexRange!) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.iselectioninfo.deselectrange)
+    func deselectRange(_ itemIndexRange: WinUI.ItemIndexRange!) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.iselectioninfo.isselected)
+    func isSelected(_ index: Int32) throws -> Bool
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.iselectioninfo.getselectedranges)
+    func getSelectedRanges() throws -> WindowsFoundation.AnyIVectorView<WinUI.ItemIndexRange?>!
+}
+
+extension ISelectionInfo {
+    public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        switch iid {
+            case __ABI_Microsoft_UI_Xaml_Data.ISelectionInfoWrapper.IID:
+                let wrapper = __ABI_Microsoft_UI_Xaml_Data.ISelectionInfoWrapper(self)
+                return wrapper!.queryInterface(iid)
+            default: return nil
+        }
+    }
+}
+public typealias AnyISelectionInfo = any ISelectionInfo
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.isupportincrementalloading)
+public protocol ISupportIncrementalLoading : WinRTInterface {
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.isupportincrementalloading.loadmoreitemsasync)
+    func loadMoreItemsAsync(_ count: UInt32) throws -> WindowsFoundation.AnyIAsyncOperation<WinUI.LoadMoreItemsResult>!
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.isupportincrementalloading.hasmoreitems)
+    var hasMoreItems: Bool { get }
+}
+
+extension ISupportIncrementalLoading {
+    public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        switch iid {
+            case __ABI_Microsoft_UI_Xaml_Data.ISupportIncrementalLoadingWrapper.IID:
+                let wrapper = __ABI_Microsoft_UI_Xaml_Data.ISupportIncrementalLoadingWrapper(self)
+                return wrapper!.queryInterface(iid)
+            default: return nil
+        }
+    }
+}
+public typealias AnyISupportIncrementalLoading = any ISupportIncrementalLoading
 
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.ivalueconverter)
 public protocol IValueConverter : WinRTInterface {

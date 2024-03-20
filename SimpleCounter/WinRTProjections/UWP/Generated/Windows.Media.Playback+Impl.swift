@@ -5,6 +5,41 @@ import Foundation
 import CWinRT
 
 public enum __IMPL_Windows_Media_Playback {
+    public enum IMediaEnginePlaybackSourceBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CMedia_CPlayback_CIMediaEnginePlaybackSource
+        public typealias SwiftABI = __ABI_Windows_Media_Playback.IMediaEnginePlaybackSource
+        public typealias SwiftProjection = AnyIMediaEnginePlaybackSource
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IMediaEnginePlaybackSourceImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_Media_Playback.IMediaEnginePlaybackSourceVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IMediaEnginePlaybackSourceImpl: IMediaEnginePlaybackSource, WinRTAbiImpl {
+        fileprivate typealias Bridge = IMediaEnginePlaybackSourceBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.playback.imediaengineplaybacksource.setplaybacksource)
+        fileprivate func setPlaybackSource(_ source: AnyIMediaPlaybackSource!) throws {
+            try _default.SetPlaybackSourceImpl(source)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.playback.imediaengineplaybacksource.currentitem)
+        fileprivate var currentItem : MediaPlaybackItem! {
+            get { try! _default.get_CurrentItemImpl() }
+        }
+
+    }
+
     public enum IMediaPlaybackSourceBridge : AbiInterfaceBridge {
         public typealias CABI = __x_ABI_CWindows_CMedia_CPlayback_CIMediaPlaybackSource
         public typealias SwiftABI = __ABI_Windows_Media_Playback.IMediaPlaybackSource

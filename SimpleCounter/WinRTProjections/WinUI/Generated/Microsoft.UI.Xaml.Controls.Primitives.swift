@@ -17,6 +17,12 @@ public typealias FlyoutPlacementMode = __x_ABI_CMicrosoft_CUI_CXaml_CControls_CP
 public typealias FlyoutShowMode = __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CFlyoutShowMode
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.generatordirection)
 public typealias GeneratorDirection = __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CGeneratorDirection
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.groupheaderplacement)
+public typealias GroupHeaderPlacement = __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CGroupHeaderPlacement
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresentercheckmode)
+public typealias ListViewItemPresenterCheckMode = __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CListViewItemPresenterCheckMode
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenterselectionindicatormode)
+public typealias ListViewItemPresenterSelectionIndicatorMode = __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CListViewItemPresenterSelectionIndicatorMode
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.placementmode)
 public typealias PlacementMode = __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CPlacementMode
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.popupplacementmode)
@@ -29,6 +35,40 @@ public typealias SliderSnapsTo = __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimiti
 public typealias SnapPointsAlignment = __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CSnapPointsAlignment
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.tickplacement)
 public typealias TickPlacement = __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CTickPlacement
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.appbarbuttontemplatesettings)
+public final class AppBarButtonTemplateSettings : WinUI.DependencyObject {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Controls_Primitives.IAppBarButtonTemplateSettings
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIAppBarButtonTemplateSettings
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIAppBarButtonTemplateSettings>?) -> AppBarButtonTemplateSettings? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.appbarbuttontemplatesettings.keyboardacceleratortextminwidth)
+    public var keyboardAcceleratorTextMinWidth : Double {
+        get { try! _default.get_KeyboardAcceleratorTextMinWidthImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.appbartemplatesettings)
 public final class AppBarTemplateSettings : WinUI.DependencyObject {
     private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Controls_Primitives.IAppBarTemplateSettings
@@ -101,6 +141,40 @@ public final class AppBarTemplateSettings : WinUI.DependencyObject {
     /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.appbartemplatesettings.negativeminimalverticaldelta)
     public var negativeMinimalVerticalDelta : Double {
         get { try! _default.get_NegativeMinimalVerticalDeltaImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.appbartogglebuttontemplatesettings)
+public final class AppBarToggleButtonTemplateSettings : WinUI.DependencyObject {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Controls_Primitives.IAppBarToggleButtonTemplateSettings
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIAppBarToggleButtonTemplateSettings
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIAppBarToggleButtonTemplateSettings>?) -> AppBarToggleButtonTemplateSettings? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.appbartogglebuttontemplatesettings.keyboardacceleratortextminwidth)
+    public var keyboardAcceleratorTextMinWidth : Double {
+        get { try! _default.get_KeyboardAcceleratorTextMinWidthImpl() }
     }
 
     deinit {
@@ -233,6 +307,110 @@ open class ButtonBase : WinUI.ContentControl {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.calendarviewtemplatesettings)
+public final class CalendarViewTemplateSettings : WinUI.DependencyObject {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Controls_Primitives.ICalendarViewTemplateSettings
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICalendarViewTemplateSettings
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICalendarViewTemplateSettings>?) -> CalendarViewTemplateSettings? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.calendarviewtemplatesettings.centerx)
+    public var centerX : Double {
+        get { try! _default.get_CenterXImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.calendarviewtemplatesettings.centery)
+    public var centerY : Double {
+        get { try! _default.get_CenterYImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.calendarviewtemplatesettings.cliprect)
+    public var clipRect : WindowsFoundation.Rect {
+        get { try! _default.get_ClipRectImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.calendarviewtemplatesettings.hasmorecontentafter)
+    public var hasMoreContentAfter : Bool {
+        get { try! _default.get_HasMoreContentAfterImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.calendarviewtemplatesettings.hasmorecontentbefore)
+    public var hasMoreContentBefore : Bool {
+        get { try! _default.get_HasMoreContentBeforeImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.calendarviewtemplatesettings.hasmoreviews)
+    public var hasMoreViews : Bool {
+        get { try! _default.get_HasMoreViewsImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.calendarviewtemplatesettings.headertext)
+    public var headerText : String {
+        get { try! _default.get_HeaderTextImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.calendarviewtemplatesettings.minviewwidth)
+    public var minViewWidth : Double {
+        get { try! _default.get_MinViewWidthImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.calendarviewtemplatesettings.weekday1)
+    public var weekDay1 : String {
+        get { try! _default.get_WeekDay1Impl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.calendarviewtemplatesettings.weekday2)
+    public var weekDay2 : String {
+        get { try! _default.get_WeekDay2Impl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.calendarviewtemplatesettings.weekday3)
+    public var weekDay3 : String {
+        get { try! _default.get_WeekDay3Impl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.calendarviewtemplatesettings.weekday4)
+    public var weekDay4 : String {
+        get { try! _default.get_WeekDay4Impl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.calendarviewtemplatesettings.weekday5)
+    public var weekDay5 : String {
+        get { try! _default.get_WeekDay5Impl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.calendarviewtemplatesettings.weekday6)
+    public var weekDay6 : String {
+        get { try! _default.get_WeekDay6Impl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.calendarviewtemplatesettings.weekday7)
+    public var weekDay7 : String {
+        get { try! _default.get_WeekDay7Impl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.comboboxtemplatesettings)
 public final class ComboBoxTemplateSettings : WinUI.DependencyObject {
     private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Controls_Primitives.IComboBoxTemplateSettings
@@ -280,6 +458,95 @@ public final class ComboBoxTemplateSettings : WinUI.DependencyObject {
     /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.comboboxtemplatesettings.selecteditemdirection)
     public var selectedItemDirection : AnimationDirection {
         get { try! _default.get_SelectedItemDirectionImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.commandbartemplatesettings)
+public final class CommandBarTemplateSettings : WinUI.DependencyObject {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Controls_Primitives.ICommandBarTemplateSettings
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICommandBarTemplateSettings
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CICommandBarTemplateSettings>?) -> CommandBarTemplateSettings? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.commandbartemplatesettings.contentheight)
+    public var contentHeight : Double {
+        get { try! _default.get_ContentHeightImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.commandbartemplatesettings.effectiveoverflowbuttonvisibility)
+    public var effectiveOverflowButtonVisibility : WinUI.Visibility {
+        get { try! _default.get_EffectiveOverflowButtonVisibilityImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.commandbartemplatesettings.negativeoverflowcontentheight)
+    public var negativeOverflowContentHeight : Double {
+        get { try! _default.get_NegativeOverflowContentHeightImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.commandbartemplatesettings.overflowcontentcliprect)
+    public var overflowContentClipRect : WindowsFoundation.Rect {
+        get { try! _default.get_OverflowContentClipRectImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.commandbartemplatesettings.overflowcontentcompactytranslation)
+    public var overflowContentCompactYTranslation : Double {
+        get { try! _default.get_OverflowContentCompactYTranslationImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.commandbartemplatesettings.overflowcontentheight)
+    public var overflowContentHeight : Double {
+        get { try! _default.get_OverflowContentHeightImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.commandbartemplatesettings.overflowcontenthiddenytranslation)
+    public var overflowContentHiddenYTranslation : Double {
+        get { try! _default.get_OverflowContentHiddenYTranslationImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.commandbartemplatesettings.overflowcontenthorizontaloffset)
+    public var overflowContentHorizontalOffset : Double {
+        get { try! _default.get_OverflowContentHorizontalOffsetImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.commandbartemplatesettings.overflowcontentmaxheight)
+    public var overflowContentMaxHeight : Double {
+        get { try! _default.get_OverflowContentMaxHeightImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.commandbartemplatesettings.overflowcontentmaxwidth)
+    public var overflowContentMaxWidth : Double {
+        get { try! _default.get_OverflowContentMaxWidthImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.commandbartemplatesettings.overflowcontentminwidth)
+    public var overflowContentMinWidth : Double {
+        get { try! _default.get_OverflowContentMinWidthImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.commandbartemplatesettings.overflowcontentminimalytranslation)
+    public var overflowContentMinimalYTranslation : Double {
+        get { try! _default.get_OverflowContentMinimalYTranslationImpl() }
     }
 
     deinit {
@@ -728,6 +995,40 @@ open class FlyoutShowOptions : WinRTClass {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.gridviewitemtemplatesettings)
+public final class GridViewItemTemplateSettings : WinUI.DependencyObject {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Controls_Primitives.IGridViewItemTemplateSettings
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIGridViewItemTemplateSettings
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIGridViewItemTemplateSettings>?) -> GridViewItemTemplateSettings? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.gridviewitemtemplatesettings.dragitemscount)
+    public var dragItemsCount : Int32 {
+        get { try! _default.get_DragItemsCountImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.itemschangedeventargs)
 public final class ItemsChangedEventArgs : WinRTClass {
     private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Controls_Primitives.IItemsChangedEventArgs
@@ -777,6 +1078,714 @@ public final class ItemsChangedEventArgs : WinRTClass {
         get { try! _default.get_PositionImpl() }
     }
 
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter)
+open class ListViewItemPresenter : WinUI.ContentPresenter {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Controls_Primitives.IListViewItemPresenter
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override open func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter>?) -> ListViewItemPresenter? {
+        guard let abi = abi else { return nil }
+        return UnsealedWinRTClassWrapper<Composable>.unwrapFrom(base: abi)
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    @_spi(WinRTInternal)
+    override public init<Composable: ComposableImpl>(
+        composing: Composable.Type,
+        _ createCallback: (UnsealedWinRTClassWrapper<Composable>?, inout WindowsFoundation.IInspectable?) -> Composable.Default.SwiftABI)
+    {
+        super.init(composing: composing, createCallback)
+    }
+    override open func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    private static var _IListViewItemPresenterFactory : __ABI_Microsoft_UI_Xaml_Controls_Primitives.IListViewItemPresenterFactory =  try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Controls.Primitives.ListViewItemPresenter"))
+
+    override public init() {
+        super.init(composing: Self.Composable.self) { baseInterface, innerInterface in 
+            try! Self._IListViewItemPresenterFactory.CreateInstanceImpl(baseInterface, &innerInterface)
+        }
+    }
+
+    private static let _IListViewItemPresenterStatics: __ABI_Microsoft_UI_Xaml_Controls_Primitives.IListViewItemPresenterStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Controls.Primitives.ListViewItemPresenter"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkboxborderbrushproperty)
+    public class var checkBoxBorderBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_CheckBoxBorderBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkboxbrushproperty)
+    public class var checkBoxBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_CheckBoxBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkboxcornerradiusproperty)
+    public class var checkBoxCornerRadiusProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_CheckBoxCornerRadiusPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkboxdisabledborderbrushproperty)
+    public class var checkBoxDisabledBorderBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_CheckBoxDisabledBorderBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkboxdisabledbrushproperty)
+    public class var checkBoxDisabledBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_CheckBoxDisabledBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkboxpointeroverborderbrushproperty)
+    public class var checkBoxPointerOverBorderBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_CheckBoxPointerOverBorderBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkboxpointeroverbrushproperty)
+    public class var checkBoxPointerOverBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_CheckBoxPointerOverBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkboxpressedborderbrushproperty)
+    public class var checkBoxPressedBorderBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_CheckBoxPressedBorderBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkboxpressedbrushproperty)
+    public class var checkBoxPressedBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_CheckBoxPressedBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkboxselectedbrushproperty)
+    public class var checkBoxSelectedBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_CheckBoxSelectedBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkboxselecteddisabledbrushproperty)
+    public class var checkBoxSelectedDisabledBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_CheckBoxSelectedDisabledBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkboxselectedpointeroverbrushproperty)
+    public class var checkBoxSelectedPointerOverBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_CheckBoxSelectedPointerOverBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkboxselectedpressedbrushproperty)
+    public class var checkBoxSelectedPressedBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_CheckBoxSelectedPressedBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkbrushproperty)
+    public class var checkBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_CheckBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkdisabledbrushproperty)
+    public class var checkDisabledBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_CheckDisabledBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkhintbrushproperty)
+    public class var checkHintBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_CheckHintBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkmodeproperty)
+    public class var checkModeProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_CheckModePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkpressedbrushproperty)
+    public class var checkPressedBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_CheckPressedBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkselectingbrushproperty)
+    public class var checkSelectingBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_CheckSelectingBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.contentmarginproperty)
+    public class var contentMarginProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_ContentMarginPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.disabledopacityproperty)
+    public class var disabledOpacityProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_DisabledOpacityPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.dragbackgroundproperty)
+    public class var dragBackgroundProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_DragBackgroundPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.dragforegroundproperty)
+    public class var dragForegroundProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_DragForegroundPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.dragopacityproperty)
+    public class var dragOpacityProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_DragOpacityPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.focusborderbrushproperty)
+    public class var focusBorderBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_FocusBorderBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.focussecondaryborderbrushproperty)
+    public class var focusSecondaryBorderBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_FocusSecondaryBorderBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.listviewitempresenterhorizontalcontentalignmentproperty)
+    public class var listViewItemPresenterHorizontalContentAlignmentProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_ListViewItemPresenterHorizontalContentAlignmentPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.listviewitempresenterpaddingproperty)
+    public class var listViewItemPresenterPaddingProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_ListViewItemPresenterPaddingPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.listviewitempresenterverticalcontentalignmentproperty)
+    public class var listViewItemPresenterVerticalContentAlignmentProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_ListViewItemPresenterVerticalContentAlignmentPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.placeholderbackgroundproperty)
+    public class var placeholderBackgroundProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_PlaceholderBackgroundPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.pointeroverbackgroundmarginproperty)
+    public class var pointerOverBackgroundMarginProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_PointerOverBackgroundMarginPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.pointeroverbackgroundproperty)
+    public class var pointerOverBackgroundProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_PointerOverBackgroundPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.pointeroverborderbrushproperty)
+    public class var pointerOverBorderBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_PointerOverBorderBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.pointeroverforegroundproperty)
+    public class var pointerOverForegroundProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_PointerOverForegroundPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.pressedbackgroundproperty)
+    public class var pressedBackgroundProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_PressedBackgroundPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.reorderhintoffsetproperty)
+    public class var reorderHintOffsetProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_ReorderHintOffsetPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.revealbackgroundproperty)
+    public class var revealBackgroundProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_RevealBackgroundPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.revealbackgroundshowsabovecontentproperty)
+    public class var revealBackgroundShowsAboveContentProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_RevealBackgroundShowsAboveContentPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.revealborderbrushproperty)
+    public class var revealBorderBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_RevealBorderBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.revealborderthicknessproperty)
+    public class var revealBorderThicknessProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_RevealBorderThicknessPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectedbackgroundproperty)
+    public class var selectedBackgroundProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_SelectedBackgroundPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectedborderbrushproperty)
+    public class var selectedBorderBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_SelectedBorderBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectedborderthicknessproperty)
+    public class var selectedBorderThicknessProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_SelectedBorderThicknessPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selecteddisabledbackgroundproperty)
+    public class var selectedDisabledBackgroundProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_SelectedDisabledBackgroundPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selecteddisabledborderbrushproperty)
+    public class var selectedDisabledBorderBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_SelectedDisabledBorderBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectedforegroundproperty)
+    public class var selectedForegroundProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_SelectedForegroundPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectedinnerborderbrushproperty)
+    public class var selectedInnerBorderBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_SelectedInnerBorderBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectedpointeroverbackgroundproperty)
+    public class var selectedPointerOverBackgroundProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_SelectedPointerOverBackgroundPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectedpointeroverborderbrushproperty)
+    public class var selectedPointerOverBorderBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_SelectedPointerOverBorderBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectedpressedbackgroundproperty)
+    public class var selectedPressedBackgroundProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_SelectedPressedBackgroundPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectedpressedborderbrushproperty)
+    public class var selectedPressedBorderBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_SelectedPressedBorderBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectioncheckmarkvisualenabledproperty)
+    public class var selectionCheckMarkVisualEnabledProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_SelectionCheckMarkVisualEnabledPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectionindicatorbrushproperty)
+    public class var selectionIndicatorBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_SelectionIndicatorBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectionindicatorcornerradiusproperty)
+    public class var selectionIndicatorCornerRadiusProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_SelectionIndicatorCornerRadiusPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectionindicatordisabledbrushproperty)
+    public class var selectionIndicatorDisabledBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_SelectionIndicatorDisabledBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectionindicatormodeproperty)
+    public class var selectionIndicatorModeProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_SelectionIndicatorModePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectionindicatorpointeroverbrushproperty)
+    public class var selectionIndicatorPointerOverBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_SelectionIndicatorPointerOverBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectionindicatorpressedbrushproperty)
+    public class var selectionIndicatorPressedBrushProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_SelectionIndicatorPressedBrushPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectionindicatorvisualenabledproperty)
+    public class var selectionIndicatorVisualEnabledProperty : WinUI.DependencyProperty! {
+        get { try! _IListViewItemPresenterStatics.get_SelectionIndicatorVisualEnabledPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkboxborderbrush)
+    public var checkBoxBorderBrush : WinUI.Brush! {
+        get { try! _default.get_CheckBoxBorderBrushImpl() }
+        set { try! _default.put_CheckBoxBorderBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkboxbrush)
+    public var checkBoxBrush : WinUI.Brush! {
+        get { try! _default.get_CheckBoxBrushImpl() }
+        set { try! _default.put_CheckBoxBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkboxcornerradius)
+    public var checkBoxCornerRadius : WinUI.CornerRadius {
+        get { try! _default.get_CheckBoxCornerRadiusImpl() }
+        set { try! _default.put_CheckBoxCornerRadiusImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkboxdisabledborderbrush)
+    public var checkBoxDisabledBorderBrush : WinUI.Brush! {
+        get { try! _default.get_CheckBoxDisabledBorderBrushImpl() }
+        set { try! _default.put_CheckBoxDisabledBorderBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkboxdisabledbrush)
+    public var checkBoxDisabledBrush : WinUI.Brush! {
+        get { try! _default.get_CheckBoxDisabledBrushImpl() }
+        set { try! _default.put_CheckBoxDisabledBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkboxpointeroverborderbrush)
+    public var checkBoxPointerOverBorderBrush : WinUI.Brush! {
+        get { try! _default.get_CheckBoxPointerOverBorderBrushImpl() }
+        set { try! _default.put_CheckBoxPointerOverBorderBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkboxpointeroverbrush)
+    public var checkBoxPointerOverBrush : WinUI.Brush! {
+        get { try! _default.get_CheckBoxPointerOverBrushImpl() }
+        set { try! _default.put_CheckBoxPointerOverBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkboxpressedborderbrush)
+    public var checkBoxPressedBorderBrush : WinUI.Brush! {
+        get { try! _default.get_CheckBoxPressedBorderBrushImpl() }
+        set { try! _default.put_CheckBoxPressedBorderBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkboxpressedbrush)
+    public var checkBoxPressedBrush : WinUI.Brush! {
+        get { try! _default.get_CheckBoxPressedBrushImpl() }
+        set { try! _default.put_CheckBoxPressedBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkboxselectedbrush)
+    public var checkBoxSelectedBrush : WinUI.Brush! {
+        get { try! _default.get_CheckBoxSelectedBrushImpl() }
+        set { try! _default.put_CheckBoxSelectedBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkboxselecteddisabledbrush)
+    public var checkBoxSelectedDisabledBrush : WinUI.Brush! {
+        get { try! _default.get_CheckBoxSelectedDisabledBrushImpl() }
+        set { try! _default.put_CheckBoxSelectedDisabledBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkboxselectedpointeroverbrush)
+    public var checkBoxSelectedPointerOverBrush : WinUI.Brush! {
+        get { try! _default.get_CheckBoxSelectedPointerOverBrushImpl() }
+        set { try! _default.put_CheckBoxSelectedPointerOverBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkboxselectedpressedbrush)
+    public var checkBoxSelectedPressedBrush : WinUI.Brush! {
+        get { try! _default.get_CheckBoxSelectedPressedBrushImpl() }
+        set { try! _default.put_CheckBoxSelectedPressedBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkbrush)
+    public var checkBrush : WinUI.Brush! {
+        get { try! _default.get_CheckBrushImpl() }
+        set { try! _default.put_CheckBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkdisabledbrush)
+    public var checkDisabledBrush : WinUI.Brush! {
+        get { try! _default.get_CheckDisabledBrushImpl() }
+        set { try! _default.put_CheckDisabledBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkhintbrush)
+    public var checkHintBrush : WinUI.Brush! {
+        get { try! _default.get_CheckHintBrushImpl() }
+        set { try! _default.put_CheckHintBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkmode)
+    public var checkMode : ListViewItemPresenterCheckMode {
+        get { try! _default.get_CheckModeImpl() }
+        set { try! _default.put_CheckModeImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkpressedbrush)
+    public var checkPressedBrush : WinUI.Brush! {
+        get { try! _default.get_CheckPressedBrushImpl() }
+        set { try! _default.put_CheckPressedBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.checkselectingbrush)
+    public var checkSelectingBrush : WinUI.Brush! {
+        get { try! _default.get_CheckSelectingBrushImpl() }
+        set { try! _default.put_CheckSelectingBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.contentmargin)
+    public var contentMargin : WinUI.Thickness {
+        get { try! _default.get_ContentMarginImpl() }
+        set { try! _default.put_ContentMarginImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.disabledopacity)
+    public var disabledOpacity : Double {
+        get { try! _default.get_DisabledOpacityImpl() }
+        set { try! _default.put_DisabledOpacityImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.dragbackground)
+    public var dragBackground : WinUI.Brush! {
+        get { try! _default.get_DragBackgroundImpl() }
+        set { try! _default.put_DragBackgroundImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.dragforeground)
+    public var dragForeground : WinUI.Brush! {
+        get { try! _default.get_DragForegroundImpl() }
+        set { try! _default.put_DragForegroundImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.dragopacity)
+    public var dragOpacity : Double {
+        get { try! _default.get_DragOpacityImpl() }
+        set { try! _default.put_DragOpacityImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.focusborderbrush)
+    public var focusBorderBrush : WinUI.Brush! {
+        get { try! _default.get_FocusBorderBrushImpl() }
+        set { try! _default.put_FocusBorderBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.focussecondaryborderbrush)
+    public var focusSecondaryBorderBrush : WinUI.Brush! {
+        get { try! _default.get_FocusSecondaryBorderBrushImpl() }
+        set { try! _default.put_FocusSecondaryBorderBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.listviewitempresenterhorizontalcontentalignment)
+    public var listViewItemPresenterHorizontalContentAlignment : WinUI.HorizontalAlignment {
+        get { try! _default.get_ListViewItemPresenterHorizontalContentAlignmentImpl() }
+        set { try! _default.put_ListViewItemPresenterHorizontalContentAlignmentImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.listviewitempresenterpadding)
+    public var listViewItemPresenterPadding : WinUI.Thickness {
+        get { try! _default.get_ListViewItemPresenterPaddingImpl() }
+        set { try! _default.put_ListViewItemPresenterPaddingImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.listviewitempresenterverticalcontentalignment)
+    public var listViewItemPresenterVerticalContentAlignment : WinUI.VerticalAlignment {
+        get { try! _default.get_ListViewItemPresenterVerticalContentAlignmentImpl() }
+        set { try! _default.put_ListViewItemPresenterVerticalContentAlignmentImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.placeholderbackground)
+    public var placeholderBackground : WinUI.Brush! {
+        get { try! _default.get_PlaceholderBackgroundImpl() }
+        set { try! _default.put_PlaceholderBackgroundImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.pointeroverbackground)
+    public var pointerOverBackground : WinUI.Brush! {
+        get { try! _default.get_PointerOverBackgroundImpl() }
+        set { try! _default.put_PointerOverBackgroundImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.pointeroverbackgroundmargin)
+    public var pointerOverBackgroundMargin : WinUI.Thickness {
+        get { try! _default.get_PointerOverBackgroundMarginImpl() }
+        set { try! _default.put_PointerOverBackgroundMarginImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.pointeroverborderbrush)
+    public var pointerOverBorderBrush : WinUI.Brush! {
+        get { try! _default.get_PointerOverBorderBrushImpl() }
+        set { try! _default.put_PointerOverBorderBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.pointeroverforeground)
+    public var pointerOverForeground : WinUI.Brush! {
+        get { try! _default.get_PointerOverForegroundImpl() }
+        set { try! _default.put_PointerOverForegroundImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.pressedbackground)
+    public var pressedBackground : WinUI.Brush! {
+        get { try! _default.get_PressedBackgroundImpl() }
+        set { try! _default.put_PressedBackgroundImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.reorderhintoffset)
+    public var reorderHintOffset : Double {
+        get { try! _default.get_ReorderHintOffsetImpl() }
+        set { try! _default.put_ReorderHintOffsetImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.revealbackground)
+    public var revealBackground : WinUI.Brush! {
+        get { try! _default.get_RevealBackgroundImpl() }
+        set { try! _default.put_RevealBackgroundImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.revealbackgroundshowsabovecontent)
+    public var revealBackgroundShowsAboveContent : Bool {
+        get { try! _default.get_RevealBackgroundShowsAboveContentImpl() }
+        set { try! _default.put_RevealBackgroundShowsAboveContentImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.revealborderbrush)
+    public var revealBorderBrush : WinUI.Brush! {
+        get { try! _default.get_RevealBorderBrushImpl() }
+        set { try! _default.put_RevealBorderBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.revealborderthickness)
+    public var revealBorderThickness : WinUI.Thickness {
+        get { try! _default.get_RevealBorderThicknessImpl() }
+        set { try! _default.put_RevealBorderThicknessImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectedbackground)
+    public var selectedBackground : WinUI.Brush! {
+        get { try! _default.get_SelectedBackgroundImpl() }
+        set { try! _default.put_SelectedBackgroundImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectedborderbrush)
+    public var selectedBorderBrush : WinUI.Brush! {
+        get { try! _default.get_SelectedBorderBrushImpl() }
+        set { try! _default.put_SelectedBorderBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectedborderthickness)
+    public var selectedBorderThickness : WinUI.Thickness {
+        get { try! _default.get_SelectedBorderThicknessImpl() }
+        set { try! _default.put_SelectedBorderThicknessImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selecteddisabledbackground)
+    public var selectedDisabledBackground : WinUI.Brush! {
+        get { try! _default.get_SelectedDisabledBackgroundImpl() }
+        set { try! _default.put_SelectedDisabledBackgroundImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selecteddisabledborderbrush)
+    public var selectedDisabledBorderBrush : WinUI.Brush! {
+        get { try! _default.get_SelectedDisabledBorderBrushImpl() }
+        set { try! _default.put_SelectedDisabledBorderBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectedforeground)
+    public var selectedForeground : WinUI.Brush! {
+        get { try! _default.get_SelectedForegroundImpl() }
+        set { try! _default.put_SelectedForegroundImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectedinnerborderbrush)
+    public var selectedInnerBorderBrush : WinUI.Brush! {
+        get { try! _default.get_SelectedInnerBorderBrushImpl() }
+        set { try! _default.put_SelectedInnerBorderBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectedpointeroverbackground)
+    public var selectedPointerOverBackground : WinUI.Brush! {
+        get { try! _default.get_SelectedPointerOverBackgroundImpl() }
+        set { try! _default.put_SelectedPointerOverBackgroundImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectedpointeroverborderbrush)
+    public var selectedPointerOverBorderBrush : WinUI.Brush! {
+        get { try! _default.get_SelectedPointerOverBorderBrushImpl() }
+        set { try! _default.put_SelectedPointerOverBorderBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectedpressedbackground)
+    public var selectedPressedBackground : WinUI.Brush! {
+        get { try! _default.get_SelectedPressedBackgroundImpl() }
+        set { try! _default.put_SelectedPressedBackgroundImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectedpressedborderbrush)
+    public var selectedPressedBorderBrush : WinUI.Brush! {
+        get { try! _default.get_SelectedPressedBorderBrushImpl() }
+        set { try! _default.put_SelectedPressedBorderBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectioncheckmarkvisualenabled)
+    public var selectionCheckMarkVisualEnabled : Bool {
+        get { try! _default.get_SelectionCheckMarkVisualEnabledImpl() }
+        set { try! _default.put_SelectionCheckMarkVisualEnabledImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectionindicatorbrush)
+    public var selectionIndicatorBrush : WinUI.Brush! {
+        get { try! _default.get_SelectionIndicatorBrushImpl() }
+        set { try! _default.put_SelectionIndicatorBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectionindicatorcornerradius)
+    public var selectionIndicatorCornerRadius : WinUI.CornerRadius {
+        get { try! _default.get_SelectionIndicatorCornerRadiusImpl() }
+        set { try! _default.put_SelectionIndicatorCornerRadiusImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectionindicatordisabledbrush)
+    public var selectionIndicatorDisabledBrush : WinUI.Brush! {
+        get { try! _default.get_SelectionIndicatorDisabledBrushImpl() }
+        set { try! _default.put_SelectionIndicatorDisabledBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectionindicatormode)
+    public var selectionIndicatorMode : ListViewItemPresenterSelectionIndicatorMode {
+        get { try! _default.get_SelectionIndicatorModeImpl() }
+        set { try! _default.put_SelectionIndicatorModeImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectionindicatorpointeroverbrush)
+    public var selectionIndicatorPointerOverBrush : WinUI.Brush! {
+        get { try! _default.get_SelectionIndicatorPointerOverBrushImpl() }
+        set { try! _default.put_SelectionIndicatorPointerOverBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectionindicatorpressedbrush)
+    public var selectionIndicatorPressedBrush : WinUI.Brush! {
+        get { try! _default.get_SelectionIndicatorPressedBrushImpl() }
+        set { try! _default.put_SelectionIndicatorPressedBrushImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.listviewitempresenter.selectionindicatorvisualenabled)
+    public var selectionIndicatorVisualEnabled : Bool {
+        get { try! _default.get_SelectionIndicatorVisualEnabledImpl() }
+        set { try! _default.put_SelectionIndicatorVisualEnabledImpl(newValue) }
+    }
+
+    internal enum IContentPresenterOverrides : ComposableImpl {
+        internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIContentPresenterOverrides
+        internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Controls.IContentPresenterOverrides
+        internal typealias Class = ListViewItemPresenter
+        internal typealias SwiftProjection = WinRTClassWeakReference<Class>
+        internal enum Default : AbiInterface {
+            internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIListViewItemPresenter
+            internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Controls_Primitives.IListViewItemPresenter
+        }
+    }
+    internal typealias Composable = IContentPresenterOverrides
     deinit {
         _default = nil
     }
@@ -847,6 +1856,361 @@ public final class MenuFlyoutItemTemplateSettings : WinUI.DependencyObject {
 
     deinit {
         _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.menuflyoutpresentertemplatesettings)
+public final class MenuFlyoutPresenterTemplateSettings : WinUI.DependencyObject {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Controls_Primitives.IMenuFlyoutPresenterTemplateSettings
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIMenuFlyoutPresenterTemplateSettings
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIMenuFlyoutPresenterTemplateSettings>?) -> MenuFlyoutPresenterTemplateSettings? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.menuflyoutpresentertemplatesettings.flyoutcontentminwidth)
+    public var flyoutContentMinWidth : Double {
+        get { try! _default.get_FlyoutContentMinWidthImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel)
+open class OrientedVirtualizingPanel : WinUI.VirtualizingPanel, IScrollSnapPointsInfo, WinUI.IInsertionPanel {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Controls_Primitives.IOrientedVirtualizingPanel
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override open func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel>?) -> OrientedVirtualizingPanel? {
+        guard let abi = abi else { return nil }
+        return UnsealedWinRTClassWrapper<Composable>.unwrapFrom(base: abi)
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    @_spi(WinRTInternal)
+    override public init<Composable: ComposableImpl>(
+        composing: Composable.Type,
+        _ createCallback: (UnsealedWinRTClassWrapper<Composable>?, inout WindowsFoundation.IInspectable?) -> Composable.Default.SwiftABI)
+    {
+        super.init(composing: composing, createCallback)
+    }
+    override open func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    private static var _IOrientedVirtualizingPanelFactory : __ABI_Microsoft_UI_Xaml_Controls_Primitives.IOrientedVirtualizingPanelFactory =  try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Controls.Primitives.OrientedVirtualizingPanel"))
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.lineup)
+    public func lineUp() throws {
+        try _default.LineUpImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.linedown)
+    public func lineDown() throws {
+        try _default.LineDownImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.lineleft)
+    public func lineLeft() throws {
+        try _default.LineLeftImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.lineright)
+    public func lineRight() throws {
+        try _default.LineRightImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.pageup)
+    public func pageUp() throws {
+        try _default.PageUpImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.pagedown)
+    public func pageDown() throws {
+        try _default.PageDownImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.pageleft)
+    public func pageLeft() throws {
+        try _default.PageLeftImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.pageright)
+    public func pageRight() throws {
+        try _default.PageRightImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.mousewheelup)
+    public func mouseWheelUp() throws {
+        try _default.MouseWheelUpImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.mousewheeldown)
+    public func mouseWheelDown() throws {
+        try _default.MouseWheelDownImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.mousewheelleft)
+    public func mouseWheelLeft() throws {
+        try _default.MouseWheelLeftImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.mousewheelright)
+    public func mouseWheelRight() throws {
+        try _default.MouseWheelRightImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.sethorizontaloffset)
+    public func setHorizontalOffset(_ offset: Double) throws {
+        try _default.SetHorizontalOffsetImpl(offset)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.setverticaloffset)
+    public func setVerticalOffset(_ offset: Double) throws {
+        try _default.SetVerticalOffsetImpl(offset)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.makevisible)
+    public func makeVisible(_ visual: WinUI.UIElement!, _ rectangle: WindowsFoundation.Rect) throws -> WindowsFoundation.Rect {
+        try _default.MakeVisibleImpl(visual, rectangle)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.canhorizontallyscroll)
+    public var canHorizontallyScroll : Bool {
+        get { try! _default.get_CanHorizontallyScrollImpl() }
+        set { try! _default.put_CanHorizontallyScrollImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.canverticallyscroll)
+    public var canVerticallyScroll : Bool {
+        get { try! _default.get_CanVerticallyScrollImpl() }
+        set { try! _default.put_CanVerticallyScrollImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.extentheight)
+    public var extentHeight : Double {
+        get { try! _default.get_ExtentHeightImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.extentwidth)
+    public var extentWidth : Double {
+        get { try! _default.get_ExtentWidthImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.horizontaloffset)
+    public var horizontalOffset : Double {
+        get { try! _default.get_HorizontalOffsetImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.scrollowner)
+    public var scrollOwner : Any! {
+        get { try! _default.get_ScrollOwnerImpl() }
+        set { try! _default.put_ScrollOwnerImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.verticaloffset)
+    public var verticalOffset : Double {
+        get { try! _default.get_VerticalOffsetImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.viewportheight)
+    public var viewportHeight : Double {
+        get { try! _default.get_ViewportHeightImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.viewportwidth)
+    public var viewportWidth : Double {
+        get { try! _default.get_ViewportWidthImpl() }
+    }
+
+    private lazy var _IScrollSnapPointsInfo: __ABI_Microsoft_UI_Xaml_Controls_Primitives.IScrollSnapPointsInfo! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.getirregularsnappoints)
+    public func getIrregularSnapPoints(_ orientation: WinUI.Orientation, _ alignment: SnapPointsAlignment) throws -> WindowsFoundation.AnyIVectorView<Float>! {
+        try _IScrollSnapPointsInfo.GetIrregularSnapPointsImpl(orientation, alignment)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.getregularsnappoints)
+    public func getRegularSnapPoints(_ orientation: WinUI.Orientation, _ alignment: SnapPointsAlignment, _ offset: inout Float) throws -> Float {
+        try _IScrollSnapPointsInfo.GetRegularSnapPointsImpl(orientation, alignment, &offset)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.arehorizontalsnappointsregular)
+    public var areHorizontalSnapPointsRegular : Bool {
+        get { try! _IScrollSnapPointsInfo.get_AreHorizontalSnapPointsRegularImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.areverticalsnappointsregular)
+    public var areVerticalSnapPointsRegular : Bool {
+        get { try! _IScrollSnapPointsInfo.get_AreVerticalSnapPointsRegularImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.horizontalsnappointschanged)
+    public lazy var horizontalSnapPointsChanged : Event<EventHandler<Any?>> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._IScrollSnapPointsInfo else { return .init() }
+          return try! this.add_HorizontalSnapPointsChangedImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._IScrollSnapPointsInfo.remove_HorizontalSnapPointsChangedImpl($0)
+       }
+      )
+    }()
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.verticalsnappointschanged)
+    public lazy var verticalSnapPointsChanged : Event<EventHandler<Any?>> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._IScrollSnapPointsInfo else { return .init() }
+          return try! this.add_VerticalSnapPointsChangedImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._IScrollSnapPointsInfo.remove_VerticalSnapPointsChangedImpl($0)
+       }
+      )
+    }()
+
+    private lazy var _IInsertionPanel: __ABI_Microsoft_UI_Xaml_Controls.IInsertionPanel! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.orientedvirtualizingpanel.getinsertionindexes)
+    public func getInsertionIndexes(_ position: WindowsFoundation.Point, _ first: inout Int32, _ second: inout Int32) throws {
+        try _IInsertionPanel.GetInsertionIndexesImpl(position, &first, &second)
+    }
+
+    internal enum IVirtualizingPanelOverrides : ComposableImpl {
+        internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CControls_CIVirtualizingPanelOverrides
+        internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Controls.IVirtualizingPanelOverrides
+        internal typealias Class = OrientedVirtualizingPanel
+        internal typealias SwiftProjection = WinRTClassWeakReference<Class>
+        internal enum Default : AbiInterface {
+            internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIOrientedVirtualizingPanel
+            internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Controls_Primitives.IOrientedVirtualizingPanel
+        }
+    }
+    internal typealias Composable = IVirtualizingPanelOverrides
+    deinit {
+        _default = nil
+        _IScrollSnapPointsInfo = nil
+        _IInsertionPanel = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.pickerflyoutbase)
+open class PickerFlyoutBase : WinUI.FlyoutBase {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Controls_Primitives.IPickerFlyoutBase
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIPickerFlyoutBase
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override open func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIPickerFlyoutBase>?) -> PickerFlyoutBase? {
+        guard let abi = abi else { return nil }
+        return UnsealedWinRTClassWrapper<Composable>.unwrapFrom(base: abi)
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    @_spi(WinRTInternal)
+    override public init<Composable: ComposableImpl>(
+        composing: Composable.Type,
+        _ createCallback: (UnsealedWinRTClassWrapper<Composable>?, inout WindowsFoundation.IInspectable?) -> Composable.Default.SwiftABI)
+    {
+        super.init(composing: composing, createCallback)
+    }
+    override open func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        switch iid {
+            case __ABI_Microsoft_UI_Xaml_Controls_Primitives.IPickerFlyoutBaseOverridesWrapper.IID:
+                let wrapper = __ABI_Microsoft_UI_Xaml_Controls_Primitives.IPickerFlyoutBaseOverridesWrapper(self)
+                return wrapper!.queryInterface(iid)
+            default: return super.queryInterface(iid)
+        }
+    }
+    private static var _IPickerFlyoutBaseFactory : __ABI_Microsoft_UI_Xaml_Controls_Primitives.IPickerFlyoutBaseFactory =  try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Controls.Primitives.PickerFlyoutBase"))
+
+    override public init() {
+        super.init(composing: Self.Composable.self) { baseInterface, innerInterface in 
+            try! Self._IPickerFlyoutBaseFactory.CreateInstanceImpl(baseInterface, &innerInterface)
+        }
+    }
+
+    private static let _IPickerFlyoutBaseStatics: __ABI_Microsoft_UI_Xaml_Controls_Primitives.IPickerFlyoutBaseStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Controls.Primitives.PickerFlyoutBase"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.pickerflyoutbase.gettitle)
+    public class func getTitle(_ element: WinUI.DependencyObject!) -> String {
+        return try! _IPickerFlyoutBaseStatics.GetTitleImpl(element)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.pickerflyoutbase.settitle)
+    public class func setTitle(_ element: WinUI.DependencyObject!, _ value: String) {
+        try! _IPickerFlyoutBaseStatics.SetTitleImpl(element, value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.pickerflyoutbase.titleproperty)
+    public class var titleProperty : WinUI.DependencyProperty! {
+        get { try! _IPickerFlyoutBaseStatics.get_TitlePropertyImpl() }
+    }
+
+    private lazy var _IPickerFlyoutBaseOverrides: __ABI_Microsoft_UI_Xaml_Controls_Primitives.IPickerFlyoutBaseOverrides! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.pickerflyoutbase.onconfirmed)
+    open func onConfirmed() throws {
+        try _IPickerFlyoutBaseOverrides.OnConfirmedImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.pickerflyoutbase.shouldshowconfirmationbuttons)
+    open func shouldShowConfirmationButtons() throws -> Bool {
+        try _IPickerFlyoutBaseOverrides.ShouldShowConfirmationButtonsImpl()
+    }
+
+    internal enum IPickerFlyoutBaseOverrides : ComposableImpl {
+        internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIPickerFlyoutBaseOverrides
+        internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Controls_Primitives.IPickerFlyoutBaseOverrides
+        internal typealias Class = PickerFlyoutBase
+        internal typealias SwiftProjection = WinRTClassWeakReference<Class>
+        internal enum Default : AbiInterface {
+            internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CIPickerFlyoutBase
+            internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Controls_Primitives.IPickerFlyoutBase
+        }
+    }
+    internal typealias Composable = IPickerFlyoutBaseOverrides
+    deinit {
+        _default = nil
+        _IPickerFlyoutBaseOverrides = nil
     }
 }
 
@@ -2859,6 +4223,36 @@ extension WinUI.GeneratorDirection {
     }
 }
 extension WinUI.GeneratorDirection: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.GroupHeaderPlacement {
+    public static var top : WinUI.GroupHeaderPlacement {
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CGroupHeaderPlacement_Top
+    }
+    public static var left : WinUI.GroupHeaderPlacement {
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CGroupHeaderPlacement_Left
+    }
+}
+extension WinUI.GroupHeaderPlacement: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.ListViewItemPresenterCheckMode {
+    public static var inline : WinUI.ListViewItemPresenterCheckMode {
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CListViewItemPresenterCheckMode_Inline
+    }
+    public static var overlay : WinUI.ListViewItemPresenterCheckMode {
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CListViewItemPresenterCheckMode_Overlay
+    }
+}
+extension WinUI.ListViewItemPresenterCheckMode: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.ListViewItemPresenterSelectionIndicatorMode {
+    public static var inline : WinUI.ListViewItemPresenterSelectionIndicatorMode {
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CListViewItemPresenterSelectionIndicatorMode_Inline
+    }
+    public static var overlay : WinUI.ListViewItemPresenterSelectionIndicatorMode {
+        __x_ABI_CMicrosoft_CUI_CXaml_CControls_CPrimitives_CListViewItemPresenterSelectionIndicatorMode_Overlay
+    }
+}
+extension WinUI.ListViewItemPresenterSelectionIndicatorMode: @retroactive Hashable, @retroactive Codable {}
 
 extension WinUI.PlacementMode {
     public static var bottom : WinUI.PlacementMode {

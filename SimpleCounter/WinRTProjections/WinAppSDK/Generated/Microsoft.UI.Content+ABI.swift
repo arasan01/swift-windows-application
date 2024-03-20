@@ -57,8 +57,20 @@ private var IID___x_ABI_CMicrosoft_CUI_CContent_CIContentIslandStatics: WindowsF
     .init(Data1: 0x7B9EB7CC, Data2: 0x8C43, Data3: 0x5E0A, Data4: ( 0xAB,0x23,0xAB,0x48,0x62,0x8F,0xD2,0x23 ))// 7B9EB7CC-8C43-5E0A-AB23-AB48628FD223
 }
 
+private var IID___x_ABI_CMicrosoft_CUI_CContent_CIContentSite: WindowsFoundation.IID {
+    .init(Data1: 0x996C60C4, Data2: 0x02B2, Data3: 0x5EEF, Data4: ( 0x93,0xB0,0xDD,0x6B,0x1E,0xC2,0xFD,0x7B ))// 996C60C4-02B2-5EEF-93B0-DD6B1EC2FD7B
+}
+
 private var IID___x_ABI_CMicrosoft_CUI_CContent_CIContentSiteBridge: WindowsFoundation.IID {
     .init(Data1: 0xFAAAB99E, Data2: 0xA42B, Data3: 0x549C, Data4: ( 0x92,0xDF,0x3B,0x6D,0x6E,0x1E,0x36,0x8B ))// FAAAB99E-A42B-549C-92DF-3B6D6E1E368B
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CContent_CIContentSiteEnvironment: WindowsFoundation.IID {
+    .init(Data1: 0x685D085D, Data2: 0xBE53, Data3: 0x55D1, Data4: ( 0xAE,0xC4,0xBA,0x22,0x73,0xD5,0x46,0x8B ))// 685D085D-BE53-55D1-AEC4-BA2273D5468B
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CContent_CIContentSiteEnvironmentFactory: WindowsFoundation.IID {
+    .init(Data1: 0x0BEFA998, Data2: 0xCB15, Data3: 0x5F16, Data4: ( 0xA4,0xA5,0xC0,0xED,0x16,0x74,0xE1,0x86 ))// 0BEFA998-CB15-5F16-A4A5-C0ED1674E186
 }
 
 private var IID___x_ABI_CMicrosoft_CUI_CContent_CIContentSiteEnvironmentView: WindowsFoundation.IID {
@@ -67,6 +79,14 @@ private var IID___x_ABI_CMicrosoft_CUI_CContent_CIContentSiteEnvironmentView: Wi
 
 private var IID___x_ABI_CMicrosoft_CUI_CContent_CIContentSiteEnvironmentViewFactory: WindowsFoundation.IID {
     .init(Data1: 0xC901EDF2, Data2: 0xF184, Data3: 0x5A64, Data4: ( 0x8D,0x58,0x8C,0xF8,0xEF,0xA8,0xB6,0x78 ))// C901EDF2-F184-5A64-8D58-8CF8EFA8B678
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CContent_CIContentSiteFactory: WindowsFoundation.IID {
+    .init(Data1: 0x72FB98D5, Data2: 0xB28A, Data3: 0x57F1, Data4: ( 0x91,0xFA,0x24,0xC0,0x14,0xA3,0x42,0xC1 ))// 72FB98D5-B28A-57F1-91FA-24C014A342C1
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CContent_CIContentSiteRequestedStateChangedEventArgs: WindowsFoundation.IID {
+    .init(Data1: 0x1B55FD1D, Data2: 0x7292, Data3: 0x562B, Data4: ( 0xB4,0xA1,0xD4,0xDE,0x79,0x72,0xE6,0x84 ))// 1B55FD1D-7292-562B-B4A1-D4DE7972E684
 }
 
 private var IID___x_ABI_CMicrosoft_CUI_CContent_CIContentSiteView: WindowsFoundation.IID {
@@ -587,6 +607,208 @@ public enum __ABI_Microsoft_UI_Content {
 
     }
 
+    public class IContentSite: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CContent_CIContentSite }
+
+        internal func get_ActualSizeImpl() throws -> WindowsFoundation.Vector2 {
+            var value: __x_ABI_CWindows_CFoundation_CNumerics_CVector2 = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSite.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ActualSize(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_ActualSizeImpl(_ value: WindowsFoundation.Vector2) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSite.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ActualSize(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_ClientSizeImpl() throws -> UWP.SizeInt32 {
+            var value: __x_ABI_CWindows_CGraphics_CSizeInt32 = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSite.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ClientSize(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_ClientSizeImpl(_ value: UWP.SizeInt32) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSite.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ClientSize(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_CoordinateConverterImpl() throws -> WinAppSDK.ContentCoordinateConverter? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSite.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CoordinateConverter(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DispatcherQueueImpl() throws -> WinAppSDK.DispatcherQueue? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSite.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_DispatcherQueue(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_EnvironmentImpl() throws -> WinAppSDK.ContentSiteEnvironment? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSite.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Environment(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_IsConnectedImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSite.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsConnected(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func get_IsSiteEnabledImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSite.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsSiteEnabled(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_IsSiteEnabledImpl(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSite.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_IsSiteEnabled(pThis, .init(from: value)))
+            }
+        }
+
+        internal func get_IsSiteVisibleImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSite.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IsSiteVisible(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_IsSiteVisibleImpl(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSite.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_IsSiteVisible(pThis, .init(from: value)))
+            }
+        }
+
+        internal func get_LayoutDirectionImpl() throws -> WinAppSDK.ContentLayoutDirection {
+            var value: __x_ABI_CMicrosoft_CUI_CContent_CContentLayoutDirection = .init(0)
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSite.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LayoutDirection(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_LayoutDirectionImpl(_ value: WinAppSDK.ContentLayoutDirection) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSite.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_LayoutDirection(pThis, value))
+            }
+        }
+
+        internal func get_OverrideScaleImpl() throws -> Float {
+            var value: FLOAT = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSite.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_OverrideScale(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_OverrideScaleImpl(_ value: Float) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSite.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_OverrideScale(pThis, value))
+            }
+        }
+
+        internal func get_ParentScaleImpl() throws -> Float {
+            var value: FLOAT = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSite.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ParentScale(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_ParentScaleImpl(_ value: Float) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSite.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ParentScale(pThis, value))
+            }
+        }
+
+        internal func get_RasterizationScaleImpl() throws -> Float {
+            var value: FLOAT = 0.0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSite.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_RasterizationScale(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_RequestedSizeImpl() throws -> WindowsFoundation.Vector2 {
+            var value: __x_ABI_CWindows_CFoundation_CNumerics_CVector2 = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSite.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_RequestedSize(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ShouldApplyRasterizationScaleImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSite.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ShouldApplyRasterizationScale(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_ShouldApplyRasterizationScaleImpl(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSite.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ShouldApplyRasterizationScale(pThis, .init(from: value)))
+            }
+        }
+
+        internal func get_ViewImpl() throws -> WinAppSDK.ContentSiteView? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSite.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_View(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func GetIslandStateChangeDeferralImpl() throws -> WinAppSDK.ContentDeferral? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSite.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetIslandStateChangeDeferral(pThis, &resultAbi))
+                }
+            }
+            return .from(abi: result)
+        }
+
+        internal func add_RequestedStateChangedImpl(_ handler: TypedEventHandler<WinAppSDK.ContentSite?, WinAppSDK.ContentSiteRequestedStateChangedEventArgs?>?) throws -> EventRegistrationToken {
+            var token: EventRegistrationToken = .init()
+            let handlerWrapper = WinAppSDK.__x_ABI_C__FITypedEventHandler_2___x_ABI_CMicrosoft__CUI__CContent__CContentSite___x_ABI_CMicrosoft__CUI__CContent__CContentSiteRequestedStateChangedEventArgsWrapper(handler)
+            let _handler = try! handlerWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSite.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.add_RequestedStateChanged(pThis, _handler, &token))
+            }
+            return token
+        }
+
+        internal func remove_RequestedStateChangedImpl(_ token: EventRegistrationToken) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSite.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.remove_RequestedStateChanged(pThis, token))
+            }
+        }
+
+    }
+
     public class IContentSiteBridge: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CContent_CIContentSiteBridge }
 
@@ -699,6 +921,60 @@ public enum __ABI_Microsoft_UI_Content {
     )
 
     public typealias IContentSiteBridgeWrapper = InterfaceWrapperBase<__IMPL_Microsoft_UI_Content.IContentSiteBridgeBridge>
+    public class IContentSiteEnvironment: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CContent_CIContentSiteEnvironment }
+
+        internal func get_AppWindowIdImpl() throws -> WinAppSDK.WindowId {
+            var value: __x_ABI_CMicrosoft_CUI_CWindowId = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSiteEnvironment.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AppWindowId(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_AppWindowIdImpl(_ value: WinAppSDK.WindowId) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSiteEnvironment.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_AppWindowId(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_DisplayIdImpl() throws -> WinAppSDK.DisplayId {
+            var value: __x_ABI_CMicrosoft_CUI_CDisplayId = .init()
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSiteEnvironment.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DisplayId(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_DisplayIdImpl(_ value: WinAppSDK.DisplayId) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSiteEnvironment.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_DisplayId(pThis, .from(swift: value)))
+            }
+        }
+
+        internal func get_ViewImpl() throws -> WinAppSDK.ContentSiteEnvironmentView? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSiteEnvironment.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_View(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func NotifySettingChangedImpl(_ setting: String) throws {
+            let _setting = try! HString(setting)
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSiteEnvironment.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.NotifySettingChanged(pThis, _setting.get()))
+            }
+        }
+
+    }
+
+    public class IContentSiteEnvironmentFactory: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CContent_CIContentSiteEnvironmentFactory }
+
+    }
+
     public class IContentSiteEnvironmentView: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CContent_CIContentSiteEnvironmentView }
 
@@ -722,6 +998,24 @@ public enum __ABI_Microsoft_UI_Content {
 
     public class IContentSiteEnvironmentViewFactory: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CContent_CIContentSiteEnvironmentViewFactory }
+
+    }
+
+    public class IContentSiteFactory: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CContent_CIContentSiteFactory }
+
+    }
+
+    public class IContentSiteRequestedStateChangedEventArgs: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CContent_CIContentSiteRequestedStateChangedEventArgs }
+
+        internal func get_DidRequestedSizeChangeImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CContent_CIContentSiteRequestedStateChangedEventArgs.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DidRequestedSizeChange(pThis, &value))
+            }
+            return .init(from: value)
+        }
 
     }
 

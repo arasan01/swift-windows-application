@@ -62,3 +62,61 @@ open class Transform3D : WinUI.DependencyObject {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.media3d.matrix3d)
+public struct Matrix3D: Hashable, Codable {
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.media3d.matrix3d.m11)
+    public var m11: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.media3d.matrix3d.m12)
+    public var m12: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.media3d.matrix3d.m13)
+    public var m13: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.media3d.matrix3d.m14)
+    public var m14: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.media3d.matrix3d.m21)
+    public var m21: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.media3d.matrix3d.m22)
+    public var m22: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.media3d.matrix3d.m23)
+    public var m23: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.media3d.matrix3d.m24)
+    public var m24: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.media3d.matrix3d.m31)
+    public var m31: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.media3d.matrix3d.m32)
+    public var m32: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.media3d.matrix3d.m33)
+    public var m33: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.media3d.matrix3d.m34)
+    public var m34: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.media3d.matrix3d.offsetx)
+    public var offsetX: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.media3d.matrix3d.offsety)
+    public var offsetY: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.media3d.matrix3d.offsetz)
+    public var offsetZ: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.media3d.matrix3d.m44)
+    public var m44: Double = 0.0
+    public init() {}
+    public init(m11: Double, m12: Double, m13: Double, m14: Double, m21: Double, m22: Double, m23: Double, m24: Double, m31: Double, m32: Double, m33: Double, m34: Double, offsetX: Double, offsetY: Double, offsetZ: Double, m44: Double) {
+        self.m11 = m11
+        self.m12 = m12
+        self.m13 = m13
+        self.m14 = m14
+        self.m21 = m21
+        self.m22 = m22
+        self.m23 = m23
+        self.m24 = m24
+        self.m31 = m31
+        self.m32 = m32
+        self.m33 = m33
+        self.m34 = m34
+        self.offsetX = offsetX
+        self.offsetY = offsetY
+        self.offsetZ = offsetZ
+        self.m44 = m44
+    }
+    public static func from(abi: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CMedia3D_CMatrix3D) -> Matrix3D {
+        .init(m11: abi.M11, m12: abi.M12, m13: abi.M13, m14: abi.M14, m21: abi.M21, m22: abi.M22, m23: abi.M23, m24: abi.M24, m31: abi.M31, m32: abi.M32, m33: abi.M33, m34: abi.M34, offsetX: abi.OffsetX, offsetY: abi.OffsetY, offsetZ: abi.OffsetZ, m44: abi.M44)
+    }
+}
+

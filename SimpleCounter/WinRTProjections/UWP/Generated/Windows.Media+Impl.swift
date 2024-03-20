@@ -5,6 +5,36 @@ import Foundation
 import CWinRT
 
 public enum __IMPL_Windows_Media {
+    public enum IMediaExtensionBridge : AbiInterfaceBridge {
+        public typealias CABI = __x_ABI_CWindows_CMedia_CIMediaExtension
+        public typealias SwiftABI = __ABI_Windows_Media.IMediaExtension
+        public typealias SwiftProjection = AnyIMediaExtension
+        public static func from(abi: ComPtr<CABI>?) -> SwiftProjection? {
+            guard let abi = abi else { return nil }
+            return IMediaExtensionImpl(abi)
+        }
+
+        public static func makeAbi() -> CABI {
+            let vtblPtr = withUnsafeMutablePointer(to: &__ABI_Windows_Media.IMediaExtensionVTable) { $0 }
+            return .init(lpVtbl: vtblPtr)
+        }
+    }
+
+    fileprivate class IMediaExtensionImpl: IMediaExtension, WinRTAbiImpl {
+        fileprivate typealias Bridge = IMediaExtensionBridge
+        fileprivate let _default: Bridge.SwiftABI
+        fileprivate var thisPtr: WindowsFoundation.IInspectable { _default }
+        fileprivate init(_ fromAbi: ComPtr<Bridge.CABI>) {
+            _default = Bridge.SwiftABI(fromAbi)
+        }
+
+        /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.imediaextension.setproperties)
+        fileprivate func setProperties(_ configuration: WindowsFoundation.AnyIPropertySet!) throws {
+            try _default.SetPropertiesImpl(configuration)
+        }
+
+    }
+
     public enum IMediaFrameBridge : AbiInterfaceBridge {
         public typealias CABI = __x_ABI_CWindows_CMedia_CIMediaFrame
         public typealias SwiftABI = __ABI_Windows_Media.IMediaFrame

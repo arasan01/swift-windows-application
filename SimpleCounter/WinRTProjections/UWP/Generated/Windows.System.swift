@@ -4,16 +4,38 @@ import Foundation
 @_spi(WinRTInternal) @_spi(WinRTImplements) import WindowsFoundation
 import CWinRT
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appdiagnosticinfowatcherstatus)
+public typealias AppDiagnosticInfoWatcherStatus = __x_ABI_CWindows_CSystem_CAppDiagnosticInfoWatcherStatus
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appmemoryusagelevel)
+public typealias AppMemoryUsageLevel = __x_ABI_CWindows_CSystem_CAppMemoryUsageLevel
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupenergyquotastate)
+public typealias AppResourceGroupEnergyQuotaState = __x_ABI_CWindows_CSystem_CAppResourceGroupEnergyQuotaState
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupexecutionstate)
+public typealias AppResourceGroupExecutionState = __x_ABI_CWindows_CSystem_CAppResourceGroupExecutionState
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupinfowatcherstatus)
+public typealias AppResourceGroupInfoWatcherStatus = __x_ABI_CWindows_CSystem_CAppResourceGroupInfoWatcherStatus
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.autoupdatetimezonestatus)
+public typealias AutoUpdateTimeZoneStatus = __x_ABI_CWindows_CSystem_CAutoUpdateTimeZoneStatus
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.diagnosticaccessstatus)
+public typealias DiagnosticAccessStatus = __x_ABI_CWindows_CSystem_CDiagnosticAccessStatus
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.dispatcherqueuepriority)
 public typealias DispatcherQueuePriority = __x_ABI_CWindows_CSystem_CDispatcherQueuePriority
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.launchfilestatus)
+public typealias LaunchFileStatus = __x_ABI_CWindows_CSystem_CLaunchFileStatus
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.launchquerysupportstatus)
 public typealias LaunchQuerySupportStatus = __x_ABI_CWindows_CSystem_CLaunchQuerySupportStatus
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.launchquerysupporttype)
 public typealias LaunchQuerySupportType = __x_ABI_CWindows_CSystem_CLaunchQuerySupportType
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.launchuristatus)
 public typealias LaunchUriStatus = __x_ABI_CWindows_CSystem_CLaunchUriStatus
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.powerstate)
+public typealias PowerState = __x_ABI_CWindows_CSystem_CPowerState
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.processorarchitecture)
 public typealias ProcessorArchitecture = __x_ABI_CWindows_CSystem_CProcessorArchitecture
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.remotelaunchuristatus)
+public typealias RemoteLaunchUriStatus = __x_ABI_CWindows_CSystem_CRemoteLaunchUriStatus
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.shutdownkind)
+public typealias ShutdownKind = __x_ABI_CWindows_CSystem_CShutdownKind
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.userauthenticationstatus)
 public typealias UserAuthenticationStatus = __x_ABI_CWindows_CSystem_CUserAuthenticationStatus
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.userpicturesize)
@@ -26,6 +48,942 @@ public typealias UserWatcherStatus = __x_ABI_CWindows_CSystem_CUserWatcherStatus
 public typealias VirtualKey = __x_ABI_CWindows_CSystem_CVirtualKey
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.virtualkeymodifiers)
 public typealias VirtualKeyModifiers = __x_ABI_CWindows_CSystem_CVirtualKeyModifiers
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appactivationresult)
+public final class AppActivationResult : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System.IAppActivationResult
+    private typealias CABI = __x_ABI_CWindows_CSystem_CIAppActivationResult
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CIAppActivationResult>?) -> AppActivationResult? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appactivationresult.appresourcegroupinfo)
+    public var appResourceGroupInfo : AppResourceGroupInfo! {
+        get { try! _default.get_AppResourceGroupInfoImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appactivationresult.extendederror)
+    public var extendedError : HRESULT {
+        get { try! _default.get_ExtendedErrorImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appdiagnosticinfo)
+public final class AppDiagnosticInfo : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System.IAppDiagnosticInfo
+    private typealias CABI = __x_ABI_CWindows_CSystem_CIAppDiagnosticInfo
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CIAppDiagnosticInfo>?) -> AppDiagnosticInfo? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IAppDiagnosticInfoStatics: __ABI_Windows_System.IAppDiagnosticInfoStatics = try! RoGetActivationFactory(HString("Windows.System.AppDiagnosticInfo"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appdiagnosticinfo.requestinfoasync)
+    public static func requestInfoAsync() -> WindowsFoundation.AnyIAsyncOperation<WindowsFoundation.AnyIVector<AppDiagnosticInfo?>?>! {
+        return try! _IAppDiagnosticInfoStatics.RequestInfoAsyncImpl()
+    }
+
+    private static let _IAppDiagnosticInfoStatics2: __ABI_Windows_System.IAppDiagnosticInfoStatics2 = try! RoGetActivationFactory(HString("Windows.System.AppDiagnosticInfo"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appdiagnosticinfo.createwatcher)
+    public static func createWatcher() -> AppDiagnosticInfoWatcher! {
+        return try! _IAppDiagnosticInfoStatics2.CreateWatcherImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appdiagnosticinfo.requestaccessasync)
+    public static func requestAccessAsync() -> WindowsFoundation.AnyIAsyncOperation<DiagnosticAccessStatus>! {
+        return try! _IAppDiagnosticInfoStatics2.RequestAccessAsyncImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appdiagnosticinfo.requestinfoforpackageasync)
+    public static func requestInfoForPackageAsync(_ packageFamilyName: String) -> WindowsFoundation.AnyIAsyncOperation<WindowsFoundation.AnyIVector<AppDiagnosticInfo?>?>! {
+        return try! _IAppDiagnosticInfoStatics2.RequestInfoForPackageAsyncImpl(packageFamilyName)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appdiagnosticinfo.requestinfoforappasync)
+    public static func requestInfoForAppAsync() -> WindowsFoundation.AnyIAsyncOperation<WindowsFoundation.AnyIVector<AppDiagnosticInfo?>?>! {
+        return try! _IAppDiagnosticInfoStatics2.RequestInfoForAppAsyncImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appdiagnosticinfo.requestinfoforappasync)
+    public static func requestInfoForAppAsync(_ appUserModelId: String) -> WindowsFoundation.AnyIAsyncOperation<WindowsFoundation.AnyIVector<AppDiagnosticInfo?>?>! {
+        return try! _IAppDiagnosticInfoStatics2.RequestInfoForAppUserModelIdImpl(appUserModelId)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appdiagnosticinfo.appinfo)
+    public var appInfo : UWP.AppInfo! {
+        get { try! _default.get_AppInfoImpl() }
+    }
+
+    private lazy var _IAppDiagnosticInfo2: __ABI_Windows_System.IAppDiagnosticInfo2! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appdiagnosticinfo.getresourcegroups)
+    public func getResourceGroups() throws -> WindowsFoundation.AnyIVector<AppResourceGroupInfo?>! {
+        try _IAppDiagnosticInfo2.GetResourceGroupsImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appdiagnosticinfo.createresourcegroupwatcher)
+    public func createResourceGroupWatcher() throws -> AppResourceGroupInfoWatcher! {
+        try _IAppDiagnosticInfo2.CreateResourceGroupWatcherImpl()
+    }
+
+    private lazy var _IAppDiagnosticInfo3: __ABI_Windows_System.IAppDiagnosticInfo3! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appdiagnosticinfo.launchasync)
+    public func launchAsync() throws -> WindowsFoundation.AnyIAsyncOperation<AppActivationResult?>! {
+        try _IAppDiagnosticInfo3.LaunchAsyncImpl()
+    }
+
+    deinit {
+        _default = nil
+        _IAppDiagnosticInfo2 = nil
+        _IAppDiagnosticInfo3 = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appdiagnosticinfowatcher)
+public final class AppDiagnosticInfoWatcher : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System.IAppDiagnosticInfoWatcher
+    private typealias CABI = __x_ABI_CWindows_CSystem_CIAppDiagnosticInfoWatcher
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CIAppDiagnosticInfoWatcher>?) -> AppDiagnosticInfoWatcher? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appdiagnosticinfowatcher.start)
+    public func start() throws {
+        try _default.StartImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appdiagnosticinfowatcher.stop)
+    public func stop() throws {
+        try _default.StopImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appdiagnosticinfowatcher.status)
+    public var status : AppDiagnosticInfoWatcherStatus {
+        get { try! _default.get_StatusImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appdiagnosticinfowatcher.added)
+    public lazy var added : Event<TypedEventHandler<AppDiagnosticInfoWatcher?, AppDiagnosticInfoWatcherEventArgs?>> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._default else { return .init() }
+          return try! this.add_AddedImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._default.remove_AddedImpl($0)
+       }
+      )
+    }()
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appdiagnosticinfowatcher.enumerationcompleted)
+    public lazy var enumerationCompleted : Event<TypedEventHandler<AppDiagnosticInfoWatcher?, Any?>> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._default else { return .init() }
+          return try! this.add_EnumerationCompletedImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._default.remove_EnumerationCompletedImpl($0)
+       }
+      )
+    }()
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appdiagnosticinfowatcher.removed)
+    public lazy var removed : Event<TypedEventHandler<AppDiagnosticInfoWatcher?, AppDiagnosticInfoWatcherEventArgs?>> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._default else { return .init() }
+          return try! this.add_RemovedImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._default.remove_RemovedImpl($0)
+       }
+      )
+    }()
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appdiagnosticinfowatcher.stopped)
+    public lazy var stopped : Event<TypedEventHandler<AppDiagnosticInfoWatcher?, Any?>> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._default else { return .init() }
+          return try! this.add_StoppedImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._default.remove_StoppedImpl($0)
+       }
+      )
+    }()
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appdiagnosticinfowatchereventargs)
+public final class AppDiagnosticInfoWatcherEventArgs : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System.IAppDiagnosticInfoWatcherEventArgs
+    private typealias CABI = __x_ABI_CWindows_CSystem_CIAppDiagnosticInfoWatcherEventArgs
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CIAppDiagnosticInfoWatcherEventArgs>?) -> AppDiagnosticInfoWatcherEventArgs? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appdiagnosticinfowatchereventargs.appdiagnosticinfo)
+    public var appDiagnosticInfo : AppDiagnosticInfo! {
+        get { try! _default.get_AppDiagnosticInfoImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appexecutionstatechangeresult)
+public final class AppExecutionStateChangeResult : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System.IAppExecutionStateChangeResult
+    private typealias CABI = __x_ABI_CWindows_CSystem_CIAppExecutionStateChangeResult
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CIAppExecutionStateChangeResult>?) -> AppExecutionStateChangeResult? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appexecutionstatechangeresult.extendederror)
+    public var extendedError : HRESULT {
+        get { try! _default.get_ExtendedErrorImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appmemoryreport)
+public final class AppMemoryReport : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System.IAppMemoryReport
+    private typealias CABI = __x_ABI_CWindows_CSystem_CIAppMemoryReport
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CIAppMemoryReport>?) -> AppMemoryReport? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appmemoryreport.peakprivatecommitusage)
+    public var peakPrivateCommitUsage : UInt64 {
+        get { try! _default.get_PeakPrivateCommitUsageImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appmemoryreport.privatecommitusage)
+    public var privateCommitUsage : UInt64 {
+        get { try! _default.get_PrivateCommitUsageImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appmemoryreport.totalcommitlimit)
+    public var totalCommitLimit : UInt64 {
+        get { try! _default.get_TotalCommitLimitImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appmemoryreport.totalcommitusage)
+    public var totalCommitUsage : UInt64 {
+        get { try! _default.get_TotalCommitUsageImpl() }
+    }
+
+    private lazy var _IAppMemoryReport2: __ABI_Windows_System.IAppMemoryReport2! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appmemoryreport.expectedtotalcommitlimit)
+    public var expectedTotalCommitLimit : UInt64 {
+        get { try! _IAppMemoryReport2.get_ExpectedTotalCommitLimitImpl() }
+    }
+
+    deinit {
+        _default = nil
+        _IAppMemoryReport2 = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appmemoryusagelimitchangingeventargs)
+public final class AppMemoryUsageLimitChangingEventArgs : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System.IAppMemoryUsageLimitChangingEventArgs
+    private typealias CABI = __x_ABI_CWindows_CSystem_CIAppMemoryUsageLimitChangingEventArgs
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CIAppMemoryUsageLimitChangingEventArgs>?) -> AppMemoryUsageLimitChangingEventArgs? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appmemoryusagelimitchangingeventargs.newlimit)
+    public var newLimit : UInt64 {
+        get { try! _default.get_NewLimitImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appmemoryusagelimitchangingeventargs.oldlimit)
+    public var oldLimit : UInt64 {
+        get { try! _default.get_OldLimitImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupbackgroundtaskreport)
+public final class AppResourceGroupBackgroundTaskReport : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System.IAppResourceGroupBackgroundTaskReport
+    private typealias CABI = __x_ABI_CWindows_CSystem_CIAppResourceGroupBackgroundTaskReport
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CIAppResourceGroupBackgroundTaskReport>?) -> AppResourceGroupBackgroundTaskReport? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupbackgroundtaskreport.entrypoint)
+    public var entryPoint : String {
+        get { try! _default.get_EntryPointImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupbackgroundtaskreport.name)
+    public var name : String {
+        get { try! _default.get_NameImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupbackgroundtaskreport.taskid)
+    public var taskId : Foundation.UUID {
+        get { try! _default.get_TaskIdImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupbackgroundtaskreport.trigger)
+    public var trigger : String {
+        get { try! _default.get_TriggerImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupinfo)
+public final class AppResourceGroupInfo : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System.IAppResourceGroupInfo
+    private typealias CABI = __x_ABI_CWindows_CSystem_CIAppResourceGroupInfo
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CIAppResourceGroupInfo>?) -> AppResourceGroupInfo? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupinfo.getbackgroundtaskreports)
+    public func getBackgroundTaskReports() throws -> WindowsFoundation.AnyIVector<AppResourceGroupBackgroundTaskReport?>! {
+        try _default.GetBackgroundTaskReportsImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupinfo.getmemoryreport)
+    public func getMemoryReport() throws -> AppResourceGroupMemoryReport! {
+        try _default.GetMemoryReportImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupinfo.getprocessdiagnosticinfos)
+    public func getProcessDiagnosticInfos() throws -> WindowsFoundation.AnyIVector<UWP.ProcessDiagnosticInfo?>! {
+        try _default.GetProcessDiagnosticInfosImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupinfo.getstatereport)
+    public func getStateReport() throws -> AppResourceGroupStateReport! {
+        try _default.GetStateReportImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupinfo.instanceid)
+    public var instanceId : Foundation.UUID {
+        get { try! _default.get_InstanceIdImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupinfo.isshared)
+    public var isShared : Bool {
+        get { try! _default.get_IsSharedImpl() }
+    }
+
+    private lazy var _IAppResourceGroupInfo2: __ABI_Windows_System.IAppResourceGroupInfo2! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupinfo.startsuspendasync)
+    public func startSuspendAsync() throws -> WindowsFoundation.AnyIAsyncOperation<AppExecutionStateChangeResult?>! {
+        try _IAppResourceGroupInfo2.StartSuspendAsyncImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupinfo.startresumeasync)
+    public func startResumeAsync() throws -> WindowsFoundation.AnyIAsyncOperation<AppExecutionStateChangeResult?>! {
+        try _IAppResourceGroupInfo2.StartResumeAsyncImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupinfo.startterminateasync)
+    public func startTerminateAsync() throws -> WindowsFoundation.AnyIAsyncOperation<AppExecutionStateChangeResult?>! {
+        try _IAppResourceGroupInfo2.StartTerminateAsyncImpl()
+    }
+
+    deinit {
+        _default = nil
+        _IAppResourceGroupInfo2 = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupinfowatcher)
+public final class AppResourceGroupInfoWatcher : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System.IAppResourceGroupInfoWatcher
+    private typealias CABI = __x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcher
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcher>?) -> AppResourceGroupInfoWatcher? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupinfowatcher.start)
+    public func start() throws {
+        try _default.StartImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupinfowatcher.stop)
+    public func stop() throws {
+        try _default.StopImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupinfowatcher.status)
+    public var status : AppResourceGroupInfoWatcherStatus {
+        get { try! _default.get_StatusImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupinfowatcher.added)
+    public lazy var added : Event<TypedEventHandler<AppResourceGroupInfoWatcher?, AppResourceGroupInfoWatcherEventArgs?>> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._default else { return .init() }
+          return try! this.add_AddedImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._default.remove_AddedImpl($0)
+       }
+      )
+    }()
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupinfowatcher.enumerationcompleted)
+    public lazy var enumerationCompleted : Event<TypedEventHandler<AppResourceGroupInfoWatcher?, Any?>> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._default else { return .init() }
+          return try! this.add_EnumerationCompletedImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._default.remove_EnumerationCompletedImpl($0)
+       }
+      )
+    }()
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupinfowatcher.executionstatechanged)
+    public lazy var executionStateChanged : Event<TypedEventHandler<AppResourceGroupInfoWatcher?, AppResourceGroupInfoWatcherExecutionStateChangedEventArgs?>> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._default else { return .init() }
+          return try! this.add_ExecutionStateChangedImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._default.remove_ExecutionStateChangedImpl($0)
+       }
+      )
+    }()
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupinfowatcher.removed)
+    public lazy var removed : Event<TypedEventHandler<AppResourceGroupInfoWatcher?, AppResourceGroupInfoWatcherEventArgs?>> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._default else { return .init() }
+          return try! this.add_RemovedImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._default.remove_RemovedImpl($0)
+       }
+      )
+    }()
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupinfowatcher.stopped)
+    public lazy var stopped : Event<TypedEventHandler<AppResourceGroupInfoWatcher?, Any?>> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._default else { return .init() }
+          return try! this.add_StoppedImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._default.remove_StoppedImpl($0)
+       }
+      )
+    }()
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupinfowatchereventargs)
+public final class AppResourceGroupInfoWatcherEventArgs : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System.IAppResourceGroupInfoWatcherEventArgs
+    private typealias CABI = __x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcherEventArgs
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcherEventArgs>?) -> AppResourceGroupInfoWatcherEventArgs? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupinfowatchereventargs.appdiagnosticinfos)
+    public var appDiagnosticInfos : WindowsFoundation.AnyIVectorView<AppDiagnosticInfo?>! {
+        get { try! _default.get_AppDiagnosticInfosImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupinfowatchereventargs.appresourcegroupinfo)
+    public var appResourceGroupInfo : AppResourceGroupInfo! {
+        get { try! _default.get_AppResourceGroupInfoImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupinfowatcherexecutionstatechangedeventargs)
+public final class AppResourceGroupInfoWatcherExecutionStateChangedEventArgs : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System.IAppResourceGroupInfoWatcherExecutionStateChangedEventArgs
+    private typealias CABI = __x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcherExecutionStateChangedEventArgs
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CIAppResourceGroupInfoWatcherExecutionStateChangedEventArgs>?) -> AppResourceGroupInfoWatcherExecutionStateChangedEventArgs? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupinfowatcherexecutionstatechangedeventargs.appdiagnosticinfos)
+    public var appDiagnosticInfos : WindowsFoundation.AnyIVectorView<AppDiagnosticInfo?>! {
+        get { try! _default.get_AppDiagnosticInfosImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupinfowatcherexecutionstatechangedeventargs.appresourcegroupinfo)
+    public var appResourceGroupInfo : AppResourceGroupInfo! {
+        get { try! _default.get_AppResourceGroupInfoImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupmemoryreport)
+public final class AppResourceGroupMemoryReport : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System.IAppResourceGroupMemoryReport
+    private typealias CABI = __x_ABI_CWindows_CSystem_CIAppResourceGroupMemoryReport
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CIAppResourceGroupMemoryReport>?) -> AppResourceGroupMemoryReport? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupmemoryreport.commitusagelevel)
+    public var commitUsageLevel : AppMemoryUsageLevel {
+        get { try! _default.get_CommitUsageLevelImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupmemoryreport.commitusagelimit)
+    public var commitUsageLimit : UInt64 {
+        get { try! _default.get_CommitUsageLimitImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupmemoryreport.privatecommitusage)
+    public var privateCommitUsage : UInt64 {
+        get { try! _default.get_PrivateCommitUsageImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupmemoryreport.totalcommitusage)
+    public var totalCommitUsage : UInt64 {
+        get { try! _default.get_TotalCommitUsageImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupstatereport)
+public final class AppResourceGroupStateReport : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System.IAppResourceGroupStateReport
+    private typealias CABI = __x_ABI_CWindows_CSystem_CIAppResourceGroupStateReport
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CIAppResourceGroupStateReport>?) -> AppResourceGroupStateReport? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupstatereport.energyquotastate)
+    public var energyQuotaState : AppResourceGroupEnergyQuotaState {
+        get { try! _default.get_EnergyQuotaStateImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appresourcegroupstatereport.executionstate)
+    public var executionState : AppResourceGroupExecutionState {
+        get { try! _default.get_ExecutionStateImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appurihandlerhost)
+public final class AppUriHandlerHost : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System.IAppUriHandlerHost
+    private typealias CABI = __x_ABI_CWindows_CSystem_CIAppUriHandlerHost
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CIAppUriHandlerHost>?) -> AppUriHandlerHost? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public init() {
+        super.init(try! RoActivateInstance(HString("Windows.System.AppUriHandlerHost")))
+    }
+
+    private static let _IAppUriHandlerHostFactory: __ABI_Windows_System.IAppUriHandlerHostFactory = try! RoGetActivationFactory(HString("Windows.System.AppUriHandlerHost"))
+    public init(_ name: String) {
+        super.init(try! Self._IAppUriHandlerHostFactory.CreateInstanceImpl(name))
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appurihandlerhost.name)
+    public var name : String {
+        get { try! _default.get_NameImpl() }
+        set { try! _default.put_NameImpl(newValue) }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appurihandlerregistration)
+public final class AppUriHandlerRegistration : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System.IAppUriHandlerRegistration
+    private typealias CABI = __x_ABI_CWindows_CSystem_CIAppUriHandlerRegistration
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CIAppUriHandlerRegistration>?) -> AppUriHandlerRegistration? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appurihandlerregistration.getappaddedhostsasync)
+    public func getAppAddedHostsAsync() throws -> WindowsFoundation.AnyIAsyncOperation<WindowsFoundation.AnyIVector<AppUriHandlerHost?>?>! {
+        try _default.GetAppAddedHostsAsyncImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appurihandlerregistration.setappaddedhostsasync)
+    public func setAppAddedHostsAsync(_ hosts: WindowsFoundation.AnyIIterable<AppUriHandlerHost?>!) throws -> WindowsFoundation.AnyIAsyncAction! {
+        try _default.SetAppAddedHostsAsyncImpl(hosts)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appurihandlerregistration.name)
+    public var name : String {
+        get { try! _default.get_NameImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appurihandlerregistration.user)
+    public var user : User! {
+        get { try! _default.get_UserImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appurihandlerregistrationmanager)
+public final class AppUriHandlerRegistrationManager : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System.IAppUriHandlerRegistrationManager
+    private typealias CABI = __x_ABI_CWindows_CSystem_CIAppUriHandlerRegistrationManager
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CIAppUriHandlerRegistrationManager>?) -> AppUriHandlerRegistrationManager? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IAppUriHandlerRegistrationManagerStatics: __ABI_Windows_System.IAppUriHandlerRegistrationManagerStatics = try! RoGetActivationFactory(HString("Windows.System.AppUriHandlerRegistrationManager"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appurihandlerregistrationmanager.getdefault)
+    public static func getDefault() -> AppUriHandlerRegistrationManager! {
+        return try! _IAppUriHandlerRegistrationManagerStatics.GetDefaultImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appurihandlerregistrationmanager.getforuser)
+    public static func getForUser(_ user: User!) -> AppUriHandlerRegistrationManager! {
+        return try! _IAppUriHandlerRegistrationManagerStatics.GetForUserImpl(user)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appurihandlerregistrationmanager.trygetregistration)
+    public func tryGetRegistration(_ name: String) throws -> AppUriHandlerRegistration! {
+        try _default.TryGetRegistrationImpl(name)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.appurihandlerregistrationmanager.user)
+    public var user : User! {
+        get { try! _default.get_UserImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.datetimesettings)
+public final class DateTimeSettings {
+    private static let _IDateTimeSettingsStatics: __ABI_Windows_System.IDateTimeSettingsStatics = try! RoGetActivationFactory(HString("Windows.System.DateTimeSettings"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.datetimesettings.setsystemdatetime)
+    public static func setSystemDateTime(_ utcDateTime: WindowsFoundation.DateTime) {
+        try! _IDateTimeSettingsStatics.SetSystemDateTimeImpl(utcDateTime)
+    }
+
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.dispatcherqueue)
 public final class DispatcherQueue : WinRTClass {
     private typealias SwiftABI = __ABI_Windows_System.IDispatcherQueue
@@ -106,6 +1064,51 @@ public final class DispatcherQueue : WinRTClass {
     deinit {
         _default = nil
         _IDispatcherQueue2 = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.dispatcherqueuecontroller)
+public final class DispatcherQueueController : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System.IDispatcherQueueController
+    private typealias CABI = __x_ABI_CWindows_CSystem_CIDispatcherQueueController
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CIDispatcherQueueController>?) -> DispatcherQueueController? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IDispatcherQueueControllerStatics: __ABI_Windows_System.IDispatcherQueueControllerStatics = try! RoGetActivationFactory(HString("Windows.System.DispatcherQueueController"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.dispatcherqueuecontroller.createondedicatedthread)
+    public static func createOnDedicatedThread() -> DispatcherQueueController! {
+        return try! _IDispatcherQueueControllerStatics.CreateOnDedicatedThreadImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.dispatcherqueuecontroller.shutdownqueueasync)
+    public func shutdownQueueAsync() throws -> WindowsFoundation.AnyIAsyncAction! {
+        try _default.ShutdownQueueAsyncImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.dispatcherqueuecontroller.dispatcherqueue)
+    public var dispatcherQueue : DispatcherQueue! {
+        get { try! _default.get_DispatcherQueueImpl() }
+    }
+
+    deinit {
+        _default = nil
     }
 }
 
@@ -259,6 +1262,56 @@ public final class FolderLauncherOptions : WinRTClass, ILauncherViewOptions {
         _default = nil
         _ILauncherViewOptions = nil
     }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.knownuserproperties)
+public final class KnownUserProperties {
+    private static let _IKnownUserPropertiesStatics: __ABI_Windows_System.IKnownUserPropertiesStatics = try! RoGetActivationFactory(HString("Windows.System.KnownUserProperties"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.knownuserproperties.accountname)
+    public static var accountName : String {
+        get { try! _IKnownUserPropertiesStatics.get_AccountNameImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.knownuserproperties.displayname)
+    public static var displayName : String {
+        get { try! _IKnownUserPropertiesStatics.get_DisplayNameImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.knownuserproperties.domainname)
+    public static var domainName : String {
+        get { try! _IKnownUserPropertiesStatics.get_DomainNameImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.knownuserproperties.firstname)
+    public static var firstName : String {
+        get { try! _IKnownUserPropertiesStatics.get_FirstNameImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.knownuserproperties.guesthost)
+    public static var guestHost : String {
+        get { try! _IKnownUserPropertiesStatics.get_GuestHostImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.knownuserproperties.lastname)
+    public static var lastName : String {
+        get { try! _IKnownUserPropertiesStatics.get_LastNameImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.knownuserproperties.principalname)
+    public static var principalName : String {
+        get { try! _IKnownUserPropertiesStatics.get_PrincipalNameImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.knownuserproperties.providername)
+    public static var providerName : String {
+        get { try! _IKnownUserPropertiesStatics.get_ProviderNameImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.knownuserproperties.sessioninitiationprotocoluri)
+    public static var sessionInitiationProtocolUri : String {
+        get { try! _IKnownUserPropertiesStatics.get_SessionInitiationProtocolUriImpl() }
+    }
+
 }
 
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.launchuriresult)
@@ -611,6 +1664,378 @@ public final class LauncherUIOptions : WinRTClass {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.memorymanager)
+public final class MemoryManager {
+    private static let _IMemoryManagerStatics: __ABI_Windows_System.IMemoryManagerStatics = try! RoGetActivationFactory(HString("Windows.System.MemoryManager"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.memorymanager.appmemoryusage)
+    public static var appMemoryUsage : UInt64 {
+        get { try! _IMemoryManagerStatics.get_AppMemoryUsageImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.memorymanager.appmemoryusagelevel)
+    public static var appMemoryUsageLevel : AppMemoryUsageLevel {
+        get { try! _IMemoryManagerStatics.get_AppMemoryUsageLevelImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.memorymanager.appmemoryusagelimit)
+    public static var appMemoryUsageLimit : UInt64 {
+        get { try! _IMemoryManagerStatics.get_AppMemoryUsageLimitImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.memorymanager.appmemoryusagedecreased)
+    public static var appMemoryUsageDecreased : Event<EventHandler<Any?>> = {
+      .init(
+        add: { try! _IMemoryManagerStatics.add_AppMemoryUsageDecreasedImpl($0) },
+        remove: { try? _IMemoryManagerStatics.remove_AppMemoryUsageDecreasedImpl($0) }
+      )
+    }()
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.memorymanager.appmemoryusageincreased)
+    public static var appMemoryUsageIncreased : Event<EventHandler<Any?>> = {
+      .init(
+        add: { try! _IMemoryManagerStatics.add_AppMemoryUsageIncreasedImpl($0) },
+        remove: { try? _IMemoryManagerStatics.remove_AppMemoryUsageIncreasedImpl($0) }
+      )
+    }()
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.memorymanager.appmemoryusagelimitchanging)
+    public static var appMemoryUsageLimitChanging : Event<EventHandler<AppMemoryUsageLimitChangingEventArgs?>> = {
+      .init(
+        add: { try! _IMemoryManagerStatics.add_AppMemoryUsageLimitChangingImpl($0) },
+        remove: { try? _IMemoryManagerStatics.remove_AppMemoryUsageLimitChangingImpl($0) }
+      )
+    }()
+
+    private static let _IMemoryManagerStatics2: __ABI_Windows_System.IMemoryManagerStatics2 = try! RoGetActivationFactory(HString("Windows.System.MemoryManager"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.memorymanager.getappmemoryreport)
+    public static func getAppMemoryReport() -> AppMemoryReport! {
+        return try! _IMemoryManagerStatics2.GetAppMemoryReportImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.memorymanager.getprocessmemoryreport)
+    public static func getProcessMemoryReport() -> ProcessMemoryReport! {
+        return try! _IMemoryManagerStatics2.GetProcessMemoryReportImpl()
+    }
+
+    private static let _IMemoryManagerStatics3: __ABI_Windows_System.IMemoryManagerStatics3 = try! RoGetActivationFactory(HString("Windows.System.MemoryManager"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.memorymanager.trysetappmemoryusagelimit)
+    public static func trySetAppMemoryUsageLimit(_ value: UInt64) -> Bool {
+        return try! _IMemoryManagerStatics3.TrySetAppMemoryUsageLimitImpl(value)
+    }
+
+    private static let _IMemoryManagerStatics4: __ABI_Windows_System.IMemoryManagerStatics4 = try! RoGetActivationFactory(HString("Windows.System.MemoryManager"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.memorymanager.expectedappmemoryusagelimit)
+    public static var expectedAppMemoryUsageLimit : UInt64 {
+        get { try! _IMemoryManagerStatics4.get_ExpectedAppMemoryUsageLimitImpl() }
+    }
+
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.processlauncher)
+public final class ProcessLauncher {
+    private static let _IProcessLauncherStatics: __ABI_Windows_System.IProcessLauncherStatics = try! RoGetActivationFactory(HString("Windows.System.ProcessLauncher"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.processlauncher.runtocompletionasync)
+    public static func runToCompletionAsync(_ fileName: String, _ args: String) -> WindowsFoundation.AnyIAsyncOperation<ProcessLauncherResult?>! {
+        return try! _IProcessLauncherStatics.RunToCompletionAsyncImpl(fileName, args)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.processlauncher.runtocompletionasync)
+    public static func runToCompletionAsync(_ fileName: String, _ args: String, _ options: ProcessLauncherOptions!) -> WindowsFoundation.AnyIAsyncOperation<ProcessLauncherResult?>! {
+        return try! _IProcessLauncherStatics.RunToCompletionAsyncWithOptionsImpl(fileName, args, options)
+    }
+
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.processlauncheroptions)
+public final class ProcessLauncherOptions : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System.IProcessLauncherOptions
+    private typealias CABI = __x_ABI_CWindows_CSystem_CIProcessLauncherOptions
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CIProcessLauncherOptions>?) -> ProcessLauncherOptions? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public init() {
+        super.init(try! RoActivateInstance(HString("Windows.System.ProcessLauncherOptions")))
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.processlauncheroptions.standarderror)
+    public var standardError : UWP.AnyIOutputStream! {
+        get { try! _default.get_StandardErrorImpl() }
+        set { try! _default.put_StandardErrorImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.processlauncheroptions.standardinput)
+    public var standardInput : UWP.AnyIInputStream! {
+        get { try! _default.get_StandardInputImpl() }
+        set { try! _default.put_StandardInputImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.processlauncheroptions.standardoutput)
+    public var standardOutput : UWP.AnyIOutputStream! {
+        get { try! _default.get_StandardOutputImpl() }
+        set { try! _default.put_StandardOutputImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.processlauncheroptions.workingdirectory)
+    public var workingDirectory : String {
+        get { try! _default.get_WorkingDirectoryImpl() }
+        set { try! _default.put_WorkingDirectoryImpl(newValue) }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.processlauncherresult)
+public final class ProcessLauncherResult : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System.IProcessLauncherResult
+    private typealias CABI = __x_ABI_CWindows_CSystem_CIProcessLauncherResult
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CIProcessLauncherResult>?) -> ProcessLauncherResult? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.processlauncherresult.exitcode)
+    public var exitCode : UInt32 {
+        get { try! _default.get_ExitCodeImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.processmemoryreport)
+public final class ProcessMemoryReport : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System.IProcessMemoryReport
+    private typealias CABI = __x_ABI_CWindows_CSystem_CIProcessMemoryReport
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CIProcessMemoryReport>?) -> ProcessMemoryReport? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.processmemoryreport.privateworkingsetusage)
+    public var privateWorkingSetUsage : UInt64 {
+        get { try! _default.get_PrivateWorkingSetUsageImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.processmemoryreport.totalworkingsetusage)
+    public var totalWorkingSetUsage : UInt64 {
+        get { try! _default.get_TotalWorkingSetUsageImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.protocolforresultsoperation)
+public final class ProtocolForResultsOperation : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System.IProtocolForResultsOperation
+    private typealias CABI = __x_ABI_CWindows_CSystem_CIProtocolForResultsOperation
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CIProtocolForResultsOperation>?) -> ProtocolForResultsOperation? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.protocolforresultsoperation.reportcompleted)
+    public func reportCompleted(_ data: WindowsFoundation.ValueSet!) throws {
+        try _default.ReportCompletedImpl(data)
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.remotelauncher)
+public final class RemoteLauncher {
+    private static let _IRemoteLauncherStatics: __ABI_Windows_System.IRemoteLauncherStatics = try! RoGetActivationFactory(HString("Windows.System.RemoteLauncher"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.remotelauncher.launchuriasync)
+    public static func launchUriAsync(_ remoteSystemConnectionRequest: UWP.RemoteSystemConnectionRequest!, _ uri: WindowsFoundation.Uri!) -> WindowsFoundation.AnyIAsyncOperation<RemoteLaunchUriStatus>! {
+        return try! _IRemoteLauncherStatics.LaunchUriAsyncImpl(remoteSystemConnectionRequest, uri)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.remotelauncher.launchuriasync)
+    public static func launchUriAsync(_ remoteSystemConnectionRequest: UWP.RemoteSystemConnectionRequest!, _ uri: WindowsFoundation.Uri!, _ options: RemoteLauncherOptions!) -> WindowsFoundation.AnyIAsyncOperation<RemoteLaunchUriStatus>! {
+        return try! _IRemoteLauncherStatics.LaunchUriWithOptionsAsyncImpl(remoteSystemConnectionRequest, uri, options)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.remotelauncher.launchuriasync)
+    public static func launchUriAsync(_ remoteSystemConnectionRequest: UWP.RemoteSystemConnectionRequest!, _ uri: WindowsFoundation.Uri!, _ options: RemoteLauncherOptions!, _ inputData: WindowsFoundation.ValueSet!) -> WindowsFoundation.AnyIAsyncOperation<RemoteLaunchUriStatus>! {
+        return try! _IRemoteLauncherStatics.LaunchUriWithDataAsyncImpl(remoteSystemConnectionRequest, uri, options, inputData)
+    }
+
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.remotelauncheroptions)
+public final class RemoteLauncherOptions : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System.IRemoteLauncherOptions
+    private typealias CABI = __x_ABI_CWindows_CSystem_CIRemoteLauncherOptions
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CIRemoteLauncherOptions>?) -> RemoteLauncherOptions? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public init() {
+        super.init(try! RoActivateInstance(HString("Windows.System.RemoteLauncherOptions")))
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.remotelauncheroptions.fallbackuri)
+    public var fallbackUri : WindowsFoundation.Uri! {
+        get { try! _default.get_FallbackUriImpl() }
+        set { try! _default.put_FallbackUriImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.remotelauncheroptions.preferredappids)
+    public var preferredAppIds : WindowsFoundation.AnyIVector<String>! {
+        get { try! _default.get_PreferredAppIdsImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.shutdownmanager)
+public final class ShutdownManager {
+    private static let _IShutdownManagerStatics: __ABI_Windows_System.IShutdownManagerStatics = try! RoGetActivationFactory(HString("Windows.System.ShutdownManager"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.shutdownmanager.beginshutdown)
+    public static func beginShutdown(_ shutdownKind: ShutdownKind, _ timeout: WindowsFoundation.TimeSpan) {
+        try! _IShutdownManagerStatics.BeginShutdownImpl(shutdownKind, timeout)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.shutdownmanager.cancelshutdown)
+    public static func cancelShutdown() {
+        try! _IShutdownManagerStatics.CancelShutdownImpl()
+    }
+
+    private static let _IShutdownManagerStatics2: __ABI_Windows_System.IShutdownManagerStatics2 = try! RoGetActivationFactory(HString("Windows.System.ShutdownManager"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.shutdownmanager.ispowerstatesupported)
+    public static func isPowerStateSupported(_ powerState: PowerState) -> Bool {
+        return try! _IShutdownManagerStatics2.IsPowerStateSupportedImpl(powerState)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.shutdownmanager.enterpowerstate)
+    public static func enterPowerState(_ powerState: PowerState) {
+        try! _IShutdownManagerStatics2.EnterPowerStateImpl(powerState)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.shutdownmanager.enterpowerstate)
+    public static func enterPowerState(_ powerState: PowerState, _ wakeUpAfter: WindowsFoundation.TimeSpan) {
+        try! _IShutdownManagerStatics2.EnterPowerStateWithTimeSpanImpl(powerState, wakeUpAfter)
+    }
+
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.timezonesettings)
+public final class TimeZoneSettings {
+    private static let _ITimeZoneSettingsStatics: __ABI_Windows_System.ITimeZoneSettingsStatics = try! RoGetActivationFactory(HString("Windows.System.TimeZoneSettings"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.timezonesettings.changetimezonebydisplayname)
+    public static func changeTimeZoneByDisplayName(_ timeZoneDisplayName: String) {
+        try! _ITimeZoneSettingsStatics.ChangeTimeZoneByDisplayNameImpl(timeZoneDisplayName)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.timezonesettings.canchangetimezone)
+    public static var canChangeTimeZone : Bool {
+        get { try! _ITimeZoneSettingsStatics.get_CanChangeTimeZoneImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.timezonesettings.currenttimezonedisplayname)
+    public static var currentTimeZoneDisplayName : String {
+        get { try! _ITimeZoneSettingsStatics.get_CurrentTimeZoneDisplayNameImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.timezonesettings.supportedtimezonedisplaynames)
+    public static var supportedTimeZoneDisplayNames : WindowsFoundation.AnyIVectorView<String>! {
+        get { try! _ITimeZoneSettingsStatics.get_SupportedTimeZoneDisplayNamesImpl() }
+    }
+
+    private static let _ITimeZoneSettingsStatics2: __ABI_Windows_System.ITimeZoneSettingsStatics2 = try! RoGetActivationFactory(HString("Windows.System.TimeZoneSettings"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.timezonesettings.autoupdatetimezoneasync)
+    public static func autoUpdateTimeZoneAsync(_ timeout: WindowsFoundation.TimeSpan) -> WindowsFoundation.AnyIAsyncOperation<AutoUpdateTimeZoneStatus>! {
+        return try! _ITimeZoneSettingsStatics2.AutoUpdateTimeZoneAsyncImpl(timeout)
+    }
+
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.user)
 public final class User : WinRTClass {
     private typealias SwiftABI = __ABI_Windows_System.IUser
@@ -813,6 +2238,124 @@ public final class UserChangedEventArgs : WinRTClass {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.userdeviceassociation)
+public final class UserDeviceAssociation {
+    private static let _IUserDeviceAssociationStatics: __ABI_Windows_System.IUserDeviceAssociationStatics = try! RoGetActivationFactory(HString("Windows.System.UserDeviceAssociation"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.userdeviceassociation.finduserfromdeviceid)
+    public static func findUserFromDeviceId(_ deviceId: String) -> User! {
+        return try! _IUserDeviceAssociationStatics.FindUserFromDeviceIdImpl(deviceId)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.userdeviceassociation.userdeviceassociationchanged)
+    public static var userDeviceAssociationChanged : Event<EventHandler<UserDeviceAssociationChangedEventArgs?>> = {
+      .init(
+        add: { try! _IUserDeviceAssociationStatics.add_UserDeviceAssociationChangedImpl($0) },
+        remove: { try? _IUserDeviceAssociationStatics.remove_UserDeviceAssociationChangedImpl($0) }
+      )
+    }()
+
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.userdeviceassociationchangedeventargs)
+public final class UserDeviceAssociationChangedEventArgs : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System.IUserDeviceAssociationChangedEventArgs
+    private typealias CABI = __x_ABI_CWindows_CSystem_CIUserDeviceAssociationChangedEventArgs
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CIUserDeviceAssociationChangedEventArgs>?) -> UserDeviceAssociationChangedEventArgs? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.userdeviceassociationchangedeventargs.deviceid)
+    public var deviceId : String {
+        get { try! _default.get_DeviceIdImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.userdeviceassociationchangedeventargs.newuser)
+    public var newUser : User! {
+        get { try! _default.get_NewUserImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.userdeviceassociationchangedeventargs.olduser)
+    public var oldUser : User! {
+        get { try! _default.get_OldUserImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.userpicker)
+public final class UserPicker : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_System.IUserPicker
+    private typealias CABI = __x_ABI_CWindows_CSystem_CIUserPicker
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CSystem_CIUserPicker>?) -> UserPicker? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public init() {
+        super.init(try! RoActivateInstance(HString("Windows.System.UserPicker")))
+    }
+
+    private static let _IUserPickerStatics: __ABI_Windows_System.IUserPickerStatics = try! RoGetActivationFactory(HString("Windows.System.UserPicker"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.userpicker.issupported)
+    public static func isSupported() -> Bool {
+        return try! _IUserPickerStatics.IsSupportedImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.userpicker.picksingleuserasync)
+    public func pickSingleUserAsync() throws -> WindowsFoundation.AnyIAsyncOperation<User?>! {
+        try _default.PickSingleUserAsyncImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.userpicker.allowguestaccounts)
+    public var allowGuestAccounts : Bool {
+        get { try! _default.get_AllowGuestAccountsImpl() }
+        set { try! _default.put_AllowGuestAccountsImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.userpicker.suggestedselecteduser)
+    public var suggestedSelectedUser : User! {
+        get { try! _default.get_SuggestedSelectedUserImpl() }
+        set { try! _default.put_SuggestedSelectedUserImpl(newValue) }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.system.userwatcher)
 public final class UserWatcher : WinRTClass {
     private typealias SwiftABI = __ABI_Windows_System.IUserWatcher
@@ -967,6 +2510,127 @@ extension ILauncherViewOptions {
 }
 public typealias AnyILauncherViewOptions = any ILauncherViewOptions
 
+extension UWP.AppDiagnosticInfoWatcherStatus {
+    public static var created : UWP.AppDiagnosticInfoWatcherStatus {
+        __x_ABI_CWindows_CSystem_CAppDiagnosticInfoWatcherStatus_Created
+    }
+    public static var started : UWP.AppDiagnosticInfoWatcherStatus {
+        __x_ABI_CWindows_CSystem_CAppDiagnosticInfoWatcherStatus_Started
+    }
+    public static var enumerationCompleted : UWP.AppDiagnosticInfoWatcherStatus {
+        __x_ABI_CWindows_CSystem_CAppDiagnosticInfoWatcherStatus_EnumerationCompleted
+    }
+    public static var stopping : UWP.AppDiagnosticInfoWatcherStatus {
+        __x_ABI_CWindows_CSystem_CAppDiagnosticInfoWatcherStatus_Stopping
+    }
+    public static var stopped : UWP.AppDiagnosticInfoWatcherStatus {
+        __x_ABI_CWindows_CSystem_CAppDiagnosticInfoWatcherStatus_Stopped
+    }
+    public static var aborted : UWP.AppDiagnosticInfoWatcherStatus {
+        __x_ABI_CWindows_CSystem_CAppDiagnosticInfoWatcherStatus_Aborted
+    }
+}
+extension UWP.AppDiagnosticInfoWatcherStatus: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.AppMemoryUsageLevel {
+    public static var low : UWP.AppMemoryUsageLevel {
+        __x_ABI_CWindows_CSystem_CAppMemoryUsageLevel_Low
+    }
+    public static var medium : UWP.AppMemoryUsageLevel {
+        __x_ABI_CWindows_CSystem_CAppMemoryUsageLevel_Medium
+    }
+    public static var high : UWP.AppMemoryUsageLevel {
+        __x_ABI_CWindows_CSystem_CAppMemoryUsageLevel_High
+    }
+    public static var overLimit : UWP.AppMemoryUsageLevel {
+        __x_ABI_CWindows_CSystem_CAppMemoryUsageLevel_OverLimit
+    }
+}
+extension UWP.AppMemoryUsageLevel: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.AppResourceGroupEnergyQuotaState {
+    public static var unknown : UWP.AppResourceGroupEnergyQuotaState {
+        __x_ABI_CWindows_CSystem_CAppResourceGroupEnergyQuotaState_Unknown
+    }
+    public static var over : UWP.AppResourceGroupEnergyQuotaState {
+        __x_ABI_CWindows_CSystem_CAppResourceGroupEnergyQuotaState_Over
+    }
+    public static var under : UWP.AppResourceGroupEnergyQuotaState {
+        __x_ABI_CWindows_CSystem_CAppResourceGroupEnergyQuotaState_Under
+    }
+}
+extension UWP.AppResourceGroupEnergyQuotaState: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.AppResourceGroupExecutionState {
+    public static var unknown : UWP.AppResourceGroupExecutionState {
+        __x_ABI_CWindows_CSystem_CAppResourceGroupExecutionState_Unknown
+    }
+    public static var running : UWP.AppResourceGroupExecutionState {
+        __x_ABI_CWindows_CSystem_CAppResourceGroupExecutionState_Running
+    }
+    public static var suspending : UWP.AppResourceGroupExecutionState {
+        __x_ABI_CWindows_CSystem_CAppResourceGroupExecutionState_Suspending
+    }
+    public static var suspended : UWP.AppResourceGroupExecutionState {
+        __x_ABI_CWindows_CSystem_CAppResourceGroupExecutionState_Suspended
+    }
+    public static var notRunning : UWP.AppResourceGroupExecutionState {
+        __x_ABI_CWindows_CSystem_CAppResourceGroupExecutionState_NotRunning
+    }
+}
+extension UWP.AppResourceGroupExecutionState: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.AppResourceGroupInfoWatcherStatus {
+    public static var created : UWP.AppResourceGroupInfoWatcherStatus {
+        __x_ABI_CWindows_CSystem_CAppResourceGroupInfoWatcherStatus_Created
+    }
+    public static var started : UWP.AppResourceGroupInfoWatcherStatus {
+        __x_ABI_CWindows_CSystem_CAppResourceGroupInfoWatcherStatus_Started
+    }
+    public static var enumerationCompleted : UWP.AppResourceGroupInfoWatcherStatus {
+        __x_ABI_CWindows_CSystem_CAppResourceGroupInfoWatcherStatus_EnumerationCompleted
+    }
+    public static var stopping : UWP.AppResourceGroupInfoWatcherStatus {
+        __x_ABI_CWindows_CSystem_CAppResourceGroupInfoWatcherStatus_Stopping
+    }
+    public static var stopped : UWP.AppResourceGroupInfoWatcherStatus {
+        __x_ABI_CWindows_CSystem_CAppResourceGroupInfoWatcherStatus_Stopped
+    }
+    public static var aborted : UWP.AppResourceGroupInfoWatcherStatus {
+        __x_ABI_CWindows_CSystem_CAppResourceGroupInfoWatcherStatus_Aborted
+    }
+}
+extension UWP.AppResourceGroupInfoWatcherStatus: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.AutoUpdateTimeZoneStatus {
+    public static var attempted : UWP.AutoUpdateTimeZoneStatus {
+        __x_ABI_CWindows_CSystem_CAutoUpdateTimeZoneStatus_Attempted
+    }
+    public static var timedOut : UWP.AutoUpdateTimeZoneStatus {
+        __x_ABI_CWindows_CSystem_CAutoUpdateTimeZoneStatus_TimedOut
+    }
+    public static var failed : UWP.AutoUpdateTimeZoneStatus {
+        __x_ABI_CWindows_CSystem_CAutoUpdateTimeZoneStatus_Failed
+    }
+}
+extension UWP.AutoUpdateTimeZoneStatus: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.DiagnosticAccessStatus {
+    public static var unspecified : UWP.DiagnosticAccessStatus {
+        __x_ABI_CWindows_CSystem_CDiagnosticAccessStatus_Unspecified
+    }
+    public static var denied : UWP.DiagnosticAccessStatus {
+        __x_ABI_CWindows_CSystem_CDiagnosticAccessStatus_Denied
+    }
+    public static var limited : UWP.DiagnosticAccessStatus {
+        __x_ABI_CWindows_CSystem_CDiagnosticAccessStatus_Limited
+    }
+    public static var allowed : UWP.DiagnosticAccessStatus {
+        __x_ABI_CWindows_CSystem_CDiagnosticAccessStatus_Allowed
+    }
+}
+extension UWP.DiagnosticAccessStatus: @retroactive Hashable, @retroactive Codable {}
+
 extension UWP.DispatcherQueuePriority {
     public static var low : UWP.DispatcherQueuePriority {
         __x_ABI_CWindows_CSystem_CDispatcherQueuePriority_Low
@@ -979,6 +2643,25 @@ extension UWP.DispatcherQueuePriority {
     }
 }
 extension UWP.DispatcherQueuePriority: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.LaunchFileStatus {
+    public static var success : UWP.LaunchFileStatus {
+        __x_ABI_CWindows_CSystem_CLaunchFileStatus_Success
+    }
+    public static var appUnavailable : UWP.LaunchFileStatus {
+        __x_ABI_CWindows_CSystem_CLaunchFileStatus_AppUnavailable
+    }
+    public static var deniedByPolicy : UWP.LaunchFileStatus {
+        __x_ABI_CWindows_CSystem_CLaunchFileStatus_DeniedByPolicy
+    }
+    public static var fileTypeNotSupported : UWP.LaunchFileStatus {
+        __x_ABI_CWindows_CSystem_CLaunchFileStatus_FileTypeNotSupported
+    }
+    public static var unknown : UWP.LaunchFileStatus {
+        __x_ABI_CWindows_CSystem_CLaunchFileStatus_Unknown
+    }
+}
+extension UWP.LaunchFileStatus: @retroactive Hashable, @retroactive Codable {}
 
 extension UWP.LaunchQuerySupportStatus {
     public static var available : UWP.LaunchQuerySupportStatus {
@@ -1025,6 +2708,16 @@ extension UWP.LaunchUriStatus {
 }
 extension UWP.LaunchUriStatus: @retroactive Hashable, @retroactive Codable {}
 
+extension UWP.PowerState {
+    public static var connectedStandby : UWP.PowerState {
+        __x_ABI_CWindows_CSystem_CPowerState_ConnectedStandby
+    }
+    public static var sleepS3 : UWP.PowerState {
+        __x_ABI_CWindows_CSystem_CPowerState_SleepS3
+    }
+}
+extension UWP.PowerState: @retroactive Hashable, @retroactive Codable {}
+
 extension UWP.ProcessorArchitecture {
     public static var x86 : UWP.ProcessorArchitecture {
         __x_ABI_CWindows_CSystem_CProcessorArchitecture_X86
@@ -1049,6 +2742,44 @@ extension UWP.ProcessorArchitecture {
     }
 }
 extension UWP.ProcessorArchitecture: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.RemoteLaunchUriStatus {
+    public static var unknown : UWP.RemoteLaunchUriStatus {
+        __x_ABI_CWindows_CSystem_CRemoteLaunchUriStatus_Unknown
+    }
+    public static var success : UWP.RemoteLaunchUriStatus {
+        __x_ABI_CWindows_CSystem_CRemoteLaunchUriStatus_Success
+    }
+    public static var appUnavailable : UWP.RemoteLaunchUriStatus {
+        __x_ABI_CWindows_CSystem_CRemoteLaunchUriStatus_AppUnavailable
+    }
+    public static var protocolUnavailable : UWP.RemoteLaunchUriStatus {
+        __x_ABI_CWindows_CSystem_CRemoteLaunchUriStatus_ProtocolUnavailable
+    }
+    public static var remoteSystemUnavailable : UWP.RemoteLaunchUriStatus {
+        __x_ABI_CWindows_CSystem_CRemoteLaunchUriStatus_RemoteSystemUnavailable
+    }
+    public static var valueSetTooLarge : UWP.RemoteLaunchUriStatus {
+        __x_ABI_CWindows_CSystem_CRemoteLaunchUriStatus_ValueSetTooLarge
+    }
+    public static var deniedByLocalSystem : UWP.RemoteLaunchUriStatus {
+        __x_ABI_CWindows_CSystem_CRemoteLaunchUriStatus_DeniedByLocalSystem
+    }
+    public static var deniedByRemoteSystem : UWP.RemoteLaunchUriStatus {
+        __x_ABI_CWindows_CSystem_CRemoteLaunchUriStatus_DeniedByRemoteSystem
+    }
+}
+extension UWP.RemoteLaunchUriStatus: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.ShutdownKind {
+    public static var shutdown : UWP.ShutdownKind {
+        __x_ABI_CWindows_CSystem_CShutdownKind_Shutdown
+    }
+    public static var restart : UWP.ShutdownKind {
+        __x_ABI_CWindows_CSystem_CShutdownKind_Restart
+    }
+}
+extension UWP.ShutdownKind: @retroactive Hashable, @retroactive Codable {}
 
 extension UWP.UserAuthenticationStatus {
     public static var unauthenticated : UWP.UserAuthenticationStatus {

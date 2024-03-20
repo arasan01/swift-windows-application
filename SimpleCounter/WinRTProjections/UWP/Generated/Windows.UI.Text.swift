@@ -4,12 +4,123 @@ import Foundation
 @_spi(WinRTInternal) @_spi(WinRTImplements) import WindowsFoundation
 import CWinRT
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.carettype)
+public typealias CaretType = __x_ABI_CWindows_CUI_CText_CCaretType
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.findoptions)
+public typealias FindOptions = __x_ABI_CWindows_CUI_CText_CFindOptions
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.fontstretch)
 public typealias FontStretch = __x_ABI_CWindows_CUI_CText_CFontStretch
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.fontstyle)
 public typealias FontStyle = __x_ABI_CWindows_CUI_CText_CFontStyle
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.formateffect)
+public typealias FormatEffect = __x_ABI_CWindows_CUI_CText_CFormatEffect
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.horizontalcharacteralignment)
+public typealias HorizontalCharacterAlignment = __x_ABI_CWindows_CUI_CText_CHorizontalCharacterAlignment
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.lettercase)
+public typealias LetterCase = __x_ABI_CWindows_CUI_CText_CLetterCase
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.linespacingrule)
+public typealias LineSpacingRule = __x_ABI_CWindows_CUI_CText_CLineSpacingRule
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.linktype)
+public typealias LinkType = __x_ABI_CWindows_CUI_CText_CLinkType
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.markeralignment)
+public typealias MarkerAlignment = __x_ABI_CWindows_CUI_CText_CMarkerAlignment
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.markerstyle)
+public typealias MarkerStyle = __x_ABI_CWindows_CUI_CText_CMarkerStyle
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.markertype)
+public typealias MarkerType = __x_ABI_CWindows_CUI_CText_CMarkerType
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.paragraphalignment)
+public typealias ParagraphAlignment = __x_ABI_CWindows_CUI_CText_CParagraphAlignment
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.paragraphstyle)
+public typealias ParagraphStyle = __x_ABI_CWindows_CUI_CText_CParagraphStyle
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.pointoptions)
+public typealias PointOptions = __x_ABI_CWindows_CUI_CText_CPointOptions
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.rangegravity)
+public typealias RangeGravity = __x_ABI_CWindows_CUI_CText_CRangeGravity
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.selectionoptions)
+public typealias SelectionOptions = __x_ABI_CWindows_CUI_CText_CSelectionOptions
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.selectiontype)
+public typealias SelectionType = __x_ABI_CWindows_CUI_CText_CSelectionType
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.tabalignment)
+public typealias TabAlignment = __x_ABI_CWindows_CUI_CText_CTabAlignment
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.tableader)
+public typealias TabLeader = __x_ABI_CWindows_CUI_CText_CTabLeader
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.textdecorations)
 public typealias TextDecorations = __x_ABI_CWindows_CUI_CText_CTextDecorations
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.textgetoptions)
+public typealias TextGetOptions = __x_ABI_CWindows_CUI_CText_CTextGetOptions
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.textrangeunit)
+public typealias TextRangeUnit = __x_ABI_CWindows_CUI_CText_CTextRangeUnit
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.textscript)
+public typealias TextScript = __x_ABI_CWindows_CUI_CText_CTextScript
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.textsetoptions)
+public typealias TextSetOptions = __x_ABI_CWindows_CUI_CText_CTextSetOptions
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.underlinetype)
+public typealias UnderlineType = __x_ABI_CWindows_CUI_CText_CUnderlineType
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.verticalcharacteralignment)
+public typealias VerticalCharacterAlignment = __x_ABI_CWindows_CUI_CText_CVerticalCharacterAlignment
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.contentlinkinfo)
+public final class ContentLinkInfo : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_UI_Text.IContentLinkInfo
+    private typealias CABI = __x_ABI_CWindows_CUI_CText_CIContentLinkInfo
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CUI_CText_CIContentLinkInfo>?) -> ContentLinkInfo? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public init() {
+        super.init(try! RoActivateInstance(HString("Windows.UI.Text.ContentLinkInfo")))
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.contentlinkinfo.displaytext)
+    public var displayText : String {
+        get { try! _default.get_DisplayTextImpl() }
+        set { try! _default.put_DisplayTextImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.contentlinkinfo.id)
+    public var id : UInt32 {
+        get { try! _default.get_IdImpl() }
+        set { try! _default.put_IdImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.contentlinkinfo.linkcontentkind)
+    public var linkContentKind : String {
+        get { try! _default.get_LinkContentKindImpl() }
+        set { try! _default.put_LinkContentKindImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.contentlinkinfo.secondarytext)
+    public var secondaryText : String {
+        get { try! _default.get_SecondaryTextImpl() }
+        set { try! _default.put_SecondaryTextImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.contentlinkinfo.uri)
+    public var uri : WindowsFoundation.Uri! {
+        get { try! _default.get_UriImpl() }
+        set { try! _default.put_UriImpl(newValue) }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.fontweights)
 public final class FontWeights : WinRTClass {
     private typealias SwiftABI = __ABI_Windows_UI_Text.IFontWeights
@@ -95,6 +206,491 @@ public final class FontWeights : WinRTClass {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextdocument)
+public final class RichEditTextDocument : WinRTClass, ITextDocument {
+    private typealias SwiftABI = __ABI_Windows_UI_Text.ITextDocument
+    private typealias CABI = __x_ABI_CWindows_CUI_CText_CITextDocument
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CUI_CText_CITextDocument>?) -> RichEditTextDocument? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    private lazy var _ITextDocument2: __ABI_Windows_UI_Text.ITextDocument2! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextdocument.alignmentincludestrailingwhitespace)
+    public var alignmentIncludesTrailingWhitespace : Bool {
+        get { try! _ITextDocument2.get_AlignmentIncludesTrailingWhitespaceImpl() }
+        set { try! _ITextDocument2.put_AlignmentIncludesTrailingWhitespaceImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextdocument.ignoretrailingcharacterspacing)
+    public var ignoreTrailingCharacterSpacing : Bool {
+        get { try! _ITextDocument2.get_IgnoreTrailingCharacterSpacingImpl() }
+        set { try! _ITextDocument2.put_IgnoreTrailingCharacterSpacingImpl(newValue) }
+    }
+
+    private lazy var _ITextDocument3: __ABI_Windows_UI_Text.ITextDocument3! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextdocument.clearundoredohistory)
+    public func clearUndoRedoHistory() throws {
+        try _ITextDocument3.ClearUndoRedoHistoryImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextdocument.cancopy)
+    public func canCopy() throws -> Bool {
+        try _default.CanCopyImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextdocument.canpaste)
+    public func canPaste() throws -> Bool {
+        try _default.CanPasteImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextdocument.canredo)
+    public func canRedo() throws -> Bool {
+        try _default.CanRedoImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextdocument.canundo)
+    public func canUndo() throws -> Bool {
+        try _default.CanUndoImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextdocument.applydisplayupdates)
+    public func applyDisplayUpdates() throws -> Int32 {
+        try _default.ApplyDisplayUpdatesImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextdocument.batchdisplayupdates)
+    public func batchDisplayUpdates() throws -> Int32 {
+        try _default.BatchDisplayUpdatesImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextdocument.beginundogroup)
+    public func beginUndoGroup() throws {
+        try _default.BeginUndoGroupImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextdocument.endundogroup)
+    public func endUndoGroup() throws {
+        try _default.EndUndoGroupImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextdocument.getdefaultcharacterformat)
+    public func getDefaultCharacterFormat() throws -> AnyITextCharacterFormat! {
+        try _default.GetDefaultCharacterFormatImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextdocument.getdefaultparagraphformat)
+    public func getDefaultParagraphFormat() throws -> AnyITextParagraphFormat! {
+        try _default.GetDefaultParagraphFormatImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextdocument.getrange)
+    public func getRange(_ startPosition: Int32, _ endPosition: Int32) throws -> AnyITextRange! {
+        try _default.GetRangeImpl(startPosition, endPosition)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextdocument.getrangefrompoint)
+    public func getRangeFromPoint(_ point: WindowsFoundation.Point, _ options: PointOptions) throws -> AnyITextRange! {
+        try _default.GetRangeFromPointImpl(point, options)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextdocument.gettext)
+    public func getText(_ options: TextGetOptions, _ value: inout String) throws {
+        try _default.GetTextImpl(options, &value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextdocument.loadfromstream)
+    public func loadFromStream(_ options: TextSetOptions, _ value: UWP.AnyIRandomAccessStream!) throws {
+        try _default.LoadFromStreamImpl(options, value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextdocument.redo)
+    public func redo() throws {
+        try _default.RedoImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextdocument.savetostream)
+    public func saveToStream(_ options: TextGetOptions, _ value: UWP.AnyIRandomAccessStream!) throws {
+        try _default.SaveToStreamImpl(options, value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextdocument.setdefaultcharacterformat)
+    public func setDefaultCharacterFormat(_ value: AnyITextCharacterFormat!) throws {
+        try _default.SetDefaultCharacterFormatImpl(value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextdocument.setdefaultparagraphformat)
+    public func setDefaultParagraphFormat(_ value: AnyITextParagraphFormat!) throws {
+        try _default.SetDefaultParagraphFormatImpl(value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextdocument.settext)
+    public func setText(_ options: TextSetOptions, _ value: String) throws {
+        try _default.SetTextImpl(options, value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextdocument.undo)
+    public func undo() throws {
+        try _default.UndoImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextdocument.carettype)
+    public var caretType : CaretType {
+        get { try! _default.get_CaretTypeImpl() }
+        set { try! _default.put_CaretTypeImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextdocument.defaulttabstop)
+    public var defaultTabStop : Float {
+        get { try! _default.get_DefaultTabStopImpl() }
+        set { try! _default.put_DefaultTabStopImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextdocument.selection)
+    public var selection : AnyITextSelection! {
+        get { try! _default.get_SelectionImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextdocument.undolimit)
+    public var undoLimit : UInt32 {
+        get { try! _default.get_UndoLimitImpl() }
+        set { try! _default.put_UndoLimitImpl(newValue) }
+    }
+
+    deinit {
+        _ITextDocument2 = nil
+        _ITextDocument3 = nil
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange)
+public final class RichEditTextRange : WinRTClass, ITextRange {
+    private typealias SwiftABI = __ABI_Windows_UI_Text.ITextRange
+    private typealias CABI = __x_ABI_CWindows_CUI_CText_CITextRange
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CUI_CText_CITextRange>?) -> RichEditTextRange? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    private lazy var _IRichEditTextRange: __ABI_Windows_UI_Text.IRichEditTextRange! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.contentlinkinfo)
+    public var contentLinkInfo : ContentLinkInfo! {
+        get { try! _IRichEditTextRange.get_ContentLinkInfoImpl() }
+        set { try! _IRichEditTextRange.put_ContentLinkInfoImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.canpaste)
+    public func canPaste(_ format: Int32) throws -> Bool {
+        try _default.CanPasteImpl(format)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.changecase)
+    public func changeCase(_ value: LetterCase) throws {
+        try _default.ChangeCaseImpl(value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.collapse)
+    public func collapse(_ value: Bool) throws {
+        try _default.CollapseImpl(value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.copy)
+    public func copy() throws {
+        try _default.CopyImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.cut)
+    public func cut() throws {
+        try _default.CutImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.delete)
+    public func delete(_ unit: TextRangeUnit, _ count: Int32) throws -> Int32 {
+        try _default.DeleteImpl(unit, count)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.endof)
+    public func endOf(_ unit: TextRangeUnit, _ extend: Bool) throws -> Int32 {
+        try _default.EndOfImpl(unit, extend)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.expand)
+    public func expand(_ unit: TextRangeUnit) throws -> Int32 {
+        try _default.ExpandImpl(unit)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.findtext)
+    public func findText(_ value: String, _ scanLength: Int32, _ options: FindOptions) throws -> Int32 {
+        try _default.FindTextImpl(value, scanLength, options)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.getcharacterutf32)
+    public func getCharacterUtf32(_ value: inout UInt32, _ offset: Int32) throws {
+        try _default.GetCharacterUtf32Impl(&value, offset)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.getclone)
+    public func getClone() throws -> AnyITextRange! {
+        try _default.GetCloneImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.getindex)
+    public func getIndex(_ unit: TextRangeUnit) throws -> Int32 {
+        try _default.GetIndexImpl(unit)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.getpoint)
+    public func getPoint(_ horizontalAlign: HorizontalCharacterAlignment, _ verticalAlign: VerticalCharacterAlignment, _ options: PointOptions, _ point: inout WindowsFoundation.Point) throws {
+        try _default.GetPointImpl(horizontalAlign, verticalAlign, options, &point)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.getrect)
+    public func getRect(_ options: PointOptions, _ rect: inout WindowsFoundation.Rect, _ hit: inout Int32) throws {
+        try _default.GetRectImpl(options, &rect, &hit)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.gettext)
+    public func getText(_ options: TextGetOptions, _ value: inout String) throws {
+        try _default.GetTextImpl(options, &value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.gettextviastream)
+    public func getTextViaStream(_ options: TextGetOptions, _ value: UWP.AnyIRandomAccessStream!) throws {
+        try _default.GetTextViaStreamImpl(options, value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.inrange)
+    public func inRange(_ range: AnyITextRange!) throws -> Bool {
+        try _default.InRangeImpl(range)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.insertimage)
+    public func insertImage(_ width: Int32, _ height: Int32, _ ascent: Int32, _ verticalAlign: VerticalCharacterAlignment, _ alternateText: String, _ value: UWP.AnyIRandomAccessStream!) throws {
+        try _default.InsertImageImpl(width, height, ascent, verticalAlign, alternateText, value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.instory)
+    public func inStory(_ range: AnyITextRange!) throws -> Bool {
+        try _default.InStoryImpl(range)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.isequal)
+    public func isEqual(_ range: AnyITextRange!) throws -> Bool {
+        try _default.IsEqualImpl(range)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.move)
+    public func move(_ unit: TextRangeUnit, _ count: Int32) throws -> Int32 {
+        try _default.MoveImpl(unit, count)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.moveend)
+    public func moveEnd(_ unit: TextRangeUnit, _ count: Int32) throws -> Int32 {
+        try _default.MoveEndImpl(unit, count)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.movestart)
+    public func moveStart(_ unit: TextRangeUnit, _ count: Int32) throws -> Int32 {
+        try _default.MoveStartImpl(unit, count)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.paste)
+    public func paste(_ format: Int32) throws {
+        try _default.PasteImpl(format)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.scrollintoview)
+    public func scrollIntoView(_ value: PointOptions) throws {
+        try _default.ScrollIntoViewImpl(value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.matchselection)
+    public func matchSelection() throws {
+        try _default.MatchSelectionImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.setindex)
+    public func setIndex(_ unit: TextRangeUnit, _ index: Int32, _ extend: Bool) throws {
+        try _default.SetIndexImpl(unit, index, extend)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.setpoint)
+    public func setPoint(_ point: WindowsFoundation.Point, _ options: PointOptions, _ extend: Bool) throws {
+        try _default.SetPointImpl(point, options, extend)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.setrange)
+    public func setRange(_ startPosition: Int32, _ endPosition: Int32) throws {
+        try _default.SetRangeImpl(startPosition, endPosition)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.settext)
+    public func setText(_ options: TextSetOptions, _ value: String) throws {
+        try _default.SetTextImpl(options, value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.settextviastream)
+    public func setTextViaStream(_ options: TextSetOptions, _ value: UWP.AnyIRandomAccessStream!) throws {
+        try _default.SetTextViaStreamImpl(options, value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.startof)
+    public func startOf(_ unit: TextRangeUnit, _ extend: Bool) throws -> Int32 {
+        try _default.StartOfImpl(unit, extend)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.character)
+    public var character : Character {
+        get { try! _default.get_CharacterImpl() }
+        set { try! _default.put_CharacterImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.characterformat)
+    public var characterFormat : AnyITextCharacterFormat! {
+        get { try! _default.get_CharacterFormatImpl() }
+        set { try! _default.put_CharacterFormatImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.endposition)
+    public var endPosition : Int32 {
+        get { try! _default.get_EndPositionImpl() }
+        set { try! _default.put_EndPositionImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.formattedtext)
+    public var formattedText : AnyITextRange! {
+        get { try! _default.get_FormattedTextImpl() }
+        set { try! _default.put_FormattedTextImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.gravity)
+    public var gravity : RangeGravity {
+        get { try! _default.get_GravityImpl() }
+        set { try! _default.put_GravityImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.length)
+    public var length : Int32 {
+        get { try! _default.get_LengthImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.link)
+    public var link : String {
+        get { try! _default.get_LinkImpl() }
+        set { try! _default.put_LinkImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.paragraphformat)
+    public var paragraphFormat : AnyITextParagraphFormat! {
+        get { try! _default.get_ParagraphFormatImpl() }
+        set { try! _default.put_ParagraphFormatImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.startposition)
+    public var startPosition : Int32 {
+        get { try! _default.get_StartPositionImpl() }
+        set { try! _default.put_StartPositionImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.storylength)
+    public var storyLength : Int32 {
+        get { try! _default.get_StoryLengthImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.richedittextrange.text)
+    public var text : String {
+        get { try! _default.get_TextImpl() }
+        set { try! _default.put_TextImpl(newValue) }
+    }
+
+    deinit {
+        _IRichEditTextRange = nil
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.textconstants)
+public final class TextConstants {
+    private static let _ITextConstantsStatics: __ABI_Windows_UI_Text.ITextConstantsStatics = try! RoGetActivationFactory(HString("Windows.UI.Text.TextConstants"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.textconstants.autocolor)
+    public static var autoColor : UWP.Color {
+        get { try! _ITextConstantsStatics.get_AutoColorImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.textconstants.maxunitcount)
+    public static var maxUnitCount : Int32 {
+        get { try! _ITextConstantsStatics.get_MaxUnitCountImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.textconstants.minunitcount)
+    public static var minUnitCount : Int32 {
+        get { try! _ITextConstantsStatics.get_MinUnitCountImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.textconstants.undefinedcolor)
+    public static var undefinedColor : UWP.Color {
+        get { try! _ITextConstantsStatics.get_UndefinedColorImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.textconstants.undefinedfloatvalue)
+    public static var undefinedFloatValue : Float {
+        get { try! _ITextConstantsStatics.get_UndefinedFloatValueImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.textconstants.undefinedfontstretch)
+    public static var undefinedFontStretch : FontStretch {
+        get { try! _ITextConstantsStatics.get_UndefinedFontStretchImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.textconstants.undefinedfontstyle)
+    public static var undefinedFontStyle : FontStyle {
+        get { try! _ITextConstantsStatics.get_UndefinedFontStyleImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.textconstants.undefinedint32value)
+    public static var undefinedInt32Value : Int32 {
+        get { try! _ITextConstantsStatics.get_UndefinedInt32ValueImpl() }
+    }
+
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.fontweight)
 public struct FontWeight: Hashable, Codable {
     /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.fontweight.weight)
@@ -107,6 +703,380 @@ public struct FontWeight: Hashable, Codable {
         .init(weight: abi.Weight)
     }
 }
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextcharacterformat)
+public protocol ITextCharacterFormat : WinRTInterface {
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextcharacterformat.setclone)
+    func setClone(_ value: UWP.AnyITextCharacterFormat!) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextcharacterformat.getclone)
+    func getClone() throws -> UWP.AnyITextCharacterFormat!
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextcharacterformat.isequal)
+    func isEqual(_ format: UWP.AnyITextCharacterFormat!) throws -> Bool
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextcharacterformat.allcaps)
+    var allCaps: UWP.FormatEffect { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextcharacterformat.backgroundcolor)
+    var backgroundColor: UWP.Color { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextcharacterformat.bold)
+    var bold: UWP.FormatEffect { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextcharacterformat.fontstretch)
+    var fontStretch: UWP.FontStretch { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextcharacterformat.fontstyle)
+    var fontStyle: UWP.FontStyle { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextcharacterformat.foregroundcolor)
+    var foregroundColor: UWP.Color { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextcharacterformat.hidden)
+    var hidden: UWP.FormatEffect { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextcharacterformat.italic)
+    var italic: UWP.FormatEffect { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextcharacterformat.kerning)
+    var kerning: Float { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextcharacterformat.languagetag)
+    var languageTag: String { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextcharacterformat.linktype)
+    var linkType: UWP.LinkType { get }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextcharacterformat.name)
+    var name: String { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextcharacterformat.outline)
+    var outline: UWP.FormatEffect { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextcharacterformat.position)
+    var position: Float { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextcharacterformat.protectedtext)
+    var protectedText: UWP.FormatEffect { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextcharacterformat.size)
+    var size: Float { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextcharacterformat.smallcaps)
+    var smallCaps: UWP.FormatEffect { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextcharacterformat.spacing)
+    var spacing: Float { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextcharacterformat.strikethrough)
+    var strikethrough: UWP.FormatEffect { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextcharacterformat.subscript)
+    var `subscript`: UWP.FormatEffect { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextcharacterformat.superscript)
+    var superscript: UWP.FormatEffect { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextcharacterformat.textscript)
+    var textScript: UWP.TextScript { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextcharacterformat.underline)
+    var underline: UWP.UnderlineType { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextcharacterformat.weight)
+    var weight: Int32 { get set }
+}
+
+extension ITextCharacterFormat {
+    public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        switch iid {
+            case __ABI_Windows_UI_Text.ITextCharacterFormatWrapper.IID:
+                let wrapper = __ABI_Windows_UI_Text.ITextCharacterFormatWrapper(self)
+                return wrapper!.queryInterface(iid)
+            default: return nil
+        }
+    }
+}
+public typealias AnyITextCharacterFormat = any ITextCharacterFormat
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextdocument)
+public protocol ITextDocument : WinRTInterface {
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextdocument.cancopy)
+    func canCopy() throws -> Bool
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextdocument.canpaste)
+    func canPaste() throws -> Bool
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextdocument.canredo)
+    func canRedo() throws -> Bool
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextdocument.canundo)
+    func canUndo() throws -> Bool
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextdocument.applydisplayupdates)
+    func applyDisplayUpdates() throws -> Int32
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextdocument.batchdisplayupdates)
+    func batchDisplayUpdates() throws -> Int32
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextdocument.beginundogroup)
+    func beginUndoGroup() throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextdocument.endundogroup)
+    func endUndoGroup() throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextdocument.getdefaultcharacterformat)
+    func getDefaultCharacterFormat() throws -> UWP.AnyITextCharacterFormat!
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextdocument.getdefaultparagraphformat)
+    func getDefaultParagraphFormat() throws -> UWP.AnyITextParagraphFormat!
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextdocument.getrange)
+    func getRange(_ startPosition: Int32, _ endPosition: Int32) throws -> UWP.AnyITextRange!
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextdocument.getrangefrompoint)
+    func getRangeFromPoint(_ point: WindowsFoundation.Point, _ options: UWP.PointOptions) throws -> UWP.AnyITextRange!
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextdocument.gettext)
+    func getText(_ options: UWP.TextGetOptions, _ value: inout String) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextdocument.loadfromstream)
+    func loadFromStream(_ options: UWP.TextSetOptions, _ value: UWP.AnyIRandomAccessStream!) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextdocument.redo)
+    func redo() throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextdocument.savetostream)
+    func saveToStream(_ options: UWP.TextGetOptions, _ value: UWP.AnyIRandomAccessStream!) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextdocument.setdefaultcharacterformat)
+    func setDefaultCharacterFormat(_ value: UWP.AnyITextCharacterFormat!) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextdocument.setdefaultparagraphformat)
+    func setDefaultParagraphFormat(_ value: UWP.AnyITextParagraphFormat!) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextdocument.settext)
+    func setText(_ options: UWP.TextSetOptions, _ value: String) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextdocument.undo)
+    func undo() throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextdocument.carettype)
+    var caretType: UWP.CaretType { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextdocument.defaulttabstop)
+    var defaultTabStop: Float { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextdocument.selection)
+    var selection: UWP.AnyITextSelection! { get }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextdocument.undolimit)
+    var undoLimit: UInt32 { get set }
+}
+
+extension ITextDocument {
+    public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        switch iid {
+            case __ABI_Windows_UI_Text.ITextDocumentWrapper.IID:
+                let wrapper = __ABI_Windows_UI_Text.ITextDocumentWrapper(self)
+                return wrapper!.queryInterface(iid)
+            default: return nil
+        }
+    }
+}
+public typealias AnyITextDocument = any ITextDocument
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat)
+public protocol ITextParagraphFormat : WinRTInterface {
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.addtab)
+    func addTab(_ position: Float, _ align: UWP.TabAlignment, _ leader: UWP.TabLeader) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.clearalltabs)
+    func clearAllTabs() throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.deletetab)
+    func deleteTab(_ position: Float) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.getclone)
+    func getClone() throws -> UWP.AnyITextParagraphFormat!
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.gettab)
+    func getTab(_ index: Int32, _ position: inout Float, _ align: inout UWP.TabAlignment, _ leader: inout UWP.TabLeader) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.isequal)
+    func isEqual(_ format: UWP.AnyITextParagraphFormat!) throws -> Bool
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.setclone)
+    func setClone(_ format: UWP.AnyITextParagraphFormat!) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.setindents)
+    func setIndents(_ start: Float, _ left: Float, _ right: Float) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.setlinespacing)
+    func setLineSpacing(_ rule: UWP.LineSpacingRule, _ spacing: Float) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.alignment)
+    var alignment: UWP.ParagraphAlignment { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.firstlineindent)
+    var firstLineIndent: Float { get }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.keeptogether)
+    var keepTogether: UWP.FormatEffect { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.keepwithnext)
+    var keepWithNext: UWP.FormatEffect { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.leftindent)
+    var leftIndent: Float { get }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.linespacing)
+    var lineSpacing: Float { get }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.linespacingrule)
+    var lineSpacingRule: UWP.LineSpacingRule { get }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.listalignment)
+    var listAlignment: UWP.MarkerAlignment { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.listlevelindex)
+    var listLevelIndex: Int32 { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.liststart)
+    var listStart: Int32 { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.liststyle)
+    var listStyle: UWP.MarkerStyle { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.listtab)
+    var listTab: Float { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.listtype)
+    var listType: UWP.MarkerType { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.nolinenumber)
+    var noLineNumber: UWP.FormatEffect { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.pagebreakbefore)
+    var pageBreakBefore: UWP.FormatEffect { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.rightindent)
+    var rightIndent: Float { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.righttoleft)
+    var rightToLeft: UWP.FormatEffect { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.spaceafter)
+    var spaceAfter: Float { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.spacebefore)
+    var spaceBefore: Float { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.style)
+    var style: UWP.ParagraphStyle { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.tabcount)
+    var tabCount: Int32 { get }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextparagraphformat.widowcontrol)
+    var widowControl: UWP.FormatEffect { get set }
+}
+
+extension ITextParagraphFormat {
+    public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        switch iid {
+            case __ABI_Windows_UI_Text.ITextParagraphFormatWrapper.IID:
+                let wrapper = __ABI_Windows_UI_Text.ITextParagraphFormatWrapper(self)
+                return wrapper!.queryInterface(iid)
+            default: return nil
+        }
+    }
+}
+public typealias AnyITextParagraphFormat = any ITextParagraphFormat
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange)
+public protocol ITextRange : WinRTInterface {
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.canpaste)
+    func canPaste(_ format: Int32) throws -> Bool
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.changecase)
+    func changeCase(_ value: UWP.LetterCase) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.collapse)
+    func collapse(_ value: Bool) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.copy)
+    func copy() throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.cut)
+    func cut() throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.delete)
+    func delete(_ unit: UWP.TextRangeUnit, _ count: Int32) throws -> Int32
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.endof)
+    func endOf(_ unit: UWP.TextRangeUnit, _ extend: Bool) throws -> Int32
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.expand)
+    func expand(_ unit: UWP.TextRangeUnit) throws -> Int32
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.findtext)
+    func findText(_ value: String, _ scanLength: Int32, _ options: UWP.FindOptions) throws -> Int32
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.getcharacterutf32)
+    func getCharacterUtf32(_ value: inout UInt32, _ offset: Int32) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.getclone)
+    func getClone() throws -> UWP.AnyITextRange!
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.getindex)
+    func getIndex(_ unit: UWP.TextRangeUnit) throws -> Int32
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.getpoint)
+    func getPoint(_ horizontalAlign: UWP.HorizontalCharacterAlignment, _ verticalAlign: UWP.VerticalCharacterAlignment, _ options: UWP.PointOptions, _ point: inout WindowsFoundation.Point) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.getrect)
+    func getRect(_ options: UWP.PointOptions, _ rect: inout WindowsFoundation.Rect, _ hit: inout Int32) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.gettext)
+    func getText(_ options: UWP.TextGetOptions, _ value: inout String) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.gettextviastream)
+    func getTextViaStream(_ options: UWP.TextGetOptions, _ value: UWP.AnyIRandomAccessStream!) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.inrange)
+    func inRange(_ range: UWP.AnyITextRange!) throws -> Bool
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.insertimage)
+    func insertImage(_ width: Int32, _ height: Int32, _ ascent: Int32, _ verticalAlign: UWP.VerticalCharacterAlignment, _ alternateText: String, _ value: UWP.AnyIRandomAccessStream!) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.instory)
+    func inStory(_ range: UWP.AnyITextRange!) throws -> Bool
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.isequal)
+    func isEqual(_ range: UWP.AnyITextRange!) throws -> Bool
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.move)
+    func move(_ unit: UWP.TextRangeUnit, _ count: Int32) throws -> Int32
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.moveend)
+    func moveEnd(_ unit: UWP.TextRangeUnit, _ count: Int32) throws -> Int32
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.movestart)
+    func moveStart(_ unit: UWP.TextRangeUnit, _ count: Int32) throws -> Int32
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.paste)
+    func paste(_ format: Int32) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.scrollintoview)
+    func scrollIntoView(_ value: UWP.PointOptions) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.matchselection)
+    func matchSelection() throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.setindex)
+    func setIndex(_ unit: UWP.TextRangeUnit, _ index: Int32, _ extend: Bool) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.setpoint)
+    func setPoint(_ point: WindowsFoundation.Point, _ options: UWP.PointOptions, _ extend: Bool) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.setrange)
+    func setRange(_ startPosition: Int32, _ endPosition: Int32) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.settext)
+    func setText(_ options: UWP.TextSetOptions, _ value: String) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.settextviastream)
+    func setTextViaStream(_ options: UWP.TextSetOptions, _ value: UWP.AnyIRandomAccessStream!) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.startof)
+    func startOf(_ unit: UWP.TextRangeUnit, _ extend: Bool) throws -> Int32
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.character)
+    var character: Character { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.characterformat)
+    var characterFormat: UWP.AnyITextCharacterFormat! { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.endposition)
+    var endPosition: Int32 { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.formattedtext)
+    var formattedText: UWP.AnyITextRange! { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.gravity)
+    var gravity: UWP.RangeGravity { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.length)
+    var length: Int32 { get }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.link)
+    var link: String { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.paragraphformat)
+    var paragraphFormat: UWP.AnyITextParagraphFormat! { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.startposition)
+    var startPosition: Int32 { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.storylength)
+    var storyLength: Int32 { get }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextrange.text)
+    var text: String { get set }
+}
+
+extension ITextRange {
+    public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        switch iid {
+            case __ABI_Windows_UI_Text.ITextRangeWrapper.IID:
+                let wrapper = __ABI_Windows_UI_Text.ITextRangeWrapper(self)
+                return wrapper!.queryInterface(iid)
+            default: return nil
+        }
+    }
+}
+public typealias AnyITextRange = any ITextRange
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextselection)
+public protocol ITextSelection : ITextRange {
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextselection.endkey)
+    func endKey(_ unit: UWP.TextRangeUnit, _ extend: Bool) throws -> Int32
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextselection.homekey)
+    func homeKey(_ unit: UWP.TextRangeUnit, _ extend: Bool) throws -> Int32
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextselection.movedown)
+    func moveDown(_ unit: UWP.TextRangeUnit, _ count: Int32, _ extend: Bool) throws -> Int32
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextselection.moveleft)
+    func moveLeft(_ unit: UWP.TextRangeUnit, _ count: Int32, _ extend: Bool) throws -> Int32
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextselection.moveright)
+    func moveRight(_ unit: UWP.TextRangeUnit, _ count: Int32, _ extend: Bool) throws -> Int32
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextselection.moveup)
+    func moveUp(_ unit: UWP.TextRangeUnit, _ count: Int32, _ extend: Bool) throws -> Int32
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextselection.typetext)
+    func typeText(_ value: String) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextselection.options)
+    var options: UWP.SelectionOptions { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.text.itextselection.type)
+    var type: UWP.SelectionType { get }
+}
+
+extension ITextSelection {
+    public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        switch iid {
+            case __ABI_Windows_UI_Text.ITextSelectionWrapper.IID:
+                let wrapper = __ABI_Windows_UI_Text.ITextSelectionWrapper(self)
+                return wrapper!.queryInterface(iid)
+            case __ABI_Windows_UI_Text.ITextRangeWrapper.IID:
+                let wrapper = __ABI_Windows_UI_Text.ITextRangeWrapper(self)
+                return wrapper!.queryInterface(iid)
+            default: return nil
+        }
+    }
+}
+public typealias AnyITextSelection = any ITextSelection
+
+extension UWP.CaretType {
+    public static var normal : UWP.CaretType {
+        __x_ABI_CWindows_CUI_CText_CCaretType_Normal
+    }
+    public static var null : UWP.CaretType {
+        __x_ABI_CWindows_CUI_CText_CCaretType_Null
+    }
+}
+extension UWP.CaretType: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.FindOptions {
+    public static var none : UWP.FindOptions {
+        __x_ABI_CWindows_CUI_CText_CFindOptions_None
+    }
+    public static var word : UWP.FindOptions {
+        __x_ABI_CWindows_CUI_CText_CFindOptions_Word
+    }
+    public static var `case` : UWP.FindOptions {
+        __x_ABI_CWindows_CUI_CText_CFindOptions_Case
+    }
+}
+extension UWP.FindOptions: @retroactive Hashable, @retroactive Codable {}
 
 extension UWP.FontStretch {
     public static var undefined : UWP.FontStretch {
@@ -155,6 +1125,409 @@ extension UWP.FontStyle {
 }
 extension UWP.FontStyle: @retroactive Hashable, @retroactive Codable {}
 
+extension UWP.FormatEffect {
+    public static var off : UWP.FormatEffect {
+        __x_ABI_CWindows_CUI_CText_CFormatEffect_Off
+    }
+    public static var on : UWP.FormatEffect {
+        __x_ABI_CWindows_CUI_CText_CFormatEffect_On
+    }
+    public static var toggle : UWP.FormatEffect {
+        __x_ABI_CWindows_CUI_CText_CFormatEffect_Toggle
+    }
+    public static var undefined : UWP.FormatEffect {
+        __x_ABI_CWindows_CUI_CText_CFormatEffect_Undefined
+    }
+}
+extension UWP.FormatEffect: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.HorizontalCharacterAlignment {
+    public static var left : UWP.HorizontalCharacterAlignment {
+        __x_ABI_CWindows_CUI_CText_CHorizontalCharacterAlignment_Left
+    }
+    public static var right : UWP.HorizontalCharacterAlignment {
+        __x_ABI_CWindows_CUI_CText_CHorizontalCharacterAlignment_Right
+    }
+    public static var center : UWP.HorizontalCharacterAlignment {
+        __x_ABI_CWindows_CUI_CText_CHorizontalCharacterAlignment_Center
+    }
+}
+extension UWP.HorizontalCharacterAlignment: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.LetterCase {
+    public static var lower : UWP.LetterCase {
+        __x_ABI_CWindows_CUI_CText_CLetterCase_Lower
+    }
+    public static var upper : UWP.LetterCase {
+        __x_ABI_CWindows_CUI_CText_CLetterCase_Upper
+    }
+}
+extension UWP.LetterCase: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.LineSpacingRule {
+    public static var undefined : UWP.LineSpacingRule {
+        __x_ABI_CWindows_CUI_CText_CLineSpacingRule_Undefined
+    }
+    public static var single : UWP.LineSpacingRule {
+        __x_ABI_CWindows_CUI_CText_CLineSpacingRule_Single
+    }
+    public static var oneAndHalf : UWP.LineSpacingRule {
+        __x_ABI_CWindows_CUI_CText_CLineSpacingRule_OneAndHalf
+    }
+    public static var double : UWP.LineSpacingRule {
+        __x_ABI_CWindows_CUI_CText_CLineSpacingRule_Double
+    }
+    public static var atLeast : UWP.LineSpacingRule {
+        __x_ABI_CWindows_CUI_CText_CLineSpacingRule_AtLeast
+    }
+    public static var exactly : UWP.LineSpacingRule {
+        __x_ABI_CWindows_CUI_CText_CLineSpacingRule_Exactly
+    }
+    public static var multiple : UWP.LineSpacingRule {
+        __x_ABI_CWindows_CUI_CText_CLineSpacingRule_Multiple
+    }
+    public static var percent : UWP.LineSpacingRule {
+        __x_ABI_CWindows_CUI_CText_CLineSpacingRule_Percent
+    }
+}
+extension UWP.LineSpacingRule: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.LinkType {
+    public static var undefined : UWP.LinkType {
+        __x_ABI_CWindows_CUI_CText_CLinkType_Undefined
+    }
+    public static var notALink : UWP.LinkType {
+        __x_ABI_CWindows_CUI_CText_CLinkType_NotALink
+    }
+    public static var clientLink : UWP.LinkType {
+        __x_ABI_CWindows_CUI_CText_CLinkType_ClientLink
+    }
+    public static var friendlyLinkName : UWP.LinkType {
+        __x_ABI_CWindows_CUI_CText_CLinkType_FriendlyLinkName
+    }
+    public static var friendlyLinkAddress : UWP.LinkType {
+        __x_ABI_CWindows_CUI_CText_CLinkType_FriendlyLinkAddress
+    }
+    public static var autoLink : UWP.LinkType {
+        __x_ABI_CWindows_CUI_CText_CLinkType_AutoLink
+    }
+    public static var autoLinkEmail : UWP.LinkType {
+        __x_ABI_CWindows_CUI_CText_CLinkType_AutoLinkEmail
+    }
+    public static var autoLinkPhone : UWP.LinkType {
+        __x_ABI_CWindows_CUI_CText_CLinkType_AutoLinkPhone
+    }
+    public static var autoLinkPath : UWP.LinkType {
+        __x_ABI_CWindows_CUI_CText_CLinkType_AutoLinkPath
+    }
+}
+extension UWP.LinkType: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.MarkerAlignment {
+    public static var undefined : UWP.MarkerAlignment {
+        __x_ABI_CWindows_CUI_CText_CMarkerAlignment_Undefined
+    }
+    public static var left : UWP.MarkerAlignment {
+        __x_ABI_CWindows_CUI_CText_CMarkerAlignment_Left
+    }
+    public static var center : UWP.MarkerAlignment {
+        __x_ABI_CWindows_CUI_CText_CMarkerAlignment_Center
+    }
+    public static var right : UWP.MarkerAlignment {
+        __x_ABI_CWindows_CUI_CText_CMarkerAlignment_Right
+    }
+}
+extension UWP.MarkerAlignment: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.MarkerStyle {
+    public static var undefined : UWP.MarkerStyle {
+        __x_ABI_CWindows_CUI_CText_CMarkerStyle_Undefined
+    }
+    public static var parenthesis : UWP.MarkerStyle {
+        __x_ABI_CWindows_CUI_CText_CMarkerStyle_Parenthesis
+    }
+    public static var parentheses : UWP.MarkerStyle {
+        __x_ABI_CWindows_CUI_CText_CMarkerStyle_Parentheses
+    }
+    public static var period : UWP.MarkerStyle {
+        __x_ABI_CWindows_CUI_CText_CMarkerStyle_Period
+    }
+    public static var plain : UWP.MarkerStyle {
+        __x_ABI_CWindows_CUI_CText_CMarkerStyle_Plain
+    }
+    public static var minus : UWP.MarkerStyle {
+        __x_ABI_CWindows_CUI_CText_CMarkerStyle_Minus
+    }
+    public static var noNumber : UWP.MarkerStyle {
+        __x_ABI_CWindows_CUI_CText_CMarkerStyle_NoNumber
+    }
+}
+extension UWP.MarkerStyle: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.MarkerType {
+    public static var undefined : UWP.MarkerType {
+        __x_ABI_CWindows_CUI_CText_CMarkerType_Undefined
+    }
+    public static var none : UWP.MarkerType {
+        __x_ABI_CWindows_CUI_CText_CMarkerType_None
+    }
+    public static var bullet : UWP.MarkerType {
+        __x_ABI_CWindows_CUI_CText_CMarkerType_Bullet
+    }
+    public static var arabic : UWP.MarkerType {
+        __x_ABI_CWindows_CUI_CText_CMarkerType_Arabic
+    }
+    public static var lowercaseEnglishLetter : UWP.MarkerType {
+        __x_ABI_CWindows_CUI_CText_CMarkerType_LowercaseEnglishLetter
+    }
+    public static var uppercaseEnglishLetter : UWP.MarkerType {
+        __x_ABI_CWindows_CUI_CText_CMarkerType_UppercaseEnglishLetter
+    }
+    public static var lowercaseRoman : UWP.MarkerType {
+        __x_ABI_CWindows_CUI_CText_CMarkerType_LowercaseRoman
+    }
+    public static var uppercaseRoman : UWP.MarkerType {
+        __x_ABI_CWindows_CUI_CText_CMarkerType_UppercaseRoman
+    }
+    public static var unicodeSequence : UWP.MarkerType {
+        __x_ABI_CWindows_CUI_CText_CMarkerType_UnicodeSequence
+    }
+    public static var circledNumber : UWP.MarkerType {
+        __x_ABI_CWindows_CUI_CText_CMarkerType_CircledNumber
+    }
+    public static var blackCircleWingding : UWP.MarkerType {
+        __x_ABI_CWindows_CUI_CText_CMarkerType_BlackCircleWingding
+    }
+    public static var whiteCircleWingding : UWP.MarkerType {
+        __x_ABI_CWindows_CUI_CText_CMarkerType_WhiteCircleWingding
+    }
+    public static var arabicWide : UWP.MarkerType {
+        __x_ABI_CWindows_CUI_CText_CMarkerType_ArabicWide
+    }
+    public static var simplifiedChinese : UWP.MarkerType {
+        __x_ABI_CWindows_CUI_CText_CMarkerType_SimplifiedChinese
+    }
+    public static var traditionalChinese : UWP.MarkerType {
+        __x_ABI_CWindows_CUI_CText_CMarkerType_TraditionalChinese
+    }
+    public static var japanSimplifiedChinese : UWP.MarkerType {
+        __x_ABI_CWindows_CUI_CText_CMarkerType_JapanSimplifiedChinese
+    }
+    public static var japanKorea : UWP.MarkerType {
+        __x_ABI_CWindows_CUI_CText_CMarkerType_JapanKorea
+    }
+    public static var arabicDictionary : UWP.MarkerType {
+        __x_ABI_CWindows_CUI_CText_CMarkerType_ArabicDictionary
+    }
+    public static var arabicAbjad : UWP.MarkerType {
+        __x_ABI_CWindows_CUI_CText_CMarkerType_ArabicAbjad
+    }
+    public static var hebrew : UWP.MarkerType {
+        __x_ABI_CWindows_CUI_CText_CMarkerType_Hebrew
+    }
+    public static var thaiAlphabetic : UWP.MarkerType {
+        __x_ABI_CWindows_CUI_CText_CMarkerType_ThaiAlphabetic
+    }
+    public static var thaiNumeric : UWP.MarkerType {
+        __x_ABI_CWindows_CUI_CText_CMarkerType_ThaiNumeric
+    }
+    public static var devanagariVowel : UWP.MarkerType {
+        __x_ABI_CWindows_CUI_CText_CMarkerType_DevanagariVowel
+    }
+    public static var devanagariConsonant : UWP.MarkerType {
+        __x_ABI_CWindows_CUI_CText_CMarkerType_DevanagariConsonant
+    }
+    public static var devanagariNumeric : UWP.MarkerType {
+        __x_ABI_CWindows_CUI_CText_CMarkerType_DevanagariNumeric
+    }
+}
+extension UWP.MarkerType: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.ParagraphAlignment {
+    public static var undefined : UWP.ParagraphAlignment {
+        __x_ABI_CWindows_CUI_CText_CParagraphAlignment_Undefined
+    }
+    public static var left : UWP.ParagraphAlignment {
+        __x_ABI_CWindows_CUI_CText_CParagraphAlignment_Left
+    }
+    public static var center : UWP.ParagraphAlignment {
+        __x_ABI_CWindows_CUI_CText_CParagraphAlignment_Center
+    }
+    public static var right : UWP.ParagraphAlignment {
+        __x_ABI_CWindows_CUI_CText_CParagraphAlignment_Right
+    }
+    public static var justify : UWP.ParagraphAlignment {
+        __x_ABI_CWindows_CUI_CText_CParagraphAlignment_Justify
+    }
+}
+extension UWP.ParagraphAlignment: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.ParagraphStyle {
+    public static var undefined : UWP.ParagraphStyle {
+        __x_ABI_CWindows_CUI_CText_CParagraphStyle_Undefined
+    }
+    public static var none : UWP.ParagraphStyle {
+        __x_ABI_CWindows_CUI_CText_CParagraphStyle_None
+    }
+    public static var normal : UWP.ParagraphStyle {
+        __x_ABI_CWindows_CUI_CText_CParagraphStyle_Normal
+    }
+    public static var heading1 : UWP.ParagraphStyle {
+        __x_ABI_CWindows_CUI_CText_CParagraphStyle_Heading1
+    }
+    public static var heading2 : UWP.ParagraphStyle {
+        __x_ABI_CWindows_CUI_CText_CParagraphStyle_Heading2
+    }
+    public static var heading3 : UWP.ParagraphStyle {
+        __x_ABI_CWindows_CUI_CText_CParagraphStyle_Heading3
+    }
+    public static var heading4 : UWP.ParagraphStyle {
+        __x_ABI_CWindows_CUI_CText_CParagraphStyle_Heading4
+    }
+    public static var heading5 : UWP.ParagraphStyle {
+        __x_ABI_CWindows_CUI_CText_CParagraphStyle_Heading5
+    }
+    public static var heading6 : UWP.ParagraphStyle {
+        __x_ABI_CWindows_CUI_CText_CParagraphStyle_Heading6
+    }
+    public static var heading7 : UWP.ParagraphStyle {
+        __x_ABI_CWindows_CUI_CText_CParagraphStyle_Heading7
+    }
+    public static var heading8 : UWP.ParagraphStyle {
+        __x_ABI_CWindows_CUI_CText_CParagraphStyle_Heading8
+    }
+    public static var heading9 : UWP.ParagraphStyle {
+        __x_ABI_CWindows_CUI_CText_CParagraphStyle_Heading9
+    }
+}
+extension UWP.ParagraphStyle: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.PointOptions {
+    public static var none : UWP.PointOptions {
+        __x_ABI_CWindows_CUI_CText_CPointOptions_None
+    }
+    public static var includeInset : UWP.PointOptions {
+        __x_ABI_CWindows_CUI_CText_CPointOptions_IncludeInset
+    }
+    public static var start : UWP.PointOptions {
+        __x_ABI_CWindows_CUI_CText_CPointOptions_Start
+    }
+    public static var clientCoordinates : UWP.PointOptions {
+        __x_ABI_CWindows_CUI_CText_CPointOptions_ClientCoordinates
+    }
+    public static var allowOffClient : UWP.PointOptions {
+        __x_ABI_CWindows_CUI_CText_CPointOptions_AllowOffClient
+    }
+    public static var transform : UWP.PointOptions {
+        __x_ABI_CWindows_CUI_CText_CPointOptions_Transform
+    }
+    public static var noHorizontalScroll : UWP.PointOptions {
+        __x_ABI_CWindows_CUI_CText_CPointOptions_NoHorizontalScroll
+    }
+    public static var noVerticalScroll : UWP.PointOptions {
+        __x_ABI_CWindows_CUI_CText_CPointOptions_NoVerticalScroll
+    }
+}
+extension UWP.PointOptions: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.RangeGravity {
+    public static var uiBehavior : UWP.RangeGravity {
+        __x_ABI_CWindows_CUI_CText_CRangeGravity_UIBehavior
+    }
+    public static var backward : UWP.RangeGravity {
+        __x_ABI_CWindows_CUI_CText_CRangeGravity_Backward
+    }
+    public static var forward : UWP.RangeGravity {
+        __x_ABI_CWindows_CUI_CText_CRangeGravity_Forward
+    }
+    public static var inward : UWP.RangeGravity {
+        __x_ABI_CWindows_CUI_CText_CRangeGravity_Inward
+    }
+    public static var outward : UWP.RangeGravity {
+        __x_ABI_CWindows_CUI_CText_CRangeGravity_Outward
+    }
+}
+extension UWP.RangeGravity: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.SelectionOptions {
+    public static var startActive : UWP.SelectionOptions {
+        __x_ABI_CWindows_CUI_CText_CSelectionOptions_StartActive
+    }
+    public static var atEndOfLine : UWP.SelectionOptions {
+        __x_ABI_CWindows_CUI_CText_CSelectionOptions_AtEndOfLine
+    }
+    public static var overtype : UWP.SelectionOptions {
+        __x_ABI_CWindows_CUI_CText_CSelectionOptions_Overtype
+    }
+    public static var active : UWP.SelectionOptions {
+        __x_ABI_CWindows_CUI_CText_CSelectionOptions_Active
+    }
+    public static var replace : UWP.SelectionOptions {
+        __x_ABI_CWindows_CUI_CText_CSelectionOptions_Replace
+    }
+}
+extension UWP.SelectionOptions: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.SelectionType {
+    public static var none : UWP.SelectionType {
+        __x_ABI_CWindows_CUI_CText_CSelectionType_None
+    }
+    public static var insertionPoint : UWP.SelectionType {
+        __x_ABI_CWindows_CUI_CText_CSelectionType_InsertionPoint
+    }
+    public static var normal : UWP.SelectionType {
+        __x_ABI_CWindows_CUI_CText_CSelectionType_Normal
+    }
+    public static var inlineShape : UWP.SelectionType {
+        __x_ABI_CWindows_CUI_CText_CSelectionType_InlineShape
+    }
+    public static var shape : UWP.SelectionType {
+        __x_ABI_CWindows_CUI_CText_CSelectionType_Shape
+    }
+}
+extension UWP.SelectionType: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.TabAlignment {
+    public static var left : UWP.TabAlignment {
+        __x_ABI_CWindows_CUI_CText_CTabAlignment_Left
+    }
+    public static var center : UWP.TabAlignment {
+        __x_ABI_CWindows_CUI_CText_CTabAlignment_Center
+    }
+    public static var right : UWP.TabAlignment {
+        __x_ABI_CWindows_CUI_CText_CTabAlignment_Right
+    }
+    public static var decimal : UWP.TabAlignment {
+        __x_ABI_CWindows_CUI_CText_CTabAlignment_Decimal
+    }
+    public static var bar : UWP.TabAlignment {
+        __x_ABI_CWindows_CUI_CText_CTabAlignment_Bar
+    }
+}
+extension UWP.TabAlignment: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.TabLeader {
+    public static var spaces : UWP.TabLeader {
+        __x_ABI_CWindows_CUI_CText_CTabLeader_Spaces
+    }
+    public static var dots : UWP.TabLeader {
+        __x_ABI_CWindows_CUI_CText_CTabLeader_Dots
+    }
+    public static var dashes : UWP.TabLeader {
+        __x_ABI_CWindows_CUI_CText_CTabLeader_Dashes
+    }
+    public static var lines : UWP.TabLeader {
+        __x_ABI_CWindows_CUI_CText_CTabLeader_Lines
+    }
+    public static var thickLines : UWP.TabLeader {
+        __x_ABI_CWindows_CUI_CText_CTabLeader_ThickLines
+    }
+    public static var equals : UWP.TabLeader {
+        __x_ABI_CWindows_CUI_CText_CTabLeader_Equals
+    }
+}
+extension UWP.TabLeader: @retroactive Hashable, @retroactive Codable {}
+
 extension UWP.TextDecorations {
     public static var none : UWP.TextDecorations {
         __x_ABI_CWindows_CUI_CText_CTextDecorations_None
@@ -167,4 +1540,436 @@ extension UWP.TextDecorations {
     }
 }
 extension UWP.TextDecorations: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.TextGetOptions {
+    public static var none : UWP.TextGetOptions {
+        __x_ABI_CWindows_CUI_CText_CTextGetOptions_None
+    }
+    public static var adjustCrlf : UWP.TextGetOptions {
+        __x_ABI_CWindows_CUI_CText_CTextGetOptions_AdjustCrlf
+    }
+    public static var useCrlf : UWP.TextGetOptions {
+        __x_ABI_CWindows_CUI_CText_CTextGetOptions_UseCrlf
+    }
+    public static var useObjectText : UWP.TextGetOptions {
+        __x_ABI_CWindows_CUI_CText_CTextGetOptions_UseObjectText
+    }
+    public static var allowFinalEop : UWP.TextGetOptions {
+        __x_ABI_CWindows_CUI_CText_CTextGetOptions_AllowFinalEop
+    }
+    public static var noHidden : UWP.TextGetOptions {
+        __x_ABI_CWindows_CUI_CText_CTextGetOptions_NoHidden
+    }
+    public static var includeNumbering : UWP.TextGetOptions {
+        __x_ABI_CWindows_CUI_CText_CTextGetOptions_IncludeNumbering
+    }
+    public static var formatRtf : UWP.TextGetOptions {
+        __x_ABI_CWindows_CUI_CText_CTextGetOptions_FormatRtf
+    }
+    public static var useLf : UWP.TextGetOptions {
+        __x_ABI_CWindows_CUI_CText_CTextGetOptions_UseLf
+    }
+}
+extension UWP.TextGetOptions: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.TextRangeUnit {
+    public static var character : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_Character
+    }
+    public static var word : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_Word
+    }
+    public static var sentence : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_Sentence
+    }
+    public static var paragraph : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_Paragraph
+    }
+    public static var line : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_Line
+    }
+    public static var story : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_Story
+    }
+    public static var screen : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_Screen
+    }
+    public static var section : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_Section
+    }
+    public static var window : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_Window
+    }
+    public static var characterFormat : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_CharacterFormat
+    }
+    public static var paragraphFormat : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_ParagraphFormat
+    }
+    public static var object : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_Object
+    }
+    public static var hardParagraph : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_HardParagraph
+    }
+    public static var cluster : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_Cluster
+    }
+    public static var bold : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_Bold
+    }
+    public static var italic : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_Italic
+    }
+    public static var underline : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_Underline
+    }
+    public static var strikethrough : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_Strikethrough
+    }
+    public static var protectedText : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_ProtectedText
+    }
+    public static var link : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_Link
+    }
+    public static var smallCaps : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_SmallCaps
+    }
+    public static var allCaps : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_AllCaps
+    }
+    public static var hidden : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_Hidden
+    }
+    public static var outline : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_Outline
+    }
+    public static var shadow : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_Shadow
+    }
+    public static var imprint : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_Imprint
+    }
+    public static var disabled : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_Disabled
+    }
+    public static var revised : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_Revised
+    }
+    public static var `subscript` : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_Subscript
+    }
+    public static var superscript : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_Superscript
+    }
+    public static var fontBound : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_FontBound
+    }
+    public static var linkProtected : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_LinkProtected
+    }
+    public static var contentLink : UWP.TextRangeUnit {
+        __x_ABI_CWindows_CUI_CText_CTextRangeUnit_ContentLink
+    }
+}
+extension UWP.TextRangeUnit: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.TextScript {
+    public static var undefined : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Undefined
+    }
+    public static var ansi : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Ansi
+    }
+    public static var eastEurope : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_EastEurope
+    }
+    public static var cyrillic : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Cyrillic
+    }
+    public static var greek : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Greek
+    }
+    public static var turkish : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Turkish
+    }
+    public static var hebrew : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Hebrew
+    }
+    public static var arabic : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Arabic
+    }
+    public static var baltic : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Baltic
+    }
+    public static var vietnamese : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Vietnamese
+    }
+    public static var `default` : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Default
+    }
+    public static var symbol : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Symbol
+    }
+    public static var thai : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Thai
+    }
+    public static var shiftJis : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_ShiftJis
+    }
+    public static var gb2312 : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_GB2312
+    }
+    public static var hangul : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Hangul
+    }
+    public static var big5 : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Big5
+    }
+    public static var pc437 : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_PC437
+    }
+    public static var oem : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Oem
+    }
+    public static var mac : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Mac
+    }
+    public static var armenian : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Armenian
+    }
+    public static var syriac : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Syriac
+    }
+    public static var thaana : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Thaana
+    }
+    public static var devanagari : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Devanagari
+    }
+    public static var bengali : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Bengali
+    }
+    public static var gurmukhi : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Gurmukhi
+    }
+    public static var gujarati : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Gujarati
+    }
+    public static var oriya : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Oriya
+    }
+    public static var tamil : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Tamil
+    }
+    public static var telugu : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Telugu
+    }
+    public static var kannada : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Kannada
+    }
+    public static var malayalam : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Malayalam
+    }
+    public static var sinhala : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Sinhala
+    }
+    public static var lao : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Lao
+    }
+    public static var tibetan : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Tibetan
+    }
+    public static var myanmar : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Myanmar
+    }
+    public static var georgian : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Georgian
+    }
+    public static var jamo : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Jamo
+    }
+    public static var ethiopic : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Ethiopic
+    }
+    public static var cherokee : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Cherokee
+    }
+    public static var aboriginal : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Aboriginal
+    }
+    public static var ogham : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Ogham
+    }
+    public static var runic : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Runic
+    }
+    public static var khmer : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Khmer
+    }
+    public static var mongolian : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Mongolian
+    }
+    public static var braille : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Braille
+    }
+    public static var yi : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Yi
+    }
+    public static var limbu : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Limbu
+    }
+    public static var taiLe : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_TaiLe
+    }
+    public static var newTaiLue : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_NewTaiLue
+    }
+    public static var sylotiNagri : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_SylotiNagri
+    }
+    public static var kharoshthi : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Kharoshthi
+    }
+    public static var kayahli : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Kayahli
+    }
+    public static var unicodeSymbol : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_UnicodeSymbol
+    }
+    public static var emoji : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Emoji
+    }
+    public static var glagolitic : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Glagolitic
+    }
+    public static var lisu : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Lisu
+    }
+    public static var vai : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Vai
+    }
+    public static var nko : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_NKo
+    }
+    public static var osmanya : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Osmanya
+    }
+    public static var phagsPa : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_PhagsPa
+    }
+    public static var gothic : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Gothic
+    }
+    public static var deseret : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Deseret
+    }
+    public static var tifinagh : UWP.TextScript {
+        __x_ABI_CWindows_CUI_CText_CTextScript_Tifinagh
+    }
+}
+extension UWP.TextScript: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.TextSetOptions {
+    public static var none : UWP.TextSetOptions {
+        __x_ABI_CWindows_CUI_CText_CTextSetOptions_None
+    }
+    public static var unicodeBidi : UWP.TextSetOptions {
+        __x_ABI_CWindows_CUI_CText_CTextSetOptions_UnicodeBidi
+    }
+    public static var unlink : UWP.TextSetOptions {
+        __x_ABI_CWindows_CUI_CText_CTextSetOptions_Unlink
+    }
+    public static var unhide : UWP.TextSetOptions {
+        __x_ABI_CWindows_CUI_CText_CTextSetOptions_Unhide
+    }
+    public static var checkTextLimit : UWP.TextSetOptions {
+        __x_ABI_CWindows_CUI_CText_CTextSetOptions_CheckTextLimit
+    }
+    public static var formatRtf : UWP.TextSetOptions {
+        __x_ABI_CWindows_CUI_CText_CTextSetOptions_FormatRtf
+    }
+    public static var applyRtfDocumentDefaults : UWP.TextSetOptions {
+        __x_ABI_CWindows_CUI_CText_CTextSetOptions_ApplyRtfDocumentDefaults
+    }
+}
+extension UWP.TextSetOptions: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.UnderlineType {
+    public static var undefined : UWP.UnderlineType {
+        __x_ABI_CWindows_CUI_CText_CUnderlineType_Undefined
+    }
+    public static var none : UWP.UnderlineType {
+        __x_ABI_CWindows_CUI_CText_CUnderlineType_None
+    }
+    public static var single : UWP.UnderlineType {
+        __x_ABI_CWindows_CUI_CText_CUnderlineType_Single
+    }
+    public static var words : UWP.UnderlineType {
+        __x_ABI_CWindows_CUI_CText_CUnderlineType_Words
+    }
+    public static var double : UWP.UnderlineType {
+        __x_ABI_CWindows_CUI_CText_CUnderlineType_Double
+    }
+    public static var dotted : UWP.UnderlineType {
+        __x_ABI_CWindows_CUI_CText_CUnderlineType_Dotted
+    }
+    public static var dash : UWP.UnderlineType {
+        __x_ABI_CWindows_CUI_CText_CUnderlineType_Dash
+    }
+    public static var dashDot : UWP.UnderlineType {
+        __x_ABI_CWindows_CUI_CText_CUnderlineType_DashDot
+    }
+    public static var dashDotDot : UWP.UnderlineType {
+        __x_ABI_CWindows_CUI_CText_CUnderlineType_DashDotDot
+    }
+    public static var wave : UWP.UnderlineType {
+        __x_ABI_CWindows_CUI_CText_CUnderlineType_Wave
+    }
+    public static var thick : UWP.UnderlineType {
+        __x_ABI_CWindows_CUI_CText_CUnderlineType_Thick
+    }
+    public static var thin : UWP.UnderlineType {
+        __x_ABI_CWindows_CUI_CText_CUnderlineType_Thin
+    }
+    public static var doubleWave : UWP.UnderlineType {
+        __x_ABI_CWindows_CUI_CText_CUnderlineType_DoubleWave
+    }
+    public static var heavyWave : UWP.UnderlineType {
+        __x_ABI_CWindows_CUI_CText_CUnderlineType_HeavyWave
+    }
+    public static var longDash : UWP.UnderlineType {
+        __x_ABI_CWindows_CUI_CText_CUnderlineType_LongDash
+    }
+    public static var thickDash : UWP.UnderlineType {
+        __x_ABI_CWindows_CUI_CText_CUnderlineType_ThickDash
+    }
+    public static var thickDashDot : UWP.UnderlineType {
+        __x_ABI_CWindows_CUI_CText_CUnderlineType_ThickDashDot
+    }
+    public static var thickDashDotDot : UWP.UnderlineType {
+        __x_ABI_CWindows_CUI_CText_CUnderlineType_ThickDashDotDot
+    }
+    public static var thickDotted : UWP.UnderlineType {
+        __x_ABI_CWindows_CUI_CText_CUnderlineType_ThickDotted
+    }
+    public static var thickLongDash : UWP.UnderlineType {
+        __x_ABI_CWindows_CUI_CText_CUnderlineType_ThickLongDash
+    }
+}
+extension UWP.UnderlineType: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.VerticalCharacterAlignment {
+    public static var top : UWP.VerticalCharacterAlignment {
+        __x_ABI_CWindows_CUI_CText_CVerticalCharacterAlignment_Top
+    }
+    public static var baseline : UWP.VerticalCharacterAlignment {
+        __x_ABI_CWindows_CUI_CText_CVerticalCharacterAlignment_Baseline
+    }
+    public static var bottom : UWP.VerticalCharacterAlignment {
+        __x_ABI_CWindows_CUI_CText_CVerticalCharacterAlignment_Bottom
+    }
+}
+extension UWP.VerticalCharacterAlignment: @retroactive Hashable, @retroactive Codable {}
 

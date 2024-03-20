@@ -49,6 +49,95 @@ public final class Ellipse : WinUI.Shape {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.line)
+public final class Line : WinUI.Shape {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Shapes.ILine
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CILine
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CShapes_CILine>?) -> Line? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    override public init() {
+        super.init(fromAbi: try! RoActivateInstance(HString("Microsoft.UI.Xaml.Shapes.Line")))
+    }
+
+    private static let _ILineStatics: __ABI_Microsoft_UI_Xaml_Shapes.ILineStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Shapes.Line"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.line.x1property)
+    public static var x1Property : WinUI.DependencyProperty! {
+        get { try! _ILineStatics.get_X1PropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.line.x2property)
+    public static var x2Property : WinUI.DependencyProperty! {
+        get { try! _ILineStatics.get_X2PropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.line.y1property)
+    public static var y1Property : WinUI.DependencyProperty! {
+        get { try! _ILineStatics.get_Y1PropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.line.y2property)
+    public static var y2Property : WinUI.DependencyProperty! {
+        get { try! _ILineStatics.get_Y2PropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.line.x1)
+    public var x1 : Double {
+        get { try! _default.get_X1Impl() }
+        set { try! _default.put_X1Impl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.line.x2)
+    public var x2 : Double {
+        get { try! _default.get_X2Impl() }
+        set { try! _default.put_X2Impl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.line.y1)
+    public var y1 : Double {
+        get { try! _default.get_Y1Impl() }
+        set { try! _default.put_Y1Impl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.line.y2)
+    public var y2 : Double {
+        get { try! _default.get_Y2Impl() }
+        set { try! _default.put_Y2Impl(newValue) }
+    }
+
+    internal enum IFrameworkElementOverrides : ComposableImpl {
+        internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkElementOverrides
+        internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IFrameworkElementOverrides
+        internal typealias Class = Line
+        internal typealias SwiftProjection = WinRTClassWeakReference<Class>
+        internal enum Default : AbiInterface {
+            internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CILine
+            internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Shapes.ILine
+        }
+    }
+    internal typealias Composable = IFrameworkElementOverrides
+    deinit {
+        _default = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.path)
 open class Path : WinUI.Shape {
     private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Shapes.IPath
@@ -111,6 +200,140 @@ open class Path : WinUI.Shape {
         internal enum Default : AbiInterface {
             internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPath
             internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Shapes.IPath
+        }
+    }
+    internal typealias Composable = IFrameworkElementOverrides
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.polygon)
+public final class Polygon : WinUI.Shape {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Shapes.IPolygon
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPolygon
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPolygon>?) -> Polygon? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    override public init() {
+        super.init(fromAbi: try! RoActivateInstance(HString("Microsoft.UI.Xaml.Shapes.Polygon")))
+    }
+
+    private static let _IPolygonStatics: __ABI_Microsoft_UI_Xaml_Shapes.IPolygonStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Shapes.Polygon"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.polygon.fillruleproperty)
+    public static var fillRuleProperty : WinUI.DependencyProperty! {
+        get { try! _IPolygonStatics.get_FillRulePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.polygon.pointsproperty)
+    public static var pointsProperty : WinUI.DependencyProperty! {
+        get { try! _IPolygonStatics.get_PointsPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.polygon.fillrule)
+    public var fillRule : WinUI.FillRule {
+        get { try! _default.get_FillRuleImpl() }
+        set { try! _default.put_FillRuleImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.polygon.points)
+    public var points : WinUI.PointCollection! {
+        get { try! _default.get_PointsImpl() }
+        set { try! _default.put_PointsImpl(newValue) }
+    }
+
+    internal enum IFrameworkElementOverrides : ComposableImpl {
+        internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkElementOverrides
+        internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IFrameworkElementOverrides
+        internal typealias Class = Polygon
+        internal typealias SwiftProjection = WinRTClassWeakReference<Class>
+        internal enum Default : AbiInterface {
+            internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPolygon
+            internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Shapes.IPolygon
+        }
+    }
+    internal typealias Composable = IFrameworkElementOverrides
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.polyline)
+public final class Polyline : WinUI.Shape {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Shapes.IPolyline
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPolyline
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPolyline>?) -> Polyline? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    override public init() {
+        super.init(fromAbi: try! RoActivateInstance(HString("Microsoft.UI.Xaml.Shapes.Polyline")))
+    }
+
+    private static let _IPolylineStatics: __ABI_Microsoft_UI_Xaml_Shapes.IPolylineStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Shapes.Polyline"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.polyline.fillruleproperty)
+    public static var fillRuleProperty : WinUI.DependencyProperty! {
+        get { try! _IPolylineStatics.get_FillRulePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.polyline.pointsproperty)
+    public static var pointsProperty : WinUI.DependencyProperty! {
+        get { try! _IPolylineStatics.get_PointsPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.polyline.fillrule)
+    public var fillRule : WinUI.FillRule {
+        get { try! _default.get_FillRuleImpl() }
+        set { try! _default.put_FillRuleImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.shapes.polyline.points)
+    public var points : WinUI.PointCollection! {
+        get { try! _default.get_PointsImpl() }
+        set { try! _default.put_PointsImpl(newValue) }
+    }
+
+    internal enum IFrameworkElementOverrides : ComposableImpl {
+        internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CIFrameworkElementOverrides
+        internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml.IFrameworkElementOverrides
+        internal typealias Class = Polyline
+        internal typealias SwiftProjection = WinRTClassWeakReference<Class>
+        internal enum Default : AbiInterface {
+            internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CShapes_CIPolyline
+            internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Shapes.IPolyline
         }
     }
     internal typealias Composable = IFrameworkElementOverrides

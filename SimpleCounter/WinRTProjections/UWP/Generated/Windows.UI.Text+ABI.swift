@@ -4,6 +4,10 @@ import Foundation
 @_spi(WinRTInternal) @_spi(WinRTImplements) import WindowsFoundation
 import CWinRT
 
+private var IID___x_ABI_CWindows_CUI_CText_CIContentLinkInfo: WindowsFoundation.IID {
+    .init(Data1: 0x1ED52525, Data2: 0x1C5F, Data3: 0x48CB, Data4: ( 0xB3,0x35,0x78,0xB5,0x0A,0x2E,0xE6,0x42 ))// 1ED52525-1C5F-48CB-B335-78B50A2EE642
+}
+
 private var IID___x_ABI_CWindows_CUI_CText_CIFontWeights: WindowsFoundation.IID {
     .init(Data1: 0x7880A444, Data2: 0x01AB, Data3: 0x4997, Data4: ( 0x85,0x17,0xDF,0x82,0x2A,0x0C,0x45,0xF1 ))// 7880A444-01AB-4997-8517-DF822A0C45F1
 }
@@ -12,7 +16,122 @@ private var IID___x_ABI_CWindows_CUI_CText_CIFontWeightsStatics: WindowsFoundati
     .init(Data1: 0xB3B579D5, Data2: 0x1BA9, Data3: 0x48EB, Data4: ( 0x9D,0xAD,0xC0,0x95,0xE8,0xC2,0x3B,0xA3 ))// B3B579D5-1BA9-48EB-9DAD-C095E8C23BA3
 }
 
+private var IID___x_ABI_CWindows_CUI_CText_CIRichEditTextRange: WindowsFoundation.IID {
+    .init(Data1: 0x374E3515, Data2: 0xBA8A, Data3: 0x4A6E, Data4: ( 0x8C,0x59,0x0D,0xDE,0x3D,0x0C,0xF5,0xCD ))// 374E3515-BA8A-4A6E-8C59-0DDE3D0CF5CD
+}
+
+private var IID___x_ABI_CWindows_CUI_CText_CITextCharacterFormat: WindowsFoundation.IID {
+    .init(Data1: 0x5ADEF3DB, Data2: 0x05FB, Data3: 0x442D, Data4: ( 0x80,0x65,0x64,0x2A,0xFE,0xA0,0x2C,0xED ))// 5ADEF3DB-05FB-442D-8065-642AFEA02CED
+}
+
+private var IID___x_ABI_CWindows_CUI_CText_CITextConstantsStatics: WindowsFoundation.IID {
+    .init(Data1: 0x779E7C33, Data2: 0x189D, Data3: 0x4BFA, Data4: ( 0x97,0xC8,0x10,0xDB,0x13,0x5D,0x97,0x6E ))// 779E7C33-189D-4BFA-97C8-10DB135D976E
+}
+
+private var IID___x_ABI_CWindows_CUI_CText_CITextDocument: WindowsFoundation.IID {
+    .init(Data1: 0xBEEE4DDB, Data2: 0x90B2, Data3: 0x408C, Data4: ( 0xA2,0xF6,0x0A,0x0A,0xC3,0x1E,0x33,0xE4 ))// BEEE4DDB-90B2-408C-A2F6-0A0AC31E33E4
+}
+
+private var IID___x_ABI_CWindows_CUI_CText_CITextDocument2: WindowsFoundation.IID {
+    .init(Data1: 0xF2311112, Data2: 0x8C89, Data3: 0x49C9, Data4: ( 0x91,0x18,0xF0,0x57,0xCB,0xB8,0x14,0xEE ))// F2311112-8C89-49C9-9118-F057CBB814EE
+}
+
+private var IID___x_ABI_CWindows_CUI_CText_CITextDocument3: WindowsFoundation.IID {
+    .init(Data1: 0x75AB03A1, Data2: 0xA6F8, Data3: 0x441D, Data4: ( 0xAA,0x18,0x0A,0x85,0x1D,0x6E,0x5E,0x3C ))// 75AB03A1-A6F8-441D-AA18-0A851D6E5E3C
+}
+
+private var IID___x_ABI_CWindows_CUI_CText_CITextParagraphFormat: WindowsFoundation.IID {
+    .init(Data1: 0x2CF8CFA6, Data2: 0x4676, Data3: 0x498A, Data4: ( 0x93,0xF5,0xBB,0xDB,0xFC,0x0B,0xD8,0x83 ))// 2CF8CFA6-4676-498A-93F5-BBDBFC0BD883
+}
+
+private var IID___x_ABI_CWindows_CUI_CText_CITextRange: WindowsFoundation.IID {
+    .init(Data1: 0x5B9E4E57, Data2: 0xC072, Data3: 0x42A0, Data4: ( 0x89,0x45,0xAF,0x50,0x3E,0xE5,0x47,0x68 ))// 5B9E4E57-C072-42A0-8945-AF503EE54768
+}
+
+private var IID___x_ABI_CWindows_CUI_CText_CITextSelection: WindowsFoundation.IID {
+    .init(Data1: 0xA6D36724, Data2: 0xF28F, Data3: 0x430A, Data4: ( 0xB2,0xCF,0xC3,0x43,0x67,0x1E,0xC0,0xE9 ))// A6D36724-F28F-430A-B2CF-C343671EC0E9
+}
+
 public enum __ABI_Windows_UI_Text {
+    public class IContentLinkInfo: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CText_CIContentLinkInfo }
+
+        internal func get_IdImpl() throws -> UInt32 {
+            var value: UINT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CIContentLinkInfo.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Id(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_IdImpl(_ value: UInt32) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CIContentLinkInfo.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Id(pThis, value))
+            }
+        }
+
+        internal func get_DisplayTextImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CIContentLinkInfo.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DisplayText(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_DisplayTextImpl(_ value: String) throws {
+            let _value = try! HString(value)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CIContentLinkInfo.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_DisplayText(pThis, _value.get()))
+            }
+        }
+
+        internal func get_SecondaryTextImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CIContentLinkInfo.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_SecondaryText(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_SecondaryTextImpl(_ value: String) throws {
+            let _value = try! HString(value)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CIContentLinkInfo.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SecondaryText(pThis, _value.get()))
+            }
+        }
+
+        internal func get_UriImpl() throws -> WindowsFoundation.Uri? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CText_CIContentLinkInfo.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Uri(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_UriImpl(_ value: WindowsFoundation.Uri?) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CIContentLinkInfo.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Uri(pThis, RawPointer(value)))
+            }
+        }
+
+        internal func get_LinkContentKindImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CIContentLinkInfo.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LinkContentKind(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_LinkContentKindImpl(_ value: String) throws {
+            let _value = try! HString(value)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CIContentLinkInfo.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_LinkContentKind(pThis, _value.get()))
+            }
+        }
+
+    }
+
     public class IFontWeights: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CText_CIFontWeights }
 
@@ -111,6 +230,3233 @@ public enum __ABI_Windows_UI_Text {
 
     }
 
+    public class IRichEditTextRange: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CText_CIRichEditTextRange }
+
+        internal func get_ContentLinkInfoImpl() throws -> UWP.ContentLinkInfo? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CText_CIRichEditTextRange.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ContentLinkInfo(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+        internal func put_ContentLinkInfoImpl(_ value: UWP.ContentLinkInfo?) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CIRichEditTextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ContentLinkInfo(pThis, RawPointer(value)))
+            }
+        }
+
+    }
+
+    public class ITextCharacterFormat: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CText_CITextCharacterFormat }
+
+        open func get_AllCapsImpl() throws -> UWP.FormatEffect {
+            var value: __x_ABI_CWindows_CUI_CText_CFormatEffect = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AllCaps(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_AllCapsImpl(_ value: UWP.FormatEffect) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_AllCaps(pThis, value))
+            }
+        }
+
+        open func get_BackgroundColorImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_BackgroundColor(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        open func put_BackgroundColorImpl(_ value: UWP.Color) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_BackgroundColor(pThis, .from(swift: value)))
+            }
+        }
+
+        open func get_BoldImpl() throws -> UWP.FormatEffect {
+            var value: __x_ABI_CWindows_CUI_CText_CFormatEffect = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Bold(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_BoldImpl(_ value: UWP.FormatEffect) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Bold(pThis, value))
+            }
+        }
+
+        open func get_FontStretchImpl() throws -> UWP.FontStretch {
+            var value: __x_ABI_CWindows_CUI_CText_CFontStretch = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_FontStretch(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_FontStretchImpl(_ value: UWP.FontStretch) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_FontStretch(pThis, value))
+            }
+        }
+
+        open func get_FontStyleImpl() throws -> UWP.FontStyle {
+            var value: __x_ABI_CWindows_CUI_CText_CFontStyle = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_FontStyle(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_FontStyleImpl(_ value: UWP.FontStyle) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_FontStyle(pThis, value))
+            }
+        }
+
+        open func get_ForegroundColorImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ForegroundColor(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        open func put_ForegroundColorImpl(_ value: UWP.Color) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ForegroundColor(pThis, .from(swift: value)))
+            }
+        }
+
+        open func get_HiddenImpl() throws -> UWP.FormatEffect {
+            var value: __x_ABI_CWindows_CUI_CText_CFormatEffect = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Hidden(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_HiddenImpl(_ value: UWP.FormatEffect) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Hidden(pThis, value))
+            }
+        }
+
+        open func get_ItalicImpl() throws -> UWP.FormatEffect {
+            var value: __x_ABI_CWindows_CUI_CText_CFormatEffect = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Italic(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_ItalicImpl(_ value: UWP.FormatEffect) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Italic(pThis, value))
+            }
+        }
+
+        open func get_KerningImpl() throws -> Float {
+            var value: FLOAT = 0.0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Kerning(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_KerningImpl(_ value: Float) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Kerning(pThis, value))
+            }
+        }
+
+        open func get_LanguageTagImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LanguageTag(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        open func put_LanguageTagImpl(_ value: String) throws {
+            let _value = try! HString(value)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_LanguageTag(pThis, _value.get()))
+            }
+        }
+
+        open func get_LinkTypeImpl() throws -> UWP.LinkType {
+            var value: __x_ABI_CWindows_CUI_CText_CLinkType = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LinkType(pThis, &value))
+            }
+            return value
+        }
+
+        open func get_NameImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Name(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        open func put_NameImpl(_ value: String) throws {
+            let _value = try! HString(value)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Name(pThis, _value.get()))
+            }
+        }
+
+        open func get_OutlineImpl() throws -> UWP.FormatEffect {
+            var value: __x_ABI_CWindows_CUI_CText_CFormatEffect = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Outline(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_OutlineImpl(_ value: UWP.FormatEffect) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Outline(pThis, value))
+            }
+        }
+
+        open func get_PositionImpl() throws -> Float {
+            var value: FLOAT = 0.0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Position(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_PositionImpl(_ value: Float) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Position(pThis, value))
+            }
+        }
+
+        open func get_ProtectedTextImpl() throws -> UWP.FormatEffect {
+            var value: __x_ABI_CWindows_CUI_CText_CFormatEffect = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ProtectedText(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_ProtectedTextImpl(_ value: UWP.FormatEffect) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ProtectedText(pThis, value))
+            }
+        }
+
+        open func get_SizeImpl() throws -> Float {
+            var value: FLOAT = 0.0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Size(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_SizeImpl(_ value: Float) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Size(pThis, value))
+            }
+        }
+
+        open func get_SmallCapsImpl() throws -> UWP.FormatEffect {
+            var value: __x_ABI_CWindows_CUI_CText_CFormatEffect = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_SmallCaps(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_SmallCapsImpl(_ value: UWP.FormatEffect) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SmallCaps(pThis, value))
+            }
+        }
+
+        open func get_SpacingImpl() throws -> Float {
+            var value: FLOAT = 0.0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Spacing(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_SpacingImpl(_ value: Float) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Spacing(pThis, value))
+            }
+        }
+
+        open func get_StrikethroughImpl() throws -> UWP.FormatEffect {
+            var value: __x_ABI_CWindows_CUI_CText_CFormatEffect = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Strikethrough(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_StrikethroughImpl(_ value: UWP.FormatEffect) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Strikethrough(pThis, value))
+            }
+        }
+
+        open func get_SubscriptImpl() throws -> UWP.FormatEffect {
+            var value: __x_ABI_CWindows_CUI_CText_CFormatEffect = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Subscript(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_SubscriptImpl(_ value: UWP.FormatEffect) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Subscript(pThis, value))
+            }
+        }
+
+        open func get_SuperscriptImpl() throws -> UWP.FormatEffect {
+            var value: __x_ABI_CWindows_CUI_CText_CFormatEffect = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Superscript(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_SuperscriptImpl(_ value: UWP.FormatEffect) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Superscript(pThis, value))
+            }
+        }
+
+        open func get_TextScriptImpl() throws -> UWP.TextScript {
+            var value: __x_ABI_CWindows_CUI_CText_CTextScript = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_TextScript(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_TextScriptImpl(_ value: UWP.TextScript) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_TextScript(pThis, value))
+            }
+        }
+
+        open func get_UnderlineImpl() throws -> UWP.UnderlineType {
+            var value: __x_ABI_CWindows_CUI_CText_CUnderlineType = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Underline(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_UnderlineImpl(_ value: UWP.UnderlineType) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Underline(pThis, value))
+            }
+        }
+
+        open func get_WeightImpl() throws -> Int32 {
+            var value: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Weight(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_WeightImpl(_ value: Int32) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Weight(pThis, value))
+            }
+        }
+
+        open func SetCloneImpl(_ value: UWP.AnyITextCharacterFormat?) throws {
+            let valueWrapper = __ABI_Windows_UI_Text.ITextCharacterFormatWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.SetClone(pThis, _value))
+            }
+        }
+
+        open func GetCloneImpl() throws -> UWP.AnyITextCharacterFormat? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetClone(pThis, &resultAbi))
+                }
+            }
+            return __ABI_Windows_UI_Text.ITextCharacterFormatWrapper.unwrapFrom(abi: result)
+        }
+
+        open func IsEqualImpl(_ format: UWP.AnyITextCharacterFormat?) throws -> Bool {
+            var result: boolean = 0
+            let formatWrapper = __ABI_Windows_UI_Text.ITextCharacterFormatWrapper(format)
+            let _format = try! formatWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextCharacterFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.IsEqual(pThis, _format, &result))
+            }
+            return .init(from: result)
+        }
+
+    }
+
+    internal static var ITextCharacterFormatVTable: __x_ABI_CWindows_CUI_CText_CITextCharacterFormatVtbl = .init(
+        QueryInterface: { ITextCharacterFormatWrapper.queryInterface($0, $1, $2) },
+        AddRef: { ITextCharacterFormatWrapper.addRef($0) },
+        Release: { ITextCharacterFormatWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 3).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_UI_Text.ITextCharacterFormatWrapper.IID
+            $1!.pointee = 3
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.UI.Text.ITextCharacterFormat").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_AllCaps: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.allCaps
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_AllCaps: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.FormatEffect = $1
+            __unwrapped__instance.allCaps = value
+            return S_OK
+        },
+
+        get_BackgroundColor: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.backgroundColor
+            $1?.initialize(to: .from(swift: value))
+            return S_OK
+        },
+
+        put_BackgroundColor: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.Color = .from(abi: $1)
+            __unwrapped__instance.backgroundColor = value
+            return S_OK
+        },
+
+        get_Bold: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.bold
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_Bold: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.FormatEffect = $1
+            __unwrapped__instance.bold = value
+            return S_OK
+        },
+
+        get_FontStretch: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.fontStretch
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_FontStretch: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.FontStretch = $1
+            __unwrapped__instance.fontStretch = value
+            return S_OK
+        },
+
+        get_FontStyle: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.fontStyle
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_FontStyle: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.FontStyle = $1
+            __unwrapped__instance.fontStyle = value
+            return S_OK
+        },
+
+        get_ForegroundColor: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.foregroundColor
+            $1?.initialize(to: .from(swift: value))
+            return S_OK
+        },
+
+        put_ForegroundColor: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.Color = .from(abi: $1)
+            __unwrapped__instance.foregroundColor = value
+            return S_OK
+        },
+
+        get_Hidden: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.hidden
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_Hidden: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.FormatEffect = $1
+            __unwrapped__instance.hidden = value
+            return S_OK
+        },
+
+        get_Italic: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.italic
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_Italic: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.FormatEffect = $1
+            __unwrapped__instance.italic = value
+            return S_OK
+        },
+
+        get_Kerning: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.kerning
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_Kerning: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: Float = $1
+            __unwrapped__instance.kerning = value
+            return S_OK
+        },
+
+        get_LanguageTag: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.languageTag
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        },
+
+        put_LanguageTag: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: String = .init(from: $1)
+            __unwrapped__instance.languageTag = value
+            return S_OK
+        },
+
+        get_LinkType: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.linkType
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        get_Name: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.name
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        },
+
+        put_Name: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: String = .init(from: $1)
+            __unwrapped__instance.name = value
+            return S_OK
+        },
+
+        get_Outline: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.outline
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_Outline: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.FormatEffect = $1
+            __unwrapped__instance.outline = value
+            return S_OK
+        },
+
+        get_Position: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.position
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_Position: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: Float = $1
+            __unwrapped__instance.position = value
+            return S_OK
+        },
+
+        get_ProtectedText: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.protectedText
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_ProtectedText: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.FormatEffect = $1
+            __unwrapped__instance.protectedText = value
+            return S_OK
+        },
+
+        get_Size: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.size
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_Size: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: Float = $1
+            __unwrapped__instance.size = value
+            return S_OK
+        },
+
+        get_SmallCaps: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.smallCaps
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_SmallCaps: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.FormatEffect = $1
+            __unwrapped__instance.smallCaps = value
+            return S_OK
+        },
+
+        get_Spacing: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.spacing
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_Spacing: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: Float = $1
+            __unwrapped__instance.spacing = value
+            return S_OK
+        },
+
+        get_Strikethrough: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.strikethrough
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_Strikethrough: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.FormatEffect = $1
+            __unwrapped__instance.strikethrough = value
+            return S_OK
+        },
+
+        get_Subscript: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.`subscript`
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_Subscript: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.FormatEffect = $1
+            __unwrapped__instance.`subscript` = value
+            return S_OK
+        },
+
+        get_Superscript: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.superscript
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_Superscript: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.FormatEffect = $1
+            __unwrapped__instance.superscript = value
+            return S_OK
+        },
+
+        get_TextScript: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.textScript
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_TextScript: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.TextScript = $1
+            __unwrapped__instance.textScript = value
+            return S_OK
+        },
+
+        get_Underline: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.underline
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_Underline: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.UnderlineType = $1
+            __unwrapped__instance.underline = value
+            return S_OK
+        },
+
+        get_Weight: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.weight
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_Weight: {
+            guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: Int32 = $1
+            __unwrapped__instance.weight = value
+            return S_OK
+        },
+
+        SetClone: {
+            do {
+                guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let value: UWP.AnyITextCharacterFormat? = __ABI_Windows_UI_Text.ITextCharacterFormatWrapper.unwrapFrom(abi: ComPtr($1))
+                try __unwrapped__instance.setClone(value)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        GetClone: {
+            do {
+                guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let result = try __unwrapped__instance.getClone()
+                let resultWrapper = __ABI_Windows_UI_Text.ITextCharacterFormatWrapper(result)
+                resultWrapper?.copyTo($1)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        IsEqual: {
+            do {
+                guard let __unwrapped__instance = ITextCharacterFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let format: UWP.AnyITextCharacterFormat? = __ABI_Windows_UI_Text.ITextCharacterFormatWrapper.unwrapFrom(abi: ComPtr($1))
+                let result = try __unwrapped__instance.isEqual(format)
+                $2?.initialize(to: .init(from: result))
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        }
+    )
+
+    public typealias ITextCharacterFormatWrapper = InterfaceWrapperBase<__IMPL_Windows_UI_Text.ITextCharacterFormatBridge>
+    public class ITextConstantsStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CText_CITextConstantsStatics }
+
+        internal func get_AutoColorImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextConstantsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AutoColor(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_MinUnitCountImpl() throws -> Int32 {
+            var value: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextConstantsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_MinUnitCount(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_MaxUnitCountImpl() throws -> Int32 {
+            var value: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextConstantsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_MaxUnitCount(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_UndefinedColorImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextConstantsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_UndefinedColor(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_UndefinedFloatValueImpl() throws -> Float {
+            var value: FLOAT = 0.0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextConstantsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_UndefinedFloatValue(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_UndefinedInt32ValueImpl() throws -> Int32 {
+            var value: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextConstantsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_UndefinedInt32Value(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_UndefinedFontStretchImpl() throws -> UWP.FontStretch {
+            var value: __x_ABI_CWindows_CUI_CText_CFontStretch = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextConstantsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_UndefinedFontStretch(pThis, &value))
+            }
+            return value
+        }
+
+        internal func get_UndefinedFontStyleImpl() throws -> UWP.FontStyle {
+            var value: __x_ABI_CWindows_CUI_CText_CFontStyle = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextConstantsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_UndefinedFontStyle(pThis, &value))
+            }
+            return value
+        }
+
+    }
+
+    public class ITextDocument: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CText_CITextDocument }
+
+        open func get_CaretTypeImpl() throws -> UWP.CaretType {
+            var value: __x_ABI_CWindows_CUI_CText_CCaretType = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_CaretType(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_CaretTypeImpl(_ value: UWP.CaretType) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CaretType(pThis, value))
+            }
+        }
+
+        open func get_DefaultTabStopImpl() throws -> Float {
+            var value: FLOAT = 0.0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DefaultTabStop(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_DefaultTabStopImpl(_ value: Float) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_DefaultTabStop(pThis, value))
+            }
+        }
+
+        open func get_SelectionImpl() throws -> UWP.AnyITextSelection? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_Selection(pThis, &valueAbi))
+                }
+            }
+            return __ABI_Windows_UI_Text.ITextSelectionWrapper.unwrapFrom(abi: value)
+        }
+
+        open func get_UndoLimitImpl() throws -> UInt32 {
+            var value: UINT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_UndoLimit(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_UndoLimitImpl(_ value: UInt32) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_UndoLimit(pThis, value))
+            }
+        }
+
+        open func CanCopyImpl() throws -> Bool {
+            var result: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.CanCopy(pThis, &result))
+            }
+            return .init(from: result)
+        }
+
+        open func CanPasteImpl() throws -> Bool {
+            var result: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.CanPaste(pThis, &result))
+            }
+            return .init(from: result)
+        }
+
+        open func CanRedoImpl() throws -> Bool {
+            var result: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.CanRedo(pThis, &result))
+            }
+            return .init(from: result)
+        }
+
+        open func CanUndoImpl() throws -> Bool {
+            var result: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.CanUndo(pThis, &result))
+            }
+            return .init(from: result)
+        }
+
+        open func ApplyDisplayUpdatesImpl() throws -> Int32 {
+            var result: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.ApplyDisplayUpdates(pThis, &result))
+            }
+            return result
+        }
+
+        open func BatchDisplayUpdatesImpl() throws -> Int32 {
+            var result: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.BatchDisplayUpdates(pThis, &result))
+            }
+            return result
+        }
+
+        open func BeginUndoGroupImpl() throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.BeginUndoGroup(pThis))
+            }
+        }
+
+        open func EndUndoGroupImpl() throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.EndUndoGroup(pThis))
+            }
+        }
+
+        open func GetDefaultCharacterFormatImpl() throws -> UWP.AnyITextCharacterFormat? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetDefaultCharacterFormat(pThis, &resultAbi))
+                }
+            }
+            return __ABI_Windows_UI_Text.ITextCharacterFormatWrapper.unwrapFrom(abi: result)
+        }
+
+        open func GetDefaultParagraphFormatImpl() throws -> UWP.AnyITextParagraphFormat? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetDefaultParagraphFormat(pThis, &resultAbi))
+                }
+            }
+            return __ABI_Windows_UI_Text.ITextParagraphFormatWrapper.unwrapFrom(abi: result)
+        }
+
+        open func GetRangeImpl(_ startPosition: Int32, _ endPosition: Int32) throws -> UWP.AnyITextRange? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetRange(pThis, startPosition, endPosition, &resultAbi))
+                }
+            }
+            return __ABI_Windows_UI_Text.ITextRangeWrapper.unwrapFrom(abi: result)
+        }
+
+        open func GetRangeFromPointImpl(_ point: WindowsFoundation.Point, _ options: UWP.PointOptions) throws -> UWP.AnyITextRange? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetRangeFromPoint(pThis, .from(swift: point), options, &resultAbi))
+                }
+            }
+            return __ABI_Windows_UI_Text.ITextRangeWrapper.unwrapFrom(abi: result)
+        }
+
+        open func GetTextImpl(_ options: UWP.TextGetOptions, _ value: inout String) throws {
+            var _value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.GetText(pThis, options, &_value))
+            }
+            value = .init(from: _value)
+            WindowsDeleteString(_value)
+        }
+
+        open func LoadFromStreamImpl(_ options: UWP.TextSetOptions, _ value: UWP.AnyIRandomAccessStream?) throws {
+            let valueWrapper = __ABI_Windows_Storage_Streams.IRandomAccessStreamWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.LoadFromStream(pThis, options, _value))
+            }
+        }
+
+        open func RedoImpl() throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Redo(pThis))
+            }
+        }
+
+        open func SaveToStreamImpl(_ options: UWP.TextGetOptions, _ value: UWP.AnyIRandomAccessStream?) throws {
+            let valueWrapper = __ABI_Windows_Storage_Streams.IRandomAccessStreamWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.SaveToStream(pThis, options, _value))
+            }
+        }
+
+        open func SetDefaultCharacterFormatImpl(_ value: UWP.AnyITextCharacterFormat?) throws {
+            let valueWrapper = __ABI_Windows_UI_Text.ITextCharacterFormatWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.SetDefaultCharacterFormat(pThis, _value))
+            }
+        }
+
+        open func SetDefaultParagraphFormatImpl(_ value: UWP.AnyITextParagraphFormat?) throws {
+            let valueWrapper = __ABI_Windows_UI_Text.ITextParagraphFormatWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.SetDefaultParagraphFormat(pThis, _value))
+            }
+        }
+
+        open func SetTextImpl(_ options: UWP.TextSetOptions, _ value: String) throws {
+            let _value = try! HString(value)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.SetText(pThis, options, _value.get()))
+            }
+        }
+
+        open func UndoImpl() throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Undo(pThis))
+            }
+        }
+
+    }
+
+    internal static var ITextDocumentVTable: __x_ABI_CWindows_CUI_CText_CITextDocumentVtbl = .init(
+        QueryInterface: { ITextDocumentWrapper.queryInterface($0, $1, $2) },
+        AddRef: { ITextDocumentWrapper.addRef($0) },
+        Release: { ITextDocumentWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 3).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_UI_Text.ITextDocumentWrapper.IID
+            $1!.pointee = 3
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.UI.Text.ITextDocument").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_CaretType: {
+            guard let __unwrapped__instance = ITextDocumentWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.caretType
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_CaretType: {
+            guard let __unwrapped__instance = ITextDocumentWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.CaretType = $1
+            __unwrapped__instance.caretType = value
+            return S_OK
+        },
+
+        get_DefaultTabStop: {
+            guard let __unwrapped__instance = ITextDocumentWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.defaultTabStop
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_DefaultTabStop: {
+            guard let __unwrapped__instance = ITextDocumentWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: Float = $1
+            __unwrapped__instance.defaultTabStop = value
+            return S_OK
+        },
+
+        get_Selection: {
+            guard let __unwrapped__instance = ITextDocumentWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.selection
+            let valueWrapper = __ABI_Windows_UI_Text.ITextSelectionWrapper(value)
+            valueWrapper?.copyTo($1)
+            return S_OK
+        },
+
+        get_UndoLimit: {
+            guard let __unwrapped__instance = ITextDocumentWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.undoLimit
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_UndoLimit: {
+            guard let __unwrapped__instance = ITextDocumentWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UInt32 = $1
+            __unwrapped__instance.undoLimit = value
+            return S_OK
+        },
+
+        CanCopy: {
+            do {
+                guard let __unwrapped__instance = ITextDocumentWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let result = try __unwrapped__instance.canCopy()
+                $1?.initialize(to: .init(from: result))
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        CanPaste: {
+            do {
+                guard let __unwrapped__instance = ITextDocumentWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let result = try __unwrapped__instance.canPaste()
+                $1?.initialize(to: .init(from: result))
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        CanRedo: {
+            do {
+                guard let __unwrapped__instance = ITextDocumentWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let result = try __unwrapped__instance.canRedo()
+                $1?.initialize(to: .init(from: result))
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        CanUndo: {
+            do {
+                guard let __unwrapped__instance = ITextDocumentWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let result = try __unwrapped__instance.canUndo()
+                $1?.initialize(to: .init(from: result))
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        ApplyDisplayUpdates: {
+            do {
+                guard let __unwrapped__instance = ITextDocumentWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let result = try __unwrapped__instance.applyDisplayUpdates()
+                $1?.initialize(to: result)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        BatchDisplayUpdates: {
+            do {
+                guard let __unwrapped__instance = ITextDocumentWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let result = try __unwrapped__instance.batchDisplayUpdates()
+                $1?.initialize(to: result)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        BeginUndoGroup: {
+            do {
+                guard let __unwrapped__instance = ITextDocumentWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                try __unwrapped__instance.beginUndoGroup()
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        EndUndoGroup: {
+            do {
+                guard let __unwrapped__instance = ITextDocumentWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                try __unwrapped__instance.endUndoGroup()
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        GetDefaultCharacterFormat: {
+            do {
+                guard let __unwrapped__instance = ITextDocumentWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let result = try __unwrapped__instance.getDefaultCharacterFormat()
+                let resultWrapper = __ABI_Windows_UI_Text.ITextCharacterFormatWrapper(result)
+                resultWrapper?.copyTo($1)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        GetDefaultParagraphFormat: {
+            do {
+                guard let __unwrapped__instance = ITextDocumentWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let result = try __unwrapped__instance.getDefaultParagraphFormat()
+                let resultWrapper = __ABI_Windows_UI_Text.ITextParagraphFormatWrapper(result)
+                resultWrapper?.copyTo($1)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        GetRange: {
+            do {
+                guard let __unwrapped__instance = ITextDocumentWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let startPosition: Int32 = $1
+                let endPosition: Int32 = $2
+                let result = try __unwrapped__instance.getRange(startPosition, endPosition)
+                let resultWrapper = __ABI_Windows_UI_Text.ITextRangeWrapper(result)
+                resultWrapper?.copyTo($3)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        GetRangeFromPoint: {
+            do {
+                guard let __unwrapped__instance = ITextDocumentWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let point: WindowsFoundation.Point = .from(abi: $1)
+                let options: UWP.PointOptions = $2
+                let result = try __unwrapped__instance.getRangeFromPoint(point, options)
+                let resultWrapper = __ABI_Windows_UI_Text.ITextRangeWrapper(result)
+                resultWrapper?.copyTo($3)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        GetText: {
+            do {
+                guard let __unwrapped__instance = ITextDocumentWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let options: UWP.TextGetOptions = $1
+                var value: String = ""
+                try __unwrapped__instance.getText(options, &value)
+                $2?.initialize(to: try! HString(value).detach())
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        LoadFromStream: {
+            do {
+                guard let __unwrapped__instance = ITextDocumentWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let options: UWP.TextSetOptions = $1
+                let value: UWP.AnyIRandomAccessStream? = __ABI_Windows_Storage_Streams.IRandomAccessStreamWrapper.unwrapFrom(abi: ComPtr($2))
+                try __unwrapped__instance.loadFromStream(options, value)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        Redo: {
+            do {
+                guard let __unwrapped__instance = ITextDocumentWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                try __unwrapped__instance.redo()
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        SaveToStream: {
+            do {
+                guard let __unwrapped__instance = ITextDocumentWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let options: UWP.TextGetOptions = $1
+                let value: UWP.AnyIRandomAccessStream? = __ABI_Windows_Storage_Streams.IRandomAccessStreamWrapper.unwrapFrom(abi: ComPtr($2))
+                try __unwrapped__instance.saveToStream(options, value)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        SetDefaultCharacterFormat: {
+            do {
+                guard let __unwrapped__instance = ITextDocumentWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let value: UWP.AnyITextCharacterFormat? = __ABI_Windows_UI_Text.ITextCharacterFormatWrapper.unwrapFrom(abi: ComPtr($1))
+                try __unwrapped__instance.setDefaultCharacterFormat(value)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        SetDefaultParagraphFormat: {
+            do {
+                guard let __unwrapped__instance = ITextDocumentWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let value: UWP.AnyITextParagraphFormat? = __ABI_Windows_UI_Text.ITextParagraphFormatWrapper.unwrapFrom(abi: ComPtr($1))
+                try __unwrapped__instance.setDefaultParagraphFormat(value)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        SetText: {
+            do {
+                guard let __unwrapped__instance = ITextDocumentWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let options: UWP.TextSetOptions = $1
+                let value: String = .init(from: $2)
+                try __unwrapped__instance.setText(options, value)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        Undo: {
+            do {
+                guard let __unwrapped__instance = ITextDocumentWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                try __unwrapped__instance.undo()
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        }
+    )
+
+    public typealias ITextDocumentWrapper = InterfaceWrapperBase<__IMPL_Windows_UI_Text.ITextDocumentBridge>
+    public class ITextDocument2: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CText_CITextDocument2 }
+
+        internal func get_AlignmentIncludesTrailingWhitespaceImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AlignmentIncludesTrailingWhitespace(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_AlignmentIncludesTrailingWhitespaceImpl(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_AlignmentIncludesTrailingWhitespace(pThis, .init(from: value)))
+            }
+        }
+
+        internal func get_IgnoreTrailingCharacterSpacingImpl() throws -> Bool {
+            var value: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IgnoreTrailingCharacterSpacing(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        internal func put_IgnoreTrailingCharacterSpacingImpl(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_IgnoreTrailingCharacterSpacing(pThis, .init(from: value)))
+            }
+        }
+
+    }
+
+    public class ITextDocument3: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CText_CITextDocument3 }
+
+        internal func ClearUndoRedoHistoryImpl() throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextDocument3.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.ClearUndoRedoHistory(pThis))
+            }
+        }
+
+    }
+
+    public class ITextParagraphFormat: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CText_CITextParagraphFormat }
+
+        open func get_AlignmentImpl() throws -> UWP.ParagraphAlignment {
+            var value: __x_ABI_CWindows_CUI_CText_CParagraphAlignment = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Alignment(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_AlignmentImpl(_ value: UWP.ParagraphAlignment) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Alignment(pThis, value))
+            }
+        }
+
+        open func get_FirstLineIndentImpl() throws -> Float {
+            var value: FLOAT = 0.0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_FirstLineIndent(pThis, &value))
+            }
+            return value
+        }
+
+        open func get_KeepTogetherImpl() throws -> UWP.FormatEffect {
+            var value: __x_ABI_CWindows_CUI_CText_CFormatEffect = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_KeepTogether(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_KeepTogetherImpl(_ value: UWP.FormatEffect) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_KeepTogether(pThis, value))
+            }
+        }
+
+        open func get_KeepWithNextImpl() throws -> UWP.FormatEffect {
+            var value: __x_ABI_CWindows_CUI_CText_CFormatEffect = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_KeepWithNext(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_KeepWithNextImpl(_ value: UWP.FormatEffect) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_KeepWithNext(pThis, value))
+            }
+        }
+
+        open func get_LeftIndentImpl() throws -> Float {
+            var value: FLOAT = 0.0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LeftIndent(pThis, &value))
+            }
+            return value
+        }
+
+        open func get_LineSpacingImpl() throws -> Float {
+            var value: FLOAT = 0.0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LineSpacing(pThis, &value))
+            }
+            return value
+        }
+
+        open func get_LineSpacingRuleImpl() throws -> UWP.LineSpacingRule {
+            var value: __x_ABI_CWindows_CUI_CText_CLineSpacingRule = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LineSpacingRule(pThis, &value))
+            }
+            return value
+        }
+
+        open func get_ListAlignmentImpl() throws -> UWP.MarkerAlignment {
+            var value: __x_ABI_CWindows_CUI_CText_CMarkerAlignment = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ListAlignment(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_ListAlignmentImpl(_ value: UWP.MarkerAlignment) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ListAlignment(pThis, value))
+            }
+        }
+
+        open func get_ListLevelIndexImpl() throws -> Int32 {
+            var value: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ListLevelIndex(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_ListLevelIndexImpl(_ value: Int32) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ListLevelIndex(pThis, value))
+            }
+        }
+
+        open func get_ListStartImpl() throws -> Int32 {
+            var value: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ListStart(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_ListStartImpl(_ value: Int32) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ListStart(pThis, value))
+            }
+        }
+
+        open func get_ListStyleImpl() throws -> UWP.MarkerStyle {
+            var value: __x_ABI_CWindows_CUI_CText_CMarkerStyle = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ListStyle(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_ListStyleImpl(_ value: UWP.MarkerStyle) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ListStyle(pThis, value))
+            }
+        }
+
+        open func get_ListTabImpl() throws -> Float {
+            var value: FLOAT = 0.0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ListTab(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_ListTabImpl(_ value: Float) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ListTab(pThis, value))
+            }
+        }
+
+        open func get_ListTypeImpl() throws -> UWP.MarkerType {
+            var value: __x_ABI_CWindows_CUI_CText_CMarkerType = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ListType(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_ListTypeImpl(_ value: UWP.MarkerType) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ListType(pThis, value))
+            }
+        }
+
+        open func get_NoLineNumberImpl() throws -> UWP.FormatEffect {
+            var value: __x_ABI_CWindows_CUI_CText_CFormatEffect = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_NoLineNumber(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_NoLineNumberImpl(_ value: UWP.FormatEffect) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_NoLineNumber(pThis, value))
+            }
+        }
+
+        open func get_PageBreakBeforeImpl() throws -> UWP.FormatEffect {
+            var value: __x_ABI_CWindows_CUI_CText_CFormatEffect = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_PageBreakBefore(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_PageBreakBeforeImpl(_ value: UWP.FormatEffect) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_PageBreakBefore(pThis, value))
+            }
+        }
+
+        open func get_RightIndentImpl() throws -> Float {
+            var value: FLOAT = 0.0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_RightIndent(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_RightIndentImpl(_ value: Float) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_RightIndent(pThis, value))
+            }
+        }
+
+        open func get_RightToLeftImpl() throws -> UWP.FormatEffect {
+            var value: __x_ABI_CWindows_CUI_CText_CFormatEffect = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_RightToLeft(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_RightToLeftImpl(_ value: UWP.FormatEffect) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_RightToLeft(pThis, value))
+            }
+        }
+
+        open func get_StyleImpl() throws -> UWP.ParagraphStyle {
+            var value: __x_ABI_CWindows_CUI_CText_CParagraphStyle = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Style(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_StyleImpl(_ value: UWP.ParagraphStyle) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Style(pThis, value))
+            }
+        }
+
+        open func get_SpaceAfterImpl() throws -> Float {
+            var value: FLOAT = 0.0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_SpaceAfter(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_SpaceAfterImpl(_ value: Float) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SpaceAfter(pThis, value))
+            }
+        }
+
+        open func get_SpaceBeforeImpl() throws -> Float {
+            var value: FLOAT = 0.0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_SpaceBefore(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_SpaceBeforeImpl(_ value: Float) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_SpaceBefore(pThis, value))
+            }
+        }
+
+        open func get_WidowControlImpl() throws -> UWP.FormatEffect {
+            var value: __x_ABI_CWindows_CUI_CText_CFormatEffect = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_WidowControl(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_WidowControlImpl(_ value: UWP.FormatEffect) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_WidowControl(pThis, value))
+            }
+        }
+
+        open func get_TabCountImpl() throws -> Int32 {
+            var value: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_TabCount(pThis, &value))
+            }
+            return value
+        }
+
+        open func AddTabImpl(_ position: Float, _ align: UWP.TabAlignment, _ leader: UWP.TabLeader) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.AddTab(pThis, position, align, leader))
+            }
+        }
+
+        open func ClearAllTabsImpl() throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.ClearAllTabs(pThis))
+            }
+        }
+
+        open func DeleteTabImpl(_ position: Float) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.DeleteTab(pThis, position))
+            }
+        }
+
+        open func GetCloneImpl() throws -> UWP.AnyITextParagraphFormat? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetClone(pThis, &resultAbi))
+                }
+            }
+            return __ABI_Windows_UI_Text.ITextParagraphFormatWrapper.unwrapFrom(abi: result)
+        }
+
+        open func GetTabImpl(_ index: Int32, _ position: inout Float, _ align: inout UWP.TabAlignment, _ leader: inout UWP.TabLeader) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.GetTab(pThis, index, &position, &align, &leader))
+            }
+        }
+
+        open func IsEqualImpl(_ format: UWP.AnyITextParagraphFormat?) throws -> Bool {
+            var result: boolean = 0
+            let formatWrapper = __ABI_Windows_UI_Text.ITextParagraphFormatWrapper(format)
+            let _format = try! formatWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.IsEqual(pThis, _format, &result))
+            }
+            return .init(from: result)
+        }
+
+        open func SetCloneImpl(_ format: UWP.AnyITextParagraphFormat?) throws {
+            let formatWrapper = __ABI_Windows_UI_Text.ITextParagraphFormatWrapper(format)
+            let _format = try! formatWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.SetClone(pThis, _format))
+            }
+        }
+
+        open func SetIndentsImpl(_ start: Float, _ left: Float, _ right: Float) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.SetIndents(pThis, start, left, right))
+            }
+        }
+
+        open func SetLineSpacingImpl(_ rule: UWP.LineSpacingRule, _ spacing: Float) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextParagraphFormat.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.SetLineSpacing(pThis, rule, spacing))
+            }
+        }
+
+    }
+
+    internal static var ITextParagraphFormatVTable: __x_ABI_CWindows_CUI_CText_CITextParagraphFormatVtbl = .init(
+        QueryInterface: { ITextParagraphFormatWrapper.queryInterface($0, $1, $2) },
+        AddRef: { ITextParagraphFormatWrapper.addRef($0) },
+        Release: { ITextParagraphFormatWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 3).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_UI_Text.ITextParagraphFormatWrapper.IID
+            $1!.pointee = 3
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.UI.Text.ITextParagraphFormat").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_Alignment: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.alignment
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_Alignment: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.ParagraphAlignment = $1
+            __unwrapped__instance.alignment = value
+            return S_OK
+        },
+
+        get_FirstLineIndent: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.firstLineIndent
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        get_KeepTogether: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.keepTogether
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_KeepTogether: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.FormatEffect = $1
+            __unwrapped__instance.keepTogether = value
+            return S_OK
+        },
+
+        get_KeepWithNext: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.keepWithNext
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_KeepWithNext: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.FormatEffect = $1
+            __unwrapped__instance.keepWithNext = value
+            return S_OK
+        },
+
+        get_LeftIndent: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.leftIndent
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        get_LineSpacing: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.lineSpacing
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        get_LineSpacingRule: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.lineSpacingRule
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        get_ListAlignment: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.listAlignment
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_ListAlignment: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.MarkerAlignment = $1
+            __unwrapped__instance.listAlignment = value
+            return S_OK
+        },
+
+        get_ListLevelIndex: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.listLevelIndex
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_ListLevelIndex: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: Int32 = $1
+            __unwrapped__instance.listLevelIndex = value
+            return S_OK
+        },
+
+        get_ListStart: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.listStart
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_ListStart: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: Int32 = $1
+            __unwrapped__instance.listStart = value
+            return S_OK
+        },
+
+        get_ListStyle: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.listStyle
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_ListStyle: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.MarkerStyle = $1
+            __unwrapped__instance.listStyle = value
+            return S_OK
+        },
+
+        get_ListTab: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.listTab
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_ListTab: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: Float = $1
+            __unwrapped__instance.listTab = value
+            return S_OK
+        },
+
+        get_ListType: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.listType
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_ListType: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.MarkerType = $1
+            __unwrapped__instance.listType = value
+            return S_OK
+        },
+
+        get_NoLineNumber: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.noLineNumber
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_NoLineNumber: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.FormatEffect = $1
+            __unwrapped__instance.noLineNumber = value
+            return S_OK
+        },
+
+        get_PageBreakBefore: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.pageBreakBefore
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_PageBreakBefore: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.FormatEffect = $1
+            __unwrapped__instance.pageBreakBefore = value
+            return S_OK
+        },
+
+        get_RightIndent: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.rightIndent
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_RightIndent: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: Float = $1
+            __unwrapped__instance.rightIndent = value
+            return S_OK
+        },
+
+        get_RightToLeft: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.rightToLeft
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_RightToLeft: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.FormatEffect = $1
+            __unwrapped__instance.rightToLeft = value
+            return S_OK
+        },
+
+        get_Style: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.style
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_Style: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.ParagraphStyle = $1
+            __unwrapped__instance.style = value
+            return S_OK
+        },
+
+        get_SpaceAfter: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.spaceAfter
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_SpaceAfter: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: Float = $1
+            __unwrapped__instance.spaceAfter = value
+            return S_OK
+        },
+
+        get_SpaceBefore: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.spaceBefore
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_SpaceBefore: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: Float = $1
+            __unwrapped__instance.spaceBefore = value
+            return S_OK
+        },
+
+        get_WidowControl: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.widowControl
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_WidowControl: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.FormatEffect = $1
+            __unwrapped__instance.widowControl = value
+            return S_OK
+        },
+
+        get_TabCount: {
+            guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.tabCount
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        AddTab: {
+            do {
+                guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let position: Float = $1
+                let align: UWP.TabAlignment = $2
+                let leader: UWP.TabLeader = $3
+                try __unwrapped__instance.addTab(position, align, leader)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        ClearAllTabs: {
+            do {
+                guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                try __unwrapped__instance.clearAllTabs()
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        DeleteTab: {
+            do {
+                guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let position: Float = $1
+                try __unwrapped__instance.deleteTab(position)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        GetClone: {
+            do {
+                guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let result = try __unwrapped__instance.getClone()
+                let resultWrapper = __ABI_Windows_UI_Text.ITextParagraphFormatWrapper(result)
+                resultWrapper?.copyTo($1)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        GetTab: {
+            do {
+                guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let index: Int32 = $1
+                var position: Float = 0.0
+                var align: UWP.TabAlignment = .init(0)
+                var leader: UWP.TabLeader = .init(0)
+                try __unwrapped__instance.getTab(index, &position, &align, &leader)
+                $2?.initialize(to: position)
+                $3?.initialize(to: align)
+                $4?.initialize(to: leader)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        IsEqual: {
+            do {
+                guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let format: UWP.AnyITextParagraphFormat? = __ABI_Windows_UI_Text.ITextParagraphFormatWrapper.unwrapFrom(abi: ComPtr($1))
+                let result = try __unwrapped__instance.isEqual(format)
+                $2?.initialize(to: .init(from: result))
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        SetClone: {
+            do {
+                guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let format: UWP.AnyITextParagraphFormat? = __ABI_Windows_UI_Text.ITextParagraphFormatWrapper.unwrapFrom(abi: ComPtr($1))
+                try __unwrapped__instance.setClone(format)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        SetIndents: {
+            do {
+                guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let start: Float = $1
+                let left: Float = $2
+                let right: Float = $3
+                try __unwrapped__instance.setIndents(start, left, right)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        SetLineSpacing: {
+            do {
+                guard let __unwrapped__instance = ITextParagraphFormatWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let rule: UWP.LineSpacingRule = $1
+                let spacing: Float = $2
+                try __unwrapped__instance.setLineSpacing(rule, spacing)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        }
+    )
+
+    public typealias ITextParagraphFormatWrapper = InterfaceWrapperBase<__IMPL_Windows_UI_Text.ITextParagraphFormatBridge>
+    public class ITextRange: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CText_CITextRange }
+
+        open func get_CharacterImpl() throws -> Character {
+            var value: WCHAR = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Character(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        open func put_CharacterImpl(_ value: Character) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Character(pThis, .init(from: value)))
+            }
+        }
+
+        open func get_CharacterFormatImpl() throws -> UWP.AnyITextCharacterFormat? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_CharacterFormat(pThis, &valueAbi))
+                }
+            }
+            return __ABI_Windows_UI_Text.ITextCharacterFormatWrapper.unwrapFrom(abi: value)
+        }
+
+        open func put_CharacterFormatImpl(_ value: UWP.AnyITextCharacterFormat?) throws {
+            let valueWrapper = __ABI_Windows_UI_Text.ITextCharacterFormatWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_CharacterFormat(pThis, _value))
+            }
+        }
+
+        open func get_FormattedTextImpl() throws -> UWP.AnyITextRange? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_FormattedText(pThis, &valueAbi))
+                }
+            }
+            return __ABI_Windows_UI_Text.ITextRangeWrapper.unwrapFrom(abi: value)
+        }
+
+        open func put_FormattedTextImpl(_ value: UWP.AnyITextRange?) throws {
+            let valueWrapper = __ABI_Windows_UI_Text.ITextRangeWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_FormattedText(pThis, _value))
+            }
+        }
+
+        open func get_EndPositionImpl() throws -> Int32 {
+            var value: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_EndPosition(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_EndPositionImpl(_ value: Int32) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_EndPosition(pThis, value))
+            }
+        }
+
+        open func get_GravityImpl() throws -> UWP.RangeGravity {
+            var value: __x_ABI_CWindows_CUI_CText_CRangeGravity = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Gravity(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_GravityImpl(_ value: UWP.RangeGravity) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Gravity(pThis, value))
+            }
+        }
+
+        open func get_LengthImpl() throws -> Int32 {
+            var value: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Length(pThis, &value))
+            }
+            return value
+        }
+
+        open func get_LinkImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Link(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        open func put_LinkImpl(_ value: String) throws {
+            let _value = try! HString(value)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Link(pThis, _value.get()))
+            }
+        }
+
+        open func get_ParagraphFormatImpl() throws -> UWP.AnyITextParagraphFormat? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_ParagraphFormat(pThis, &valueAbi))
+                }
+            }
+            return __ABI_Windows_UI_Text.ITextParagraphFormatWrapper.unwrapFrom(abi: value)
+        }
+
+        open func put_ParagraphFormatImpl(_ value: UWP.AnyITextParagraphFormat?) throws {
+            let valueWrapper = __ABI_Windows_UI_Text.ITextParagraphFormatWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_ParagraphFormat(pThis, _value))
+            }
+        }
+
+        open func get_StartPositionImpl() throws -> Int32 {
+            var value: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_StartPosition(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_StartPositionImpl(_ value: Int32) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_StartPosition(pThis, value))
+            }
+        }
+
+        open func get_StoryLengthImpl() throws -> Int32 {
+            var value: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_StoryLength(pThis, &value))
+            }
+            return value
+        }
+
+        open func get_TextImpl() throws -> String {
+            var value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Text(pThis, &value))
+            }
+            return .init(from: value)
+        }
+
+        open func put_TextImpl(_ value: String) throws {
+            let _value = try! HString(value)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Text(pThis, _value.get()))
+            }
+        }
+
+        open func CanPasteImpl(_ format: Int32) throws -> Bool {
+            var result: boolean = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.CanPaste(pThis, format, &result))
+            }
+            return .init(from: result)
+        }
+
+        open func ChangeCaseImpl(_ value: UWP.LetterCase) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.ChangeCase(pThis, value))
+            }
+        }
+
+        open func CollapseImpl(_ value: Bool) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Collapse(pThis, .init(from: value)))
+            }
+        }
+
+        open func CopyImpl() throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Copy(pThis))
+            }
+        }
+
+        open func CutImpl() throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Cut(pThis))
+            }
+        }
+
+        open func DeleteImpl(_ unit: UWP.TextRangeUnit, _ count: Int32) throws -> Int32 {
+            var result: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Delete(pThis, unit, count, &result))
+            }
+            return result
+        }
+
+        open func EndOfImpl(_ unit: UWP.TextRangeUnit, _ extend: Bool) throws -> Int32 {
+            var result: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.EndOf(pThis, unit, .init(from: extend), &result))
+            }
+            return result
+        }
+
+        open func ExpandImpl(_ unit: UWP.TextRangeUnit) throws -> Int32 {
+            var result: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Expand(pThis, unit, &result))
+            }
+            return result
+        }
+
+        open func FindTextImpl(_ value: String, _ scanLength: Int32, _ options: UWP.FindOptions) throws -> Int32 {
+            var result: INT32 = 0
+            let _value = try! HString(value)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.FindText(pThis, _value.get(), scanLength, options, &result))
+            }
+            return result
+        }
+
+        open func GetCharacterUtf32Impl(_ value: inout UInt32, _ offset: Int32) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.GetCharacterUtf32(pThis, &value, offset))
+            }
+        }
+
+        open func GetCloneImpl() throws -> UWP.AnyITextRange? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.GetClone(pThis, &resultAbi))
+                }
+            }
+            return __ABI_Windows_UI_Text.ITextRangeWrapper.unwrapFrom(abi: result)
+        }
+
+        open func GetIndexImpl(_ unit: UWP.TextRangeUnit) throws -> Int32 {
+            var result: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.GetIndex(pThis, unit, &result))
+            }
+            return result
+        }
+
+        open func GetPointImpl(_ horizontalAlign: UWP.HorizontalCharacterAlignment, _ verticalAlign: UWP.VerticalCharacterAlignment, _ options: UWP.PointOptions, _ point: inout WindowsFoundation.Point) throws {
+            var _point: __x_ABI_CWindows_CFoundation_CPoint = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.GetPoint(pThis, horizontalAlign, verticalAlign, options, &_point))
+            }
+            point = .from(abi: _point)
+        }
+
+        open func GetRectImpl(_ options: UWP.PointOptions, _ rect: inout WindowsFoundation.Rect, _ hit: inout Int32) throws {
+            var _rect: __x_ABI_CWindows_CFoundation_CRect = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.GetRect(pThis, options, &_rect, &hit))
+            }
+            rect = .from(abi: _rect)
+        }
+
+        open func GetTextImpl(_ options: UWP.TextGetOptions, _ value: inout String) throws {
+            var _value: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.GetText(pThis, options, &_value))
+            }
+            value = .init(from: _value)
+            WindowsDeleteString(_value)
+        }
+
+        open func GetTextViaStreamImpl(_ options: UWP.TextGetOptions, _ value: UWP.AnyIRandomAccessStream?) throws {
+            let valueWrapper = __ABI_Windows_Storage_Streams.IRandomAccessStreamWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.GetTextViaStream(pThis, options, _value))
+            }
+        }
+
+        open func InRangeImpl(_ range: UWP.AnyITextRange?) throws -> Bool {
+            var result: boolean = 0
+            let rangeWrapper = __ABI_Windows_UI_Text.ITextRangeWrapper(range)
+            let _range = try! rangeWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.InRange(pThis, _range, &result))
+            }
+            return .init(from: result)
+        }
+
+        open func InsertImageImpl(_ width: Int32, _ height: Int32, _ ascent: Int32, _ verticalAlign: UWP.VerticalCharacterAlignment, _ alternateText: String, _ value: UWP.AnyIRandomAccessStream?) throws {
+            let _alternateText = try! HString(alternateText)
+            let valueWrapper = __ABI_Windows_Storage_Streams.IRandomAccessStreamWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.InsertImage(pThis, width, height, ascent, verticalAlign, _alternateText.get(), _value))
+            }
+        }
+
+        open func InStoryImpl(_ range: UWP.AnyITextRange?) throws -> Bool {
+            var result: boolean = 0
+            let rangeWrapper = __ABI_Windows_UI_Text.ITextRangeWrapper(range)
+            let _range = try! rangeWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.InStory(pThis, _range, &result))
+            }
+            return .init(from: result)
+        }
+
+        open func IsEqualImpl(_ range: UWP.AnyITextRange?) throws -> Bool {
+            var result: boolean = 0
+            let rangeWrapper = __ABI_Windows_UI_Text.ITextRangeWrapper(range)
+            let _range = try! rangeWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.IsEqual(pThis, _range, &result))
+            }
+            return .init(from: result)
+        }
+
+        open func MoveImpl(_ unit: UWP.TextRangeUnit, _ count: Int32) throws -> Int32 {
+            var result: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Move(pThis, unit, count, &result))
+            }
+            return result
+        }
+
+        open func MoveEndImpl(_ unit: UWP.TextRangeUnit, _ count: Int32) throws -> Int32 {
+            var result: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.MoveEnd(pThis, unit, count, &result))
+            }
+            return result
+        }
+
+        open func MoveStartImpl(_ unit: UWP.TextRangeUnit, _ count: Int32) throws -> Int32 {
+            var result: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.MoveStart(pThis, unit, count, &result))
+            }
+            return result
+        }
+
+        open func PasteImpl(_ format: Int32) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.Paste(pThis, format))
+            }
+        }
+
+        open func ScrollIntoViewImpl(_ value: UWP.PointOptions) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.ScrollIntoView(pThis, value))
+            }
+        }
+
+        open func MatchSelectionImpl() throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.MatchSelection(pThis))
+            }
+        }
+
+        open func SetIndexImpl(_ unit: UWP.TextRangeUnit, _ index: Int32, _ extend: Bool) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.SetIndex(pThis, unit, index, .init(from: extend)))
+            }
+        }
+
+        open func SetPointImpl(_ point: WindowsFoundation.Point, _ options: UWP.PointOptions, _ extend: Bool) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.SetPoint(pThis, .from(swift: point), options, .init(from: extend)))
+            }
+        }
+
+        open func SetRangeImpl(_ startPosition: Int32, _ endPosition: Int32) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.SetRange(pThis, startPosition, endPosition))
+            }
+        }
+
+        open func SetTextImpl(_ options: UWP.TextSetOptions, _ value: String) throws {
+            let _value = try! HString(value)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.SetText(pThis, options, _value.get()))
+            }
+        }
+
+        open func SetTextViaStreamImpl(_ options: UWP.TextSetOptions, _ value: UWP.AnyIRandomAccessStream?) throws {
+            let valueWrapper = __ABI_Windows_Storage_Streams.IRandomAccessStreamWrapper(value)
+            let _value = try! valueWrapper?.toABI { $0 }
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.SetTextViaStream(pThis, options, _value))
+            }
+        }
+
+        open func StartOfImpl(_ unit: UWP.TextRangeUnit, _ extend: Bool) throws -> Int32 {
+            var result: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextRange.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.StartOf(pThis, unit, .init(from: extend), &result))
+            }
+            return result
+        }
+
+    }
+
+    internal static var ITextRangeVTable: __x_ABI_CWindows_CUI_CText_CITextRangeVtbl = .init(
+        QueryInterface: { ITextRangeWrapper.queryInterface($0, $1, $2) },
+        AddRef: { ITextRangeWrapper.addRef($0) },
+        Release: { ITextRangeWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 3).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_UI_Text.ITextRangeWrapper.IID
+            $1!.pointee = 3
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.UI.Text.ITextRange").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_Character: {
+            guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.character
+            $1?.initialize(to: .init(from: value))
+            return S_OK
+        },
+
+        put_Character: {
+            guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: Character = .init(from: $1)
+            __unwrapped__instance.character = value
+            return S_OK
+        },
+
+        get_CharacterFormat: {
+            guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.characterFormat
+            let valueWrapper = __ABI_Windows_UI_Text.ITextCharacterFormatWrapper(value)
+            valueWrapper?.copyTo($1)
+            return S_OK
+        },
+
+        put_CharacterFormat: {
+            guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.AnyITextCharacterFormat? = __ABI_Windows_UI_Text.ITextCharacterFormatWrapper.unwrapFrom(abi: ComPtr($1))
+            __unwrapped__instance.characterFormat = value
+            return S_OK
+        },
+
+        get_FormattedText: {
+            guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.formattedText
+            let valueWrapper = __ABI_Windows_UI_Text.ITextRangeWrapper(value)
+            valueWrapper?.copyTo($1)
+            return S_OK
+        },
+
+        put_FormattedText: {
+            guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.AnyITextRange? = __ABI_Windows_UI_Text.ITextRangeWrapper.unwrapFrom(abi: ComPtr($1))
+            __unwrapped__instance.formattedText = value
+            return S_OK
+        },
+
+        get_EndPosition: {
+            guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.endPosition
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_EndPosition: {
+            guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: Int32 = $1
+            __unwrapped__instance.endPosition = value
+            return S_OK
+        },
+
+        get_Gravity: {
+            guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.gravity
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_Gravity: {
+            guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.RangeGravity = $1
+            __unwrapped__instance.gravity = value
+            return S_OK
+        },
+
+        get_Length: {
+            guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.length
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        get_Link: {
+            guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.link
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        },
+
+        put_Link: {
+            guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: String = .init(from: $1)
+            __unwrapped__instance.link = value
+            return S_OK
+        },
+
+        get_ParagraphFormat: {
+            guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.paragraphFormat
+            let valueWrapper = __ABI_Windows_UI_Text.ITextParagraphFormatWrapper(value)
+            valueWrapper?.copyTo($1)
+            return S_OK
+        },
+
+        put_ParagraphFormat: {
+            guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.AnyITextParagraphFormat? = __ABI_Windows_UI_Text.ITextParagraphFormatWrapper.unwrapFrom(abi: ComPtr($1))
+            __unwrapped__instance.paragraphFormat = value
+            return S_OK
+        },
+
+        get_StartPosition: {
+            guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.startPosition
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_StartPosition: {
+            guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: Int32 = $1
+            __unwrapped__instance.startPosition = value
+            return S_OK
+        },
+
+        get_StoryLength: {
+            guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.storyLength
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        get_Text: {
+            guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.text
+            $1?.initialize(to: try! HString(value).detach())
+            return S_OK
+        },
+
+        put_Text: {
+            guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: String = .init(from: $1)
+            __unwrapped__instance.text = value
+            return S_OK
+        },
+
+        CanPaste: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let format: Int32 = $1
+                let result = try __unwrapped__instance.canPaste(format)
+                $2?.initialize(to: .init(from: result))
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        ChangeCase: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let value: UWP.LetterCase = $1
+                try __unwrapped__instance.changeCase(value)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        Collapse: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let value: Bool = .init(from: $1)
+                try __unwrapped__instance.collapse(value)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        Copy: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                try __unwrapped__instance.copy()
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        Cut: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                try __unwrapped__instance.cut()
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        Delete: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let unit: UWP.TextRangeUnit = $1
+                let count: Int32 = $2
+                let result = try __unwrapped__instance.delete(unit, count)
+                $3?.initialize(to: result)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        EndOf: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let unit: UWP.TextRangeUnit = $1
+                let extend: Bool = .init(from: $2)
+                let result = try __unwrapped__instance.endOf(unit, extend)
+                $3?.initialize(to: result)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        Expand: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let unit: UWP.TextRangeUnit = $1
+                let result = try __unwrapped__instance.expand(unit)
+                $2?.initialize(to: result)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        FindText: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let value: String = .init(from: $1)
+                let scanLength: Int32 = $2
+                let options: UWP.FindOptions = $3
+                let result = try __unwrapped__instance.findText(value, scanLength, options)
+                $4?.initialize(to: result)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        GetCharacterUtf32: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                var value: UInt32 = 0
+                let offset: Int32 = $2
+                try __unwrapped__instance.getCharacterUtf32(&value, offset)
+                $1?.initialize(to: value)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        GetClone: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let result = try __unwrapped__instance.getClone()
+                let resultWrapper = __ABI_Windows_UI_Text.ITextRangeWrapper(result)
+                resultWrapper?.copyTo($1)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        GetIndex: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let unit: UWP.TextRangeUnit = $1
+                let result = try __unwrapped__instance.getIndex(unit)
+                $2?.initialize(to: result)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        GetPoint: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let horizontalAlign: UWP.HorizontalCharacterAlignment = $1
+                let verticalAlign: UWP.VerticalCharacterAlignment = $2
+                let options: UWP.PointOptions = $3
+                var point: WindowsFoundation.Point = .init()
+                try __unwrapped__instance.getPoint(horizontalAlign, verticalAlign, options, &point)
+                $4?.initialize(to: .from(swift: point))
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        GetRect: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let options: UWP.PointOptions = $1
+                var rect: WindowsFoundation.Rect = .init()
+                var hit: Int32 = 0
+                try __unwrapped__instance.getRect(options, &rect, &hit)
+                $2?.initialize(to: .from(swift: rect))
+                $3?.initialize(to: hit)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        GetText: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let options: UWP.TextGetOptions = $1
+                var value: String = ""
+                try __unwrapped__instance.getText(options, &value)
+                $2?.initialize(to: try! HString(value).detach())
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        GetTextViaStream: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let options: UWP.TextGetOptions = $1
+                let value: UWP.AnyIRandomAccessStream? = __ABI_Windows_Storage_Streams.IRandomAccessStreamWrapper.unwrapFrom(abi: ComPtr($2))
+                try __unwrapped__instance.getTextViaStream(options, value)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        InRange: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let range: UWP.AnyITextRange? = __ABI_Windows_UI_Text.ITextRangeWrapper.unwrapFrom(abi: ComPtr($1))
+                let result = try __unwrapped__instance.inRange(range)
+                $2?.initialize(to: .init(from: result))
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        InsertImage: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let width: Int32 = $1
+                let height: Int32 = $2
+                let ascent: Int32 = $3
+                let verticalAlign: UWP.VerticalCharacterAlignment = $4
+                let alternateText: String = .init(from: $5)
+                let value: UWP.AnyIRandomAccessStream? = __ABI_Windows_Storage_Streams.IRandomAccessStreamWrapper.unwrapFrom(abi: ComPtr($6))
+                try __unwrapped__instance.insertImage(width, height, ascent, verticalAlign, alternateText, value)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        InStory: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let range: UWP.AnyITextRange? = __ABI_Windows_UI_Text.ITextRangeWrapper.unwrapFrom(abi: ComPtr($1))
+                let result = try __unwrapped__instance.inStory(range)
+                $2?.initialize(to: .init(from: result))
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        IsEqual: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let range: UWP.AnyITextRange? = __ABI_Windows_UI_Text.ITextRangeWrapper.unwrapFrom(abi: ComPtr($1))
+                let result = try __unwrapped__instance.isEqual(range)
+                $2?.initialize(to: .init(from: result))
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        Move: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let unit: UWP.TextRangeUnit = $1
+                let count: Int32 = $2
+                let result = try __unwrapped__instance.move(unit, count)
+                $3?.initialize(to: result)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        MoveEnd: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let unit: UWP.TextRangeUnit = $1
+                let count: Int32 = $2
+                let result = try __unwrapped__instance.moveEnd(unit, count)
+                $3?.initialize(to: result)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        MoveStart: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let unit: UWP.TextRangeUnit = $1
+                let count: Int32 = $2
+                let result = try __unwrapped__instance.moveStart(unit, count)
+                $3?.initialize(to: result)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        Paste: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let format: Int32 = $1
+                try __unwrapped__instance.paste(format)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        ScrollIntoView: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let value: UWP.PointOptions = $1
+                try __unwrapped__instance.scrollIntoView(value)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        MatchSelection: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                try __unwrapped__instance.matchSelection()
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        SetIndex: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let unit: UWP.TextRangeUnit = $1
+                let index: Int32 = $2
+                let extend: Bool = .init(from: $3)
+                try __unwrapped__instance.setIndex(unit, index, extend)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        SetPoint: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let point: WindowsFoundation.Point = .from(abi: $1)
+                let options: UWP.PointOptions = $2
+                let extend: Bool = .init(from: $3)
+                try __unwrapped__instance.setPoint(point, options, extend)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        SetRange: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let startPosition: Int32 = $1
+                let endPosition: Int32 = $2
+                try __unwrapped__instance.setRange(startPosition, endPosition)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        SetText: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let options: UWP.TextSetOptions = $1
+                let value: String = .init(from: $2)
+                try __unwrapped__instance.setText(options, value)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        SetTextViaStream: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let options: UWP.TextSetOptions = $1
+                let value: UWP.AnyIRandomAccessStream? = __ABI_Windows_Storage_Streams.IRandomAccessStreamWrapper.unwrapFrom(abi: ComPtr($2))
+                try __unwrapped__instance.setTextViaStream(options, value)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        StartOf: {
+            do {
+                guard let __unwrapped__instance = ITextRangeWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let unit: UWP.TextRangeUnit = $1
+                let extend: Bool = .init(from: $2)
+                let result = try __unwrapped__instance.startOf(unit, extend)
+                $3?.initialize(to: result)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        }
+    )
+
+    public typealias ITextRangeWrapper = InterfaceWrapperBase<__IMPL_Windows_UI_Text.ITextRangeBridge>
+    public class ITextSelection: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CText_CITextSelection }
+
+        open func get_OptionsImpl() throws -> UWP.SelectionOptions {
+            var value: __x_ABI_CWindows_CUI_CText_CSelectionOptions = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextSelection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Options(pThis, &value))
+            }
+            return value
+        }
+
+        open func put_OptionsImpl(_ value: UWP.SelectionOptions) throws {
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextSelection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_Options(pThis, value))
+            }
+        }
+
+        open func get_TypeImpl() throws -> UWP.SelectionType {
+            var value: __x_ABI_CWindows_CUI_CText_CSelectionType = .init(0)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextSelection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Type(pThis, &value))
+            }
+            return value
+        }
+
+        open func EndKeyImpl(_ unit: UWP.TextRangeUnit, _ extend: Bool) throws -> Int32 {
+            var result: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextSelection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.EndKey(pThis, unit, .init(from: extend), &result))
+            }
+            return result
+        }
+
+        open func HomeKeyImpl(_ unit: UWP.TextRangeUnit, _ extend: Bool) throws -> Int32 {
+            var result: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextSelection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.HomeKey(pThis, unit, .init(from: extend), &result))
+            }
+            return result
+        }
+
+        open func MoveDownImpl(_ unit: UWP.TextRangeUnit, _ count: Int32, _ extend: Bool) throws -> Int32 {
+            var result: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextSelection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.MoveDown(pThis, unit, count, .init(from: extend), &result))
+            }
+            return result
+        }
+
+        open func MoveLeftImpl(_ unit: UWP.TextRangeUnit, _ count: Int32, _ extend: Bool) throws -> Int32 {
+            var result: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextSelection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.MoveLeft(pThis, unit, count, .init(from: extend), &result))
+            }
+            return result
+        }
+
+        open func MoveRightImpl(_ unit: UWP.TextRangeUnit, _ count: Int32, _ extend: Bool) throws -> Int32 {
+            var result: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextSelection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.MoveRight(pThis, unit, count, .init(from: extend), &result))
+            }
+            return result
+        }
+
+        open func MoveUpImpl(_ unit: UWP.TextRangeUnit, _ count: Int32, _ extend: Bool) throws -> Int32 {
+            var result: INT32 = 0
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextSelection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.MoveUp(pThis, unit, count, .init(from: extend), &result))
+            }
+            return result
+        }
+
+        open func TypeTextImpl(_ value: String) throws {
+            let _value = try! HString(value)
+            _ = try perform(as: __x_ABI_CWindows_CUI_CText_CITextSelection.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.TypeText(pThis, _value.get()))
+            }
+        }
+
+    }
+
+    internal static var ITextSelectionVTable: __x_ABI_CWindows_CUI_CText_CITextSelectionVtbl = .init(
+        QueryInterface: { ITextSelectionWrapper.queryInterface($0, $1, $2) },
+        AddRef: { ITextSelectionWrapper.addRef($0) },
+        Release: { ITextSelectionWrapper.release($0) },
+        GetIids: {
+            let size = MemoryLayout<WindowsFoundation.IID>.size
+            let iids = CoTaskMemAlloc(UInt64(size) * 4).assumingMemoryBound(to: WindowsFoundation.IID.self)
+            iids[0] = IUnknown.IID
+            iids[1] = IInspectable.IID
+            iids[2] = __ABI_Windows_UI_Text.ITextSelectionWrapper.IID
+            iids[3] = __ABI_Windows_UI_Text.ITextRangeWrapper.IID
+            $1!.pointee = 4
+            $2!.pointee = iids
+            return S_OK
+        },
+
+        GetRuntimeClassName: {
+            _ = $0
+            let hstring = try! HString("Windows.UI.Text.ITextSelection").detach()
+            $1!.pointee = hstring
+            return S_OK
+        },
+
+        GetTrustLevel: {
+            _ = $0
+            $1!.pointee = TrustLevel(rawValue: 0)
+            return S_OK
+        },
+
+        get_Options: {
+            guard let __unwrapped__instance = ITextSelectionWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.options
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        put_Options: {
+            guard let __unwrapped__instance = ITextSelectionWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value: UWP.SelectionOptions = $1
+            __unwrapped__instance.options = value
+            return S_OK
+        },
+
+        get_Type: {
+            guard let __unwrapped__instance = ITextSelectionWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+            let value = __unwrapped__instance.type
+            $1?.initialize(to: value)
+            return S_OK
+        },
+
+        EndKey: {
+            do {
+                guard let __unwrapped__instance = ITextSelectionWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let unit: UWP.TextRangeUnit = $1
+                let extend: Bool = .init(from: $2)
+                let result = try __unwrapped__instance.endKey(unit, extend)
+                $3?.initialize(to: result)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        HomeKey: {
+            do {
+                guard let __unwrapped__instance = ITextSelectionWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let unit: UWP.TextRangeUnit = $1
+                let extend: Bool = .init(from: $2)
+                let result = try __unwrapped__instance.homeKey(unit, extend)
+                $3?.initialize(to: result)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        MoveDown: {
+            do {
+                guard let __unwrapped__instance = ITextSelectionWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let unit: UWP.TextRangeUnit = $1
+                let count: Int32 = $2
+                let extend: Bool = .init(from: $3)
+                let result = try __unwrapped__instance.moveDown(unit, count, extend)
+                $4?.initialize(to: result)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        MoveLeft: {
+            do {
+                guard let __unwrapped__instance = ITextSelectionWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let unit: UWP.TextRangeUnit = $1
+                let count: Int32 = $2
+                let extend: Bool = .init(from: $3)
+                let result = try __unwrapped__instance.moveLeft(unit, count, extend)
+                $4?.initialize(to: result)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        MoveRight: {
+            do {
+                guard let __unwrapped__instance = ITextSelectionWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let unit: UWP.TextRangeUnit = $1
+                let count: Int32 = $2
+                let extend: Bool = .init(from: $3)
+                let result = try __unwrapped__instance.moveRight(unit, count, extend)
+                $4?.initialize(to: result)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        MoveUp: {
+            do {
+                guard let __unwrapped__instance = ITextSelectionWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let unit: UWP.TextRangeUnit = $1
+                let count: Int32 = $2
+                let extend: Bool = .init(from: $3)
+                let result = try __unwrapped__instance.moveUp(unit, count, extend)
+                $4?.initialize(to: result)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        },
+
+        TypeText: {
+            do {
+                guard let __unwrapped__instance = ITextSelectionWrapper.tryUnwrapFrom(raw: $0) else { return E_INVALIDARG }
+                let value: String = .init(from: $1)
+                try __unwrapped__instance.typeText(value)
+                return S_OK
+            } catch { return failWith(err: E_FAIL) } 
+        }
+    )
+
+    public typealias ITextSelectionWrapper = InterfaceWrapperBase<__IMPL_Windows_UI_Text.ITextSelectionBridge>
 }
 extension __x_ABI_CWindows_CUI_CText_CFontWeight {
         public static func from(swift: UWP.FontWeight) -> __x_ABI_CWindows_CUI_CText_CFontWeight {

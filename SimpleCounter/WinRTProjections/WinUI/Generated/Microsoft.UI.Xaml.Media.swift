@@ -6,6 +6,10 @@ import Foundation
 @_spi(WinRTInternal) @_spi(WinRTImplements) import WindowsFoundation
 import CWinRT
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.alignmentx)
+public typealias AlignmentX = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAlignmentX
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.alignmenty)
+public typealias AlignmentY = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAlignmentY
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.brushmappingmode)
 public typealias BrushMappingMode = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CBrushMappingMode
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.colorinterpolationmode)
@@ -18,12 +22,18 @@ public typealias FastPlayFallbackBehaviour = __x_ABI_CMicrosoft_CUI_CXaml_CMedia
 public typealias FillRule = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CFillRule
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.gradientspreadmethod)
 public typealias GradientSpreadMethod = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CGradientSpreadMethod
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.loadedimagesourceloadstatus)
+public typealias LoadedImageSourceLoadStatus = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CLoadedImageSourceLoadStatus
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.penlinecap)
 public typealias PenLineCap = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CPenLineCap
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.penlinejoin)
 public typealias PenLineJoin = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CPenLineJoin
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.stretch)
 public typealias Stretch = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CStretch
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.stylesimulations)
+public typealias StyleSimulations = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CStyleSimulations
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.sweepdirection)
+public typealias SweepDirection = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CSweepDirection
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.acrylicbrush)
 open class AcrylicBrush : WinUI.XamlCompositionBrushBase {
     private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IAcrylicBrush
@@ -141,6 +151,195 @@ open class AcrylicBrush : WinUI.XamlCompositionBrushBase {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.arcsegment)
+public final class ArcSegment : WinUI.PathSegment {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IArcSegment
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIArcSegment
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIArcSegment>?) -> ArcSegment? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    public init() {
+        super.init(fromAbi: try! RoActivateInstance(HString("Microsoft.UI.Xaml.Media.ArcSegment")))
+    }
+
+    private static let _IArcSegmentStatics: __ABI_Microsoft_UI_Xaml_Media.IArcSegmentStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Media.ArcSegment"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.arcsegment.islargearcproperty)
+    public static var isLargeArcProperty : WinUI.DependencyProperty! {
+        get { try! _IArcSegmentStatics.get_IsLargeArcPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.arcsegment.pointproperty)
+    public static var pointProperty : WinUI.DependencyProperty! {
+        get { try! _IArcSegmentStatics.get_PointPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.arcsegment.rotationangleproperty)
+    public static var rotationAngleProperty : WinUI.DependencyProperty! {
+        get { try! _IArcSegmentStatics.get_RotationAnglePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.arcsegment.sizeproperty)
+    public static var sizeProperty : WinUI.DependencyProperty! {
+        get { try! _IArcSegmentStatics.get_SizePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.arcsegment.sweepdirectionproperty)
+    public static var sweepDirectionProperty : WinUI.DependencyProperty! {
+        get { try! _IArcSegmentStatics.get_SweepDirectionPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.arcsegment.islargearc)
+    public var isLargeArc : Bool {
+        get { try! _default.get_IsLargeArcImpl() }
+        set { try! _default.put_IsLargeArcImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.arcsegment.point)
+    public var point : WindowsFoundation.Point {
+        get { try! _default.get_PointImpl() }
+        set { try! _default.put_PointImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.arcsegment.rotationangle)
+    public var rotationAngle : Double {
+        get { try! _default.get_RotationAngleImpl() }
+        set { try! _default.put_RotationAngleImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.arcsegment.size)
+    public var size : WindowsFoundation.Size {
+        get { try! _default.get_SizeImpl() }
+        set { try! _default.put_SizeImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.arcsegment.sweepdirection)
+    public var sweepDirection : SweepDirection {
+        get { try! _default.get_SweepDirectionImpl() }
+        set { try! _default.put_SweepDirectionImpl(newValue) }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.beziersegment)
+public final class BezierSegment : WinUI.PathSegment {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IBezierSegment
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBezierSegment
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBezierSegment>?) -> BezierSegment? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    public init() {
+        super.init(fromAbi: try! RoActivateInstance(HString("Microsoft.UI.Xaml.Media.BezierSegment")))
+    }
+
+    private static let _IBezierSegmentStatics: __ABI_Microsoft_UI_Xaml_Media.IBezierSegmentStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Media.BezierSegment"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.beziersegment.point1property)
+    public static var point1Property : WinUI.DependencyProperty! {
+        get { try! _IBezierSegmentStatics.get_Point1PropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.beziersegment.point2property)
+    public static var point2Property : WinUI.DependencyProperty! {
+        get { try! _IBezierSegmentStatics.get_Point2PropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.beziersegment.point3property)
+    public static var point3Property : WinUI.DependencyProperty! {
+        get { try! _IBezierSegmentStatics.get_Point3PropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.beziersegment.point1)
+    public var point1 : WindowsFoundation.Point {
+        get { try! _default.get_Point1Impl() }
+        set { try! _default.put_Point1Impl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.beziersegment.point2)
+    public var point2 : WindowsFoundation.Point {
+        get { try! _default.get_Point2Impl() }
+        set { try! _default.put_Point2Impl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.beziersegment.point3)
+    public var point3 : WindowsFoundation.Point {
+        get { try! _default.get_Point3Impl() }
+        set { try! _default.put_Point3Impl(newValue) }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.bitmapcache)
+public final class BitmapCache : WinUI.CacheMode {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IBitmapCache
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBitmapCache
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBitmapCache>?) -> BitmapCache? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    override public init() {
+        super.init(fromAbi: try! RoActivateInstance(HString("Microsoft.UI.Xaml.Media.BitmapCache")))
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.brush)
 open class Brush : WinUI.DependencyObject, WinAppSDK.IAnimationObject {
     private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IBrush
@@ -249,6 +448,131 @@ open class Brush : WinUI.DependencyObject, WinAppSDK.IAnimationObject {
         _default = nil
         _IBrushOverrides = nil
         _IAnimationObject = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.brushcollection)
+public final class BrushCollection : WinRTClass, IVector, IIterable {
+    public typealias T = Brush?
+    private typealias SwiftABI = WinUI.IVectorBrush
+    private typealias CABI = __x_ABI_C__FIVector_1___x_ABI_CMicrosoft__CUI__CXaml__CMedia__CBrush
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_C__FIVector_1___x_ABI_CMicrosoft__CUI__CXaml__CMedia__CBrush>?) -> BrushCollection? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    override public init() {
+        super.init(try! RoActivateInstance(HString("Microsoft.UI.Xaml.Media.BrushCollection")))
+    }
+
+    // MARK: Collection
+    public typealias Element = T
+    public var startIndex: Int { 0 }
+    public var endIndex: Int { Int(size) }
+    public func index(after i: Int) -> Int {
+        i+1
+    }
+
+    public func index(of: Element) -> Int? {
+        var index: UInt32 = 0
+        let result = indexOf(of, &index)
+        guard result else { return nil }
+        return Int(index)
+    }
+    public var count: Int { Int(size) }
+
+
+    public subscript(position: Int) -> Element {
+        get {
+            getAt(UInt32(position))
+        }
+        set(newValue) {
+            setAt(UInt32(position), newValue)
+        }
+    }
+
+    public func removeLast() {
+        removeAtEnd()
+    }
+
+    // MARK: WinRT
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.brushcollection.getat)
+    public func getAt(_ index: UInt32) -> Brush? {
+        try! _default.GetAtImpl(index)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.brushcollection.getview)
+    public func getView() -> WindowsFoundation.AnyIVectorView<Brush?>? {
+        try! _default.GetViewImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.brushcollection.indexof)
+    public func indexOf(_ value: Brush?, _ index: inout UInt32) -> Bool {
+        try! _default.IndexOfImpl(value, &index)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.brushcollection.setat)
+    public func setAt(_ index: UInt32, _ value: Brush?) {
+        try! _default.SetAtImpl(index, value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.brushcollection.insertat)
+    public func insertAt(_ index: UInt32, _ value: Brush?) {
+        try! _default.InsertAtImpl(index, value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.brushcollection.removeat)
+    public func removeAt(_ index: UInt32) {
+        try! _default.RemoveAtImpl(index)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.brushcollection.append)
+    public func append(_ value: Brush?) {
+        try! _default.AppendImpl(value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.brushcollection.removeatend)
+    public func removeAtEnd() {
+        try! _default.RemoveAtEndImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.brushcollection.clear)
+    public func clear() {
+        try! _default.ClearImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.brushcollection.size)
+    public var size : UInt32 {
+        get { try! _default.get_SizeImpl() }
+    }
+
+    private lazy var _IIterable: IIterableBrush! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.brushcollection.first)
+    public func first() -> WindowsFoundation.AnyIIterator<Brush?>? {
+        try! _IIterable.FirstImpl()
+    }
+
+    deinit {
+        _default = nil
+        _IIterable = nil
     }
 }
 
@@ -513,6 +837,64 @@ public final class CompositionTarget : WinRTClass {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.desktopacrylicbackdrop)
+open class DesktopAcrylicBackdrop : WinUI.SystemBackdrop {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IDesktopAcrylicBackdrop
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIDesktopAcrylicBackdrop
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override open func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIDesktopAcrylicBackdrop>?) -> DesktopAcrylicBackdrop? {
+        guard let abi = abi else { return nil }
+        return UnsealedWinRTClassWrapper<Composable>.unwrapFrom(base: abi)
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    @_spi(WinRTInternal)
+    override public init<Composable: ComposableImpl>(
+        composing: Composable.Type,
+        _ createCallback: (UnsealedWinRTClassWrapper<Composable>?, inout WindowsFoundation.IInspectable?) -> Composable.Default.SwiftABI)
+    {
+        super.init(composing: composing, createCallback)
+    }
+    override open func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    private static var _IDesktopAcrylicBackdropFactory : __ABI_Microsoft_UI_Xaml_Media.IDesktopAcrylicBackdropFactory =  try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Media.DesktopAcrylicBackdrop"))
+
+    override public init() {
+        super.init(composing: Self.Composable.self) { baseInterface, innerInterface in 
+            try! Self._IDesktopAcrylicBackdropFactory.CreateInstanceImpl(baseInterface, &innerInterface)
+        }
+    }
+
+    internal enum ISystemBackdropOverrides : ComposableImpl {
+        internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CISystemBackdropOverrides
+        internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.ISystemBackdropOverrides
+        internal typealias Class = DesktopAcrylicBackdrop
+        internal typealias SwiftProjection = WinRTClassWeakReference<Class>
+        internal enum Default : AbiInterface {
+            internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIDesktopAcrylicBackdrop
+            internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IDesktopAcrylicBackdrop
+        }
+    }
+    internal typealias Composable = ISystemBackdropOverrides
+    deinit {
+        _default = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.doublecollection)
 public final class DoubleCollection : WinRTClass, IVector, IIterable {
     public typealias T = Double
@@ -635,6 +1017,73 @@ public final class DoubleCollection : WinRTClass, IVector, IIterable {
     deinit {
         _default = nil
         _IIterable = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.ellipsegeometry)
+public final class EllipseGeometry : WinUI.Geometry {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IEllipseGeometry
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIEllipseGeometry
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIEllipseGeometry>?) -> EllipseGeometry? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    public init() {
+        super.init(fromAbi: try! RoActivateInstance(HString("Microsoft.UI.Xaml.Media.EllipseGeometry")))
+    }
+
+    private static let _IEllipseGeometryStatics: __ABI_Microsoft_UI_Xaml_Media.IEllipseGeometryStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Media.EllipseGeometry"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.ellipsegeometry.centerproperty)
+    public static var centerProperty : WinUI.DependencyProperty! {
+        get { try! _IEllipseGeometryStatics.get_CenterPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.ellipsegeometry.radiusxproperty)
+    public static var radiusXProperty : WinUI.DependencyProperty! {
+        get { try! _IEllipseGeometryStatics.get_RadiusXPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.ellipsegeometry.radiusyproperty)
+    public static var radiusYProperty : WinUI.DependencyProperty! {
+        get { try! _IEllipseGeometryStatics.get_RadiusYPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.ellipsegeometry.center)
+    public var center : WindowsFoundation.Point {
+        get { try! _default.get_CenterImpl() }
+        set { try! _default.put_CenterImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.ellipsegeometry.radiusx)
+    public var radiusX : Double {
+        get { try! _default.get_RadiusXImpl() }
+        set { try! _default.put_RadiusXImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.ellipsegeometry.radiusy)
+    public var radiusY : Double {
+        get { try! _default.get_RadiusYImpl() }
+        set { try! _default.put_RadiusYImpl(newValue) }
+    }
+
+    deinit {
+        _default = nil
     }
 }
 
@@ -883,6 +1332,187 @@ open class Geometry : WinUI.DependencyObject {
         }
     }
     internal typealias Composable = IGeometry
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.geometrycollection)
+public final class GeometryCollection : WinRTClass, IVector, IIterable {
+    public typealias T = Geometry?
+    private typealias SwiftABI = WinUI.IVectorGeometry
+    private typealias CABI = __x_ABI_C__FIVector_1___x_ABI_CMicrosoft__CUI__CXaml__CMedia__CGeometry
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_C__FIVector_1___x_ABI_CMicrosoft__CUI__CXaml__CMedia__CGeometry>?) -> GeometryCollection? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    override public init() {
+        super.init(try! RoActivateInstance(HString("Microsoft.UI.Xaml.Media.GeometryCollection")))
+    }
+
+    // MARK: Collection
+    public typealias Element = T
+    public var startIndex: Int { 0 }
+    public var endIndex: Int { Int(size) }
+    public func index(after i: Int) -> Int {
+        i+1
+    }
+
+    public func index(of: Element) -> Int? {
+        var index: UInt32 = 0
+        let result = indexOf(of, &index)
+        guard result else { return nil }
+        return Int(index)
+    }
+    public var count: Int { Int(size) }
+
+
+    public subscript(position: Int) -> Element {
+        get {
+            getAt(UInt32(position))
+        }
+        set(newValue) {
+            setAt(UInt32(position), newValue)
+        }
+    }
+
+    public func removeLast() {
+        removeAtEnd()
+    }
+
+    // MARK: WinRT
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.geometrycollection.getat)
+    public func getAt(_ index: UInt32) -> Geometry? {
+        try! _default.GetAtImpl(index)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.geometrycollection.getview)
+    public func getView() -> WindowsFoundation.AnyIVectorView<Geometry?>? {
+        try! _default.GetViewImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.geometrycollection.indexof)
+    public func indexOf(_ value: Geometry?, _ index: inout UInt32) -> Bool {
+        try! _default.IndexOfImpl(value, &index)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.geometrycollection.setat)
+    public func setAt(_ index: UInt32, _ value: Geometry?) {
+        try! _default.SetAtImpl(index, value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.geometrycollection.insertat)
+    public func insertAt(_ index: UInt32, _ value: Geometry?) {
+        try! _default.InsertAtImpl(index, value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.geometrycollection.removeat)
+    public func removeAt(_ index: UInt32) {
+        try! _default.RemoveAtImpl(index)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.geometrycollection.append)
+    public func append(_ value: Geometry?) {
+        try! _default.AppendImpl(value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.geometrycollection.removeatend)
+    public func removeAtEnd() {
+        try! _default.RemoveAtEndImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.geometrycollection.clear)
+    public func clear() {
+        try! _default.ClearImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.geometrycollection.size)
+    public var size : UInt32 {
+        get { try! _default.get_SizeImpl() }
+    }
+
+    private lazy var _IIterable: IIterableGeometry! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.geometrycollection.first)
+    public func first() -> WindowsFoundation.AnyIIterator<Geometry?>? {
+        try! _IIterable.FirstImpl()
+    }
+
+    deinit {
+        _default = nil
+        _IIterable = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.geometrygroup)
+public final class GeometryGroup : WinUI.Geometry {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IGeometryGroup
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIGeometryGroup
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIGeometryGroup>?) -> GeometryGroup? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    public init() {
+        super.init(fromAbi: try! RoActivateInstance(HString("Microsoft.UI.Xaml.Media.GeometryGroup")))
+    }
+
+    private static let _IGeometryGroupStatics: __ABI_Microsoft_UI_Xaml_Media.IGeometryGroupStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Media.GeometryGroup"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.geometrygroup.childrenproperty)
+    public static var childrenProperty : WinUI.DependencyProperty! {
+        get { try! _IGeometryGroupStatics.get_ChildrenPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.geometrygroup.fillruleproperty)
+    public static var fillRuleProperty : WinUI.DependencyProperty! {
+        get { try! _IGeometryGroupStatics.get_FillRulePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.geometrygroup.children)
+    public var children : GeometryCollection! {
+        get { try! _default.get_ChildrenImpl() }
+        set { try! _default.put_ChildrenImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.geometrygroup.fillrule)
+    public var fillRule : FillRule {
+        get { try! _default.get_FillRuleImpl() }
+        set { try! _default.put_FillRuleImpl(newValue) }
+    }
+
     deinit {
         _default = nil
     }
@@ -1172,6 +1802,88 @@ public final class GradientStopCollection : WinRTClass, IVector, IIterable {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.imagebrush)
+public final class ImageBrush : WinUI.TileBrush {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IImageBrush
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIImageBrush
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIImageBrush>?) -> ImageBrush? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    override public init() {
+        super.init(fromAbi: try! RoActivateInstance(HString("Microsoft.UI.Xaml.Media.ImageBrush")))
+    }
+
+    private static let _IImageBrushStatics: __ABI_Microsoft_UI_Xaml_Media.IImageBrushStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Media.ImageBrush"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.imagebrush.imagesourceproperty)
+    public static var imageSourceProperty : WinUI.DependencyProperty! {
+        get { try! _IImageBrushStatics.get_ImageSourcePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.imagebrush.imagesource)
+    public var imageSource : ImageSource! {
+        get { try! _default.get_ImageSourceImpl() }
+        set { try! _default.put_ImageSourceImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.imagebrush.imagefailed)
+    public lazy var imageFailed : Event<WinUI.ExceptionRoutedEventHandler> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._default else { return .init() }
+          return try! this.add_ImageFailedImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._default.remove_ImageFailedImpl($0)
+       }
+      )
+    }()
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.imagebrush.imageopened)
+    public lazy var imageOpened : Event<WinUI.RoutedEventHandler> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._default else { return .init() }
+          return try! this.add_ImageOpenedImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._default.remove_ImageOpenedImpl($0)
+       }
+      )
+    }()
+
+    internal enum IBrushOverrides : ComposableImpl {
+        internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBrushOverrides
+        internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IBrushOverrides
+        internal typealias Class = ImageBrush
+        internal typealias SwiftProjection = WinRTClassWeakReference<Class>
+        internal enum Default : AbiInterface {
+            internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIImageBrush
+            internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IImageBrush
+        }
+    }
+    internal typealias Composable = IBrushOverrides
+    deinit {
+        _default = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.imagesource)
 open class ImageSource : WinUI.DependencyObject {
     private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IImageSource
@@ -1219,6 +1931,62 @@ open class ImageSource : WinUI.DependencyObject {
         }
     }
     internal typealias Composable = IImageSource
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.linegeometry)
+public final class LineGeometry : WinUI.Geometry {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.ILineGeometry
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILineGeometry
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILineGeometry>?) -> LineGeometry? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    public init() {
+        super.init(fromAbi: try! RoActivateInstance(HString("Microsoft.UI.Xaml.Media.LineGeometry")))
+    }
+
+    private static let _ILineGeometryStatics: __ABI_Microsoft_UI_Xaml_Media.ILineGeometryStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Media.LineGeometry"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.linegeometry.endpointproperty)
+    public static var endPointProperty : WinUI.DependencyProperty! {
+        get { try! _ILineGeometryStatics.get_EndPointPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.linegeometry.startpointproperty)
+    public static var startPointProperty : WinUI.DependencyProperty! {
+        get { try! _ILineGeometryStatics.get_StartPointPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.linegeometry.endpoint)
+    public var endPoint : WindowsFoundation.Point {
+        get { try! _default.get_EndPointImpl() }
+        set { try! _default.put_EndPointImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.linegeometry.startpoint)
+    public var startPoint : WindowsFoundation.Point {
+        get { try! _default.get_StartPointImpl() }
+        set { try! _default.put_StartPointImpl(newValue) }
+    }
+
     deinit {
         _default = nil
     }
@@ -1336,6 +2104,281 @@ public final class LinearGradientBrush : WinUI.GradientBrush {
         }
     }
     internal typealias Composable = IBrushOverrides
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.loadedimagesourceloadcompletedeventargs)
+public final class LoadedImageSourceLoadCompletedEventArgs : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.ILoadedImageSourceLoadCompletedEventArgs
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILoadedImageSourceLoadCompletedEventArgs
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILoadedImageSourceLoadCompletedEventArgs>?) -> LoadedImageSourceLoadCompletedEventArgs? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.loadedimagesourceloadcompletedeventargs.status)
+    public var status : LoadedImageSourceLoadStatus {
+        get { try! _default.get_StatusImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.loadedimagesurface)
+public final class LoadedImageSurface : WinRTClass, WindowsFoundation.IClosable, WinAppSDK.ICompositionSurface {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.ILoadedImageSurface
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILoadedImageSurface
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CILoadedImageSurface>?) -> LoadedImageSurface? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    private static let _ILoadedImageSurfaceStatics: __ABI_Microsoft_UI_Xaml_Media.ILoadedImageSurfaceStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Media.LoadedImageSurface"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.loadedimagesurface.startloadfromuri)
+    public static func startLoadFromUri(_ uri: WindowsFoundation.Uri!, _ desiredMaxSize: WindowsFoundation.Size) -> LoadedImageSurface! {
+        return try! _ILoadedImageSurfaceStatics.StartLoadFromUriWithSizeImpl(uri, desiredMaxSize)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.loadedimagesurface.startloadfromuri)
+    public static func startLoadFromUri(_ uri: WindowsFoundation.Uri!) -> LoadedImageSurface! {
+        return try! _ILoadedImageSurfaceStatics.StartLoadFromUriImpl(uri)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.loadedimagesurface.startloadfromstream)
+    public static func startLoadFromStream(_ stream: UWP.AnyIRandomAccessStream!, _ desiredMaxSize: WindowsFoundation.Size) -> LoadedImageSurface! {
+        return try! _ILoadedImageSurfaceStatics.StartLoadFromStreamWithSizeImpl(stream, desiredMaxSize)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.loadedimagesurface.startloadfromstream)
+    public static func startLoadFromStream(_ stream: UWP.AnyIRandomAccessStream!) -> LoadedImageSurface! {
+        return try! _ILoadedImageSurfaceStatics.StartLoadFromStreamImpl(stream)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.loadedimagesurface.decodedphysicalsize)
+    public var decodedPhysicalSize : WindowsFoundation.Size {
+        get { try! _default.get_DecodedPhysicalSizeImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.loadedimagesurface.decodedsize)
+    public var decodedSize : WindowsFoundation.Size {
+        get { try! _default.get_DecodedSizeImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.loadedimagesurface.naturalsize)
+    public var naturalSize : WindowsFoundation.Size {
+        get { try! _default.get_NaturalSizeImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.loadedimagesurface.loadcompleted)
+    public lazy var loadCompleted : Event<TypedEventHandler<LoadedImageSurface?, LoadedImageSourceLoadCompletedEventArgs?>> = {
+      .init(
+        add: { [weak self] in
+          guard let this = self?._default else { return .init() }
+          return try! this.add_LoadCompletedImpl($0)
+        },
+        remove: { [weak self] in
+         try? self?._default.remove_LoadCompletedImpl($0)
+       }
+      )
+    }()
+
+    private lazy var _IClosable: __ABI_Windows_Foundation.IClosable! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.loadedimagesurface.close)
+    public func close() throws {
+        try _IClosable.CloseImpl()
+    }
+
+    private lazy var _ICompositionSurface: __ABI_Microsoft_UI_Composition.ICompositionSurface! = getInterfaceForCaching()
+    deinit {
+        _default = nil
+        _IClosable = nil
+        _ICompositionSurface = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.matrix3dprojection)
+public final class Matrix3DProjection : WinUI.Projection {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IMatrix3DProjection
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrix3DProjection
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrix3DProjection>?) -> Matrix3DProjection? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    override public init() {
+        super.init(fromAbi: try! RoActivateInstance(HString("Microsoft.UI.Xaml.Media.Matrix3DProjection")))
+    }
+
+    private static let _IMatrix3DProjectionStatics: __ABI_Microsoft_UI_Xaml_Media.IMatrix3DProjectionStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Media.Matrix3DProjection"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.matrix3dprojection.projectionmatrixproperty)
+    public static var projectionMatrixProperty : WinUI.DependencyProperty! {
+        get { try! _IMatrix3DProjectionStatics.get_ProjectionMatrixPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.matrix3dprojection.projectionmatrix)
+    public var projectionMatrix : WinUI.Matrix3D {
+        get { try! _default.get_ProjectionMatrixImpl() }
+        set { try! _default.put_ProjectionMatrixImpl(newValue) }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.matrixhelper)
+public final class MatrixHelper : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IMatrixHelper
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrixHelper
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrixHelper>?) -> MatrixHelper? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    private static let _IMatrixHelperStatics: __ABI_Microsoft_UI_Xaml_Media.IMatrixHelperStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Media.MatrixHelper"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.matrixhelper.fromelements)
+    public static func fromElements(_ m11: Double, _ m12: Double, _ m21: Double, _ m22: Double, _ offsetX: Double, _ offsetY: Double) -> Matrix {
+        return try! _IMatrixHelperStatics.FromElementsImpl(m11, m12, m21, m22, offsetX, offsetY)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.matrixhelper.getisidentity)
+    public static func getIsIdentity(_ target: Matrix) -> Bool {
+        return try! _IMatrixHelperStatics.GetIsIdentityImpl(target)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.matrixhelper.transform)
+    public static func transform(_ target: Matrix, _ point: WindowsFoundation.Point) -> WindowsFoundation.Point {
+        return try! _IMatrixHelperStatics.TransformImpl(target, point)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.matrixhelper.identity)
+    public static var identity : Matrix {
+        get { try! _IMatrixHelperStatics.get_IdentityImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.matrixtransform)
+public final class MatrixTransform : WinUI.Transform {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IMatrixTransform
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrixTransform
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrixTransform>?) -> MatrixTransform? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    public init() {
+        super.init(fromAbi: try! RoActivateInstance(HString("Microsoft.UI.Xaml.Media.MatrixTransform")))
+    }
+
+    private static let _IMatrixTransformStatics: __ABI_Microsoft_UI_Xaml_Media.IMatrixTransformStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Media.MatrixTransform"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.matrixtransform.matrixproperty)
+    public static var matrixProperty : WinUI.DependencyProperty! {
+        get { try! _IMatrixTransformStatics.get_MatrixPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.matrixtransform.matrix)
+    public var matrix : Matrix {
+        get { try! _default.get_MatrixImpl() }
+        set { try! _default.put_MatrixImpl(newValue) }
+    }
+
+    internal enum IGeneralTransformOverrides : ComposableImpl {
+        internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIGeneralTransformOverrides
+        internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IGeneralTransformOverrides
+        internal typealias Class = MatrixTransform
+        internal typealias SwiftProjection = WinRTClassWeakReference<Class>
+        internal enum Default : AbiInterface {
+            internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIMatrixTransform
+            internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IMatrixTransform
+        }
+    }
+    internal typealias Composable = IGeneralTransformOverrides
     deinit {
         _default = nil
     }
@@ -1886,6 +2929,182 @@ public final class PathSegmentCollection : WinRTClass, IVector, IIterable {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.planeprojection)
+public final class PlaneProjection : WinUI.Projection {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IPlaneProjection
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPlaneProjection>?) -> PlaneProjection? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    override public init() {
+        super.init(fromAbi: try! RoActivateInstance(HString("Microsoft.UI.Xaml.Media.PlaneProjection")))
+    }
+
+    private static let _IPlaneProjectionStatics: __ABI_Microsoft_UI_Xaml_Media.IPlaneProjectionStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Media.PlaneProjection"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.planeprojection.centerofrotationxproperty)
+    public static var centerOfRotationXProperty : WinUI.DependencyProperty! {
+        get { try! _IPlaneProjectionStatics.get_CenterOfRotationXPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.planeprojection.centerofrotationyproperty)
+    public static var centerOfRotationYProperty : WinUI.DependencyProperty! {
+        get { try! _IPlaneProjectionStatics.get_CenterOfRotationYPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.planeprojection.centerofrotationzproperty)
+    public static var centerOfRotationZProperty : WinUI.DependencyProperty! {
+        get { try! _IPlaneProjectionStatics.get_CenterOfRotationZPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.planeprojection.globaloffsetxproperty)
+    public static var globalOffsetXProperty : WinUI.DependencyProperty! {
+        get { try! _IPlaneProjectionStatics.get_GlobalOffsetXPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.planeprojection.globaloffsetyproperty)
+    public static var globalOffsetYProperty : WinUI.DependencyProperty! {
+        get { try! _IPlaneProjectionStatics.get_GlobalOffsetYPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.planeprojection.globaloffsetzproperty)
+    public static var globalOffsetZProperty : WinUI.DependencyProperty! {
+        get { try! _IPlaneProjectionStatics.get_GlobalOffsetZPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.planeprojection.localoffsetxproperty)
+    public static var localOffsetXProperty : WinUI.DependencyProperty! {
+        get { try! _IPlaneProjectionStatics.get_LocalOffsetXPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.planeprojection.localoffsetyproperty)
+    public static var localOffsetYProperty : WinUI.DependencyProperty! {
+        get { try! _IPlaneProjectionStatics.get_LocalOffsetYPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.planeprojection.localoffsetzproperty)
+    public static var localOffsetZProperty : WinUI.DependencyProperty! {
+        get { try! _IPlaneProjectionStatics.get_LocalOffsetZPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.planeprojection.projectionmatrixproperty)
+    public static var projectionMatrixProperty : WinUI.DependencyProperty! {
+        get { try! _IPlaneProjectionStatics.get_ProjectionMatrixPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.planeprojection.rotationxproperty)
+    public static var rotationXProperty : WinUI.DependencyProperty! {
+        get { try! _IPlaneProjectionStatics.get_RotationXPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.planeprojection.rotationyproperty)
+    public static var rotationYProperty : WinUI.DependencyProperty! {
+        get { try! _IPlaneProjectionStatics.get_RotationYPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.planeprojection.rotationzproperty)
+    public static var rotationZProperty : WinUI.DependencyProperty! {
+        get { try! _IPlaneProjectionStatics.get_RotationZPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.planeprojection.centerofrotationx)
+    public var centerOfRotationX : Double {
+        get { try! _default.get_CenterOfRotationXImpl() }
+        set { try! _default.put_CenterOfRotationXImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.planeprojection.centerofrotationy)
+    public var centerOfRotationY : Double {
+        get { try! _default.get_CenterOfRotationYImpl() }
+        set { try! _default.put_CenterOfRotationYImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.planeprojection.centerofrotationz)
+    public var centerOfRotationZ : Double {
+        get { try! _default.get_CenterOfRotationZImpl() }
+        set { try! _default.put_CenterOfRotationZImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.planeprojection.globaloffsetx)
+    public var globalOffsetX : Double {
+        get { try! _default.get_GlobalOffsetXImpl() }
+        set { try! _default.put_GlobalOffsetXImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.planeprojection.globaloffsety)
+    public var globalOffsetY : Double {
+        get { try! _default.get_GlobalOffsetYImpl() }
+        set { try! _default.put_GlobalOffsetYImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.planeprojection.globaloffsetz)
+    public var globalOffsetZ : Double {
+        get { try! _default.get_GlobalOffsetZImpl() }
+        set { try! _default.put_GlobalOffsetZImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.planeprojection.localoffsetx)
+    public var localOffsetX : Double {
+        get { try! _default.get_LocalOffsetXImpl() }
+        set { try! _default.put_LocalOffsetXImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.planeprojection.localoffsety)
+    public var localOffsetY : Double {
+        get { try! _default.get_LocalOffsetYImpl() }
+        set { try! _default.put_LocalOffsetYImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.planeprojection.localoffsetz)
+    public var localOffsetZ : Double {
+        get { try! _default.get_LocalOffsetZImpl() }
+        set { try! _default.put_LocalOffsetZImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.planeprojection.projectionmatrix)
+    public var projectionMatrix : WinUI.Matrix3D {
+        get { try! _default.get_ProjectionMatrixImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.planeprojection.rotationx)
+    public var rotationX : Double {
+        get { try! _default.get_RotationXImpl() }
+        set { try! _default.put_RotationXImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.planeprojection.rotationy)
+    public var rotationY : Double {
+        get { try! _default.get_RotationYImpl() }
+        set { try! _default.put_RotationYImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.planeprojection.rotationz)
+    public var rotationZ : Double {
+        get { try! _default.get_RotationZImpl() }
+        set { try! _default.put_RotationZImpl(newValue) }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.pointcollection)
 public final class PointCollection : WinRTClass, IVector, IIterable {
     public typealias T = WindowsFoundation.Point
@@ -2056,6 +3275,96 @@ public final class PolyBezierSegment : WinUI.PathSegment {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.polylinesegment)
+public final class PolyLineSegment : WinUI.PathSegment {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IPolyLineSegment
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPolyLineSegment
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPolyLineSegment>?) -> PolyLineSegment? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    public init() {
+        super.init(fromAbi: try! RoActivateInstance(HString("Microsoft.UI.Xaml.Media.PolyLineSegment")))
+    }
+
+    private static let _IPolyLineSegmentStatics: __ABI_Microsoft_UI_Xaml_Media.IPolyLineSegmentStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Media.PolyLineSegment"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.polylinesegment.pointsproperty)
+    public static var pointsProperty : WinUI.DependencyProperty! {
+        get { try! _IPolyLineSegmentStatics.get_PointsPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.polylinesegment.points)
+    public var points : PointCollection! {
+        get { try! _default.get_PointsImpl() }
+        set { try! _default.put_PointsImpl(newValue) }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.polyquadraticbeziersegment)
+public final class PolyQuadraticBezierSegment : WinUI.PathSegment {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IPolyQuadraticBezierSegment
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPolyQuadraticBezierSegment
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIPolyQuadraticBezierSegment>?) -> PolyQuadraticBezierSegment? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    public init() {
+        super.init(fromAbi: try! RoActivateInstance(HString("Microsoft.UI.Xaml.Media.PolyQuadraticBezierSegment")))
+    }
+
+    private static let _IPolyQuadraticBezierSegmentStatics: __ABI_Microsoft_UI_Xaml_Media.IPolyQuadraticBezierSegmentStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Media.PolyQuadraticBezierSegment"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.polyquadraticbeziersegment.pointsproperty)
+    public static var pointsProperty : WinUI.DependencyProperty! {
+        get { try! _IPolyQuadraticBezierSegmentStatics.get_PointsPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.polyquadraticbeziersegment.points)
+    public var points : PointCollection! {
+        get { try! _default.get_PointsImpl() }
+        set { try! _default.put_PointsImpl(newValue) }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.projection)
 open class Projection : WinUI.DependencyObject {
     private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IProjection
@@ -2109,6 +3418,203 @@ open class Projection : WinUI.DependencyObject {
         }
     }
     internal typealias Composable = IProjection
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.quadraticbeziersegment)
+public final class QuadraticBezierSegment : WinUI.PathSegment {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IQuadraticBezierSegment
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIQuadraticBezierSegment
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIQuadraticBezierSegment>?) -> QuadraticBezierSegment? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    public init() {
+        super.init(fromAbi: try! RoActivateInstance(HString("Microsoft.UI.Xaml.Media.QuadraticBezierSegment")))
+    }
+
+    private static let _IQuadraticBezierSegmentStatics: __ABI_Microsoft_UI_Xaml_Media.IQuadraticBezierSegmentStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Media.QuadraticBezierSegment"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.quadraticbeziersegment.point1property)
+    public static var point1Property : WinUI.DependencyProperty! {
+        get { try! _IQuadraticBezierSegmentStatics.get_Point1PropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.quadraticbeziersegment.point2property)
+    public static var point2Property : WinUI.DependencyProperty! {
+        get { try! _IQuadraticBezierSegmentStatics.get_Point2PropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.quadraticbeziersegment.point1)
+    public var point1 : WindowsFoundation.Point {
+        get { try! _default.get_Point1Impl() }
+        set { try! _default.put_Point1Impl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.quadraticbeziersegment.point2)
+    public var point2 : WindowsFoundation.Point {
+        get { try! _default.get_Point2Impl() }
+        set { try! _default.put_Point2Impl(newValue) }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.radialgradientbrush)
+open class RadialGradientBrush : WinUI.XamlCompositionBrushBase {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IRadialGradientBrush
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override open func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush>?) -> RadialGradientBrush? {
+        guard let abi = abi else { return nil }
+        return UnsealedWinRTClassWrapper<Composable>.unwrapFrom(base: abi)
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    @_spi(WinRTInternal)
+    override public init<Composable: ComposableImpl>(
+        composing: Composable.Type,
+        _ createCallback: (UnsealedWinRTClassWrapper<Composable>?, inout WindowsFoundation.IInspectable?) -> Composable.Default.SwiftABI)
+    {
+        super.init(composing: composing, createCallback)
+    }
+    override open func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    private static var _IRadialGradientBrushFactory : __ABI_Microsoft_UI_Xaml_Media.IRadialGradientBrushFactory =  try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Media.RadialGradientBrush"))
+
+    override public init() {
+        super.init(composing: Self.Composable.self) { baseInterface, innerInterface in 
+            try! Self._IRadialGradientBrushFactory.CreateInstanceImpl(baseInterface, &innerInterface)
+        }
+    }
+
+    private static let _IRadialGradientBrushStatics: __ABI_Microsoft_UI_Xaml_Media.IRadialGradientBrushStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Media.RadialGradientBrush"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.radialgradientbrush.centerproperty)
+    public class var centerProperty : WinUI.DependencyProperty! {
+        get { try! _IRadialGradientBrushStatics.get_CenterPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.radialgradientbrush.gradientoriginproperty)
+    public class var gradientOriginProperty : WinUI.DependencyProperty! {
+        get { try! _IRadialGradientBrushStatics.get_GradientOriginPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.radialgradientbrush.interpolationspaceproperty)
+    public class var interpolationSpaceProperty : WinUI.DependencyProperty! {
+        get { try! _IRadialGradientBrushStatics.get_InterpolationSpacePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.radialgradientbrush.mappingmodeproperty)
+    public class var mappingModeProperty : WinUI.DependencyProperty! {
+        get { try! _IRadialGradientBrushStatics.get_MappingModePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.radialgradientbrush.radiusxproperty)
+    public class var radiusXProperty : WinUI.DependencyProperty! {
+        get { try! _IRadialGradientBrushStatics.get_RadiusXPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.radialgradientbrush.radiusyproperty)
+    public class var radiusYProperty : WinUI.DependencyProperty! {
+        get { try! _IRadialGradientBrushStatics.get_RadiusYPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.radialgradientbrush.spreadmethodproperty)
+    public class var spreadMethodProperty : WinUI.DependencyProperty! {
+        get { try! _IRadialGradientBrushStatics.get_SpreadMethodPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.radialgradientbrush.center)
+    public var center : WindowsFoundation.Point {
+        get { try! _default.get_CenterImpl() }
+        set { try! _default.put_CenterImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.radialgradientbrush.gradientorigin)
+    public var gradientOrigin : WindowsFoundation.Point {
+        get { try! _default.get_GradientOriginImpl() }
+        set { try! _default.put_GradientOriginImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.radialgradientbrush.gradientstops)
+    public var gradientStops : WindowsFoundation.AnyIObservableVector<GradientStop?>! {
+        get { try! _default.get_GradientStopsImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.radialgradientbrush.interpolationspace)
+    public var interpolationSpace : WinAppSDK.CompositionColorSpace {
+        get { try! _default.get_InterpolationSpaceImpl() }
+        set { try! _default.put_InterpolationSpaceImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.radialgradientbrush.mappingmode)
+    public var mappingMode : BrushMappingMode {
+        get { try! _default.get_MappingModeImpl() }
+        set { try! _default.put_MappingModeImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.radialgradientbrush.radiusx)
+    public var radiusX : Double {
+        get { try! _default.get_RadiusXImpl() }
+        set { try! _default.put_RadiusXImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.radialgradientbrush.radiusy)
+    public var radiusY : Double {
+        get { try! _default.get_RadiusYImpl() }
+        set { try! _default.put_RadiusYImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.radialgradientbrush.spreadmethod)
+    public var spreadMethod : GradientSpreadMethod {
+        get { try! _default.get_SpreadMethodImpl() }
+        set { try! _default.put_SpreadMethodImpl(newValue) }
+    }
+
+    internal enum IXamlCompositionBrushBaseOverrides : ComposableImpl {
+        internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIXamlCompositionBrushBaseOverrides
+        internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IXamlCompositionBrushBaseOverrides
+        internal typealias Class = RadialGradientBrush
+        internal typealias SwiftProjection = WinRTClassWeakReference<Class>
+        internal enum Default : AbiInterface {
+            internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRadialGradientBrush
+            internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IRadialGradientBrush
+        }
+    }
+    internal typealias Composable = IXamlCompositionBrushBaseOverrides
     deinit {
         _default = nil
     }
@@ -2193,6 +3699,207 @@ public final class RenderedEventArgs : WinRTClass {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.renderingeventargs)
+public final class RenderingEventArgs : WinRTClass {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IRenderingEventArgs
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRenderingEventArgs
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRenderingEventArgs>?) -> RenderingEventArgs? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.renderingeventargs.renderingtime)
+    public var renderingTime : WindowsFoundation.TimeSpan {
+        get { try! _default.get_RenderingTimeImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.rotatetransform)
+public final class RotateTransform : WinUI.Transform {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IRotateTransform
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRotateTransform
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRotateTransform>?) -> RotateTransform? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    public init() {
+        super.init(fromAbi: try! RoActivateInstance(HString("Microsoft.UI.Xaml.Media.RotateTransform")))
+    }
+
+    private static let _IRotateTransformStatics: __ABI_Microsoft_UI_Xaml_Media.IRotateTransformStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Media.RotateTransform"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.rotatetransform.angleproperty)
+    public static var angleProperty : WinUI.DependencyProperty! {
+        get { try! _IRotateTransformStatics.get_AnglePropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.rotatetransform.centerxproperty)
+    public static var centerXProperty : WinUI.DependencyProperty! {
+        get { try! _IRotateTransformStatics.get_CenterXPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.rotatetransform.centeryproperty)
+    public static var centerYProperty : WinUI.DependencyProperty! {
+        get { try! _IRotateTransformStatics.get_CenterYPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.rotatetransform.angle)
+    public var angle : Double {
+        get { try! _default.get_AngleImpl() }
+        set { try! _default.put_AngleImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.rotatetransform.centerx)
+    public var centerX : Double {
+        get { try! _default.get_CenterXImpl() }
+        set { try! _default.put_CenterXImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.rotatetransform.centery)
+    public var centerY : Double {
+        get { try! _default.get_CenterYImpl() }
+        set { try! _default.put_CenterYImpl(newValue) }
+    }
+
+    internal enum IGeneralTransformOverrides : ComposableImpl {
+        internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIGeneralTransformOverrides
+        internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IGeneralTransformOverrides
+        internal typealias Class = RotateTransform
+        internal typealias SwiftProjection = WinRTClassWeakReference<Class>
+        internal enum Default : AbiInterface {
+            internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIRotateTransform
+            internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IRotateTransform
+        }
+    }
+    internal typealias Composable = IGeneralTransformOverrides
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.scaletransform)
+public final class ScaleTransform : WinUI.Transform {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IScaleTransform
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIScaleTransform
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIScaleTransform>?) -> ScaleTransform? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    public init() {
+        super.init(fromAbi: try! RoActivateInstance(HString("Microsoft.UI.Xaml.Media.ScaleTransform")))
+    }
+
+    private static let _IScaleTransformStatics: __ABI_Microsoft_UI_Xaml_Media.IScaleTransformStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Media.ScaleTransform"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.scaletransform.centerxproperty)
+    public static var centerXProperty : WinUI.DependencyProperty! {
+        get { try! _IScaleTransformStatics.get_CenterXPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.scaletransform.centeryproperty)
+    public static var centerYProperty : WinUI.DependencyProperty! {
+        get { try! _IScaleTransformStatics.get_CenterYPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.scaletransform.scalexproperty)
+    public static var scaleXProperty : WinUI.DependencyProperty! {
+        get { try! _IScaleTransformStatics.get_ScaleXPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.scaletransform.scaleyproperty)
+    public static var scaleYProperty : WinUI.DependencyProperty! {
+        get { try! _IScaleTransformStatics.get_ScaleYPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.scaletransform.centerx)
+    public var centerX : Double {
+        get { try! _default.get_CenterXImpl() }
+        set { try! _default.put_CenterXImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.scaletransform.centery)
+    public var centerY : Double {
+        get { try! _default.get_CenterYImpl() }
+        set { try! _default.put_CenterYImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.scaletransform.scalex)
+    public var scaleX : Double {
+        get { try! _default.get_ScaleXImpl() }
+        set { try! _default.put_ScaleXImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.scaletransform.scaley)
+    public var scaleY : Double {
+        get { try! _default.get_ScaleYImpl() }
+        set { try! _default.put_ScaleYImpl(newValue) }
+    }
+
+    internal enum IGeneralTransformOverrides : ComposableImpl {
+        internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIGeneralTransformOverrides
+        internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IGeneralTransformOverrides
+        internal typealias Class = ScaleTransform
+        internal typealias SwiftProjection = WinRTClassWeakReference<Class>
+        internal enum Default : AbiInterface {
+            internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIScaleTransform
+            internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IScaleTransform
+        }
+    }
+    internal typealias Composable = IGeneralTransformOverrides
+    deinit {
+        _default = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.shadow)
 open class Shadow : WinUI.DependencyObject {
     private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IShadow
@@ -2240,6 +3947,95 @@ open class Shadow : WinUI.DependencyObject {
         }
     }
     internal typealias Composable = IShadow
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.skewtransform)
+public final class SkewTransform : WinUI.Transform {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.ISkewTransform
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CISkewTransform
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CISkewTransform>?) -> SkewTransform? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    public init() {
+        super.init(fromAbi: try! RoActivateInstance(HString("Microsoft.UI.Xaml.Media.SkewTransform")))
+    }
+
+    private static let _ISkewTransformStatics: __ABI_Microsoft_UI_Xaml_Media.ISkewTransformStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Media.SkewTransform"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.skewtransform.anglexproperty)
+    public static var angleXProperty : WinUI.DependencyProperty! {
+        get { try! _ISkewTransformStatics.get_AngleXPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.skewtransform.angleyproperty)
+    public static var angleYProperty : WinUI.DependencyProperty! {
+        get { try! _ISkewTransformStatics.get_AngleYPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.skewtransform.centerxproperty)
+    public static var centerXProperty : WinUI.DependencyProperty! {
+        get { try! _ISkewTransformStatics.get_CenterXPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.skewtransform.centeryproperty)
+    public static var centerYProperty : WinUI.DependencyProperty! {
+        get { try! _ISkewTransformStatics.get_CenterYPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.skewtransform.anglex)
+    public var angleX : Double {
+        get { try! _default.get_AngleXImpl() }
+        set { try! _default.put_AngleXImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.skewtransform.angley)
+    public var angleY : Double {
+        get { try! _default.get_AngleYImpl() }
+        set { try! _default.put_AngleYImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.skewtransform.centerx)
+    public var centerX : Double {
+        get { try! _default.get_CenterXImpl() }
+        set { try! _default.put_CenterXImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.skewtransform.centery)
+    public var centerY : Double {
+        get { try! _default.get_CenterYImpl() }
+        set { try! _default.put_CenterYImpl(newValue) }
+    }
+
+    internal enum IGeneralTransformOverrides : ComposableImpl {
+        internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIGeneralTransformOverrides
+        internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IGeneralTransformOverrides
+        internal typealias Class = SkewTransform
+        internal typealias SwiftProjection = WinRTClassWeakReference<Class>
+        internal enum Default : AbiInterface {
+            internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CISkewTransform
+            internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.ISkewTransform
+        }
+    }
+    internal typealias Composable = IGeneralTransformOverrides
     deinit {
         _default = nil
     }
@@ -2454,6 +4250,98 @@ open class ThemeShadow : WinUI.Shadow {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.tilebrush)
+open class TileBrush : WinUI.Brush {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.ITileBrush
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITileBrush
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override open func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITileBrush>?) -> TileBrush? {
+        guard let abi = abi else { return nil }
+        return UnsealedWinRTClassWrapper<Composable>.unwrapFrom(base: abi)
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    @_spi(WinRTInternal)
+    override public init<Composable: ComposableImpl>(
+        composing: Composable.Type,
+        _ createCallback: (UnsealedWinRTClassWrapper<Composable>?, inout WindowsFoundation.IInspectable?) -> Composable.Default.SwiftABI)
+    {
+        super.init(composing: composing, createCallback)
+    }
+    override open func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    private static var _ITileBrushFactory : __ABI_Microsoft_UI_Xaml_Media.ITileBrushFactory =  try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Media.TileBrush"))
+
+    override public init() {
+        super.init(composing: Self.Composable.self) { baseInterface, innerInterface in 
+            try! Self._ITileBrushFactory.CreateInstanceImpl(baseInterface, &innerInterface)
+        }
+    }
+
+    private static let _ITileBrushStatics: __ABI_Microsoft_UI_Xaml_Media.ITileBrushStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Media.TileBrush"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.tilebrush.alignmentxproperty)
+    public class var alignmentXProperty : WinUI.DependencyProperty! {
+        get { try! _ITileBrushStatics.get_AlignmentXPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.tilebrush.alignmentyproperty)
+    public class var alignmentYProperty : WinUI.DependencyProperty! {
+        get { try! _ITileBrushStatics.get_AlignmentYPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.tilebrush.stretchproperty)
+    public class var stretchProperty : WinUI.DependencyProperty! {
+        get { try! _ITileBrushStatics.get_StretchPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.tilebrush.alignmentx)
+    public var alignmentX : AlignmentX {
+        get { try! _default.get_AlignmentXImpl() }
+        set { try! _default.put_AlignmentXImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.tilebrush.alignmenty)
+    public var alignmentY : AlignmentY {
+        get { try! _default.get_AlignmentYImpl() }
+        set { try! _default.put_AlignmentYImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.tilebrush.stretch)
+    public var stretch : Stretch {
+        get { try! _default.get_StretchImpl() }
+        set { try! _default.put_StretchImpl(newValue) }
+    }
+
+    internal enum IBrushOverrides : ComposableImpl {
+        internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIBrushOverrides
+        internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IBrushOverrides
+        internal typealias Class = TileBrush
+        internal typealias SwiftProjection = WinRTClassWeakReference<Class>
+        internal enum Default : AbiInterface {
+            internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITileBrush
+            internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.ITileBrush
+        }
+    }
+    internal typealias Composable = IBrushOverrides
+    deinit {
+        _default = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.transform)
 open class Transform : WinUI.GeneralTransform {
     private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.ITransform
@@ -2498,6 +4386,192 @@ open class Transform : WinUI.GeneralTransform {
         internal enum Default : AbiInterface {
             internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITransform
             internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.ITransform
+        }
+    }
+    internal typealias Composable = IGeneralTransformOverrides
+    deinit {
+        _default = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.transformcollection)
+public final class TransformCollection : WinRTClass, IVector, IIterable {
+    public typealias T = Transform?
+    private typealias SwiftABI = WinUI.IVectorTransform
+    private typealias CABI = __x_ABI_C__FIVector_1___x_ABI_CMicrosoft__CUI__CXaml__CMedia__CTransform
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_C__FIVector_1___x_ABI_CMicrosoft__CUI__CXaml__CMedia__CTransform>?) -> TransformCollection? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    override public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        return super.queryInterface(iid)
+    }
+    override public init() {
+        super.init(try! RoActivateInstance(HString("Microsoft.UI.Xaml.Media.TransformCollection")))
+    }
+
+    // MARK: Collection
+    public typealias Element = T
+    public var startIndex: Int { 0 }
+    public var endIndex: Int { Int(size) }
+    public func index(after i: Int) -> Int {
+        i+1
+    }
+
+    public func index(of: Element) -> Int? {
+        var index: UInt32 = 0
+        let result = indexOf(of, &index)
+        guard result else { return nil }
+        return Int(index)
+    }
+    public var count: Int { Int(size) }
+
+
+    public subscript(position: Int) -> Element {
+        get {
+            getAt(UInt32(position))
+        }
+        set(newValue) {
+            setAt(UInt32(position), newValue)
+        }
+    }
+
+    public func removeLast() {
+        removeAtEnd()
+    }
+
+    // MARK: WinRT
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.transformcollection.getat)
+    public func getAt(_ index: UInt32) -> Transform? {
+        try! _default.GetAtImpl(index)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.transformcollection.getview)
+    public func getView() -> WindowsFoundation.AnyIVectorView<Transform?>? {
+        try! _default.GetViewImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.transformcollection.indexof)
+    public func indexOf(_ value: Transform?, _ index: inout UInt32) -> Bool {
+        try! _default.IndexOfImpl(value, &index)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.transformcollection.setat)
+    public func setAt(_ index: UInt32, _ value: Transform?) {
+        try! _default.SetAtImpl(index, value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.transformcollection.insertat)
+    public func insertAt(_ index: UInt32, _ value: Transform?) {
+        try! _default.InsertAtImpl(index, value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.transformcollection.removeat)
+    public func removeAt(_ index: UInt32) {
+        try! _default.RemoveAtImpl(index)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.transformcollection.append)
+    public func append(_ value: Transform?) {
+        try! _default.AppendImpl(value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.transformcollection.removeatend)
+    public func removeAtEnd() {
+        try! _default.RemoveAtEndImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.transformcollection.clear)
+    public func clear() {
+        try! _default.ClearImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.transformcollection.size)
+    public var size : UInt32 {
+        get { try! _default.get_SizeImpl() }
+    }
+
+    private lazy var _IIterable: IIterableTransform! = getInterfaceForCaching()
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.transformcollection.first)
+    public func first() -> WindowsFoundation.AnyIIterator<Transform?>? {
+        try! _IIterable.FirstImpl()
+    }
+
+    deinit {
+        _default = nil
+        _IIterable = nil
+    }
+}
+
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.transformgroup)
+public final class TransformGroup : WinUI.Transform {
+    private typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.ITransformGroup
+    private typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITransformGroup
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITransformGroup>?) -> TransformGroup? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    override public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi: fromAbi)
+    }
+
+    public init() {
+        super.init(fromAbi: try! RoActivateInstance(HString("Microsoft.UI.Xaml.Media.TransformGroup")))
+    }
+
+    private static let _ITransformGroupStatics: __ABI_Microsoft_UI_Xaml_Media.ITransformGroupStatics = try! RoGetActivationFactory(HString("Microsoft.UI.Xaml.Media.TransformGroup"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.transformgroup.childrenproperty)
+    public static var childrenProperty : WinUI.DependencyProperty! {
+        get { try! _ITransformGroupStatics.get_ChildrenPropertyImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.transformgroup.children)
+    public var children : TransformCollection! {
+        get { try! _default.get_ChildrenImpl() }
+        set { try! _default.put_ChildrenImpl(newValue) }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.transformgroup.value)
+    public var value : Matrix {
+        get { try! _default.get_ValueImpl() }
+    }
+
+    internal enum IGeneralTransformOverrides : ComposableImpl {
+        internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CIGeneralTransformOverrides
+        internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.IGeneralTransformOverrides
+        internal typealias Class = TransformGroup
+        internal typealias SwiftProjection = WinRTClassWeakReference<Class>
+        internal enum Default : AbiInterface {
+            internal typealias CABI = __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CITransformGroup
+            internal typealias SwiftABI = __ABI_Microsoft_UI_Xaml_Media.ITransformGroup
         }
     }
     internal typealias Composable = IGeneralTransformOverrides
@@ -2857,6 +4931,60 @@ open class XamlLight : WinUI.DependencyObject {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.matrix)
+public struct Matrix: Hashable, Codable {
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.matrix.m11)
+    public var m11: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.matrix.m12)
+    public var m12: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.matrix.m21)
+    public var m21: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.matrix.m22)
+    public var m22: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.matrix.offsetx)
+    public var offsetX: Double = 0.0
+    /// [Open Microsoft documentation](https://learn.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.media.matrix.offsety)
+    public var offsetY: Double = 0.0
+    public init() {}
+    public init(m11: Double, m12: Double, m21: Double, m22: Double, offsetX: Double, offsetY: Double) {
+        self.m11 = m11
+        self.m12 = m12
+        self.m21 = m21
+        self.m22 = m22
+        self.offsetX = offsetX
+        self.offsetY = offsetY
+    }
+    public static func from(abi: __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CMatrix) -> Matrix {
+        .init(m11: abi.M11, m12: abi.M12, m21: abi.M21, m22: abi.M22, offsetX: abi.OffsetX, offsetY: abi.OffsetY)
+    }
+}
+
+extension WinUI.AlignmentX {
+    public static var left : WinUI.AlignmentX {
+        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAlignmentX_Left
+    }
+    public static var center : WinUI.AlignmentX {
+        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAlignmentX_Center
+    }
+    public static var right : WinUI.AlignmentX {
+        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAlignmentX_Right
+    }
+}
+extension WinUI.AlignmentX: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.AlignmentY {
+    public static var top : WinUI.AlignmentY {
+        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAlignmentY_Top
+    }
+    public static var center : WinUI.AlignmentY {
+        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAlignmentY_Center
+    }
+    public static var bottom : WinUI.AlignmentY {
+        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CAlignmentY_Bottom
+    }
+}
+extension WinUI.AlignmentY: @retroactive Hashable, @retroactive Codable {}
+
 extension WinUI.BrushMappingMode {
     public static var absolute : WinUI.BrushMappingMode {
         __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CBrushMappingMode_Absolute
@@ -2926,6 +5054,22 @@ extension WinUI.GradientSpreadMethod {
 }
 extension WinUI.GradientSpreadMethod: @retroactive Hashable, @retroactive Codable {}
 
+extension WinUI.LoadedImageSourceLoadStatus {
+    public static var success : WinUI.LoadedImageSourceLoadStatus {
+        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CLoadedImageSourceLoadStatus_Success
+    }
+    public static var networkError : WinUI.LoadedImageSourceLoadStatus {
+        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CLoadedImageSourceLoadStatus_NetworkError
+    }
+    public static var invalidFormat : WinUI.LoadedImageSourceLoadStatus {
+        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CLoadedImageSourceLoadStatus_InvalidFormat
+    }
+    public static var other : WinUI.LoadedImageSourceLoadStatus {
+        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CLoadedImageSourceLoadStatus_Other
+    }
+}
+extension WinUI.LoadedImageSourceLoadStatus: @retroactive Hashable, @retroactive Codable {}
+
 extension WinUI.PenLineCap {
     public static var flat : WinUI.PenLineCap {
         __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CPenLineCap_Flat
@@ -2970,4 +5114,30 @@ extension WinUI.Stretch {
     }
 }
 extension WinUI.Stretch: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.StyleSimulations {
+    public static var none : WinUI.StyleSimulations {
+        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CStyleSimulations_None
+    }
+    public static var boldSimulation : WinUI.StyleSimulations {
+        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CStyleSimulations_BoldSimulation
+    }
+    public static var italicSimulation : WinUI.StyleSimulations {
+        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CStyleSimulations_ItalicSimulation
+    }
+    public static var boldItalicSimulation : WinUI.StyleSimulations {
+        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CStyleSimulations_BoldItalicSimulation
+    }
+}
+extension WinUI.StyleSimulations: @retroactive Hashable, @retroactive Codable {}
+
+extension WinUI.SweepDirection {
+    public static var counterclockwise : WinUI.SweepDirection {
+        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CSweepDirection_Counterclockwise
+    }
+    public static var clockwise : WinUI.SweepDirection {
+        __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CSweepDirection_Clockwise
+    }
+}
+extension WinUI.SweepDirection: @retroactive Hashable, @retroactive Codable {}
 

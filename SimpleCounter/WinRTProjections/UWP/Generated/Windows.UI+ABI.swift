@@ -4,11 +4,1218 @@ import Foundation
 @_spi(WinRTInternal) @_spi(WinRTImplements) import WindowsFoundation
 import CWinRT
 
+private var IID___x_ABI_CWindows_CUI_CIColorHelper: WindowsFoundation.IID {
+    .init(Data1: 0x193CFBE7, Data2: 0x65C7, Data3: 0x4540, Data4: ( 0xAD,0x08,0x62,0x83,0xBA,0x76,0x87,0x9A ))// 193CFBE7-65C7-4540-AD08-6283BA76879A
+}
+
+private var IID___x_ABI_CWindows_CUI_CIColorHelperStatics: WindowsFoundation.IID {
+    .init(Data1: 0x8504DBEA, Data2: 0xFB6A, Data3: 0x4144, Data4: ( 0xA6,0xC2,0x33,0x49,0x9C,0x92,0x84,0xF5 ))// 8504DBEA-FB6A-4144-A6C2-33499C9284F5
+}
+
+private var IID___x_ABI_CWindows_CUI_CIColorHelperStatics2: WindowsFoundation.IID {
+    .init(Data1: 0x24D9AF02, Data2: 0x6EB0, Data3: 0x4B94, Data4: ( 0x85,0x5C,0xFC,0xF0,0x81,0x8D,0x9A,0x16 ))// 24D9AF02-6EB0-4B94-855C-FCF0818D9A16
+}
+
+private var IID___x_ABI_CWindows_CUI_CIColors: WindowsFoundation.IID {
+    .init(Data1: 0x9B8C9326, Data2: 0x4CA6, Data3: 0x4CE5, Data4: ( 0x89,0x94,0x9E,0xFF,0x65,0xCA,0xBD,0xCC ))// 9B8C9326-4CA6-4CE5-8994-9EFF65CABDCC
+}
+
+private var IID___x_ABI_CWindows_CUI_CIColorsStatics: WindowsFoundation.IID {
+    .init(Data1: 0xCFF52E04, Data2: 0xCCA6, Data3: 0x4614, Data4: ( 0xA1,0x7E,0x75,0x49,0x10,0xC8,0x4A,0x99 ))// CFF52E04-CCA6-4614-A17E-754910C84A99
+}
+
+private var IID___x_ABI_CWindows_CUI_CIUIContentRoot: WindowsFoundation.IID {
+    .init(Data1: 0x1DFCBAC6, Data2: 0xB36B, Data3: 0x5CB9, Data4: ( 0x9B,0xC5,0x2B,0x7A,0x0E,0xDD,0xC3,0x78 ))// 1DFCBAC6-B36B-5CB9-9BC5-2B7A0EDDC378
+}
+
 private var IID___x_ABI_CWindows_CUI_CIUIContext: WindowsFoundation.IID {
     .init(Data1: 0xBB5CFACD, Data2: 0x5BD8, Data3: 0x59D0, Data4: ( 0xA5,0x9E,0x1C,0x17,0xA4,0xD6,0xD2,0x43 ))// BB5CFACD-5BD8-59D0-A59E-1C17A4D6D243
 }
 
 public enum __ABI_Windows_UI {
+    public class IColorHelper: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CIColorHelper }
+
+    }
+
+    public class IColorHelperStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CIColorHelperStatics }
+
+        internal func FromArgbImpl(_ a: UInt8, _ r: UInt8, _ g: UInt8, _ b: UInt8) throws -> UWP.Color {
+            var returnValue: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorHelperStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.FromArgb(pThis, a, r, g, b, &returnValue))
+            }
+            return .from(abi: returnValue)
+        }
+
+    }
+
+    public class IColorHelperStatics2: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CIColorHelperStatics2 }
+
+        internal func ToDisplayNameImpl(_ color: UWP.Color) throws -> String {
+            var returnValue: HSTRING?
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorHelperStatics2.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.ToDisplayName(pThis, .from(swift: color), &returnValue))
+            }
+            return .init(from: returnValue)
+        }
+
+    }
+
+    public class IColors: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CIColors }
+
+    }
+
+    public class IColorsStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CIColorsStatics }
+
+        internal func get_AliceBlueImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AliceBlue(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_AntiqueWhiteImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_AntiqueWhite(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_AquaImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Aqua(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_AquamarineImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Aquamarine(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_AzureImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Azure(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_BeigeImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Beige(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_BisqueImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Bisque(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_BlackImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Black(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_BlanchedAlmondImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_BlanchedAlmond(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_BlueImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Blue(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_BlueVioletImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_BlueViolet(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_BrownImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Brown(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_BurlyWoodImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_BurlyWood(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CadetBlueImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_CadetBlue(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ChartreuseImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Chartreuse(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ChocolateImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Chocolate(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CoralImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Coral(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CornflowerBlueImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_CornflowerBlue(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CornsilkImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Cornsilk(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CrimsonImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Crimson(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_CyanImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Cyan(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DarkBlueImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DarkBlue(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DarkCyanImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DarkCyan(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DarkGoldenrodImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DarkGoldenrod(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DarkGrayImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DarkGray(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DarkGreenImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DarkGreen(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DarkKhakiImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DarkKhaki(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DarkMagentaImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DarkMagenta(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DarkOliveGreenImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DarkOliveGreen(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DarkOrangeImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DarkOrange(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DarkOrchidImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DarkOrchid(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DarkRedImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DarkRed(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DarkSalmonImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DarkSalmon(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DarkSeaGreenImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DarkSeaGreen(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DarkSlateBlueImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DarkSlateBlue(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DarkSlateGrayImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DarkSlateGray(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DarkTurquoiseImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DarkTurquoise(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DarkVioletImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DarkViolet(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DeepPinkImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DeepPink(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DeepSkyBlueImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DeepSkyBlue(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DimGrayImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DimGray(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_DodgerBlueImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_DodgerBlue(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_FirebrickImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Firebrick(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_FloralWhiteImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_FloralWhite(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ForestGreenImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_ForestGreen(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_FuchsiaImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Fuchsia(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_GainsboroImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Gainsboro(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_GhostWhiteImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_GhostWhite(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_GoldImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Gold(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_GoldenrodImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Goldenrod(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_GrayImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Gray(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_GreenImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Green(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_GreenYellowImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_GreenYellow(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_HoneydewImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Honeydew(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_HotPinkImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_HotPink(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_IndianRedImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_IndianRed(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_IndigoImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Indigo(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_IvoryImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Ivory(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_KhakiImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Khaki(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LavenderImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Lavender(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LavenderBlushImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LavenderBlush(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LawnGreenImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LawnGreen(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LemonChiffonImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LemonChiffon(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LightBlueImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LightBlue(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LightCoralImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LightCoral(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LightCyanImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LightCyan(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LightGoldenrodYellowImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LightGoldenrodYellow(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LightGreenImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LightGreen(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LightGrayImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LightGray(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LightPinkImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LightPink(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LightSalmonImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LightSalmon(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LightSeaGreenImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LightSeaGreen(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LightSkyBlueImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LightSkyBlue(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LightSlateGrayImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LightSlateGray(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LightSteelBlueImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LightSteelBlue(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LightYellowImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LightYellow(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LimeImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Lime(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LimeGreenImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_LimeGreen(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_LinenImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Linen(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_MagentaImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Magenta(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_MaroonImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Maroon(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_MediumAquamarineImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_MediumAquamarine(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_MediumBlueImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_MediumBlue(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_MediumOrchidImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_MediumOrchid(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_MediumPurpleImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_MediumPurple(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_MediumSeaGreenImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_MediumSeaGreen(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_MediumSlateBlueImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_MediumSlateBlue(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_MediumSpringGreenImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_MediumSpringGreen(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_MediumTurquoiseImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_MediumTurquoise(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_MediumVioletRedImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_MediumVioletRed(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_MidnightBlueImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_MidnightBlue(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_MintCreamImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_MintCream(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_MistyRoseImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_MistyRose(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_MoccasinImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Moccasin(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_NavajoWhiteImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_NavajoWhite(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_NavyImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Navy(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_OldLaceImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_OldLace(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_OliveImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Olive(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_OliveDrabImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_OliveDrab(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_OrangeImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Orange(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_OrangeRedImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_OrangeRed(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_OrchidImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Orchid(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_PaleGoldenrodImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_PaleGoldenrod(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_PaleGreenImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_PaleGreen(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_PaleTurquoiseImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_PaleTurquoise(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_PaleVioletRedImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_PaleVioletRed(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_PapayaWhipImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_PapayaWhip(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_PeachPuffImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_PeachPuff(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_PeruImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Peru(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_PinkImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Pink(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_PlumImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Plum(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_PowderBlueImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_PowderBlue(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_PurpleImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Purple(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_RedImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Red(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_RosyBrownImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_RosyBrown(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_RoyalBlueImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_RoyalBlue(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SaddleBrownImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_SaddleBrown(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SalmonImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Salmon(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SandyBrownImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_SandyBrown(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SeaGreenImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_SeaGreen(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SeaShellImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_SeaShell(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SiennaImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Sienna(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SilverImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Silver(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SkyBlueImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_SkyBlue(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SlateBlueImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_SlateBlue(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SlateGrayImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_SlateGray(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SnowImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Snow(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SpringGreenImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_SpringGreen(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_SteelBlueImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_SteelBlue(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_TanImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Tan(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_TealImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Teal(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_ThistleImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Thistle(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_TomatoImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Tomato(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_TransparentImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Transparent(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_TurquoiseImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Turquoise(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_VioletImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Violet(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_WheatImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Wheat(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_WhiteImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_White(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_WhiteSmokeImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_WhiteSmoke(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_YellowImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_Yellow(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+        internal func get_YellowGreenImpl() throws -> UWP.Color {
+            var value: __x_ABI_CWindows_CUI_CColor = .init()
+            _ = try perform(as: __x_ABI_CWindows_CUI_CIColorsStatics.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_YellowGreen(pThis, &value))
+            }
+            return .from(abi: value)
+        }
+
+    }
+
+    public class IUIContentRoot: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CIUIContentRoot }
+
+        internal func get_UIContextImpl() throws -> UWP.UIContext? {
+            let (value) = try ComPtrs.initialize { valueAbi in
+                _ = try perform(as: __x_ABI_CWindows_CUI_CIUIContentRoot.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.get_UIContext(pThis, &valueAbi))
+                }
+            }
+            return .from(abi: value)
+        }
+
+    }
+
     public class IUIContext: WindowsFoundation.IInspectable {
         override public class var IID: WindowsFoundation.IID { IID___x_ABI_CWindows_CUI_CIUIContext }
 

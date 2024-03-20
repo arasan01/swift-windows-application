@@ -6,6 +6,8 @@ import CWinRT
 
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.playback.autoloadeddisplaypropertykind)
 public typealias AutoLoadedDisplayPropertyKind = __x_ABI_CWindows_CMedia_CPlayback_CAutoLoadedDisplayPropertyKind
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.playback.failedmediastreamkind)
+public typealias FailedMediaStreamKind = __x_ABI_CWindows_CMedia_CPlayback_CFailedMediaStreamKind
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.playback.mediabreakinsertionmethod)
 public typealias MediaBreakInsertionMethod = __x_ABI_CWindows_CMedia_CPlayback_CMediaBreakInsertionMethod
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.playback.mediacommandenablingrule)
@@ -32,6 +34,52 @@ public typealias SphericalVideoProjectionMode = __x_ABI_CWindows_CMedia_CPlaybac
 public typealias StereoscopicVideoRenderMode = __x_ABI_CWindows_CMedia_CPlayback_CStereoscopicVideoRenderMode
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.playback.timedmetadatatrackpresentationmode)
 public typealias TimedMetadataTrackPresentationMode = __x_ABI_CWindows_CMedia_CPlayback_CTimedMetadataTrackPresentationMode
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.playback.backgroundmediaplayer)
+public final class BackgroundMediaPlayer {
+    private static let _IBackgroundMediaPlayerStatics: __ABI_Windows_Media_Playback.IBackgroundMediaPlayerStatics = try! RoGetActivationFactory(HString("Windows.Media.Playback.BackgroundMediaPlayer"))
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.playback.backgroundmediaplayer.sendmessagetobackground)
+    public static func sendMessageToBackground(_ value: WindowsFoundation.ValueSet!) {
+        try! _IBackgroundMediaPlayerStatics.SendMessageToBackgroundImpl(value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.playback.backgroundmediaplayer.sendmessagetoforeground)
+    public static func sendMessageToForeground(_ value: WindowsFoundation.ValueSet!) {
+        try! _IBackgroundMediaPlayerStatics.SendMessageToForegroundImpl(value)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.playback.backgroundmediaplayer.ismediaplaying)
+    public static func isMediaPlaying() -> Bool {
+        return try! _IBackgroundMediaPlayerStatics.IsMediaPlayingImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.playback.backgroundmediaplayer.shutdown)
+    public static func shutdown() {
+        try! _IBackgroundMediaPlayerStatics.ShutdownImpl()
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.playback.backgroundmediaplayer.current)
+    public static var current : MediaPlayer! {
+        get { try! _IBackgroundMediaPlayerStatics.get_CurrentImpl() }
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.playback.backgroundmediaplayer.messagereceivedfrombackground)
+    public static var messageReceivedFromBackground : Event<EventHandler<MediaPlayerDataReceivedEventArgs?>> = {
+      .init(
+        add: { try! _IBackgroundMediaPlayerStatics.add_MessageReceivedFromBackgroundImpl($0) },
+        remove: { try? _IBackgroundMediaPlayerStatics.remove_MessageReceivedFromBackgroundImpl($0) }
+      )
+    }()
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.playback.backgroundmediaplayer.messagereceivedfromforeground)
+    public static var messageReceivedFromForeground : Event<EventHandler<MediaPlayerDataReceivedEventArgs?>> = {
+      .init(
+        add: { try! _IBackgroundMediaPlayerStatics.add_MessageReceivedFromForegroundImpl($0) },
+        remove: { try? _IBackgroundMediaPlayerStatics.remove_MessageReceivedFromForegroundImpl($0) }
+      )
+    }()
+
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.playback.currentmediaplaybackitemchangedeventargs)
 public final class CurrentMediaPlaybackItemChangedEventArgs : WinRTClass {
     private typealias SwiftABI = __ABI_Windows_Media_Playback.ICurrentMediaPlaybackItemChangedEventArgs
@@ -2074,6 +2122,40 @@ public final class MediaPlaybackSession : WinRTClass {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.playback.mediaplaybacksessionbufferingstartedeventargs)
+public final class MediaPlaybackSessionBufferingStartedEventArgs : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_Media_Playback.IMediaPlaybackSessionBufferingStartedEventArgs
+    private typealias CABI = __x_ABI_CWindows_CMedia_CPlayback_CIMediaPlaybackSessionBufferingStartedEventArgs
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CPlayback_CIMediaPlaybackSessionBufferingStartedEventArgs>?) -> MediaPlaybackSessionBufferingStartedEventArgs? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.playback.mediaplaybacksessionbufferingstartedeventargs.isplaybackinterruption)
+    public var isPlaybackInterruption : Bool {
+        get { try! _default.get_IsPlaybackInterruptionImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.playback.mediaplaybacksessionoutputdegradationpolicystate)
 public final class MediaPlaybackSessionOutputDegradationPolicyState : WinRTClass {
     private typealias SwiftABI = __ABI_Windows_Media_Playback.IMediaPlaybackSessionOutputDegradationPolicyState
@@ -2869,6 +2951,40 @@ public final class MediaPlayer : WinRTClass, WindowsFoundation.IClosable {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.playback.mediaplayerdatareceivedeventargs)
+public final class MediaPlayerDataReceivedEventArgs : WinRTClass {
+    private typealias SwiftABI = __ABI_Windows_Media_Playback.IMediaPlayerDataReceivedEventArgs
+    private typealias CABI = __x_ABI_CWindows_CMedia_CPlayback_CIMediaPlayerDataReceivedEventArgs
+    private lazy var _default: SwiftABI! = getInterfaceForCaching()
+    @_spi(WinRTInternal)
+    override public func _getABI<T>() -> UnsafeMutablePointer<T>? {
+        if T.self == CABI.self {
+            return RawPointer(_default)
+        }
+        return super._getABI()
+    }
+
+    @_spi(WinRTInternal)
+    public static func from(abi: ComPtr<__x_ABI_CWindows_CMedia_CPlayback_CIMediaPlayerDataReceivedEventArgs>?) -> MediaPlayerDataReceivedEventArgs? {
+        guard let abi = abi else { return nil }
+        return .init(fromAbi: WindowsFoundation.IInspectable(abi))
+    }
+
+    @_spi(WinRTInternal)
+    public init(fromAbi: WindowsFoundation.IInspectable) {
+        super.init(fromAbi)
+    }
+
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.playback.mediaplayerdatareceivedeventargs.data)
+    public var data : WindowsFoundation.ValueSet! {
+        get { try! _default.get_DataImpl() }
+    }
+
+    deinit {
+        _default = nil
+    }
+}
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.playback.mediaplayerfailedeventargs)
 public final class MediaPlayerFailedEventArgs : WinRTClass {
     private typealias SwiftABI = __ABI_Windows_Media_Playback.IMediaPlayerFailedEventArgs
@@ -3187,6 +3303,26 @@ public final class TimedMetadataPresentationModeChangedEventArgs : WinRTClass {
     }
 }
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.playback.imediaengineplaybacksource)
+public protocol IMediaEnginePlaybackSource : WinRTInterface {
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.playback.imediaengineplaybacksource.setplaybacksource)
+    func setPlaybackSource(_ source: UWP.AnyIMediaPlaybackSource!) throws
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.playback.imediaengineplaybacksource.currentitem)
+    var currentItem: UWP.MediaPlaybackItem! { get }
+}
+
+extension IMediaEnginePlaybackSource {
+    public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        switch iid {
+            case __ABI_Windows_Media_Playback.IMediaEnginePlaybackSourceWrapper.IID:
+                let wrapper = __ABI_Windows_Media_Playback.IMediaEnginePlaybackSourceWrapper(self)
+                return wrapper!.queryInterface(iid)
+            default: return nil
+        }
+    }
+}
+public typealias AnyIMediaEnginePlaybackSource = any IMediaEnginePlaybackSource
+
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.playback.imediaplaybacksource)
 public protocol IMediaPlaybackSource : WinRTInterface {
 }
@@ -3218,6 +3354,19 @@ extension UWP.AutoLoadedDisplayPropertyKind {
     }
 }
 extension UWP.AutoLoadedDisplayPropertyKind: @retroactive Hashable, @retroactive Codable {}
+
+extension UWP.FailedMediaStreamKind {
+    public static var unknown : UWP.FailedMediaStreamKind {
+        __x_ABI_CWindows_CMedia_CPlayback_CFailedMediaStreamKind_Unknown
+    }
+    public static var audio : UWP.FailedMediaStreamKind {
+        __x_ABI_CWindows_CMedia_CPlayback_CFailedMediaStreamKind_Audio
+    }
+    public static var video : UWP.FailedMediaStreamKind {
+        __x_ABI_CWindows_CMedia_CPlayback_CFailedMediaStreamKind_Video
+    }
+}
+extension UWP.FailedMediaStreamKind: @retroactive Hashable, @retroactive Codable {}
 
 extension UWP.MediaBreakInsertionMethod {
     public static var interrupt : UWP.MediaBreakInsertionMethod {

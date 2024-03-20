@@ -24,3 +24,23 @@ extension IAudioEffectDefinition {
 }
 public typealias AnyIAudioEffectDefinition = any IAudioEffectDefinition
 
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.effects.ivideoeffectdefinition)
+public protocol IVideoEffectDefinition : WinRTInterface {
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.effects.ivideoeffectdefinition.activatableclassid)
+    var activatableClassId: String { get }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.media.effects.ivideoeffectdefinition.properties)
+    var properties: WindowsFoundation.AnyIPropertySet! { get }
+}
+
+extension IVideoEffectDefinition {
+    public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        switch iid {
+            case __ABI_Windows_Media_Effects.IVideoEffectDefinitionWrapper.IID:
+                let wrapper = __ABI_Windows_Media_Effects.IVideoEffectDefinitionWrapper(self)
+                return wrapper!.queryInterface(iid)
+            default: return nil
+        }
+    }
+}
+public typealias AnyIVideoEffectDefinition = any IVideoEffectDefinition
+

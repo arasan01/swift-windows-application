@@ -57,6 +57,14 @@ private var IID___x_ABI_CMicrosoft_CUI_CWindowing_CIAppWindowTitleBarStatics: Wi
     .init(Data1: 0x9E1DA52E, Data2: 0x8B15, Data3: 0x54D6, Data4: ( 0xA8,0x86,0xF7,0xB9,0xF9,0xD9,0x30,0xB2 ))// 9E1DA52E-8B15-54D6-A886-F7B9F9D930B2
 }
 
+private var IID___x_ABI_CMicrosoft_CUI_CWindowing_CICompactOverlayPresenter: WindowsFoundation.IID {
+    .init(Data1: 0xEFEB0812, Data2: 0x6FC7, Data3: 0x5B7D, Data4: ( 0xBD,0x92,0xCC,0x8F,0x9A,0x64,0x54,0xC9 ))// EFEB0812-6FC7-5B7D-BD92-CC8F9A6454C9
+}
+
+private var IID___x_ABI_CMicrosoft_CUI_CWindowing_CICompactOverlayPresenterStatics: WindowsFoundation.IID {
+    .init(Data1: 0xEAB93186, Data2: 0x4F6A, Data3: 0x52F9, Data4: ( 0x8C,0x03,0xDA,0x57,0xA1,0x52,0x2F,0x6E ))// EAB93186-4F6A-52F9-8C03-DA57A1522F6E
+}
+
 private var IID___x_ABI_CMicrosoft_CUI_CWindowing_CIDisplayArea: WindowsFoundation.IID {
     .init(Data1: 0x5C7E0537, Data2: 0xB621, Data3: 0x5579, Data4: ( 0xBC,0xAE,0xA8,0x4A,0xA8,0x74,0x61,0x67 ))// 5C7E0537-B621-5579-BCAE-A84AA8746167
 }
@@ -835,6 +843,39 @@ public enum __ABI_Microsoft_UI_Windowing {
                 try CHECKED(pThis.pointee.lpVtbl.pointee.IsCustomizationSupported(pThis, &result))
             }
             return .init(from: result)
+        }
+
+    }
+
+    public class ICompactOverlayPresenter: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CWindowing_CICompactOverlayPresenter }
+
+        internal func get_InitialSizeImpl() throws -> WinAppSDK.CompactOverlaySize {
+            var value: __x_ABI_CMicrosoft_CUI_CWindowing_CCompactOverlaySize = .init(0)
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CWindowing_CICompactOverlayPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.get_InitialSize(pThis, &value))
+            }
+            return value
+        }
+
+        internal func put_InitialSizeImpl(_ value: WinAppSDK.CompactOverlaySize) throws {
+            _ = try perform(as: __x_ABI_CMicrosoft_CUI_CWindowing_CICompactOverlayPresenter.self) { pThis in
+                try CHECKED(pThis.pointee.lpVtbl.pointee.put_InitialSize(pThis, value))
+            }
+        }
+
+    }
+
+    public class ICompactOverlayPresenterStatics: WindowsFoundation.IInspectable {
+        override public class var IID: WindowsFoundation.IID { IID___x_ABI_CMicrosoft_CUI_CWindowing_CICompactOverlayPresenterStatics }
+
+        internal func CreateImpl() throws -> WinAppSDK.CompactOverlayPresenter? {
+            let (result) = try ComPtrs.initialize { resultAbi in
+                _ = try perform(as: __x_ABI_CMicrosoft_CUI_CWindowing_CICompactOverlayPresenterStatics.self) { pThis in
+                    try CHECKED(pThis.pointee.lpVtbl.pointee.Create(pThis, &resultAbi))
+                }
+            }
+            return .from(abi: result)
         }
 
     }

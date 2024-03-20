@@ -6,6 +6,29 @@ import CWinRT
 
 /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.popups.placement)
 public typealias Placement = __x_ABI_CWindows_CUI_CPopups_CPlacement
+public typealias UICommandInvokedHandler = (AnyIUICommand?) -> ()
+/// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.popups.iuicommand)
+public protocol IUICommand : WinRTInterface {
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.popups.iuicommand.id)
+    var id: Any! { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.popups.iuicommand.invoked)
+    var invoked: UWP.UICommandInvokedHandler! { get set }
+    /// [Open Microsoft documentation](https://learn.microsoft.com/uwp/api/windows.ui.popups.iuicommand.label)
+    var label: String { get set }
+}
+
+extension IUICommand {
+    public func queryInterface(_ iid: WindowsFoundation.IID) -> IUnknownRef? {
+        switch iid {
+            case __ABI_Windows_UI_Popups.IUICommandWrapper.IID:
+                let wrapper = __ABI_Windows_UI_Popups.IUICommandWrapper(self)
+                return wrapper!.queryInterface(iid)
+            default: return nil
+        }
+    }
+}
+public typealias AnyIUICommand = any IUICommand
+
 extension UWP.Placement {
     public static var `default` : UWP.Placement {
         __x_ABI_CWindows_CUI_CPopups_CPlacement_Default

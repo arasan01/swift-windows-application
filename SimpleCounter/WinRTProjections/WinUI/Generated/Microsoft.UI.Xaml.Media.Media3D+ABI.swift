@@ -37,3 +37,9 @@ public enum __ABI_Microsoft_UI_Xaml_Media_Media3D {
     }
 
 }
+extension __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CMedia3D_CMatrix3D {
+        public static func from(swift: WinUI.Matrix3D) -> __x_ABI_CMicrosoft_CUI_CXaml_CMedia_CMedia3D_CMatrix3D {
+            .init(M11: swift.m11, M12: swift.m12, M13: swift.m13, M14: swift.m14, M21: swift.m21, M22: swift.m22, M23: swift.m23, M24: swift.m24, M31: swift.m31, M32: swift.m32, M33: swift.m33, M34: swift.m34, OffsetX: swift.offsetX, OffsetY: swift.offsetY, OffsetZ: swift.offsetZ, M44: swift.m44)
+        }
+    }
+    

@@ -44,9 +44,174 @@ fileprivate func makeIApplicationViewActivatedEventArgsFrom(abi: WindowsFoundati
     return __IMPL_Windows_ApplicationModel_Activation.IApplicationViewActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
 }
 
+fileprivate func makeIAppointmentsProviderActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IAppointmentsProviderActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIAppointmentsProviderAddAppointmentActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderAddAppointmentActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IAppointmentsProviderAddAppointmentActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIAppointmentsProviderRemoveAppointmentActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderRemoveAppointmentActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IAppointmentsProviderRemoveAppointmentActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIAppointmentsProviderReplaceAppointmentActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderReplaceAppointmentActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IAppointmentsProviderReplaceAppointmentActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIAppointmentsProviderShowAppointmentDetailsActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderShowAppointmentDetailsActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IAppointmentsProviderShowAppointmentDetailsActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIAppointmentsProviderShowTimeFrameActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IAppointmentsProviderShowTimeFrameActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IAppointmentsProviderShowTimeFrameActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
 fileprivate func makeIBackgroundActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IBackgroundActivatedEventArgs = try! abi.QueryInterface()
     return __IMPL_Windows_ApplicationModel_Activation.IBackgroundActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIBarcodeScannerPreviewActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IBarcodeScannerPreviewActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IBarcodeScannerPreviewActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeICachedFileUpdaterActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.ICachedFileUpdaterActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.ICachedFileUpdaterActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeICameraSettingsActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.ICameraSettingsActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.ICameraSettingsActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeICommandLineActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.ICommandLineActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.ICommandLineActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIContactActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IContactActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IContactActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIContactCallActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IContactCallActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IContactCallActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIContactMapActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IContactMapActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IContactMapActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIContactMessageActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IContactMessageActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IContactMessageActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIContactPanelActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IContactPanelActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IContactPanelActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIContactPickerActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IContactPickerActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IContactPickerActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIContactPostActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IContactPostActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IContactPostActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIContactVideoCallActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IContactVideoCallActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IContactVideoCallActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIContactsProviderActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IContactsProviderActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IContactsProviderActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIContinuationActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IContinuationActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IContinuationActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIDeviceActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IDeviceActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IDeviceActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIDevicePairingActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IDevicePairingActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IDevicePairingActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIDialReceiverActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IDialReceiverActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IDialReceiverActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIFileActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IFileActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IFileActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIFileActivatedEventArgsWithCallerPackageFamilyNameFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IFileActivatedEventArgsWithCallerPackageFamilyName = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IFileActivatedEventArgsWithCallerPackageFamilyNameBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIFileActivatedEventArgsWithNeighboringFilesFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IFileActivatedEventArgsWithNeighboringFiles = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IFileActivatedEventArgsWithNeighboringFilesBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIFileOpenPickerActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IFileOpenPickerActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IFileOpenPickerActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIFileOpenPickerActivatedEventArgs2From(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IFileOpenPickerActivatedEventArgs2 = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IFileOpenPickerActivatedEventArgs2Bridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIFileOpenPickerContinuationEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IFileOpenPickerContinuationEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IFileOpenPickerContinuationEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIFileSavePickerActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IFileSavePickerActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IFileSavePickerActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIFileSavePickerActivatedEventArgs2From(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IFileSavePickerActivatedEventArgs2 = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IFileSavePickerActivatedEventArgs2Bridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIFileSavePickerContinuationEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IFileSavePickerContinuationEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IFileSavePickerContinuationEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIFolderPickerContinuationEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IFolderPickerContinuationEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IFolderPickerContinuationEventArgsBridge.from(abi: RawPointer(swiftAbi))!
 }
 
 fileprivate func makeILaunchActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -59,9 +224,34 @@ fileprivate func makeILaunchActivatedEventArgs2From(abi: WindowsFoundation.IInsp
     return __IMPL_Windows_ApplicationModel_Activation.ILaunchActivatedEventArgs2Bridge.from(abi: RawPointer(swiftAbi))!
 }
 
+fileprivate func makeILockScreenActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.ILockScreenActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.ILockScreenActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeILockScreenCallActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.ILockScreenCallActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.ILockScreenCallActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIPickerReturnedActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IPickerReturnedActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IPickerReturnedActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
 fileprivate func makeIPrelaunchActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IPrelaunchActivatedEventArgs = try! abi.QueryInterface()
     return __IMPL_Windows_ApplicationModel_Activation.IPrelaunchActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIPrint3DWorkflowActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IPrint3DWorkflowActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IPrint3DWorkflowActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIPrintTaskSettingsActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IPrintTaskSettingsActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IPrintTaskSettingsActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
 }
 
 fileprivate func makeIProtocolActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -74,9 +264,74 @@ fileprivate func makeIProtocolActivatedEventArgsWithCallerPackageFamilyNameAndDa
     return __IMPL_Windows_ApplicationModel_Activation.IProtocolActivatedEventArgsWithCallerPackageFamilyNameAndDataBridge.from(abi: RawPointer(swiftAbi))!
 }
 
+fileprivate func makeIProtocolForResultsActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IProtocolForResultsActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IProtocolForResultsActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIRestrictedLaunchActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IRestrictedLaunchActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IRestrictedLaunchActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeISearchActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.ISearchActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.ISearchActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeISearchActivatedEventArgsWithLinguisticDetailsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.ISearchActivatedEventArgsWithLinguisticDetails = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.ISearchActivatedEventArgsWithLinguisticDetailsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIShareTargetActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IShareTargetActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IShareTargetActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIStartupTaskActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IStartupTaskActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IStartupTaskActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIToastNotificationActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IToastNotificationActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IToastNotificationActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIUserDataAccountProviderActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IUserDataAccountProviderActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IUserDataAccountProviderActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
 fileprivate func makeIViewSwitcherProviderFrom(abi: WindowsFoundation.IInspectable) -> Any {
     let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IViewSwitcherProvider = try! abi.QueryInterface()
     return __IMPL_Windows_ApplicationModel_Activation.IViewSwitcherProviderBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIVoiceCommandActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IVoiceCommandActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IVoiceCommandActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIWalletActionActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IWalletActionActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IWalletActionActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIWebAccountProviderActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IWebAccountProviderActivatedEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IWebAccountProviderActivatedEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIWebAuthenticationBrokerContinuationEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Activation.IWebAuthenticationBrokerContinuationEventArgs = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Activation.IWebAuthenticationBrokerContinuationEventArgsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIAppointmentParticipantFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Appointments.IAppointmentParticipant = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Appointments.IAppointmentParticipantBridge.from(abi: RawPointer(swiftAbi))!
 }
 
 fileprivate func makeIBackgroundTaskInstanceFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -104,6 +359,11 @@ fileprivate func makeIBackgroundTriggerFrom(abi: WindowsFoundation.IInspectable)
     return __IMPL_Windows_ApplicationModel_Background.IBackgroundTriggerBridge.from(abi: RawPointer(swiftAbi))!
 }
 
+fileprivate func makeIContactFieldFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_Contacts.IContactField = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_Contacts.IContactFieldBridge.from(abi: RawPointer(swiftAbi))!
+}
+
 fileprivate func makeICoreApplicationUnhandledErrorFrom(abi: WindowsFoundation.IInspectable) -> Any {
     let swiftAbi: __ABI_Windows_ApplicationModel_Core.ICoreApplicationUnhandledError = try! abi.QueryInterface()
     return __IMPL_Windows_ApplicationModel_Core.ICoreApplicationUnhandledErrorBridge.from(abi: RawPointer(swiftAbi))!
@@ -117,6 +377,16 @@ fileprivate func makeIFrameworkViewFrom(abi: WindowsFoundation.IInspectable) -> 
 fileprivate func makeIFrameworkViewSourceFrom(abi: WindowsFoundation.IInspectable) -> Any {
     let swiftAbi: __ABI_Windows_ApplicationModel_Core.IFrameworkViewSource = try! abi.QueryInterface()
     return __IMPL_Windows_ApplicationModel_Core.IFrameworkViewSourceBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIUserDataAccountProviderOperationFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_ApplicationModel_UserDataAccounts_Provider.IUserDataAccountProviderOperation = try! abi.QueryInterface()
+    return __IMPL_Windows_ApplicationModel_UserDataAccounts_Provider.IUserDataAccountProviderOperationBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIJsonValueFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_Data_Json.IJsonValue = try! abi.QueryInterface()
+    return __IMPL_Windows_Data_Json.IJsonValueBridge.from(abi: RawPointer(swiftAbi))!
 }
 
 fileprivate func makeIXmlCharacterDataFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -147,6 +417,16 @@ fileprivate func makeIXmlTextFrom(abi: WindowsFoundation.IInspectable) -> Any {
 fileprivate func makeIDevicePairingSettingsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     let swiftAbi: __ABI_Windows_Devices_Enumeration.IDevicePairingSettings = try! abi.QueryInterface()
     return __IMPL_Windows_Devices_Enumeration.IDevicePairingSettingsBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIGeoshapeFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_Devices_Geolocation.IGeoshape = try! abi.QueryInterface()
+    return __IMPL_Windows_Devices_Geolocation.IGeoshapeBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeINumberFormatter2From(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_Globalization_NumberFormatting.INumberFormatter2 = try! abi.QueryInterface()
+    return __IMPL_Windows_Globalization_NumberFormatting.INumberFormatter2Bridge.from(abi: RawPointer(swiftAbi))!
 }
 
 fileprivate func makeIGeometrySource2DFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -187,6 +467,31 @@ fileprivate func makeIBitmapFrameWithSoftwareBitmapFrom(abi: WindowsFoundation.I
 fileprivate func makeIBitmapPropertiesViewFrom(abi: WindowsFoundation.IInspectable) -> Any {
     let swiftAbi: __ABI_Windows_Graphics_Imaging.IBitmapPropertiesView = try! abi.QueryInterface()
     return __IMPL_Windows_Graphics_Imaging.IBitmapPropertiesViewBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIPrintDocumentSourceFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_Graphics_Printing.IPrintDocumentSource = try! abi.QueryInterface()
+    return __IMPL_Windows_Graphics_Printing.IPrintDocumentSourceBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIPrintTaskOptionsCoreFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_Graphics_Printing.IPrintTaskOptionsCore = try! abi.QueryInterface()
+    return __IMPL_Windows_Graphics_Printing.IPrintTaskOptionsCoreBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIPrintTaskOptionsCorePropertiesFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_Graphics_Printing.IPrintTaskOptionsCoreProperties = try! abi.QueryInterface()
+    return __IMPL_Windows_Graphics_Printing.IPrintTaskOptionsCorePropertiesBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIPrintTaskOptionsCoreUIConfigurationFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_Graphics_Printing.IPrintTaskOptionsCoreUIConfiguration = try! abi.QueryInterface()
+    return __IMPL_Windows_Graphics_Printing.IPrintTaskOptionsCoreUIConfigurationBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIMediaExtensionFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_Media.IMediaExtension = try! abi.QueryInterface()
+    return __IMPL_Windows_Media.IMediaExtensionBridge.from(abi: RawPointer(swiftAbi))!
 }
 
 fileprivate func makeIMediaFrameFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -244,6 +549,11 @@ fileprivate func makeISingleSelectMediaTrackListFrom(abi: WindowsFoundation.IIns
     return __IMPL_Windows_Media_Core.ISingleSelectMediaTrackListBridge.from(abi: RawPointer(swiftAbi))!
 }
 
+fileprivate func makeITimedMetadataTrackProviderFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_Media_Core.ITimedMetadataTrackProvider = try! abi.QueryInterface()
+    return __IMPL_Windows_Media_Core.ITimedMetadataTrackProviderBridge.from(abi: RawPointer(swiftAbi))!
+}
+
 fileprivate func makeIMediaDeviceControllerFrom(abi: WindowsFoundation.IInspectable) -> Any {
     let swiftAbi: __ABI_Windows_Media_Devices.IMediaDeviceController = try! abi.QueryInterface()
     return __IMPL_Windows_Media_Devices.IMediaDeviceControllerBridge.from(abi: RawPointer(swiftAbi))!
@@ -254,9 +564,19 @@ fileprivate func makeIAudioEffectDefinitionFrom(abi: WindowsFoundation.IInspecta
     return __IMPL_Windows_Media_Effects.IAudioEffectDefinitionBridge.from(abi: RawPointer(swiftAbi))!
 }
 
+fileprivate func makeIVideoEffectDefinitionFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_Media_Effects.IVideoEffectDefinition = try! abi.QueryInterface()
+    return __IMPL_Windows_Media_Effects.IVideoEffectDefinitionBridge.from(abi: RawPointer(swiftAbi))!
+}
+
 fileprivate func makeIMediaEncodingPropertiesFrom(abi: WindowsFoundation.IInspectable) -> Any {
     let swiftAbi: __ABI_Windows_Media_MediaProperties.IMediaEncodingProperties = try! abi.QueryInterface()
     return __IMPL_Windows_Media_MediaProperties.IMediaEncodingPropertiesBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIMediaEnginePlaybackSourceFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_Media_Playback.IMediaEnginePlaybackSource = try! abi.QueryInterface()
+    return __IMPL_Windows_Media_Playback.IMediaEnginePlaybackSourceBridge.from(abi: RawPointer(swiftAbi))!
 }
 
 fileprivate func makeIMediaPlaybackSourceFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -269,6 +589,11 @@ fileprivate func makeIMediaProtectionServiceRequestFrom(abi: WindowsFoundation.I
     return __IMPL_Windows_Media_Protection.IMediaProtectionServiceRequestBridge.from(abi: RawPointer(swiftAbi))!
 }
 
+fileprivate func makeISpeechRecognitionConstraintFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_Media_SpeechRecognition.ISpeechRecognitionConstraint = try! abi.QueryInterface()
+    return __IMPL_Windows_Media_SpeechRecognition.ISpeechRecognitionConstraintBridge.from(abi: RawPointer(swiftAbi))!
+}
+
 fileprivate func makeIBackgroundTransferOperationFrom(abi: WindowsFoundation.IInspectable) -> Any {
     let swiftAbi: __ABI_Windows_Networking_BackgroundTransfer.IBackgroundTransferOperation = try! abi.QueryInterface()
     return __IMPL_Windows_Networking_BackgroundTransfer.IBackgroundTransferOperationBridge.from(abi: RawPointer(swiftAbi))!
@@ -277,6 +602,11 @@ fileprivate func makeIBackgroundTransferOperationFrom(abi: WindowsFoundation.IIn
 fileprivate func makeIBackgroundTransferOperationPriorityFrom(abi: WindowsFoundation.IInspectable) -> Any {
     let swiftAbi: __ABI_Windows_Networking_BackgroundTransfer.IBackgroundTransferOperationPriority = try! abi.QueryInterface()
     return __IMPL_Windows_Networking_BackgroundTransfer.IBackgroundTransferOperationPriorityBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIWebAccountProviderOperationFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_Security_Authentication_Web_Provider.IWebAccountProviderOperation = try! abi.QueryInterface()
+    return __IMPL_Windows_Security_Authentication_Web_Provider.IWebAccountProviderOperationBridge.from(abi: RawPointer(swiftAbi))!
 }
 
 fileprivate func makeIStorageFileFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -404,6 +734,11 @@ fileprivate func makeILauncherViewOptionsFrom(abi: WindowsFoundation.IInspectabl
     return __IMPL_Windows_System.ILauncherViewOptionsBridge.from(abi: RawPointer(swiftAbi))!
 }
 
+fileprivate func makeIRemoteSystemFilterFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_System_RemoteSystems.IRemoteSystemFilter = try! abi.QueryInterface()
+    return __IMPL_Windows_System_RemoteSystems.IRemoteSystemFilterBridge.from(abi: RawPointer(swiftAbi))!
+}
+
 fileprivate func makeIAnimationObjectFrom(abi: WindowsFoundation.IInspectable) -> Any {
     let swiftAbi: __ABI_Windows_UI_Composition.IAnimationObject = try! abi.QueryInterface()
     return __IMPL_Windows_UI_Composition.IAnimationObjectBridge.from(abi: RawPointer(swiftAbi))!
@@ -429,6 +764,21 @@ fileprivate func makeICoreAcceleratorKeysFrom(abi: WindowsFoundation.IInspectabl
     return __IMPL_Windows_UI_Core.ICoreAcceleratorKeysBridge.from(abi: RawPointer(swiftAbi))!
 }
 
+fileprivate func makeICoreInputSourceBaseFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_UI_Core.ICoreInputSourceBase = try! abi.QueryInterface()
+    return __IMPL_Windows_UI_Core.ICoreInputSourceBaseBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeICorePointerInputSourceFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_UI_Core.ICorePointerInputSource = try! abi.QueryInterface()
+    return __IMPL_Windows_UI_Core.ICorePointerInputSourceBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeICorePointerInputSource2From(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_UI_Core.ICorePointerInputSource2 = try! abi.QueryInterface()
+    return __IMPL_Windows_UI_Core.ICorePointerInputSource2Bridge.from(abi: RawPointer(swiftAbi))!
+}
+
 fileprivate func makeICorePointerRedirectorFrom(abi: WindowsFoundation.IInspectable) -> Any {
     let swiftAbi: __ABI_Windows_UI_Core.ICorePointerRedirector = try! abi.QueryInterface()
     return __IMPL_Windows_UI_Core.ICorePointerRedirectorBridge.from(abi: RawPointer(swiftAbi))!
@@ -444,6 +794,11 @@ fileprivate func makeICoreWindowEventArgsFrom(abi: WindowsFoundation.IInspectabl
     return __IMPL_Windows_UI_Core.ICoreWindowEventArgsBridge.from(abi: RawPointer(swiftAbi))!
 }
 
+fileprivate func makeIInitializeWithCoreWindowFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_UI_Core.IInitializeWithCoreWindow = try! abi.QueryInterface()
+    return __IMPL_Windows_UI_Core.IInitializeWithCoreWindowBridge.from(abi: RawPointer(swiftAbi))!
+}
+
 fileprivate func makeIPointerPointTransformFrom(abi: WindowsFoundation.IInspectable) -> Any {
     let swiftAbi: __ABI_Windows_UI_Input.IPointerPointTransform = try! abi.QueryInterface()
     return __IMPL_Windows_UI_Input.IPointerPointTransformBridge.from(abi: RawPointer(swiftAbi))!
@@ -452,6 +807,36 @@ fileprivate func makeIPointerPointTransformFrom(abi: WindowsFoundation.IInspecta
 fileprivate func makeIAdaptiveNotificationContentFrom(abi: WindowsFoundation.IInspectable) -> Any {
     let swiftAbi: __ABI_Windows_UI_Notifications.IAdaptiveNotificationContent = try! abi.QueryInterface()
     return __IMPL_Windows_UI_Notifications.IAdaptiveNotificationContentBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeIUICommandFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_UI_Popups.IUICommand = try! abi.QueryInterface()
+    return __IMPL_Windows_UI_Popups.IUICommandBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeITextCharacterFormatFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_UI_Text.ITextCharacterFormat = try! abi.QueryInterface()
+    return __IMPL_Windows_UI_Text.ITextCharacterFormatBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeITextDocumentFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_UI_Text.ITextDocument = try! abi.QueryInterface()
+    return __IMPL_Windows_UI_Text.ITextDocumentBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeITextParagraphFormatFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_UI_Text.ITextParagraphFormat = try! abi.QueryInterface()
+    return __IMPL_Windows_UI_Text.ITextParagraphFormatBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeITextRangeFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_UI_Text.ITextRange = try! abi.QueryInterface()
+    return __IMPL_Windows_UI_Text.ITextRangeBridge.from(abi: RawPointer(swiftAbi))!
+}
+
+fileprivate func makeITextSelectionFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    let swiftAbi: __ABI_Windows_UI_Text.ITextSelection = try! abi.QueryInterface()
+    return __IMPL_Windows_UI_Text.ITextSelectionBridge.from(abi: RawPointer(swiftAbi))!
 }
 
 fileprivate func makeIHttpContentFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -476,6 +861,10 @@ fileprivate func makeAppInstallerInfoFrom(abi: WindowsFoundation.IInspectable) -
     return AppInstallerInfo(fromAbi: abi)
 }
 
+fileprivate func makeAppInstanceFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppInstance(fromAbi: abi)
+}
+
 fileprivate func makeEnteredBackgroundEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return EnteredBackgroundEventArgs(fromAbi: abi)
 }
@@ -484,24 +873,76 @@ fileprivate func makeLeavingBackgroundEventArgsFrom(abi: WindowsFoundation.IInsp
     return LeavingBackgroundEventArgs(fromAbi: abi)
 }
 
+fileprivate func makeLimitedAccessFeatureRequestResultFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return LimitedAccessFeatureRequestResult(fromAbi: abi)
+}
+
 fileprivate func makePackageFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return Package(fromAbi: abi)
+}
+
+fileprivate func makePackageCatalogFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PackageCatalog(fromAbi: abi)
+}
+
+fileprivate func makePackageCatalogAddOptionalPackageResultFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PackageCatalogAddOptionalPackageResult(fromAbi: abi)
+}
+
+fileprivate func makePackageCatalogAddResourcePackageResultFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PackageCatalogAddResourcePackageResult(fromAbi: abi)
+}
+
+fileprivate func makePackageCatalogRemoveOptionalPackagesResultFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PackageCatalogRemoveOptionalPackagesResult(fromAbi: abi)
+}
+
+fileprivate func makePackageCatalogRemoveResourcePackagesResultFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PackageCatalogRemoveResourcePackagesResult(fromAbi: abi)
 }
 
 fileprivate func makePackageContentGroupFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return PackageContentGroup(fromAbi: abi)
 }
 
+fileprivate func makePackageContentGroupStagingEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PackageContentGroupStagingEventArgs(fromAbi: abi)
+}
+
 fileprivate func makePackageIdFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return PackageId(fromAbi: abi)
+}
+
+fileprivate func makePackageInstallingEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PackageInstallingEventArgs(fromAbi: abi)
+}
+
+fileprivate func makePackageStagingEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PackageStagingEventArgs(fromAbi: abi)
 }
 
 fileprivate func makePackageStatusFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return PackageStatus(fromAbi: abi)
 }
 
+fileprivate func makePackageStatusChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PackageStatusChangedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makePackageUninstallingEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PackageUninstallingEventArgs(fromAbi: abi)
+}
+
 fileprivate func makePackageUpdateAvailabilityResultFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return PackageUpdateAvailabilityResult(fromAbi: abi)
+}
+
+fileprivate func makePackageUpdatingEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PackageUpdatingEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeStartupTaskFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return StartupTask(fromAbi: abi)
 }
 
 fileprivate func makeSuspendingDeferralFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -516,24 +957,252 @@ fileprivate func makeSuspendingOperationFrom(abi: WindowsFoundation.IInspectable
     return SuspendingOperation(fromAbi: abi)
 }
 
+fileprivate func makeAppointmentsProviderAddAppointmentActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppointmentsProviderAddAppointmentActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeAppointmentsProviderRemoveAppointmentActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppointmentsProviderRemoveAppointmentActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeAppointmentsProviderReplaceAppointmentActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppointmentsProviderReplaceAppointmentActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeAppointmentsProviderShowAppointmentDetailsActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppointmentsProviderShowAppointmentDetailsActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeAppointmentsProviderShowTimeFrameActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppointmentsProviderShowTimeFrameActivatedEventArgs(fromAbi: abi)
+}
+
 fileprivate func makeBackgroundActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return BackgroundActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeBarcodeScannerPreviewActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return BarcodeScannerPreviewActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeCachedFileUpdaterActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CachedFileUpdaterActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeCameraSettingsActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CameraSettingsActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeCommandLineActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CommandLineActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeCommandLineActivationOperationFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CommandLineActivationOperation(fromAbi: abi)
+}
+
+fileprivate func makeContactCallActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ContactCallActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeContactMapActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ContactMapActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeContactMessageActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ContactMessageActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeContactPanelActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ContactPanelActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeContactPickerActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ContactPickerActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeContactPostActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ContactPostActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeContactVideoCallActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ContactVideoCallActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeDeviceActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return DeviceActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeDevicePairingActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return DevicePairingActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeDialReceiverActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return DialReceiverActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeFileActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return FileActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeFileOpenPickerActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return FileOpenPickerActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeFileOpenPickerContinuationEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return FileOpenPickerContinuationEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeFileSavePickerActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return FileSavePickerActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeFileSavePickerContinuationEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return FileSavePickerContinuationEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeFolderPickerContinuationEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return FolderPickerContinuationEventArgs(fromAbi: abi)
 }
 
 fileprivate func makeLaunchActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return LaunchActivatedEventArgs(fromAbi: abi)
 }
 
+fileprivate func makeLockScreenActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return LockScreenActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeLockScreenCallActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return LockScreenCallActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeLockScreenComponentActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return LockScreenComponentActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makePickerReturnedActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PickerReturnedActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makePrint3DWorkflowActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return Print3DWorkflowActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makePrintTaskSettingsActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PrintTaskSettingsActivatedEventArgs(fromAbi: abi)
+}
+
 fileprivate func makeProtocolActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return ProtocolActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeProtocolForResultsActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ProtocolForResultsActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeRestrictedLaunchActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RestrictedLaunchActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeSearchActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return SearchActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeShareTargetActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ShareTargetActivatedEventArgs(fromAbi: abi)
 }
 
 fileprivate func makeSplashScreenFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return SplashScreen(fromAbi: abi)
 }
 
+fileprivate func makeStartupTaskActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return StartupTaskActivatedEventArgs(fromAbi: abi)
+}
+
 fileprivate func makeTileActivatedInfoFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return TileActivatedInfo(fromAbi: abi)
+}
+
+fileprivate func makeToastNotificationActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ToastNotificationActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeUserDataAccountProviderActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return UserDataAccountProviderActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeVoiceCommandActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return VoiceCommandActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeWalletActionActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return WalletActionActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeWebAccountProviderActivatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return WebAccountProviderActivatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeWebAuthenticationBrokerContinuationEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return WebAuthenticationBrokerContinuationEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeAppServiceClosedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppServiceClosedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeAppServiceConnectionFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppServiceConnection(fromAbi: abi)
+}
+
+fileprivate func makeAppServiceDeferralFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppServiceDeferral(fromAbi: abi)
+}
+
+fileprivate func makeAppServiceRequestFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppServiceRequest(fromAbi: abi)
+}
+
+fileprivate func makeAppServiceRequestReceivedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppServiceRequestReceivedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeAppServiceResponseFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppServiceResponse(fromAbi: abi)
+}
+
+fileprivate func makeStatelessAppServiceResponseFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return StatelessAppServiceResponse(fromAbi: abi)
+}
+
+fileprivate func makeAppointmentFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return Appointment(fromAbi: abi)
+}
+
+fileprivate func makeAppointmentInviteeFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppointmentInvitee(fromAbi: abi)
+}
+
+fileprivate func makeAppointmentOrganizerFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppointmentOrganizer(fromAbi: abi)
+}
+
+fileprivate func makeAppointmentRecurrenceFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppointmentRecurrence(fromAbi: abi)
+}
+
+fileprivate func makeAddAppointmentOperationFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AddAppointmentOperation(fromAbi: abi)
+}
+
+fileprivate func makeRemoveAppointmentOperationFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RemoveAppointmentOperation(fromAbi: abi)
+}
+
+fileprivate func makeReplaceAppointmentOperationFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ReplaceAppointmentOperation(fromAbi: abi)
 }
 
 fileprivate func makeBackgroundTaskCompletedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -558,6 +1227,74 @@ fileprivate func makeBackgroundTaskRegistrationGroupFrom(abi: WindowsFoundation.
 
 fileprivate func makeDeviceWatcherTriggerFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return DeviceWatcherTrigger(fromAbi: abi)
+}
+
+fileprivate func makeLockScreenCallEndCallDeferralFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return LockScreenCallEndCallDeferral(fromAbi: abi)
+}
+
+fileprivate func makeLockScreenCallEndRequestedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return LockScreenCallEndRequestedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeLockScreenCallUIFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return LockScreenCallUI(fromAbi: abi)
+}
+
+fileprivate func makeContactFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return Contact(fromAbi: abi)
+}
+
+fileprivate func makeContactAddressFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ContactAddress(fromAbi: abi)
+}
+
+fileprivate func makeContactConnectedServiceAccountFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ContactConnectedServiceAccount(fromAbi: abi)
+}
+
+fileprivate func makeContactDateFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ContactDate(fromAbi: abi)
+}
+
+fileprivate func makeContactEmailFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ContactEmail(fromAbi: abi)
+}
+
+fileprivate func makeContactJobInfoFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ContactJobInfo(fromAbi: abi)
+}
+
+fileprivate func makeContactPanelFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ContactPanel(fromAbi: abi)
+}
+
+fileprivate func makeContactPanelClosingEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ContactPanelClosingEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeContactPanelLaunchFullAppRequestedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ContactPanelLaunchFullAppRequestedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeContactPhoneFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ContactPhone(fromAbi: abi)
+}
+
+fileprivate func makeContactSignificantOtherFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ContactSignificantOther(fromAbi: abi)
+}
+
+fileprivate func makeContactWebsiteFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ContactWebsite(fromAbi: abi)
+}
+
+fileprivate func makeContactPickerUIFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ContactPickerUI(fromAbi: abi)
+}
+
+fileprivate func makeContactRemovedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ContactRemovedEventArgs(fromAbi: abi)
 }
 
 fileprivate func makeAppListEntryFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -672,6 +1409,38 @@ fileprivate func makeTargetApplicationChosenEventArgsFrom(abi: WindowsFoundation
     return TargetApplicationChosenEventArgs(fromAbi: abi)
 }
 
+fileprivate func makeCoreDragInfoFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CoreDragInfo(fromAbi: abi)
+}
+
+fileprivate func makeCoreDragUIOverrideFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CoreDragUIOverride(fromAbi: abi)
+}
+
+fileprivate func makeQuickLinkFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return QuickLink(fromAbi: abi)
+}
+
+fileprivate func makeShareOperationFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ShareOperation(fromAbi: abi)
+}
+
+fileprivate func makeSearchPaneQueryLinguisticDetailsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return SearchPaneQueryLinguisticDetails(fromAbi: abi)
+}
+
+fileprivate func makeJsonArrayFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return JsonArray(fromAbi: abi)
+}
+
+fileprivate func makeJsonObjectFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return JsonObject(fromAbi: abi)
+}
+
+fileprivate func makeJsonValueFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return JsonValue(fromAbi: abi)
+}
+
 fileprivate func makeXmlAttributeFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return XmlAttribute(fromAbi: abi)
 }
@@ -776,6 +1545,10 @@ fileprivate func makeEnclosureLocationFrom(abi: WindowsFoundation.IInspectable) 
     return EnclosureLocation(fromAbi: abi)
 }
 
+fileprivate func makeGeopointFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return Geopoint(fromAbi: abi)
+}
+
 fileprivate func makeKeyboardCapabilitiesFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return KeyboardCapabilities(fromAbi: abi)
 }
@@ -802,6 +1575,34 @@ fileprivate func makePointerDeviceFrom(abi: WindowsFoundation.IInspectable) -> A
 
 fileprivate func makeTouchCapabilitiesFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return TouchCapabilities(fromAbi: abi)
+}
+
+fileprivate func makePrint3DWorkflowFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return Print3DWorkflow(fromAbi: abi)
+}
+
+fileprivate func makePrint3DWorkflowPrintRequestedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return Print3DWorkflowPrintRequestedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makePrint3DWorkflowPrinterChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return Print3DWorkflowPrinterChangedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makePrintTaskConfigurationFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PrintTaskConfiguration(fromAbi: abi)
+}
+
+fileprivate func makePrintTaskConfigurationSaveRequestFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PrintTaskConfigurationSaveRequest(fromAbi: abi)
+}
+
+fileprivate func makePrintTaskConfigurationSaveRequestedDeferralFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PrintTaskConfigurationSaveRequestedDeferral(fromAbi: abi)
+}
+
+fileprivate func makePrintTaskConfigurationSaveRequestedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PrintTaskConfigurationSaveRequestedEventArgs(fromAbi: abi)
 }
 
 fileprivate func makeLanguageFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -858,6 +1659,22 @@ fileprivate func makePixelDataProviderFrom(abi: WindowsFoundation.IInspectable) 
 
 fileprivate func makeSoftwareBitmapFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return SoftwareBitmap(fromAbi: abi)
+}
+
+fileprivate func makePrintPageInfoFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PrintPageInfo(fromAbi: abi)
+}
+
+fileprivate func makePrintPageRangeFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PrintPageRange(fromAbi: abi)
+}
+
+fileprivate func makePrintPageRangeOptionsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PrintPageRangeOptions(fromAbi: abi)
+}
+
+fileprivate func makePrintTaskOptionsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PrintTaskOptions(fromAbi: abi)
 }
 
 fileprivate func makeDeploymentResultFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -1088,8 +1905,16 @@ fileprivate func makeSpatialAudioFormatConfigurationFrom(abi: WindowsFoundation.
     return SpatialAudioFormatConfiguration(fromAbi: abi)
 }
 
+fileprivate func makeCapturedFrameControlValuesFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CapturedFrameControlValues(fromAbi: abi)
+}
+
 fileprivate func makeMediaCaptureVideoProfileMediaDescriptionFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return MediaCaptureVideoProfileMediaDescription(fromAbi: abi)
+}
+
+fileprivate func makeVideoStreamConfigurationFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return VideoStreamConfiguration(fromAbi: abi)
 }
 
 fileprivate func makeDepthMediaFrameFormatFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -1168,6 +1993,58 @@ fileprivate func makeAudioTrackSupportInfoFrom(abi: WindowsFoundation.IInspectab
     return AudioTrackSupportInfo(fromAbi: abi)
 }
 
+fileprivate func makeChapterCueFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ChapterCue(fromAbi: abi)
+}
+
+fileprivate func makeCodecInfoFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CodecInfo(fromAbi: abi)
+}
+
+fileprivate func makeCodecQueryFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CodecQuery(fromAbi: abi)
+}
+
+fileprivate func makeDataCueFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return DataCue(fromAbi: abi)
+}
+
+fileprivate func makeFaceDetectedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return FaceDetectedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeFaceDetectionEffectFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return FaceDetectionEffect(fromAbi: abi)
+}
+
+fileprivate func makeFaceDetectionEffectDefinitionFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return FaceDetectionEffectDefinition(fromAbi: abi)
+}
+
+fileprivate func makeFaceDetectionEffectFrameFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return FaceDetectionEffectFrame(fromAbi: abi)
+}
+
+fileprivate func makeHighDynamicRangeControlFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return HighDynamicRangeControl(fromAbi: abi)
+}
+
+fileprivate func makeHighDynamicRangeOutputFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return HighDynamicRangeOutput(fromAbi: abi)
+}
+
+fileprivate func makeImageCueFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ImageCue(fromAbi: abi)
+}
+
+fileprivate func makeInitializeMediaStreamSourceRequestedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return InitializeMediaStreamSourceRequestedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeLowLightFusionResultFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return LowLightFusionResult(fromAbi: abi)
+}
+
 fileprivate func makeMediaBinderFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return MediaBinder(fromAbi: abi)
 }
@@ -1182,6 +2059,10 @@ fileprivate func makeMediaCueEventArgsFrom(abi: WindowsFoundation.IInspectable) 
 
 fileprivate func makeMediaSourceFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return MediaSource(fromAbi: abi)
+}
+
+fileprivate func makeMediaSourceAppServiceConnectionFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return MediaSourceAppServiceConnection(fromAbi: abi)
 }
 
 fileprivate func makeMediaSourceErrorFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -1272,6 +2153,26 @@ fileprivate func makeMseStreamSourceFrom(abi: WindowsFoundation.IInspectable) ->
     return MseStreamSource(fromAbi: abi)
 }
 
+fileprivate func makeSceneAnalysisEffectFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return SceneAnalysisEffect(fromAbi: abi)
+}
+
+fileprivate func makeSceneAnalysisEffectDefinitionFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return SceneAnalysisEffectDefinition(fromAbi: abi)
+}
+
+fileprivate func makeSceneAnalysisEffectFrameFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return SceneAnalysisEffectFrame(fromAbi: abi)
+}
+
+fileprivate func makeSceneAnalyzedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return SceneAnalyzedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeSpeechCueFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return SpeechCue(fromAbi: abi)
+}
+
 fileprivate func makeTimedMetadataStreamDescriptorFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return TimedMetadataStreamDescriptor(fromAbi: abi)
 }
@@ -1288,12 +2189,44 @@ fileprivate func makeTimedMetadataTrackFailedEventArgsFrom(abi: WindowsFoundatio
     return TimedMetadataTrackFailedEventArgs(fromAbi: abi)
 }
 
+fileprivate func makeTimedTextCueFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TimedTextCue(fromAbi: abi)
+}
+
+fileprivate func makeTimedTextLineFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TimedTextLine(fromAbi: abi)
+}
+
+fileprivate func makeTimedTextRegionFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TimedTextRegion(fromAbi: abi)
+}
+
 fileprivate func makeTimedTextSourceFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return TimedTextSource(fromAbi: abi)
 }
 
 fileprivate func makeTimedTextSourceResolveResultEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return TimedTextSourceResolveResultEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeTimedTextStyleFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TimedTextStyle(fromAbi: abi)
+}
+
+fileprivate func makeTimedTextSubformatFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TimedTextSubformat(fromAbi: abi)
+}
+
+fileprivate func makeVideoStabilizationEffectFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return VideoStabilizationEffect(fromAbi: abi)
+}
+
+fileprivate func makeVideoStabilizationEffectDefinitionFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return VideoStabilizationEffectDefinition(fromAbi: abi)
+}
+
+fileprivate func makeVideoStabilizationEffectEnabledChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return VideoStabilizationEffectEnabledChangedEventArgs(fromAbi: abi)
 }
 
 fileprivate func makeVideoStreamDescriptorFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -1480,6 +2413,10 @@ fileprivate func makeVariablePhotoSequenceControllerFrom(abi: WindowsFoundation.
     return VariablePhotoSequenceController(fromAbi: abi)
 }
 
+fileprivate func makeDetectedFaceFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return DetectedFace(fromAbi: abi)
+}
+
 fileprivate func makeAudioEncodingPropertiesFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return AudioEncodingProperties(fromAbi: abi)
 }
@@ -1620,6 +2557,10 @@ fileprivate func makeMediaPlaybackSessionFrom(abi: WindowsFoundation.IInspectabl
     return MediaPlaybackSession(fromAbi: abi)
 }
 
+fileprivate func makeMediaPlaybackSessionBufferingStartedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return MediaPlaybackSessionBufferingStartedEventArgs(fromAbi: abi)
+}
+
 fileprivate func makeMediaPlaybackSessionOutputDegradationPolicyStateFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return MediaPlaybackSessionOutputDegradationPolicyState(fromAbi: abi)
 }
@@ -1638,6 +2579,10 @@ fileprivate func makeMediaPlaybackVideoTrackListFrom(abi: WindowsFoundation.IIns
 
 fileprivate func makeMediaPlayerFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return MediaPlayer(fromAbi: abi)
+}
+
+fileprivate func makeMediaPlayerDataReceivedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return MediaPlayerDataReceivedEventArgs(fromAbi: abi)
 }
 
 fileprivate func makeMediaPlayerFailedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -1690,6 +2635,14 @@ fileprivate func makeRevocationAndRenewalItemFrom(abi: WindowsFoundation.IInspec
 
 fileprivate func makeServiceRequestedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return ServiceRequestedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeSpeechRecognitionResultFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return SpeechRecognitionResult(fromAbi: abi)
+}
+
+fileprivate func makeSpeechRecognitionSemanticInterpretationFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return SpeechRecognitionSemanticInterpretation(fromAbi: abi)
 }
 
 fileprivate func makeAdaptiveMediaSourceFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -1832,6 +2785,10 @@ fileprivate func makeSpatialCoordinateSystemFrom(abi: WindowsFoundation.IInspect
     return SpatialCoordinateSystem(fromAbi: abi)
 }
 
+fileprivate func makeWebAuthenticationResultFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return WebAuthenticationResult(fromAbi: abi)
+}
+
 fileprivate func makePasswordCredentialFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return PasswordCredential(fromAbi: abi)
 }
@@ -1948,6 +2905,58 @@ fileprivate func makeFolderPickerFrom(abi: WindowsFoundation.IInspectable) -> An
     return FolderPicker(fromAbi: abi)
 }
 
+fileprivate func makeFileOpenPickerUIFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return FileOpenPickerUI(fromAbi: abi)
+}
+
+fileprivate func makeFileRemovedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return FileRemovedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeFileSavePickerUIFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return FileSavePickerUI(fromAbi: abi)
+}
+
+fileprivate func makePickerClosingDeferralFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PickerClosingDeferral(fromAbi: abi)
+}
+
+fileprivate func makePickerClosingEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PickerClosingEventArgs(fromAbi: abi)
+}
+
+fileprivate func makePickerClosingOperationFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return PickerClosingOperation(fromAbi: abi)
+}
+
+fileprivate func makeTargetFileRequestFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TargetFileRequest(fromAbi: abi)
+}
+
+fileprivate func makeTargetFileRequestDeferralFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TargetFileRequestDeferral(fromAbi: abi)
+}
+
+fileprivate func makeTargetFileRequestedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return TargetFileRequestedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeCachedFileUpdaterUIFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CachedFileUpdaterUI(fromAbi: abi)
+}
+
+fileprivate func makeFileUpdateRequestFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return FileUpdateRequest(fromAbi: abi)
+}
+
+fileprivate func makeFileUpdateRequestDeferralFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return FileUpdateRequestDeferral(fromAbi: abi)
+}
+
+fileprivate func makeFileUpdateRequestedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return FileUpdateRequestedEventArgs(fromAbi: abi)
+}
+
 fileprivate func makeQueryOptionsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return QueryOptions(fromAbi: abi)
 }
@@ -2016,8 +3025,80 @@ fileprivate func makeRandomAccessStreamReferenceFrom(abi: WindowsFoundation.IIns
     return RandomAccessStreamReference(fromAbi: abi)
 }
 
+fileprivate func makeAppActivationResultFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppActivationResult(fromAbi: abi)
+}
+
+fileprivate func makeAppDiagnosticInfoFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppDiagnosticInfo(fromAbi: abi)
+}
+
+fileprivate func makeAppDiagnosticInfoWatcherFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppDiagnosticInfoWatcher(fromAbi: abi)
+}
+
+fileprivate func makeAppDiagnosticInfoWatcherEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppDiagnosticInfoWatcherEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeAppExecutionStateChangeResultFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppExecutionStateChangeResult(fromAbi: abi)
+}
+
+fileprivate func makeAppMemoryReportFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppMemoryReport(fromAbi: abi)
+}
+
+fileprivate func makeAppMemoryUsageLimitChangingEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppMemoryUsageLimitChangingEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeAppResourceGroupBackgroundTaskReportFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppResourceGroupBackgroundTaskReport(fromAbi: abi)
+}
+
+fileprivate func makeAppResourceGroupInfoFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppResourceGroupInfo(fromAbi: abi)
+}
+
+fileprivate func makeAppResourceGroupInfoWatcherFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppResourceGroupInfoWatcher(fromAbi: abi)
+}
+
+fileprivate func makeAppResourceGroupInfoWatcherEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppResourceGroupInfoWatcherEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeAppResourceGroupInfoWatcherExecutionStateChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppResourceGroupInfoWatcherExecutionStateChangedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeAppResourceGroupMemoryReportFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppResourceGroupMemoryReport(fromAbi: abi)
+}
+
+fileprivate func makeAppResourceGroupStateReportFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppResourceGroupStateReport(fromAbi: abi)
+}
+
+fileprivate func makeAppUriHandlerHostFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppUriHandlerHost(fromAbi: abi)
+}
+
+fileprivate func makeAppUriHandlerRegistrationFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppUriHandlerRegistration(fromAbi: abi)
+}
+
+fileprivate func makeAppUriHandlerRegistrationManagerFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AppUriHandlerRegistrationManager(fromAbi: abi)
+}
+
 fileprivate func makeDispatcherQueueFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return DispatcherQueue(fromAbi: abi)
+}
+
+fileprivate func makeDispatcherQueueControllerFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return DispatcherQueueController(fromAbi: abi)
 }
 
 fileprivate func makeDispatcherQueueShutdownStartingEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -2044,6 +3125,26 @@ fileprivate func makeLauncherUIOptionsFrom(abi: WindowsFoundation.IInspectable) 
     return LauncherUIOptions(fromAbi: abi)
 }
 
+fileprivate func makeProcessLauncherOptionsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ProcessLauncherOptions(fromAbi: abi)
+}
+
+fileprivate func makeProcessLauncherResultFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ProcessLauncherResult(fromAbi: abi)
+}
+
+fileprivate func makeProcessMemoryReportFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ProcessMemoryReport(fromAbi: abi)
+}
+
+fileprivate func makeProtocolForResultsOperationFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ProtocolForResultsOperation(fromAbi: abi)
+}
+
+fileprivate func makeRemoteLauncherOptionsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RemoteLauncherOptions(fromAbi: abi)
+}
+
 fileprivate func makeUserFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return User(fromAbi: abi)
 }
@@ -2060,8 +3161,52 @@ fileprivate func makeUserChangedEventArgsFrom(abi: WindowsFoundation.IInspectabl
     return UserChangedEventArgs(fromAbi: abi)
 }
 
+fileprivate func makeUserDeviceAssociationChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return UserDeviceAssociationChangedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeUserPickerFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return UserPicker(fromAbi: abi)
+}
+
 fileprivate func makeUserWatcherFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return UserWatcher(fromAbi: abi)
+}
+
+fileprivate func makeDiagnosticActionResultFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return DiagnosticActionResult(fromAbi: abi)
+}
+
+fileprivate func makeDiagnosticInvokerFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return DiagnosticInvoker(fromAbi: abi)
+}
+
+fileprivate func makeProcessCpuUsageFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ProcessCpuUsage(fromAbi: abi)
+}
+
+fileprivate func makeProcessCpuUsageReportFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ProcessCpuUsageReport(fromAbi: abi)
+}
+
+fileprivate func makeProcessDiagnosticInfoFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ProcessDiagnosticInfo(fromAbi: abi)
+}
+
+fileprivate func makeProcessDiskUsageFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ProcessDiskUsage(fromAbi: abi)
+}
+
+fileprivate func makeProcessDiskUsageReportFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ProcessDiskUsageReport(fromAbi: abi)
+}
+
+fileprivate func makeProcessMemoryUsageFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ProcessMemoryUsage(fromAbi: abi)
+}
+
+fileprivate func makeProcessMemoryUsageReportFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ProcessMemoryUsageReport(fromAbi: abi)
 }
 
 fileprivate func makeSystemCpuUsageFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -2082,6 +3227,54 @@ fileprivate func makeSystemMemoryUsageFrom(abi: WindowsFoundation.IInspectable) 
 
 fileprivate func makeSystemMemoryUsageReportFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return SystemMemoryUsageReport(fromAbi: abi)
+}
+
+fileprivate func makeRemoteSystemFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RemoteSystem(fromAbi: abi)
+}
+
+fileprivate func makeRemoteSystemAddedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RemoteSystemAddedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeRemoteSystemAppFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RemoteSystemApp(fromAbi: abi)
+}
+
+fileprivate func makeRemoteSystemConnectionRequestFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RemoteSystemConnectionRequest(fromAbi: abi)
+}
+
+fileprivate func makeRemoteSystemEnumerationCompletedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RemoteSystemEnumerationCompletedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeRemoteSystemRemovedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RemoteSystemRemovedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeRemoteSystemUpdatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RemoteSystemUpdatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeRemoteSystemWatcherFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RemoteSystemWatcher(fromAbi: abi)
+}
+
+fileprivate func makeRemoteSystemWatcherErrorOccurredEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RemoteSystemWatcherErrorOccurredEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeColorHelperFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ColorHelper(fromAbi: abi)
+}
+
+fileprivate func makeColorsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return Colors(fromAbi: abi)
+}
+
+fileprivate func makeUIContentRootFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return UIContentRoot(fromAbi: abi)
 }
 
 fileprivate func makeUIContextFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -2476,12 +3669,24 @@ fileprivate func makeAutomationProviderRequestedEventArgsFrom(abi: WindowsFounda
     return AutomationProviderRequestedEventArgs(fromAbi: abi)
 }
 
+fileprivate func makeBackRequestedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return BackRequestedEventArgs(fromAbi: abi)
+}
+
 fileprivate func makeCharacterReceivedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return CharacterReceivedEventArgs(fromAbi: abi)
 }
 
 fileprivate func makeClosestInteractiveBoundsRequestedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return ClosestInteractiveBoundsRequestedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeCoreAcceleratorKeysFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CoreAcceleratorKeys(fromAbi: abi)
+}
+
+fileprivate func makeCoreComponentInputSourceFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CoreComponentInputSource(fromAbi: abi)
 }
 
 fileprivate func makeCoreCursorFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -2492,12 +3697,32 @@ fileprivate func makeCoreDispatcherFrom(abi: WindowsFoundation.IInspectable) -> 
     return CoreDispatcher(fromAbi: abi)
 }
 
+fileprivate func makeCoreIndependentInputSourceFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CoreIndependentInputSource(fromAbi: abi)
+}
+
 fileprivate func makeCoreWindowFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return CoreWindow(fromAbi: abi)
 }
 
+fileprivate func makeCoreWindowDialogFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CoreWindowDialog(fromAbi: abi)
+}
+
 fileprivate func makeCoreWindowEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return CoreWindowEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeCoreWindowFlyoutFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CoreWindowFlyout(fromAbi: abi)
+}
+
+fileprivate func makeCoreWindowPopupShowingEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CoreWindowPopupShowingEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeCoreWindowResizeManagerFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return CoreWindowResizeManager(fromAbi: abi)
 }
 
 fileprivate func makeIdleDispatchedHandlerArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -2514,6 +3739,10 @@ fileprivate func makeKeyEventArgsFrom(abi: WindowsFoundation.IInspectable) -> An
 
 fileprivate func makePointerEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return PointerEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeSystemNavigationManagerFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return SystemNavigationManager(fromAbi: abi)
 }
 
 fileprivate func makeTouchHitTestingEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -2660,12 +3889,64 @@ fileprivate func makeUserNotificationChangedEventArgsFrom(abi: WindowsFoundation
     return UserNotificationChangedEventArgs(fromAbi: abi)
 }
 
+fileprivate func makeContentLinkInfoFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ContentLinkInfo(fromAbi: abi)
+}
+
 fileprivate func makeFontWeightsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return FontWeights(fromAbi: abi)
 }
 
+fileprivate func makeRichEditTextDocumentFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RichEditTextDocument(fromAbi: abi)
+}
+
+fileprivate func makeRichEditTextRangeFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return RichEditTextRange(fromAbi: abi)
+}
+
+fileprivate func makeAccessibilitySettingsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return AccessibilitySettings(fromAbi: abi)
+}
+
 fileprivate func makeActivationViewSwitcherFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return ActivationViewSwitcher(fromAbi: abi)
+}
+
+fileprivate func makeApplicationViewFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ApplicationView(fromAbi: abi)
+}
+
+fileprivate func makeApplicationViewConsolidatedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ApplicationViewConsolidatedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeApplicationViewScalingFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ApplicationViewScaling(fromAbi: abi)
+}
+
+fileprivate func makeApplicationViewTitleBarFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ApplicationViewTitleBar(fromAbi: abi)
+}
+
+fileprivate func makeApplicationViewTransferContextFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ApplicationViewTransferContext(fromAbi: abi)
+}
+
+fileprivate func makeInputPaneFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return InputPane(fromAbi: abi)
+}
+
+fileprivate func makeInputPaneVisibilityEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return InputPaneVisibilityEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeStatusBarFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return StatusBar(fromAbi: abi)
+}
+
+fileprivate func makeStatusBarProgressIndicatorFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return StatusBarProgressIndicator(fromAbi: abi)
 }
 
 fileprivate func makeUISettingsFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -2674,6 +3955,26 @@ fileprivate func makeUISettingsFrom(abi: WindowsFoundation.IInspectable) -> Any 
 
 fileprivate func makeUISettingsAutoHideScrollBarsChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
     return UISettingsAutoHideScrollBarsChangedEventArgs(fromAbi: abi)
+}
+
+fileprivate func makeUIViewSettingsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return UIViewSettings(fromAbi: abi)
+}
+
+fileprivate func makeViewModePreferencesFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return ViewModePreferences(fromAbi: abi)
+}
+
+fileprivate func makeDisplayRegionFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return DisplayRegion(fromAbi: abi)
+}
+
+fileprivate func makeWindowingEnvironmentFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return WindowingEnvironment(fromAbi: abi)
+}
+
+fileprivate func makeWindowingEnvironmentChangedEventArgsFrom(abi: WindowsFoundation.IInspectable) -> Any {
+    return WindowingEnvironmentChangedEventArgs(fromAbi: abi)
 }
 
 fileprivate func makeHttpClientFrom(abi: WindowsFoundation.IInspectable) -> Any {
@@ -2856,27 +4157,83 @@ public class __MakeFromAbi: MakeFromAbi {
             case "IActivatedEventArgs": return makeIActivatedEventArgsFrom(abi: abi)
             case "IActivatedEventArgsWithUser": return makeIActivatedEventArgsWithUserFrom(abi: abi)
             case "IApplicationViewActivatedEventArgs": return makeIApplicationViewActivatedEventArgsFrom(abi: abi)
+            case "IAppointmentsProviderActivatedEventArgs": return makeIAppointmentsProviderActivatedEventArgsFrom(abi: abi)
+            case "IAppointmentsProviderAddAppointmentActivatedEventArgs": return makeIAppointmentsProviderAddAppointmentActivatedEventArgsFrom(abi: abi)
+            case "IAppointmentsProviderRemoveAppointmentActivatedEventArgs": return makeIAppointmentsProviderRemoveAppointmentActivatedEventArgsFrom(abi: abi)
+            case "IAppointmentsProviderReplaceAppointmentActivatedEventArgs": return makeIAppointmentsProviderReplaceAppointmentActivatedEventArgsFrom(abi: abi)
+            case "IAppointmentsProviderShowAppointmentDetailsActivatedEventArgs": return makeIAppointmentsProviderShowAppointmentDetailsActivatedEventArgsFrom(abi: abi)
+            case "IAppointmentsProviderShowTimeFrameActivatedEventArgs": return makeIAppointmentsProviderShowTimeFrameActivatedEventArgsFrom(abi: abi)
             case "IBackgroundActivatedEventArgs": return makeIBackgroundActivatedEventArgsFrom(abi: abi)
+            case "IBarcodeScannerPreviewActivatedEventArgs": return makeIBarcodeScannerPreviewActivatedEventArgsFrom(abi: abi)
+            case "ICachedFileUpdaterActivatedEventArgs": return makeICachedFileUpdaterActivatedEventArgsFrom(abi: abi)
+            case "ICameraSettingsActivatedEventArgs": return makeICameraSettingsActivatedEventArgsFrom(abi: abi)
+            case "ICommandLineActivatedEventArgs": return makeICommandLineActivatedEventArgsFrom(abi: abi)
+            case "IContactActivatedEventArgs": return makeIContactActivatedEventArgsFrom(abi: abi)
+            case "IContactCallActivatedEventArgs": return makeIContactCallActivatedEventArgsFrom(abi: abi)
+            case "IContactMapActivatedEventArgs": return makeIContactMapActivatedEventArgsFrom(abi: abi)
+            case "IContactMessageActivatedEventArgs": return makeIContactMessageActivatedEventArgsFrom(abi: abi)
+            case "IContactPanelActivatedEventArgs": return makeIContactPanelActivatedEventArgsFrom(abi: abi)
+            case "IContactPickerActivatedEventArgs": return makeIContactPickerActivatedEventArgsFrom(abi: abi)
+            case "IContactPostActivatedEventArgs": return makeIContactPostActivatedEventArgsFrom(abi: abi)
+            case "IContactVideoCallActivatedEventArgs": return makeIContactVideoCallActivatedEventArgsFrom(abi: abi)
+            case "IContactsProviderActivatedEventArgs": return makeIContactsProviderActivatedEventArgsFrom(abi: abi)
+            case "IContinuationActivatedEventArgs": return makeIContinuationActivatedEventArgsFrom(abi: abi)
+            case "IDeviceActivatedEventArgs": return makeIDeviceActivatedEventArgsFrom(abi: abi)
+            case "IDevicePairingActivatedEventArgs": return makeIDevicePairingActivatedEventArgsFrom(abi: abi)
+            case "IDialReceiverActivatedEventArgs": return makeIDialReceiverActivatedEventArgsFrom(abi: abi)
+            case "IFileActivatedEventArgs": return makeIFileActivatedEventArgsFrom(abi: abi)
+            case "IFileActivatedEventArgsWithCallerPackageFamilyName": return makeIFileActivatedEventArgsWithCallerPackageFamilyNameFrom(abi: abi)
+            case "IFileActivatedEventArgsWithNeighboringFiles": return makeIFileActivatedEventArgsWithNeighboringFilesFrom(abi: abi)
+            case "IFileOpenPickerActivatedEventArgs": return makeIFileOpenPickerActivatedEventArgsFrom(abi: abi)
+            case "IFileOpenPickerActivatedEventArgs2": return makeIFileOpenPickerActivatedEventArgs2From(abi: abi)
+            case "IFileOpenPickerContinuationEventArgs": return makeIFileOpenPickerContinuationEventArgsFrom(abi: abi)
+            case "IFileSavePickerActivatedEventArgs": return makeIFileSavePickerActivatedEventArgsFrom(abi: abi)
+            case "IFileSavePickerActivatedEventArgs2": return makeIFileSavePickerActivatedEventArgs2From(abi: abi)
+            case "IFileSavePickerContinuationEventArgs": return makeIFileSavePickerContinuationEventArgsFrom(abi: abi)
+            case "IFolderPickerContinuationEventArgs": return makeIFolderPickerContinuationEventArgsFrom(abi: abi)
             case "ILaunchActivatedEventArgs": return makeILaunchActivatedEventArgsFrom(abi: abi)
             case "ILaunchActivatedEventArgs2": return makeILaunchActivatedEventArgs2From(abi: abi)
+            case "ILockScreenActivatedEventArgs": return makeILockScreenActivatedEventArgsFrom(abi: abi)
+            case "ILockScreenCallActivatedEventArgs": return makeILockScreenCallActivatedEventArgsFrom(abi: abi)
+            case "IPickerReturnedActivatedEventArgs": return makeIPickerReturnedActivatedEventArgsFrom(abi: abi)
             case "IPrelaunchActivatedEventArgs": return makeIPrelaunchActivatedEventArgsFrom(abi: abi)
+            case "IPrint3DWorkflowActivatedEventArgs": return makeIPrint3DWorkflowActivatedEventArgsFrom(abi: abi)
+            case "IPrintTaskSettingsActivatedEventArgs": return makeIPrintTaskSettingsActivatedEventArgsFrom(abi: abi)
             case "IProtocolActivatedEventArgs": return makeIProtocolActivatedEventArgsFrom(abi: abi)
             case "IProtocolActivatedEventArgsWithCallerPackageFamilyNameAndData": return makeIProtocolActivatedEventArgsWithCallerPackageFamilyNameAndDataFrom(abi: abi)
+            case "IProtocolForResultsActivatedEventArgs": return makeIProtocolForResultsActivatedEventArgsFrom(abi: abi)
+            case "IRestrictedLaunchActivatedEventArgs": return makeIRestrictedLaunchActivatedEventArgsFrom(abi: abi)
+            case "ISearchActivatedEventArgs": return makeISearchActivatedEventArgsFrom(abi: abi)
+            case "ISearchActivatedEventArgsWithLinguisticDetails": return makeISearchActivatedEventArgsWithLinguisticDetailsFrom(abi: abi)
+            case "IShareTargetActivatedEventArgs": return makeIShareTargetActivatedEventArgsFrom(abi: abi)
+            case "IStartupTaskActivatedEventArgs": return makeIStartupTaskActivatedEventArgsFrom(abi: abi)
+            case "IToastNotificationActivatedEventArgs": return makeIToastNotificationActivatedEventArgsFrom(abi: abi)
+            case "IUserDataAccountProviderActivatedEventArgs": return makeIUserDataAccountProviderActivatedEventArgsFrom(abi: abi)
             case "IViewSwitcherProvider": return makeIViewSwitcherProviderFrom(abi: abi)
+            case "IVoiceCommandActivatedEventArgs": return makeIVoiceCommandActivatedEventArgsFrom(abi: abi)
+            case "IWalletActionActivatedEventArgs": return makeIWalletActionActivatedEventArgsFrom(abi: abi)
+            case "IWebAccountProviderActivatedEventArgs": return makeIWebAccountProviderActivatedEventArgsFrom(abi: abi)
+            case "IWebAuthenticationBrokerContinuationEventArgs": return makeIWebAuthenticationBrokerContinuationEventArgsFrom(abi: abi)
+            case "IAppointmentParticipant": return makeIAppointmentParticipantFrom(abi: abi)
             case "IBackgroundTaskInstance": return makeIBackgroundTaskInstanceFrom(abi: abi)
             case "IBackgroundTaskRegistration": return makeIBackgroundTaskRegistrationFrom(abi: abi)
             case "IBackgroundTaskRegistration2": return makeIBackgroundTaskRegistration2From(abi: abi)
             case "IBackgroundTaskRegistration3": return makeIBackgroundTaskRegistration3From(abi: abi)
             case "IBackgroundTrigger": return makeIBackgroundTriggerFrom(abi: abi)
+            case "IContactField": return makeIContactFieldFrom(abi: abi)
             case "ICoreApplicationUnhandledError": return makeICoreApplicationUnhandledErrorFrom(abi: abi)
             case "IFrameworkView": return makeIFrameworkViewFrom(abi: abi)
             case "IFrameworkViewSource": return makeIFrameworkViewSourceFrom(abi: abi)
+            case "IUserDataAccountProviderOperation": return makeIUserDataAccountProviderOperationFrom(abi: abi)
+            case "IJsonValue": return makeIJsonValueFrom(abi: abi)
             case "IXmlCharacterData": return makeIXmlCharacterDataFrom(abi: abi)
             case "IXmlNode": return makeIXmlNodeFrom(abi: abi)
             case "IXmlNodeSelector": return makeIXmlNodeSelectorFrom(abi: abi)
             case "IXmlNodeSerializer": return makeIXmlNodeSerializerFrom(abi: abi)
             case "IXmlText": return makeIXmlTextFrom(abi: abi)
             case "IDevicePairingSettings": return makeIDevicePairingSettingsFrom(abi: abi)
+            case "IGeoshape": return makeIGeoshapeFrom(abi: abi)
+            case "INumberFormatter2": return makeINumberFormatter2From(abi: abi)
             case "IGeometrySource2D": return makeIGeometrySource2DFrom(abi: abi)
             case "IDirect3DDevice": return makeIDirect3DDeviceFrom(abi: abi)
             case "IDirect3DSurface": return makeIDirect3DSurfaceFrom(abi: abi)
@@ -2885,6 +4242,11 @@ public class __MakeFromAbi: MakeFromAbi {
             case "IBitmapFrame": return makeIBitmapFrameFrom(abi: abi)
             case "IBitmapFrameWithSoftwareBitmap": return makeIBitmapFrameWithSoftwareBitmapFrom(abi: abi)
             case "IBitmapPropertiesView": return makeIBitmapPropertiesViewFrom(abi: abi)
+            case "IPrintDocumentSource": return makeIPrintDocumentSourceFrom(abi: abi)
+            case "IPrintTaskOptionsCore": return makeIPrintTaskOptionsCoreFrom(abi: abi)
+            case "IPrintTaskOptionsCoreProperties": return makeIPrintTaskOptionsCorePropertiesFrom(abi: abi)
+            case "IPrintTaskOptionsCoreUIConfiguration": return makeIPrintTaskOptionsCoreUIConfigurationFrom(abi: abi)
+            case "IMediaExtension": return makeIMediaExtensionFrom(abi: abi)
             case "IMediaFrame": return makeIMediaFrameFrom(abi: abi)
             case "IAudioInputNode": return makeIAudioInputNodeFrom(abi: abi)
             case "IAudioInputNode2": return makeIAudioInputNode2From(abi: abi)
@@ -2896,13 +4258,18 @@ public class __MakeFromAbi: MakeFromAbi {
             case "IMediaStreamDescriptor2": return makeIMediaStreamDescriptor2From(abi: abi)
             case "IMediaTrack": return makeIMediaTrackFrom(abi: abi)
             case "ISingleSelectMediaTrackList": return makeISingleSelectMediaTrackListFrom(abi: abi)
+            case "ITimedMetadataTrackProvider": return makeITimedMetadataTrackProviderFrom(abi: abi)
             case "IMediaDeviceController": return makeIMediaDeviceControllerFrom(abi: abi)
             case "IAudioEffectDefinition": return makeIAudioEffectDefinitionFrom(abi: abi)
+            case "IVideoEffectDefinition": return makeIVideoEffectDefinitionFrom(abi: abi)
             case "IMediaEncodingProperties": return makeIMediaEncodingPropertiesFrom(abi: abi)
+            case "IMediaEnginePlaybackSource": return makeIMediaEnginePlaybackSourceFrom(abi: abi)
             case "IMediaPlaybackSource": return makeIMediaPlaybackSourceFrom(abi: abi)
             case "IMediaProtectionServiceRequest": return makeIMediaProtectionServiceRequestFrom(abi: abi)
+            case "ISpeechRecognitionConstraint": return makeISpeechRecognitionConstraintFrom(abi: abi)
             case "IBackgroundTransferOperation": return makeIBackgroundTransferOperationFrom(abi: abi)
             case "IBackgroundTransferOperationPriority": return makeIBackgroundTransferOperationPriorityFrom(abi: abi)
+            case "IWebAccountProviderOperation": return makeIWebAccountProviderOperationFrom(abi: abi)
             case "IStorageFile": return makeIStorageFileFrom(abi: abi)
             case "IStorageFile2": return makeIStorageFile2From(abi: abi)
             case "IStorageFilePropertiesWithAvailability": return makeIStorageFilePropertiesWithAvailabilityFrom(abi: abi)
@@ -2928,42 +4295,141 @@ public class __MakeFromAbi: MakeFromAbi {
             case "IRandomAccessStreamReference": return makeIRandomAccessStreamReferenceFrom(abi: abi)
             case "IRandomAccessStreamWithContentType": return makeIRandomAccessStreamWithContentTypeFrom(abi: abi)
             case "ILauncherViewOptions": return makeILauncherViewOptionsFrom(abi: abi)
+            case "IRemoteSystemFilter": return makeIRemoteSystemFilterFrom(abi: abi)
             case "IAnimationObject": return makeIAnimationObjectFrom(abi: abi)
             case "ICompositionAnimationBase": return makeICompositionAnimationBaseFrom(abi: abi)
             case "ICompositionSurface": return makeICompositionSurfaceFrom(abi: abi)
             case "IVisualElement": return makeIVisualElementFrom(abi: abi)
             case "ICoreAcceleratorKeys": return makeICoreAcceleratorKeysFrom(abi: abi)
+            case "ICoreInputSourceBase": return makeICoreInputSourceBaseFrom(abi: abi)
+            case "ICorePointerInputSource": return makeICorePointerInputSourceFrom(abi: abi)
+            case "ICorePointerInputSource2": return makeICorePointerInputSource2From(abi: abi)
             case "ICorePointerRedirector": return makeICorePointerRedirectorFrom(abi: abi)
             case "ICoreWindow": return makeICoreWindowFrom(abi: abi)
             case "ICoreWindowEventArgs": return makeICoreWindowEventArgsFrom(abi: abi)
+            case "IInitializeWithCoreWindow": return makeIInitializeWithCoreWindowFrom(abi: abi)
             case "IPointerPointTransform": return makeIPointerPointTransformFrom(abi: abi)
             case "IAdaptiveNotificationContent": return makeIAdaptiveNotificationContentFrom(abi: abi)
+            case "IUICommand": return makeIUICommandFrom(abi: abi)
+            case "ITextCharacterFormat": return makeITextCharacterFormatFrom(abi: abi)
+            case "ITextDocument": return makeITextDocumentFrom(abi: abi)
+            case "ITextParagraphFormat": return makeITextParagraphFormatFrom(abi: abi)
+            case "ITextRange": return makeITextRangeFrom(abi: abi)
+            case "ITextSelection": return makeITextSelectionFrom(abi: abi)
             case "IHttpContent": return makeIHttpContentFrom(abi: abi)
             case "IHttpFilter": return makeIHttpFilterFrom(abi: abi)
             case "AppDisplayInfo": return makeAppDisplayInfoFrom(abi: abi)
             case "AppInfo": return makeAppInfoFrom(abi: abi)
             case "AppInstallerInfo": return makeAppInstallerInfoFrom(abi: abi)
+            case "AppInstance": return makeAppInstanceFrom(abi: abi)
             case "EnteredBackgroundEventArgs": return makeEnteredBackgroundEventArgsFrom(abi: abi)
             case "LeavingBackgroundEventArgs": return makeLeavingBackgroundEventArgsFrom(abi: abi)
+            case "LimitedAccessFeatureRequestResult": return makeLimitedAccessFeatureRequestResultFrom(abi: abi)
             case "Package": return makePackageFrom(abi: abi)
+            case "PackageCatalog": return makePackageCatalogFrom(abi: abi)
+            case "PackageCatalogAddOptionalPackageResult": return makePackageCatalogAddOptionalPackageResultFrom(abi: abi)
+            case "PackageCatalogAddResourcePackageResult": return makePackageCatalogAddResourcePackageResultFrom(abi: abi)
+            case "PackageCatalogRemoveOptionalPackagesResult": return makePackageCatalogRemoveOptionalPackagesResultFrom(abi: abi)
+            case "PackageCatalogRemoveResourcePackagesResult": return makePackageCatalogRemoveResourcePackagesResultFrom(abi: abi)
             case "PackageContentGroup": return makePackageContentGroupFrom(abi: abi)
+            case "PackageContentGroupStagingEventArgs": return makePackageContentGroupStagingEventArgsFrom(abi: abi)
             case "PackageId": return makePackageIdFrom(abi: abi)
+            case "PackageInstallingEventArgs": return makePackageInstallingEventArgsFrom(abi: abi)
+            case "PackageStagingEventArgs": return makePackageStagingEventArgsFrom(abi: abi)
             case "PackageStatus": return makePackageStatusFrom(abi: abi)
+            case "PackageStatusChangedEventArgs": return makePackageStatusChangedEventArgsFrom(abi: abi)
+            case "PackageUninstallingEventArgs": return makePackageUninstallingEventArgsFrom(abi: abi)
             case "PackageUpdateAvailabilityResult": return makePackageUpdateAvailabilityResultFrom(abi: abi)
+            case "PackageUpdatingEventArgs": return makePackageUpdatingEventArgsFrom(abi: abi)
+            case "StartupTask": return makeStartupTaskFrom(abi: abi)
             case "SuspendingDeferral": return makeSuspendingDeferralFrom(abi: abi)
             case "SuspendingEventArgs": return makeSuspendingEventArgsFrom(abi: abi)
             case "SuspendingOperation": return makeSuspendingOperationFrom(abi: abi)
+            case "AppointmentsProviderAddAppointmentActivatedEventArgs": return makeAppointmentsProviderAddAppointmentActivatedEventArgsFrom(abi: abi)
+            case "AppointmentsProviderRemoveAppointmentActivatedEventArgs": return makeAppointmentsProviderRemoveAppointmentActivatedEventArgsFrom(abi: abi)
+            case "AppointmentsProviderReplaceAppointmentActivatedEventArgs": return makeAppointmentsProviderReplaceAppointmentActivatedEventArgsFrom(abi: abi)
+            case "AppointmentsProviderShowAppointmentDetailsActivatedEventArgs": return makeAppointmentsProviderShowAppointmentDetailsActivatedEventArgsFrom(abi: abi)
+            case "AppointmentsProviderShowTimeFrameActivatedEventArgs": return makeAppointmentsProviderShowTimeFrameActivatedEventArgsFrom(abi: abi)
             case "BackgroundActivatedEventArgs": return makeBackgroundActivatedEventArgsFrom(abi: abi)
+            case "BarcodeScannerPreviewActivatedEventArgs": return makeBarcodeScannerPreviewActivatedEventArgsFrom(abi: abi)
+            case "CachedFileUpdaterActivatedEventArgs": return makeCachedFileUpdaterActivatedEventArgsFrom(abi: abi)
+            case "CameraSettingsActivatedEventArgs": return makeCameraSettingsActivatedEventArgsFrom(abi: abi)
+            case "CommandLineActivatedEventArgs": return makeCommandLineActivatedEventArgsFrom(abi: abi)
+            case "CommandLineActivationOperation": return makeCommandLineActivationOperationFrom(abi: abi)
+            case "ContactCallActivatedEventArgs": return makeContactCallActivatedEventArgsFrom(abi: abi)
+            case "ContactMapActivatedEventArgs": return makeContactMapActivatedEventArgsFrom(abi: abi)
+            case "ContactMessageActivatedEventArgs": return makeContactMessageActivatedEventArgsFrom(abi: abi)
+            case "ContactPanelActivatedEventArgs": return makeContactPanelActivatedEventArgsFrom(abi: abi)
+            case "ContactPickerActivatedEventArgs": return makeContactPickerActivatedEventArgsFrom(abi: abi)
+            case "ContactPostActivatedEventArgs": return makeContactPostActivatedEventArgsFrom(abi: abi)
+            case "ContactVideoCallActivatedEventArgs": return makeContactVideoCallActivatedEventArgsFrom(abi: abi)
+            case "DeviceActivatedEventArgs": return makeDeviceActivatedEventArgsFrom(abi: abi)
+            case "DevicePairingActivatedEventArgs": return makeDevicePairingActivatedEventArgsFrom(abi: abi)
+            case "DialReceiverActivatedEventArgs": return makeDialReceiverActivatedEventArgsFrom(abi: abi)
+            case "FileActivatedEventArgs": return makeFileActivatedEventArgsFrom(abi: abi)
+            case "FileOpenPickerActivatedEventArgs": return makeFileOpenPickerActivatedEventArgsFrom(abi: abi)
+            case "FileOpenPickerContinuationEventArgs": return makeFileOpenPickerContinuationEventArgsFrom(abi: abi)
+            case "FileSavePickerActivatedEventArgs": return makeFileSavePickerActivatedEventArgsFrom(abi: abi)
+            case "FileSavePickerContinuationEventArgs": return makeFileSavePickerContinuationEventArgsFrom(abi: abi)
+            case "FolderPickerContinuationEventArgs": return makeFolderPickerContinuationEventArgsFrom(abi: abi)
             case "LaunchActivatedEventArgs": return makeLaunchActivatedEventArgsFrom(abi: abi)
+            case "LockScreenActivatedEventArgs": return makeLockScreenActivatedEventArgsFrom(abi: abi)
+            case "LockScreenCallActivatedEventArgs": return makeLockScreenCallActivatedEventArgsFrom(abi: abi)
+            case "LockScreenComponentActivatedEventArgs": return makeLockScreenComponentActivatedEventArgsFrom(abi: abi)
+            case "PickerReturnedActivatedEventArgs": return makePickerReturnedActivatedEventArgsFrom(abi: abi)
+            case "Print3DWorkflowActivatedEventArgs": return makePrint3DWorkflowActivatedEventArgsFrom(abi: abi)
+            case "PrintTaskSettingsActivatedEventArgs": return makePrintTaskSettingsActivatedEventArgsFrom(abi: abi)
             case "ProtocolActivatedEventArgs": return makeProtocolActivatedEventArgsFrom(abi: abi)
+            case "ProtocolForResultsActivatedEventArgs": return makeProtocolForResultsActivatedEventArgsFrom(abi: abi)
+            case "RestrictedLaunchActivatedEventArgs": return makeRestrictedLaunchActivatedEventArgsFrom(abi: abi)
+            case "SearchActivatedEventArgs": return makeSearchActivatedEventArgsFrom(abi: abi)
+            case "ShareTargetActivatedEventArgs": return makeShareTargetActivatedEventArgsFrom(abi: abi)
             case "SplashScreen": return makeSplashScreenFrom(abi: abi)
+            case "StartupTaskActivatedEventArgs": return makeStartupTaskActivatedEventArgsFrom(abi: abi)
             case "TileActivatedInfo": return makeTileActivatedInfoFrom(abi: abi)
+            case "ToastNotificationActivatedEventArgs": return makeToastNotificationActivatedEventArgsFrom(abi: abi)
+            case "UserDataAccountProviderActivatedEventArgs": return makeUserDataAccountProviderActivatedEventArgsFrom(abi: abi)
+            case "VoiceCommandActivatedEventArgs": return makeVoiceCommandActivatedEventArgsFrom(abi: abi)
+            case "WalletActionActivatedEventArgs": return makeWalletActionActivatedEventArgsFrom(abi: abi)
+            case "WebAccountProviderActivatedEventArgs": return makeWebAccountProviderActivatedEventArgsFrom(abi: abi)
+            case "WebAuthenticationBrokerContinuationEventArgs": return makeWebAuthenticationBrokerContinuationEventArgsFrom(abi: abi)
+            case "AppServiceClosedEventArgs": return makeAppServiceClosedEventArgsFrom(abi: abi)
+            case "AppServiceConnection": return makeAppServiceConnectionFrom(abi: abi)
+            case "AppServiceDeferral": return makeAppServiceDeferralFrom(abi: abi)
+            case "AppServiceRequest": return makeAppServiceRequestFrom(abi: abi)
+            case "AppServiceRequestReceivedEventArgs": return makeAppServiceRequestReceivedEventArgsFrom(abi: abi)
+            case "AppServiceResponse": return makeAppServiceResponseFrom(abi: abi)
+            case "StatelessAppServiceResponse": return makeStatelessAppServiceResponseFrom(abi: abi)
+            case "Appointment": return makeAppointmentFrom(abi: abi)
+            case "AppointmentInvitee": return makeAppointmentInviteeFrom(abi: abi)
+            case "AppointmentOrganizer": return makeAppointmentOrganizerFrom(abi: abi)
+            case "AppointmentRecurrence": return makeAppointmentRecurrenceFrom(abi: abi)
+            case "AddAppointmentOperation": return makeAddAppointmentOperationFrom(abi: abi)
+            case "RemoveAppointmentOperation": return makeRemoveAppointmentOperationFrom(abi: abi)
+            case "ReplaceAppointmentOperation": return makeReplaceAppointmentOperationFrom(abi: abi)
             case "BackgroundTaskCompletedEventArgs": return makeBackgroundTaskCompletedEventArgsFrom(abi: abi)
             case "BackgroundTaskDeferral": return makeBackgroundTaskDeferralFrom(abi: abi)
             case "BackgroundTaskProgressEventArgs": return makeBackgroundTaskProgressEventArgsFrom(abi: abi)
             case "BackgroundTaskRegistration": return makeBackgroundTaskRegistrationFrom(abi: abi)
             case "BackgroundTaskRegistrationGroup": return makeBackgroundTaskRegistrationGroupFrom(abi: abi)
             case "DeviceWatcherTrigger": return makeDeviceWatcherTriggerFrom(abi: abi)
+            case "LockScreenCallEndCallDeferral": return makeLockScreenCallEndCallDeferralFrom(abi: abi)
+            case "LockScreenCallEndRequestedEventArgs": return makeLockScreenCallEndRequestedEventArgsFrom(abi: abi)
+            case "LockScreenCallUI": return makeLockScreenCallUIFrom(abi: abi)
+            case "Contact": return makeContactFrom(abi: abi)
+            case "ContactAddress": return makeContactAddressFrom(abi: abi)
+            case "ContactConnectedServiceAccount": return makeContactConnectedServiceAccountFrom(abi: abi)
+            case "ContactDate": return makeContactDateFrom(abi: abi)
+            case "ContactEmail": return makeContactEmailFrom(abi: abi)
+            case "ContactJobInfo": return makeContactJobInfoFrom(abi: abi)
+            case "ContactPanel": return makeContactPanelFrom(abi: abi)
+            case "ContactPanelClosingEventArgs": return makeContactPanelClosingEventArgsFrom(abi: abi)
+            case "ContactPanelLaunchFullAppRequestedEventArgs": return makeContactPanelLaunchFullAppRequestedEventArgsFrom(abi: abi)
+            case "ContactPhone": return makeContactPhoneFrom(abi: abi)
+            case "ContactSignificantOther": return makeContactSignificantOtherFrom(abi: abi)
+            case "ContactWebsite": return makeContactWebsiteFrom(abi: abi)
+            case "ContactPickerUI": return makeContactPickerUIFrom(abi: abi)
+            case "ContactRemovedEventArgs": return makeContactRemovedEventArgsFrom(abi: abi)
             case "AppListEntry": return makeAppListEntryFrom(abi: abi)
             case "CoreApplicationView": return makeCoreApplicationViewFrom(abi: abi)
             case "CoreApplicationViewTitleBar": return makeCoreApplicationViewTitleBarFrom(abi: abi)
@@ -2992,6 +4458,14 @@ public class __MakeFromAbi: MakeFromAbi {
             case "ShareTargetInfo": return makeShareTargetInfoFrom(abi: abi)
             case "ShareUIOptions": return makeShareUIOptionsFrom(abi: abi)
             case "TargetApplicationChosenEventArgs": return makeTargetApplicationChosenEventArgsFrom(abi: abi)
+            case "CoreDragInfo": return makeCoreDragInfoFrom(abi: abi)
+            case "CoreDragUIOverride": return makeCoreDragUIOverrideFrom(abi: abi)
+            case "QuickLink": return makeQuickLinkFrom(abi: abi)
+            case "ShareOperation": return makeShareOperationFrom(abi: abi)
+            case "SearchPaneQueryLinguisticDetails": return makeSearchPaneQueryLinguisticDetailsFrom(abi: abi)
+            case "JsonArray": return makeJsonArrayFrom(abi: abi)
+            case "JsonObject": return makeJsonObjectFrom(abi: abi)
+            case "JsonValue": return makeJsonValueFrom(abi: abi)
             case "XmlAttribute": return makeXmlAttributeFrom(abi: abi)
             case "XmlCDataSection": return makeXmlCDataSectionFrom(abi: abi)
             case "XmlComment": return makeXmlCommentFrom(abi: abi)
@@ -3018,6 +4492,7 @@ public class __MakeFromAbi: MakeFromAbi {
             case "DeviceUnpairingResult": return makeDeviceUnpairingResultFrom(abi: abi)
             case "DeviceWatcher": return makeDeviceWatcherFrom(abi: abi)
             case "EnclosureLocation": return makeEnclosureLocationFrom(abi: abi)
+            case "Geopoint": return makeGeopointFrom(abi: abi)
             case "KeyboardCapabilities": return makeKeyboardCapabilitiesFrom(abi: abi)
             case "MouseCapabilities": return makeMouseCapabilitiesFrom(abi: abi)
             case "MouseDevice": return makeMouseDeviceFrom(abi: abi)
@@ -3025,6 +4500,13 @@ public class __MakeFromAbi: MakeFromAbi {
             case "PenDevice": return makePenDeviceFrom(abi: abi)
             case "PointerDevice": return makePointerDeviceFrom(abi: abi)
             case "TouchCapabilities": return makeTouchCapabilitiesFrom(abi: abi)
+            case "Print3DWorkflow": return makePrint3DWorkflowFrom(abi: abi)
+            case "Print3DWorkflowPrintRequestedEventArgs": return makePrint3DWorkflowPrintRequestedEventArgsFrom(abi: abi)
+            case "Print3DWorkflowPrinterChangedEventArgs": return makePrint3DWorkflowPrinterChangedEventArgsFrom(abi: abi)
+            case "PrintTaskConfiguration": return makePrintTaskConfigurationFrom(abi: abi)
+            case "PrintTaskConfigurationSaveRequest": return makePrintTaskConfigurationSaveRequestFrom(abi: abi)
+            case "PrintTaskConfigurationSaveRequestedDeferral": return makePrintTaskConfigurationSaveRequestedDeferralFrom(abi: abi)
+            case "PrintTaskConfigurationSaveRequestedEventArgs": return makePrintTaskConfigurationSaveRequestedEventArgsFrom(abi: abi)
             case "Language": return makeLanguageFrom(abi: abi)
             case "BitmapBuffer": return makeBitmapBufferFrom(abi: abi)
             case "BitmapCodecInformation": return makeBitmapCodecInformationFrom(abi: abi)
@@ -3039,6 +4521,10 @@ public class __MakeFromAbi: MakeFromAbi {
             case "ImageStream": return makeImageStreamFrom(abi: abi)
             case "PixelDataProvider": return makePixelDataProviderFrom(abi: abi)
             case "SoftwareBitmap": return makeSoftwareBitmapFrom(abi: abi)
+            case "PrintPageInfo": return makePrintPageInfoFrom(abi: abi)
+            case "PrintPageRange": return makePrintPageRangeFrom(abi: abi)
+            case "PrintPageRangeOptions": return makePrintPageRangeOptionsFrom(abi: abi)
+            case "PrintTaskOptions": return makePrintTaskOptionsFrom(abi: abi)
             case "DeploymentResult": return makeDeploymentResultFrom(abi: abi)
             case "PackageManager": return makePackageManagerFrom(abi: abi)
             case "PackageManagerDebugSettings": return makePackageManagerDebugSettingsFrom(abi: abi)
@@ -3096,7 +4582,9 @@ public class __MakeFromAbi: MakeFromAbi {
             case "SetDefaultSpatialAudioFormatResult": return makeSetDefaultSpatialAudioFormatResultFrom(abi: abi)
             case "SpatialAudioDeviceConfiguration": return makeSpatialAudioDeviceConfigurationFrom(abi: abi)
             case "SpatialAudioFormatConfiguration": return makeSpatialAudioFormatConfigurationFrom(abi: abi)
+            case "CapturedFrameControlValues": return makeCapturedFrameControlValuesFrom(abi: abi)
             case "MediaCaptureVideoProfileMediaDescription": return makeMediaCaptureVideoProfileMediaDescriptionFrom(abi: abi)
+            case "VideoStreamConfiguration": return makeVideoStreamConfigurationFrom(abi: abi)
             case "DepthMediaFrameFormat": return makeDepthMediaFrameFormatFrom(abi: abi)
             case "MediaFrameFormat": return makeMediaFrameFormatFrom(abi: abi)
             case "MediaFrameSource": return makeMediaFrameSourceFrom(abi: abi)
@@ -3116,10 +4604,24 @@ public class __MakeFromAbi: MakeFromAbi {
             case "AudioTrack": return makeAudioTrackFrom(abi: abi)
             case "AudioTrackOpenFailedEventArgs": return makeAudioTrackOpenFailedEventArgsFrom(abi: abi)
             case "AudioTrackSupportInfo": return makeAudioTrackSupportInfoFrom(abi: abi)
+            case "ChapterCue": return makeChapterCueFrom(abi: abi)
+            case "CodecInfo": return makeCodecInfoFrom(abi: abi)
+            case "CodecQuery": return makeCodecQueryFrom(abi: abi)
+            case "DataCue": return makeDataCueFrom(abi: abi)
+            case "FaceDetectedEventArgs": return makeFaceDetectedEventArgsFrom(abi: abi)
+            case "FaceDetectionEffect": return makeFaceDetectionEffectFrom(abi: abi)
+            case "FaceDetectionEffectDefinition": return makeFaceDetectionEffectDefinitionFrom(abi: abi)
+            case "FaceDetectionEffectFrame": return makeFaceDetectionEffectFrameFrom(abi: abi)
+            case "HighDynamicRangeControl": return makeHighDynamicRangeControlFrom(abi: abi)
+            case "HighDynamicRangeOutput": return makeHighDynamicRangeOutputFrom(abi: abi)
+            case "ImageCue": return makeImageCueFrom(abi: abi)
+            case "InitializeMediaStreamSourceRequestedEventArgs": return makeInitializeMediaStreamSourceRequestedEventArgsFrom(abi: abi)
+            case "LowLightFusionResult": return makeLowLightFusionResultFrom(abi: abi)
             case "MediaBinder": return makeMediaBinderFrom(abi: abi)
             case "MediaBindingEventArgs": return makeMediaBindingEventArgsFrom(abi: abi)
             case "MediaCueEventArgs": return makeMediaCueEventArgsFrom(abi: abi)
             case "MediaSource": return makeMediaSourceFrom(abi: abi)
+            case "MediaSourceAppServiceConnection": return makeMediaSourceAppServiceConnectionFrom(abi: abi)
             case "MediaSourceError": return makeMediaSourceErrorFrom(abi: abi)
             case "MediaSourceOpenOperationCompletedEventArgs": return makeMediaSourceOpenOperationCompletedEventArgsFrom(abi: abi)
             case "MediaSourceStateChangedEventArgs": return makeMediaSourceStateChangedEventArgsFrom(abi: abi)
@@ -3142,12 +4644,25 @@ public class __MakeFromAbi: MakeFromAbi {
             case "MseSourceBuffer": return makeMseSourceBufferFrom(abi: abi)
             case "MseSourceBufferList": return makeMseSourceBufferListFrom(abi: abi)
             case "MseStreamSource": return makeMseStreamSourceFrom(abi: abi)
+            case "SceneAnalysisEffect": return makeSceneAnalysisEffectFrom(abi: abi)
+            case "SceneAnalysisEffectDefinition": return makeSceneAnalysisEffectDefinitionFrom(abi: abi)
+            case "SceneAnalysisEffectFrame": return makeSceneAnalysisEffectFrameFrom(abi: abi)
+            case "SceneAnalyzedEventArgs": return makeSceneAnalyzedEventArgsFrom(abi: abi)
+            case "SpeechCue": return makeSpeechCueFrom(abi: abi)
             case "TimedMetadataStreamDescriptor": return makeTimedMetadataStreamDescriptorFrom(abi: abi)
             case "TimedMetadataTrack": return makeTimedMetadataTrackFrom(abi: abi)
             case "TimedMetadataTrackError": return makeTimedMetadataTrackErrorFrom(abi: abi)
             case "TimedMetadataTrackFailedEventArgs": return makeTimedMetadataTrackFailedEventArgsFrom(abi: abi)
+            case "TimedTextCue": return makeTimedTextCueFrom(abi: abi)
+            case "TimedTextLine": return makeTimedTextLineFrom(abi: abi)
+            case "TimedTextRegion": return makeTimedTextRegionFrom(abi: abi)
             case "TimedTextSource": return makeTimedTextSourceFrom(abi: abi)
             case "TimedTextSourceResolveResultEventArgs": return makeTimedTextSourceResolveResultEventArgsFrom(abi: abi)
+            case "TimedTextStyle": return makeTimedTextStyleFrom(abi: abi)
+            case "TimedTextSubformat": return makeTimedTextSubformatFrom(abi: abi)
+            case "VideoStabilizationEffect": return makeVideoStabilizationEffectFrom(abi: abi)
+            case "VideoStabilizationEffectDefinition": return makeVideoStabilizationEffectDefinitionFrom(abi: abi)
+            case "VideoStabilizationEffectEnabledChangedEventArgs": return makeVideoStabilizationEffectEnabledChangedEventArgsFrom(abi: abi)
             case "VideoStreamDescriptor": return makeVideoStreamDescriptorFrom(abi: abi)
             case "VideoTrack": return makeVideoTrackFrom(abi: abi)
             case "VideoTrackOpenFailedEventArgs": return makeVideoTrackOpenFailedEventArgsFrom(abi: abi)
@@ -3194,6 +4709,7 @@ public class __MakeFromAbi: MakeFromAbi {
             case "FrameIsoSpeedCapabilities": return makeFrameIsoSpeedCapabilitiesFrom(abi: abi)
             case "FrameIsoSpeedControl": return makeFrameIsoSpeedControlFrom(abi: abi)
             case "VariablePhotoSequenceController": return makeVariablePhotoSequenceControllerFrom(abi: abi)
+            case "DetectedFace": return makeDetectedFaceFrom(abi: abi)
             case "AudioEncodingProperties": return makeAudioEncodingPropertiesFrom(abi: abi)
             case "ContainerEncodingProperties": return makeContainerEncodingPropertiesFrom(abi: abi)
             case "MediaEncodingProfile": return makeMediaEncodingProfileFrom(abi: abi)
@@ -3229,11 +4745,13 @@ public class __MakeFromAbi: MakeFromAbi {
             case "MediaPlaybackItemOpenedEventArgs": return makeMediaPlaybackItemOpenedEventArgsFrom(abi: abi)
             case "MediaPlaybackList": return makeMediaPlaybackListFrom(abi: abi)
             case "MediaPlaybackSession": return makeMediaPlaybackSessionFrom(abi: abi)
+            case "MediaPlaybackSessionBufferingStartedEventArgs": return makeMediaPlaybackSessionBufferingStartedEventArgsFrom(abi: abi)
             case "MediaPlaybackSessionOutputDegradationPolicyState": return makeMediaPlaybackSessionOutputDegradationPolicyStateFrom(abi: abi)
             case "MediaPlaybackSphericalVideoProjection": return makeMediaPlaybackSphericalVideoProjectionFrom(abi: abi)
             case "MediaPlaybackTimedMetadataTrackList": return makeMediaPlaybackTimedMetadataTrackListFrom(abi: abi)
             case "MediaPlaybackVideoTrackList": return makeMediaPlaybackVideoTrackListFrom(abi: abi)
             case "MediaPlayer": return makeMediaPlayerFrom(abi: abi)
+            case "MediaPlayerDataReceivedEventArgs": return makeMediaPlayerDataReceivedEventArgsFrom(abi: abi)
             case "MediaPlayerFailedEventArgs": return makeMediaPlayerFailedEventArgsFrom(abi: abi)
             case "MediaPlayerRateChangedEventArgs": return makeMediaPlayerRateChangedEventArgsFrom(abi: abi)
             case "MediaPlayerSurface": return makeMediaPlayerSurfaceFrom(abi: abi)
@@ -3247,6 +4765,8 @@ public class __MakeFromAbi: MakeFromAbi {
             case "RevocationAndRenewalInformation": return makeRevocationAndRenewalInformationFrom(abi: abi)
             case "RevocationAndRenewalItem": return makeRevocationAndRenewalItemFrom(abi: abi)
             case "ServiceRequestedEventArgs": return makeServiceRequestedEventArgsFrom(abi: abi)
+            case "SpeechRecognitionResult": return makeSpeechRecognitionResultFrom(abi: abi)
+            case "SpeechRecognitionSemanticInterpretation": return makeSpeechRecognitionSemanticInterpretationFrom(abi: abi)
             case "AdaptiveMediaSource": return makeAdaptiveMediaSourceFrom(abi: abi)
             case "AdaptiveMediaSourceAdvancedSettings": return makeAdaptiveMediaSourceAdvancedSettingsFrom(abi: abi)
             case "AdaptiveMediaSourceCorrelatedTimes": return makeAdaptiveMediaSourceCorrelatedTimesFrom(abi: abi)
@@ -3282,6 +4802,7 @@ public class __MakeFromAbi: MakeFromAbi {
             case "WlanConnectionProfileDetails": return makeWlanConnectionProfileDetailsFrom(abi: abi)
             case "WwanConnectionProfileDetails": return makeWwanConnectionProfileDetailsFrom(abi: abi)
             case "SpatialCoordinateSystem": return makeSpatialCoordinateSystemFrom(abi: abi)
+            case "WebAuthenticationResult": return makeWebAuthenticationResultFrom(abi: abi)
             case "PasswordCredential": return makePasswordCredentialFrom(abi: abi)
             case "Certificate": return makeCertificateFrom(abi: abi)
             case "CertificateChain": return makeCertificateChainFrom(abi: abi)
@@ -3311,6 +4832,19 @@ public class __MakeFromAbi: MakeFromAbi {
             case "FilePickerSelectedFilesArray": return makeFilePickerSelectedFilesArrayFrom(abi: abi)
             case "FileSavePicker": return makeFileSavePickerFrom(abi: abi)
             case "FolderPicker": return makeFolderPickerFrom(abi: abi)
+            case "FileOpenPickerUI": return makeFileOpenPickerUIFrom(abi: abi)
+            case "FileRemovedEventArgs": return makeFileRemovedEventArgsFrom(abi: abi)
+            case "FileSavePickerUI": return makeFileSavePickerUIFrom(abi: abi)
+            case "PickerClosingDeferral": return makePickerClosingDeferralFrom(abi: abi)
+            case "PickerClosingEventArgs": return makePickerClosingEventArgsFrom(abi: abi)
+            case "PickerClosingOperation": return makePickerClosingOperationFrom(abi: abi)
+            case "TargetFileRequest": return makeTargetFileRequestFrom(abi: abi)
+            case "TargetFileRequestDeferral": return makeTargetFileRequestDeferralFrom(abi: abi)
+            case "TargetFileRequestedEventArgs": return makeTargetFileRequestedEventArgsFrom(abi: abi)
+            case "CachedFileUpdaterUI": return makeCachedFileUpdaterUIFrom(abi: abi)
+            case "FileUpdateRequest": return makeFileUpdateRequestFrom(abi: abi)
+            case "FileUpdateRequestDeferral": return makeFileUpdateRequestDeferralFrom(abi: abi)
+            case "FileUpdateRequestedEventArgs": return makeFileUpdateRequestedEventArgsFrom(abi: abi)
             case "QueryOptions": return makeQueryOptionsFrom(abi: abi)
             case "StorageFileQueryResult": return makeStorageFileQueryResultFrom(abi: abi)
             case "StorageFolderQueryResult": return makeStorageFolderQueryResultFrom(abi: abi)
@@ -3328,23 +4862,69 @@ public class __MakeFromAbi: MakeFromAbi {
             case "OutputStreamOverStream": return makeOutputStreamOverStreamFrom(abi: abi)
             case "RandomAccessStreamOverStream": return makeRandomAccessStreamOverStreamFrom(abi: abi)
             case "RandomAccessStreamReference": return makeRandomAccessStreamReferenceFrom(abi: abi)
+            case "AppActivationResult": return makeAppActivationResultFrom(abi: abi)
+            case "AppDiagnosticInfo": return makeAppDiagnosticInfoFrom(abi: abi)
+            case "AppDiagnosticInfoWatcher": return makeAppDiagnosticInfoWatcherFrom(abi: abi)
+            case "AppDiagnosticInfoWatcherEventArgs": return makeAppDiagnosticInfoWatcherEventArgsFrom(abi: abi)
+            case "AppExecutionStateChangeResult": return makeAppExecutionStateChangeResultFrom(abi: abi)
+            case "AppMemoryReport": return makeAppMemoryReportFrom(abi: abi)
+            case "AppMemoryUsageLimitChangingEventArgs": return makeAppMemoryUsageLimitChangingEventArgsFrom(abi: abi)
+            case "AppResourceGroupBackgroundTaskReport": return makeAppResourceGroupBackgroundTaskReportFrom(abi: abi)
+            case "AppResourceGroupInfo": return makeAppResourceGroupInfoFrom(abi: abi)
+            case "AppResourceGroupInfoWatcher": return makeAppResourceGroupInfoWatcherFrom(abi: abi)
+            case "AppResourceGroupInfoWatcherEventArgs": return makeAppResourceGroupInfoWatcherEventArgsFrom(abi: abi)
+            case "AppResourceGroupInfoWatcherExecutionStateChangedEventArgs": return makeAppResourceGroupInfoWatcherExecutionStateChangedEventArgsFrom(abi: abi)
+            case "AppResourceGroupMemoryReport": return makeAppResourceGroupMemoryReportFrom(abi: abi)
+            case "AppResourceGroupStateReport": return makeAppResourceGroupStateReportFrom(abi: abi)
+            case "AppUriHandlerHost": return makeAppUriHandlerHostFrom(abi: abi)
+            case "AppUriHandlerRegistration": return makeAppUriHandlerRegistrationFrom(abi: abi)
+            case "AppUriHandlerRegistrationManager": return makeAppUriHandlerRegistrationManagerFrom(abi: abi)
             case "DispatcherQueue": return makeDispatcherQueueFrom(abi: abi)
+            case "DispatcherQueueController": return makeDispatcherQueueControllerFrom(abi: abi)
             case "DispatcherQueueShutdownStartingEventArgs": return makeDispatcherQueueShutdownStartingEventArgsFrom(abi: abi)
             case "DispatcherQueueTimer": return makeDispatcherQueueTimerFrom(abi: abi)
             case "FolderLauncherOptions": return makeFolderLauncherOptionsFrom(abi: abi)
             case "LaunchUriResult": return makeLaunchUriResultFrom(abi: abi)
             case "LauncherOptions": return makeLauncherOptionsFrom(abi: abi)
             case "LauncherUIOptions": return makeLauncherUIOptionsFrom(abi: abi)
+            case "ProcessLauncherOptions": return makeProcessLauncherOptionsFrom(abi: abi)
+            case "ProcessLauncherResult": return makeProcessLauncherResultFrom(abi: abi)
+            case "ProcessMemoryReport": return makeProcessMemoryReportFrom(abi: abi)
+            case "ProtocolForResultsOperation": return makeProtocolForResultsOperationFrom(abi: abi)
+            case "RemoteLauncherOptions": return makeRemoteLauncherOptionsFrom(abi: abi)
             case "User": return makeUserFrom(abi: abi)
             case "UserAuthenticationStatusChangeDeferral": return makeUserAuthenticationStatusChangeDeferralFrom(abi: abi)
             case "UserAuthenticationStatusChangingEventArgs": return makeUserAuthenticationStatusChangingEventArgsFrom(abi: abi)
             case "UserChangedEventArgs": return makeUserChangedEventArgsFrom(abi: abi)
+            case "UserDeviceAssociationChangedEventArgs": return makeUserDeviceAssociationChangedEventArgsFrom(abi: abi)
+            case "UserPicker": return makeUserPickerFrom(abi: abi)
             case "UserWatcher": return makeUserWatcherFrom(abi: abi)
+            case "DiagnosticActionResult": return makeDiagnosticActionResultFrom(abi: abi)
+            case "DiagnosticInvoker": return makeDiagnosticInvokerFrom(abi: abi)
+            case "ProcessCpuUsage": return makeProcessCpuUsageFrom(abi: abi)
+            case "ProcessCpuUsageReport": return makeProcessCpuUsageReportFrom(abi: abi)
+            case "ProcessDiagnosticInfo": return makeProcessDiagnosticInfoFrom(abi: abi)
+            case "ProcessDiskUsage": return makeProcessDiskUsageFrom(abi: abi)
+            case "ProcessDiskUsageReport": return makeProcessDiskUsageReportFrom(abi: abi)
+            case "ProcessMemoryUsage": return makeProcessMemoryUsageFrom(abi: abi)
+            case "ProcessMemoryUsageReport": return makeProcessMemoryUsageReportFrom(abi: abi)
             case "SystemCpuUsage": return makeSystemCpuUsageFrom(abi: abi)
             case "SystemCpuUsageReport": return makeSystemCpuUsageReportFrom(abi: abi)
             case "SystemDiagnosticInfo": return makeSystemDiagnosticInfoFrom(abi: abi)
             case "SystemMemoryUsage": return makeSystemMemoryUsageFrom(abi: abi)
             case "SystemMemoryUsageReport": return makeSystemMemoryUsageReportFrom(abi: abi)
+            case "RemoteSystem": return makeRemoteSystemFrom(abi: abi)
+            case "RemoteSystemAddedEventArgs": return makeRemoteSystemAddedEventArgsFrom(abi: abi)
+            case "RemoteSystemApp": return makeRemoteSystemAppFrom(abi: abi)
+            case "RemoteSystemConnectionRequest": return makeRemoteSystemConnectionRequestFrom(abi: abi)
+            case "RemoteSystemEnumerationCompletedEventArgs": return makeRemoteSystemEnumerationCompletedEventArgsFrom(abi: abi)
+            case "RemoteSystemRemovedEventArgs": return makeRemoteSystemRemovedEventArgsFrom(abi: abi)
+            case "RemoteSystemUpdatedEventArgs": return makeRemoteSystemUpdatedEventArgsFrom(abi: abi)
+            case "RemoteSystemWatcher": return makeRemoteSystemWatcherFrom(abi: abi)
+            case "RemoteSystemWatcherErrorOccurredEventArgs": return makeRemoteSystemWatcherErrorOccurredEventArgsFrom(abi: abi)
+            case "ColorHelper": return makeColorHelperFrom(abi: abi)
+            case "Colors": return makeColorsFrom(abi: abi)
+            case "UIContentRoot": return makeUIContentRootFrom(abi: abi)
             case "UIContext": return makeUIContextFrom(abi: abi)
             case "AmbientLight": return makeAmbientLightFrom(abi: abi)
             case "AnimationController": return makeAnimationControllerFrom(abi: abi)
@@ -3443,16 +5023,25 @@ public class __MakeFromAbi: MakeFromAbi {
             case "VisualUnorderedCollection": return makeVisualUnorderedCollectionFrom(abi: abi)
             case "AcceleratorKeyEventArgs": return makeAcceleratorKeyEventArgsFrom(abi: abi)
             case "AutomationProviderRequestedEventArgs": return makeAutomationProviderRequestedEventArgsFrom(abi: abi)
+            case "BackRequestedEventArgs": return makeBackRequestedEventArgsFrom(abi: abi)
             case "CharacterReceivedEventArgs": return makeCharacterReceivedEventArgsFrom(abi: abi)
             case "ClosestInteractiveBoundsRequestedEventArgs": return makeClosestInteractiveBoundsRequestedEventArgsFrom(abi: abi)
+            case "CoreAcceleratorKeys": return makeCoreAcceleratorKeysFrom(abi: abi)
+            case "CoreComponentInputSource": return makeCoreComponentInputSourceFrom(abi: abi)
             case "CoreCursor": return makeCoreCursorFrom(abi: abi)
             case "CoreDispatcher": return makeCoreDispatcherFrom(abi: abi)
+            case "CoreIndependentInputSource": return makeCoreIndependentInputSourceFrom(abi: abi)
             case "CoreWindow": return makeCoreWindowFrom(abi: abi)
+            case "CoreWindowDialog": return makeCoreWindowDialogFrom(abi: abi)
             case "CoreWindowEventArgs": return makeCoreWindowEventArgsFrom(abi: abi)
+            case "CoreWindowFlyout": return makeCoreWindowFlyoutFrom(abi: abi)
+            case "CoreWindowPopupShowingEventArgs": return makeCoreWindowPopupShowingEventArgsFrom(abi: abi)
+            case "CoreWindowResizeManager": return makeCoreWindowResizeManagerFrom(abi: abi)
             case "IdleDispatchedHandlerArgs": return makeIdleDispatchedHandlerArgsFrom(abi: abi)
             case "InputEnabledEventArgs": return makeInputEnabledEventArgsFrom(abi: abi)
             case "KeyEventArgs": return makeKeyEventArgsFrom(abi: abi)
             case "PointerEventArgs": return makePointerEventArgsFrom(abi: abi)
+            case "SystemNavigationManager": return makeSystemNavigationManagerFrom(abi: abi)
             case "TouchHitTestingEventArgs": return makeTouchHitTestingEventArgsFrom(abi: abi)
             case "VisibilityChangedEventArgs": return makeVisibilityChangedEventArgsFrom(abi: abi)
             case "WindowActivatedEventArgs": return makeWindowActivatedEventArgsFrom(abi: abi)
@@ -3489,10 +5078,28 @@ public class __MakeFromAbi: MakeFromAbi {
             case "ToastNotifier": return makeToastNotifierFrom(abi: abi)
             case "UserNotification": return makeUserNotificationFrom(abi: abi)
             case "UserNotificationChangedEventArgs": return makeUserNotificationChangedEventArgsFrom(abi: abi)
+            case "ContentLinkInfo": return makeContentLinkInfoFrom(abi: abi)
             case "FontWeights": return makeFontWeightsFrom(abi: abi)
+            case "RichEditTextDocument": return makeRichEditTextDocumentFrom(abi: abi)
+            case "RichEditTextRange": return makeRichEditTextRangeFrom(abi: abi)
+            case "AccessibilitySettings": return makeAccessibilitySettingsFrom(abi: abi)
             case "ActivationViewSwitcher": return makeActivationViewSwitcherFrom(abi: abi)
+            case "ApplicationView": return makeApplicationViewFrom(abi: abi)
+            case "ApplicationViewConsolidatedEventArgs": return makeApplicationViewConsolidatedEventArgsFrom(abi: abi)
+            case "ApplicationViewScaling": return makeApplicationViewScalingFrom(abi: abi)
+            case "ApplicationViewTitleBar": return makeApplicationViewTitleBarFrom(abi: abi)
+            case "ApplicationViewTransferContext": return makeApplicationViewTransferContextFrom(abi: abi)
+            case "InputPane": return makeInputPaneFrom(abi: abi)
+            case "InputPaneVisibilityEventArgs": return makeInputPaneVisibilityEventArgsFrom(abi: abi)
+            case "StatusBar": return makeStatusBarFrom(abi: abi)
+            case "StatusBarProgressIndicator": return makeStatusBarProgressIndicatorFrom(abi: abi)
             case "UISettings": return makeUISettingsFrom(abi: abi)
             case "UISettingsAutoHideScrollBarsChangedEventArgs": return makeUISettingsAutoHideScrollBarsChangedEventArgsFrom(abi: abi)
+            case "UIViewSettings": return makeUIViewSettingsFrom(abi: abi)
+            case "ViewModePreferences": return makeViewModePreferencesFrom(abi: abi)
+            case "DisplayRegion": return makeDisplayRegionFrom(abi: abi)
+            case "WindowingEnvironment": return makeWindowingEnvironmentFrom(abi: abi)
+            case "WindowingEnvironmentChangedEventArgs": return makeWindowingEnvironmentChangedEventArgsFrom(abi: abi)
             case "HttpClient": return makeHttpClientFrom(abi: abi)
             case "HttpGetBufferResult": return makeHttpGetBufferResultFrom(abi: abi)
             case "HttpGetInputStreamResult": return makeHttpGetInputStreamResultFrom(abi: abi)
